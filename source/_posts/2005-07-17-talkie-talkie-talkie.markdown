@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2005-07-17 10:48:55
+layout: post
+slug: talkie-talkie-talkie
+title: Talkie talkie talkie
+wordpress_id: 534
+categories:
+- Silicon Valley
+---
+
+One of the things that [Seni](http://www.wombatmobile.com/blojsom/blog/wombat/) talks about is the difference between "talkers" and "doers". Russ and Seni have been talking about the idea for a long time, but it's relatively new to me and it's crept into a bunch of conversations recently. The original context of the conversation was around starting up a business. There are people who float around to all the entrepreneurial events year after year and talk about businesses, but never quite get around to actually starting one. That's just the most superficial case however. It's something of an infectious idea actually, figuring out the different styles of behavior. At first I classified talker as something like a bullshit artist. I probably missed the point completely however. Talkers are also analysts, experts, and inventors. It's not that talkers are useless, they just approach the unknown differently. It's something like the difference between [extroverts](http://en.wikipedia.org/wiki/Extrovert) and [introverts](http://en.wikipedia.org/wiki/Introvert). Talkers have a focus on discussion for discovery and doers have a focus on experimentation. Talkers without doers run the risk of just happily standing around yammering all day long. Doers without talkers run the risk of wasting tons of time experimenting with things they could have simply asked about (and possibly blowing stuff up in the process).
+
+[Hackers](http://www.paulgraham.com/gh.html) are all doers. They might spend a decent amount of time chatting with people or posting about their ideas, but the dominant area is ongoing projects. Problems being solved and software being created. I'm definitely a hacker, I realized that when I first read [Steven Levy's book "Hackers"](http://www.amazon.com/exec/obidos/tg/detail/-/0141000511/ref=pd_sxp_f/103-9296983-9199843?v=glance&s=books). However I was confusing myself recently with trying to pick the right project to work on. Trying to learn somewhat about the business environment, learning about the people I would be working with, evaluating the technology. In short, trying to do a bunch of things that I'm vastly underqualified to do. Fortunately I don't think that's the way to do it. Now I've started looking for a great team working on a project that gets me excited. And by great team I mean simply people I like interacting with. The other considerations are still there, but they have to be secondary filters. And if I don't find people working on the projects I want to work on I need to do them myself. Even if they're just short simple hacks, I have a much easier time keeping on an even keel when I'm working on something that gives me that hackerish sense of fulfillment.

@@ -1,0 +1,17 @@
+---
+comments: true
+date: 2004-07-15 23:24:05
+layout: post
+slug: now-that-bluetooth-is-alive-its-dead-again
+title: Now That Bluetooth Is Alive, It's Dead Again
+wordpress_id: 316
+categories:
+- Mobile Computing
+---
+
+TheFeature has an article, [Now That Bluetooth Is Alive, It's Dead Again](http://www.thefeature.com/article?articleid=100889), which is a nice even bit of commentary about Bluetooth. I am actually pretty surprised that Bluetooth sales have picked up the way that they have. I'm a pretty heavy Bluetooth fan I guess. Maybe fan isn't the right word. I've worked on some Bluetooth software for Linux, bashed my head against the various problems till I got things working. And there are problems. Even with my relatively recent devices, there were things I had to do to get them working together that it's just pure folly to expect an end user to be able to do. I get dizzy when I think about how long ago I first started talking about Bluetooth. Something goes wrong when I'm fooling with Bluetooth and I think to myself "hell, it's still new, it's gonna have glitches." But no, it's not. I don't remember when the first version of the spec was published, but it must have been before 2000 cause I know I was still in New York. If it's four years later and there are still major incompatibility problems, something has gone wrong.
+
+However, once things do work together it's pretty nice. I can just flip my laptop open and get a GPRS connection without finding a place to put stuff down to line up IR ports, or pull out my PDA to request a map if my cell phone display just isn't giving me enough info to make it worthwhile. So I like it a lot, it lets me do what I want to do. But, I'm not a normal user. I have a PDA and a laptop and a cell phone all with me at the same time. I want to be able to connect via my PDA through my server at home so that I can test out web pages without waiting for GPRS. These are not normal user requirements. So the question comes to mind, what are people using Bluetooth for? Is it headsets? I don't see to many of these on my normal rounds of Palo Alto. That doesn't mean for sure that they're not popular, but normally it's a pretty good indicator.
+
+I'm personally not sure what the end users are doing with Bluetooth, and I would really like to know. I have this sneaking suspicion that they're not doing anything yet. When I go to Silicon Valley events that aren't directly mobility related sometimes I ask people who have phones that I know support Bluetooth. My informal study turns up about 75% who never really use their Bluetooth. Many who have never even experimented with the function, and don't even know what it does. There does seem to be an increase in the number of people who use Bluetooth to sync their phone with their desktop address book, especially among the Apple users. But very few who use their phone to get a data connection from a PDA or laptop. I would like to see these numbers. If anyone has a good pointer to a study for this, please post a comment or trackback.
+

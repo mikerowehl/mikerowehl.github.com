@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-04-21 00:00:53
+layout: post
+slug: blogroll
+title: Blogroll
+wordpress_id: 245
+categories:
+- General
+---
+
+I've been trying to figure out how to include a blogroll version of the site without always putting a big long list my blog all the time. Having a list of users whose blogs you normally read is nice to do because the people who are receiving your readership can look at places like [Technorati](http://www.technorati.com) to see who is interested in their posts. I used to think this was just a form of posturing, but I'm starting to think it's more important. It adds one kind of backlink into the system as a whole. It provides a way for a content producer to see a list of everyone interested in what they're writing. As laid out in [A Manifesto for Collaborative Tools](http://www.blueoxen.org/papers/0000D/), backlinks are important. The paper talks about document linking, but I think the idea extends to resources in general.
+
+So I created another top level page, the [Bitsplitter Blogroll](http://www.bitsplitter.net/blog/blogroll.php). It's the same as the normal top level page, except that it has a list of people who I normally read and a copy of the Gnomedex blogroll. It's a brute force approach, so I figured there would be no real issues. But for some reason it doesn't seem to be getting sucked up by Technorati. So we'll have to see how this goes. My plan was to shove pings to Technorati for both URLs into my hacks file for Wordpress, but the whole issue might be moot. I'll give it a while and maybe email feedback tomorrow if things still aren't looking good. I would really like to sling props where props are due, but I also don't want to move a big list of links around to people viewing from PDAs.

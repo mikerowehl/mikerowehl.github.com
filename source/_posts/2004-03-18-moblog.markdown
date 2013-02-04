@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-03-18 12:36:30
+layout: post
+slug: moblog
+title: mo:Blog
+wordpress_id: 197
+categories:
+- Mobile Computing
+---
+
+Brian Cantoni has a [post about mo:Blog](http://www.cantoni.org/2004/03/12/moblog), a mobile blogging application that looks to be a lot more feature rich than my [Vagablog](http://www.bitsplitter.net/vagablog/) application. I'll have to fool around with it at some point, it says it can even upload binary attachments (like images). That definitely kicks ass in general, but it does mean some pretty stiff competition for Vagablog. I've been sorta wavering on the whole issue of adding Atom support into Vagablog. It would be a cool hack, but there's no economic incentive. Vagablog just isn't making enough money to make it worthwhile. I might keep Vagablog at the slim and simple (and cheap) end of the scale. So for those of you looking for advanced capabilities like image uploading and post editing, check out [mo:Blog](http://www.tektonica.com/projects/moblog/). It seems like it's already quite advanced, and should fit the bill for those of you who said you were looking for some more features in a Palm weblogging app.

@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-03-17 15:33:01
+layout: post
+slug: link-blog
+title: Link Blog
+wordpress_id: 195
+categories:
+- General
+---
+
+I put a new area up at Bitsplitter, the [Bitsplitter Link Blog](http://www.bitsplitter.net/linkblog/). "So what's the difference between the normal blog and the link blog?" one might be expected to ask. Well the link blog is for short mentions of things that I want to come back and look at when I have some more time, the main blog is for commentary and things that I know I was interested in and I want to share. There is an additional aspect to the link blog however, it's actually more PDA friendly than the normal blog. [This blog that you're reading now](http://www.bitsplitter.net/blog/) is minimally formatted so that it displays well on PDA screens, but the articles that I link to aren't always good for small screens. On the other hand, the [link blog](http://www.bitsplitter.net/linkblog/) is both PDA friendly and links to items that are PDA friendly. The link blog came about because I wanted a way to get certain links that I was bookmarking to transfer over to my PDA so I could read them when I wasn't sitting at my desktop. Rather than making up something new, I decided to just put them in a blog. I didn't want to clutter up the main Bitsplitter blog with a bunch of junk that I wasn't even sure I would be interested in. So I started a whole new area.

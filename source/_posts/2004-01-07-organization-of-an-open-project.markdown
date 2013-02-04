@@ -1,0 +1,20 @@
+---
+comments: true
+date: 2004-01-07 23:37:16
+layout: post
+slug: organization-of-an-open-project
+title: Organization of an Open Project
+wordpress_id: 90
+categories:
+- Open Source
+---
+
+I've been kicking around the idea for the [Open Palm Environment](http://openpalmenv.sourceforge.net/) project for a while now.  I registered the project on Sourceforge in September of last year, so it's been at least three months that I've really been actively mulling over the different aspects of the project. Not very long in the grand scheme, but I've turned over and played with lots of ideas during that time. I wanted to try to take a bit of time to write some of them down. In part to share them, but also to try to lay them bare and try to organize them.
+
+The first application available from the set is the application download tool. This is a conscious decision, chosen because I want the project to reach those who don't have PCs. Once we have the application downloader (PalmTorrent) we open up the possible avenue of combined traditional download and viral transmission of the applications. One user with access to a PC can install the downloader and then beam it to others, who can then download the pieces of the suite they want to use. How significant is this class of users, those with network enabled Palm devices of some kind but no PC? Umm... I have no idea. But it is a class of users I personally am interested in serving, because I want to break the strong connection between the PC and mobile information devices. Enabling mobile users who have access to rich applications without having to rely on a PC is an excellent measuring stick.
+
+The same reason lies behind my desire to run the community mostly through the WINKsite. WINKsite is setup so as to be as inclusive as possible. No matter what kind of device I have in my hand, I can probably bring up the site and view the information there. Sure, there might be better ways to communicate online. But like I said, I would like this project to reach out to those who don't have PCs. So communicating through email lists or Yahoo groups or almost anything else, we're creating more of a barrier to PDA users than a service for them. So I found something that provides the maximum amount of functionality while being as inclusive as possible in terms of the base of users who can access the information.
+
+This is the user facing part of the project however. I think communication between developers will be much different. I think it is important for the developer community to "communicate with code" to a large degree. This means creating a community where developers are comfortable with just picking up an idea they have and hacking code to serve as the basis for discussion about the idea, and being prepared for that reaction to be utter rejection. I think many of the successful collaborative coding projects have followed this form of interaction. The Linux kernel being one of the greatest examples. People that pop up within the Linux community and say "Hey, I have a great idea for a new feature!!" are mostly ignored. People who show up and provide a patch for a new feature are just about the only ones who get a non-flame response... and even those who show up with patches in hand might still get flamed for any of a number of reasons. I think this might be essential to the project's success. If the projects admitted all submitted code the project would deteriorate. If the developers took the time to coddle newcomers (and each other) there would be little time left for actually working on the project.
+
+And this is one of the essential tensions that I've been turning over and over in my mind and poking at. How to run a highly inclusive user community around a project which will have to have a selective developer community? All this is still pretty much idle speculation, because the project is barely even starting to lift off. But I think it's never too early to start pondering, and hopefully the sooner I start the more prepared I'll end up being. I need to go now so that I can follow my own advice and work on some code instead of just talking about it :-)

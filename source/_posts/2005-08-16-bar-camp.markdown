@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-08-16 17:34:50
+layout: post
+slug: bar-camp
+title: BAR Camp!!!
+wordpress_id: 543
+categories:
+- Silicon Valley
+---
+
+The kick ass folks over at [SocialText](http://www.socialtext.com) are hosting [BAR Camp](http://barcamp.org/) in Palo Alto while FOO Camp is going on. Definitely very cool! I'm right down in Palo Alto, so I should be able to make it. Friday might be a bit rough... but it's not like I have to wander too far away. Gotta figure out what to demo though... It'll have to be some mobile sideproject. So many things to choose from!! Python hackery for Series60 is always easy to toss together. I had a good idea for an app which I've never implemented all the way, maybe this would be the time. I was gonna use Python and Flickr to pull thumbnails for everyone in my address book who has a Flickr account. That way little faces would pop up next to caller ID info. That's always sexy.

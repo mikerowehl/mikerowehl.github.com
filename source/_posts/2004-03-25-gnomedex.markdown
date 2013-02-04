@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-03-25 11:18:15
+layout: post
+slug: gnomedex
+title: Gnomedex
+wordpress_id: 213
+categories:
+- Dweeb
+---
+
+I just registered for [Gnomedex](http://www.gnomedex.com/). Yea, I'm a loser, I've never been to one before. Certainly sounds kick ass, and it's in Tahoe, and there's a three day open bar, and people all over the place with computers and network access. See, I'm getting excited already and the conf is still six months off. Pre-reg ends in just a few days however.. although I'm not sure what that means exactly. What happens after pre-reg ends? Hard to say, so I just registered. Probably not the smartest way to handle it. But then again spending three days at an open bar with a bunch of geeks isn't exactly a safe diversion either.

@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-01-27 08:17:51
+layout: post
+slug: anonymous-blogging
+title: Anonymous Blogging
+wordpress_id: 134
+categories:
+- Dweeb
+---
+
+At the [Trusted Computing class this past weekend](http://www.bitsplitter.net/blog/index.php?p=130) Seth mentioned that he was engaged in some online sparring with someone who had a blog on [Invisiblog](http://invisiblog.com/). In particular he was talking about the [postings by someone calling themselves Unlimited Freedom](http://invisiblog.com/1c801df4aee49232/), which do make for interesting reading. I completely disagree with the stuff that Unlimited Freedom says, but in the interest of providing both sides of the story I felt I should at least link to the blog.
+
+I'm really more interested by the prospect of anonymous blogging, which has reawakened my interest in [Mixmaster](http://mixmaster.sourceforge.net/). Mixmaster is one of those projects that always pop up on the radar screen, I spend a day or two poking at, maybe use a few times and then forget about. Its anonymous remailer software with some pretty amazing functions, but in my opinion is a bit esoteric. There is some anonymous remailer info, but not all that much, and not all that much that targets the kinds of things that I normally have questions about. So if the interest keeps up this time, my next security post might just be about Mixmaster and anonymous remailers. I just stumbled across [Cypherpunks Tonga](http://www.cypherpunks.to/), a site which I also have been to a bunch of times before and then forgotten about. Which sparked a couple of other ideas about potential topics. And it also made me think that a resurrected version of the [PASTA Project crypto software for Palm OS](http://www.pasta.cs.uit.no/~perm/PASTA/pilot/software.html) would be something that would scratch an itch I have, so I just might have to do it. A decent keyring project for the Palm with signing ability could make keysigning parties much more productive and easier to organize.

@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-05-24 01:17:13
+layout: post
+slug: palmatom-initial-release
+title: PalmAtom Initial Release
+wordpress_id: 270
+categories:
+- General
+---
+
+It's really more of a proof of concept than a first version, which is why I've given it the release number 0.1, but I have an app that I've successfully used to post Atom from a Palm device. I was feeling really creative, so I named it [PalmAtom](http://www.bitsplitter.net/palmatom/). It does lots of things wrong, but I've decided to release it anyway. There's this credo of "release early, release often" that runs through open source in general. Problem is, developing for the Palm can be a real pain, so Palm projects don't get all that much contribution. Palm doesn't seem to really care for open source developers these days either, which has made some of the few remaining ones less than pleasant to deal with. But Treos are turning up all over the place here in the US, so I figured this might make for an interesting tool. I really do think this whole shift in media consumption style and production techniques is pretty important, as I [mentioned the other day](http://www.bitsplitter.net/blog/index.php?p=269). And I do want to do something about it. I also happen to have this belief that these poor wireless and handheld devices currently available are second class citizens at best. So I'm trying to figure out what I can do to move the media revolution out of the office and into the streets.
+
+This isn't a user ready application by any means. I would recommend picking it up if you want to hack on it, or maybe if you want an example in C of how to do Atom authentication, but not if you're a normal user looking for an application to post with. Not yet. Still, I was pretty happy about being able to hack the thing together in just a few hours. I ripped the SHA1 code out of [Keyring for Palm OS](http://gnukeyring.sourceforge.net/), base64 is a public domain implementation taken from [xmlrpc-epi](http://xmlrpc-epi.sourceforge.net/), and the http stuff is a [library I released a while ago](http://www.bitsplitter.net/PalmHTTP/). Not too shabby. Course, I've spent a while mucking around with an Atom example in Python, so I was pretty familiar with what I had to do. Hopefully over the next few weeks I'll have time to clean up the implementation and make it somewhat user friendly. Even more hopefully, some people out there in wonderland will send me some patches so I don't have to write all the crud myself.

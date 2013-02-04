@@ -1,0 +1,58 @@
+---
+comments: true
+date: 2005-02-09 09:24:58
+layout: post
+slug: 106miles
+title: 106miles
+wordpress_id: 419
+categories:
+- Silicon Valley
+---
+
+I went to the [106miles](http://www.106miles.org/) event last night. A big part of the Geek Krew were there: [Niall](http://www.niallkennedy.com/blog/) (who took audio and should have that up on his site at some point), [Eleanor](http://www.ellementk.com), [Russ Beattie](http://www.russellbeattie.com/notebook/), and [Brendon Wilson](http://www.brendonwilson.com/). We're starting to form a pretty consistent traveling discussion group. [Michael Fagan](http://www.faganfinder.com/me/) and Nick Heyman from [Feedster](http://www.feedster.com) came also. I got to meet [Jeremy Zawodny](http://jeremy.zawodny.com/blog/) (who has [some comments up already](http://jeremy.zawodny.com/blog/archives/004156.html)) and [Mark Jen](http://99zeros.blogspot.com/) (see [this Slashdot post](http://slashdot.org/article.pl?sid=05/02/09/1418233) for some background on why meeting Mark is interesting, and [these comments from Jeremy after meeting him last night also](http://jeremy.zawodny.com/blog/archives/004157.html) for some additional info. Mark was fired by the way.). There were a ton of great people there, thank you [Joyce](http://troutgirl.blogspot.com/)!! I took [a few pictures](http://www.flickr.com/photos/miker/sets/113756/). They came out pretty poorly but they're there at least.
+
+
+
+
+
+[Dave Sifry was the speaker](http://www.sifry.com/alerts/archives/000283.html), here's some of the points he made:
+
+
+
+
+
+
+
+  * It takes just as much effort and pain and risk and stress to build a good small company as it does a good big company. So if you're gonna pay the cost why not shoot for a big goal. Never underestimate the ability of a small team of dedicated people to change the world. Actually, that's the way it always happens, with a small team of great people
+
+
+  * The best way to get money from VCs is to ask for advice, the best way to get advice is to ask for money.
+
+
+  * Taking money is the second worst thing that can happen to a business, the worst is going under. Dave says he doesn't understand the mentality of announcing funding events.  It's like announcing, "Yay! I took out a mortgage!" The best money to have comes from customers.
+
+
+  * Want to start a great business?  Base it off one of the seven deadly sins. [Technorati](http://www.technorati.com) is based off pride, it started cause Dave wanted to know what people were saying about him. It's only a natural thing, people are social animals, everyone wants to know what others think of them.
+
+
+  * "Hey, look, I'm gonna screw up something major." It's good to be up front with your board and your investors. Failing is okay, just fail quickly, and be prepared to learn from it and try something different. (This is something I've heard all over the place by the way. It shows up in people talking about businesses and entrepreneurship, it shows up in [modeling and prototyping](http://eyepopping.manilasites.com/stories/storyReader$62), and it's part of the underpinnings of the [Agile movement in software development](http://www.agilemanifesto.org/principles.html). Dave himself says that he's not a great engineer, he's a great prototyper. I think the skills necessary for prototyping and entrepreneurship probably overlap quite a bit).
+
+
+  * Hire only fantastic people, never hire to fill a position without having the right match. Even a single poor person can sour a large team of great people. Pay attention to the fact that you're building a culture, the concept of "corporate DNA" is very real. Technorati is built to have great culture, it's a principal concern.
+
+
+  * Date before you marry. Do research on your VCs. Know the differences between companies that fund at different stages. If you need seed there are very specific funds that look for early opportunities. If you walk into a VC that normally funds a different stage they're just going to ignore you.
+
+
+  * Give your board homework assignments. Yes you have an obligation to your board and your stock holders, but the board also has an obligation to the company. These are supposed to be the people out in the field, hearing important information in contact with important people. If you need something like a contact or to fill a position, ask your board.
+
+
+
+
+Keep an eye on [Niall's blog](http://www.niallkennedy.com/blog) if you want to hear the full audio.
+
+
+
+
+
+Tags: [106miles](http://technorati.com/tag/106miles) [20050208](http://technorati.com/tag/20050208)

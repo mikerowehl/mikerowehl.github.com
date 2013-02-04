@@ -1,0 +1,14 @@
+---
+comments: false
+date: 2003-12-22 17:07:43
+layout: post
+slug: vagablog-17
+title: Vagablog 1.7
+wordpress_id: 59
+categories:
+- General
+---
+
+I've released verion 1.7 of [Vagablog](http://www.bitsplitter.net/vagablog/), although I suspect the change won't really affect most people. I expanded the amount of memory available for processing the blog list. There used to be a limit of 10 blogs, now it'll use a lot more (31 is the limit of my testing so far). Why would one need that many blogs? Well, I actually spoke to some of the people who work over at Blogger.com last week, and the people who were interested in using the app have 20 blogs or more. So of course I fixed up the app. Hopefully it would negatively affect anyone, and this way the [Blogger.com](http://www.blogger.com) crew maybe wander around and tell people how ph4t Vagablog is. Probably not, but I am allowed to hope, aren't I?
+
+So if you're a normal user and for some reason 1.7 isn't working out for you, you can always just use 1.6, you're not missing anything unless you have 10 blogs attached to a single account. Let [us know about the issue](mailto:vagablog@bitsplitter.net) of course, what OS version you're running, what device. I would really appreciate that. I'll mark it down as something to clean up in the future. But unless you're getting crazy with the cheeze whiz, you shouldn't need 1.7 anyway.

@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2005-02-20 11:28:51
+layout: post
+slug: march-106miles
+title: March 106miles
+wordpress_id: 434
+categories:
+- Silicon Valley
+---
+
+The [March meeting of 106miles](http://106miles.blogspot.com/2005/02/march-106-announcement.html) has been announced. The guest is Jeff Winner, former VP of Engineering at Friendster and current principal in venture accelerator Alacrity Partners, the topic is "Fundamentals of Financing for Founders: the current funding climate in Silicon Valley". The [last meeting was fantastic](http://www.bitsplitter.net/blog/?p=419), definitely check it out if you get a chance.  They need to make sure they capacity plan correctly, so if you're planning to come email jpark at commerce.net.  I'm not putting the location in here so that people don't just show up, like they do with the [Future Salon](http://www.futuresalon.org/) events. But I will tell you it's on March 9th at 7:00pm and on the peninsula.
+
+Tags: [106miles](http://technorati.com/tag/106miles) [20050309](http://technorati.com/tag/20050309)

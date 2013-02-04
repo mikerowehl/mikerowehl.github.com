@@ -1,0 +1,25 @@
+---
+comments: true
+date: 2004-02-06 19:24:45
+layout: post
+slug: atom-info
+title: Atom Info
+wordpress_id: 154
+categories:
+- Dweeb
+---
+
+Two articles I've been poking through today:
+
+
+
+
+
+  * [Atom intro based on an older version of the spec](http://www.xml.com/pub/a/2003/10/15/dive.html)
+
+
+  * [A new article posted just this week](http://webservices.xml.com/pub/a/ws/2004/02/03/atom8.html)
+
+
+
+Mostly work in preparation for putting support for Atom into [Vagablog](http://www.bitsplitter.net/vagablog). I would like to support both reading feeds and using the API, but that might be a bit ambitious to tackle all at once. I still need to just figure out how to use the [Blogger.com mapping of the API](http://www.blogger.com/developers/2004_01_01_archive.pyra#107091563754937970) without using SOAP. That means figuring out the security mechanism I think, and that [appears to be missing from the spec](http://atomenabled.org/developers/api/atom-api-spec.php#rfc.section.6). Hopefully [this article](http://www.xml.com/pub/a/2003/12/17/dive.html) will give me all I need. But first I need some food. It's been a hackeriffic day, which always makes me hungry.

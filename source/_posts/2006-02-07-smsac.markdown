@@ -1,0 +1,58 @@
+---
+comments: true
+date: 2006-02-07 13:17:05
+layout: post
+slug: smsac
+title: SMS.ac
+wordpress_id: 619
+categories:
+- General
+---
+
+Russ and I were talking about [the SMS.ac thing](http://www.russellbeattie.com/notebook/1008792.html) last night on the way to MoMo. Today RCR Wireless [picked up the story](http://www.rcrnews.com/news.cms?newsId=25553), with this quote from the SMS.ac folks:
+
+
+> In essence, we have a fiduciary duty to protect our company, and that's what we're doing.
+
+
+Bull fucking shit! You had a fiduciary duty to not be complete fucktards in the first place, but apparently that wasn't in the cards was it? Now you're trying to rewrite history in an attempt to salvage your reputation? Well suing people who write about your misdeeds is not the way to do it. Ceasing activities that indicate fucktarditude (of which the cease and decist letter is one) is the way to salvage your reputation. And then you get people to say good things about you. Anyone have a form letter for "cease and decist fucktarditude"? I have a need for one.
+
+Update: for SMS.ac, here's some help in tracking down all those nasty nasty detractors from your sterling public image:
+
+
+
+	
+  * [Google cache of Russ's post](http://64.233.179.104/search?q=cache:GpvasVtZVtUJ:www.russellbeattie.com/notebook/1008290.html+sms.ac&hl=en&gl=us&ct=clnk&cd=3&client=firefox)
+
+	
+  * [http://forums.whirlpool.net.au/forum-replies-archive.cfm/223940.html](http://forums.whirlpool.net.au/forum-replies-archive.cfm/223940.html)
+
+	
+  * [http://www.unleadedonline.net/uo-243-1.html](http://www.unleadedonline.net/uo-243-1.html)
+
+	
+  * [http://bre.klaki.net/dagbok/faerslur/1100734998.shtml](http://bre.klaki.net/dagbok/faerslur/1100734998.shtml)
+
+	
+  * [http://www.neilturner.me.uk/2005/Feb/22/smsac_and_spam.html](http://www.neilturner.me.uk/2005/Feb/22/smsac_and_spam.html)
+
+	
+  * [http://www.jacobsen.no/anders/blog/archives/2005/02/07/smsac_warning.html](http://www.jacobsen.no/anders/blog/archives/2005/02/07/smsac_warning.html)
+
+	
+  * [http://www.gripe2ed.com/scoop/story/2004/8/16/0210/98756](http://www.gripe2ed.com/scoop/story/2004/8/16/0210/98756)
+
+	
+  * [http://www.zephoria.org/thoughts/archives/2005/02/22/fuck_smsac.html](http://www.zephoria.org/thoughts/archives/2005/02/22/fuck_smsac.html)
+
+	
+  * [http://www.mobiletracker.net/archives/2005/04/03/scam-spam-or-fun-sms.sc](http://www.mobiletracker.net/archives/2005/04/03/scam-spam-or-fun-sms.sc)
+
+	
+  * [http://www.mobile-weblog.com/50226711/smsac_launches_cellular_bill_of_rights_so_wrong.php](http://www.mobile-weblog.com/50226711/smsac_launches_cellular_bill_of_rights_so_wrong.php)
+
+	
+  * [http://joi.ito.com/archives/2005/02/22/letter_from_kevin_b_jones_of_smsac.html](http://joi.ito.com/archives/2005/02/22/letter_from_kevin_b_jones_of_smsac.html)
+
+
+And the list goes on and on, just check the [Google search results for "SMS.ac scam"](http://www.google.com/search?q=sms.ac+scam). Fire up those cease and decist printers it's gonna be a long night! Strange how everyone seems to have bad things to say about SMS.ac, this conspiracy to defame their good name must run really really deep. I'm betting it leads to somewhere around San Diego....

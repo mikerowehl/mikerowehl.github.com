@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2005-05-27 00:06:57
+layout: post
+slug: organ-grinder
+title: Spit the vile breath till my tongue bleeds
+wordpress_id: 515
+categories:
+- General
+---
+
+I haven't been able to post much to this blog. I tried to for a while but other issues rapidly sucked up all my time. I haven't even had time to read news except for the bits I can read on my phone while I'm wedged between two people on Caltrain. The [post that Jay Allen has up about trying to reign in your schedule](http://www.jayallen.org/journey/2005/05/a_new_hope) really struck a chord with me. Yet here I am at 1:00 in the morning once again, testing out some code and checking to make sure that the SMS messages I'm getting from my monitoring systems are because someone else messed up and not me. Maybe I need a less stressful job, something like [Menlo Park police officer](http://www.flickr.com/photos/miker/15873937/in/photostream/).
+
+Most of the time it seems like it's worthwhile. It's kind of a thrill to take what just about anyone would say is a trivial amount of resources and make a unique system out of it. Keep it up and running while slowly twisting it to do new things. But when you run on the edge sometimes stuff falls off. Sometimes it's cause you screwed up. Sometimes the datacenter gets moved from one coast to another and some strange transient error causes problems no one can really pinpoint. Most of the time you expect people to react to your issues the same way you react to theirs, by showing some flexibility and dealing with it in whatever way is necessary. Occasionally there's some friction. Especially when you're trying to move quickly. In general the flexibility and friction balance out across the team, and the [bits of conflict tend to actually draw the team together rather than pull it apart](http://en.wikipedia.org/wiki/Forming-storming-norming-performing). But when everyone gets pissed off it's like a swift kick in the crotch. What seemed like an intriguing set of challenges for a team quickly turns into a baffling set of obstacles when it seems like you're doing it [alone](http://www.lyricspy.com/6521/Skunk_Anansie_lyrics/Charlie_Big_Potatoe_lyrics.html). It's the kind of thing that really makes one reevaluate their own ability, what they're doing, and who they're doing it with.

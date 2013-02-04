@@ -1,0 +1,17 @@
+---
+comments: true
+date: 2004-08-13 02:41:27
+layout: post
+slug: thank-you-eric
+title: Thank You Eric
+wordpress_id: 327
+categories:
+- Silicon Valley
+---
+
+Just got back from the first [LobbyCon in San Francisco](http://eric.blognews.com/blog/_archives/2004/8/13/123275.html), thanks to Eric Rice for taking the initiative and getting everyone together. I personally had a really good time. I think it was very successful at recreating exactly what goes on in the lobby of tech confs. There was lots of geeky talk going on, I got to meet some people I know of from their online presence, and ran into some people who I don't normally get a chance to talk to. Apparently [Jonas was there for a while, but really didn't like the venue](http://www.jluster.org/node/266) so he took off. That's unfortunate, I would have liked to get a chance to talk to him. But that's what happens when you try to do something different. If you're doing it right, you should get a reaction. Hopefully there are a bunch of positives, but unfortunately there will be negatives as well. The important factor is that there is  something polarizing and not just a lukewarm mix meant to please the widest audience possible.
+
+In that respect I think it was a success. I've gone to a bunch of different Meetup events around the area, the Weblogger Meetups in particular. And for some of them I managed to get a decent group to attend, though the only really large scale one was due to Shellen dragging a decent number of the Blogger crew out with him. But once I stopped personally beating the bushes to bring people out [no one showed up at all](http://www.bitsplitter.net/blog/index.php?p=123), and that was really lame. So I started going to organized confs and events around the area, but that gets to be a pretty expensive habit. Most of the low key local events attract a lot of the same audience each time however. And the really interesting part is running into new people, which happens mostly at the confs, and those do tend to really suck cash. I figured there had to be some alternative.
+
+Most of the social tools we're using these days do a great job of facilitating conversation and making space elastic. Given that I think there is a place for events like this. Events that aren't normally scheduled meetings on a given topic, but more someone just deciding to plant a flag in a random lobby and declaring it a discussion point. It might help to keep the events fresh and the participants from getting bored, allows the fringe events to take place (instead of getting subsumed by the majority vote for a different topic or venue), and hopefully will result in involving people who wouldn't normally be willing or able to get involved. These might not actually be LobbyCons at all, but just the reintroduction of a normal healthy social life to those of us who spend way too much time sitting in front of a monitor. Sure, the organization is a bit more strongly electronically mediated (well, not when compared to Japanese teens organizing an adhoc social event) and includes a bit more WiFi while it's actually going on. But essentially it's meeting down at the neighborhood pub to shoot the shit over a few drinks. Our neighborhood is larger, but the fluidity of the activity should be the same.
+

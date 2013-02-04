@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-02-17 07:22:17
+layout: post
+slug: feed-of-the-day-for-wed
+title: Feed of the Day for Wed
+wordpress_id: 428
+categories:
+- Feedster
+---
+
+I didn't have time to post about it when I put it up, but I want to talk about the last Feed of the Day I put up: [The Year of Coffee](http://thecoolkids.us/coffee/index.php). I ran across it cause I have a subscription to a [vanity feed for Feedster](http://www.feedster.com/search.php?hl=en&ie=UTF-8&q=feedster&sort=date) so that I can see when anyone is talking about us. Fantastic idea, I recommend it for anyone, it's amazing the stuff you'll find. At first when I looked at it I thought "hey, is this a stealth blog for [Peet's](http://www.peets.com)?" (notice that when I think to myself I insert hyperlinks, sometimes that makes my head hurt). If that's a marketing piece it's a fantastic effort! The basic premise is that Lloyd, the person running the site, is taking a picture of each cup of coffee for a year and posting it online. Here's the [post that kicked it off](http://thecoolkids.us/coffee/archives/2005/01/01/happy-new-year/category). But it's not just coffee cups that go up there, it's commentary and bits of stories. The consistent serial nature of the updates, along with the nuggets of larger stories placed next to quick notes, really make the blog feel more like a continuous flow than a series of disconnected updates. It's weird, it's interesting, it's a slice of life, and it's made me laugh more than once. Thanks Lloyd!

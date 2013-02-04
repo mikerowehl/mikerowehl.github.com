@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-04-12 12:39:27
+layout: post
+slug: new-intel-xscale-processor
+title: New Intel XScale Processor
+wordpress_id: 238
+categories:
+- Mobile Computing
+---
+
+Intel has formally announced the next version of the XScale series of processors [according to ExtremeTech](http://www.extremetech.com/article2/0,1558,1565846,00.asp). There are some cool features in there, it sounds like a good processor. But what really disturbs me is that Intel calls this the "Wireless Trusted Platform", which I think has to mean that it implements [the Trusted Computing Platform Alliance](http://www.trustedcomputing.org/home) specifications for Trusted Computing. It only makes sense, Intel is a founding member of that organization. I'm not a big fan of trusted computing the way it has been proposed. Sure, there are lots of good applications it could be used for. There's an [anonymous blog called Unlimited Freedom](http://invisiblog.com/1c801df4aee49232/article/0df117d5d9b32aea8bc23194ecc270ec) ([Google Cache](http://216.239.53.104/search?q=cache:-TKIk_sivx8J:invisiblog.com/1c801df4aee49232/article/0df117d5d9b32aea8bc23194ecc270ec&ie=UTF-8)) which gives some of the beneficial applications that could be built on top of TCPA recommendations. But I think the technology would be used to limit the freedoms of consumers more than it would be used to provide new applications. That's not to say that I don't think a trusted computing effort wouldn't be a welcome addition to the technology menagerie that is the current Internet. I just think that the suggested architecture skews too heavily toward protecting content providers without much consideration for consumer rights. And as [Lessig comments with more eloquence than I](http://www.lessig.org/blog/), content producers already have a lot of legal protections on their side. Do they really need more mechanism and code protections? 
+
+There are some sites opposing the TCPA as well, such as [AgainstTCPA.com](http://www.againsttcpa.com/). I was able to [attend the class on Trusted Computing by Seth Schoen](http://www.bitsplitter.net/blog/index.php?p=130) back in January. I think this is an issue that everyone should be educated about, although I have no good option to present for how to do it. Even if you don't agree with me, please, go and read some of the info from either side of the debate. Educated people are usually harder to fool. Even if this gets used widely and ends up being an issue, perhaps an educated public will prevent it from being abused too badly.

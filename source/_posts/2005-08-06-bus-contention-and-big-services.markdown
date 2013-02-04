@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-08-06 14:08:10
+layout: post
+slug: bus-contention-and-big-services
+title: Bus Contention and Big Services
+wordpress_id: 540
+categories:
+- Open Source
+---
+
+Databases almost always start to suck if you're trying to build a scalable system. I like relational databases. Databases are great when you're putting together an application  that needs to be used by hundreds or thousands of people. However, once it starts to get to Internet scale, lots of applications need to move to something different. Take a look at [the Livejournal backend](http://www.oliviertravers.com/archives/2004/12/29/inside-livejournals-backend/) presentation if you're curious what I'm talking about. Once you get to systems like that maximum distribution of the service is really what you want to end up with. And I mean distribution of ALL resources. That includes stuff like network interfaces and memory busses. As in, if every request is really completely independent then you're better off with two single processor machines than you are with one dual processor machine. Dual processor systems still tend to share a memory bus, they share a network interface (especially in the world of x86 based Linux systems).  Sometimes they even share cache lines. All of that means contention where there doesn't need to be any. Dual processor systems make sense where the individual stages of a single requests allow for decomposition into two associated tasks that benefit from being able to pass information from one stage to another via local services. But if what you're doing is throwing compute cycles at a problem that's been architected for maximum distribution, your best bet is lots of small systems rather than a few large ones.

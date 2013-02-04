@@ -1,0 +1,63 @@
+---
+comments: true
+date: 2005-08-25 01:48:23
+layout: post
+slug: linux-wpa
+title: Linux WPA
+wordpress_id: 550
+categories:
+- Open Source
+---
+
+I've had a background task running that steals a few cycles whenever I should be sleeping and checks out what it would get to make the laptop I have from work do WPA. I have a Thinkpad R51 I inherited, and while I wait for my laptop to come in I've been playing around with it to see what I could get working. The work wireless network uses WPA-PSK, and that's something that's always been a pain for Linux. So here's my quick description of getting the Thinkpad R51 (using the [Intel ipw2200](http://ipw2200.sourceforge.net/) driver) working with WPA. I'm using [Ubuntu](http://www.ubuntulinux.org/) as the distro by the way, 5.04 in particular. So maybe these instructions will actually be relevant to someone!
+
+
+
+
+
+
+
+  * The ipw2200 driver that ships with the default kernel in Ubuntu doesn't have support for a lot of the operations that the WPA setup requires. I started out with a fresh download of the latest stable kernel (2.6.12.5 as of this writing) just to head off any potential issues with newness of versions. This is pretty bleeding edge stuff (there are Makefiles at least, so it could be worse :-).
+
+
+  * Grab the config from /boot and copy it to .config in your new kernel area, make menuconfig and resave, compile, install, generally get the system working with that new kernel
+
+
+  * Grab the [ieee80211 subsystem](http://ieee80211.sourceforge.net/), I used the latest as of this writing, 1.0.3. The compile and install is very easy here (Yay for installed kernel headers!!).
+
+
+  * Now grab the [driver for the network card, ipw2200](http://ipw2200.sourceforge.net/). I used 1.0.6, which was the latest as of this writing. You'll also need the latest firmware, also linked to from the ipw2200 page. The releases of firmware are numbered according to which versions of the driver they go with. The firmware I grabbed started with 1.0.4 and ran through the current version. Compile and install the ipw2200 driver, copy the firmwares into place (I used /lib/hotplug/firmware).
+
+
+  * And finally you'll need a copy of [wpa_supplicant](http://hostap.epitest.fi/wpa_supplicant/). This is where things start to get really sketchy. This is bleeding edge for you. You'll have to create a configuration file for the package in order to build it.  Here's what mine looks like:
+`CONFIG_DRIVER_IPW=y
+# CONFIG_DRIVER_BSD=y
+# CONFIG_DRIVER_NDIS=y
+CONFIG_WIRELESS_EXTENSION=y
+CONFIG_IEEE8021X_EAPOL=y
+CONFIG_EAP_MD5=y
+CONFIG_EAP_MSCHAPV2=y
+CONFIG_EAP_TLS=y
+CONFIG_EAP_PEAP=y
+CONFIG_EAP_TTLS=y
+CONFIG_EAP_GTC=y
+CONFIG_EAP_OTP=y
+# CONFIG_EAP_SIM=y
+# CONFIG_EAP_AKA=y
+CONFIG_EAP_PSK=y
+CONFIG_EAP_PAX=y
+CONFIG_EAP_LEAP=y
+# CONFIG_PCSC=y
+`I coppied wpa_supplicant and wpa_cli to /usr/local/bin, although I'm pretty sure that's superfluous.
+
+
+  * Then take the wpa_supplicant.conf sample file and tailor it to your needs. I just followed the example from in there that most closely matched my setup.
+
+
+  * Run wpa_supplicant giving it the interface to use and the configuration file: "wpa_supplicant -ieth0 -c/etc/wpa_supplicant.conf -d" The -d option keeps it in the foreground so you can see all the debugging output. If it works you should see messages saying that it's associated with a basestation and extablished a key.
+
+
+
+
+
+Tada! Now you can run scripts against the interface to do things like DHCP and everything should be all peachy. Sweet! Now I don't have to use a Windows machine just so I can tool around the office downloading stuff and looking like I'm important.

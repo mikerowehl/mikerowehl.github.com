@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-08-20 10:05:30
+layout: post
+slug: first-bamf-meeting-tomorrow
+title: First BAMF Meeting Tomorrow
+wordpress_id: 328
+categories:
+- Mobile Computing
+---
+
+Tomorrow is the [first meeting of BAMF](http://www.mobilityforum.org/2004/08/meeting-reminder.html). Unfortunately we ended up needing to collect some money to cover the space. Michael O'Rourke was very generous in offering their space at [Dimension 7](http://www.dimension7.com/) and we just need to cover the costs of setting the place up, cleaning up after it's done, and use of their AV equipment. I looked around some to see if I could find a sponsor, but no one wanted to sponsor the first meeting of an informal group. Given that a bunch of us volunteered our own time to get this set up, and that the presenter is a volunteer, and that the cost is only $10, I'm hoping no one has any problems with that. Cause if they do I might have to smack them. That always gets things off on the wrong foot so I'm hoping to avoid it.
+
+That said, I'm really looking forward to the event. I've been following mobile tech for a long time, but being involved with BAMF has got me looking a lot more at fostering the mobile community as a whole. One aspect that I'm noticing even more than I used to is the gap between the people inside the industry and the proposed users of the services and technology. Technologies seem to get developed and then "thrown over the wall" to customers. With the service providers in particular this seems to be true. They do a big roll out of MMS and cameraphone, sit back and watch the numbers, and hope they line up with expectations. Quite often the services don't work out as expected. But that's okay for big established companies like the service providers (AT&T;, Sprint, Verizon). They have the resources to just pick something else and try again. And there is a problem there as far as I'm concerned. Relatively random guessing is a bad way to pursue next generation technology. The really powerful aspects of mobility are NOT highly related to the old telecom industry. They're really a completely different industry that just happens to be trapped within the existing framework of spectrum licenses and carrier exchange agreements. Eventually the industry will break out of the constraints imposed on it, the market always finds ways to make sure that maximal value is being delivered. I would love that to happen through service providers working more closely with entrepreneurs and startups to explore applications in some new areas. But even if that never comes to pass, I'm sure something will deliver me a service that respects my mobile device not as a remote and minimal information terminal, but as a first class node within a worldwide network.

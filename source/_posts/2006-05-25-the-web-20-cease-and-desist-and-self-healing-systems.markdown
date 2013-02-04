@@ -1,0 +1,16 @@
+---
+comments: true
+date: 2006-05-25 15:40:29
+layout: post
+slug: the-web-20-cease-and-desist-and-self-healing-systems
+title: The Web 2.0 Cease and Desist and Self Healing Systems
+wordpress_id: 638
+categories:
+- General
+---
+
+I need to post a [pointer to the story about CMP sending a conference a C&D; letter on behalf of O'Reilly](http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/). I'm sure Tim has nothing to do with it, and I'm sure it'll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.
+
+Things like this are bound to happen in any organization/company once the size gets beyond a certain threshold. Perhaps not quite this ridiculous in most cases, but there will be some evidence of lack of syncronization and goal mismatches. In the real world normally this stuff gets cleared up pretty quick. Tim pops up and says "wow, we didn't mean to do that, sorry!" or someone at CMP chews the lawyers out and releases a statement... whatever. The point being that inconsistencies and unexpected situations are generally noticed and dealt with. Outside the blogospere at least. Inside the blogosphere they can live on forever, but that's really a whole seperate issue.
+
+Odd situations like that tend to cause failures in software though. When something unexpected comes up within a system it's generally catastrophic. When something unexpected comes up during an interaction between systems you're sometimes lucky just to find out what happened after the fact. I've been thinking about self healing systems recently, although I can't remember what might have kicked it off. And after reading this realized that almost all human designed systems are relatively fragile and rigid. Law being one of the obvious areas of intersection between codification and human behavior I would expect it might hold some hints about how to handle that well. But law is just guidelines, and the rationality really derives from a human in the loop pulling the strings, judge or jurry. It's not a system itself really so much as an extension and recording of the will of the judges to keep them from having to repeat themselves. So I keep coming back to the non-human systems to try to find isolated systems that heal well. Insect behavior is one of the classic examples, ants and bees.

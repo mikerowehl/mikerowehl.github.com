@@ -1,0 +1,41 @@
+---
+comments: true
+date: 2004-12-27 22:41:55
+layout: post
+slug: feed-info
+title: Feed Info
+wordpress_id: 377
+categories:
+- Feedster
+---
+
+I've been reading over a few REST themed articles:
+
+
+
+
+
+
+
+  * [Weblogs, Publish-Subscribe, and Web Collections: A REST Analysis](http://www.xml.com/pub/a/2004/12/01/pubsub.html)
+
+
+  * [How to Create a REST Protocol](http://www.xml.com/pub/a/2004/12/01/restful-web.html)
+
+
+  * [Common REST Mistakes](http://www.prescod.net/rest/mistakes/)
+
+
+
+
+
+I've been trying to think a little more deeply about public facing REST style web interfaces and how to put them together. I wrote [a simple interface to the Feedster feed info API](http://www.bitsplitter.net/projects/Feedster/feedinfo.php.txt) (along with an [associated test/example](http://www.bitsplitter.net/projects/Feedster/testfeedinfo.php.txt)). Trying to build a single file implementation for PHP was pretty interesting. I found a couple of cool features, like the [file() function](http://us4.php.net/file) can return the contents of a web resource. I'm not sure how to trap and handle errors from that however, so if anyone does please drop me a line. And even though I used an object cover for the items in the collection returned, I still considered a bare associative array to hold the info. For the most part it seems to come down to personal preference how the client for a service is put together. The goal of course is loose coupling in all cases. For some that means exposing an interface which can adapt to new info, and for others that means ignoring new info unless specifically asked for. Personally I think I like the "ignore new info unless specifically asked for" version. It seems to echo the use of namespaces in XML, where new information can be mixed into a document without fear of clashing with existing data and so that it can be easily (and by default) ignored. It also seems to create a more friendly interface for users. If the information about the interface doesn't reside at all in the user classes then another source of what the attributes of the parsed version are going to be have to be obtained from another source (such as looking at the XML document returned.. which for REST is very plausible). But in counter to my point, the more layers that know about the structure of the call the worse off the system as a whole is. However, if the objects don't know about the schema of the results at all they can't provide covers over the details of the document structure (ie. allowing either attributes or children to hold data).
+
+
+
+
+
+Ultimately it's all just geek navel gazing until someone actually starts using the code. So along those lines there are a couple of projects I have planned that build off that API, but I wanted to release the example for others who might be interested. Technically I'm on vacation right now, but still might work on some bits while I have time here and there. The clocks out here all seem to be 3 hours fast but no one cares. Everyone goes to sleep early and gets up early. So I have a bunch of quiet time in the evenings.
+
+
+

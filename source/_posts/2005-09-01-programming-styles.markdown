@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-09-01 13:42:15
+layout: post
+slug: programming-styles
+title: Programming Styles
+wordpress_id: 560
+categories:
+- General
+---
+
+It's kinda a slow news day overall. Maybe everyone is all wrapped up in this whole city underwater thing. Not my style. So instead I'm catching up a bit on the geekier side of the reading I have sitting untouched in my aggie. Posts from LTU are always good for some geekin, and [the post about Context Oriented Programming](http://lambda-the-ultimate.org/node/view/941) in particular caught my attention. I started reading the paper, and right about the end of the first page had a pretty decent mental image of what was up so I stopped. Nice idea. And then there's the comment in LTU saying that it sounds like AOP (that's [Aspect Oriented Programming](http://www.onjava.com/pub/a/onjava/2004/01/14/aop.html) for those of you who don't have the kind of m4d cred that me and my dawg [Ehud Lamm](http://lambda-the-ultimate.org/user/view/1) do). Sure does. Not hard to figure out, AOP is listed as related work at the end of the paper. Also not that it means anything of course. You can write object oriented programs in imperitive languages and declarative programs in functional languages and do all sorts of nutty stuff in C. It all comes down to what stuff the tools make it easy to do. Is the context oriented model new? No, probably not. Sounds exactly like the kind of abstraction that exists in protocol design. However bringing the model up to the level of the implementation of classes, and making the basic level of granularity for the programmer activation and deactivation of layers of functionality is somewhat interesting. Reminds me of the move to get busses abstracted in the Linux kernel. There was a proliferation of devices at one point, and suddenly a device that used to exist as PCI now all of a sudden had a PCMCIA version and a USB version. So the busses were made "objects" in their own right so that the actual device code could be factored out from the bus manipulation code. If you take the view from the kernel end the bus is delegating to individual device objects, but if you take a look at the system overall it's very close to context oriented composition of the device model.

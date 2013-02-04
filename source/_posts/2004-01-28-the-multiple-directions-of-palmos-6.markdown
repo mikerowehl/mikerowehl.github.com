@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-01-28 08:27:00
+layout: post
+slug: the-multiple-directions-of-palmos-6
+title: The Multiple Directions of PalmOS 6
+wordpress_id: 138
+categories:
+- Mobile Computing
+---
+
+MyPalmLife [posted yesterday](http://mypalmlife.com/index.php?p=258&c=1) that it got information that PalmOS 6 will include all the neat features that [Russ and I were concerned about](http://www.bitsplitter.net/blog/index.php?c=1&p=137). Is this conflicting information? Or when Palm says that OS6 is going to concentrate on PDA functions does that mean that they're also going to improve networking also? It could be, maybe they consider networking a core PDA function. That makes sense wo me. I would agree. But I would certainly like some clarification on that one. Maybe this isn't conflicting info, maybe it is. It could just be [ambiguity in the terms PDA and smartphone](http://www.bitsplitter.net/blog/index.php?c=1&p=93). If a smartphone is just a PDA with a cellular network interface built in, I would think that concentrating on PDA functions instead of smartphone functions would mean not paying much attention to that cell interface. But maybe Palm has definitions that don't agree with mine. Maybe Palm considers smartphone functions things like MMS and SMS hookups, ringtones, and other enhanced handset features. There's only one thing I can say confidently at this point: I have no idea what PalmSource is planning. And it doesn't appear to be just me either. Russ sent along [another great tidbit](http://www.infosyncworld.com/news/n/4532.html) about the European arm of palmOne considering alternatives to PalmOS. It would appear that this confusion over PalmOS may cover more than just the peons like me.

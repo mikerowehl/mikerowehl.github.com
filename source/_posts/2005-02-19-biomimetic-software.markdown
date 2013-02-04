@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2005-02-19 14:45:03
+layout: post
+slug: biomimetic-software
+title: Biomimetic Software
+wordpress_id: 414
+categories:
+- Mobile Computing
+---
+
+I've had this post sitting around for a while, but seeing as Elle has declared this [Blogger Fort Weekend](http://ellementk.com/archives/2005/02/19/297) I've decided to get it out now.
+
+The post that kicked it off was [Sensors Everywhere](http://www.primidi.com/2005/02/02.html) from  Roland Piquepaille's Technology Trends. The post calls out some example solutions from an [Information Week article of the same name](http://www.informationweek.com/story/showArticle.jhtml?articleID=57702816). I'm pretty interested in the topic of sensor networks, cause I think  that's one of the eventual forms of mobile computing. One theory is that instead of carrying around mobile information devices with us, those mobile information access devices will diffuse into the world around us. For an example already in process, think about services like [OnStar](http://www.onstar.com/), which is an example of mobile information service fusing with a car. Even if that isn't the way that things go, it's an interesting thought experiment to think about what the world would look like if any object in the physical world could have access to information about both the user and it's own surroundings.
+
+Currently that's just a thought experiment however. Sensor networks really only work for very predictable deployments. They allow sensors and processing to go places they previously couldn't go before. However, they certainly don't allow it to go everywhere. We're a long way from the vision of [smart dust](http://www.computerworld.com/mobiletopics/mobile/story/0,10801,79572,00.html) that can be scattered over an area at will to provide data collection and processing functions. Part of the problem is getting the electronics down to the required size, another is the power problem, and then there's the networking problem. The networking problem is one of the places that I think we can pull the most from another technique - [biomimetism](http://www.dynamicobjects.com/d2r/archives/003068.html). Both mesh networking and distributed processing are problems that are difficult to solve at best. They're hard to conceptualize, implement, test, and debug. And even the best systems tend not to be as robust as we would like them to be.
+
+I went to hear Feng Zhao speak at Stanford last year, and corresponded with him a bit. I was very interested in using [TinyGALS](http://ptolemy.eecs.berkeley.edu/papers/03/TinyGALS/) for a prototype system that never ended up making it out of concept phase. That's a great project they have there, looking at trying to program the network instead of programming individual nodes. But it is still the traditional programming, just aimed at a different level of abstraction. There are projects looking at how to pull useful models from living systems in order to make software and embedded systems better. Even when they do find techniques that can be reused, it's hard to merge what they find into traditional software practices. Although the front might be advancing in terms of biomimetic software, there needs to be biomimetic process and operations to go along with it.

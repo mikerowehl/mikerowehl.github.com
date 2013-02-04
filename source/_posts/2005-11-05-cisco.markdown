@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-11-05 14:15:08
+layout: post
+slug: cisco
+title: Cisco
+wordpress_id: 591
+categories:
+- General
+---
+
+After Defcon I [mentioned the big blowup with Cisco](http://www.bitsplitter.net/blog/?p=539). Just to follow up on that thread, they've now [announced a patch](http://it.slashdot.org/article.pl?sid=05/11/03/1613226&from=rss) for the vulnerability. Pretty much blowing away the theory that some folks had that this was an attack that didn't really work in the wild. Three month response time for a major security issue. Wow that sucks. It's a good thing they have all that money to use to supress the information so that they can take their sweet time.

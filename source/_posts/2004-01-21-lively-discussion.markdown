@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-01-21 11:31:17
+layout: post
+slug: lively-discussion
+title: Lively Discussion?
+wordpress_id: 122
+categories:
+- Silicon Valley
+---
+
+Last night I went to [what I thought was a panel discussion at MIT/Stanford Venture Lab](http://www.vlab.org/204.cfm?eventID=40). The event description claimed that Whitfield Diffie was going to moderate a discussion covering topics like untapped areas of the security market and the implications of shift to a risk analysis based model for security. This is not at all what this event was. It started with Wit saying a few words about security in general, calling up mostly issues that those of us who have worked in security are already very aware of, but framing the overall security issue very well. But then it launched into a product pitch by ArcSight. I had no idea that was going to happen, and I don't think I would have paid for the event if I had known that a big chunk of it was just a podium for someone trying to pimp their new product. ArcSight does seem to be interesting, but it's certainly not revolutionary. Someone just had the business sense to actually write this "security nervous system" that those in the industry have been speculating about for a long time. The good ones have already written their own, possibly more than once. ArcSight decided to make a product of it, good for them. It's a nice position, I like it, but I don't care. If I wanted to hear about the product I would have gone to the website, not paid to hear them pitch.
+
+Then the evening got into the discussion part, which I thought would be a nice general discussion, actually touching on the topics listed on the event description sheet. No, it wasn't. It was everyone talking about ArcSight. What a pile of shit. The few times the discussion did turn towards interesting topics in security that were not ArcSight (the parallels between IDS and the immune system, can security benefit from modeling the adaptive systems found in living organisms, how does risk analysis proceed without a baseline of cost tradeoffs, etc.) it seemed to get sideswiped and dragged back to a discussion of why ArcSight is cool. And it's doubly lame because I posted here that I was going to it and it looked interesting. Sorry about that, others who may have gone. I'm not sure if this event means that security events in the area are lame in general or not, this is the first security event which has caught my attention. Normally I go over to [DefCon](http://www.defcon.org/) and/or [BlackHat](http://www.blackhat.com/) once a year and that's about it. So I'm going to take a look around and see what there is. In the meantime I'm trying to pull together some decent security info that IS NOT related to pimping someone's product, in order to make up for my mistake in calling attention to this Stanford VLAB sham.  Shame on Stanford, they get points subtracted for this one.

@@ -1,0 +1,16 @@
+---
+comments: false
+date: 2003-12-13 14:10:52
+layout: post
+slug: web-services-and-message-oriented-protocols
+title: Web Services and Message Oriented Protocols
+wordpress_id: 34
+categories:
+- Mobile Computing
+---
+
+There's [an interview with Adam Bosworth](http://www.acmqueue.org/modules.php?name=Content&pa=showpage&pid=29) over at ACM Queue, and it touches on some ideas I've had in relation to mobile application. There is a lot of stuff that I don't agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I'm hoping that's an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I'm definitely going to have to keep steering clear of enterprize application settings.
+
+But there is an interest trend brought up in the move towards more message oriented formats. This is another example of people catching on to the ideas that I remember hearing about from the [Jabber](http://www.jabber.org) guys literally 4 years ago. They used to go on and on about how applications should be constructed based upon async messages and queues. Mostly I think people laughed at them, which is too bad. Now that mobile communication devices are actually becoming commonplace, questions about syncing up the information in them are more relevant.  When you just had your Palm Pilot it was easy to sync. Some people synced at work and at home, and it was all good for them. But now information lives all over, and the old sync model doesn't work. All of a sudden those funny Jabber ideas start to make a whole lot of sense. People are saying things like "wouldn't it be great if when I added a contact to my phone it would automatically get sent to all my devices!?!?!"
+
+Well, it's not a new idea. These are the kinds of alternate apps that Jabber is built for. In this model each device and application is a client to the IM network. When a contact is added from one device or application it sends a message to the server, and that message is queued for all of the devices in a clients listening group. Each of those apps and devices can then login at any point and get the updates. I think this is actually the direction that Palm is going to be gunning for with their embrace of Web Services and their attempt to make PalmOS 6 more "network centric". I wouldn't be surprised if they pushed these kinds of sync functions straight down into the operating system/database interfaces.

@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-01-03 18:26:48
+layout: post
+slug: go-text
+title: Go Text!!!
+wordpress_id: 82
+categories:
+- General
+---
+
+I knew that if I said something like [this post at Gadgetopia](http://www.gadgetopia.com/2004/01/03/TheImpactOfTextVsGraphics.html) I would just get accused of using it as an excuse to justify my very text-intensive site. But now that someone else has said it I have a foothold at least. Text rules!!! Graphics are nice, I just don' want them sprinkled all over for no reason. When I m browsing sites over GPRS, I don't want no stinking images getting in the way.

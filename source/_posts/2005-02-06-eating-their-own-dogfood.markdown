@@ -1,0 +1,20 @@
+---
+comments: true
+date: 2005-02-06 10:07:47
+layout: post
+slug: eating-their-own-dogfood
+title: Eating Their Own Dogfood
+wordpress_id: 415
+categories:
+- Mobile Computing
+---
+
+I got an email from Russ the other day saying "Hey, why isn't your phone accepting calls?"  Sounded pretty weird, but not beyond belief, I normally have bad luck with billing systems.  I have an account at [Washington Mutual](http://www.wamu.com/home.htm), and for a while they seemed to be rejecting autopayments for no reason that anyone inside or outside the organization could determine.  I dialed my number from a landline and sure enough there was a message: "At the subscribers request, this line is no longer accepting incoming calls." Very odd, I was DEFINITE I had not requested incoming calls be shut off. I logged into my Washington Mutual online system and checked the transactions on my account. Weird, it did show a payment processed to T-Mobile just the week before. So I assumed this was just some glitch in the [T-Mobile](http://www.tmobile.com/) system and set about getting in touch with someone.
+
+After trying to use their automated attendant and finding out about my bill, which depending on my position in the menu system was reported as either 164 dollars, 55 dollars, or fully paid, I was further convinced it was a glitch in their system. So I set about getting hold of a real person. That took three tries, I was dropped twice when trying to transfer out of the automated attendant. I'm not sure the exact hold time waiting for a live person, but it was a lot longer than I expected given my difficulty in getting through.
+
+Once I did get through I got my answer however. It turns out my phone service got shut off because I had hit the credit limit assigned to my account. Interesting, because I have autopayment set up. The attendant informed me that this isn't the way that autopayment works. If the balance on my account is more than my credit limit it gets shut off without notification. Their justification for this is that they gave me a letter back when I signed up for the account saying that if I had exceeded my credit limit they might shut off my phone service.
+
+This had got to be the fucking stupidest thing I have ever heard of in my life. I'm just completely floored by how moronic these carriers are. First of all, an autopayment system that leaves a user without service is stupid on its own. But even once we make it past that bit of lunacy, they did this without sending me any notification. No phone call, no SMS, not even smoke signals. Yes, they did give me a letter saying they might "shut off my service without notification", but that doesn't make it the right move in terms of customer service. I figured that meant if I got to my spending limit and they couldn't contact me they might shut it off. That they (my phone company, the people PROVIDING ME WITH COMMUNICATION!) would shut off my phone without trying to communicate is something I didn't even consider. How do these people expect to sell the advantages of connectedness when they ignore their channel themselves? Most companies are avoiding SMS communications because the carriers want to rape them on the service charge. But for [my carrier](http://www.tmobile.com) not to use SMS for notification over their own network is just [stupidity](http://www.tmobile.com). Obviously they've missed the boat on the idea as a whole. With [3G from T-Mobile so far off on the horizon](http://engadget.com/entry/6944052294116838/) and then this little gem, it's time for me to switch carriers.
+
+Tags: [T-Mobile](http://technorati.com/tag/tmobile) [stupidity](http://technorati.com/tag/stupidity) [asshat](http://technorati.com/tag/asshat)

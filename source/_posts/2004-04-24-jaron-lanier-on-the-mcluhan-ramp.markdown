@@ -1,0 +1,16 @@
+---
+comments: true
+date: 2004-04-24 14:23:23
+layout: post
+slug: jaron-lanier-on-the-mcluhan-ramp
+title: Jaron Lanier On The McLuhan Ramp
+wordpress_id: 252
+categories:
+- Dweeb
+---
+
+I went to the [presentation by Jaron Lanier](http://www.futuresalon.org/2004/04/tomorrow_jaron_.html) yesterday and it was very interesting. This [Future Salon](http://www.futuresalon.org/aboutfuturesalon.html) thing is pretty cool, I'll definitely go to more of them. The main thrust of the talk was that there are lots of different "ramps" which people can use to judge progress. There's a ramp of technology, which progresses from the most basic innovations such as fire and the wheel and moves out to a life that looks something like the Jetsons or something called [the technological singularity](http://www-rohan.sdsu.edu/faculty/vinge/misc/singularity.html). Of course we're not sure exactly where the ramp ends up, which is part of the reason we as humans find satisfaction in advancing it. There's also a ramp of morality, starting with brutal kill-or-be-killed life and progressing to some kind of rainbows and sunshine perfect existence.
+
+There are problems with judging progress by these ramps however. The technological ramp leads to greater potential for people to do harm to each other and does nothing to temper that ability. The moral ramp always leads more directly to people killing each other, cause they can never agree on what morality should look like, and they normally don't have nice ways to deal with those who don't agree. These are gross simplifications of course, Jaron spiced with up with all kinds of witticisms and detailed points and factual tidbits and references to other people's work. You can feel free to debate them here. For instance I'm not sure that I completely agree with the technology ramp leading to greater potential for destruction.. but it doesn't much matter. I do agree with his proposed replacement ramp. He says that we should instead be striving for ever increasing levels of interpersonal connection, which he has termed the McLuhan ramp (named after [Marshall McLuhan](http://www.regent.edu/acad/schcom/rojc/mdic/mcluhan.html), a very influential figure in the analysis and study of media culture). I think I agree that the McLuhan ramp is probably the best. I think I've actually already gotten on it.
+
+There were a whole bunch of other points in there, such as the effects of learning that there is a difference between reality and fantasy during childhood. The ability of virtual reality to replace that "godlike" feeling of power somewhat. And also it's ability to replace the need for abstract symbology with the capability to instantiate the idea directly. Given that the human race has come to dominance at least partially due to the ability to transfer thought between generations during our nurtured childhood, replacing the hack that is symbolic language with more direct means could have profound effect. Lots of interesting thoughts kicking around in my head now, but I'm going to limit it to just the McLuhan ramp for now and let the rest of you mull over that one the way I've been.

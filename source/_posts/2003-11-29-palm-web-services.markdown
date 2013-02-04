@@ -1,0 +1,18 @@
+---
+comments: false
+date: 2003-11-29 22:38:37
+layout: post
+slug: palm-web-services
+title: Palm Web Services
+wordpress_id: 10
+categories:
+- Mobile Computing
+---
+
+I recently went to listen to [the VP of Product Marketing from PalmSource, Charlie Tritschler, speak at a SDForum Web Services Special Interest Group](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1206&mo=11&yr=2003). The presentation itself was very informative. It sounded like Palm was really taking a great approach to Web Services. Charlie spoke about how PalmSource had a package available for writing SOAP clients for the Palm, and how they were planning to push support for web services down into the operating system in future versions. I think this stuff is a great idea, and have had [some thoughts about making the palm more network-centric](http://www.unrooted.net/openSource/palmos.html) online for a while myself. So I have no problem at all marching to the beat of that drum, it matches up perfect with the pace I was keeping anyway. So I went to download the toolkit from Palm, and had to eat my enthusiasm.
+
+The first cause for concern was that I had to go to this section called the "Developer Seeding Area" at [PalmSource](http://www.palmsource.com) to find info about the package. I won't bother providing a link to the area, cause you can't get access unless you're registered as a Palm developer. That's the first bad sign, that Palm has lumped this wonderful enabling technology in with their older information controlled releases. Why do they restrict these public releases? I'm sure they say so that they can get to know their development community better. But I'm definite all they do is alienate the open source developers. Bad move. And then once I did find a link to the toolkit, it took me to another area, at [IBM alphaWorks](http://www.alphaworks.ibm.com/), this time with another license agreement. And then, when I did download it, I found out that the release was for Windows only. Ouch.
+
+So, props to PalmSource for the effort. But they seem to be missing the boat on this one. Web Services are a great idea, but not just because they're a simple format for performing RPC. The reason they've gone so far so fast is that they represent the open source culture at work. RPC is not a new idea. Open formats and tools, encouraging further open formats and more free tools, that's what made the concept so powerful. That's why this idea has become the universal connector, and why it makes business sense to "Web Service"-ify all types of applications. Allowing the Palm platform to tap into that interface is a great idea. But providing a very Old World set of tools to do so is half-assed. To get the full advantage of Web Services we need to embrace the culture of the Web Services crowd. I think this represents an oportunity to inflame the imagination of some otherwise lost developers. The path that they've taken is little more than marginal pandering, and Web Services could really fling open the doors standing at the network interface of the Palm platform and allow some great innovation.
+
+Put my code where my mouth is? Sure, you bet I will. It starts like this. Add a dash of [HTTP support]( http://www.bitsplitter.net/PalmHTTP/) to a cup full of [XML support](http://cytheric.net/palm-xml/doc/index.html) and blend vigorously till you can see foam starting to form. What I have to do is add an XMLRPC-EPI type interface to parse along the lines of allowed and expected rpc elements, and create some XML generation procedures, and we should have an open source platform for web services. Expect an entry in the [Split Bits Area](http://www.bitsplitter.net/splitbits.html) once I have something working.

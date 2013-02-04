@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-08-31 00:19:17
+layout: post
+slug: movies
+title: Movies
+wordpress_id: 557
+categories:
+- Open Source
+---
+
+Can I just take a quick break to mention how much ass it sucks that I have to do [things like this](http://www.oldskoolphreak.com/tfiles/hack/ubuntu.txt) to even consider trying to play DVDs under Linux. I was all psyched to get some movies that I've been waiting on, but I don't have the time to deal with shit like that. And the audio and video codecs are all over the place too. Get one DVD working and the others may or may not also play. And don't even get me started on region encodings. Funny thing is, if I were to Bittorrent the stuff it would 99% of the time come in a format that I can play with an open source program (even though mplayer is open source, it depends on codecs which are not). Hmm. Pay money to people to get this sliver of coated plastic representing something I already own in magnetic tape format - which may or may not work on my beloved Linux system. Or download something that almost certainly will work. I don't even need to flip a coin to figure this one out.

@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-12-23 20:35:47
+layout: post
+slug: photos-by-a-four-year-old
+title: Photos by a Four Year Old
+wordpress_id: 374
+categories:
+- Mobile Computing
+---
+
+I was taking a [picture of the Christmas Tree at my parent's place](http://mikerowehl.buzznet.com/user/?id=746735) when my four year old niece spotted me and wanted to take pictures too. I figured she couldn't do any worse than I do with the camera (and much to my chagrin it turns out that was right). I released her unsupervised for about half an hour just to see what was on my phone when she came back.  Half the fun for me was seeing if she really understood what she was doing. If the joy of sharing photos online is all about capturing the random everyday events from your life then this photo set should be pure gold. Here they are: [Photos by a Four Year Old](http://mikerowehl-fouryearold.buzznet.com/user/). I really like some of them. Some just look neat. Others suggest a functioning of the four year old mind that I personally find pretty staggering. Check this out: [a photo of the artist, Devin Link, taking a picture of her reflection in an ornament on the Christmas tree](http://mikerowehl-fouryearold.buzznet.com/user/?p=1&id=746615). She definitely understood what she was doing, and went out of her way to find subjects that not only look interesting but in many cases really point to an understanding that she was creating something. She also took [a snap of herself reflected in a full length mirror](http://mikerowehl-fouryearold.buzznet.com/user/?p=4&id=746441). There was something interesting in watching herself watch herself and capturing it. Not that I attribute any deep philosophical meaning to the pictures that she took, or that they indicate an amazing degree of self awareness. But I would tend to think they are the manifestation of a mental model much more developed than the "I want that, give me" model I tend to think of when I think about four-year-olds.

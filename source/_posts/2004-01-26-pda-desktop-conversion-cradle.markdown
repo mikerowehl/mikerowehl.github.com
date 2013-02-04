@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-01-26 13:11:19
+layout: post
+slug: pda-desktop-conversion-cradle
+title: PDA Desktop Conversion Cradle
+wordpress_id: 132
+categories:
+- Mobile Computing
+---
+
+There's an [article over at MobileWhack](http://www.mobilewhack.com/pda/blue_dock.html) about a desktop cradle called the Blue Dock. It allows a PDA to be used like a full desktop system, with keyboard, monitor, and network connection. Still not available for quite some time, but it does work somewhat towards an idea that [Mike Rohde was also talking about recently](http://www.rohdesign.com/weblog/archives/000266.html). I've been following systems based on the MCC, such as the [products from Antelope](http://www.antelopetech.com/en/index.aspx), for a while now. The concept has been around the block a few times, and it would appear to me that the technology has been up to the task for a while. The iPod seems to be an excellent example of a compact system with almost all the trimmings necessary to serve as a computing core. But something has kept these little guys out of the mass market. They seem like a great idea to me, but I guess I could be in a very small minority who would go for a device like this. Perhaps once the wireless technologies have a little longer to ferment we'll see something like the [Personal Servers](http://www.eweek.com/article2/0,4149,1269604,00.asp) that Intel has been working on instead. There's [quite a bit of info about them available already](http://linuxdevices.com/articles/AT5772921353.html), and of course I'm quite happy that all those technologies seem to be Linux friendly (hell, the article is at LinuxDevices.com, how much better can it get?!?)

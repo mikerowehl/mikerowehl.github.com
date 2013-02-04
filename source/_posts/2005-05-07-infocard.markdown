@@ -1,0 +1,33 @@
+---
+comments: true
+date: 2005-05-07 19:30:48
+layout: post
+slug: infocard
+title: Infocard
+wordpress_id: 501
+categories:
+- Open Source
+---
+
+Last Mobile Monday [Marc Canter](http://marc.blogs.it/) came by to talk about identity systems, and in particular mentioned Infocard, an emerging something from Microsoft. Apparently an identity something. Kaliya has [some notes up](http://identitywoman.kaliyasblogs.net/archives/2005/05/momo_marc_cante.htm). I groove to everything that Marc said about what identity systems need to provide, how they should be open source based and open standards based, how they're essential infrastructure, and how the systems should obey a core set of principles that has the interest of the user at heart. Nice I like it. And then he started talking about Infocard, because Infocard apparently provides all this stuff we want. This is the bit from Kaliya's notes, and from what I remember she has it pretty well right:
+
+
+
+
+> Back to Microsoft - if they are not participating in it doesn't work it. Kim killed passport - this is the one you want trust (and thank for doing that.) They can be arrogant assholes - and Kim knows he needs help from the outside.
+
+
+
+
+Wow that's an odd statement coming from Canter. I spoke to Marc the most around the time when Elle and I were helping out with Ourmedia, and I remember him saying things like no one can tell us what to do with out media, we're in control of the system we just need to make it work the way we want. I just assumed the same thing would apply to identity systems. I personally think they do. If Microsoft doesn't participate they don't participate, screw them. I'm personally not ready to say that Microsoft has control over the future direction of technology, especially technology I use. Hell, most of my professional life has been an attempt to prove that one does not need Microsoft to live online. If they want to participate, that's okay. I don't hate them forever. They just don't have any good karma, and I'm certainly not ready to abdicate control  to them. And about Kim Cameron, great laws of identity! Well done, I like it. But am I going to trust and help Kim because he killed Passport? Ummmm, NO! You can't set me on fire, and then extinguish me, and expect thanks.  Microsoft can't attempt to screw me, and then hire someone to keep them from doing it, and expect my thanks. That's not the way trust works, sorry.
+
+
+
+
+But I really wanted to be constructive here. Cause I like Marc, and obviously he's trying to help out Microsoft with this thing by helping out with the community. I think he called what he was doing a "sanity check" for the folks. So here's the sanity check. Try a [Google search for "infocard"](http://www.google.com/search?hl=en&lr=&c2coff=1&client=firefox-a&rls=org.mozilla%3Aen-US%3Aofficial&q=infocard&btnG=Search). And when you realize that doesn't tell you anything about the technology itself, just what it's supposed to do, try a [search for
+microsoft infocard"](http://www.google.com/search?q=microsoft+infocard&sourceid=mozilla-search&start=0&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official).  Once you're done getting no information there, how about [search at Microsoft.com for infocard](http://search.microsoft.com/search/results.aspx?st=b&na=88&View=en-US&qu=infocard)? Wow, this time we don't even get useless results, we get nothing. So where's the openness? Where's the interaction with the community and transparency? And how can I find out about these great new technologies? I really don't like being told what I have to use and why I have to use it, and then get no information about what it is under the covers. I get insulted when that happens, and it engenders the mistrust of a crooked marketing campaign.
+
+
+
+
+Microsoft wants to play? Cool, welcome to the game, nice to have you. The game might be played a bit different than what you last remember. These days the game is about conversations, and trust is built through interaction directly with the people whom you desire to win trust from. I will not let you play the game with me if you tell me that you write the rules, so I might as well accept it. The game is pretty well structured to deal with that particular strategy these days, and practitioners usually loose. That's my constructive bit of advice, it's given once. After this time the advice gets a lot less constructive if you keep trying to tell me what choices I should be making without giving me information.
