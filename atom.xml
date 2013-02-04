@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[rowehl.com]]></title>
+  <title><![CDATA[Miker]]></title>
   <link href="http://mikerowehl.github.com/atom.xml" rel="self"/>
   <link href="http://mikerowehl.github.com/"/>
-  <updated>2013-02-03T00:51:56-08:00</updated>
+  <updated>2013-02-04T00:45:57-08:00</updated>
   <id>http://mikerowehl.github.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -14,13 +14,218 @@
 
   
   <entry>
-    <title type="html"><![CDATA[First post in Octopress]]></title>
-    <link href="http://mikerowehl.github.com/blog/2013/02/02/first-post-in-octopress/"/>
-    <updated>2013-02-02T22:55:00-08:00</updated>
-    <id>http://mikerowehl.github.com/blog/2013/02/02/first-post-in-octopress</id>
-    <content type="html"><![CDATA[<p>Super interesting awesome stuff.</p>
+    <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
+    <updated>2006-09-20T05:01:18-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
+    <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, &#8220;there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up&#8221;. A bunch  of searching around in the repository listings turned up no java license related packages.</p>
 
-<p>And yet still more super awesome stuff. I have so much to say!</p>
+<p>You find where <a href="http://www.aspma.com/downloads/">download mp3 music</a> on player, You need <a href="http://www.aspma.com/download/">mp3 music download</a> from online mp3 archive</p>
+
+<p>So I did a search and ended up with <a href="https://jdk-distros.dev.java.net/ubuntu.html">this description of installing Java under Ubuntu</a> which says pretty much what I was doing, except using the graphical package manager instead. &#8220;How lame would it be if you needed to install Java using the Synaptic package manager instead of the command line?&#8221; Not lame enough to discourage doing it apparently. If you&#8217;re looking to install Java under Ubuntu you might have to use the package manager instead of apt-get in order to do it. Next time you see Java people throw rotten fruit at them to let them know how you feel about that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
+    <updated>2006-09-18T16:21:23-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
+    <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee&#8217;s Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke&#8217;s over. You can make it stop.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
+    <updated>2006-09-18T06:16:12-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
+    <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
+
+<p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn&#8217;t cause any problems I&#8217;ll put it in here at work too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Subversion Book]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/15/subversion-book/"/>
+    <updated>2006-09-15T02:46:37-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/15/subversion-book</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
+
+<blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You've Stayed Up Too Late When]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/09/youve-stayed-up-too-late-when/"/>
+    <updated>2006-09-09T21:15:47-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/09/youve-stayed-up-too-late-when</id>
+    <content type="html"><![CDATA[<p>You know you&#8217;ve acidentally let your bedtime slip too close to sunrise when you&#8217;re flipping through the onscreen TV guide and MTV actually lists &#8220;Music Videos&#8221; as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you&#8217;ve somehow ended up in the 80&#8217;s.  Flock of Seagulls anyone?  Don&#8217;t laugh, they&#8217;re <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hilton Ninja]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/06/hilton-ninja/"/>
+    <updated>2006-09-06T02:25:19-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/06/hilton-ninja</id>
+    <content type="html"><![CDATA[<p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HOPE Six Audio Online]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/25/hope-six-audio-online/"/>
+    <updated>2006-08-25T02:57:27-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/25/hope-six-audio-online</id>
+    <content type="html"><![CDATA[<p>The full <a href="http://www.hopenumbersix.net/speakers.html">set of audio from the HOPE six conference</a> is online now. The conf happened just before DEFCON and I hear it has some fantastic stuff that didn&#8217;t show up in Vegas. Download and share!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[http_load for Request Replay]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/23/http_load-for-request-replay/"/>
+    <updated>2006-08-23T16:05:49-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/23/http_load-for-request-replay</id>
+    <content type="html"><![CDATA[<p>The <a href="http://talks.php.net/show/oscon06/0">presentation that Rasmus gave at OSCON</a> this year seems to have kicked some ass. I missed the conf, but got a bunch of interesting info from the slides. In particular I hadn&#8217;t used <a href="http://www.acme.com/software/http_load/">http_load</a> before. Part of what I&#8217;ve been doing at AdMob is taking a look at performance and scaling, so that was a great find. It&#8217;s exactly the set of controls and measurements I normally start out with, and it really does run very efficiently in terms of not loading down the system that http_load is running on.</p>
+
+<p>Just about the only thing that didn&#8217;t work the way I wanted was the random selection from the url list file. I wanted to replay a set of traffic in order, so I <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/08/http_load-miker-01patch.txt">hacked up an -orderedurls option</a> to select from the url list sequentially (repeating the list once you get to the end) instead of randomly choosing. Reading the whole file in and parsing it probably isn&#8217;t the way to go for this particular usage, so I&#8217;ll have to clean it up when the traffic segments I&#8217;m playing get into the millions instead of just the tens of thousands. But it works great for now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linux Lappy]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/17/linux-lappy/"/>
+    <updated>2006-08-17T23:23:23-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/17/linux-lappy</id>
+    <content type="html"><![CDATA[<p>It&#8217;s just about New Laptop Time. Not quite, but almost. Being a Linux only user it&#8217;s always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you&#8217;re thinking about picking up at deep discount from Office Max certainly has not. And I&#8217;m not a dual-booter either. I don&#8217;t have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it&#8217;s my personal laptop, which is what I plan for this to be.</p>
+
+<p>Currently I&#8217;m leaning very heavily toward <a href="http://www.thinkwiki.org/wiki/Category:X41_Tablet">the Thinkpad X41 tablet</a>. It looks like there&#8217;s good X support for a bunch of stuff that&#8217;s traditionally a pain in the ass under Linux. Screen rotation seems to be working (without restarting X, thank god), the input driver for the touchscreen, power management (including frequency scaling), and wireless using ipw2200. Anyone out there with an X41 tried Linux and care to toss in some comments before I pick one of the things up? It&#8217;s hard to tell from wiki postings just how painful is it to get the thing actually setup, and there&#8217;s always the chance that the instructions on the wiki are wrong or incomplete.</p>
+
+<p>On a very much related note, anyone know a good shop in the San Francisco Bay Area that could come up with some Pimp My Ride style dashboard mounting and wiring hookups for my car?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ZeroOne San Jose Art Festival]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/06/zeroone-san-jose-art-festival/"/>
+    <updated>2006-08-06T23:29:07-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/06/zeroone-san-jose-art-festival</id>
+    <content type="html"><![CDATA[<p>This week (August 7th to 13th 2006) is the <a href="http://www.01sj.org/">ZeroOne Arts Festival in San Jose</a>. There was a <a href="http://www.futuresalon.org/2005/02/art_on_the_edge.html">great presentation at Future Salon by one of the ZeroOne staff members</a> where he tossed out a dizzying number of art projects that blend in technology in tantalizing ways. And if the interesting art projects weren&#8217;t enough to get you down there on their own, on Friday there&#8217;s a <a href="http://01sj.org/content/view/217/52/">Survival Research Labs</a> exhibition:</p>
+
+<blockquote><p>&#8230;it’s monster machine, meets hovercraft, meets huge sculptural creatures, meets fire.</p></blockquote>
+
+<p>What better way to spend a Friday night? I have just one question.. tickets through Ticketmaster?  Is that part of the tongue in cheek techno-social commentary? That despite the rapid advance of technology in general the only way to throw a huge ticketed real world event is to use Ticketmaster? We&#8217;ll have to work on a project for the next one that fixes that issue.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Diet of Monkey Chow]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/06/06/a-diet-of-monkey-chow/"/>
+    <updated>2006-06-06T06:06:28-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/06/06/a-diet-of-monkey-chow</id>
+    <content type="html"><![CDATA[<p>This is pure genius! I&#8217;m so disappointed I didn&#8217;t think of it first. A guy trying to <a href="http://www.angryman.ca/monkey.html">live on a diet of pelletized monkey food</a>. FANTASTIC! If it works and he doesn&#8217;t die I&#8217;m definitely doing it. If he does die&#8230; I give myself about a 50-50 chance of still trying it. I should start a run of packaging for the new <a href="http://en.wikipedia.org/wiki/Bachelor_Chow#Bachelor_Chow">Futurama style &#8220;Bachelor Chow&#8221;</a> product just in case. I&#8217;ll probably have to wait a while to add flavor however.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Quarter of a Million Spam Messages]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages/"/>
+    <updated>2006-06-05T00:00:52-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages</id>
+    <content type="html"><![CDATA[<p>I&#8217;m at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by <a href="http://akismet.com/">Akismet</a> so far. I <a href="http://www.rowehl.com/blog/?p=605">turned Akismet on in January of this year</a>. That&#8217;s more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.</p>
+
+<p>The problem is very unevenly distributed however. I have a few other blogs out there, and they tend to get more like a few hundred spam messages a month. I just wanted to point that out given the degree of blowup I see when things happen like <a href="http://announcements.engadget.com/2006/05/30/comments-switched-off/">someone has to turn off comments for a while</a>. The spam problem is not uniformly distributed, just because you get a managable ammount of spam comments that doesn&#8217;t mean someone who blogs about just about the same stuff isn&#8217;t getting hundreds of times more.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Web 2.0 Cease and Desist and Self Healing Systems]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/"/>
+    <updated>2006-05-25T08:40:29-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems</id>
+    <content type="html"><![CDATA[<p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
+
+<p>Things like this are bound to happen in any organization/company once the size gets beyond a certain threshold. Perhaps not quite this ridiculous in most cases, but there will be some evidence of lack of syncronization and goal mismatches. In the real world normally this stuff gets cleared up pretty quick. Tim pops up and says &#8220;wow, we didn&#8217;t mean to do that, sorry!&#8221; or someone at CMP chews the lawyers out and releases a statement&#8230; whatever. The point being that inconsistencies and unexpected situations are generally noticed and dealt with. Outside the blogospere at least. Inside the blogosphere they can live on forever, but that&#8217;s really a whole seperate issue.</p>
+
+<p>Odd situations like that tend to cause failures in software though. When something unexpected comes up within a system it&#8217;s generally catastrophic. When something unexpected comes up during an interaction between systems you&#8217;re sometimes lucky just to find out what happened after the fact. I&#8217;ve been thinking about self healing systems recently, although I can&#8217;t remember what might have kicked it off. And after reading this realized that almost all human designed systems are relatively fragile and rigid. Law being one of the obvious areas of intersection between codification and human behavior I would expect it might hold some hints about how to handle that well. But law is just guidelines, and the rationality really derives from a human in the loop pulling the strings, judge or jurry. It&#8217;s not a system itself really so much as an extension and recording of the will of the judges to keep them from having to repeat themselves. So I keep coming back to the non-human systems to try to find isolated systems that heal well. Insect behavior is one of the classic examples, ants and bees.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[George Bush Jr More Evil Than Cthulhu]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu/"/>
+    <updated>2006-04-21T03:04:39-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu</id>
+    <content type="html"><![CDATA[<p>Wow, folks really hate this <a href="http://lesserevil.ning.com/detail.php?DetailID=425486">George Bush Jr.</a> guy. You would think he roamed around in the streets killing puppies and kicking children or something. I check out the stats for <a href="http://browse.ning.com/any/miker/any/any">all my Ning apps</a> on a daily basis. Cause I&#8217;m vain, no sense in trying to justify it with anything else. And <a href="http://lesserevil.ning.com">LesserEvil</a> had a bunch of hits from Google image searches, searches for Georgie there. So I pull up his detail page and what do I see? &#8220;Cthulhu is less evil than George Bush Jr. 100% of the time.&#8221; Wow, that&#8217;s pretty evil. Or maybe it&#8217;s just interesting commentary on the mindset of folks in the &#8220;online and searching for random stuff cause I have that kind of time on my hands&#8221; segment of the population.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[More Jerry Taylor]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/04/02/more-jerry-taylor/"/>
+    <updated>2006-04-02T22:51:06-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/04/02/more-jerry-taylor</id>
+    <content type="html"><![CDATA[<p>Some <a href="http://www.tuttletimes.com/siteSearch/apstorysection/local_story_088201244.html">additional info about the politician who incorrectly threatened CentOS with FBI action</a>. Gotta love this:</p>
+
+<blockquote><p>“This is just a bunch of freaks out there that don’t have anything better to do,” he said. “When I came in to work Monday morning, I had about 500 e-mails, plus anonymous phone calls from all the geeks out there. [CentOS is] a free operating system that this guy gives away, which tells you how much time he’s got on his hands.”</p></blockquote>
+
+<p>Nice, very nice. Unfortunately we can&#8217;t all resort to threats and scare tactics to get our work done for us. Or can we&#8230;.?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[High Availability NFS]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/04/02/high-availability-nfs/"/>
+    <updated>2006-04-02T22:38:10-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/04/02/high-availability-nfs</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve tried out the <a href="http://www.howtoforge.com/high_availability_nfs_drbd_heartbeat">high availability NFS solution detailed here</a> and run into a few issues. It does provide a great way to get a higher degree of availability for one of the most problematic bits of infrastructure, so I don&#8217;t mean to crap on the idea as a whole. But here are two issues to make sure you either check out or understand before you deploy something like this:</p>
+
+<ul>
+<li><p>We saw write throughput cut in half when DRBD was up and running. If you&#8217;ve got plenty of capacity and can segment as you grow you might be more concerned with the availability than the throughput. And it&#8217;s certainly possible that we could have performed some tuning to get DRBD to perform better. I&#8217;m just saying perform some benchmarks beforehand and afterward to make sure you&#8217;re not impacting the system too negatively without knowing it.</p></li>
+<li><p>This is a block level replication technique, so there&#8217;s no guarantee that a filesystem level error that causes corruption isn&#8217;t just replicated over to the failover box as it happens. True, it&#8217;s much more common that the failure mode be bad blocks at the hardware level than an error at the OS level&#8230;. but once again this is block level replication. A bad block on the master side that goes undetected for even a single read/write cycle will have that incorrect information replicated to the slave. As far as I know (and I admit I haven&#8217;t researched this in a while) there isn&#8217;t a Linux filesystem that does end to end checksumming to prevent this kind of issue.</p></li>
+</ul>
+
+
+<p>Just two things to keep in mind. There&#8217;s some great info in that article in general, like moving the NFS runtime files out to the replicated block device and how to configure heartbeat.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[More SMS.ac Turd Flinging]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/03/29/more-smsac-turd-flinging/"/>
+    <updated>2006-03-29T02:09:11-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/03/29/more-smsac-turd-flinging</id>
+    <content type="html"><![CDATA[<p>These SMS.ac folks just don&#8217;t know when to quit. I was chatting with <a href="http://www.russellbeattie.com">Russ</a> yesterday and this morning, and he was saying that the SMS.ac people are sending him takedown letters for non-libelous content on his blog because he&#8217;s ranked pretty high in the Google search results. I told him to just take down the stuff cause it&#8217;s not worth the effort. I&#8217;m not a lawyer or anything, but I did watch Law and Order this one time and it didn&#8217;t look too hard. And then I figured, wouldn&#8217;t it be a real ball buster if a whole bunch of people <a href="http://www.russellbeattie.com">linked to Russ&#8217;s blog with SMS.ac in the link text</a>, so he&#8217;s still in the top search results for them even after doing everything they ask.  I think it would be, and I think it&#8217;s like, totally justified. That&#8217;s the great thing about scammers and spammers, you can do whatever you want to them and you don&#8217;t have to feel bad.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Makes You Ponder]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/03/28/makes-you-ponder/"/>
+    <updated>2006-03-28T03:14:48-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/03/28/makes-you-ponder</id>
+    <content type="html"><![CDATA[<p>Some things make you think. <a href="http://www.theregister.co.uk/2006/03/27/tuttle_email/">Other things</a> make you wonder if the world wouldn&#8217;t be a better place if public stonings were still in place. That&#8217;s my fucktard of the month right there. Ignorance I can forgive, not everyone has to understand the Interweb. But this goes well beyond that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[End of Line]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/03/15/end-of-line/"/>
+    <updated>2006-03-15T05:33:07-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/03/15/end-of-line</id>
+    <content type="html"><![CDATA[<p>I make <a href="http://en.wikipedia.org/wiki/Tron_%28film%29">Tron</a> jokes pretty frequently. I mean, who doesn&#8217;t, right? It&#8217;s a total classic. But <a href="http://www.defectiveyeti.com/archives/001599.html">this right here</a>, that&#8217;s just fantastic.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kernel Config from Thinkpad X32]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32/"/>
+    <updated>2006-03-13T05:56:09-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32</id>
+    <content type="html"><![CDATA[<p>Someone emailed me asking for the config for the kernel I&#8217;m running on my X32, so I figured I might as well post it instead of just mailing it back.  I&#8217;m using the 2.6.13 drop from <a href="http://www.kernel.org">kernel.org</a> and adding in <a href="http://www.rowehl.com/blog/?p=550">packages like WPA afterward</a>.  Here&#8217;s <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/03/config-2.6.13.txt">the config</a>.</p>
 ]]></content>
   </entry>
   

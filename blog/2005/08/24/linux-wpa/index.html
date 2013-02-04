@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Linux WPA - Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I&#8217;ve had a background task running that steals a few cycles whenever I should be sleeping and checks out what it would get to make the laptop I &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/2005/08/24/linux-wpa/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Linux WPA</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-08-24T18:48:23-07:00" pubdate data-updated="true">Aug 24<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&#8217;ve had a background task running that steals a few cycles whenever I should be sleeping and checks out what it would get to make the laptop I have from work do WPA. I have a Thinkpad R51 I inherited, and while I wait for my laptop to come in I&#8217;ve been playing around with it to see what I could get working. The work wireless network uses WPA-PSK, and that&#8217;s something that&#8217;s always been a pain for Linux. So here&#8217;s my quick description of getting the Thinkpad R51 (using the <a href="http://ipw2200.sourceforge.net/">Intel ipw2200</a> driver) working with WPA. I&#8217;m using <a href="http://www.ubuntulinux.org/">Ubuntu</a> as the distro by the way, 5.04 in particular. So maybe these instructions will actually be relevant to someone!</p>
+
+<ul>
+<li><p>The ipw2200 driver that ships with the default kernel in Ubuntu doesn&#8217;t have support for a lot of the operations that the WPA setup requires. I started out with a fresh download of the latest stable kernel (2.6.12.5 as of this writing) just to head off any potential issues with newness of versions. This is pretty bleeding edge stuff (there are Makefiles at least, so it could be worse :-).</p></li>
+<li><p>Grab the config from /boot and copy it to .config in your new kernel area, make menuconfig and resave, compile, install, generally get the system working with that new kernel</p></li>
+<li><p>Grab the <a href="http://ieee80211.sourceforge.net/">ieee80211 subsystem</a>, I used the latest as of this writing, 1.0.3. The compile and install is very easy here (Yay for installed kernel headers!!).</p></li>
+<li><p>Now grab the <a href="http://ipw2200.sourceforge.net/">driver for the network card, ipw2200</a>. I used 1.0.6, which was the latest as of this writing. You&#8217;ll also need the latest firmware, also linked to from the ipw2200 page. The releases of firmware are numbered according to which versions of the driver they go with. The firmware I grabbed started with 1.0.4 and ran through the current version. Compile and install the ipw2200 driver, copy the firmwares into place (I used /lib/hotplug/firmware).</p></li>
+<li><p>And finally you&#8217;ll need a copy of <a href="http://hostap.epitest.fi/wpa_supplicant/">wpa_supplicant</a>. This is where things start to get really sketchy. This is bleeding edge for you. You&#8217;ll have to create a configuration file for the package in order to build it.  Here&#8217;s what mine looks like:
+`CONFIG_DRIVER_IPW=y</p>
+
+<h1>CONFIG_DRIVER_BSD=y</h1>
+
+<h1>CONFIG_DRIVER_NDIS=y</h1>
+
+CONFIG_WIRELESS_EXTENSION=y
+CONFIG_IEEE8021X_EAPOL=y
+CONFIG_EAP_MD5=y
+CONFIG_EAP_MSCHAPV2=y
+CONFIG_EAP_TLS=y
+CONFIG_EAP_PEAP=y
+CONFIG_EAP_TTLS=y
+CONFIG_EAP_GTC=y
+CONFIG_EAP_OTP=y
+
+<h1>CONFIG_EAP_SIM=y</h1>
+
+<h1>CONFIG_EAP_AKA=y</h1>
+
+CONFIG_EAP_PSK=y
+CONFIG_EAP_PAX=y
+CONFIG_EAP_LEAP=y
+
+<h1>CONFIG_PCSC=y</h1>
+
+<p>`I coppied wpa_supplicant and wpa_cli to /usr/local/bin, although I&#8217;m pretty sure that&#8217;s superfluous.</p></li>
+<li><p>Then take the wpa_supplicant.conf sample file and tailor it to your needs. I just followed the example from in there that most closely matched my setup.</p></li>
+<li><p>Run wpa_supplicant giving it the interface to use and the configuration file: &#8220;wpa_supplicant -ieth0 -c/etc/wpa_supplicant.conf -d&#8221; The -d option keeps it in the foreground so you can see all the debugging output. If it works you should see messages saying that it&#8217;s associated with a basestation and extablished a key.</p></li>
+</ul>
+
+
+<p>Tada! Now you can run scripts against the interface to do things like DHCP and everything should be all peachy. Sweet! Now I don&#8217;t have to use a Windows machine just so I can tool around the office downloading stuff and looking like I&#8217;m important.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mike Rowehl</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-08-24T18:48:23-07:00" pubdate data-updated="true">Aug 24<span>th</span>, 2005</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/open-source/'>Open Source</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mikerowehl.github.com/blog/2005/08/24/linux-wpa/" data-via="miker" data-counturl="http://mikerowehl.github.com/blog/2005/08/24/linux-wpa/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2005/08/24/google-talk-services-server-to-server/" title="Previous Post: Google Talk: Services? Server to Server?">&laquo; Google Talk: Services? Server to Server?</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2005/08/25/google-talk-openness/" title="Next Post: Google Talk Openness">Google Talk Openness &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I'm Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I've been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I've been programming and working with open source projects for even longer.
+    I'm a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You've Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

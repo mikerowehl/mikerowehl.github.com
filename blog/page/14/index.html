@@ -1,0 +1,906 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I went over to Palm DevCon this past week, and I won the Treo 650 they raffled off! Lucky me, I didn&#8217;t have to buy one. Unlucky me, now I don&# &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/page/14/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/27/the-horror-the-horror/">The Horror! The Horror!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-27T20:13:33-07:00" pubdate data-updated="true">May 27<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I went over to <a href="http://www.palmsource.com/events/devcon2005/">Palm DevCon</a> this past week, and I won the Treo 650 they raffled off!  Lucky me, I didn&#8217;t have to buy one. Unlucky me, now I don&#8217;t have any excuses for not updating my palm software. I didn&#8217;t even turn it on till this evening, things being busy as they are. I threw my TMobile SIM into the phone and stuff &#8220;just worked&#8221;, which was pretty cool. Normally voice will just work, but you&#8217;ll have to setup other options to get data services working. I pulled up the web browser and pulled up my blog though, and it worked as it was. Nice. And then the full realization that I had an unlocked quadband GSM version sunk in. See, normally Treos come in a <a href="http://www.engadget.com/entry/1234000983029058/">crippled version reflecting the suckitude that is the greed of the american cellular service provider</a>. Most versions can&#8217;t be used as a Bluetooth modem with a PC. The one I have does have a dialup networking option! W00t w00t!</p>
+
+<p>I already had my 6600 setup to do dialup networking over Bluetooth, so I figured it would be at the worst mildly annoying to get the Treo working with my Mac (OS X.3.9). Oh man, was I ever wrong. First I couldn&#8217;t pair the phone with my laptop. This isn&#8217;t rocket science, it&#8217;s one of the most basic of Bluetooth operations. Yet the process kept hanging, the Mac cycling forever waiting for some response from the phone. I took a look around and found a <a href="http://discussion.treocentral.com/showthread.php?t=71567&amp;page=2&amp;pp=20&amp;highlight=bluetooth+cingular">thread on treocentral.com talking about pairing a Treo 650 with OS X</a> and discovered that I should be pairing as &#8220;other&#8221; and not a phone. Okay, whatever, not a big deal. But even after doing that, there were no services detected for the Treo. That meant I wasn&#8217;t able to bring up the configuration I needed on the laptop to use the Bluetooth modem. So I flailed around for a while, eventually getting the laptop to rescan services AFTER being paired, and my phone finally said it could provide dialup networking. Still I couldn&#8217;t find how to configure the Bluetooth modem connection. I knew things were at least partially working though, cause I could open the tty associated with the phone and throw modem commands and see responses. But how to configure the service? Back to flailing. So without deleting the pairing I again initiated the request from the phone. This time, with the record for DUN already being pushed into the laptops information about the phone, now I got a screen that let me configure the network to use the phone. I ended up needing <a href="http://www.taniwha.org.uk/">the generic GPRS script from this set of connection scripts</a> to get the modem connected. But it worked! I snapped the <a href="http://www.bitsplitter.net/projects/treo-bbr.jpg">Broadband Reports chart for TMobile data using a Treo 650</a>. It&#8217;s an EDGE device, but I&#8217;m on TMobile so I don&#8217;t see any major speed increase (TMobile doesn&#8217;t have an EDGE network out here in the Bay Area).</p>
+
+<p>So it works, I&#8217;m happy, but there are a few gotchas. The first is that you have to choose between either using Dialup Networking or using the network functions local on the device. This is an option that the user has to manually set and reset with every usage. I could pretty much be okay with only one of the two working at a time. But having the user have to switch it manually with each usage is just crazy. If only one works at a time detect the Bluetooth connection and only try to claim the network automatically if there are no open connections from phone apps. If there are then ask the user if they want to terminate the current connections to allow a Bluetooth based dialup networking session. Sounds pretty logical to me. My guess is that Palm knew that the DUN functions where going to be crippled out by carriers anway, so they didn&#8217;t bother to do it right. The other is that disconnecting the dialup session doesn&#8217;t close down the Bluetooth connection.  I need to go in and shut down the Bluetooth connection after using the networking control panel to stop the dialup session. It could be worse.. like it did with the 6600 the Mac could just fail to disconnect in an unrecoverable state. Now I need to try this out with Elle&#8217;s Cingular SIM and sample the EDGE-y goodness.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling/">Odd Quirk in Bloglines Cache Handling</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-27T08:47:20-07:00" pubdate data-updated="true">May 27<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I noticed something kinda odd when adding a new feed to our ad publishing system today. I test with <a href="http://www.bloglines.com">Bloglines</a> cause I love the system. It&#8217;s my normal use aggregator and by far my favorite. However I noticed that after having run my testing feeds with ads in them through Bloglines that when I went to view the source version of the feed in Bloglines it had ads in it too!  I went back and viewed the source of the feed in my browser, and sure enough there were no ads.  Hmm, it seems like my testing of the ad populated version somehow caused ads to appear in the original version. How could that be? When I test out feeds I put them in a public place, and just scp the feed output from my laptop and pass it through some web based aggregators to make sure that nothing odd happens. However I don&#8217;t change any of the links within the feed.  So although my feed might reside at, oh, I don&#8217;t know, lets say <a href="http://www.bitsplitter.net/herepiggypiggypiggy.xml">http://www.bitsplitter.net/herepiggypiggypiggy.xml</a>, the links within the feed still point to site the original content came from. The end result is that if you have a link like <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss">http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss</a> which would seem to subscribe you to Mark Fletcher&#8217;s blog, it really takes you to a fake post I shoved into Bloglines to make it look kinda like it&#8217;s hosted at Mark&#8217;s site. Astute subscribers will notice the mismatch between the urls in the feed info, but most people aren&#8217;t astute. I think there might be more insidious uses for this, like setting the link location for the feed to an already existing site. I don&#8217;t want to be mean and try it on existing feeds, but my little bit of fooling around would seem to indicate that the fake version could shove entries into the cache for the overall feed. So there you go Bloglines folks, there&#8217;s my free suggestion for the day. Refetch if the current cache version comes from outside the link domain and the user is requesting an &#8220;authoritative copy&#8221; (something from the same URL as the feed link).</p>
+
+<p>Update: Niall <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/">did one too</a>. He helped me test out the stuff I was playing with.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/26/organ-grinder/">Spit the Vile Breath Till My Tongue Bleeds</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-26T17:06:57-07:00" pubdate data-updated="true">May 26<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I haven&#8217;t been able to post much to this blog. I tried to for a while but other issues rapidly sucked up all my time. I haven&#8217;t even had time to read news except for the bits I can read on my phone while I&#8217;m wedged between two people on Caltrain. The <a href="http://www.jayallen.org/journey/2005/05/a_new_hope">post that Jay Allen has up about trying to reign in your schedule</a> really struck a chord with me. Yet here I am at 1:00 in the morning once again, testing out some code and checking to make sure that the SMS messages I&#8217;m getting from my monitoring systems are because someone else messed up and not me. Maybe I need a less stressful job, something like <a href="http://www.flickr.com/photos/miker/15873937/in/photostream/">Menlo Park police officer</a>.</p>
+
+<p>Most of the time it seems like it&#8217;s worthwhile. It&#8217;s kind of a thrill to take what just about anyone would say is a trivial amount of resources and make a unique system out of it. Keep it up and running while slowly twisting it to do new things. But when you run on the edge sometimes stuff falls off. Sometimes it&#8217;s cause you screwed up. Sometimes the datacenter gets moved from one coast to another and some strange transient error causes problems no one can really pinpoint. Most of the time you expect people to react to your issues the same way you react to theirs, by showing some flexibility and dealing with it in whatever way is necessary. Occasionally there&#8217;s some friction. Especially when you&#8217;re trying to move quickly. In general the flexibility and friction balance out across the team, and the <a href="http://en.wikipedia.org/wiki/Forming-storming-norming-performing">bits of conflict tend to actually draw the team together rather than pull it apart</a>. But when everyone gets pissed off it&#8217;s like a swift kick in the crotch. What seemed like an intriguing set of challenges for a team quickly turns into a baffling set of obstacles when it seems like you&#8217;re doing it <a href="http://www.lyricspy.com/6521/Skunk_Anansie_lyrics/Charlie_Big_Potatoe_lyrics.html">alone</a>. It&#8217;s the kind of thing that really makes one reevaluate their own ability, what they&#8217;re doing, and who they&#8217;re doing it with.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/20/theres-an-opportunity-in-there-somewhere/">There&#8217;s an Opportunity in There Somewhere</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-20T00:16:06-07:00" pubdate data-updated="true">May 20<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just read <a href="http://www.technologyreview.com/articles/05/06/issue/invite.asp?p=1">Good-Bye to Venture Capital</a> (link via <a href="http://www.feld.com/blog/archives/2005/05/howard_anderson.html">Brad Feld</a>) and the whole thing seems to stand in stark contrast to what I&#8217;ve been seeing. I tend to agree more with <a href="http://avc.blogs.com/a_vc/2005/05/parting_shots.html">Fred Wilson</a>. A couple of odd things have happened directly to me over the last few weeks. Mind you, my take on this might be a bit skewed compared to other folks in Silicon Valley. I wasn&#8217;t here for the boom, I kinda missed that whole thing. I moved here mid 2001, when most people seemed to be headed out of the area and not into it. I&#8217;m not quite sure how the whole boom got started or what it looked like from the inside. But I can tell you that the previous 4 years here were nothing like the last 2 months.</p>
+
+<p>First of all, there&#8217;s the requests that come through <a href="http://www.mobilemonday.com">Mobile Monday</a>. We started up the group because we thought there wasn&#8217;t all that much innovative work happening in the valley with respect to mobility. It seemed like Europe was way ahead on this one, they have the huge penetration they must have the innovation. I was wrong. After starting the group innovative companies just came pouring out of the woodwork. They were out there, they just weren&#8217;t making much noise. They were below the radar of even someone like myself, who has worked in the area for a while and in general decently in tune with the technologies. Then I went over to Europe for a conference on mobility and saw the things they&#8217;re working on. The innovation is here, I&#8217;m now completely convinced. A lot of those innovators aren&#8217;t looking to VCs for funding however, and for some reason the VCs aren&#8217;t looking for them. There&#8217;s a disjoin between innovative technologies and the markets they best serve - I thought that&#8217;s what VCs were supposed to help with in part. I think some of the folks are smart enough to pull off some amazing runs. But they&#8217;re probably going to be doing it on their own.</p>
+
+<p>The second odd thing is the number of calls I get. In my former life I did a shitload of Linux embedded systems programming, and my resume is still slanted pretty heavy in that direction. I&#8217;ve been getting unsolicited calls and emails at an increasing pace lately from folks looking to kill some existing business model using open source. The concentration seems to be pretty heavily on the networking and appliances side. I talked to three different companies yesterday alone, one of whom specifically says they&#8217;re &#8220;going straight for Cisco&#8221;. Now, granted, plays like this are pretty rational market. Open source for something like a networking device is more of an optimization than a disruption at the market level. But what happens in the adjacent areas should be pretty interesting. I think that in a few months the buzzwords might shift from the long tail to the <a href="http://management.itmanagersjournal.com/article.pl?sid=04/05/10/2052216&amp;tid=85#TheOptimizationStrategy">conservation of modularity</a> ideas that Clayton Christensen presented at the Open Source Business Conference.</p>
+
+<p>So maybe that means nothing from the VC side. I&#8217;ve never had a few million to invest any way my little heart desires. I&#8217;ve only been on the other side of the table, where I&#8217;m sure the same world looks completely different. But from where I&#8217;m standing the opportunities seem fantastic - the problem might not be the market. Maybe VC has to (<em>GASP</em>) shift tactics in order take advantage of the current opportunities. Us folks you&#8217;ve been funding have been doing that for a while, I think the proper term for it is &#8220;business&#8221;. Take a step back, clear your mind of the millions of dollars at your disposal, and realize that you&#8217;re in business yourselves. You think you can spot innovation in the markets you&#8217;ve been investing in? Good. Cause you&#8217;re gonna have to start doing it in your own.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/19/transcript-from-futuresalon-irc-channel/">Transcript From #FutureSalon IRC Channel</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-19T15:10:30-07:00" pubdate data-updated="true">May 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Here&#8217;s the transcript from the IRC channel during the <a href="http://www.futuresalon.org/2005/05/ode_to_dump_age.html">Enough Dumb Agents Get Smart presentation at Future Salon</a>:</p>
+
+<p>[7:15pm] JeffClavier: <a href="http://sfbayacm.org/">http://sfbayacm.org/</a> is the URL for San Francisco Bay Area Chapter, ACM</p>
+
+<p>[7:21pm] NiallKennedy joined the chat room.</p>
+
+<p>[7:22pm] miker: Hey Niall</p>
+
+<p>[7:22pm] NiallKennedy: hi Mike</p>
+
+<p>[7:23pm] miker: Are you watching the video?</p>
+
+<p>[7:23pm] NiallKennedy: yes. are you remote or local?</p>
+
+<p>[7:23pm] miker: local</p>
+
+<p>[7:23pm] miker: how is the video/audio?</p>
+
+<p>[7:24pm] NiallKennedy: video is pretty good, audio is good considering it&#8217;s of the audience right now</p>
+
+<p>[7:24pm] NiallKennedy: am I being projected?</p>
+
+<p>[7:25pm] miker: Yup, video screens up with IRC on it, right behind Rafer actually</p>
+
+<p>[7:25pm] miker: hi nialllll!</p>
+
+<p>[7:25pm] miker: that was Elle stealing my keyboard</p>
+
+<p>[7:25pm] JeffClavier: Yo Niall</p>
+
+<p>[7:25pm] NiallKennedy: hi Jeff</p>
+
+<p>[7:25pm] miker: steacl</p>
+
+<p>[7:27pm] NiallKennedy: Cheesecake Factory</p>
+
+<p>[7:28pm] NiallKennedy: and I was sitting next to Scott, across from Mark :)</p>
+
+<p>[7:29pm] miker: del.</p>
+
+<p>[7:29pm] miker: icio.us</p>
+
+<p>[7:29pm] miker: oops</p>
+
+<p>[7:29pm] miker: del.icio.us</p>
+
+<p>[7:30pm] JeffClavier: <a href="http://del.icio.us">http://del.icio.us</a></p>
+
+<p>[7:31pm] markfinnern joined the chat room.</p>
+
+<p>[7:31pm] waynesville joined the chat room.</p>
+
+<p>[7:32pm] markfinnern: HI Wayne how is the sound and the video?</p>
+
+<p>[7:32pm] waynesville: It&#8217;s good</p>
+
+<p>[7:33pm] waynesville: I missed the beginning. (Dinner)</p>
+
+<p>[7:38pm] NiallKennedy: <a href="http://www.amazon.com/exec/obidos/ASIN/068486875X/">http://www.amazon.com/exec/obidos/ASIN/068486875X/</a></p>
+
+<p>[7:39pm] markfinnern: <a href="http://www.ahding.com/cheapgas/">http://www.ahding.com/cheapgas/</a></p>
+
+<p>[7:39pm] JeffClavier: <a href="http://softtechvc.buzznet.com">http://softtechvc.buzznet.com</a> is my moblog</p>
+
+<p>[7:41pm] waynesville: <a href="http://www.flickr.com/photos/tags/scottrafer/">http://www.flickr.com/photos/tags/scottrafer/</a> - has just 2 piccies</p>
+
+<p>[7:42pm] NiallKennedy: <a href="http://www.technorati.com/tag/scottrafer/">http://www.technorati.com/tag/scottrafer/</a></p>
+
+<p>[7:42pm] NiallKennedy: one del.icio.us entry</p>
+
+<p>[7:43pm] johnca joined the chat room.</p>
+
+<p>[7:45pm] NiallKennedy: <a href="http://podscope.com/">http://podscope.com/</a></p>
+
+<p>[7:46pm] waynesville: what did he say they&#8217;ll do on 911?</p>
+
+<p>[7:47pm] NiallKennedy: E911. geolocation built-in to mobile phones</p>
+
+<p>[7:48pm] NiallKennedy left the chat room.</p>
+
+<p>[7:48pm] NiallKennedy joined the chat room.</p>
+
+<p>[7:49pm] waynesville: I&#8217;m &#8220;waynerad&#8221; on skype</p>
+
+<p>[7:49pm] johnca: hi wayne!</p>
+
+<p>[7:50pm] markfinnern: <a href="http://www.flickr.com/photos/tags/futuresalon/">http://www.flickr.com/photos/tags/futuresalon/</a></p>
+
+<p>[7:50pm] waynesville: whois johnca</p>
+
+<p>[7:50pm] waynesville: boh</p>
+
+<p>[7:50pm] johnca: John Abbe</p>
+
+<p>[7:50pm] waynesville: hmm. i forgot irc commands</p>
+
+<p>[7:50pm] waynesville: oh! hi john!</p>
+
+<p>[7:51pm] waynesville: this is pretty cool we can talk without interupting scott</p>
+
+<p>[7:52pm] johnca: yeah, but everyone in the room can follow the conversation (it&#8217;s on screens here)</p>
+
+<p>[7:52pm] miker: we&#8217;ll have to setup a hecklebot for next time</p>
+
+<p>[7:53pm] waynesville: yeah but they&#8217;re not looking at the screen. They&#8217;re looking at Scott</p>
+
+<p>[7:53pm] NiallKennedy: drinking game with each mention of tags or long tail</p>
+
+<p>[7:54pm] waynesville: heehee</p>
+
+<p>[7:55pm] waynesville: hey niall. tag my long tail</p>
+
+<p>[7:56pm] waynesville: now we just need a firefox extension for automatic tagging while u browse</p>
+
+<p>[7:56pm] miker: I&#8217;m thinking greasemonkey to add the form to anything would be a good idea</p>
+
+<p>[7:56pm] NiallKennedy: already exists</p>
+
+<p>[7:56pm] NiallKennedy: Yahoo! has it</p>
+
+<p>[7:57pm] miker: but I just saw this for the first time today, so I haven&#8217;t tried it out at all</p>
+
+<p>[7:57pm] NiallKennedy: yep</p>
+
+<p>[7:57pm] NiallKennedy: goatse!</p>
+
+<p>[7:58pm] waynesville: reaaaaally?</p>
+
+<p>[7:58pm] waynesville: url?</p>
+
+<p>[7:59pm] markfinnern: Marc Canter post: <a href="http://marc.blogs.it/archives/2005/03/opentopics.html">http://marc.blogs.it/archives/2005/03/opentopics.html</a></p>
+
+<p>[7:59pm] waynesville: www.waynerad.com/porn</p>
+
+<p>[7:59pm] waynesville: just kidding</p>
+
+<p>[8:00pm] GabeRiv joined the chat room.</p>
+
+<p>[8:01pm] NiallKennedy: Outline Processor Markup Language</p>
+
+<p>[8:02pm] miker: Nonsense! :-)</p>
+
+<p>[8:02pm] waynesville: hmm i can&#8217;t read that blog post and follow mr Scott</p>
+
+<p>[8:02pm] waynesville: at the same time</p>
+
+<p>[8:02pm] NiallKennedy: <a href="http://developers.technorati.com/wiki/RelTag">http://developers.technorati.com/wiki/RelTag</a></p>
+
+<p>[8:02pm] NiallKennedy: (existing tag work)</p>
+
+<p>[8:03pm] JeffClavier: Loomia still stealth :-)</p>
+
+<p>[8:04pm] waynesville: whoops he just un-stealthed them</p>
+
+<p>[8:05pm] NiallKennedy: <a href="http://www.loomia.com/">http://www.loomia.com/</a></p>
+
+<p>[8:06pm] waynesville: It looks like the website is just some copy</p>
+
+<p>[8:07pm] JeffClavier: some copy of ?</p>
+
+<p>[8:07pm] waynesville: i meant text.</p>
+
+<p>[8:07pm] waynesville: e.g. salescopy</p>
+
+<p>[8:07pm] waynesville: sorry overloaded word definition</p>
+
+<p>[8:08pm] JeffClavier: I never lie, I only exagerate :-P exagerate :-P</p>
+
+<p>[8:10pm] waynesville: Quote of the day. &#8220;It&#8217;s information inefficiency that turns out to drive things&#8221; &#8211; Scott Rafer</p>
+
+<p>[8:11pm] waynesville: oh god daya talks about myspace every day&#8230;</p>
+
+<p>[8:12pm] waynesville: serendipity</p>
+
+<p>[8:12pm] waynesville: there&#8217;s a firefox extension called serendipity</p>
+
+<p>[8:13pm] waynesville: i wonder what it&#8217;ll give me if i go to feedster</p>
+
+<p>[8:13pm] johnca: ObLanka: &#8220;serendipity&#8221; comes from Serendib, an old Arab name for Sri Lanka</p>
+
+<p>[8:13pm] waynesville: oh, sorry, it&#8217;s called StumbleUpon, not serendipity.</p>
+
+<p>[8:13pm] waynesville: realy? i did not know that</p>
+
+<p>[8:13pm] NiallKennedy: Pinpoint</p>
+
+<p>[8:13pm] johnca: I haven&#8217;t been on this chat from the beginning, and someone asked that this chat get captured and posted to the mailing list. Will someone do that?</p>
+
+<p>[8:14pm] miker: I&#8217;ve been on since the start, I&#8217;ll grab it and post</p>
+
+<p>[8:14pm] waynesville: I wasn&#8217;t here from the beginning either</p>
+
+<p>[8:14pm] waynesville: cool thanks miker</p>
+
+<p>[8:21pm] johnca: <a href="http://peerflix.net/">http://peerflix.net/</a></p>
+
+<p>[8:21pm] markfinnern: <a href="http://www.peerflix.com/">http://www.peerflix.com/</a></p>
+
+<p>[8:22pm] waynesville: peerflix looks like mediachest</p>
+
+<p>[8:23pm] waynesville: hmm no peerflix is different</p>
+
+<p>[8:23pm] johnca: howso?</p>
+
+<p>[8:23pm] waynesville: with mediachest you have to return DVDs. It&#8217;s like checking DVDs out of a library.</p>
+
+<p>[8:24pm] waynesville: Only the &#8220;library&#8221; is someone else on the internet</p>
+
+<p>[8:24pm] waynesville: whereas peerflix just moves a pool of DVDs around to whoever wants them</p>
+
+<p>[8:25pm] waynesville: he&#8217;s talking about intrinsic vs extrinsic motivation</p>
+
+<p>[8:26pm] waynesville: e.g. <a href="http://en.wikipedia.org/wiki/Intrinsic_motivation">http://en.wikipedia.org/wiki/Intrinsic_motivation</a></p>
+
+<p>[8:26pm] waynesville: people who can make money from a personal passion are very lucky</p>
+
+<p>[8:27pm] johnca: Punished By Rewards, Alfie Kohn (excellent book re intrinsic motivation)</p>
+
+<p>[8:27pm] NiallKennedy: when is the talk going to come back to smart agents?</p>
+
+<p>[8:28pm] waynesville: The Chinese WILL figure out a way to control information flow.</p>
+
+<p>[8:28pm] waynesville: Just watch.</p>
+
+<p>[8:29pm] johnca: And then the Chinese will figure out how to circumvent that control. Neh?</p>
+
+<p>[8:29pm] johnca: (and then control will be exerted again, etc.)</p>
+
+<p>[8:30pm] johnca: or more seriously, what makes you think that battle will be &#8220;won&#8221; by those who wish to control?</p>
+
+<p>[8:31pm] johnca: <a href="http://sciencecommons.org/">http://sciencecommons.org/</a></p>
+
+<p>[8:31pm] JeffClavier_ joined the chat room.</p>
+
+<p>[8:31pm] markfinnern: Science Commons: <a href="http://science.creativecommons.org/">http://science.creativecommons.org/</a></p>
+
+<p>[8:32pm] waynesville: I thought the Chinese would not be able to control information flow on the internet, but they&#8217;ve proven me wrong (so far).</p>
+
+<p>[8:32pm] bobcat62 joined the chat room.</p>
+
+<p>[8:32pm] waynesville: So now my expectation is they will continue to prove me wrong</p>
+
+<p>[8:39pm] johnca left the chat room.</p>
+
+<p>[8:40pm] johnca joined the chat room.</p>
+
+<p>[8:45pm] JeffClavier_: Plug: if you are interested in the future of Vertical Search, join us for SDForum&#8217;s Vertical LEAP: <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1680">http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1680</a><br/>
+[8:48pm] waynesville: opt-in? what?</p>
+
+<p>[8:49pm] miker: copyright. talking about the default state being a copyright for new works</p>
+
+<p>[8:49pm] waynesville: Oh, opt-in to copyright</p>
+
+<p>[8:49pm] waynesville: I get it now</p>
+
+<p>[8:49pm] waynesville: I didn&#8217;t understand the question when he first asked but I get it now</p>
+
+<p>[8:50pm] NiallKennedy: oooh, politics now</p>
+
+<p>[8:51pm] JeffClavier left the chat room. (Read error: 110 (Connection timed out))</p>
+
+<p>[8:54pm] waynesville: video.google.com</p>
+
+<p>[8:58pm] waynesville: I never thought I&#8217;d hear Mike Korns say &#8220;currency is not useful&#8221;</p>
+
+<p>[8:58pm] waynesville: Ahhh &#8211; &#8220;IF information can provide food and shelter&#8221;. That will never happen.</p>
+
+<p>[9:00pm] johnca: people lived that way for millions of years, why not?</p>
+
+<p>[9:00pm] waynesville: Because information != energy. Food is energy.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/17/wordpress-151-conditional-get-breakage/">Wordpress 1.5.1 Conditional Get Breakage?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-17T11:01:58-07:00" pubdate data-updated="true">May 17<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sorry to chuck this here, but I&#8217;m on my way off to meet up with some folks and don&#8217;t have time to search out if this is a known issue or not.  It looks like the conditional get support in <a href="http://www.wordpress.org">Wordpress 1.5.1</a> might be broken for some combinations of requests and maybe PHP versions. There&#8217;s this check in wp-blog-header.php:</p>
+
+<blockquote><p>if ( ($client_last_modified &amp;&amp; $client_etag) ?</p>
+
+<pre><code>            ((strtotime($client_last_modified) &gt;= strtotime($wp_last_modified)) &amp;&amp; ($client_etag == $wp_etag)) :
+            ((strtotime($client_last_modified) &gt;= strtotime($wp_last_modified)) || ($client_etag == $wp_etag)) )
+</code></pre></blockquote>
+
+<p>The problem is when there&#8217;s no last modified header at all, so $client_last_modified is false, and we evaluate the second alternate of that conditional. For all the versions of PHP I&#8217;ve tried the strtotime() function treats false the same as &#8220;now&#8221; and returns the current time. Thus strtotime( false ) is always greater than the $wp_last_modified time. And I get odd responses like this:</p>
+
+<blockquote><p>hole:~ miker$ more feedreq.raw
+GET /blog/?feed=atom HTTP/1.0
+Host: www.thisismobility.com
+hole:~ miker$ cat feedreq.raw | nc www.thisismobility.com 80
+HTTP/1.1 304 Not Modified
+Date: Wed, 18 May 2005 01:59:52 GMT
+Server: Apache/1.3.31 (Unix) DAV/1.0.3 mod_gzip/1.3.26.1a PHP/4.3.10 mod_ssl/2.8.19 OpenSSL/0.9.6c
+ETag: &#8220;2d0a68b8eeadb53e4597a041c96a83c8&#8221;
+X-Pingback: http://www.thisismobility.com/blog/xmlrpc.php
+X-Powered-By: PHP/4.3.10
+Last-Modified: Fri, 13 May 2005 12:32:30 GMT
+Connection: close
+Content-Type: text/html</p></blockquote>
+
+<p>hole:~ miker$</p>
+
+<p>No state headers at all and a 304 return? No wonder people were telling me they were having trouble with the This is Mobility feed. Anyone else seeing that, or did I mess something up and not notice? I thought I had a clean 1.5.1 install, but I&#8217;ve been known to flail and then forget about it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/17/nintendo-revolution/">Nintendo Revolution</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-17T01:26:32-07:00" pubdate data-updated="true">May 17<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Engadget has <a href="http://www.engadget.com/entry/1234000790043627/">a pic of the Nintendo Revolution gaming system</a>. They say the missing corner makes it look like a secure digital/multimedia card. True. Personally I think it shouts out for the sarcastic tagline: &#8220;Nintendo Revolution: We Cut Corners!&#8221;</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/16/vertical-leap-vertical-search-conference/">Vertical Leap Vertical Search Conference</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-16T06:49:13-07:00" pubdate data-updated="true">May 16<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.500hats.com/sys-tmpl/door/">Dave McClure</a> and <a href="http://www.softtechvc.com/">Jeff Clavier</a> are putting together <a href="http://blog.softtechvc.com/2005/05/introducing_ver.html">Vertical Leap, a vertical search conference</a>. The event is <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1680">being run through SDForum</a>.  And of course I just recently let my SDForum membership lapse because I haven&#8217;t been as interested in their events as I have been in the free stuff. If getting folks like Dave and Jeff involved is a general trend and not an isolated coincidence I&#8217;ll have to renew my membership.</p>
+
+<p><a href="http://www.bitsplitter.net/blog/?p=486">BayCHI put on a fantastic panel on search last month</a>, and there&#8217;s been a lot of interesting activity going on. Working at <a href="http://www.feedster.com">Feedster</a> has made me even more aware of search advances than I was before, and some of the services like <a href="http://jobs.feedster.com/">jobs.feedster.com</a> are exactly inline with what I expect the discussion to be about. Stuff like <a href="http://www.bitsplitter.net/blog/?p=503">structured blogging</a> and <a href="http://developers.technorati.com/wiki/MicroFormats">microformats</a> to enter into the conversation at some point. I&#8217;ve heard pretty good arguments on both sides of the explicit vs. implicit metadata debate. I guess I really don&#8217;t care which side wins out, or if it just ends up a draw. But <a href="http://www.ellementk.com/archives/2005/04/13/323">folks who would like to experiment with the stuff as normal users</a> don&#8217;t really have a way to, and I would like to be able to answer the questions Elle has without having to make crap up. Apparently the <a href="http://worcester.typepad.com/pc4media/2005/05/structured_blog.html">tools and services are going to start growing support soon</a>, I can&#8217;t wait to see what falls out. I really don&#8217;t want to have to implement a structured blogging parsing engine here at home, but I do have an editor window open already&#8230;.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/16/rafer-at-future-salon-this-week/">Rafer at Future Salon This Week</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-16T01:15:03-07:00" pubdate data-updated="true">May 16<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Rafer is <a href="http://www.futuresalon.org/2005/05/may_future_salo.html">going to be the presenter at Future Salon this week</a>:</p>
+
+<blockquote><p>Social media is delivering the dream of intelligent agent technology in an unexpected way. RSS, tagging, cameraphones, social networks, and a dozen other point technologies are ganging up to create the benefits we all expected from intelligent agents. Except &#8211; the intelligent agents turn out to be human beings going about our everyday lives, using dumb tools to publish meaningless snippets and anecdotes in machine-readable, sometimes open-standards forms. Each of us becomes the intelligent publisher of many different dumb agents, which we do very easily.</p></blockquote>
+
+<p>Software applications all over the planet aggregate them in unexpected ways, providing online services of astonishing value at very little cost.</p>
+
+<p>I&#8217;ve been going to the Future Salon events more and more often, they&#8217;ve been quite interesting. Even though I speak to Scott on pretty much a daily basis, I&#8217;m sure he&#8217;s going to have plenty to say that we&#8217;ve never touched on before. The <a href="http://www.syndicateconference.com">Syndicate Conference</a> is the two days just before the event, and I&#8217;m sure a bunch of new ideas are going to come out of that.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/12/yet-another-me/">Yet Another Me</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-12T21:45:31-07:00" pubdate data-updated="true">May 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A project long in the making is starting to get underway. <a href="http://www.thisismobility.com">This is Mobility</a> is starting to steal some of my attention. Just the time between 2 and 5am so far. I have a bunch of stuff queued already to go in there. Like more info from the <a href="http://www.tieturi.fi/koulutus/seminaarit/mobileenterprise/home.asp">Mobile Enterprise 2005 conf</a>, more info about <a href="http://www.mobilemonday.net">Mobile Monday</a>, <a href="http://www.nokia.com/nokia/0,,73651,00.html">Nokia Sensor</a> hackery and stats, info about the <a href="http://www.nokia.com/nokia/0,8764,73,00.html">new phone models from Nokia</a>, the <a href="http://www.w3.org/2005/MWI/">W3C Mobile Web Initiative</a>, and the always popular Rants against The Man. However, I need at least an hour of sleep before I go to attempt to spend all of tomorrow programming again. It&#8217;ll have to wait till the trainride tomorrow :-) See you at the <a href="http://www.darknet.com/2005/05/citizens_media__1.html">Citizens Media party tonight</a>. Me, and Elle, and a shitload of coffee will be there.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/15/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/13/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

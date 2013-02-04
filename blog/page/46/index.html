@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="There&#8217;s a report by Edd Dumbill about the Mono project developer meeting, and it includes some good information about the long term goals of &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/page/46/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/11/direction-of-the-mono-project/">Direction of the Mono Project</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-11T23:27:04-08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a <a href="http://www.onlamp.com/pub/a/onlamp/2004/03/11/mono.html">report by Edd Dumbill about the Mono project developer meeting</a>, and it includes some good information about the long term goals of the project. I downloaded and fooled around with GNOME long before it was part of any distribution, and did some hacking for the Palm Pilot interface. But for a few years my involvment has been limited to running the packaged system made available by RedHat. Lately I&#8217;ve started to get more involved in general user applications, and my interest in the projects have started to pick back up. In particular I was looking at <a href="http://www.nongnu.org/straw/">Straw</a>, a news aggregator for GNOME, and <a href="http://www.gnu.org/directory/GNU/guile-gnome.html">using Scheme to develop visual applications</a>. Last time I fooled around with it, getting GNOME to just compile was a bitch, and playing with bleeding edge applications burnt a lot of time. This time around I&#8217;m hoping that running the latest stable release will be enough that I can experiment with the apps I want. It seems like the developer facing parts of Mono are getting a lot of attention, so maybe it really is the right time to jump back in.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/11/irc-tools/">IRC Tools</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-11T02:24:05-08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been wandering around through various IRC channels on <a href="http://www.freenode.net">freenode.net</a>, and while idling in the #scheme channel I saw a message from the lisppaste bot. I had never seen it before, but it&#8217;s a bot that allows for pasting content to a permenant location and sending a notification to the channel the paste is for. Given the way the bot is setup, it looks like the usage pattern is something like this:</p>
+
+<ul>
+<li><p>during a discussion someone hacks together an example solution</p></li>
+<li><p>directly from their editor/IDE they can send the example to the lisppaste bot, the code is then accessible using HTTP</p></li>
+<li><p>the lisppaste bot informs the channel of the location of the pasted code</p></li>
+</ul>
+
+
+<p>I think that makes for a pretty cool blending of web based and chat based collaboration.</p>
+
+<p>Another tool that&#8217;s new to me is the <a href="http://meme.b9.com/start">meme log</a>. This uses channel logs to thread together conversations and present marked-up forms of the log that make it easier to follow conversations. Apparently the lisppaste bot has a hookup that allows it to link pasted code to the conversation which generated it. I haven&#8217;t had enough time to fool around with them and see how well they work in practice, but these are some great ideas.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/10/tiny-linux-computer/">Tiny Linux Computer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-10T23:52:02-08:00" pubdate data-updated="true">Mar 10<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>An <a href="http://www.oreillynet.com/pub/wlg/4546">article over at O&#8217;Reilly</a> describes the <a href="http://www.gumstix.org">Gumstix computer</a>, a very small ARM based Linux machine. The systems themselves seem to be quite cheap compared to other embedded system development systems. Information on the sites seems to be a bit spotty with relation to how development tools are made available. Maybe it uses a completely stock gcc ARM compiler and instructions for building the cross compiler come with the board, I didn&#8217;t see that question answered directly in the <a href="http://www.gumstix.com/support.html">FAQ</a>. It is not an open source design, they aren&#8217;t planning to release schematics for the Gumstix systems. But like the author of the O&#8217;Reilly article I think the geolocation applications of a system like this are pretty interesting. Given that it runs on such low power in general, if that power supply can be made to last for a long time it would make a great geologging platform.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/10/weblogs-as-divergent-thinking/">Weblogs as Divergent Thinking</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-10T04:08:09-08:00" pubdate data-updated="true">Mar 10<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve spent quite a bit of time lately wandering around through various blogs and maintaining my own, but during the last two weeks I&#8217;ve had more time to think about what I&#8217;ve been doing rather than just continuing to do it. Something that really struck me was how many popular bloggers made new years resolutions to not blog so much during 2004. It seemed like the practice of blogging was maybe dying out, having been realized to be a fad by some of the pioneers and picked up as a trade by others. The very nature of writing and reading weblogs seemed to be transforming, and no one really seemed to be sure where it was going. I have no idea what blogging as a whole is going to look like 6 months from now, but I do have some pretty strong opinions on the value that&#8217;s been added to web content through the addition of weblog style content.</p>
+
+<p>The one I want to talk about right now is divergent thinking. Divergent thinking is the ability to &#8220;think outside of the box&#8221;. It&#8217;s the ability to generate a completely novel idea when faced with a problem, whether the problem is new or one that has been addressed dozens of times before. The opposite end of this is convergent thinking, which is the ability to work within the constraints of a given set of predetermined boundaries in order to adapt a solution to a problem. Both are important in general, especially when considering a company placed within a market economy. Both convergent and divergent aspects must be present for the company to survive long term. Convergent thinking is pretty common within the engineering community, it&#8217;s the standard mode of operation for someone working to fulfill an existing design or specification. Divergent thinking is something that seems to be a bit harder to integrate into the business process. Some organizations, such as Xerox PARC and Lucent Technologies, sought in large part to attempt to encourage divergent thinking. I have no idea how successful these attempts were. Depending who I talk to I get radically different views on the benefit of these organizations to their respective parent companies. That&#8217;s not really important for this discussion however. What I want to stress is that some companies went so far as to setup large labs of highly funded scientists in order to try to tap into some degree of divergent thinking.</p>
+
+<p>I think the associations between blogs can serve as the same kind of divergent thinking pool. Taking a look back over the topics I&#8217;ve read about, and the new associations I&#8217;ve formed and ideologies I&#8217;ve run into, I don&#8217;t think I&#8217;ve ever hit quite so much new material since the first year I spent at college. It&#8217;s not like I didn&#8217;t read online articles and crawl web pages before, it&#8217;s just that the format of weblogs and their use make it much easier to thread together new thoughts and find different points of view. When I&#8217;m reading about a topic in someones weblog and I find that they have a really interesting take on a technology, I can trawl through the rest of their entries and usually find out how they apply that idea to other areas. Maybe it&#8217;s just because weblogs tend to be very highly editorial and concentrate much less on establishing &#8220;only the facts&#8221;, but I&#8217;ve rarely been able to do the same thing with other forms of online publications. As a result I feel like I&#8217;ve benefited from reading weblog entries much more often than I have from reading articles in standard publications. Even in the cases where I haven&#8217;t ever corresponded with the author of the weblog directly, I feel I&#8217;ve benefited from their unique perspective.</p>
+
+<p>I think this is what the &#8220;thinktanks&#8221; like PARC and Lucent were aiming for. The goal was to get lots of smart people together and let them exchange ideas in the hopes that something new would arise. The conventions that most people use in writing their blogs have allowed this to happen in a much broader sense however. And the personal weblog is what changed it. Most of the interactions from weblogs could be done using usenet, or forum sites, or email lists. The part that&#8217;s really different is that when I see someone say something I like, I can easily find out what they&#8217;re saying about other issues. With usenet or mailing lists, unless I know what other lists and groups this person is part of, it&#8217;s not nearly as easy to find all the output by a single person. People also seem to be much more outspoken on their personal blog. There are people who would spend most of their time in a discussion list or forum group mostly responding to existing threads without generating new topics, but who will spout off in their blog about just about anything that pops to mind. Maybe it&#8217;s cause they&#8217;re shy and they don&#8217;t feel comfortable introducing new topics to a group, I&#8217;m not quite sure. But when the space they&#8217;re writing in is their own blog, they&#8217;re much more free with their topics. When we&#8217;re talking about divergent thinking, that&#8217;s exactly the behavior that&#8217;s most valuable.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/08/successful-lisp-online-book/">Successful Lisp Online Book</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-08T22:51:10-08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There was a <a href="http://lemonodor.com/archives/000718.html">post at Lemonodor</a> a while ago pointing to the <a href="http://www.psg.com/~dlamkins/sl/cover.html">online version of a book called <em>Successful Lisp</em></a> which is supposed to come out as a real world book some time soon. The post pointed to content at <a href="http://lispmeister.com/cgi-bin/blosxom/">Lispmeister.com</a>, which looks like another great resource for those looking to learn about Lisp.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/06/aunt-tillie-vs-m4d-sk1llz/">Aunt Tillie vs M4d Sk1llz</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-06T06:18:10-08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is some commentary by me about two articles that Eric Raymond wrote recently. Both focus on difficulty in setting up a printing package under Linux. <a href="http://www.catb.org/~esr/writings/cups-horror.html">Part one</a> lays out the general problem, and <a href="http://www.catb.org/~esr/writings/luxury-part-deux.html">part two</a> goes into some detail about how to solve some of the issues. I agree with many of the points brought up in those articles, but not the prescription given for finding a better situation. Computer systems can become orders of magnitude more usable if effort is put into improving the configuration and setup systems, but I think it will take some effort separating the technical guts from the setup phase before we see this on a large scale.</p>
+
+<p>Why? Because these are open source projects we&#8217;re dealing with. The technical geeks hack on them because they want cool technical systems to play with. I&#8217;m certainly not prepared to tell these people who make the software that I use every day that they need to make it more usable. This is the root of open source - if I see a problem I have to be prepared to make the effort to fix it myself. If it&#8217;s not worth my time, why should it be worth anyone else&#8217;s? There are cases where the techies would probably be best served by learning how to make the user interface of their system more approachable, but there are a lot of &#8220;if&#8221;s in there. At the most general level, all of us open source wonks benefit if the software is more approachable. The more users we have for the projects, the more resources get dedicated to improving them, and the better the systems become as a whole. Right? Hopefully, but there&#8217;s a lot of abstraction in that explanation. Open source has already been very successful. Why have the interface gurus not popped up to solve these issues yet? Why should we redirect the geeks to get them to solve the newbie problems? I don&#8217;t think we should.</p>
+
+<p>First off, imagine what would happen if every one of the packages in a standard Linux distribution had it&#8217;s own configurator. Imagine if every one of them tried to be as novel as possible, providing just the interface that they thought the user would need and providing the mechanisms for discoverability that ESR speaks about. It&#8217;s possible that this would work out perfectly, but I think it&#8217;s more likely that we would just have a large number of different interface styles. Somewhere along the line I think the limit would be hit and we would find that one person&#8217;s discoverability is another person&#8217;s obfuscation. Plus I still believe very strongly in the &#8220;do one task and do it well&#8221; philosophy of Unix in general. Requiring that a package that does printing also include rules for probing a network to determine what resources are available just doesn&#8217;t strike me right. I can certainly see where there would be benefit to proving info like this to the user, but I also think this is where the distribution providers should come into play.</p>
+
+<p>I personally think that tools like configurators and setup wizards are the kinds of tools that distribution providers should be feeding back into the community, because they are currently the ones who stand to benefit the most from it. The value proposition for me, as a single person without any ties to desktop Linux except being an avid user, in writing a better configurator for CUPS is almost zero. Once I know enough about CUPS to write that thing, why would I bother? I really don&#8217;t have a direct interest in seeing other people not have to learn about the system. However, the distribution providers do care if people can use CUPS without spending a lot of time doing config. Sure, the CUPS people might be a great group, they might be interested in seeing more people use CUPS and they might care about their existing users. That would be great. But it doesn&#8217;t have to be the case. And I think it will probably be the exception rather than the norm.</p>
+
+<p>The distribution providers are in a great place to deal with this issue. The people working on individual projects normally don&#8217;t have too much visibility of the user system as a whole. People working on a single project aren&#8217;t always sure what other projects are going to coexist with their own. Distribution providers do get the cross-project view of the system. They are in a position to provide standardization for some services that haven&#8217;t caught on well because of their overarching nature. Such as service discovery. Sure, we could probe the network for resources using custom assembled packets. But we could also try to implement more deterministic methods of finding resources, such as picking one of the many Java related protocols for discovery or really starting to aggressively pursue <a href="http://www.apple.com/macosx/features/rendezvous/">Rendezvous</a>. I agree with ESR that the type of discovery doesn&#8217;t matter that much, but the distro providers are the ones who should be looking to solve these problems, not the individual package producer. This might mean working closely with the project developers to provide additional support for discovery and configuration, but the distribution providers should be providing the manpower to do it. I think the long term success of trying to transform OSS into a more usable form will mean factoring out a lot of the user interface from backend projects, and adding in the proper hooks so that a distribution provider can move away from the simple role of adding nice colors and consistent graphical elements.  Currently distribution providers add a relatively thin veneer (for the most part), and in order to move to a place where Aunt Tillie can use the system they&#8217;re probably going to have to add something more like a thick upper layer of the applications stack. A system like this would provide for greater hackability to a degree as well.</p>
+
+<p>Currently there is a lot of effort that would need to be made to change the look and feel of a Linux system.  The user exposed bits come from lots of different packages with lots of different ideas about how things should work. If the user exposed bits were something that could be switched around relatively easily at the level of the whole distribution rather than on a project by project basis, this would give distro providers and talented users a larger degree of freedom in terms of experiment with new UI styles. Instead of having to change hundreds of packages they might be able to get away with a much smaller set of updates. This wouldn&#8217;t be a panacea of course, figuring out the base API for a &#8220;distribution interface&#8221; is a daunting task and would probably itself see a lot of missteps and outright flaws. But as a whole I think the more componentized open source software becomes the better off we are.</p>
+
+<p>I know not everyone agrees, but I think that autoconf and automake have done great good in terms of making source code versions of software available to many more developers. This is effectively an API for the development and compilation phase of a project. I would like to see a more developed system for the deployment and runtime phases of a project. Am I sure it could be done? No, not absolutely. But I think that the efforts of Apple, both in terms of setting up a very usable user interface as a layer over a BSD kernel and in getting Rendezvous setup for the networking part of configuration, show that the user interface portions can be factored out of a traditional Unix system to make it look like something completely different. I do agree with ESR about making systems more discoverable, he&#8217;s right on the mark there in my opinion. I think we might just differ in regard to who the torch of discoverability should be carried to.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/06/open-source-rich-media/">Open Source Rich Media</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-06T04:22:25-08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was reading <a href="http://www.linuxjournal.com/article.php?sid=7432">a review of some new music composition software for Linux</a> when I found a link to <a href="http://www-ccrma.stanford.edu/planetccrma/software/">Planet CCRMA</a>. Planet CCRMA provides packaged versions of what seems to be a vast collection of audio and video software. I&#8217;ve been interested in electronic music composition for a long time, but I have no music background at all. I&#8217;ve never happened across software that either inherently made sense to me, or which came with the kind of docs I apparently require in order to get clued in. Planet CCRMA provides some nice high level overviews of the applications it provides, which should hopefully help out some. Will it be enough? I have no idea, but hopefully I can take the time to find out. Something that caught my eye after reading through the <a href="http://www-ccrma.stanford.edu/planetccrma/software/soundapps.html">list of sound applications</a> was the prevalence of Lisp and Lisp based interfaces. Maybe my current stretch into Scheme programming will end up proving useful sooner than I had expected.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/04/interface-culture/">Interface Culture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-04T23:52:17-08:00" pubdate data-updated="true">Mar 4<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.amazon.com/exec/obidos/tg/detail/-/0465036805/002-3475634-0283206?v=glance">Interface Culture</a> has been sitting on my bookshelf at home forever, but I never tried it. I grabbed it to take on a trip with me, and I&#8217;ve been pretty happy with what I&#8217;ve read so far. The reviews on Amazon I mostly agree with, the book is a bit wordy and flowery where it doesn&#8217;t really need to be, but I do think some good points are raised. Very close to the start of the book the author begins describing the accellerated rate of media change, and the rise of spoofing and meta-commentary forms of media. He uses examples like Popup Video and Mystery Science Theatre as examples of new creations which are mostly based on spoofing or commenting on existing content. After having <a href="http://www.bitsplitter.net/blog/index.php?p=167">heard Lessig speak about sampling and the necessity of existing content to be available for remixing</a>, this part of the book is very interesting. If I had read it before I attended the Digital Vision presentation, I don&#8217;t think I would have been impressed at all. But now that I&#8217;m already in the mindset of thinking about sampling and remixing, description from Interface Culture which I would have dismissed two weeks ago is now much more interesting. I recommend reading up a bit on the <a href="http://creativecommons.org/">Creative Commons</a> in general (sampling and remixing in particular) and then picking up a copy of the book.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/02/29/almost-back-on-track/">Almost Back on Track</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-02-29T06:32:51-08:00" pubdate data-updated="true">Feb 29<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m done with my Austin trip, but I&#8217;m back in the airport waiting for a plane to Kansas City. Just over 24 hours at home. Enough to wash some clothes, rifle through all the equiptment and figure out what I need for the trip, nap, eat, shower, and leave. It&#8217;s been a really hectic couple of weeks. I&#8217;ve been in Palo Alto, New York, Austin, and now Kansas City. That&#8217;s why the updates here have been eratic at best. That will probably be true for the next week or so, I&#8217;ll be on site with a customer and probably quite busy. But I&#8217;m now involved with a couple of really cool new projects that should be pulling me into some unexplored areas (unexplored for me at least). Hopefully that will result in a few interesting blog updates if nothing else.</p>
+
+<p>And a thank you to those of you who sent email saying that you missed the frequent updates. Even though my stats say you&#8217;re out there, it&#8217;s very nice to hear from you in person. I think I responded to all of them individually, but if you mailed me and I didn&#8217;t respond, I am sorry. I had some problems with my hosting provider and may have lost some emails. Please just resend if you were looking for a response but didn&#8217;t get one.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/02/27/rich-mobile-media-minirant/">Rich Mobile Media Minirant</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-02-27T08:43:02-08:00" pubdate data-updated="true">Feb 27<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Russell Beattie posted a bit of a rant about mobile video, which  contrasts somewhat with what I said in a previous blogging life. Or at least it seems to disagree at first, but I think we actually said the same things for the most part. I agree with his points about video clips being a dead end, except in the case of someone like <a href="http://www.mycasanetwork.com">MyCasa Network</a> which delivers a 30 second clip of someone entering the front door of your house. That 30 seconds of video is pretty interesting. And I&#8217;m sure just about all of Italy would like to get messaged the video of the last goal scored by their favorite soccer team if they aren&#8217;t able to make the game. But in general, I think the 30 second clips of news and other programming are pretty lame. However, Russell also says that streaming TV is cool. I disagree. I don&#8217;t think services like <a href="http://www.mobitv.com/">MobiTV</a> really have a strong appeal. I think his other applications are perfect, and quite insightful. True video streaming capability on handsets will change the ways that people interact, and will push the traditional boundaries of the services and networks. Many of these video applications will be cool. But streaming TV to a handset just sounds like shoehorning old media into a new format, and without a very good reason.</p>
+
+<p>I think it&#8217;s important at this point to stress that there will be use of and demand for video over cellular, but that the infrastructure as a whole must be robust and flexable. An infrastructure that supports mostly just broadcasting from the provider for viewing on the handset WILL NOT be enough. And that&#8217;s what really bothers me about the TV over cellular example, I don&#8217;t think it will be representitive of the real solutions that are needed. A system that supports the handset as both producer and consumer of video, and which supports both live streaming and asyncronous messaging, and runs using well standardized and restriction free formats; that&#8217;s starting to get more towards the system I think we need.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/47/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/45/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

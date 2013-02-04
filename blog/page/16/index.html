@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="Here&#8217;s some info about FeedsterMedia, from me, the person who put it together. Cause everyone thinks that they hacked out some kinda super &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/page/16/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/27/feedstermedia/">FeedsterMedia</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-27T17:55:03-07:00" pubdate data-updated="true">Apr 27<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Here&#8217;s some info about FeedsterMedia, from me, the person who put it together. Cause everyone thinks that they hacked out some kinda super secret info when they realize that directory listings are allowed.  That&#8217;s just sad folks. Buffer overflows in protocol handlers, escaping past URL filters, even good old SQL injection. These things might be hacking.. maybe. But directory listings, please. There&#8217;s another reason that directory listings might be allowed: I want people to know what&#8217;s out there. What a freakin&#8217; newsflash, stop the presses! Yep, that&#8217;s right. It&#8217;s not a secret that we were planning to do Slashdot and Sourceforge and Freshmeat feeds.  Unfortunately I didn&#8217;t have time to blog about it before we did it. My bad on that one.</p>
+
+<p>Why would I want people to know what&#8217;s out there? Cause some of the people out there are really smart and interested in what&#8217;s going on. If they can take a look at all the feeds we&#8217;re exporting they can provide feedback about stuff I might have messed up, or points where I could do things better. Openness can actually be a virtue at times (in my experience just about all the times when it really matters, but that&#8217;s just me). So there they are, right <a href="http://www.feedstermedia.com/feedcache/">there</a>, all the feeds that I&#8217;ve exported for outside use. Feel free to poke around, especially if you&#8217;re planning to give some feedback. Say you&#8217;re subscribed to some Freshmeat feeds and using <a href="http://www.cincomsmalltalk.com/BottomFeeder/">BottomFeeder</a> to do your reading and you find some issues. Why would I want to prevent you from poking around in the other versions of the feeds if you&#8217;re so inclined? Perhaps at some point I&#8217;ll have to close the listings off if information about what feeds we&#8217;re publishing becomes an issue for the business side. But I hope that&#8217;s a long ways off, cause there&#8217;s still a lot of work to do in helping people make money using their RSS feeds. And the less information that gets hidden away the quicker everyone can learn.</p>
+
+<p>I&#8217;m actually hoping that we can push out a whole boatload of information about this. We&#8217;ve run into some interesting problems. Sometimes they were just simple bugs that needed to be worked through. For instance if you&#8217;re a Mac user and have NetNewsWire try opening up a new tab and typing http://www.doubleclick.com into the location box. If you&#8217;ve got a 2.0 version b41 or before nothing comes up. Simple bug, but the kind of thing you run into when you&#8217;re trying something new. There are other issues, like how do you splice additional content into a source feed without forcing extraneous updates, that are tied up in the heads of people who have been working with RSS for a while and come up with rules of thumb. It&#8217;s a symptom of an immature market, there is no commodity level of functionality for something like &#8220;handling syndication feeds&#8221;. Which is unfortunate because I think that simple public discourse about issues like this could be something that helps out the RSS market (publishers, users, advertisers, service providers, etc) as a whole. There are issues like <a href="http://blogs.zdnet.com/Gillmor/?p=90">the feed rights issue that Steve Gillmor brought up</a> that can either be solved in private or solved in the commons. If it&#8217;s solved in private maybe someone gets to make a business out of it, if it&#8217;s solved in the commons it enables a whole set of new businesses. Me personally, I think the real value in RSS lies well outside of the technologies that move content from one place to another. The value comes more from the side that talks about discussions and user control and remixing, allowing publishers to form news kinds of relationships with their audiences, allowing businesses to find new ways to communicate with their customers and prospects. I would love to power through the mundane technical issues so that we can get on to that interesting stuff.</p>
+
+<p>In the meantime, if you want info about FeedsterMedia just fill out the <a href="http://feedster.com/feedstermedia.php">form on the FeedsterMedia</a> page. Tell us what you want. I&#8217;ll try not to fall behind again and to keep the blog updates coming in advance of doing things so we don&#8217;t end up with some kinda faux cloak and dagger thing going on.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/26/mobile-identity/">Mobile Identity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-26T08:33:47-07:00" pubdate data-updated="true">Apr 26<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://www.mobilemonday.com/2005/04/may-2005-mobile-monday.html">info for the May Mobile Monday</a> is up on the blog.  The topic is going to be identity, which is one of those hot topics that no one outside of the field can easily define. Thanks to John Kern we have an <a href="http://kerncomputing.blogspot.com/2005/04/discussing-digital-identity-at-mobile_26.html">excellent set of resources to start out with</a>. For those with an audio bent, there&#8217;s a <a href="http://www.itconversations.com/series/digitalidentity.html">series of talks and interviews up on ITConversations as well</a>. I harp on the whole &#8220;mobile services and internet services need to be able to interact seemlessly&#8221; issue quite a bit, and I think this is one area where it&#8217;ll really stand out. For an increasing number of people out there, their mobile is their primary access device. Most services (in the US at least) are still stuck in the mode of the PC being the primary driver of the interface and the mobile being a tiny window into information configured elsewhere. We were able to look past a number of &#8220;inconveniences&#8221; when the interface was driven on a PC with a relatively high bandwidth user-to-device interface. Those same inconveniences are killers on handsets. Federated services on mobile devices are going to require something better than the current default if they&#8217;re to expand to serve audiences outside of niche markets, and identity is one of the key enablers. And federated services are what we really need. I know <em>I</em> don&#8217;t want a <a href="http://www.thefeature.com/article?articleid=101009">walled garden</a> on my handset. Vive la resistance!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/19/mobilemonday-la/">MobileMonday LA</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-19T03:44:44-07:00" pubdate data-updated="true">Apr 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://mobilitee.org/archives/31">first Mobile Monday down in LA</a> happened last night! Looks like a great turnout, better than we did for our first event up in San Francisco! Marc Brown has some <a href="http://marc.buzznet.com/user/">images in his moblog as well</a>. Congratulations to Tomo Software and Buzznet on a job well done! If you&#8217;re interested in the events it looks like there&#8217;s another one coming up on May 16th. Keep an eye on <a href="http://www.mobilemonday.la/">their site</a>. It needs a feed guys!</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/19/effects-of-blogging-on-traditional-product-management-and-marketing/">Effects of Blogging on Traditional Product Management and Marketing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-19T02:41:04-07:00" pubdate data-updated="true">Apr 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The discussion this morning at the <a href="http://www.ellementk.com/archives/2005/04/15/326">PMM in an Always-On World</a> wandered over some interesting topics. A few of the people there were from the promotional products area, and they were talking in particular about trade shows for a while. Apparently there&#8217;s been a lot of buzz in that industry over one organization trying to buy out the other, and when unsuccessful then attempting to launch a competing trade show at right about the same time. So there was some general discussion about trade shows and how they fit into the overall scheme of marketing and communications. One idea that we talked about, and the one I think I agree with the most, is that trade shows are one of the few places where you can get into a conversation with a company. It might certainly be true that the people with real purchasing decision power aren&#8217;t at the shows, but it&#8217;s a chance for your customers (and potential partners, and press, and resellers or licensees, etc.) to come and talk to your people. And it&#8217;s also a chance for your people to gather information from the people out walking around on the floor. I don&#8217;t see them as a chance really to meet all that many new leads, but to maintain relationships, exchange information, and discuss.</p>
+
+<p>This is starting to change I think. Like <a href="http://www.cafepress.com/kandsranch">Steve Blank recommends for new products and companies</a>, companies are starting to dissolve the barriers between their employees and their customers. The blogging phenomenon provides a medium that&#8217;s particularly well suited to the out in the open iterative model of engaging with customers for the purpose of refining a product or service. If dialog across the organizational boundary is going on online already, that certainly changes the role that the trade shows will have. We also talked about blogs replacing the more traditional means of marketing, which is something that I don&#8217;t think will happen any time soon. Being engaged in blogging as an organization means that the roles of those traditionial activities are changed, they start to serve a different purpose. Press releases probably start to mean something completely different after a company starts blogging than they did before. Is the press release an invitation to start a discussion online or something issued after the discussion has been going on and a solid message has formed? That&#8217;s hard to say, and might be different for different organizational styles and methods of interacting with the public. There was someone there who does HR and asked if screening for people who would make good bloggers might be something that employers would want to consider. I think that&#8217;s definitely true. We&#8217;ve seen plenty of job shifts because of blogs, either people getting fired (Joyce Park was fired allegedly for content on <a href="http://troutgirl.com/blog/">her blog</a> about her former employer Friendster) or people getting hired (Russell Beattie was hired by <a href="http://www.yahoo.com">Yahoo!</a> at least in part because of his <a href="http://www.russellbeattie.com/notebook/">blog about mobility</a>, generally considered a must-read by people in the industry). And I do think that employers will be increasingly interested in the voice that their employees can hold out online for them. I don&#8217;t see this is a major change however, just a bit of a refocusing of attention into a new channel.</p>
+
+<p>So how can a company go about getting involved in blogging? I generally don&#8217;t think it&#8217;s a good idea to have someone outside your company blog for you. It might be a workable situation in some cases, but the real benefits to having a blog are discussion across the organizational boundary. If that discussion happens with someone outside and gets translated into your group by someone else you lose some of the benefits. Also, keep the discussion honest and open. There are going to be people who show up pissed off and acting nasty. For the most part everyone understands that those people exist, and it&#8217;s not their presence that you&#8217;ll be judged by, but your dealings with them that will be key. People pointed out that it takes a lot of time to consume and emit blog info. That&#8217;s definitely true, but even if you aren&#8217;t participating in these conversations they&#8217;re going to be going on. Even if you aren&#8217;t reading the information being written about you in blogs, people who use and buy your products probably are. And increasingly, journalists and analysts who cover your sector are almost definitely reading that information. Do you need to stop everything from your traditional marketing plan and just get everyone reading and writing blogs? No, although I suspect there are worse things that could be done. But it is something to be factored into the overall plan. The information you get out of interaction on blogs will most likely help you shape the rest of your campaigns. Possibly even helping you trim them down while making them more effective. This is one of those things that with a bit of investment, if you pay attention to the results, should have no problem paying for itself in terms of cost savings down the line.</p>
+
+<p>I&#8217;m going to include a specific disclaimer in this one, cause it is so highly Feedster related. My opinions in this article have nothing to do with the official position of Feedster. Everyone there might agree, they might disagree. If they have something in particular to say I&#8217;m sure there&#8217;ll be something on our <a href="http://corp.feedster.com/blog/">corporate blog</a> or <a href="http://corp.feedster.com/blog/rafer/">Rafer&#8217;s blog</a> or <a href="http://scott.feedster.com/">Johnson&#8217;s blog</a>. See how that works? Multiple people, with opinions, and an official corporate voice for the whole so that people can speak their mind on their own. It&#8217;s a good thing, believe me.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/18/cherry-blossom-festival-and-bluebottle-coffee/">Cherry Blossom Festival and Bluebottle Coffee</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-18T00:50:02-07:00" pubdate data-updated="true">Apr 18<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.niallkennedy.com/blog/">Niall</a>, <a href="http://www.ellementk.com">Elle</a>, and I went to the <a href="http://www.nccbf.org">Cherry Blossom Festival</a> in Japantown in San Francisco yesterday. I have some images to upload, but I&#8217;ll have to do it later. We made it there in time to catch the Taiko drummers, and they were letting people up on stage to try out the drums. They had a few displays with info set out, but the only one we really spent time at was the display of weapons. I don&#8217;t have any pictures of that, there were signs all over saying not to take pictures. Of course, this being a public street I don&#8217;t think there&#8217;s anything they could have done. But I didn&#8217;t want the pictures enough to be willing to piss off the guy with swords. The food was good too, although I suspect the fact that the firemens &#8220;blazing hot&#8221; ribs not actually being spicy at all caused a bit of disappointment. They were good, just not spicy. And I don&#8217;t mean that in the sense of &#8220;I&#8217;m a manly man! I can feel my tongue! These are NOT spicy!&#8221; I&#8217;m a wuss, I can&#8217;t deal with spicy food. The ribs just were not imbued with spice in the least. Perhaps some communications misfire.</p>
+
+<p>After the obligitory spin through the vendors we decided to head over to <a href="http://www.bluebottlecoffee.net/">Bluebottle Coffee</a> on Linden street at Gough in Hayes Valley. Oh dear. Best coffee I&#8217;ve had in a long time. I&#8217;m trying to figure out how I can make my daily commute pass through Hayes Valley so that I can make it a normal stop. I might have to move to San Francisco in order to do it. It might be worth it. If you have a chance, and you like coffee (I had an espresso), give it a try. It&#8217;s basically just a kiosk right now, setup in what looks like it might be the future location of a real cafe. But that didn&#8217;t keep the barista from dishing out some amazing cups. By the way, apparently the <a href="http://www.worldbaristachampionship.com/default.htm">World Barista Championship</a> is being held in Seattle and ends today (Monday). The barista said he was checking blogs to try to get some news from the competition, but no one was posting anything. Maybe they have no wifi at the event. After the coffee we went over to <a href="http://www.fritzfries.com/">Fritz Fries</a>, also very interesting and something to try out if you&#8217;re a fry fan. I am. The fries are big chunky cut nuggets of potatoe though. Like English fish n&#8217; chips style fries, not like pomme frites. They have all kinds of funky dipping sauces for them, like roasted red pepper mayo and chipotle remoulade. Good. But not fantastic. Perhaps it&#8217;s just that it couldn&#8217;t possibly compare to something like Bluebottle, which landed so far beyond the expected that it&#8217;s not fair to expect the same from others. Yet I still do. Weird huh? Go to Bluebottle. Get coffee. Figure out a way to bring me a hot shot of espresso from there and you can be my new best friend.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/16/product-marketing-and-management-in-an-always-on-world/">Product Marketing and Management in an Always on World</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-16T15:44:19-07:00" pubdate data-updated="true">Apr 16<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Elle has been leading a product marketing and management roundtable for <a href="http://norcalbma.org/">BMA</a>, and next week they&#8217;re going to be meeting to discuss <a href="http://www.ellementk.com/archives/2005/04/15/326">PMM in an Always-On World</a>:</p>
+
+<blockquote><p>We’ll look past simply tracking what’s said about your company’s products to discuss how we can participate to shape the market and dig into the conversations themselves to gain product and marketing ideas.</p></blockquote>
+
+<p>The sessions are generally very interesting, so if you have an interest in the topic don&#8217;t let the timeslot scare you off (it&#8217;s very early in the morning). Next week is probably going to be extremely busy for me, but I&#8217;m planning to be there anyway.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/15/make-almost-anything/">How to Make Almost Anything</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-15T11:43:42-07:00" pubdate data-updated="true">Apr 15<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.futuresalon.org/2005/04/fab_friday_.html">Future Salon with Neil Gershenfeld</a>. Raw notes, you know the deal, maybe cleaner stuff coming later.</p>
+
+<p>Talking about big bits, when the &#8220;bits become smaller than the network&#8221;. Initially like morse code, time is the only factor. IP over DC power. Showed off serving web pages from a small embedded board, about a dollar in parts.</p>
+
+<p>End to end modulation, interdevice networking, the state can go to the edges. Not optimal for any one use, but interoperable. Internet zero, powerline to RFID to optical. RFID, the tag is a packet and includes instructions about what to do.</p>
+
+<p>Paintable computing, make the smallest chips you can afford and put them in a viscous medium and paint them out where you need them. Used postscript for display as an example, a wall figuring out how to display a letter.  You can shoot a hole in it, if you have twice as much it&#8217;s just twice as big.</p>
+
+<p>State of the art fabrication? Not chips, the ribosome protein.  Three base code is an error correcting code, redundent. This is a computing machine, state machine, computing to build.</p>
+
+<p>Magnetic tiles that form letters, write a code into the material and the material holds the restrictions necessary to form the shape desired.</p>
+
+<p>When you engineer generally more noise means more errors, and if you&#8217;re a good engineer you can modify that line down a bit but not much. If you add information and then remove it you hit a threshold with nonzero noise and perfect performance. Threshold theorems. We are macroscopic things built out of imperfect little parts.</p>
+
+<p>Theory of self-reproducing automata, John Von Neumann.  Reliable computation in the presence of noise.</p>
+
+<p>How to make almost anything started as a class to teach people how to use some equiptment they had on campus at MIT.</p>
+
+<p>fab.cba.mit.edu/~shellyle was the URL of a page that he had up. Looks like it&#8217;s still live.</p>
+
+<p>We&#8217;ve been living with a mistake made in the renaissance that actually making stuff isn&#8217;t liberating. That making stuff isn&#8217;t in itself a means of expression.</p>
+
+<p>Computers becomming accessable to workgroups rather than organizations as a whole (like mainframes) was what gave rise to all the usefull stuff we think about when we think about computers now. This led to a project to put together a set of tools to produce micrometer and microsecond level technology. Goal is to get the fab to the point where it can build a fab. Fab Labs.</p>
+
+<p>Instead of bringing tools to the masses, bring the means to create tools to the masses. The capability to create information technolgies that fit the problems and can be modified.</p>
+
+<p>We are in the minicomputer era of personal fab.</p>
+
+<p>Neil is interested in how you cross VC with microfinance. He should talk to Stuart Gannes.</p>
+
+<p>cba.mit.edu/~neilg
+http://fab.cba.mit.edu/fab/</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/14/rebooting-os-x-as-problem-resolution-considered-acceptable/">Rebooting OS X as Problem Resolution Considered Acceptable?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-14T10:55:56-07:00" pubdate data-updated="true">Apr 14<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been using a PowerBook G4 for just about a month. It&#8217;s pretty nice actually, I like the environment quite a bit. And it&#8217;s the first time I&#8217;ve had a nice modern laptop to use. Normally I have some rejected hardware kept alive through the necromantic power of <a href="http://www.linux.org">Linux</a>. Today I had my first real disappointment though. I use the builtin Bluetooth to connect to my phone and use my GPRS connection from my laptop on my way back and forth on Caltrain. It&#8217;s nice and slick, I just whip out my laptop and click on the little phone dealie, and magically I have a connection (well, after I downloaded the dialup scripts that actually use GPRS instead of just <em>saying</em> they support GPRS, but that&#8217;s another issue). Every once in a while the Internet Connect app apparently hangs however. I&#8217;ll try to disconnect and that little phone handset up in the menu bar will constantly scroll &#8220;Disconnecting&#8230;&#8221; and never stop. Of course, I can&#8217;t form another connection at this point, as the menu affords only a &#8220;disconnect&#8221; option, something which is apparently already and process and not affected by repeated frusterated clicking. I tried all sorts of clueless noob stuff like shutting off the bluetooth and turning it back on, putting the system to sleep and waking it up, turning off my phone and trying to clear the connections on it (holding down the hangup key on a Nokia apparently clear all open descriptors for all connections by the way), and even killing the apparently hung pppd out from under the Internet Connect tool. Nothing worked though, so I would just reboot the system. It happens pretty infrequently, and when it does happen I&#8217;m normally in no mood to dig at the issue. It happened this morning however, and I was finally ready to deal with it. So I left the &#8220;Disconnecting&#8230;&#8221; scrolling and found an access point to search out potential solutions. Google turned up nothing. Some mentions of people saying they&#8217;ve also seen the Internet Connect hang when disconnecting and they had to reboot. But no proposed solutions. So I decide to give the folks at Apple a call and find out how to reset a hung Internet Connect. Their answer is to reboot the system!!!! I was floored. There&#8217;s apparently no way to deal with this hung process except to reboot the system. So we have a Mach microkernel running an abstracted visual user interface&#8230; but if I want to use Bluetooth to form an outbound connection sometimes I might have to reboot to do it a second time? I don&#8217;t even have words for that. To me it seems odd that the &#8220;super-modern operating system that combines the power and stability of UNIX with the legendary elegance of the Macintosh&#8221; would require a reboot after using Bluetooth. Perhaps the good folks at Apple have a slightly different definition of super-modern in mind than I do? An unavoidable and unpredictable persistently nonfunctional state arising from normal usage is not what I would consider a trait of any operating system at all, let alone an super-modern one. And a forced reboot is about as elegant as an icepick lobotomy. Disappointed. I&#8217;m very very disappointed.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/13/cleaner-notes-from-recent-innovations-in-search-panel/">Cleaner Notes From Recent Innovations in Search Panel</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-13T04:38:50-07:00" pubdate data-updated="true">Apr 13<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I posted <a href="http://www.bitsplitter.net/blog/?p=485">raw notes</a> yesterday for this event, here&#8217;s the cleaned up version.  The event was <a href="http://www.baychi.org/calendar/20050412b/">&#8220;Recent Innovations in Search and Other Ways of Finding Information&#8221;</a>. There&#8217;s going to be audio of the event posted, I&#8217;m not sure if it&#8217;s going to be to the <a href="http://www.baychi.org/">BayCHI site</a> or somewhere else. The panel started with a 5 minute show and tell by each panelist, they had slides or walked through the tools they&#8217;re working on.</p>
+
+<p>Panelists</p>
+
+<ul>
+<li><p>Peter Norvig</p></li>
+<li><p>Ken Norton</p></li>
+<li><p>Mark Fletcher</p></li>
+<li><p>Udi Manber</p></li>
+<li><p>Jakob Nielsen</p></li>
+</ul>
+
+
+<p>Peter Norvig</p>
+
+<p>Talked about the newly released question and answer feature on Google, where you can ask a question in natural language and get a direct answer back. The example he gave was &#8220;what is population of japan&#8221;. The facts for the database are extracted from the web overall, using statistical analysis because most facts tend to be represented multiple times.  Accuracy is still a problem however.</p>
+
+<p>He then spoke about search by SMS.  They&#8217;re seeing more and more demand for mobile services.  They&#8217;ve added maps to the cell phone interface as well.  The Google maps interface has recently grown the ability to switch to a satellite view mode.  He showed satellite views within google maps of a few interesting landmarks like Niagra Falls and the white horse in new mexico.</p>
+
+<p>Then Google suggest, where the searchbox suggestion list is populated behind the scenes by google as you type.  In particular he referenced the <a href="http://www.adaptivepath.com/publications/essays/archives/000385.php">AJAX model</a> (hat tip to Jesse James Garrett) that Google has been pushing.  Used in both maps and the suggest feature.  Then an example of Google desktop search, indexing local files and information for users and mixing it into search results.  Showed an example of a search combining results from out on the web and on the users own machine.</p>
+
+<p>Ken Norton</p>
+
+<p>First slide said &#8220;Enable people to find, use, share and expand all human knowledge&#8221;.  Most people working on search are only adressing that first part, how to help people find information.  Yahoo wants to be involved in all parts of that series. Reference to remixing and remaking (author note: alla <a href="http://www.oreillynet.com/pub/a/policy/2005/02/24/lessig.html">Lessig&#8217;s remix culture</a>).  Then showed a big list of projects that Yahoo has in beta or released. Desktop search, creative commons search, the search API (YDN), mobile search, whole bunch of stuff that went by too quick to capture all of them.</p>
+
+<p>Talked in particular about MyYahooSearch, which is in beta but will be released soon. The service will give users more control over their searches, allowing them to save and share.  Like bookmarking, but hopefully a step beyond with respect to sharing and enhancing.  Video search is up now. That&#8217;s something they wouldn&#8217;t have considered 3 years ago because there wasn&#8217;t enough content. Now the content and the demand is there. He mentioned <a href="http://tools.search.yahoo.com/mrss/">MediaRSS</a> as the way to share your content back out after remixing it.  They also have a desktop search.</p>
+
+<p>Y!Q is an effort to &#8220;bring search back to the point of inspiration&#8221;.  Every search happens for a reason, it starts at a place where someone realizes there&#8217;s something they want more info about.  That context is potentially valuable info. What kind of context should be captured and how should it be given to the engine?  How is the information represented to the user? The example given was reading a court decision and looking for related stories in the news. The interface shown was a floating popup with the news links appearing over the court decision page.</p>
+
+<p>Mobile search is also big with them, users are demanding multiple access modes.  Creative Commons search was also driven by customer demand, users were asking for content that they could reuse in their own work. Also referenced the Yahoo purchase of Flickr, a photosharing and community site. The hope is to integrate the DNA from Flickr with repect to understanding of how users tag and share and expand on content and cary that throughout Yahoo.</p>
+
+<p>What&#8217;s next at Yahoo? Personal search, contextual search, multimedia search, desktop search, local search, travel search, social media. Check out <a href="http://next.yahoo.com">next.yahoo.com</a>.</p>
+
+<p>Mark Fletcher</p>
+
+<p>Mark did a walkthrough of Bloglines to show the functions. The tool is divided up into four areas: search, subscribe, share, publish.  That should provide the full lifecycle of blogging that people would want. He started Bloglines to scratch his own itch, he had bookmarks for a hundred sites he had to visit every day. Talked about information overload, blog content is the fastest growing area of web content. 1.6 million articles added every day.</p>
+
+<p>Sidenote: Mark has 29 feeds in his own account (at least the one he demoed with) Showed how to use the search built into Bloglines.  It&#8217;s a keyword search you can do across all content or across feeds you&#8217;re subscribed to. If you hit the save button you can subscribe to the query, and it&#8217;ll cull out new occurances of the keywords in articles and feed them to you.  The example of a search feed he has is a keyword search for &#8220;Bloglines&#8221; within his aggregators folder.</p>
+
+<p>What&#8217;s coming from Bloglines? Search friends, filter articles.</p>
+
+<p>Udi Manber</p>
+
+<p>Udi spoke about the <a href="http://www.amazon.com/gp/browse.html/104-6832396-8708716?node=3999141">Yellow Pages</a>, which launched in January. It includes a function that lets you walk down the street virtually. When you click left and right you can see pictures taken at regular intervals.  He did a quick demo of the function and everyone was amazed (gasps and &#8220;oooh, ahhh&#8221;).  Very obvious that everyone was impressed.  He gave an example of why you would want a function like that.  If you gave directions to a place by saying &#8220;It&#8217;s this place right next to that place on main street&#8221; that used to mean that you couldn&#8217;t find the information you wanted online. Now you can find &#8220;that place on main&#8221; and just walk next door to see what it&#8217;s called, and complete your search.</p>
+
+<p>He gave some details about how they actually went about putting the site together.  Showed the rental SUV with the camera on top that took the pictures. The camera is hooked up to a laptop with GPS and some special software that tells them were they&#8217;ve been already and shows them were images have been taken.  The driver just looks at the map onscreen and drives, the system does pretty much everything else.  Udi himself spent two days driving the route in Arizona, it was a lot of fun.  Showed a video of the time the intern who had to drive Washington DC was stopped by the police.  The police asked him &#8220;is there any tape in the camera&#8221;, to which he replied no, cause the thing records straight to hard drive.  The police didn&#8217;t think about that though, so now there&#8217;s a half hour video of the police talking to the intern.  This holds a good lesson for search, you have to ask the right questions.</p>
+
+<p>Jakob Nielsen</p>
+
+<p>Started off with a table showing that since 1994 we have almost a 100% change in usage. People used to use one word in searches in 1994, and they use on average 2 words in 2004.  This is probably a continuing growth curve, up to a point.  We probably will see three search terms in a few years.  Probably won&#8217;t ever make it up to something like ten terms, should plateau somewhere in there. People will never use complex queries and boolean operators in large numbers.</p>
+
+<p>How many people are successful in their searches? 42% for all searches.  That divides up into about 32% success rate for inexperienced users and 50% for the experienced user.  When using internal search on a website it&#8217;s about 33%, and when it&#8217;s one of the big external search engines it&#8217;s 56%.</p>
+
+<p>Says that search on websites is a miserable failure.  It&#8217;s a deisgrace that we&#8217;ve allowed search on websites to be so bad, and intranets are even worse. It&#8217;s the most prevalent problem actually.</p>
+
+<p>He then showed a video of a recorded session of someone trying to search. The search interface being used was AOL.  There were multiple fields on the page and the user first entered their search text into the wrong field but pushed the search button.  They got no results.  So they clicked the search button a few more times on the results page, still getting no results.  Next stop is the help function, which isn&#8217;t that helpful.  She enters something like &#8220;www.head.ache.com&#8221; into the location bar for the next attempt.  The site isn&#8217;t found, but the browser has a search box on the error page.  She presses the search button without entering any text, but the browser tells her that&#8217;s an error and that she should type text in the box. She&#8217;s thrown for a bit by the modal dialog box telling her that she must enter text, but eventually she dismisses it, enters a search, and gets a results page.</p>
+
+<p>&#8212;&#8212;&#8212;  Now questions from the moderator</p>
+
+<p>First question is to ask the other pannelists to reply to &#8220;search on websites is a miserable failure&#8221; statement that Jakob made.</p>
+
+<p>Udi - Says that it&#8217;s not a failure, 50% is good.  It&#8217;s a hard problem.  In the example given it was AOL search, who have massive resources to put behind making their search good. When you have a small site and very small resource pool to pull from how can you hope to fulfill well?  The small sites just can&#8217;t do it, it&#8217;s not plug and play enough and standardized.</p>
+
+<p>Mark - There&#8217;s a lot of work to be done, but it&#8217;s not just search. In the movie that Jakob showed the user was having basic issues, like using the mouse and understanding the layout of the browser. Computers overall have to be more usable, not just the search interfaces that they present.</p>
+
+<p>Peter - The same thing happened to him with the IBM site when he was looking means something.</p>
+
+<p>Ken - More and more people are using the general internet search with site restricts to do their search.  Before you do it on your own, think about using one of the existing engines out there instead.</p>
+
+<p>QUESTION - How have searchers (people performing searches) evolved besides simply using more words in their queries?</p>
+
+<p>Ken - Demand for better search tools in vertical areas.  People used to be happy with general queries in the search engine, now they want the context to be appropriate to their task.  Yahoo is looking at the different categories that users seearch in and trying to figure out what goes in those different areas.  How do you make the user aware of it once you have it.  The results page is a poor place to message to users about features and functionality.</p>
+
+<p>Peter - Verticals also, very important. International also really stands out for Google.  Majority of traffic is outside of US and not in English.</p>
+
+<p>Mark - I&#8217;m the new guy at Ask, so here&#8217;s what others told me they&#8217;re seeing: the query length at Ask Jeeves is getting shorter actually, oposite of what most others are seeing. This is because people realize it&#8217;s not JUST natural language at Ask, you can enter keyword searches as well.  The long tail has grown even longer.  Vast major part of queries are completely unique. Expectations have grown, searches are successful, people search more, feedback loop.</p>
+
+<p>Udi - The size of the search box actually influences the length of the search terms.  Also thinks vertical is important.  Opensearch, syndicated search for opening search and sharing it.  Anybody can take search results and put it on A9.</p>
+
+<p>Jakob - People use search because they are selfish, because they don&#8217;t want to endure the interfaces that most sites inflict on them.  That applies to both site specific searches and general search engines. If sites did use more standard and humane design (site maps, richer navigation) that might not be the case.  It has to be standard design though, not a one off trick for each site.</p>
+
+<p>QUESTION - How do you give access to the different verticals without turning into a portal?</p>
+
+<p>Ken - The web search box IS the interface.  That&#8217;s what people want.  Don&#8217;t direct people to different areas, just figure out the context and provide them with it in place.  Rather than asking users to adapt ask the search engine to be smarter.  Is this a local query? Is this a shopping query? Find the users intent.  Users have gotten confident.  That used to be the greatest problem, but it&#8217;s not the case any more.  They expect good results.</p>
+
+<p>Udi - Some queries work well and others don&#8217;t.  &#8220;What&#8217;s the population of India&#8221; works even without any natural language processing because it&#8217;s an objective question.  &#8220;What&#8217;s the best TV to buy&#8221; does not because of that term &#8220;best&#8221;.  How do we balance ease of use and powerful tools?</p>
+
+<p>Peter - We&#8217;ve failed in terms of letting the user have a dialog.  Search is a command line without a documented interface.  How do we put advice in place to help guide users to what they want?  We&#8217;re getting there but it&#8217;s nothing like walking into a library and getting help from the librarian.</p>
+
+<p>*** Someone on the panel asked how many people in the audience have read advanced help for any search engine. Lots had. That&#8217;s atypical, in the average group not many have, if any at all.</p>
+
+<p>QUESTION - Are folksonomy/tagging a fundamentally different form of data than what&#8217;s there already for search?</p>
+
+<p>Udi - It&#8217;s all just metadata, it&#8217;s our job to deal with it.  It&#8217;s not any different, except that hopefully its coming from more sources.</p>
+
+<p>Ken - It&#8217;s remarkable in that it&#8217;s just like what we already deal with.  Right now all the information we have is provided by web authors, and now with tagging we can collect from a larger group of people.  The more metadata the better.  The more we can get from users and not authors the better off we should be.</p>
+
+<p>Jakob - We won&#8217;t get much more info from users. With tagging the barrier is lower, but it&#8217;s still there. We have to get passive data out of people, eyeball time and metrics from the desktop.</p>
+
+<p>Ken - If they find value they&#8217;ll do it.</p>
+
+<p>Jakob - Okay, like spam marking in collaborative filter.</p>
+
+<p>Udi - Mapr maps Flickr images onto a map display.  Lots of the images appear in Maine, cause people tag with &#8220;me&#8221; (as in myself), but Mapr thinks it&#8217;s an abbreviation for the state Maine.</p>
+
+<hr />
+
+<p>There are questions from the audience now.  These are just the cool bits I particularly liked.</p>
+
+<p>Udi - A9 keeps context.  If you repeat a search 4 months after the initial date at which you performed it you&#8217;ll get a message that says &#8220;these results are new, you haven&#8217;t seen them before&#8221; and you&#8217;ll be presented with the information that&#8217;s been added to the index since the last time you searched. And &#8220;these are the items you clicked on last time you searched&#8221; so that you know what you&#8217;ve already hit.</p>
+
+<p>Someone from the audience asked under what circumstances the panel didn&#8217;t use search.  I really liked the answer from Jakob.</p>
+
+<p>Jakob - People do not search when they&#8217;re loyal customers of someone.  If you&#8217;re a loyal customer of Amazon you don&#8217;t search for books on Google, you go directly to Amazon to make your purchase.</p>
+
+<p>Someone asked if the search wars were going to be defined in terms of branding and not tech. All seemed to think it was still a tech race. In that regard the industry is still evolving. There have been times in the past when the search war was thought to be over, but something always comes up and changes the game. The same is true now, there&#8217;s plenty of evolution to go.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/baychi">BayCHI</a> <a href="http://www.bitsplitter.net/tag.php/search">search</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/12/notes-from-the-recent-innovations-in-search-and-other-ways-of-finding-information-panel/">Notes From the &#8220;Recent Innovations in Search and Other Ways of Finding Information&#8221; Panel</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-12T15:05:22-07:00" pubdate data-updated="true">Apr 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>These are notes from the &#8221;<a href="http://www.baychi.org/calendar/20050412b/">Recent Innovations in Search and Other Ways of Finding Information</a>&#8221; panel at BayCHI. It was an absolutely fantastic panel! Very well done, the panelists were great all around (although personally I think I liked the contributions from <a href="http://manber.com/">Udi</a> the most). I&#8217;ll have to come back at some points and clean up these notes, they&#8217;re in kinda rough shape.</p>
+
+<p>Panelists:</p>
+
+<ul>
+<li><p>Peter Norvig</p></li>
+<li><p>Mark Fletcher</p></li>
+<li><p>Udi Manber</p></li>
+<li><p>Ken Norton</p></li>
+<li><p>Jakob Nielsen</p></li>
+</ul>
+
+
+<p>5 minute show and tell by each panelist</p>
+
+<p>Peter -
+talked about question and answer &#8220;what is population of japan&#8221; was the example</p>
+
+<p>extracted facts from the web</p>
+
+<p>facts are represented many times, accuracy is a problem</p>
+
+<p>then search by sms - people are using more andmore mobile</p>
+
+<p>maps on the cell phone</p>
+
+<p>then google maps overall - plus ssatelite photos</p>
+
+<p>niagra falls, white horse</p>
+
+<p>predictive seach - google suggest</p>
+
+<p>talked about AJAX in particular - google has been pushing it Jesse Garrett</p>
+
+<p>Google desktop search - example combining both desktop and the web</p>
+
+<p>Ken -
+Enable people to find, use, share and expand all human knowledge</p>
+
+<p>most people addressing only the find part, yahoo wants to do all</p>
+
+<p>remixing and remaking</p>
+
+<p>desktop/creative commons, YDN, big list of things they did</p>
+
+<p>MyYahooSearch - in beta, released soon
+gives users more control, allows to save and share, like bookmarking but hopefully a step beyond.</p>
+
+<p>video search - huge ammount of content out there, huge demand, that&#8217;s new</p>
+
+<p>mediarss - allows people to submit their content back after remixing</p>
+
+<p>desktop search</p>
+
+<p>Y!Q - bringing search to the point of inspiration - there is context associated with any search, it starts somewhere.  Can we bring the search process back into each of those tasks and make the search aware of it example is reading about a court decision, get news related</p>
+
+<p>mobile search - multiple modes of access</p>
+
+<p>CC search - demand from users to find content - licensed for reuse.</p>
+
+<p>flickr - photosharing and community - they will bring in the DNA thinking about how users tag and share and expand on content.</p>
+
+<p>what&#8217;s next - personal search, contextual seasrch, multimedia search, desktop search, local search, travel search, social media</p>
+
+<p>next.yahoo.com</p>
+
+<p>Mark -
+did a walkthrough of bloglines</p>
+
+<p>search/subscribe/share/publish</p>
+
+<p>started bloglines to scratch his own itch, hundred sites a day to visit. information overload, blogcontent is the fastest growing area. 1.6 million articles every day.</p>
+
+<p>Mark has 29 feeds in his own account (at least the one he demoed with)</p>
+
+<p>search - keyword search , if you hit the save button you can subscribe to the query</p>
+
+<p>the service is working to cull the information when you create feeds just for the stuff yo uwant to see (search for bloglines in posts instead of reading all posts to find the ones that mention bloglines)</p>
+
+<p>what&#8217;s coming: search friends, filter articles</p>
+
+<p>Udi-
+Yello pages - launched in January - walk down the street, showed actually moving down the street</p>
+
+<p>&#8220;it&#8217;s this place right next to that place on main street&#8221; - now you can find it, find the name, and then search for the info that you want.</p>
+
+<p>showed the rental suv with the camera on top that took the pictures, gps, laptop. The driver drives and the system does everything else.</p>
+
+<p>Udi spent two days doing it himself in arizona, it was a lot of fun</p>
+
+<p>Jakob-
+showed a table showing that since 1994 we have almost a 100% change in usage people used to use one word in 1994, and they use 2 words in 2004</p>
+
+<p>probably a continuing growth curve, up to a point</p>
+
+<p>how many people are successful:
+42% for all searches
+low experience 32% and high experience 50%
+internal search on website 33% and external search 56%</p>
+
+<p>search on websites is a miserable failure.  it&#8217;s a disgrace that we&#8217;ve allowed search on websites to be so bad, intranets are even worse.  it&#8217;s the most prevalent problem actually</p>
+
+<p>showed a video of a recorded session of someone trying to search, but entered the search text into the wrong field.  and then going to search to try to find out what was up.  It was AOL search.  then she tries to type it into the location bar, and tries www.head.ache.com and it&#8217;s not found gets an error page and it gives a search option, she searches there and ends
+up at msn search</p>
+
+<p>looking at problems across all sites, 11% of them were related to search, biggest percentage of problem</p>
+
+<hr />
+
+<p>first question is to ask the other pannelists to reply to &#8220;search on websites is a miserable failure&#8221;</p>
+
+<p>udi says that it&#8217;s not a failure, 50% is good.  It&#8217;s a hard problem. when you go to small sites, where the people do not have the resources of an outfit like AOL they just can&#8217;t do it.</p>
+
+<p>mark - there&#8217;s a lot of work to be done, but it&#8217;s not just search.  It was basicproblems like how the browser is laid out.</p>
+
+<p>Peter - the same thing happened to me with the IBM site when he was looking for a thinkpad.  And he went to this &#8216;experimental&#8217; site google, and typed in what he wanted and it was there.  Google was more powerfull than IBM.  That
+means somethiing.</p>
+
+<p>Ken - more and more people are using the general internet search with site restricts to do their search.  Before you do  it on your own, think about using one of the public engines to do it for you</p>
+
+<p>How have searchers evolved besides more words?</p>
+
+<p>Ken - demand for better search tools in vertical areas.  People used to be happy with general queries in the search engine, now they want the context to be appropriate to their task.  Yahoo is looking at the different categories that users seearch in and trying to figure out what goes in those different areas.  How do you make the user aware of it once you ahve it.  The results
+page is a poor place to message to users about features and functionality.</p>
+
+<p>Peter - second that, veritcal is very important. growth in international really stands out.  Majority is outside of US, ,not in english.</p>
+
+<p>Mark - others from Ask told him - their query length is getting shorter.  people realize it&#8217;s not JUST natural language at Ask.  Tail has grown.  Majority of queries are completelly unique.  Expectations have grown, searches are successful, people search more, feedback loop.</p>
+
+<p>Udi - the size of the search box actually influences the length of the search terms.  also thinks veritcal is imporatnt.  Opensearch, syndicated search for opening search and sharing it.  Anybody can take search results and put it on
+A9.</p>
+
+<p>Jakob - People use search cause they are selfish.  they don&#8217;t want to suffer theinterfaces that sites give them, that applies to both site search and general search engines.  If sites did use more standard and humane stuff, site map, richer navigation, that might not be so.  This has to be standardized navigation, for example site maps.  It has to be a standard widget, not a
+one off trick</p>
+
+<p>How do you give access to the different verticfals without turning into a portal?</p>
+
+<p>Ken - the web search box IS the interface.  that&#8217;s what people want.  Don&#8217;t direct people to different areas, just figure out the conntext and provide them with it in place.  Rather than asking users to adapt ask the search engine to be smarter.  Is this a lcoal query?  Find the users intent.  Users have gotten confident.  That used to be the greatest problem, but it&#8217;s not the case any
+more.  They expect good results.</p>
+
+<p>Udi - Some queries work well and others dont.  &#8220;what&#8217;s the population of india&#8221; works even without any natural language.  &#8220;Waht&#8217;s the best TV to buy&#8221; does not. How do we balance ease of use and powerful tools?</p>
+
+<p>Peter - we&#8217;ve failed in terms of letting the user to have a dialog.  search is a command line without a documented interface.  How do we put advice in place to help guide users to what they want.  We&#8217;re getting there but it&#8217;s nothing like walking into a library and getting help from the librarian.</p>
+
+<p>Asked how many people have read advanced help, show of hands - lots had, atypical crowd</p>
+
+<p>Are folksonomy/tagging a fundamentally different set of data than what is there?</p>
+
+<p>Udi - it&#8217;s all just metadata, it&#8217;s our job to deal with it.  it&#8217;s not any different, the hope is that people will provide much data</p>
+
+<p>Ken - it&#8217;s remarkable in that it&#8217;s just like what we already deal with.  Right now tagging is done by web authors, and now tagging we can collect from a larger group of people.  The more metadata the better.  The more we can get from users and not authors it should make it better info.</p>
+
+<p>Jakob - we won&#8217;t get much mroe info from users. with taggintg hte barrier is lower, but it&#8217;s still  there.  we have to get passive data out of people, eyeball time and metrics from the desktop</p>
+
+<p>Ken - if they find value they&#8217;ll do it.</p>
+
+<p>jakob - okay, but it has to be more inline with the work they do already, like spam marking in collaborative filters</p>
+
+<p>Udi - mapr maps flickr to a map view.  lots of images in Maine, cause people tag with &#8220;me&#8221; (as in myself), but mapr thinks it&#8217;s a location.</p>
+
+<hr />
+
+<p>there are questions from the audience now.  And these are just the cool bits</p>
+
+<p>Udi - a9 keeps context.  If you do a search twice, a few months apart.  the second time you get a message that says &#8220;these results are new, you haven&#8217;t seen them before&#8221;, and &#8220;these are the items you clicked on last time you did it&#8221;</p>
+
+<p>Someone asked when people don&#8217;t use search, for what kinds of queries does a user typically not revert to the search interface?  This answer from Jakob is great:</p>
+
+<p>Jakob - people do not search when they&#8217;re loyal customers of someone.  If you&#8217;re a loyal customer of Amazon you don&#8217;t search for books on Google, you search on Amazon.</p>
+
+<p>Someone asked if the search wars were going to be defined in terms of branding and not tech.  All seemed to think it was still a tech race.  In that regard the industry is still evolving.  People have thought the search battle was over previously, but that wasn&#8217;t correct.  It&#8217;s not correct now, there is a lot more evolution to go.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/17/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/15/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

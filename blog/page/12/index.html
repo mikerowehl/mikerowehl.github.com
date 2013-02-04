@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I&#8217;m pretty sure there&#8217;s something about Suse and Yast that I&#8217;m supposed to like. Maybe once I get to know it more I will like it. &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/page/12/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/08/06/suse-package-management-and-firefox/">Suse Package Management and Firefox</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-08-06T06:23:07-07:00" pubdate data-updated="true">Aug 6<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m pretty sure there&#8217;s something about Suse and Yast that I&#8217;m supposed to like. Maybe once I get to know it more I will like it. But I have a 64 bit desktop system I&#8217;m using now, running Suse Enterprise 9.2, and I have absolutely no idea where to look for packages that don&#8217;t show up when I search in the Yast tool. Fortunately it&#8217;s a nice beefy system, so I was able to compile Firefox and Thunderbird and a bunch of other tools when I wasn&#8217;t able to find packaged versions. But I&#8217;ve run into a bunch of annoying incompatabilities. Take <a href="http://spellbound.sourceforge.net">Spellbound</a> for example. I love Spellbound, I can&#8217;t spell at all. I use &#8216;a&#8217; where I should use &#8216;e&#8217;, I love to use &#8216;z&#8217; where it&#8217;s completely inappropriate, and &#8216;i&#8217; comes before &#8216;e&#8217; about 50% of the time depending on my mood. But I can&#8217;t get Spellbound to work with my local compile of Firefox. Why?  Ummm&#8230; I have no idea. Every time I install it everything seems to go fine. But when I restart it tells me it can&#8217;t load the extension, I need to reinstall. Is it cause the core of FF is compiled for x86_64 and the spellcheck libs it installs are for 32 bit? I replaced the libs and xpi from the packaged spelling library with the versions from my Thunderbird compile (which does spell checking fine, W00T!), but that certainly didn&#8217;t fix it at all. Running firefox from the command line and looking for errors didn&#8217;t help at all either, nothing there that gave me any hints. So I&#8217;m kinda sad. But mostly I feel sorry for you folks, who have to now deal with reading something rife with spelling errors.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/08/06/absence-makes-the-heart-grow-fonder/">Absence Makes the Heart Grow Fonder</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-08-06T06:12:46-07:00" pubdate data-updated="true">Aug 6<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I haven&#8217;t been posting very often cause I&#8217;ve been so busy running around working on a bunch of interesting projects. It&#8217;s not cause I&#8217;m tired of blogging or feel like I have nothing to say or any of those kinds of reasons. I&#8217;ve just been completely whomped with stuff to do. I expected to have some time between jobs to do a little catchup, but that hasn&#8217;t happened. So I&#8217;m gonna post a buncha stuff as little snippets, stuff I&#8217;ve had sitting here waiting to go out.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/07/20/a-glorious-four-days/">A Glorious Four Days</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-20T00:01:35-07:00" pubdate data-updated="true">Jul 20<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m starting a new job with a startup company on Thursday. I would be starting it today, but I have a bunch of errands to run, a dentists appointment, and I&#8217;m giving <a href="http://www.sfbayacm.org/activities.html">a presentation this evening at the ACM</a> that I still need to do some prep for. My four days of unemployment (I do get to count weekend days, right?) yeilded a whole ton of offers. I&#8217;m just amazed at everything that&#8217;s going on in the valley right now! There are tons of fantastic ideas, lots of great teams, and everyone is full of infectious energy. I wish I could jump on more than one opportunity, but alas, MikeR 1.0 does not support fork(). I&#8217;ve logged a trouble ticket, but the issue isn&#8217;t moving along at all.</p>
+
+<p>In particular there&#8217;s a lot of interesting activity in mobile. Of course, I tend to hear about that stuff because of <a href="http://www.mobilemonday.com">Mobile Monday</a>, but I&#8217;m pretty sure that this isn&#8217;t all a result of me finding new pockets of mobile workers out there already. The mix of demos from the last Mobile Monday provides a great proxy for the kind of mix I&#8217;ve seen. I&#8217;m starting to see more and more startups for whom mobile represents their major source of deployment and is their default medium. I&#8217;ll use <a href="http://www.fotochatter.com/">fotochatter</a> as the example there. Their application is primarily an event based social messaging system. And oh-by-the-way, there&#8217;s a web front end to it as well. There&#8217;s a lot of demand out there for people who are familiar with the environment, particularly engineers who can actually set the stuff up and get it going. So if you&#8217;ve been thinking about making the move to mobile, it&#8217;s looking more and more like this would be a great time. We were out at dinner the other night and Russ said what I&#8217;m sure will be one of the MoMo catchphrases when giving some advice to friends: &#8220;Don&#8217;t be dumb, go mobile&#8221;. We need to setup a CafePress site for shirts and mugs sporting that maxim.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/07/17/talkie-talkie-talkie/">Talkie Talkie Talkie</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-17T03:48:55-07:00" pubdate data-updated="true">Jul 17<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of the things that <a href="http://www.wombatmobile.com/blojsom/blog/wombat/">Seni</a> talks about is the difference between &#8220;talkers&#8221; and &#8220;doers&#8221;. Russ and Seni have been talking about the idea for a long time, but it&#8217;s relatively new to me and it&#8217;s crept into a bunch of conversations recently. The original context of the conversation was around starting up a business. There are people who float around to all the entrepreneurial events year after year and talk about businesses, but never quite get around to actually starting one. That&#8217;s just the most superficial case however. It&#8217;s something of an infectious idea actually, figuring out the different styles of behavior. At first I classified talker as something like a bullshit artist. I probably missed the point completely however. Talkers are also analysts, experts, and inventors. It&#8217;s not that talkers are useless, they just approach the unknown differently. It&#8217;s something like the difference between <a href="http://en.wikipedia.org/wiki/Extrovert">extroverts</a> and <a href="http://en.wikipedia.org/wiki/Introvert">introverts</a>. Talkers have a focus on discussion for discovery and doers have a focus on experimentation. Talkers without doers run the risk of just happily standing around yammering all day long. Doers without talkers run the risk of wasting tons of time experimenting with things they could have simply asked about (and possibly blowing stuff up in the process).</p>
+
+<p><a href="http://www.paulgraham.com/gh.html">Hackers</a> are all doers. They might spend a decent amount of time chatting with people or posting about their ideas, but the dominant area is ongoing projects. Problems being solved and software being created. I&#8217;m definitely a hacker, I realized that when I first read <a href="http://www.amazon.com/exec/obidos/tg/detail/-/0141000511/ref=pd_sxp_f/103-9296983-9199843?v=glance&amp;s=books">Steven Levy&#8217;s book &#8220;Hackers&#8221;</a>. However I was confusing myself recently with trying to pick the right project to work on. Trying to learn somewhat about the business environment, learning about the people I would be working with, evaluating the technology. In short, trying to do a bunch of things that I&#8217;m vastly underqualified to do. Fortunately I don&#8217;t think that&#8217;s the way to do it. Now I&#8217;ve started looking for a great team working on a project that gets me excited. And by great team I mean simply people I like interacting with. The other considerations are still there, but they have to be secondary filters. And if I don&#8217;t find people working on the projects I want to work on I need to do them myself. Even if they&#8217;re just short simple hacks, I have a much easier time keeping on an even keel when I&#8217;m working on something that gives me that hackerish sense of fulfillment.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/07/15/last-day-at-feedster/">Last Day at Feedster</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-07-15T09:07:27-07:00" pubdate data-updated="true">Jul 15<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Today was my last day over at <a href="http://www.feedster.com">Feedster</a>. It&#8217;s been a great experience working there. It&#8217;s had ups and downs, but that always happens in a startup when you&#8217;re trying to do spectacular things. Mostly there have been ups, and I&#8217;ve learned a fantastic amount. Particularly from having worked with Rafer and Redlitz. They&#8217;ve done an amazing job getting the company to the stage that it&#8217;s at now. But the stage now is growth, and I&#8217;m really a formation stage kind of person. They have customers calling them wanting to do business and they just need the systems in place in order to be able to fulfill on that business. So I&#8217;m stepping aside to make room for Tony to take over the operation and work his brand of magic on it.</p>
+
+<p>So that means I need to figure out what to do next. <a href="http://www.mobilemonday.com">Mobile Monday</a> is doing so spectacularly well that I would be stupid not to be looking specifically at mobile. I&#8217;m also looking intently again at Linux and embedded systems in general. People keep calling me out of the blue about that stuff, there&#8217;s something going on there. So if you&#8217;re looking for a very early stage kind of engineer drop me a line. I&#8217;m back on the market.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/14/back-in-the-land-of-the-living/">Back in the Land of the Living</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-14T01:37:19-07:00" pubdate data-updated="true">Jun 14<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I reinstalled Linux on one of my systems at home. The fileserver is a permanent install Fedora, but not really usable as a desktop system. So I reclaimed the Windows machine that I was using for Symbian and Palm development and installed Gentoo. OS X is a great work system, I like it a lot more than I expected to. But it is the system to use when I don&#8217;t want to think about how to administer my desktop. I tried out the Ubuntu live CD but for some reason it had a bunch of issues with the hardware. So I stuck with what I knew would work (the system was Gentoo before I Windocized it). Now of course the problem is Symbian and Palm development. There&#8217;s prc-tools under Linux for Palm, but that&#8217;s really a languishing older toolset not capable of dealing easily with issues like PNO or updated features or APIs. At least it has an emulator for 68k systems. Palm claims they have working versions of the current tools on both Linux and OS X, but apparently us folks outside of Palm just ain&#8217;t cool enough to get to play with them.</p>
+
+<p>Then there&#8217;s Symbian. Apparently one might be able to get a cross set of tools built and compile an existing known-to-work set of source, but that&#8217;s about it. No emulator, no &#8220;unsupported&#8221; SDK releases, no debugging. Wonder why Nokia dipped a toe into the Linux market? I don&#8217;t. Seems pretty obvious to me.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/13/that-made-my-head-hurt/">That Made My Head Hurt</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-13T15:15:31-07:00" pubdate data-updated="true">Jun 13<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It started as a joke to Noel about the spam I get touting 532 nanometer green lasers available in bulk. That ranks up there with the spam for industrial conveyor belts. Do people needing large numbers of green lasers and industrial supplies go looking around in spam for their purchasing needs? Rolex watches, sure. Scam credit relief, sure. Porn, definitely. But industrial supplies? I just can&#8217;t comprehend what chain of events would lead to that spam generating the required return for the generations of the emails to be worthwhile. Some poor schlep wanders into their bosses office to be brought up short with a request to come up with &#8220;a few dozen green lasers, STAT!&#8221; The schlep sits down at their computer, the <a href="http://www.us.mentos.com/">Mentos</a> commercial music starts playing, and magically an email appears to answer their sudden and pressing laser needs? Far fetched at best. And Noel replies with &#8220;Or radioactive isotopes.&#8221; Yep, you got that right. Radioactive fricking isotopes.</p>
+
+<p><a href="http://www.unitednuclear.com/"><img src="http://www.unitednuclear.com/nerd.gif" alt="Cheesy 70s ad and all!!" /></a></p>
+
+<p>Noel says, go over to <a href="http://www.unitednuclear.com/">http://www.unitednuclear.com/</a> and check it out. Sho &#8216;nuff, <a href="http://www.unitednuclear.com/isotopes.htm">radioactive fricking isotopes</a> in all their animated-gif-spinning-red-and-green-text-spammer-generated-page glory. &#8220;It&#8217;s a joke, or a hoax&#8221; I say to myself as I do <a href="http://www.google.com/search?q=united+nuclear">a Google search</a>. No, I&#8217;m not so sure it is. Looks like the <a href="http://www.nrc.gov/reading-rm/doc-collections/news/1997/97-010iv.html">Nuclear Regulatory Commission was pissed at them because they apparently &#8220;intentionally provided false information to the NRC&#8221;</a>. I&#8217;m not sure which one causes me more concern: the version where traffic in fake radioactive material is profitable enough to be spamworthy, or the version where the radioactive material actually shows up after you place an order. Mostly I just think I&#8217;m gonna stop joking with Noel about things like this.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/12/kron-blogger-meetup/">KRON Blogger Meetup</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-12T11:13:00-07:00" pubdate data-updated="true">Jun 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We went over to the <a href="http://kron4.com/Global/story.asp?S=3462860">blogger meetup at KRON</a> yesterday. It was pretty much what I expected out of the event. The KRON folks were surprisingly and refreshingly honest in saying they had no idea what to do about blogging, but they want to start getting involved in the community. They&#8217;re going to be maintaining a list of Bay Area bloggers. <a href="http://www.endofthetour.com/">Courtney</a> already has a <a href="http://www.sfbaybloggers.com/">site called SFBayBloggers.com</a> that lists bloggers from the Bay Area, it would be cool to see them throw some support her way instead of starting up another list. KRON is also going to be aggregating posts from the local blogs and providing some metacommentary. Would be nice to see the information flow both ways. <a href="http://www.niallkennedy.com/blog/archives/2005/06/kron_blogger_ga.html">Niall mentions getting KRON to use Creative Commons</a> on some of the content it releases, I think that would be a fantastic way to kick it off.</p>
+
+<p>There were a few people who were disturbed by KRON aggregating stories from local publishers and commenting on them. I&#8217;ve come to think about &#8220;my content&#8221; online much different than I used to, mostly because I&#8217;ve been working with and around people who make their money from advertising. Many of them who come from the traditional publishing side are concerned with controlling their content, making sure that they make some scratch every time someone reads their words or sees their images or hears their audio. The folks from the new media side are much more accepting of trading their content for traffic. They don&#8217;t mind if someone takes snips of their stories and republishes them, as long as credit is given and traffic flows back their way. I think that just comes down to the difference between broadcast and online mediums. It makes sense to try to control your content when you broadcast because following attribution has a much higher activation energy for someone receiving a broadcast. Whereas online a link to the original source is much more likely to get the receiver to act. I think understanding that is the best way to come up with ways to interact with the bloggers. Sure, there are some who don&#8217;t want any more traffic because their bandwidth costs are already too high. But for most of them they would be happy to just get traffic. KRON controls a lot more traffic than most of the bloggers in the area, and using their position to help send traffic to the local blogs would give KRON a new pool of content to pull from and give the local bloggers what they want in return. I&#8217;m pretty sure that&#8217;s just about what I heard at the meeting, so all in all I think it was a great start.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/kron">KRON</a> <a href="http://www.bitsplitter.net/tag.php/media">media</a> <a href="http://www.bitsplitter.net/tag.php/blogging">blogging</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/10/tag-tuesday/">Tag Tuesday</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-10T02:32:03-07:00" pubdate data-updated="true">Jun 10<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I saw <a href="http://tantek.com/log/2005/06.html#d10t0159">Tantek&#8217;s post</a> about <a href="http://www.tagtuesday.com/">Tag Tuesday</a>. Cool stuff! There are a whole bunch of gatherings and get-togethers and parties and roundtables, it just feels like a very exciting time. Unfortunately I can&#8217;t make it to all of them, but I will be at the Tag Tuesday meeting. Feedster has been doing some <a href="http://corp.feedster.com/blog/rafer/archives/2005/05/future_salon_an_1.html">work on tagging</a>, and although it falls outside of what I&#8217;ve been working on it is an area I&#8217;m interested in. Unfortunately <a href="http://fusion94.org/">Tony</a> won&#8217;t be in town next week, I&#8217;m sure it&#8217;ll be a great time to meet a big chunk of the people working on the topic.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/10/technorati-beta/">Technorati Beta</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-10T01:16:34-07:00" pubdate data-updated="true">Jun 10<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.niallkennedy.com">Niall</a> messaged me last night to show off the <a href="http://beta.technorati.com">beta site they&#8217;ve been working on at Technorati</a>. Very cool stuff!! One of the first things I noticed was the subscribe option for tags, so that you can get items associated with a tag output as RSS. I like the layout of the results page too. With the images down the side and the posts as the main body it provides <a href="http://beta.technorati.com/tag/mobilemonday">a great summary page for events</a> in particular. The &#8220;most discussed&#8221; lists and hot search terms are always interesting, although I know that I personally don&#8217;t actively use them often. I&#8217;m generally much more interested in what my friends are talking about than the sum of what everyone is talking about. The tab layout is interesting as well. I&#8217;ve seen that implemented poorly quite often, but the implementation they have is very solid and clean. When I took a look at the source and saw an AJAX Javascript library I assumed it would be for the search box, to provide a completion list of commonly used terms and sources. I didn&#8217;t see that in using the interface however. None of the mobile browsers I&#8217;ve tried out yet support the features necessary to use AJAX, so I&#8217;ve been trying to pay some attention to where it shows up. Wherever it is, it doesn&#8217;t seem to impact using the site from a Treo or when using <a href="http://skweezer.com">Skweezer</a>.</p>
+
+<p>Update: Changed the link used an example for event summary. I posted this from my Treo and had grabbed the wrong saved URL.  The tag page has photos down the side around the post results.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/13/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/11/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

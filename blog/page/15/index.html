@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="Niall posted a clip of the Tim Draper music video. I don&#8217;t think it&#8217;ll make the charts outside of The Valley, but next time I get tossed &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mikerowehl.github.com/blog/page/15/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>16th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mikerowehl.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/12/rock-on-with-your-bad-self/">Rock on With Your Bad Self</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-12T13:57:21-07:00" pubdate data-updated="true">May 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Niall posted a <a href="http://www.niallkennedy.com/blog/archives/2005/05/tim_draper_musi.html">clip of the Tim Draper music video</a>. I don&#8217;t think it&#8217;ll make the charts outside of The Valley, but next time I get tossed out of some VCs office I know I can at least fall back on the Draper video and feel pretty secure in the notion that I&#8217;m not the most ridiculous person they&#8217;ve ever spoken to. I might even print a few stills to keep in my pocket for a quick pick me up. Beats a daily affirmation by at least one air guitar and two ass slaps.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/12/making-structured-blogging-more-concrete/">Making Structured Blogging More Concrete</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-12T13:00:51-07:00" pubdate data-updated="true">May 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.ellementk.com">Elle</a> was trying to get an <a href="http://www.ellementk.com/events/">events blog</a> up and running using <a href="http://structuredblogging.org/">structured blogging</a>. We ran into a bunch of issues. Apparently Elle ran into Bob earlier this week, and Bob posted <a href="http://bobwyman.pubsub.com/main/2005/05/mary_hodder_poi.html">about the evolution of structured blogging</a>, so I want to chime in and admit my massive ignorance. I groove to the whole structured blogging concept, I like the idea of information spread about at the points of introduction but still indexed with structure. So these are questions for clarifications and not criticisms of the idea as a whole. Discussion, that&#8217;s what this is.</p>
+
+<p>First off, I just don&#8217;t get how to do it yet given <a href="http://structuredblogging.org/wordpress/?page_id=13">the layout presented on the structured blogging site</a>. Say that I, Mike Rowehl, Feedster employee, would like to implement a parser for event data so that the Feedster site could present a calendar interface for upcoming events. There&#8217;s <a href="http://structuredblogging.org/download/x-subnode-processor.xsl">an XSLT example of a processor on the site</a>. This just isn&#8217;t clear at all. The script language is meant to act as a substitution language for an element in the enclosing HTML? I think someone went a bit off the deep end in terms implementation complexity. Why do we want the subnode content factored back into the enclosing HTML if the reason we factored it out in the first place was that we wanted strictly valid XML in an HTML document? Is the plan to process the subnode script if there&#8217;s an XML aware browser and let it style the content using CSS? If we have an aware browser why not just throw the semantic tags straight into the browser version of the markup and just note their namespace? Is it to keep from having to result to trickery when the XHTML usage of information happens in an attribute? A little clarification goes a long way, especially when there are few tools to experiment with.</p>
+
+<p>I&#8217;m going to assume that for an entry what I probably want is the subnode data for processing. I probably want <a href="http://www.bitsplitter.net/projects/events/x-subnode-extract.xsl">something that extracts all the script snippets and strips the rest of the document</a> so that I&#8217;m working with valid XML at this point. Problem is, almost nothing out there claiming to be XHTML actually is. Lets assume that we can tidy up the XHTML, or just suck out the script snippets however, cause I don&#8217;t want to belabour the obvious point. The next issue is that Bob said that the content doesn&#8217;t have to validate. I&#8217;m getting this second hand from Elle, who&#8217;s telling me I&#8217;m an idiot over IM as she related the story, so I&#8217;m taking this with a grain of salt. There seems to be some kind of mismatch here. I think the statement was probably something more like the document as a whole doesn&#8217;t have to validate, as long as the stuff in the script tags is valid. I&#8217;m going to give Bob the benefit of the doubt and assume that&#8217;s what was meant. The problem is that <a href="http://www.ellementk.com/events/">Elle&#8217;s event blog</a> looks something like this if you view source:</p>
+
+<blockquote><p><subnode xmlns:data-view="http://www.w3.org/2003/g/data-view#" data-view:interpreter="http://structuredblogging.org/subnode-to-rdf-interpreter.xsl" xmlns="http://www.structuredblogging.org/xmlns#subnode"><br />
+<xml -structured-blog-entry xmlns="http://www.structuredblogging.org/xmlns"><br />
+&#8230;&#8230;
+</xml><br />
+</subnode></p></blockquote>
+
+<p>Looks like some kind of automatic validation rules misfiring. Now, if I&#8217;m wrong here I&#8217;m sorry, but I assume that the chunks of subnode data in that blog aren&#8217;t processable because something has split the element names at the first dash. Right? Why is the plugin on Elle&#8217;s blog doing that? I&#8217;m not quite sure, and I don&#8217;t really care for the purposes of this conversation. The issue is that the tools split semantics and representation and insert them individually. Since there are no tools to inspect that semantic information except the tools producing the information, Elle could have kept blissfully creating posts with &#8220;semantic info&#8221; in them if I hadn&#8217;t let her know what was up. And then only find out months later that there&#8217;s nothing parsable in all her posts. When you fork the presentation and semantic info, and the semantic version is hidden from view of the average user, you make it very hard for the system to self correct. If the semantic info is used for presentation the normal user can tell when the info isn&#8217;t correct, it doesn&#8217;t look right. So if this script tag based XML snippet format is the format we&#8217;re going to use there really needs to be some kind of validation available. Something that informs the user of the machine readable information that matches up to the viewable information. Not that they&#8217;re going to use that service mind you, but I think it&#8217;s the minimal necessary setup to keep this effort rolling along.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/12/press-release-about-feedster-media-network/">Press Release About Feedster Media Network</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-12T01:49:43-07:00" pubdate data-updated="true">May 12<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A <a href="http://feedster.blogs.com/corporate/2005/05/feedsters_media.html">press release went out about the Feedster Media Network</a> today. It&#8217;s really cool to see an announcement about something I worked on out on the wire. Consulting work didn&#8217;t see that really happen at all. All in all the announcement is less exciting than the system going live and seeing the ads start appearing in the Slashdot feed. And not nearly as exciting as the system proving to be up to the task of serving traffic from a publisher with a reputation for commanding huge amounts of traffic. Kinda quaint to have a press release about a new media advertising system. I suppose somebody reads them though. In relation to the <a href="http://www.bitsplitter.net/blog/?p=491">question I asked before about the role of press releases after a company starts blogging</a>, put down one tick mark on the &#8220;something issued after the discussion has been going on and a solid message has formed&#8221; side of the scorecard.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/07/infocard/">Infocard</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-07T12:30:48-07:00" pubdate data-updated="true">May 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Last Mobile Monday <a href="http://marc.blogs.it/">Marc Canter</a> came by to talk about identity systems, and in particular mentioned Infocard, an emerging something from Microsoft. Apparently an identity something. Kaliya has <a href="http://identitywoman.kaliyasblogs.net/archives/2005/05/momo_marc_cante.htm">some notes up</a>. I groove to everything that Marc said about what identity systems need to provide, how they should be open source based and open standards based, how they&#8217;re essential infrastructure, and how the systems should obey a core set of principles that has the interest of the user at heart. Nice I like it. And then he started talking about Infocard, because Infocard apparently provides all this stuff we want. This is the bit from Kaliya&#8217;s notes, and from what I remember she has it pretty well right:</p>
+
+<blockquote><p>Back to Microsoft - if they are not participating in it doesn&#8217;t work it. Kim killed passport - this is the one you want trust (and thank for doing that.) They can be arrogant assholes - and Kim knows he needs help from the outside.</p></blockquote>
+
+<p>Wow that&#8217;s an odd statement coming from Canter. I spoke to Marc the most around the time when Elle and I were helping out with Ourmedia, and I remember him saying things like no one can tell us what to do with out media, we&#8217;re in control of the system we just need to make it work the way we want. I just assumed the same thing would apply to identity systems. I personally think they do. If Microsoft doesn&#8217;t participate they don&#8217;t participate, screw them. I&#8217;m personally not ready to say that Microsoft has control over the future direction of technology, especially technology I use. Hell, most of my professional life has been an attempt to prove that one does not need Microsoft to live online. If they want to participate, that&#8217;s okay. I don&#8217;t hate them forever. They just don&#8217;t have any good karma, and I&#8217;m certainly not ready to abdicate control  to them. And about Kim Cameron, great laws of identity! Well done, I like it. But am I going to trust and help Kim because he killed Passport? Ummmm, NO! You can&#8217;t set me on fire, and then extinguish me, and expect thanks.  Microsoft can&#8217;t attempt to screw me, and then hire someone to keep them from doing it, and expect my thanks. That&#8217;s not the way trust works, sorry.</p>
+
+<p>But I really wanted to be constructive here. Cause I like Marc, and obviously he&#8217;s trying to help out Microsoft with this thing by helping out with the community. I think he called what he was doing a &#8220;sanity check&#8221; for the folks. So here&#8217;s the sanity check. Try a <a href="http://www.google.com/search?hl=en&amp;lr=&amp;c2coff=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=infocard&amp;btnG=Search">Google search for &#8220;infocard&#8221;</a>. And when you realize that doesn&#8217;t tell you anything about the technology itself, just what it&#8217;s supposed to do, try a <a href="http://www.google.com/search?q=microsoft+infocard&amp;sourceid=mozilla-search&amp;start=0&amp;start=0&amp;ie=utf-8&amp;oe=utf-8&amp;client=firefox-a&amp;rls=org.mozilla:en-US:official">search for
+microsoft infocard&#8221;</a>.  Once you&#8217;re done getting no information there, how about <a href="http://search.microsoft.com/search/results.aspx?st=b&amp;na=88&amp;View=en-US&amp;qu=infocard">search at Microsoft.com for infocard</a>? Wow, this time we don&#8217;t even get useless results, we get nothing. So where&#8217;s the openness? Where&#8217;s the interaction with the community and transparency? And how can I find out about these great new technologies? I really don&#8217;t like being told what I have to use and why I have to use it, and then get no information about what it is under the covers. I get insulted when that happens, and it engenders the mistrust of a crooked marketing campaign.</p>
+
+<p>Microsoft wants to play? Cool, welcome to the game, nice to have you. The game might be played a bit different than what you last remember. These days the game is about conversations, and trust is built through interaction directly with the people whom you desire to win trust from. I will not let you play the game with me if you tell me that you write the rules, so I might as well accept it. The game is pretty well structured to deal with that particular strategy these days, and practitioners usually loose. That&#8217;s my constructive bit of advice, it&#8217;s given once. After this time the advice gets a lot less constructive if you keep trying to tell me what choices I should be making without giving me information.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/07/inflight-80211-service/">Inflight 802.11 Service</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-07T09:26:22-07:00" pubdate data-updated="true">May 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We ended up in business class instead of economy on the flight from Chicago to Stockholm on our way to the <a href="http://www.mobilemonday.net/mm/summit2005/index.php">Mobile Monday Global Summit</a>. It&#8217;s like heaven in here. <a href="http://www.flickr.com/photos/miker/12835242/in/photostream/">Russ was really happy to have legroom</a> (he just <a href="http://www.russellbeattie.com/notebook/1008451.html">beat me to the punch with a post too</a>!). I&#8217;m playing with all the controls for the seats pulling out the trays and the TV built into the arm of the chair, and the game controller (the games aren&#8217;t great actually, I got bored in like 2 minutes). And there are outlets in the seats! I&#8217;m so ecstatic I can hardly breathe. And then Russ says &#8220;Hey, isn&#8217;t SAS the one that has inflight 802.11 service?&#8221; And sure enough, the one thing we haven&#8217;t pulled out and played with yet is the stuff in the pockets in the back of the seats in front of us, holds the best surprise. <a href="http://www.flickr.com/photos/miker/12835352/">SAS provides inflight 802.11 service</a>. So I&#8217;m currently somewhere over Canada writing this, and connected to IM and downloading my mail. How much ass does that kick? It&#8217;s hard to quantify exactly, but it <a href="http://www.bitsplitter.net/projects/bbrep-SAS.png">does so at about 193kbps</a>. Of course overall ass kicking is a measure of speed x duration, so we&#8217;ll only be able to tell how much was kicked after we know how long it was kicked for.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/05/paul-graham-and-geek-dinner/">Paul Graham and Geek Dinner</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-05T03:38:47-07:00" pubdate data-updated="true">May 5<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We went out to hear <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1676&amp;mo=5&amp;yr=2005">Paul Graham speak last night</a> and after that we <a href="http://www.ellementk.com/archives/2005/05/04/338">gathered together some geeks to meet for dinner in Palo Alto</a>. At first it was going to be a small group, we thought maybe 5 or 6 people. But by the time we actually sat down <a href="http://www.flickr.com/photos/niallkennedy/12449886/in/photostream/">there were 15 people at the table</a>.  Il Fornaio worked out quite well for the gathering. The space they gave us was actually big enough for 15 people. I hate when you go somewhere with a big group and they give you a table that you can barely stand around shoulder to shoulder. They were open late. And it was pretty cheap.  The bill split evenly came out to $17 per person, which isn&#8217;t much considering that most people had wine and there were a lot of entrees served. Some people had just desert or a cocktail, but still that&#8217;s pretty cheap for a group outing.</p>
+
+<p>The talk by Paul Graham was very good. I got there late, and Elle and Niall had called to tell me they saved me a seat in the first row. As I was walking in Paul was up front talking and reading from a sheaf of notes. I thought to myself &#8220;Uhoh, if he&#8217;s just reading off some prepared speech I might get pretty bored.&#8221; And given that I can&#8217;t get a cell phone signal from up at the PARC building where the presentation was held and there&#8217;s no wifi onsite that can be really distracting for the people around me. Wasn&#8217;t an issue at all however. He was just using the notes as guidelines and telling some really amusing stories about his direct experiences. That was what really made it engaging I think, that it was about specific experiences that Paul had himself. Many of the points are pretty obvious when you abstract them out of the talk, like you should be concentrating on growing your business if you&#8217;re looking to be aquired because the condition of growing value makes you more attractive to potential suitors, and the best way to get in front of those potential suitors is to go in proposing partnerships and licensing deals. But there were a ton of bits and peices of practical tactics scattered around the overall strategy stuff. No way I&#8217;ll be able to get them all, but here&#8217;s a bunch that stood out for me:</p>
+
+<ul>
+<li><p>When talking about planning to get bought at some point he said that license deals can actually be a liability in some cases. The person who aquires you or your technology isn&#8217;t going to look favorably on being tied to a license deal that requires them to let their competition use the technology as well. There are contrary examples, like Google licensing search to Yahoo and Altavista to prevent those companies from working on search on their own. But it is something to keep in mind while you&#8217;re out there shopping around.</p></li>
+<li><p>He really encouraged getting an investment bank involved if your deal is big enough that it makes sense to do so. Under the standard structure they use they&#8217;re properly incented to make the deal in a way that&#8217;s really favorable to you when it&#8217;s favorable to them. They make the process much easier.</p></li>
+<li><p>He stressed that potential aquireors aren&#8217;t really all that likely to steal your idea and make their own copy. It does happen, and he gave an example of a Japanese firm that stole their business plan and technology and setup their own shopping site. But in general things like that don&#8217;t really happen. The best way to protect against it is to keep some key factors of what your innovation is out of your discussions. You can give away a whole bunch without giving away everything essential to reproduce the system. If you think that copying is a real risk just figure out a few nonobvious areas in which to hold back some info.</p></li>
+<li><p>The most important metric for most people evaluating the company is the number of users. Most aren&#8217;t well prepared to evaluate the technology itself, but they can observe the effects of a good implementation. It&#8217;s assumed that if you have crappy technology you won&#8217;t have many users and that if you do you should. So the best thing to do is to grow your customer base to prove that the technology is good, it&#8217;s better than trying to figure out how to describe why your tech is great. You can prove it quite easily by pointing to the group of existing users, which is more valuable to other areas of the business than a description of the technology anyway.</p></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/04/podcasting-radio-sirius-and-an-existence-proof-for-media-model-experimentation/">Podcasting, Radio, Sirius, and an Existence Proof for Media Model Experimentation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-04T03:44:24-07:00" pubdate data-updated="true">May 4<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s been quite a bit of buzz about <a href="http://www.russellbeattie.com/notebook/1008442.html">Adam Curry starting a podcasting show on Sirius</a>. Doc <a href="http://doc.weblogs.com/2005/05/03#takingTheFork">picks up the thread</a> and says:</p>
+
+<blockquote><p>Second, what Adam will be doing at Sirius, and what Howard Stern will be doing as well, is restoring radio to what it used to be, and should have been, all along. But it&#8217;s not podcasting. It&#8217;s new life for an old sphere.</p></blockquote>
+
+<p>Okay, I&#8217;m not going to argue that what Adam is doing in this case is broadcasting and not podcasting, but I have a completely different takeaway. Sure podcasting is a fundamentally different system than broadcasting was, and needs to be treated as something different if it&#8217;s going to progress. But I don&#8217;t see what Adam is doing as leveraging the new medium of podcasting to prop up radio. I think the radio folks might see it that way, and that&#8217;s why they put him on the air. I think what Adam is doing is introducing people to podcasting through a medium they already consume. He&#8217;s raising awareness for the medium and giving people a way to sample from it without a technical investment.</p>
+
+<p>I know it&#8217;s hard for some of us technical people to understand, but let me lead you on a very quick romp through the progress of podcasting. At first there were some quick people who really groked the whole concept and built it, nod to Dave and Adam, with some really fast followers picking up on the casts and what they meant right away. But even among the technical folks there was a bit of hesitance. Some of them said &#8220;yea, interesting, but do I really want to listen to some guys just talking?&#8221; and &#8220;I would really rather read my information&#8221; and &#8220;sounds like just a whole lot more crap, just in a different encoding now&#8221;. But a lot of those folks came to the other side pretty quickly. Podcasting attracted great content, and the tools got better, and the word of mouth network and blogosphere spread the information necessary to get the right content in the right hands. Lots of the people who were hesitant tried it out anyway, and once they actually tried it they found out that they liked it. The influx of new users drove a new set of users, and it snowballed very quickly. It seems like it spread all over because it&#8217;s hit all the geeks and the media and info junkies. It hasn&#8217;t.</p>
+
+<p>I&#8217;m sitting on Caltrain on my way into San Francisco, traveling from Palo Alto up north. You don&#8217;t really find a more technically savvy area than the one I&#8217;m in. There are 26 people in this train car with me. I just asked all of them if they listen to podcasts or not. 5 of them said yes they did, 2 said that they know what they are but don&#8217;t really listen to any casts, and the rest all said something along the lines of &#8220;what&#8217;s podcasting?&#8221;. Now granted, for a new movement, to have 7 out of 26 random people aware of the medium is great. Kudos on the job done so far. But you know what, when I asked those people if they listen to radio, not a single one said &#8220;what&#8217;s radio?&#8221; People know what radio is, they know how to get it if there&#8217;s something there they&#8217;re interested in, and a lot already have the skills necessary and the vocabulary to understand it. That isn&#8217;t true for podcasting. Not yet at least. And if we are to make it so we need to engage in that most horrid of technical efforts, customer education. The word has spread like wildfire through the technical community because we have a distribution network for information that we actively go out and crawl, we seek out the info and try out new things. If podcasting is going to cross the proverbial chasm, there needs to be a way to get the folks on the other side aware of what the benefits are and how to get there. This isn&#8217;t my idea by the way, <a href="http://www.ericrice.com">Eric Rice</a> rants about this all the time. And he couldn&#8217;t possibly be more right. Podcasting is a cultural and social revolution, not a technical one. So technical hacks and tools aren&#8217;t really going to carry the medium to the capacity at which it becomes transformative on a global scale. It&#8217;s going to take cultural and social hacks instead. If you want podcasting to change the world, get out there and teach someone nontechnical how to get podcasts, teach someone without a technical background but with a great message how to create podcasts. I really think that&#8217;s the next step, and I think Adam is right on the mark with what he&#8217;s doing.</p>
+
+<p>And just in case this should be misconstrued as hero worship, I actually don&#8217;t listen to the podcasts that Adam does. He&#8217;s just not my kind of audio. Not a problem, I&#8217;m sure if I were to do a podcast he wouldn&#8217;t really be interested in me either. So I&#8217;m speaking from the detached viewpoint of someone interested in podcasting and aware of what Adam has done from the technical side. I just really think this is the right move. And a radio person who groks the new medium is a perfect way to introduce the new to the existing listeners.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/03/grassroots-media-social-gathering/">Grassroots Media Social Gathering</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-03T02:37:58-07:00" pubdate data-updated="true">May 3<span>rd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>JD posted about <a href="http://www.darknet.com/2005/04/grassroots_medi.html">a grassroots media social gathering</a> on Friday May 13th at CNet in San Francisco. There&#8217;s an <a href="http://www.newmediamusings.com/blog/2005/03/citizens_media_.html">invitation only citizens media strategy session</a> on the Saturday after, and a bunch of the folks attending that session are going to be at the gathering the night before. It&#8217;s going to be a pretty crazy week for me, but I&#8217;m going to try to make it out for Friday. What is citizens/grassroots media? Check out some of the articles from <a href="http://www.feedster.com/search.php?hl=en&amp;ie=UTF-8&amp;limit=15&amp;q=%22citizen+media%22+OR+%22grassroots+media%22&amp;sort=date">this search</a>. It&#8217;s an evolving concept, so it&#8217;s hard to give a simple static definition. When I think of grassroots media I think of <a href="http://www.jluster.org/">Jonas Luster</a>, <a href="http://dangillmor.typepad.com/">Dan Gillmor</a>, and <a href="http://jd.typepad.com/">JD Lasica</a>. And they do have different takes on what the whole movement means. So drop by on that Friday and find out what all the hubub is about straight from the source, there&#8217;s sure to be some interesting discussion and arguments.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/01/advertising-in-rss-feeds/">Advertising in RSS Feeds</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-01T17:54:33-07:00" pubdate data-updated="true">May 1<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a <a href="http://www.reallysimplesyndication.com/2005/04/30#a521">conversation going on about advertising in RSS</a>. Dave Winer doesn&#8217;t think that advertising belongs in RSS at all, and apparently there are a bunch of people who feel the same way. That certainly makes some sense, I felt the same way about the Internet as a whole opening up to commercial influence when I was back in college. I figured that once commercial influences showed up online the value of the information available would go down. There would be so much advertising and selling that none of the useful information would be findable. It was possible I guess, but relatively myopic. Not that mediums can&#8217;t be ruined by transformations of content or audience. I think Usenet is effectively a ruined medium, unable to bear the influx of a large number of belligerent and uninformed participants. But I don&#8217;t think the web was ruined by the introduction of commercial concerns, and advertising in particular. The web actually got a whole lot more interesting after businesses showed up. I spent a bunch of time thinking about why that is, cause I felt like an idiot after spouting off again and again about &#8220;the death of the web&#8221; that would occur if businesses were allowed to influence the future direction of the Internet.</p>
+
+<p>So why not? Why wasn&#8217;t the web completely overtaken with advertising? Because advertising only works if people see it. If you&#8217;ve got a website that does no one any good, and no one is interested in going there in the first place, you don&#8217;t make any money off your advertising. That&#8217;s not necessarily true everywhere in advertising. In the offline world advertisers can buy billboard spots along highways and know that people will see their message. Cars follow particular paths, and people can get properties that expose drivers and passengers to their message even if they add no value because they know people are forced to go along roads when they drive. In part it was expected that the online advertising world would be somewhat the same. People would buy advertising at the roadside to the online world, which at one point people figured meant buying advertising at search engines and portals. That wasn&#8217;t really the best model of how things worked out however. It turned out that buying ads online was a lot more like buying ads in a magazine than buying outdoor advertising. That&#8217;s really important for a number of reasons. First of all, the value of the advertising space moves a lot closer to the point of value creation. If someone creates a site that lots of people love and visit every day, that person sells advertising on it and can directly profit. That incents some people to create useful sites who wouldn&#8217;t necessarily do so, which means more good stuff out there than if there were no advertising. Ooops! I blew that one, didn&#8217;t see it coming at all. That&#8217;s what I get for spending the last 20 years working on computer science and engineering instead of business and market theory. And unlike billboard space, you can&#8217;t just build more  to blast out your message. You have to create a site with draw in order to be able to create the advertising space to monetize. The portals and search engines still were able to sell advertising space, but it wasn&#8217;t because they were necessary stopping points, it&#8217;s because they had to add value in terms of the services they provided. As Google proved to the rest of the search community, searchers are not a captive audience. They are a set of customers who you have the privilege of trying to monetize if you provide them a valuable enough service to keep their attention. The same holds true with any property online. If I post information about what I had for breakfast along with a few dozen ads for mesothelioma I don&#8217;t necessarily make money from it. Unless the advertising matches the property and the property provides value to visitors the system just doesn&#8217;t work out in favor of the publisher, so it&#8217;s simply not worth doing. People might be out there putting up sites like that, but I don&#8217;t really care cause I don&#8217;t have to visit them.</p>
+
+<p>The same holds true for RSS. If people want to put ads in the feeds and they&#8217;re annoying enough that I don&#8217;t feel like seeing them I unsubscribe. But <a href="http://www.engadget.com/">Engadget</a> can have a shitload of advertisements in their feed before I unsub. <a href="http://www.russellbeattie.com/notebook/">Russ</a> can feel free to toss just about any amount of advertising in his feed and know I&#8217;m not going to drop him from my high priority reading list. If a publisher has created a feed with a lot of value why shouldn&#8217;t they be able to directly monetize that feed? They might be able to create a feed with snippets and put advertising back on the main site. But that&#8217;s only one potential model for how to use RSS as a new publishing medium. And speaking as a technologist, I&#8217;m almost completely definite that the decision about how to use the medium should not be made by people like me. I&#8217;m sure that policy decisions about the content that&#8217;s acceptable in RSS should not be enforced by the tools. What made the Internet successful was the <a href="http://en.wikipedia.org/wiki/End-to-end_principle">end to end principle</a>. The technologists came up with a system that made just about anything possible and then stood back and let the users of that system figure out how to create value with it. I think the same thing is true with RSS. As techies working in the field it&#8217;s our responsibility to make just about anything possible. There&#8217;s exactly one person who should decide what goes into the feed - the publisher of the feed. There&#8217;s exactly one person who should decide if a feed should be subscribed to - and that&#8217;s the reader of the feed.</p>
+
+<p>I think the <a href="http://www.readwriteweb.com/archives/002708.php">questions from Richard MacManus</a> are right on target. Of course I think that advertising in feeds is a valid technique, I wouldn&#8217;t be working on the FeedsterMedia stuff unless I thought it was something that would be of value to at least some people. I also don&#8217;t really see RSS becoming &#8220;polluted by advertising&#8221;. I learned from my mistake with my misassessment of advertising on the Internet at large. Sure, some people will toss advertising in low value feeds and I&#8217;ll be forced to unsub. But it&#8217;ll also mean that some people who don&#8217;t have feeds now will start producing them. It&#8217;ll mean that some people will start producing &#8220;feed properties&#8221; because there&#8217;s space for properties that didn&#8217;t have the proper draw as websites but do work as feeds. There will always be a continuum of feeds also. Some will have no advertising at all but provide extremely valuable info. Like, oh, say <a href="http://www.bitsplitter.net/blog/">my blog</a>. Absolutely fricking brilliant stuff, and not an advertisement in sight. See, sometimes there is a free lunch actually. Why do I continue to write a blog for free? Because I value the connections I make through publishing here. But just because I&#8217;ve decided to put my info out there for free, that DOES NOT mean that everyone else has to follow the same model that I did. It&#8217;s just arrogant and narrow minded to think so. Probably even more arrogant than calling your own writing &#8220;absolutely fricking brilliant stuff&#8221;. Some people will produce excerpt feeds with advertisements on the main site, others will produce full text feeds and want to put advertisements in them. Depending on the situation all kinds of different combinations make sense.</p>
+
+<p>Most people believe that the best way to manage a market is to not manage it at all. Just let the people with the products decide how much they want to sell them for and the people with the money decide what they want to buy. Same thing applies here. Let the publishers decide what they want to publish and how they want to publish it, let the readers decide what they want to read. Everything else will work itself out. And like in a free market, the most value is created when there&#8217;s the least friction in the marketplace. The more tools publishers have at their disposal, the more they can experiment with models and find the ideal mix, the quicker we&#8217;ll find that maximum value point. And that&#8217;s not maximum value for just the publishers, it&#8217;s value for the medium as a whole. The two go hand in hand. Maybe Dave is right, and the real way to deal with the issue is to think creatively about how to make money with feeds. I say let the market decide that. If readers really don&#8217;t like ads in RSS, and there is a way to provide value and make money without doing ads, someone will set it up and the readers will flock there. Hell, I&#8217;ll be happy to post about it myself. Trying to prevent publishers from doing what they want and making decisions on the behalf of readers is just preventing progress however.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/29/mobile-monday-global-summit-and-mobile-enterprise-2005/">Mobile Monday Global Summit and Mobile Enterprise 2005</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-29T03:43:24-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Russ and I are most likely going to heading out to the <a href="http://www.mobilemonday.net/mm/summit2005/index.php">Mobile Monday Global Summit</a>.  Some of the folks from the old skool original Helsinki Mobile Monday have been looking to get together people involved in the other Mobile Monday gatherings and try to get some collaboration going. It&#8217;s exactly my scene.  About 5400 miles away from my normal stomping ground, but the ideas are completely in line. The Mobile Monday gathering is part of the <a href="http://www.tieturi.fi/koulutus/seminaarit/mobileenterprise/home.asp">Mobile Enterprise 2005</a> event.  And the events are open and free to all! It looks like it&#8217;s going to be a big event with great speakers and they&#8217;re putting it on for free. That&#8217;s really impressive. I&#8217;m hoping to be able to do the same thing when we put on our event here in the Bay Area. Besides <a href="http://www.bloggercon.org/">BloggerCon</a> I don&#8217;t know of large events that have managed to be free to participants. It might be hard, but I think it&#8217;s possible.</p>
+
+<p>Russ and I  are planning to make it out there on the 8th so we have a bit of time to recover from the flight and be alive and kicking come the morning of the 9th. We were thinking about getting some of the other folks who are in from out of town together on the night of the 8th. We&#8217;ve been talking to Jari Tammisto from MobileMonday.net to do the planning. So if you&#8217;re going to be in town and interested in meeting up the night before the event starts, either snag Jari and find out what&#8217;s planned or email me (miker at bitsplitter dot net) and I&#8217;ll send the info out about where to meet up when I get it. We&#8217;re probably staying right in the area, so it&#8217;s most likely going to be right in that area.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/mobilemonday">MobileMonday</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/16/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/14/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Miker On Other Sites</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

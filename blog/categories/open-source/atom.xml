@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Open Source | Miker]]></title>
+  <link href="http://mikerowehl.github.com/blog/categories/open-source/atom.xml" rel="self"/>
+  <link href="http://mikerowehl.github.com/"/>
+  <updated>2013-02-04T00:45:57-08:00</updated>
+  <id>http://mikerowehl.github.com/</id>
+  <author>
+    <name><![CDATA[Mike Rowehl]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[http_load for Request Replay]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/23/http_load-for-request-replay/"/>
+    <updated>2006-08-23T16:05:49-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/23/http_load-for-request-replay</id>
+    <content type="html"><![CDATA[<p>The <a href="http://talks.php.net/show/oscon06/0">presentation that Rasmus gave at OSCON</a> this year seems to have kicked some ass. I missed the conf, but got a bunch of interesting info from the slides. In particular I hadn't used <a href="http://www.acme.com/software/http_load/">http_load</a> before. Part of what I've been doing at AdMob is taking a look at performance and scaling, so that was a great find. It's exactly the set of controls and measurements I normally start out with, and it really does run very efficiently in terms of not loading down the system that http_load is running on.</p>
+
+<p>Just about the only thing that didn't work the way I wanted was the random selection from the url list file. I wanted to replay a set of traffic in order, so I <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/08/http_load-miker-01patch.txt">hacked up an -orderedurls option</a> to select from the url list sequentially (repeating the list once you get to the end) instead of randomly choosing. Reading the whole file in and parsing it probably isn't the way to go for this particular usage, so I'll have to clean it up when the traffic segments I'm playing get into the millions instead of just the tens of thousands. But it works great for now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Linux Lappy]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/08/17/linux-lappy/"/>
+    <updated>2006-08-17T23:23:23-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/08/17/linux-lappy</id>
+    <content type="html"><![CDATA[<p>It's just about New Laptop Time. Not quite, but almost. Being a Linux only user it's always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you're thinking about picking up at deep discount from Office Max certainly has not. And I'm not a dual-booter either. I don't have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it's my personal laptop, which is what I plan for this to be.</p>
+
+<p>Currently I'm leaning very heavily toward <a href="http://www.thinkwiki.org/wiki/Category:X41_Tablet">the Thinkpad X41 tablet</a>. It looks like there's good X support for a bunch of stuff that's traditionally a pain in the ass under Linux. Screen rotation seems to be working (without restarting X, thank god), the input driver for the touchscreen, power management (including frequency scaling), and wireless using ipw2200. Anyone out there with an X41 tried Linux and care to toss in some comments before I pick one of the things up? It's hard to tell from wiki postings just how painful is it to get the thing actually setup, and there's always the chance that the instructions on the wiki are wrong or incomplete.</p>
+
+<p>On a very much related note, anyone know a good shop in the San Francisco Bay Area that could come up with some Pimp My Ride style dashboard mounting and wiring hookups for my car?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kernel Config from Thinkpad X32]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32/"/>
+    <updated>2006-03-13T05:56:09-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32</id>
+    <content type="html"><![CDATA[<p>Someone emailed me asking for the config for the kernel I'm running on my X32, so I figured I might as well post it instead of just mailing it back.  I'm using the 2.6.13 drop from <a href="http://www.kernel.org">kernel.org</a> and adding in <a href="http://www.rowehl.com/blog/?p=550">packages like WPA afterward</a>.  Here's <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/03/config-2.6.13.txt">the config</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Van Jacobson's Linux Networking Slides]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/01/31/van-jacobsons-linux-networking-slides/"/>
+    <updated>2006-01-31T08:34:39-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/01/31/van-jacobsons-linux-networking-slides</id>
+    <content type="html"><![CDATA[<p>The <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/30#van_slides">slides from Van Jacobson's LCA2006 presentation</a> are online. They talk about an evolution to the Linux networking stack targeted at taking into account multicore systems. If I had to summarize the presentation I would steal the title from slide 16: "The end of the wire isn't the end of the net".</p>
+
+<blockquote><p>On a uni-processor it doesn't matter, but on a multi-processor the protocol work should be done on the processor that's going to consume the data.</p></blockquote>
+
+<p>This means ISR and Softint should do almost nothing and Socket should do everything.</p>
+
+<p>The slides are excellent and lay out the issue very clearly, but I would also recommend checking out <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/27#vj_channels">DaveM's comments on net channels</a>. It was his writeup that turned me on to the presentation.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ffmpeg Video Conversion Using Linux]]></title>
+    <link href="http://mikerowehl.github.com/blog/2005/12/22/ffmpeg-video-conversion-using-linux/"/>
+    <updated>2005-12-22T16:49:22-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2005/12/22/ffmpeg-video-conversion-using-linux</id>
+    <content type="html"><![CDATA[<p>I fooled around with <a href="http://ffmpeg.sourceforge.net/index.php">ffmpeg</a> for a while trying to convert a few videos for use on my iPod Video, and managed to get something working after using <a href="http://www.julien-oster.de/pov/pmcms/entry/122">using this description of video conversion</a>. While the music download and video download were better than expected, this part is what one could call "unpolished".  I ended up needing to use the ffmpeg out of CVS, compiled locally against local compiled versions of <a href="http://www.audiocoding.com/modules/mydownloads/">libfaac</a> and <a href="http://www.xvid.org/">xvid</a>. The important thing is, I got videos converted. Here's the command line I used:</p>
+
+<p><code>ffmpeg -i the_scene_xvid_episode_1.avi -f mov -b 1800 -maxrate 2500 -vcodec xvid -qmin 3 -qmax 5 -s 320x240 -acodec aac -ab 128 ~/the_scene_1.m4v</code></p>
+
+<p>I found a few other descriptions, but they had left out the mov format specification (-f mov). All the videos I tried like that just kicked right back to the menu when I tried to play them on the iPod. I haven't verified all the options to make sure that it's really the -f mov that makes the difference, but I'm definite that line above works for me. Maybe it'll help someone else.</p>
+]]></content>
+  </entry>
+  
+</feed>

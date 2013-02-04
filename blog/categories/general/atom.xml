@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: General | Miker]]></title>
+  <link href="http://mikerowehl.github.com/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://mikerowehl.github.com/"/>
+  <updated>2013-02-04T00:45:57-08:00</updated>
+  <id>http://mikerowehl.github.com/</id>
+  <author>
+    <name><![CDATA[Mike Rowehl]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
+    <updated>2006-09-20T05:01:18-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
+    <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, "there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up". A bunch  of searching around in the repository listings turned up no java license related packages.</p>
+
+<p>You find where <a href="http://www.aspma.com/downloads/">download mp3 music</a> on player, You need <a href="http://www.aspma.com/download/">mp3 music download</a> from online mp3 archive</p>
+
+<p>So I did a search and ended up with <a href="https://jdk-distros.dev.java.net/ubuntu.html">this description of installing Java under Ubuntu</a> which says pretty much what I was doing, except using the graphical package manager instead. "How lame would it be if you needed to install Java using the Synaptic package manager instead of the command line?" Not lame enough to discourage doing it apparently. If you're looking to install Java under Ubuntu you might have to use the package manager instead of apt-get in order to do it. Next time you see Java people throw rotten fruit at them to let them know how you feel about that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
+    <updated>2006-09-18T16:21:23-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
+    <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee's Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke's over. You can make it stop.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
+    <updated>2006-09-18T06:16:12-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
+    <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I'm looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don't want to start mucking around now that I've just started accepting I don't need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
+
+<p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn't cause any problems I'll put it in here at work too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Subversion Book]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/15/subversion-book/"/>
+    <updated>2006-09-15T02:46:37-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/15/subversion-book</id>
+    <content type="html"><![CDATA[<p>I've been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
+
+<blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[You've Stayed Up Too Late When]]></title>
+    <link href="http://mikerowehl.github.com/blog/2006/09/09/youve-stayed-up-too-late-when/"/>
+    <updated>2006-09-09T21:15:47-07:00</updated>
+    <id>http://mikerowehl.github.com/blog/2006/09/09/youve-stayed-up-too-late-when</id>
+    <content type="html"><![CDATA[<p>You know you've acidentally let your bedtime slip too close to sunrise when you're flipping through the onscreen TV guide and MTV actually lists "Music Videos" as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you've somehow ended up in the 80's.  Flock of Seagulls anyone?  Don't laugh, they're <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
+]]></content>
+  </entry>
+  
+</feed>
