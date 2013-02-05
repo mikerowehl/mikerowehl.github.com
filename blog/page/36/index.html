@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Positioning and Presenting The Art of Positioning 1 problem - talking about what you do concisely. Two points are market definition and value &hellip;">
+  <meta name="description" content="Presenting What and How - most people concentrate too much on what and not how. start at the end: pitch decay says that most people forget very &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +31,18 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -65,6 +77,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/06/15/art-of-the-start-6/">Art of the Start 6</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-06-15T04:31:21-07:00" pubdate data-updated="true">Jun 15<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Presenting</p>
+
+<p>What and How - most people concentrate too much on what and not how.</p>
+
+<ul>
+<li><p>start at the end: pitch decay says that most people forget very quickly. You need to find the most important 10 percent are really drive it. Put your most important point right up front, first slide.</p></li>
+<li><p>be brief: all VCs have attention deficit disorder. Kill geek speak.</p></li>
+<li><p>Bait the hook: get them interested. You don&#8217;t want your elevator pitch to close a deal, you want them to get off the elevator with you and ask for more info. Call to action.</p></li>
+<li><p>Get high and stay high, stay up at a high level so that you talk about what and benefits, not how. They will ask for how when they are ready.</p></li>
+<li><p>obey the 12/15 rule, a dozen slides in 15 minutes. An hour meeting does not mean an hour worth of slides. He had a list of what should be on the slides, I&#8217;ll fill in the details here at another point.</p></li>
+<li><p>Change peoples pulse: audience, band with them, communicate on their level.</p></li>
+<li><p>Tell stories that sell: Questions to ask when preventing are.What are the three most important things you could learn about my company. What interested you about our business plan.</p></li>
+<li><p>Geta transition: Ask a rhetorical question.</p></li>
+<li><p>Practice and integrate feedback: videotape yourself, use a timer to make sure you can do your pitch in the time you have.</p></li>
+<li><p>Develop an attitude: never give up</p></li>
+</ul>
+
+
+<p>Most important are begin with the end, be brief, change peoples pulse.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -548,52 +614,6 @@ See you soon.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/05/28/the-linux-swap-debate/">The Linux Swap Debate</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-05-28T17:19:47-07:00" pubdate data-updated="true">May 28<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There&#8217;s a <a href="http://kerneltrap.org/node/view/3202">thread from the Linux Kernel Mailing List</a> which seems to have gotten picked up all over the place. Most sources seem to be including the quote:</p>
-
-<blockquote><p>Nick Piggin explained that swap can improve performance no matter how much RAM you have, &#8220;well it is a magical property of swap space, because extra RAM doesn&#8217;t allow you to replace unused memory with often used memory. The theory holds true no matter how much RAM you have. Swap can improve performance. It can be trivially demonstrated.&#8221; This said, numerous Linux users do report success running a swapless system.</p></blockquote>
-
-<p>But not very many have done anything to shed any light on what&#8217;s meant there.I&#8217;ll try to give a brief example which hopefully will explain. What&#8217;s meant by &#8220;replace unused memory with often used memory&#8221; is that the VM subsystem should be able to replace a necessary but infrequently accessed page with a page that gets used very frequently. As an example lets say that you have 256 meg of memory in your desktop system. 128 meg is being used by a GNU Chess game you were in the middle of, but paused because you were struck by a sudden urge to rework a program that processes XML files and turns them into images. Lets say that the XML files in your test set comprise 192 meg of data. They don&#8217;t have to all be in memory at the same time, but the full set of file data comprises 192 meg worth of space.</p>
-
-<p>Now, to understand the behavior differences between the with-swap and without-swap cases it&#8217;s necessary to understand the concept of caching that operating systems like Linux practice. Caching in this case takes the form of the operating system leaving information from the disk sitting in RAM as long as there&#8217;s free memory. This keeps the operating system from having to go back to the slow disk to get a file if you end up reusing the file. In an ideal world the RAM in a system would be large enough so that it never gets filled up, but this isn&#8217;t the case. So the operating system tries to keep as much information from the disk sitting in RAM as it can. This way if I grep a file for &#8220;mike&#8221; and then with the next command grep the file for &#8220;rocks&#8221;, the operating system doesn&#8217;t have to read the file from disk twice. Assuming it has some free RAM to use, after my first command it will keep the file contents sitting in memory. Then when I type my second command it sees the copy in memory already and skips the disk operations.</p>
-
-<p>First lets assume that you have no swap at all in your system. You can still do this work, no problem. As long as all 192 meg of your data files don&#8217;t have to be in memory at the same time, which we&#8217;re assuming they wouldn&#8217;t have to be. It would be somewhat slow however, because after processing 128 meg of your input files the system would have run out of memory. It would have to start dropping the first files from the set in order to read in the contents of the last 64 meg of contents. So end the end of processing, the cache contains the final 128 meg of your data files, the first 64 meg have now been dropped from the cache. But now you fix a few bugs in your program and run your tests again.  The first 64 meg of data needs to be read in again, producing more disk operations. Lets say you cycle over and over again running your program on this full set of data. With every run the disk is going to have to get accessed because not all of your files will fit into RAM with your suspended GNU Chess program sitting there. This is what people mean when they say that &#8220;the full working set&#8221; doesn&#8217;t fit in memory. It means that you can run your program, but that the system has to use the disk when it wouldn&#8217;t have had to if you had more memory.</p>
-
-<p>Now, lets say that you have your system setup with 128 meg worth of swap space in addition to the 256 meg of RAM you have. Once again, assuming this is an ideal situation, when you run out of RAM the virtual memory subsystem looks at the currently used memory and says &#8220;hey, this GNU Chess program isn&#8217;t being used&#8221;. So instead of dropping your first 64 meg of data files out of cache, it instead uses the swap space to move 64 meg of the suspended GNU Chess program off to disk. Now all 192 meg of your data files are in RAM. You run your program over and over again now, and no disk operations need to be performed. Eventually, when you start using GNU Chess again, those 64 meg moved off to swap need to be reloaded. But if we assume that you&#8217;ve run your tests multiple times, the net result is a savings. This is what was meant by replacing unused memory with frequently used memory. Swap gives the virtual memory subsystem somewhere to put pages that it thinks won&#8217;t be used for a long time, and instead use that space to speed up the operations that are actually currently going on.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/37/">&larr; Older</a>
@@ -633,6 +653,10 @@ See you soon.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
@@ -646,10 +670,6 @@ See you soon.</p>
     
       <li class="post">
         <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
       </li>
     
   </ul>

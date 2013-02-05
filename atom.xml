@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://mikerowehl.github.com/atom.xml" rel="self"/>
   <link href="http://mikerowehl.github.com/"/>
-  <updated>2013-02-04T00:45:57-08:00</updated>
+  <updated>2013-02-05T00:06:42-08:00</updated>
   <id>http://mikerowehl.github.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -12,6 +12,83 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Resurrection]]></title>
+    <link href="http://mikerowehl.github.com/blog/2013/02/04/resurrection/"/>
+    <updated>2013-02-04T23:29:00-08:00</updated>
+    <id>http://mikerowehl.github.com/blog/2013/02/04/resurrection</id>
+    <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I&#8217;ve decided to start it back
+up. I created the site cause I wanted a Wordpress install
+I could test my PalmOS based mobile blogging client against. But once I had
+the site
+up and running I started tossing all sorts of random stuff in. Everything from
+my own thoughts on <a href="http://mikerowehl.github.com/blog/2006/04/02/high-availability-nfs/">scalability</a>
+to summaries of events
+about <a href="http://mikerowehl.github.com/blog/2005/04/15/make-almost-anything/">the FabLab</a>.
+However, after a few years of tossing all sorts of random stuff in here I
+started to really focus on mobile, so I
+created a mobile specific site called
+<a href="http://thisismobility.com/blog">This is Mobility</a> so that I wouldn&#8217;t have
+everything all jumbled together. Then with
+so much interesting stuff happening in mobile this blog eventually fell into
+disuse. And it&#8217;s remained unused since 2006.</p>
+
+<p>Recently I&#8217;ve felt getting a little more randomness going again is a good
+idea. And I&#8217;m really happy I kept all these blog posts around to read,
+so I could get a peek back into my mind 10 years ago and remind myself what it
+was like. When I started reading through these posts I figured that&#8217;s all I
+would do, read and then put it aside. But I realized how different my
+thought process was a few years ago. And not just cause I was young and
+naive, but because I was looking at things without the encumbrance of much
+bias. &#8221;<a href="http://en.wikipedia.org/wiki/Shoshin">Beginner&#8217;s mind</a>&#8221; is probably
+the best term for it. That beginners mind
+decided that Linux and open source were a good bet for building online
+services. And that beginners mind decided that homesteading a spot in the
+mobile world was a good idea back in 2003. I wouldn&#8217;t pass on getting a bit
+more of that beginners mind, and it seemed like writing
+here again could help with that process. With the site also being 10 years
+also, it seemed somehow proper to bring it back.</p>
+
+<p>Of course, some updating needed to be done. While I love Wordpress for
+some things, I&#8217;m also getting tired of it getting exploited and abused cause I
+pay so little attention to it. It&#8217;s my own fault for not updating it, but I
+really like the option of swapping to something I don&#8217;t need to pay attention
+to instead of modifying my behavior.  So I swapped over to using
+<a href="http://octopress.org/">Octopress</a>,
+which
+uses post files written in markdown to generate the site as a static set of
+pages (hat tip to <a href="http://fusion94.org/">Tony</a> for the suggestion).
+Thanks to a fantastic set of scripts called
+<a href="https://github.com/thomasf/exitwp">exitwp</a> I was able to move
+an export of my Wordpress data right into Octopress friendly format.
+Yay! That should be the end of Viagra and Levitra ads randomly
+appearing at the end of my posts. And as a bonus I can publish the whole thing
+through Github Pages, and store the source in Github. Which I was doing with
+the rowehl.com site anyway, but had to take special care to backup the
+database to keep blog posts safe. Now it&#8217;s all just one repo.
+And cause the pages are hosted directly off Github, when I crash
+my personal server doing Linux distro hackery I don&#8217;t take down rowehl.com.</p>
+
+<p>Also nice about Octopress - the default profile takes a responsive
+approach. So now my personal blog looks better on mobile than my mobile
+focused blog. With the way the Octopress templates and plugins are
+structured it was pretty easy to make some style changes, swap in some fonts
+that make the site look a little less amateur hour. I got rid of commenting
+all together and have added some share buttons instead, cause that&#8217;s how the
+world works now. Everyone already has their own place to speak, so why put
+their thoughts into my database? And again, once less thing for me to worry
+about.</p>
+
+<p>In the end, actually not much effort at all. And I&#8217;m really happy with how it
+works. Now I have a place to write about all that other
+not-specifically-mobile stuff like cool bits of open source, programming,
+emerging technologies, and startups. And to remind myself just how far things
+have come, I dug up and posted the
+<a href="https://github.com/mikerowehl/vagablog">source code</a> to the Treo650 blogging
+app that kicked this whole thing off 10 years ago.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
@@ -217,15 +294,6 @@
     <updated>2006-03-15T05:33:07-08:00</updated>
     <id>http://mikerowehl.github.com/blog/2006/03/15/end-of-line</id>
     <content type="html"><![CDATA[<p>I make <a href="http://en.wikipedia.org/wiki/Tron_%28film%29">Tron</a> jokes pretty frequently. I mean, who doesn&#8217;t, right? It&#8217;s a total classic. But <a href="http://www.defectiveyeti.com/archives/001599.html">this right here</a>, that&#8217;s just fantastic.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Kernel Config from Thinkpad X32]]></title>
-    <link href="http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32/"/>
-    <updated>2006-03-13T05:56:09-08:00</updated>
-    <id>http://mikerowehl.github.com/blog/2006/03/13/kernel-config-from-thinkpad-x32</id>
-    <content type="html"><![CDATA[<p>Someone emailed me asking for the config for the kernel I&#8217;m running on my X32, so I figured I might as well post it instead of just mailing it back.  I&#8217;m using the 2.6.13 drop from <a href="http://www.kernel.org">kernel.org</a> and adding in <a href="http://www.rowehl.com/blog/?p=550">packages like WPA afterward</a>.  Here&#8217;s <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/03/config-2.6.13.txt">the config</a>.</p>
 ]]></content>
   </entry>
   

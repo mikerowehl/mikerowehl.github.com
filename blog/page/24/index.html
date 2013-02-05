@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I was just digging through some old news I marked down but never read, and just noticed the release of an open-source, reference SIP stack that &hellip;">
+  <meta name="description" content="The CodeCon schedule was released yesterday. CodeCon is a conference that runs Feb 11th thru 13th 2005 in San Francisco. I&#8217;m planning to go. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -31,6 +31,18 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -65,6 +77,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/31/codecon-schedule/">CodeCon Schedule</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-31T00:56:54-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://www.codecon.org/2005/schedule.html">CodeCon schedule</a> was released yesterday. <a href="http://www.codecon.org">CodeCon</a> is a conference that runs Feb 11th thru 13th 2005 in San Francisco. I&#8217;m planning to go. There&#8217;s a <a href="http://www.codecon.org/2005/program.html">list of topics also</a>, if you just want to see what&#8217;s going to be talked about. What really caught my eye this time? The <a href="http://mappr.com/">Mappr</a> talk, Photospace, <a href="http://www.crummy.com/software/gleeper/">Ultra Gleeper</a>, the talk by <a href="http://www.2idi.com">2idi</a> about i-brokers (I saw <a href="http://wiki.idcommons.net/moin.cgi/FenLabalme">Fen Labalme</a> speak at a <a href="http://www.futuresalon.org/2005/01/guard_your_iden.html">Future Salon event</a> and wanted to hear more), and <a href="http://www.peerfear.org/rss/permalink/2005/01/30/FeedParserCometh/">Kevin&#8217;s presentation on the Jakarta FeedParser</a>.</p>
+
+<p>Tags: <a href="http://technorati.com/tag/CodeCon">CodeCon</a> <a href="http://technorati.com/tag/San+Francisco+Event">San Francisco Event</a> <a href="http://technorati.com/tag/20050211">20050211</a> <a href="http://technorati.com/tag/20050212">20050212</a> <a href="http://technorati.com/tag/20050213">20050213</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -418,52 +468,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/01/21/link-management/">Link Management</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-01-21T05:31:15-08:00" pubdate data-updated="true">Jan 21<span>st</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I ran into <a href="http://tantek.com/log/">Tantek</a> last night at <a href="http://www.russellbeattie.com/notebook/1008256.html">Russ&#8217;s birthday party</a>, and talking with him reminded me that I never updated my blog to include <a href="http://gmpg.org/xfn/">XFN info</a>. <a href="http://www.wordpress.org">Wordpress</a> includes a nice simple XFN generator for the links section, so I decided to use that. I had originally populated the links with an import of the OPML from Bloglines, so adding the relationship info was a snap. Then I started thinking about keeping the info up to date, and synced in the different places it needs to live. Since Wordpress manages the XFN info for me, and publishes it, I figured using Wordpress as the authoritative source would be a good idea.</p>
-
-<p>The two major places that I want my info are here on my blog and in <a href="http://www.bloglines.com">Bloglines</a>, the web based aggregator I use. I figured it would be pretty easy to get Bloglines to sync with Wordpress in a repeatable manner, but not quite. First I figured I would just be able to look at some URLs and create a bookmarklet in <a href="http://www.mozilla.org/products/firefox/">FireFox</a> to import the OPML into bloglines based on the <a href="http://www.bitsplitter.net/blog/wp-links-opml.php">OPML export</a> that Wordpress does. But it turns out that Bloglines wants the OPML uploaded as a file. Not a big deal, but I&#8217;m surprised they don&#8217;t take a URL for that import field. After fooling around a bit to make sure that multiple import will work the way I expect I ran into two issues:</p>
-
-<ul>
-<li><p>Bloglines treats the first category it hits as the base folder, so one category of feeds was getting dumped into the root instead of their own location. I just created a dummy category in Wordpress to appear as the first category in the OPML and I ignore it.</p></li>
-<li><p>Every time I import the folders get duplicated. The new copy is empty, so they&#8217;re easy to delete out, and it doesn&#8217;t mess with the status of the feeds or anything. But it&#8217;s annoying. This was a real pain, I want my links to just sync between the services.</p></li>
-</ul>
-
-
-<p>So I have a simple, <a href="http://www.bitsplitter.net/projects/wp-to-bloglines.txt">effectively three line perl script</a> that I should be able to just throw in cron to sync my feeds, but instead I have to run it by hand. The goal would be a bookmarklet that adds the current page into my Wordpress links so that I can add XFN info, and somewhere in the background have something sync the feed for my new friend over to Bloglines. I don&#8217;t know if that reimport problem with Bloglines is a well known issue or not, but I submitted a note to see what they say. If that was working well it would be a cool feature to add syncing with Bloglines directly into Wordpress. I could just parse the Javascript to figure out the structure of the folders and delete out the dupes, but that just smacks of effort.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/25/">&larr; Older</a>
@@ -503,6 +507,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
@@ -516,10 +524,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a>
       </li>
     
   </ul>
