@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: General | Miker]]></title>
-  <link href="http://mikerowehl.github.com/blog/categories/general/atom.xml" rel="self"/>
-  <link href="http://mikerowehl.github.com/"/>
-  <updated>2013-02-05T00:06:42-08:00</updated>
-  <id>http://mikerowehl.github.com/</id>
+  <link href="http://rowehl.com/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://rowehl.com/"/>
+  <updated>2013-02-05T00:14:30-08:00</updated>
+  <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Resurrection]]></title>
-    <link href="http://mikerowehl.github.com/blog/2013/02/04/resurrection/"/>
+    <link href="http://rowehl.com/blog/2013/02/04/resurrection/"/>
     <updated>2013-02-04T23:29:00-08:00</updated>
-    <id>http://mikerowehl.github.com/blog/2013/02/04/resurrection</id>
+    <id>http://rowehl.com/blog/2013/02/04/resurrection</id>
     <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I've decided to start it back
 up. I created the site cause I wanted a Wordpress install
 I could test my PalmOS based mobile blogging client against. But once I had
@@ -92,9 +92,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
-    <link href="http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
+    <link href="http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
     <updated>2006-09-20T05:01:18-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
+    <id>http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
     <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, "there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up". A bunch  of searching around in the repository listings turned up no java license related packages.</p>
 
 <p>You find where <a href="http://www.aspma.com/downloads/">download mp3 music</a> on player, You need <a href="http://www.aspma.com/download/">mp3 music download</a> from online mp3 archive</p>
@@ -105,18 +105,18 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
-    <link href="http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
+    <link href="http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
     <updated>2006-09-18T16:21:23-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
+    <id>http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
     <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee's Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke's over. You can make it stop.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
-    <link href="http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
+    <link href="http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
     <updated>2006-09-18T06:16:12-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
+    <id>http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
     <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I'm looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don't want to start mucking around now that I've just started accepting I don't need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
 
 <p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn't cause any problems I'll put it in here at work too.</p>
@@ -125,9 +125,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Subversion Book]]></title>
-    <link href="http://mikerowehl.github.com/blog/2006/09/15/subversion-book/"/>
+    <link href="http://rowehl.com/blog/2006/09/15/subversion-book/"/>
     <updated>2006-09-15T02:46:37-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2006/09/15/subversion-book</id>
+    <id>http://rowehl.com/blog/2006/09/15/subversion-book</id>
     <content type="html"><![CDATA[<p>I've been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
 
 <blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>

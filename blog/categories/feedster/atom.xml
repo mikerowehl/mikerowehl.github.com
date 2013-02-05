@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Feedster | Miker]]></title>
-  <link href="http://mikerowehl.github.com/blog/categories/feedster/atom.xml" rel="self"/>
-  <link href="http://mikerowehl.github.com/"/>
-  <updated>2013-02-05T00:06:42-08:00</updated>
-  <id>http://mikerowehl.github.com/</id>
+  <link href="http://rowehl.com/blog/categories/feedster/atom.xml" rel="self"/>
+  <link href="http://rowehl.com/"/>
+  <updated>2013-02-05T00:14:30-08:00</updated>
+  <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[KRON Blogger Meetup]]></title>
-    <link href="http://mikerowehl.github.com/blog/2005/06/12/kron-blogger-meetup/"/>
+    <link href="http://rowehl.com/blog/2005/06/12/kron-blogger-meetup/"/>
     <updated>2005-06-12T11:13:00-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2005/06/12/kron-blogger-meetup</id>
+    <id>http://rowehl.com/blog/2005/06/12/kron-blogger-meetup</id>
     <content type="html"><![CDATA[<p>We went over to the <a href="http://kron4.com/Global/story.asp?S=3462860">blogger meetup at KRON</a> yesterday. It was pretty much what I expected out of the event. The KRON folks were surprisingly and refreshingly honest in saying they had no idea what to do about blogging, but they want to start getting involved in the community. They're going to be maintaining a list of Bay Area bloggers. <a href="http://www.endofthetour.com/">Courtney</a> already has a <a href="http://www.sfbaybloggers.com/">site called SFBayBloggers.com</a> that lists bloggers from the Bay Area, it would be cool to see them throw some support her way instead of starting up another list. KRON is also going to be aggregating posts from the local blogs and providing some metacommentary. Would be nice to see the information flow both ways. <a href="http://www.niallkennedy.com/blog/archives/2005/06/kron_blogger_ga.html">Niall mentions getting KRON to use Creative Commons</a> on some of the content it releases, I think that would be a fantastic way to kick it off.</p>
 
 <p>There were a few people who were disturbed by KRON aggregating stories from local publishers and commenting on them. I've come to think about "my content" online much different than I used to, mostly because I've been working with and around people who make their money from advertising. Many of them who come from the traditional publishing side are concerned with controlling their content, making sure that they make some scratch every time someone reads their words or sees their images or hears their audio. The folks from the new media side are much more accepting of trading their content for traffic. They don't mind if someone takes snips of their stories and republishes them, as long as credit is given and traffic flows back their way. I think that just comes down to the difference between broadcast and online mediums. It makes sense to try to control your content when you broadcast because following attribution has a much higher activation energy for someone receiving a broadcast. Whereas online a link to the original source is much more likely to get the receiver to act. I think understanding that is the best way to come up with ways to interact with the bloggers. Sure, there are some who don't want any more traffic because their bandwidth costs are already too high. But for most of them they would be happy to just get traffic. KRON controls a lot more traffic than most of the bloggers in the area, and using their position to help send traffic to the local blogs would give KRON a new pool of content to pull from and give the local bloggers what they want in return. I'm pretty sure that's just about what I heard at the meeting, so all in all I think it was a great start.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Technorati Beta]]></title>
-    <link href="http://mikerowehl.github.com/blog/2005/06/10/technorati-beta/"/>
+    <link href="http://rowehl.com/blog/2005/06/10/technorati-beta/"/>
     <updated>2005-06-10T01:16:34-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2005/06/10/technorati-beta</id>
+    <id>http://rowehl.com/blog/2005/06/10/technorati-beta</id>
     <content type="html"><![CDATA[<p><a href="http://www.niallkennedy.com">Niall</a> messaged me last night to show off the <a href="http://beta.technorati.com">beta site they've been working on at Technorati</a>. Very cool stuff!! One of the first things I noticed was the subscribe option for tags, so that you can get items associated with a tag output as RSS. I like the layout of the results page too. With the images down the side and the posts as the main body it provides <a href="http://beta.technorati.com/tag/mobilemonday">a great summary page for events</a> in particular. The "most discussed" lists and hot search terms are always interesting, although I know that I personally don't actively use them often. I'm generally much more interested in what my friends are talking about than the sum of what everyone is talking about. The tab layout is interesting as well. I've seen that implemented poorly quite often, but the implementation they have is very solid and clean. When I took a look at the source and saw an AJAX Javascript library I assumed it would be for the search box, to provide a completion list of commonly used terms and sources. I didn't see that in using the interface however. None of the mobile browsers I've tried out yet support the features necessary to use AJAX, so I've been trying to pay some attention to where it shows up. Wherever it is, it doesn't seem to impact using the site from a Treo or when using <a href="http://skweezer.com">Skweezer</a>.</p>
 
 <p>Update: Changed the link used an example for event summary. I posted this from my Treo and had grabbed the wrong saved URL.  The tag page has photos down the side around the post results.</p>
@@ -39,9 +39,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cha-Ching!!]]></title>
-    <link href="http://mikerowehl.github.com/blog/2005/06/02/cha-ching/"/>
+    <link href="http://rowehl.com/blog/2005/06/02/cha-ching/"/>
     <updated>2005-06-02T06:46:26-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2005/06/02/cha-ching</id>
+    <id>http://rowehl.com/blog/2005/06/02/cha-ching</id>
     <content type="html"><![CDATA[<p>So you probably didn't hear it here first, but <a href="http://feedster.blogs.com/corporate/2005/06/feedster_closes.html">Feedster has closed a round of funding</a>! Nothing like a little bank to help power through <a href="http://www.bitsplitter.net/blog/?p=515">some issues</a>. And things do seem to be powering along. I have no idea if I'm allowed to mention who's joined up recently, but there are some kick ass folks joining the team. Definitely sorely needed. And there are others in line on the way in. Having a solid team come together was a major concern for me. It's hard to ramp up such a small group. Mixing in two people to a group of ten is one kind of problem. Mixing in more than half the original group size gets into some strange group dynamics. So the next few months should be really telling. The systems have decomposed so far into completely distinct territories. One engineer worked on one system, and in general the systems broke down along well defined API boundaries. That's not going to be the case any more, and the kind of engineering capability required to deal with that is much different than what we've practiced so far. I've been an avid user of revision control systems (CVS, Subversion, and most recently <a href="http://www.gnu.org/software/gnu-arch/">GNU Arch</a>), that just grew naturally out of participating in a bunch of open source projects. As it turns out, those systems are an enormous boost when everyone knows how to use them already. But most people that I know get familiar with the "concurrent version system" methodology working on some side project and then carry it back into their work environment (classic disruptive behavior, I love it, but that's another story). A bunch of the startups I've been at actually have that whole methodology baked right into the corporate DNA. The core of engineering work flows through that shared revision control system. And after a little while the concurrent version system becomes your primary collaboration tool. There's less and less email, fewer calls, and no one throws things over the cubicle wall to get your attention any more.</p>
 
 <p>So we come back to my original idea, which I almost forgot in my rambling. Companies structured around this open source methodology concept have a pretty natural path to scaling. The structure is instantiated inline with a revision control system that allows multiple people to just keep working and help them resolve conflicts down the line, which didn't exist in specification driven engineering organizations I've been at. There are a bunch of little benefits that factor into making it a good way to work in my mind, but the principal I'm looking at now is that it's very easy to bring new people in. So although it really seems at first glance to look like a trivial administrative task once you learn how to use it (it's easy to forget how the concurrent version way of thinking transforms your work once you grok it) I think from an engineering standpoint the most important thing after having a good team might be having a good concurrent version system that everyone understands. It really can (and maybe should?) stand at the core of execution.</p>
@@ -50,18 +50,18 @@
   
   <entry>
     <title type="html"><![CDATA[Feedster's New Offices]]></title>
-    <link href="http://mikerowehl.github.com/blog/2005/05/31/feedsters-new-offices/"/>
+    <link href="http://rowehl.com/blog/2005/05/31/feedsters-new-offices/"/>
     <updated>2005-05-31T03:19:31-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2005/05/31/feedsters-new-offices</id>
+    <id>http://rowehl.com/blog/2005/05/31/feedsters-new-offices</id>
     <content type="html"><![CDATA[<p>Today is the first day in <a href="http://www.flickr.com/photos/miker/tags/feedster/">the new office</a>! It's at 116 New Montgomery Street, Suite 605. Nice setup. Plenty of open space, plenty of light. Little bit hot today, but that's supposed to be a temporary issue. And there are tons of places to eat. <a href="http://www.chipotle.com/">Chipotle</a> is right here. I've never tried it, but I've heard good things. And <a href="http://www.specialtys.com/">Specialty's</a> as well, which I have had, and now plan to have over and over again.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Odd Quirk in Bloglines Cache Handling]]></title>
-    <link href="http://mikerowehl.github.com/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling/"/>
+    <link href="http://rowehl.com/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling/"/>
     <updated>2005-05-27T08:47:20-07:00</updated>
-    <id>http://mikerowehl.github.com/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling</id>
+    <id>http://rowehl.com/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling</id>
     <content type="html"><![CDATA[<p>I noticed something kinda odd when adding a new feed to our ad publishing system today. I test with <a href="http://www.bloglines.com">Bloglines</a> cause I love the system. It's my normal use aggregator and by far my favorite. However I noticed that after having run my testing feeds with ads in them through Bloglines that when I went to view the source version of the feed in Bloglines it had ads in it too!  I went back and viewed the source of the feed in my browser, and sure enough there were no ads.  Hmm, it seems like my testing of the ad populated version somehow caused ads to appear in the original version. How could that be? When I test out feeds I put them in a public place, and just scp the feed output from my laptop and pass it through some web based aggregators to make sure that nothing odd happens. However I don't change any of the links within the feed.  So although my feed might reside at, oh, I don't know, lets say <a href="http://www.bitsplitter.net/herepiggypiggypiggy.xml">http://www.bitsplitter.net/herepiggypiggypiggy.xml</a>, the links within the feed still point to site the original content came from. The end result is that if you have a link like <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss">http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss</a> which would seem to subscribe you to Mark Fletcher's blog, it really takes you to a fake post I shoved into Bloglines to make it look kinda like it's hosted at Mark's site. Astute subscribers will notice the mismatch between the urls in the feed info, but most people aren't astute. I think there might be more insidious uses for this, like setting the link location for the feed to an already existing site. I don't want to be mean and try it on existing feeds, but my little bit of fooling around would seem to indicate that the fake version could shove entries into the cache for the overall feed. So there you go Bloglines folks, there's my free suggestion for the day. Refetch if the current cache version comes from outside the link domain and the user is requesting an "authoritative copy" (something from the same URL as the feed link).</p>
 
 <p>Update: Niall <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/">did one too</a>. He helped me test out the stuff I was playing with.</p>
