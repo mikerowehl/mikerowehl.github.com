@@ -35,7 +35,7 @@ decided that Linux and open source were a good bet for building online
 services. And that beginners mind decided that homesteading a spot in the
 mobile world was a good idea back in 2003. I wouldn't pass on getting a bit
 more of that beginners mind, and it seemed like writing
-here again could help with that process. With the site also being 10 years
+here again could help with that process. With the site being 10 years
 also, it seemed somehow proper to bring it back.
 
 Of course, some updating needed to be done. While I love Wordpress for
