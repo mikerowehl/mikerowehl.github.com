@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="A post over at Textually.org pointing to a summary from the Nokia Connection press conference. Some interesting insights in there. I&#8217;m not a &hellip;">
+  <meta name="description" content="It appears that Yahoo has again changed something that causes third party apps to fail. Now, it&#8217;s not like I&#8217;m unfamiliar with the trials &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/06/23/yahoo-login-problems-using-gaim/">Yahoo Login Problems Using Gaim</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-06-23T14:51:11-07:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It appears that Yahoo has again <a href="http://sourceforge.net/tracker/?func=detail&amp;atid=100235&amp;aid=978640&amp;group_id=235">changed something that causes third party apps to fail</a>. Now, it&#8217;s not like I&#8217;m unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don&#8217;t agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it&#8217;s just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can&#8217;t contact them. I&#8217;m not really happy about that, but unfortunately there&#8217;s not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there&#8217;s nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of &#8220;value in their network&#8221;. Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I&#8217;m off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch.</p>
+
+<p>UPDATE (22:29 06/23/2004) : <a href="http://news.com.com/Yahoo+to+Trillian%3A+Talk+to+the+hand/2100-1032_3-5245821.html">here is a more official article about what happened</a>. Sounds like complete bullshit to me. I don&#8217;t see how closing off their protocol helps out keeping down spam. I have a counterpoint actually. When we needed to send notifications using Yahoo and AIM and MSN we first started by using a <a href="http://www.jabber.org/">Jabber server</a> with transports to handle all the different protocols. But of course, some transport was always broken, and it was a huge pain in the ass to try to maintain. So instead we ended up running a Windows box (the only one in the office actually) to run the three different apps and we send Windows events to the different clients to simulate a normal user clicking on stuff and typing messages. It looks like a completely 100% legitimate client to the IM services. Haven&#8217;t had any problems since. So there you go. If you&#8217;re looking to send spim, that&#8217;s the way to do it. Works much better than hacking Gaim or Trillian to send messages. I say this not cause I like spim, but because maybe if the spammers have a different way to send messages it&#8217;ll get Yahoo to develop a fucking clue. Real security has nothing to do with the obscurity of your protocols.</p>
+
+<p>UPDATE (00:02 06/04/2004) : According to the work being done to reverse engineer the changes to the protocol, the server now sends an image recognition based challenge/response sequence (like websites that ask you to enter the letters in an image that&#8217;s had some obfuscation applied). Well, good for them. That should lock out the spammers for a few days. Me, I&#8217;ve decided the service isn&#8217;t worth it. It means I might lose the ability to communicate with a few people who aren&#8217;t willing to make the switch, but I guess that&#8217;s just the price I have to pay. Apparently the price of freedom isn&#8217;t only eternal vigilance, but eternal vigilance plus a couple of entries from my buddy list.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -927,56 +967,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/06/15/art-of-the-start-7/">Art of the Start 7</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-06-15T05:13:53-07:00" pubdate data-updated="true">Jun 15<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Raising Venture capital - Bill</p>
-
-<p>Q1 - is your idea fundable? Not everything is. You need a business that has potential for sustainable rapid growth, get to significant size and scale (billion dollar, gets easier as you grow), ongoing disproportionate profitability.</p>
-
-<p>Q2 - What is the best way to raise capital? Start smart, get details right at the start. Tell a good story, internalize. Make the numbers add up.  Find the right investors. Build credibility.</p>
-
-<p>Start smart - put together a simple clean corporate structure (incorporate and founders stock, don&#8217;t start as an S Corp and then try to evolve later on) You get into trouble if you start promising percentages. And you NEED to setup buyback agreements. When you bring in employees and consultants do it right, with documentation, and that you own intellectual property. Have standard agreements. When you get seed investments and loans make sure you have the proper documents and you&#8217;ve done it with the right structure. Assume everything you&#8217;re doing is going to be public, pay attention to governance. Get the right attorney.</p>
-
-<p>Tell a good story.Know how to articulate the fundamentals of your business. Every investor keeps a mental scorecard: the team, problem/opportunity, tech, sustainable advantage, business model, partnership/leverage. Saying something like &#8220;well, you have to ask my CTO&#8221; is a baf thing. Listen to what VCs seem to be concerned about and pitch to those issues.</p>
-
-<p>Make the numbers add up. If they&#8217;re trusting you with millions of dollars, they want you to know how the money is going to be made. Long term financial projections (even if they&#8217;re not sure bets, you have to tell a story using numbers of your vision of what the future will be.) Just make sure that your projections would look like compared to past great companies.  Most people show numbers that put their company better performing than the greatest companies in history. Near term operating plan, capital requirements, capitalization structure over multiple rounds, levers of profitability, what are the key metrics, how are you monitoring and measuring them?</p>
-
-<p>The right investor. Generate momentum, develop the technology model, start building the team, &#8220;here is what we&#8217;ve done with nothing, imagine what we could do with your investment&#8221;. Pick the right firms, and the right partners within those firms. Target your venture contacts, but then drill down another level and make sure that the people on that list are the right target.. And if necessary go back to your network and see if you can get an introduction to the right partner at firms you have touch points for. Nurture a syndicate of investors, find a lead who would draft a term sheet. Be honest and build trust, get a lead investor that will help you develop the syndicate. Manage the selling process, finding venture is just a different kind of sale. Be agressive.</p>
-
-<p>Build credibility. Customers, having customers is a great. Partners. Investors. Advisors and board members. Industry experts. Milestones. Don&#8217;t lie!  Top 10 lies from people looking for funding (Our projections are conservative, our target market is 56 billion, we have a world class team (just say what the strenghts are), our average sales cycle is 90 days, we have no direct competition, no one else can do what we do (say why your advantage is sustainable), all we need is 2 percent of the market, we&#8217;ll be cash flow positive in 12 months, our contract with Nokia will be signed next week, I&#8217;ll be happy to turn over the reigns to a new CEO).</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/36/">&larr; Older</a>
@@ -1016,6 +1006,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
@@ -1029,10 +1023,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
       </li>
     
   </ul>

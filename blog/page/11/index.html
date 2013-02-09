@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I snagged a PSP a while ago, figuring it would be fun for games but mostly wanting to hack on it. Sony really doesn&#8217;t like people being able to &hellip;">
+  <meta name="description" content="Okay, not that I have the time to play with something new, but I had to get this out of my system cause I haven&#8217;t seen other comments yet (Well &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/08/24/google-talk-services-server-to-server/">Google Talk: Services? Server to Server?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-08-24T14:11:39-07:00" pubdate data-updated="true">Aug 24<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Okay, not that I have the time to play with something new, but I had to get this out of my system cause I haven&#8217;t seen other comments yet (Well, except <a href="http://www.decaffeinated.org/archives/2005/08/25/googletalk">this one</a>). One of the reasons I got really jazzed about <a href="http://talk.google.com">Google Talk</a> running XMPP underneath is because XMPP is a more distributed protocol than the IM systems. What I mean by that is that there&#8217;s supposed to be server to server communication. Even though I run my own Jabber server at bitsplitter.net I can still talk to folks at jabber.org because the servers figure out how to talk. Kinda like the way email gets from one place to another. When the jabber.org server sees thatguymike@bitsplitter.net, jabber.org knows to open a connection to bitsplitter.net and start delivering messages. So not only can you create plugins to Jabber by creating things that emulate clients, you can toss a whole server into the mix. And all the other servers can communicate with it by default cause the domain based naming scheme for Jabber accounts takes care of telling the server how to find each other. Sweet.  Except this doesn&#8217;t seem to be true for talk.google.com. My username is &#8220;miker@gmail.com&#8221; but the service to connect to is at talk.google.com. Hmm.  Maybe miker@gmail.com@talk.google.com works? Doesn&#8217;t seem like it. Maybe from the Google Talk side I can add my bitsplitter.net account? No go, looks like the Google Talk folks have server to server communication off. That sucks. Turn it on!</p>
+
+<p>Also, here&#8217;s an idea I would like to try, but I don&#8217;t have time for. Maybe if you do you can. I can&#8217;t get any of the normal dedicated Jabber clients to talk to Google Talk (<a href="http://developer.imendio.com/wiki/Gossip">Gossip</a> or <a href="http://gabber.sourceforge.net/">Gabber</a> for example). Why would it matter? Because Jabber also supports something called services. These are server side goodies to keep all sorts of neat info or provide extension functions. Examples: directories of users on the system, info about the group chat rooms, or gateways into other protocols or sources of information. What&#8217;s installed on that Google Talk server?  What services are there? Without allowing server to server communication the extensibility of the platform is really in question. Dumb. But maybe there are some other goodies in there for now.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -414,42 +452,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/08/06/defcon-and-ciscogate/">Defcon and Ciscogate</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-08-06T06:52:56-07:00" pubdate data-updated="true">Aug 6<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>We went out to Defcon last weekend too.  Presentations were fantastic, people were great. Yes, Vegas was hot. No, I didn&#8217;t die. Yes, there are real hackers there. No, I can&#8217;t put you in touch with them. Besides a ton of amusing info, like spoofing a root DNS server while executing an intentially blunt attack for IDS to find you and start autoshunning the name system (teehehehehe) to information about physical locks like spool pins and what a dual ball locking padlock is and why you should care. There was a great presentation about penetration testing the backbone that mentioned <a href="http://www.theregister.com/2005/08/02/cisco_exploits/">the horrid horrid mistakes that Cisco is making</a>. If you have anything to do with security and/or networking equipment I highly recommend paying attention to what Cisco is doing and never EVER doing anything of the sort. It&#8217;s stupid. I&#8217;m sure all those companies calling me looking for help creating Linux based backbone networking equiptment are just drooling over the huge hole that Cisco has left for them to drive through.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/12/">&larr; Older</a>
@@ -489,6 +491,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
@@ -502,10 +508,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
       </li>
     
   </ul>

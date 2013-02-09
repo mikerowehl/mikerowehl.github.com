@@ -9,8 +9,8 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="No Need to Click Here - I&#8217;m just claiming my feed at Feedster
-">
+  <meta name="description" content="I&#8217;ve been reading over a few REST themed articles: Weblogs, Publish-Subscribe, and Web Collections: A REST Analysis
+How to Create a REST &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +78,53 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/27/feed-info/">Feed Info</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-27T14:41:55-08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been reading over a few REST themed articles:</p>
+
+<ul>
+<li><p><a href="http://www.xml.com/pub/a/2004/12/01/pubsub.html">Weblogs, Publish-Subscribe, and Web Collections: A REST Analysis</a></p></li>
+<li><p><a href="http://www.xml.com/pub/a/2004/12/01/restful-web.html">How to Create a REST Protocol</a></p></li>
+<li><p><a href="http://www.prescod.net/rest/mistakes/">Common REST Mistakes</a></p></li>
+</ul>
+
+
+<p>I&#8217;ve been trying to think a little more deeply about public facing REST style web interfaces and how to put them together. I wrote <a href="http://www.bitsplitter.net/projects/Feedster/feedinfo.php.txt">a simple interface to the Feedster feed info API</a> (along with an <a href="http://www.bitsplitter.net/projects/Feedster/testfeedinfo.php.txt">associated test/example</a>). Trying to build a single file implementation for PHP was pretty interesting. I found a couple of cool features, like the <a href="http://us4.php.net/file">file() function</a> can return the contents of a web resource. I&#8217;m not sure how to trap and handle errors from that however, so if anyone does please drop me a line. And even though I used an object cover for the items in the collection returned, I still considered a bare associative array to hold the info. For the most part it seems to come down to personal preference how the client for a service is put together. The goal of course is loose coupling in all cases. For some that means exposing an interface which can adapt to new info, and for others that means ignoring new info unless specifically asked for. Personally I think I like the &#8220;ignore new info unless specifically asked for&#8221; version. It seems to echo the use of namespaces in XML, where new information can be mixed into a document without fear of clashing with existing data and so that it can be easily (and by default) ignored. It also seems to create a more friendly interface for users. If the information about the interface doesn&#8217;t reside at all in the user classes then another source of what the attributes of the parsed version are going to be have to be obtained from another source (such as looking at the XML document returned.. which for REST is very plausible). But in counter to my point, the more layers that know about the structure of the call the worse off the system as a whole is. However, if the objects don&#8217;t know about the schema of the results at all they can&#8217;t provide covers over the details of the document structure (ie. allowing either attributes or children to hold data).</p>
+
+<p>Ultimately it&#8217;s all just geek navel gazing until someone actually starts using the code. So along those lines there are a couple of projects I have planned that build off that API, but I wanted to release the example for others who might be interested. Technically I&#8217;m on vacation right now, but still might work on some bits while I have time here and there. The clocks out here all seem to be 3 hours fast but no one cares. Everyone goes to sleep early and gets up early. So I have a bunch of quiet time in the evenings.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -428,49 +475,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/11/16/issues-in-open-source-software/">Issues in Open Source Software</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-11-16T13:32:41-08:00" pubdate data-updated="true">Nov 16<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Thanks to a <a href="http://www.futuresalon.org/2004/11/events_this_wee.html">post at Future Salon</a> I&#8217;m now aware of the <a href="http://www.berkeleycybersalon.com/">Berkeley Cybersalon this weekend exploring issues in open source</a>. Yay! New group. Hopefully I&#8217;ll be able to make it for the event.  There&#8217;s other stuff going on that day, so I do have to admit it&#8217;s not a sure thing. Even if I don&#8217;t make it this time, at least I know about the Cybersalon now. Here&#8217;s the event details:</p>
-
-<ul>
-<li><p>Sunday, November 21, 6 - 8 PM</p></li>
-<li><p>The Hillside Club, 2280 Cedar (at Spruce), Berkeley</p></li>
-<li><p>$10 donation at the door for light refreshments</p></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/28/">&larr; Older</a>
@@ -510,6 +514,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
@@ -523,10 +531,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
       </li>
     
   </ul>

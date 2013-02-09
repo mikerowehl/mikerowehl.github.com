@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I saw the demo at Defcon last summer, apparently now the tool for cracking Cisco LEAP has been released. There&#8217;s been a lot of work on &hellip;">
+  <meta name="description" content="I&#8217;ve started a new app as part of Open Palm Environment. This time it&#8217;s a plugin for pilot-db. Pilot-DB is a very popular open source &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/04/12/pilot-db-download-plugin/">Pilot-DB Download Plugin</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-04-12T02:51:33-07:00" pubdate data-updated="true">Apr 12<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve started a new app as part of <a href="http://openpalmenv.sf.net">Open Palm Environment</a>. This time it&#8217;s a <a href="http://cvs.sourceforge.net/viewcvs.py/openpalmenv/db-download/">plugin for pilot-db</a>. <a href="http://pilot-db.sourceforge.net/">Pilot-DB</a> is a very popular open source database program for Palm handhelds. It allows the user to create their own databases and fill in the records on their PDA. There are existing databases for all types of information, like yearly wine reviews, state capitals, Internet RFCs, bus schedules, etc. I&#8217;m hoping that if we make it easy for people to create databases with active links, we&#8217;ll end up with databases of <a href="http://promo.net/pg/">Project Gutenberg</a> content with links to download the full text, or large databases with open source titles that can be downloaded on demand.</p>
+
+<p>Currently the plugin is just an example that downloads a hardcoded URL and installs whatever it finds there as if it were an app/database. With just a bit of tweaking it&#8217;ll look for a field named &#8220;URL&#8221; in the current record, and use that as the source. I think that providing a plugin for an existing DB product might work out better than the standalone app (palm-torrent) which would also require some proprietary database format of its own. Only time will tell. Something I need to figure out still is how to give good feedback to the user. Most of the Win* functions that palm-torrent uses to draw information about the protocol progress and give installation feedback were causing errors when I used them within the plugin. So if anyone out there has mucked with plugins on the Palm before, in particular pilot-db plugins, please take a look at that and give some info about how to provide a user with progress info.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -414,50 +452,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/04/03/mogi/">Mogi</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-04-03T04:13:05-08:00" pubdate data-updated="true">Apr 3<span>rd</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>The Feature has an <a href="http://www.thefeature.com/article?articleid=100501&amp;ref=716084">article about a location based game called Mogi</a>. I&#8217;m not a gamer at all, but I am into location based services. The way this game is run is just fantastic however. It encourages communication and cooperation, and emphasized collecting over combat. The game is described as a &#8220;data-layer over the city of Tokyo&#8221;, which I picture being very much like the <a href="http://www.bitsplitter.net/blog/index.php?p=201">Urban Tapestries</a> project. It&#8217;s also setup so that it encourages users on mobile devices to work together with others back at desktop systems. The comments from the game play make it sound like the goal of fitting collaborative authoring into everyday life would be something that&#8217;s possible:</p>
-
-<blockquote><p>[Mogi] is a good example of a style of entertainment suited for mobile devices. It&#8217;s very casual, playable on your way somewhere. It nestles in your every day life, rather than requiring you to change your behavior &#8230; It amplifies your ordinary behavior - it changes going on an errand into a piece of a game.</p></blockquote>
-
-<p>If a game can do it, a public authoring system should be able to. And check out this comment from Paul Baron (admittedly a Mogi evangelist):</p>
-
-<blockquote><p>All the trips I make in the city are now randomized, as I will often divert a few hundred meters to go and collect an object around me. I get a chance to discover parts of the city that I ignored, a motivation to check out that parallel street I never took.</p></blockquote>
-
-<p>Fantastic, I take that to be one of the main goals of public authoring. Reconnecting people in urban settings so that they get more of a shared experience. Drawing people out of their normal routines is a great way to get started. I think there are probably some fantastic lessons to be learned from this. I&#8217;m certainly going to be keeping my eye on <a href="http://www.in-duce.net/archives/mogi_item_hunt.php">Paul Baron&#8217;s</a> updates.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/42/">&larr; Older</a>
@@ -497,6 +491,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
@@ -510,10 +508,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
       </li>
     
   </ul>

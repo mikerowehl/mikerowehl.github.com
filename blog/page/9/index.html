@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I see stories like this one about 4G cell phone services being worked on with gigabit data rates and this one with doubts about consumers really &hellip;">
+  <meta name="description" content="I had a problem with the X32 running Linux 2.6.13 where the audio device was there, but I couldn&#8217;t always hear the output. I found this post &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/09/07/sound-with-linux-2613-on-thinkpad-x32/">Sound With Linux 2.6.13 on Thinkpad X32</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-09-07T05:41:27-07:00" pubdate data-updated="true">Sep 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I had a problem with the X32 running Linux 2.6.13 where the audio device was there, but I couldn&#8217;t always hear the output.  I found <a href="http://www.ussg.iu.edu/hypermail/linux/kernel/0502.2/0755.html">this post mentioning that the headphone sensor and line jack sensor both need to be muted</a>, which worked for me. Here&#8217;s the card info from the model I have:</p>
+
+<p>`miker@spark:~$ cat /proc/asound/cards
+0 [I82801DBICH4   ]: ICH4 - Intel 82801DB-ICH4</p>
+
+<pre><code>                 Intel 82801DB-ICH4 with AD1981B at 0xc0000c00, irq 11
+</code></pre>
+
+<p>miker@spark:~$`</p>
+
+<p>I&#8217;m using the alsa driver snd_intel8x0 and made the change using the alsamixer curses tool (although apparently you can turn on the sensor switches for the volume panel control under Gnome as well).</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -413,42 +459,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/09/01/ill-just-skip-the-claws/">I&#8217;ll Just Skip the Claws</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-09-01T06:05:09-07:00" pubdate data-updated="true">Sep 1<span>st</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Apparently <a href="http://www.theaustralian.news.com.au/common/story_page/0,5744,16417002%255E30417,00.html">mammals can regenerate too</a>. And injecting fetal liver cells is enough to get an existing organism regenerating. No retrovirus needed or anything, how cool is that? Good news for all of us aspiring to superherohood (or supervillianhood). Now I just have to figure out how to graft <a href="http://en.wikipedia.org/wiki/Adamantium">adamantium</a> and I&#8217;ll <a href="http://en.wikipedia.org/wiki/Wolverine_%28comics%29">be all set</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/10/">&larr; Older</a>
@@ -488,6 +498,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
@@ -501,10 +515,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/15/subversion-book/">Subversion Book</a>
       </li>
     
   </ul>

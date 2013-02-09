@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-02-05T00:54:24-08:00</updated>
+  <updated>2013-02-09T14:08:28-08:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -12,6 +12,99 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Use of Time]]></title>
+    <link href="http://rowehl.com/blog/2013/02/06/use-of-time/"/>
+    <updated>2013-02-06T12:48:00-08:00</updated>
+    <id>http://rowehl.com/blog/2013/02/06/use-of-time</id>
+    <content type="html"><![CDATA[<p>I love the idea behind social media services, helping to connect people and
+strengthen relationships. However I don&#8217;t think most are actually fulfilling
+on that vision. Sure, you can stay connected with friends. But your goals and
+the goals of the social service itself frequently aren&#8217;t aligned. The desire
+of social media services to drive the metrics they want based on your
+connections to friends and family have resulted in systems that
+prey on base urges. The result is systems that drive themselves off addiction
+loops. In the end they&#8217;re like overeating or
+smoking, bad habits. And I assume most people will look to weed out those
+behaviors in the interest of their overall health. That&#8217;s my view at least, so
+I took the plunge and deleted my Facebook account about a year ago.</p>
+
+<p>At about the same time I decided to crank down a lot of my tech news
+consumption, and filter down the folks I follow on Twitter to people who
+regularly post things that are uniquely amusing or valuable. I had realized
+what I was really trying to do was:</p>
+
+<ul>
+<li>make sure I had a good spread of new info coming in to keep generally informed</li>
+<li>keep on top of what was going on in my industry</li>
+</ul>
+
+
+<p>So I focused on directly solving those problems instead of having
+someone else try to correct for them by proxy. The first part was
+kicking back up my long-form reading habit, I started downloading and
+consuming lots of Kindle books. When we were working on Churn Labs I wanted to
+learn more about places that created long periods with high levels of
+innovation. In the info I was finding online I commonly came across the same
+examples over and over. Places like Florence during the period of the Medici
+family, or Apple, or Corning. But most of those posts online referenced
+books for details. In following up the references and just trying to get some
+details I picked up a few books and read them through.</p>
+
+<p>At the time it had been a while since I sat down and read a book front to back
+that wasn&#8217;t either sci-fi or highly technical. I found that for the purposes
+of &#8220;researching&#8221; something, trying to dig into a new topic and understanding
+it well enough to be able to make a mental framework and form personal
+opinions, I was getting a lot more out of just reading long-form writing.
+When it comes to picking up a new subject most online resources don&#8217;t do a
+great job.
+I think that&#8217;s why there&#8217;s so much attention right now
+being thrown into &#8220;online learning.&#8221; The Internet is a fantastic way to
+keep up to date with a topic you already understand. But it&#8217;s generally falling
+flat when it comes to getting up to speed with something new. Fortunately for
+me I pick things up relatively well in written form, and I&#8217;m pretty good at
+filling in practical experience on my own. So when I hit something new,
+sometimes I&#8217;ll follow up the cursory Wikipedia overview with a book if the
+topic seems interesting enough. It can get
+to be an expensive habit, but I&#8217;m finding it to be well worth it.
+Hopefully soon all these education startups will make free resources I can use
+instead, but for now I&#8217;m sticking to the books.</p>
+
+<p>Listening to podcasts has also helped a good deal with getting an overview.
+A bunch of the topics I&#8217;m interesting in following at a high level. I don&#8217;t
+have the background to follow all the details of new info, but I like to at
+least keep informed about major advances in science or engineering. Audio
+format delivery seems to be great for that. Lots of the podcasters keep things
+high level, I assume cause that&#8217;s best suited to the medium. So
+adding just a few shows like the Economist and Science Friday has made me feel
+like I&#8217;m pretty well on top of all the stuff I really care about. And I just
+use an app (Stitcher on Android for me) so I can listen to the shows while I
+walk to/from the train station. Fills up time that wasn&#8217;t really being well
+utilized before.</p>
+
+<p>Then I had to figure out how to keep up with the details of the industry
+I&#8217;m working in. Or at least I thought I had to. Turns out that the generic
+information sources plus directly operating in the industry was already
+feeding me more than enough data. I lost a lot of noise by not following the
+tech industry coverage. And I figured keeping on top of daily events was
+necessary for conversations with other folks in the industry, otherwise you
+seem ignorant when someone asks you about a hot topic.
+But I found that with the noise gone I had stronger
+opinions and better judgment anyway, and the discussions I had were actually
+higher quality. Probably cause I had spent more time exploring and
+validating my own viewpoint, so I had a lot more to contribute to
+conversations.</p>
+
+<p>Every now and again, there&#8217;s something that&#8217;s absolutely essential for me to
+catch quickly. What I&#8217;m finding is that normally someone will forward it
+to me. Usually to get my opinion on it.
+And I find that cause I&#8217;m consuming things outside the channels most
+folks pick through, I can serve that same role for others. Really, that&#8217;s my
+&#8220;social network&#8221; doing what I originally hoped it would do. Turns out the
+social tools were standing in the way.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Resurrection]]></title>
@@ -285,15 +378,6 @@ app that kicked this whole thing off 10 years ago.</p>
     <updated>2006-03-28T03:14:48-08:00</updated>
     <id>http://rowehl.com/blog/2006/03/28/makes-you-ponder</id>
     <content type="html"><![CDATA[<p>Some things make you think. <a href="http://www.theregister.co.uk/2006/03/27/tuttle_email/">Other things</a> make you wonder if the world wouldn&#8217;t be a better place if public stonings were still in place. That&#8217;s my fucktard of the month right there. Ignorance I can forgive, not everyone has to understand the Interweb. But this goes well beyond that.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[End of Line]]></title>
-    <link href="http://rowehl.com/blog/2006/03/15/end-of-line/"/>
-    <updated>2006-03-15T05:33:07-08:00</updated>
-    <id>http://rowehl.com/blog/2006/03/15/end-of-line</id>
-    <content type="html"><![CDATA[<p>I make <a href="http://en.wikipedia.org/wiki/Tron_%28film%29">Tron</a> jokes pretty frequently. I mean, who doesn&#8217;t, right? It&#8217;s a total classic. But <a href="http://www.defectiveyeti.com/archives/001599.html">this right here</a>, that&#8217;s just fantastic.</p>
 ]]></content>
   </entry>
   
