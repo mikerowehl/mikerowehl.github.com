@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Michael Fagan, author of FaganFinder.com, is going to be working at Feedster for the next few months. His site is a well respected web search tool. &hellip;">
+  <meta name="description" content="It seems like one of the major complaints that I hear most often about RSS is that it&#8217;s hard to use. Finding the XML link if there is one, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,6 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   
   <script type="text/javascript">
@@ -77,6 +76,65 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/08/rss-subscription-service-network/">RSS Subscription Service Network</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-08T19:46:41-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It seems like one of the major complaints that I hear most often about RSS is that it&#8217;s hard to use. Finding the XML link if there is one, choosing from multiple if there are different options, cutting and pasting the link, knowing where to put it, and dealing with any potential problems. It&#8217;s just too complex for most people to care about. So publishers attempt to make it easier to subscribe by putting badges on their pages. You know, those little buttons that say &#8220;Add to Bloglines&#8221; or &#8220;Subscribe with NetNewsWire&#8221;. Unfortunately that puts the burden on the publisher to know all the different services that a user may want to subscribe with, and clutters up the interface with dozens of buttons. A solution like that also increases the barrier to a new aggregator entering into general usage. Publishers won&#8217;t want to update their site for an aggregator that&#8217;s only used by a few people, and users won&#8217;t use an aggregator that doesn&#8217;t provide them with an easy subscription feature. The interface could be modified a bit, to something like <a href="http://www.methodize.org/quicksub/">QuickSub</a>, to help with the clutter caused by all the extra buttons. But the user still has a boatload of options there, and again creates some friction with respect to adding a new aggregator service. The aggregator provider could do something like create a bookmarklet for easy subscription, but this also has some disadvantages. Such as not normally playing very nicely with <a href="http://www.feedster.com/search.php?q=miker+rocks&amp;hl=en&amp;ie=UTF-8&amp;sort=date">pages that contain more than one feed</a> and not being available when the browser has restricted functionality (such as on mobile devices). The ideal I think is a service that:</p>
+
+<ul>
+<li><p>Displays just one button, the right button, for subscription via the aggregator the user does their reading with and that&#8217;s all.</p></li>
+<li><p>Doesn&#8217;t require publishers to know about the details of every different tool that can be used to subscribe.</p></li>
+<li><p>Allows the author of a new aggregator to service their users directly, without requiring the author of the new software to ask to get their tool listed.</p></li>
+</ul>
+
+
+<p>I just hacked together a quick example system that does this to try to get a conversation going. It&#8217;s based somewhat on the idea of a service network. Somewhat like the way that publishers can include <a href="http://www.google.com/services/adsense_tour/page3.html">a bit of code on their site to display ads from a service like AdSense</a>. Except instead of having the network site display ads we&#8217;ll ask it to write a subscription button into the page. The publisher site just needs to pass along info about what the feed URL is, and the subscription button service takes care of looking up wich aggregator the user prefers and how to generate the appropriate button for subscription.</p>
+
+<p>The code is very much just proof-of-concept garbage, but I&#8217;ve <a href="http://www.bitsplitter.net/projects/subservice-0.1.tgz">put it online</a> so that hopefully if people are interested we can get something going. If you can read even just a little bit of PHP and HTML you should be able to follow along with the code from the tarball or walk thru a few pages (starting with the <a href="http://www.bitsplitter.net/projects/subservice/test.html">feed list page</a>) to see what it does. Here are a few points to call out.</p>
+
+<ul>
+<li><p>The simple javascript inclusion can be wrapped with a noscript tag to create a link to a subscription network page instead. Which means this could also work even for browsers that don&#8217;t support javascript. It would mean another page to click thru, bit it would still function.</p></li>
+<li><p>Configuration is all held in two cookies, nothing needs to be stored server side.</p></li>
+<li><p>As long as an aggregator author can express subscription to their service as a simple templated URL (containing the feed to subscribe to) they can give their users a link to configure the network to present their tool as the default. Even if the network doesn&#8217;t know anything about the tool it can still be used. If you&#8217;re looking at the code, think about passing in an arbitrary template value to setsub.php  A simple &#8220;click here to set bloglines as your default aggregator&#8221; link could replace the &#8220;drag this link to your toolbar to create a bloglines subscription bookmarklet&#8221; step.</p></li>
+<li><p>If the user doesn&#8217;t have any default aggregator set they still see a generic subscribe button, and they can be introduced to the network very quickly if they haven&#8217;t already used their aggregator to set it as the default.</p></li>
+<li><p>We&#8217;ll obviously need a lot more hooks and options to let publishers and users control the look of the controls.</p></li>
+<li><p>As long as the tool registers a URL handler it can be used as the target of the network subscription (ie. NetNewsWire and the feed: URL type).</p></li>
+</ul>
+
+
+<p>I&#8217;m assuming the reason no one seems to have something like this setup is that there&#8217;s no real direct value in it. It needs to be a single network service in order to be most valuable. We want the user to set their preference once and have it used anywhere there are subscription options. But in general the service needs to be completely invisible. Not a great business, but a valuable service I think. So there&#8217;s the code example. I think this is something that would really work for the users, publishers, and tools authors. If we can just figure out a way to get it up and running and keep it running. If you agree, and you&#8217;re interested in trying to make a go of it, let me know.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -422,71 +480,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/12/28/linux-bluetooth-obex-and-a-nokia-6600/">Linux Bluetooth OBEX and a Nokia 6600</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-12-28T07:10:24-08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve been having trouble with uploads to both <a href="http://www.flickr.com">Flickr</a> and <a href="http://www.buzznet.com">BuzzNet</a> during this vacation. I uploaded images the day I left for NY, and everything worked at 12:30pm PST. Then I landed in NY and tried an upload using the same phone using the same settings to the same accounts, and it doesn&#8217;t seem to be working any more. And everyone is gone for the holidays it seems, so self service it is. I didn&#8217;t have the OBEX bluetooth tools setup under Linux (I&#8217;m currently using Gentoo on my laptop). I&#8217;ve tried to install the slick-as-hell-sounding gnome-bluetooth package, but I can&#8217;t emerge it. Error compiling. So I went tooling around looking for simple bare bones shims so that I could just move some data around. Not all that much out there.  I have GPRS working over bluetooth for this laptop and phone, so I know the basics are working. But how about accessing the data on the phone itself? Not good, here&#8217;s some info.</p>
-
-<p>I grabbed the <a href="http://oss.bdit.de/opd.html">OBEX push daemon</a> and installed that.  First I had to install the deprecated bluez-sdp package under Gentoo, but OPD compiled and worked fine after I set it up. Last release of this package was during 2003.  Wow!!! Is everyone else using Bluetooth under Linux using gnome-bluetooth to handle inbound pushes? I didn&#8217;t really find much else that would do it. OPD worked great for getting images off my phone, sending from the phone. I wasn&#8217;t able to get file transfer working, I assumed that I should be able to use obexftp to browse and get/put files from my laptop, but no go. I try any command line and it just seems to fail. None of the info I found online says that special effort is required, but I get errors trying to list anything at all:</p>
-
-<blockquote><p>miker@whirr src $ obexftp -b 00:60:57:8A:E7:5B -B 10 -l /
-No custom transport
-Connecting&#8230;bt: 1
-failed: S45 UUID
-done
-Receiving /&#8230; failed:
-Disconnecting&#8230;done
-miker@whirr src $</p></blockquote>
-
-<p>I also couldn&#8217;t get the get function using <a href="http://prdownloads.sourceforge.net/openobex/openobex-apps-1.0.0.tar.gz">OpenOBEX-apps</a> working either. Does OBEX file transfer expose a different namespace for files than something like <a href="http://www.newlc.com/article.php3?id_article=70">FExplorer</a> does? Should any of these applications work? Pushes over OBEX are all I&#8217;ve ever really gotten working. Does OBEX file transfer just suck too much for anyone to ever get it working? I thought the Windows Bluetooth drivers normally allowed browsing and access to the info on the phone. I doubt the Windows users are typing in magic paths&#8230; so this should be technically possible. Anyone know of a simple ftp style app to access a Series60 phone (or any OBEX capable device) from Linux?  And if not, anyone know if it&#8217;s possible to do without installing an app on the phone? I&#8217;ll write it if the app doesn&#8217;t already exist, I just don&#8217;t feel like pouring time into figuring out that the underlying technologies are too broken to get this working.</p>
-
-<p>I was also looking for how to push files from the laptop to the phone, and I found lots of people pointing to my old site, unrooted.net, which is no longer up. I need to put that back, but in the meantime I put up <a href="http://www.bitsplitter.net/projects/ussp-push-0.2.tgz">the ussp-push</a> package here at Bitsplitter. It has an obextool command line app that does a push from a Linux system out to a device that accepts OBEX push. You can also use obex_test from the openobex-apps package. Here&#8217;s an example of pushing an image from my laptop to my 6600 using that package:</p>
-
-<blockquote><p>miker@whirr src $ ./obex_test -b 00:60:57:8A:E7:5B 10
-Using Bluetooth RFCOMM transport
-OBEX Interactive test client/server.
-c
-Connect OK!
-Version: 0x10. Flags: 0x00
-p
-PUT file (local, remote)> ./ed.jpg edbg.jpg   <br/>
-name=./ed.jpg, size=2756
-Going to send 2756 bytes
-Made some progress&#8230;
-Made some progress&#8230;
-PUT successful!</p></blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/27/">&larr; Older</a>
@@ -527,6 +520,10 @@ PUT successful!</p></blockquote>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
       </li>
     
@@ -540,10 +537,6 @@ PUT successful!</p></blockquote>
     
       <li class="post">
         <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
       </li>
     
   </ul>

@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Apparently mammals can regenerate too. And injecting fetal liver cells is enough to get an existing organism regenerating. No retrovirus needed or &hellip;">
+  <meta name="description" content="It&#8217;s kinda a slow news day overall. Maybe everyone is all wrapped up in this whole city underwater thing. Not my style. So instead I&#8217;m &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,6 @@
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   
   <script type="text/javascript">
@@ -77,6 +76,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/09/01/programming-styles/">Programming Styles</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-09-01T06:42:15-07:00" pubdate data-updated="true">Sep 1<span>st</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&#8217;s kinda a slow news day overall. Maybe everyone is all wrapped up in this whole city underwater thing. Not my style. So instead I&#8217;m catching up a bit on the geekier side of the reading I have sitting untouched in my aggie. Posts from LTU are always good for some geekin, and <a href="http://lambda-the-ultimate.org/node/view/941">the post about Context Oriented Programming</a> in particular caught my attention. I started reading the paper, and right about the end of the first page had a pretty decent mental image of what was up so I stopped. Nice idea. And then there&#8217;s the comment in LTU saying that it sounds like AOP (that&#8217;s <a href="http://www.onjava.com/pub/a/onjava/2004/01/14/aop.html">Aspect Oriented Programming</a> for those of you who don&#8217;t have the kind of m4d cred that me and my dawg <a href="http://lambda-the-ultimate.org/user/view/1">Ehud Lamm</a> do). Sure does. Not hard to figure out, AOP is listed as related work at the end of the paper. Also not that it means anything of course. You can write object oriented programs in imperitive languages and declarative programs in functional languages and do all sorts of nutty stuff in C. It all comes down to what stuff the tools make it easy to do. Is the context oriented model new? No, probably not. Sounds exactly like the kind of abstraction that exists in protocol design. However bringing the model up to the level of the implementation of classes, and making the basic level of granularity for the programmer activation and deactivation of layers of functionality is somewhat interesting. Reminds me of the move to get busses abstracted in the Linux kernel. There was a proliferation of devices at one point, and suddenly a device that used to exist as PCI now all of a sudden had a PCMCIA version and a USB version. So the busses were made &#8220;objects&#8221; in their own right so that the actual device code could be factored out from the bus manipulation code. If you take the view from the kernel end the bus is delegating to individual device objects, but if you take a look at the system overall it&#8217;s very close to context oriented composition of the device model.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -414,82 +449,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/08/24/linux-wpa/">Linux WPA</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-08-24T18:48:23-07:00" pubdate data-updated="true">Aug 24<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve had a background task running that steals a few cycles whenever I should be sleeping and checks out what it would get to make the laptop I have from work do WPA. I have a Thinkpad R51 I inherited, and while I wait for my laptop to come in I&#8217;ve been playing around with it to see what I could get working. The work wireless network uses WPA-PSK, and that&#8217;s something that&#8217;s always been a pain for Linux. So here&#8217;s my quick description of getting the Thinkpad R51 (using the <a href="http://ipw2200.sourceforge.net/">Intel ipw2200</a> driver) working with WPA. I&#8217;m using <a href="http://www.ubuntulinux.org/">Ubuntu</a> as the distro by the way, 5.04 in particular. So maybe these instructions will actually be relevant to someone!</p>
-
-<ul>
-<li><p>The ipw2200 driver that ships with the default kernel in Ubuntu doesn&#8217;t have support for a lot of the operations that the WPA setup requires. I started out with a fresh download of the latest stable kernel (2.6.12.5 as of this writing) just to head off any potential issues with newness of versions. This is pretty bleeding edge stuff (there are Makefiles at least, so it could be worse :-).</p></li>
-<li><p>Grab the config from /boot and copy it to .config in your new kernel area, make menuconfig and resave, compile, install, generally get the system working with that new kernel</p></li>
-<li><p>Grab the <a href="http://ieee80211.sourceforge.net/">ieee80211 subsystem</a>, I used the latest as of this writing, 1.0.3. The compile and install is very easy here (Yay for installed kernel headers!!).</p></li>
-<li><p>Now grab the <a href="http://ipw2200.sourceforge.net/">driver for the network card, ipw2200</a>. I used 1.0.6, which was the latest as of this writing. You&#8217;ll also need the latest firmware, also linked to from the ipw2200 page. The releases of firmware are numbered according to which versions of the driver they go with. The firmware I grabbed started with 1.0.4 and ran through the current version. Compile and install the ipw2200 driver, copy the firmwares into place (I used /lib/hotplug/firmware).</p></li>
-<li><p>And finally you&#8217;ll need a copy of <a href="http://hostap.epitest.fi/wpa_supplicant/">wpa_supplicant</a>. This is where things start to get really sketchy. This is bleeding edge for you. You&#8217;ll have to create a configuration file for the package in order to build it.  Here&#8217;s what mine looks like:
-`CONFIG_DRIVER_IPW=y</p>
-
-<h1>CONFIG_DRIVER_BSD=y</h1>
-
-<h1>CONFIG_DRIVER_NDIS=y</h1>
-
-CONFIG_WIRELESS_EXTENSION=y
-CONFIG_IEEE8021X_EAPOL=y
-CONFIG_EAP_MD5=y
-CONFIG_EAP_MSCHAPV2=y
-CONFIG_EAP_TLS=y
-CONFIG_EAP_PEAP=y
-CONFIG_EAP_TTLS=y
-CONFIG_EAP_GTC=y
-CONFIG_EAP_OTP=y
-
-<h1>CONFIG_EAP_SIM=y</h1>
-
-<h1>CONFIG_EAP_AKA=y</h1>
-
-CONFIG_EAP_PSK=y
-CONFIG_EAP_PAX=y
-CONFIG_EAP_LEAP=y
-
-<h1>CONFIG_PCSC=y</h1>
-
-<p>`I coppied wpa_supplicant and wpa_cli to /usr/local/bin, although I&#8217;m pretty sure that&#8217;s superfluous.</p></li>
-<li><p>Then take the wpa_supplicant.conf sample file and tailor it to your needs. I just followed the example from in there that most closely matched my setup.</p></li>
-<li><p>Run wpa_supplicant giving it the interface to use and the configuration file: &#8220;wpa_supplicant -ieth0 -c/etc/wpa_supplicant.conf -d&#8221; The -d option keeps it in the foreground so you can see all the debugging output. If it works you should see messages saying that it&#8217;s associated with a basestation and extablished a key.</p></li>
-</ul>
-
-
-<p>Tada! Now you can run scripts against the interface to do things like DHCP and everything should be all peachy. Sweet! Now I don&#8217;t have to use a Windows machine just so I can tool around the office downloading stuff and looking like I&#8217;m important.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/11/">&larr; Older</a>
@@ -530,6 +489,10 @@ CONFIG_EAP_LEAP=y
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
       </li>
     
@@ -543,10 +506,6 @@ CONFIG_EAP_LEAP=y
     
       <li class="post">
         <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
       </li>
     
   </ul>

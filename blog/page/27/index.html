@@ -9,8 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I&#8217;ve been reading over a few REST themed articles: Weblogs, Publish-Subscribe, and Web Collections: A REST Analysis
-How to Create a REST &hellip;">
+  <meta name="description" content="I&#8217;ve been having trouble with uploads to both Flickr and BuzzNet during this vacation. I uploaded images the day I left for NY, and everything &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,7 +28,6 @@ How to Create a REST &hellip;">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   
   <script type="text/javascript">
@@ -78,6 +76,71 @@ How to Create a REST &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/28/linux-bluetooth-obex-and-a-nokia-6600/">Linux Bluetooth OBEX and a Nokia 6600</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-28T07:10:24-08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been having trouble with uploads to both <a href="http://www.flickr.com">Flickr</a> and <a href="http://www.buzznet.com">BuzzNet</a> during this vacation. I uploaded images the day I left for NY, and everything worked at 12:30pm PST. Then I landed in NY and tried an upload using the same phone using the same settings to the same accounts, and it doesn&#8217;t seem to be working any more. And everyone is gone for the holidays it seems, so self service it is. I didn&#8217;t have the OBEX bluetooth tools setup under Linux (I&#8217;m currently using Gentoo on my laptop). I&#8217;ve tried to install the slick-as-hell-sounding gnome-bluetooth package, but I can&#8217;t emerge it. Error compiling. So I went tooling around looking for simple bare bones shims so that I could just move some data around. Not all that much out there.  I have GPRS working over bluetooth for this laptop and phone, so I know the basics are working. But how about accessing the data on the phone itself? Not good, here&#8217;s some info.</p>
+
+<p>I grabbed the <a href="http://oss.bdit.de/opd.html">OBEX push daemon</a> and installed that.  First I had to install the deprecated bluez-sdp package under Gentoo, but OPD compiled and worked fine after I set it up. Last release of this package was during 2003.  Wow!!! Is everyone else using Bluetooth under Linux using gnome-bluetooth to handle inbound pushes? I didn&#8217;t really find much else that would do it. OPD worked great for getting images off my phone, sending from the phone. I wasn&#8217;t able to get file transfer working, I assumed that I should be able to use obexftp to browse and get/put files from my laptop, but no go. I try any command line and it just seems to fail. None of the info I found online says that special effort is required, but I get errors trying to list anything at all:</p>
+
+<blockquote><p>miker@whirr src $ obexftp -b 00:60:57:8A:E7:5B -B 10 -l /
+No custom transport
+Connecting&#8230;bt: 1
+failed: S45 UUID
+done
+Receiving /&#8230; failed:
+Disconnecting&#8230;done
+miker@whirr src $</p></blockquote>
+
+<p>I also couldn&#8217;t get the get function using <a href="http://prdownloads.sourceforge.net/openobex/openobex-apps-1.0.0.tar.gz">OpenOBEX-apps</a> working either. Does OBEX file transfer expose a different namespace for files than something like <a href="http://www.newlc.com/article.php3?id_article=70">FExplorer</a> does? Should any of these applications work? Pushes over OBEX are all I&#8217;ve ever really gotten working. Does OBEX file transfer just suck too much for anyone to ever get it working? I thought the Windows Bluetooth drivers normally allowed browsing and access to the info on the phone. I doubt the Windows users are typing in magic paths&#8230; so this should be technically possible. Anyone know of a simple ftp style app to access a Series60 phone (or any OBEX capable device) from Linux?  And if not, anyone know if it&#8217;s possible to do without installing an app on the phone? I&#8217;ll write it if the app doesn&#8217;t already exist, I just don&#8217;t feel like pouring time into figuring out that the underlying technologies are too broken to get this working.</p>
+
+<p>I was also looking for how to push files from the laptop to the phone, and I found lots of people pointing to my old site, unrooted.net, which is no longer up. I need to put that back, but in the meantime I put up <a href="http://www.bitsplitter.net/projects/ussp-push-0.2.tgz">the ussp-push</a> package here at Bitsplitter. It has an obextool command line app that does a push from a Linux system out to a device that accepts OBEX push. You can also use obex_test from the openobex-apps package. Here&#8217;s an example of pushing an image from my laptop to my 6600 using that package:</p>
+
+<blockquote><p>miker@whirr src $ ./obex_test -b 00:60:57:8A:E7:5B 10
+Using Bluetooth RFCOMM transport
+OBEX Interactive test client/server.
+c
+Connect OK!
+Version: 0x10. Flags: 0x00
+p
+PUT file (local, remote)> ./ed.jpg edbg.jpg   <br/>
+name=./ed.jpg, size=2756
+Going to send 2756 bytes
+Made some progress&#8230;
+Made some progress&#8230;
+PUT successful!</p></blockquote>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -433,48 +496,6 @@ How to Create a REST &hellip;">
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/12/06/technology-and-medium-of-the-web/">Technology and Medium of the Web</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-12-06T06:51:36-08:00" pubdate data-updated="true">Dec 6<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;m on my way up to San Francisco, sitting on Caltrain, so I finally have some time to write up one of the posts I&#8217;ve been thinking about.</p>
-
-<p>I&#8217;ve been spending a bunch of time lately working with online collaboration. In particular I&#8217;ve been trying to figure out what makes some attempts to work together break down when seem to work effortlessly and with little organization. Blogging is one phenomenon I&#8217;ve been paying attention to for a while, and recently I was trying to put my finger on exactly what blogging has really changed. It&#8217;s not like the protocols are fundamentally different. Sure there&#8217;s the Blogger API, and Metaweblog, and Atom, and the reuse and refinement of RSS. But I don&#8217;t think those are what really fuels the changes. So if it&#8217;s all just HTML still, why such a large impact from making tools simpler? I have read a few things recently that help to frame the differences and provide some good models to use in understanding the changes, I&#8217;ll try to describe one of them.</p>
-
-<p>I think about the changes that McLuhan describes about changing mediums when I think about blogging as a practice. I wish I could find the passage, I&#8217;m not sure if it&#8217;s in Understanding Media or somewhere else, where he talks about the Protestantism movement and the use of the printing press to mass produce bibles. I think a lot of insight can be drawn from a comparison of the introduction of the printing press and the rise of blogging. The important factor that I realized was that the introduction of the printing press didn&#8217;t change the underlying technology in the books themselves. They were still paper and ink and a binding (and in this case they were even the same content in every instance). In many cases the result was actually a step backward for what most people valued. Bibles used to be beautiful illustrated color manuscripts with intricate bindings. Now they were relatively ugly page after page of black ink. They seemed like a step backward if you placed a pre-guttenburg bible side by side with a post-guttenberg edition.</p>
-
-<p>The major disrupting factor was that the bibles could be produced in large numbers and distributed much more widely. The technology of production was all that had changed, and yet it resulted in sweeping social changes. I think we&#8217;re looking at the same kind of situation with blogging. The underlying technologies facing the end user of the information is the same. Pre-blogging and post-blogging we still have browsers and TCP/IP and HTML. Hell, the blogging version of HTML even suffers from the same &#8220;downgrade&#8221; criticism that the original printing press bibles did, people say it&#8217;s ugly and clumsy. But the tools used to produce information using those technologies have changed, and as a result shifted the power balance. So sure, blogging is just a simple way to produce simple HTML. But the printing press was just a simple way to produce ugly bibles. Despte that, the effects of those bibles were by no means slight, and I don&#8217;t think that the long term effects of blogging will be either.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/28/">&larr; Older</a>
@@ -515,6 +536,10 @@ How to Create a REST &hellip;">
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
       </li>
     
@@ -528,10 +553,6 @@ How to Create a REST &hellip;">
     
       <li class="post">
         <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a>
       </li>
     
   </ul>
