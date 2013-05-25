@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="After two and a half weeks on the road I&#8217;m finally back in California. Of course the best way to really feel that I&#8217;ve come back home is &hellip;">
+  <meta name="description" content="I went over to the Technorati Developers Salon on Wed, but I haven&#8217;t really had much time to sit down and write something since then. People &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,61 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2004/05/21/technorati/">Technorati</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-21T13:47:12-04:00" pubdate data-updated="true">May 21<span>st</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I went over to the <a href="http://developers.technorati.com/wiki/DevelopersSalon">Technorati Developers Salon</a> on Wed, but I haven&#8217;t really had much time to sit down and write something since then. People have already posted much of the information from the event. In particular I point to the info from xian, an excellent three part post that seems to have come out in realtime:</p>
+
+<ul>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/19/blogging_from_hunters_point.html">part 1</a></p></li>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/20/more_notes_from_technorati_salon.html">part 2</a></p></li>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/20/technorati_developers_brainstorm.html">part 3</a></p></li>
+</ul>
+
+
+<p>There was certainly a lot of good geekiness going on, and while the technology discussion was important I think it&#8217;s been covered pretty well. So instead I&#8217;ll comment on some of the other factors of the meeting. I was talking with someone there about how it&#8217;s just not possible to catch the full content of a physical meeting like this for online consumption. Maybe I can help out a bit, fill in some of the background and give some of the details that aren&#8217;t really related to the geek end of things. Although I am interested in the Technorati API somewhat, I&#8217;m more interested in the general usefulness of tools for information exchange. Technorati is quickly becoming one of the staples of online discussion tracking, so I think it should probably be of interest to a lot more people than it already is.</p>
+
+<p>I should probably start with the basics. There&#8217;s a <a href="http://www.technorati.com/help/faq.html">FAQ at the Technorati site</a>, but I know I don&#8217;t normally find FAQs all that useful unless I have a specific bit of info I&#8217;m going after. So instead let me start with an example of Technorati usage. I normally think of the URL based search first. Go to the <a href="http://www.technorati.com">front page of Technorati</a> and you&#8217;ll see a search box. If you enter a URL into that search box you&#8217;ll get a listing of blogs which link to that URL. For example, I enter the URL http://www.bitsplitter.net/blog to see who&#8217;s linking to my blog. The result is a <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2F&amp;sub=Go%21">page like this</a>. As you can hopefully see from that, there&#8217;s a list of pages that have links to my blog. Some are people who have me on their blogroll, others have linked to posts. This is part of what people mean when they say Technorati can be used to track conversations. Say someone posts something to their blog which references a post of mine. If they posted a trackback, my blog software tells me about it. But if they haven&#8217;t used a trackback, I normally find out about their post because I see it as an incoming link to my blog. It allows me to find out when people are picking up the topics I&#8217;ve introduced, without having to read through every blog to do so (an impossible proposition at this point, there are just too many blogs). According to what Dave said, this was really the initial motivation for Technorati. He had a blog of his own, and he wanted to know who was linking to the things he said. There are other ways to get notified when people link to your posts (trackback is one, I&#8217;ll have to cover that another time), but nothing is as reliable as Technorati yet.</p>
+
+<p>Of course, it doesn&#8217;t have to be the URL of an entire blog or site that you search for. If I wanted to know who had linked to part 1 of the posts by xian that I listed above I could enter in the URL for that one post. The result is <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fradiofreeblogistan.com%2F2004%2F05%2F19%2Fblogging_from_hunters_point.html&amp;sub=Go%21">this page</a>, which lists posts that link to just that one entry. Much more convenient than searching through the <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fradiofreeblogistan.com%2F&amp;sub=Go%21">hundreds of links to Radio Free Blogistan</a> to find the conversations that I&#8217;m interested in. Note however that both operations are significant. Maybe I want just one conversation, or maybe I&#8217;m looking for more information sources and I want to find a general list of people who also point to Radio Free Blogistan. Casual users normally don&#8217;t know how to pick the right URL to put into the search in order to pull up the results they want. So some bloggers have started putting links into their post templates that can be used to retrieve the Technorati listing for a single post. See <a href="http://www.sifry.com/alerts/">Dave&#8217;s alerts</a> for an example. Those links that say &#8220;Other blogs commenting on this post&#8221; pull up the search results for just that single post. It seems like a minor point if you&#8217;re a geek and understand how it all works. But is one of those steps along the path of turning a web site into a service.</p>
+
+<p>Sure, Technorati is a web site that you can go to and type queries into. However, it&#8217;s also a set of service URLs which you can link directly from your own blog or website in order to provide your readers with up to date info. The service nature of Technorati goes deeper than this actually. They provide an API that developers can use, which in general gives very granular control of requests to Technorati. This lets developers of other websites tie in to Technorati and provide new applications without having to ask Technorati for new features. One of the recent updates is that their HTML website (the site you see when you go to <a href="http://www.technorati.com">the front page</a> and click on stuff) is actually just a thin layer of cover over the base API that they expose for developers. In the software industry this is called &#8220;eating your own dogfood&#8221;, which is applied in general to any set of developers using the tools they develop as part of their daily work. This normally leads to higher quality output because the feedback loop can have zero hops. Developers are users, so they&#8217;ll often find problems and omissions very quickly. Having this API available means that if there&#8217;s something you think the Technorati site should do that it doesn&#8217;t, you should be able to write a version that performs the way you would like it to. Assuming you know how to develop web services based applications, and that the API supports getting the information that you want. And that&#8217;s really what the final part of the Salon was about. What features should be added to the API so that developers can develop some cool new applications? A lot of the points you see listed in the other posts about the salon focus on this kind of enhancement. There was also talk about how to create a situation where Technorati either has more information that it can parse out of existing posts, or where posts can be formated in a way that allows greater information extraction. It boils down to the same thing for general usage, the more information that goes into Technorati, the more a user can expect to be able to get the services to do for them.</p>
+
+<p>The discussion kept cycling back to the question of how Technorati plans to make money. The question is still unresolved, but they mentioned advertising and subscription services as possible sources of income. I don&#8217;t want to really delve into those details too much, I just want to point out one potential business usage of Technorati. The URL that you search for doesn&#8217;t have to be the URL of a blog or a post. If I want to know what people out in the blogosphere are saying about my company, I can just search for <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.bitsplitter.net&amp;sub=Go%21">anyone linking to anything on the Bitsplitter site</a>. There&#8217;s not that much there for my company, most of that stuff is related to my blog. But just take a look at something like the <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.ibm.com&amp;sub=Go%21">inbound links for IBM</a>. Information about what people are saying about a company like this can be quite valuable. Not only because it comes in so fresh, but because it gives them an extra degree of tracking they can do. Say IBM launches a new <a href="http://www.alphaworks.ibm.com/">alphaWorks</a> project and after a month suddenly sees a stampede of traffic. They can use Technorati as one factor in figuring out why it is that so many people suddenly found the site. Or even better, Technorati could alert IBM of the new postings before the stampede of traffic arrives. Of course, if you&#8217;re IBM you can always have some of your army of consultants write something that parses referrer logs to figure out after the fact where the traffic came from. But if you want that alert in advance Technorati is the best way to get it. And there could be other analysis and stats reports to go along with the alerting service. The stuff is still all up in the air of course, but I mention it because you can use the interface as it is today to check out what people are saying about your business. If you&#8217;re thinking about setting up a blog for your business you can use Technorati to check out how much extra buzz it&#8217;s generating.</p>
+
+<p>It&#8217;s not just a tool for geeks. Especially with the much more participatory nature of &#8220;the media&#8221; in general, it seems to be serving a critical role in gathering information about how your message is making it out into the public. No matter if your message is a technical discussion of how Atom requests should work or information about a new product release. So, that being said, I was kinda disappointed about the turnout. There were a lot of people there, to be sure. And the collective technical street cred of the room was well up at the high end of the scale, even for a Silicon Valley event. But I really do think this is something that hordes of people should be interested in (and maybe are interested in, but don&#8217;t know that Technorati provides what they&#8217;re looking for). I think Dave and company are doing a great job in serving the developer community. Everything about the way that they ran the salon just gave me a good impression. If you&#8217;ve read about creative destruction and want to see what it looks like in practice, come to the next salon and witness it for yourself. One possible take on the situation is that Technorati is really concentrating on enabling developers so that the developer applications provide the pull for the end users. That&#8217;s a happy place to be, and I think it jives with what I&#8217;ve seen. However, I also know that geeks aren&#8217;t always very good at creating applications which apply to and can be used by the average user. It doesn&#8217;t have to be like this of course, it just works out that experienced users and developers are frequently blind to issues that cripple normal users. I would really like to see services like this proliferate. Especially after seeing Dan Gillmor speak last night about <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1380&amp;mo=5&amp;yr=2004">We The Media</a>, a mass media structured not like a lecture but like a conversation, I think tools like this are essential. However they aren&#8217;t immediately available to the people who would like to use them. So I&#8217;ve been trying to think of applications which would enhance the impact of the decentralization of news. Apps that provide stats tracking, and detailed mapping of blog interactions are great geek tools. They&#8217;re essential for the top-down study of what&#8217;s going on. But what can we build to help news move from the edge inward, from the bottom-up? I&#8217;m not smart enough to have a good answer to that yet. Hopefully I will at some point.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2004/05/20/back-in-the-land-of-the-geeking/">Back in the Land of the Geeking</a></h1>
     
     
@@ -98,7 +153,7 @@
   
 
 
-<time datetime="2004-05-20T01:59:23-07:00" pubdate data-updated="true">May 20<span>th</span>, 2004</time>
+<time datetime="2004-05-20T04:59:23-04:00" pubdate data-updated="true">May 20<span>th</span>, 2004</time>
         
       </p>
     
@@ -134,7 +189,7 @@
   
 
 
-<time datetime="2004-05-13T03:05:09-07:00" pubdate data-updated="true">May 13<span>th</span>, 2004</time>
+<time datetime="2004-05-13T06:05:09-04:00" pubdate data-updated="true">May 13<span>th</span>, 2004</time>
         
       </p>
     
@@ -184,7 +239,7 @@
   
 
 
-<time datetime="2004-05-06T09:38:21-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+<time datetime="2004-05-06T12:38:21-04:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
         
       </p>
     
@@ -226,7 +281,7 @@
   
 
 
-<time datetime="2004-05-06T08:23:47-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+<time datetime="2004-05-06T11:23:47-04:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
         
       </p>
     
@@ -268,7 +323,7 @@
   
 
 
-<time datetime="2004-05-06T03:16:05-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+<time datetime="2004-05-06T06:16:05-04:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
         
       </p>
     
@@ -308,7 +363,7 @@
   
 
 
-<time datetime="2004-05-04T02:18:33-07:00" pubdate data-updated="true">May 4<span>th</span>, 2004</time>
+<time datetime="2004-05-04T05:18:33-04:00" pubdate data-updated="true">May 4<span>th</span>, 2004</time>
         
       </p>
     
@@ -344,7 +399,7 @@
   
 
 
-<time datetime="2004-05-03T08:53:41-07:00" pubdate data-updated="true">May 3<span>rd</span>, 2004</time>
+<time datetime="2004-05-03T11:53:41-04:00" pubdate data-updated="true">May 3<span>rd</span>, 2004</time>
         
       </p>
     
@@ -386,7 +441,7 @@
   
 
 
-<time datetime="2004-05-01T17:12:17-07:00" pubdate data-updated="true">May 1<span>st</span>, 2004</time>
+<time datetime="2004-05-01T20:12:17-04:00" pubdate data-updated="true">May 1<span>st</span>, 2004</time>
         
       </p>
     
@@ -422,7 +477,7 @@
   
 
 
-<time datetime="2004-04-28T12:57:41-07:00" pubdate data-updated="true">Apr 28<span>th</span>, 2004</time>
+<time datetime="2004-04-28T15:57:41-04:00" pubdate data-updated="true">Apr 28<span>th</span>, 2004</time>
         
       </p>
     
@@ -430,48 +485,6 @@
 
 
   <div class="entry-content"><p>I have to let my geekness shine and provide a pointer to <a href="http://slate.msn.com/id/2099411/">How to Hack Your Head</a>, an article by Steven Johnson. Steven wrote Interface Culture, a book <a href="http://www.bitsplitter.net/blog/index.php?p=174">I just recently read and was quite impressed by</a>. His latest book, <a href="http://www.amazon.com/exec/obidos/ASIN/0743241657/stevenberlinj-20">Mind Wide Open: Your Brian And The Neuroscience of Everyday Life</a>, is currently high on my reading list. The article runs through some existing technologies you can use to get a peek into your brain functioning and mental state. From the sounds of it, direct neural computer interfaces seem to be quite a ways off. Even if you have a few million dollars. Awww man.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/04/28/blog-for-business/">Blog for Business</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-04-28T06:17:55-07:00" pubdate data-updated="true">Apr 28<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Small Business Trends <a href="http://www.smallbusinesses.blogspot.com/archives/2004_04_01_smallbusinesses_archive.html#108294960642999951">reviews Blog for Business</a>, and in the process drops some great quotes:</p>
-
-<blockquote><p>Blogs are places where we can stop and reflect. Filter out. Slow down. See a different side of an issue. Get the benefit of someone else&#8217;s thinking, but in a personal way, not just as another place we have to absorb more information. It&#8217;s certainly not a new idea that reading enriches our lives. But blogs are a way we can incorporate reading without having to change what we&#8217;re doing (sitting at the computer) and still enjoy some of the pleasure of conversation (most blogs allow comments if you have the time and the urge). And it&#8217;s that personal touch that makes blogs different from all the other data we must take in.</p></blockquote>
-
-<p>Do blogs HAVE to be personal communications channels? No. Is there something built into the technology which forces them to differ from a frequently updated site using traditional HTML publishing tools? No. But there is a cultural norm at work. Most blogs take the form of personal communication in a voice different than the web content from a few years ago. As a group they present a new trend, causing new interest in a reevaluation of communication style.</p>
-
-<p>As a result perceptions of the nature of online communication are changing. People are seeing for the first time the realization of the &#8220;personal publishing medium&#8221;. This is what the homepage was supposed to provide for people back during the early 90&#8217;s when the web first arrived on the scene. Now, a decade later, blogs are filling the role that the personal homepage was supposed to. What&#8217;s different now? It could simply be that there&#8217;s a critical mass of users online, enough that personal publishers are able to attract a readership that justifies their investment of time. Maybe it&#8217;s that users are now comfortable with the web, and they&#8217;re psychologically ready to make the move from consumer to producer. I&#8217;ve heard others say that it normally takes about 10 years for a technology to hit wide adoption. They use the cell phone as an example. No one is absolutely definite what caused the explosive adoption of cell phones - was it size of the cell network, size and weight of the phones, awareness of the public, etc - but at some point the industry experienced explosive growth. The web is just over 10 years old now. Maybe it&#8217;s just hitting puberty.</p>
 </div>
   
   
@@ -519,6 +532,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
@@ -532,10 +549,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
       </li>
     
   </ul>

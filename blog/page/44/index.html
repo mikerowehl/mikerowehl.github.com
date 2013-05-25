@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Just trying out Vagablog with my spankin new WordPress 1.0.2 install. Looks like it still expects the category as a number &#8230; I don&#8217;t like &hellip;">
+  <meta name="description" content="And here you have it, the updated Bitsplitter Blog. The minimalist view is still the default, but now featuring such coolness as valid XHTML, valid &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,55 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2004/03/23/update-complete/">Update Complete</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-23T15:45:54-05:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>And here you have it, the updated Bitsplitter Blog. The minimalist view is still the default, but now featuring such coolness as <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2F">valid XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.bitsplitter.net/blog/">valid CSS</a>, and a <a href="http://rss.scripting.com/?url=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2Fwp-rss2.php">valid RSS2 feed</a>. And this time instead of destroying the normal setup, I left the <a href="http://www.bitsplitter.net/blog/desktop.php">desktop version available</a> as well. So those of you who are into that kind of thing should be made a little happier.</p>
+
+<p>My <a href="http://www.bitsplitter.net/blog/index.php?p=204">test posting from Vagablog</a> worked, but I got the standard XML declaration error instead of a success message. It turns out that this has been fixed for real in CVS for <a href="http://wordpress.org">WordPress</a>, but the 1.0.2 version still barfs some stuff that it shouldn&#8217;t into the XMLRPC output. If you want to fix it on your own, and you know what you&#8217;re doing, find the wp_set_post_cats() function in xmlrpc.php. Go to the part that reads:</p>
+
+<blockquote><p>// First the old categories
+$old_categories = $wpdb->get_col(&#8220;SELECT category_id FROM $tablepost2cat WHERE post_id = $post_ID&#8221;);</p></blockquote>
+
+<p>Just after the assignment of $old_categories add the lines:</p>
+
+<blockquote><p>if ( !isset( $old_categories ) ) {
+$old_categories = array();
+}</p></blockquote>
+
+<p>That should take care of it for now. The 1.0.3 release should have the fixes from CVS, so that should be the last of that issue.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2004/03/23/test-posting-from-vagablog/">Test Posting From Vagablog</a></h1>
     
     
@@ -98,7 +147,7 @@
   
 
 
-<time datetime="2004-03-23T10:43:43-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
+<time datetime="2004-03-23T13:43:43-05:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
         
       </p>
     
@@ -134,7 +183,7 @@
   
 
 
-<time datetime="2004-03-23T06:59:36-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
+<time datetime="2004-03-23T09:59:36-05:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
         
       </p>
     
@@ -170,7 +219,7 @@
   
 
 
-<time datetime="2004-03-23T02:16:10-08:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
+<time datetime="2004-03-23T05:16:10-05:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2004</time>
         
       </p>
     
@@ -212,7 +261,7 @@
   
 
 
-<time datetime="2004-03-22T07:09:58-08:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2004</time>
+<time datetime="2004-03-22T10:09:58-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2004</time>
         
       </p>
     
@@ -248,7 +297,7 @@
   
 
 
-<time datetime="2004-03-22T04:23:38-08:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2004</time>
+<time datetime="2004-03-22T07:23:38-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2004</time>
         
       </p>
     
@@ -284,7 +333,7 @@
   
 
 
-<time datetime="2004-03-21T07:29:26-08:00" pubdate data-updated="true">Mar 21<span>st</span>, 2004</time>
+<time datetime="2004-03-21T10:29:26-05:00" pubdate data-updated="true">Mar 21<span>st</span>, 2004</time>
         
       </p>
     
@@ -336,7 +385,7 @@
   
 
 
-<time datetime="2004-03-20T10:40:43-08:00" pubdate data-updated="true">Mar 20<span>th</span>, 2004</time>
+<time datetime="2004-03-20T13:40:43-05:00" pubdate data-updated="true">Mar 20<span>th</span>, 2004</time>
         
       </p>
     
@@ -372,7 +421,7 @@
   
 
 
-<time datetime="2004-03-18T04:36:30-08:00" pubdate data-updated="true">Mar 18<span>th</span>, 2004</time>
+<time datetime="2004-03-18T07:36:30-05:00" pubdate data-updated="true">Mar 18<span>th</span>, 2004</time>
         
       </p>
     
@@ -392,7 +441,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2004/03/17/intellectual-property-protections/">Intellectual Property Protections</a></h1>
+      <h1 class="entry-title"><a href="/blog/2004/03/18/intellectual-property-protections/">Intellectual Property Protections</a></h1>
     
     
       <p class="meta">
@@ -408,7 +457,7 @@
   
 
 
-<time datetime="2004-03-17T23:53:58-08:00" pubdate data-updated="true">Mar 17<span>th</span>, 2004</time>
+<time datetime="2004-03-18T02:53:58-05:00" pubdate data-updated="true">Mar 18<span>th</span>, 2004</time>
         
       </p>
     
@@ -420,42 +469,6 @@
 <blockquote><p>&#8220;Let the commercial interests compete on execution of the ideas; that&#8217;s the free enterprise system,&#8221; Lessig said. &#8220;But the creators need to maintain the freedom to distribute their ideas any way they want. They shouldn&#8217;t be bogged down by 20-year copyrights and other old restrictions that bottle up good ideas&#8221; [and] keep them on the shelf, Lessig said.</p></blockquote>
 
 <p>Which reminded me that the mobile publishing site <a href="http://www.winksite.com">WINKsite</a> has <a href="http://winksite.com/site/help_bl_view.cfm?blog_id=1208">added support for marking content as covered by Creative Commons licenses</a>. So of course I quickly ran out and marked <a href="http://winksite.com/Reverend/unrooted">the Unrooted mobile site</a> and <a href="http://winksite.com/Reverend/ope">the Open Palm Environment mobile site</a> as wonderfully liberating <a href="http://creativecommons.org/licenses/sa/1.0/">ShareAlike</a> content. I actually think I might feel another WINKsite coming on&#8230; I feel the urge to experiment.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/03/17/link-blog/">Link Blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-03-17T07:33:01-08:00" pubdate data-updated="true">Mar 17<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I put a new area up at Bitsplitter, the <a href="http://www.bitsplitter.net/linkblog/">Bitsplitter Link Blog</a>. &#8220;So what&#8217;s the difference between the normal blog and the link blog?&#8221; one might be expected to ask. Well the link blog is for short mentions of things that I want to come back and look at when I have some more time, the main blog is for commentary and things that I know I was interested in and I want to share. There is an additional aspect to the link blog however, it&#8217;s actually more PDA friendly than the normal blog. <a href="http://www.bitsplitter.net/blog/">This blog that you&#8217;re reading now</a> is minimally formatted so that it displays well on PDA screens, but the articles that I link to aren&#8217;t always good for small screens. On the other hand, the <a href="http://www.bitsplitter.net/linkblog/">link blog</a> is both PDA friendly and links to items that are PDA friendly. The link blog came about because I wanted a way to get certain links that I was bookmarking to transfer over to my PDA so I could read them when I wasn&#8217;t sitting at my desktop. Rather than making up something new, I decided to just put them in a blog. I didn&#8217;t want to clutter up the main Bitsplitter blog with a bunch of junk that I wasn&#8217;t even sure I would be interested in. So I started a whole new area.</p>
 </div>
   
   
@@ -503,6 +516,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
@@ -516,10 +533,6 @@
     
       <li class="post">
         <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills with a Whiskey Back Please</a>
       </li>
     
   </ul>
