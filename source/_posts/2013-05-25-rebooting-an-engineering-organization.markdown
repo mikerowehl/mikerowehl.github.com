@@ -1,0 +1,62 @@
+---
+layout: post
+title: "Rebooting an Engineering Organization"
+date: 2013-05-25 00:06
+comments: true
+categories: 
+- Entrepreneur
+- Engineering
+---
+When Metaresolver got purchased by Millennial Media I figured I would have
+some bits of strategic input around how to approach the evolving mobile media
+models, and then I would help hack through some of the prototypes and early
+systems in those new lines of business. That version was interesting cause of
+the market position that Millennial has, and because it's been a really long
+time since I've worked with a group larger than 10 people. But I had assumed
+that the challenging part was going to be keeping myself from getting
+overly bored by the rate of progress so I could hang out long enough to
+make a difference.
+
+And then when our deal actually formally closed the founding CTO from
+Millennial left at the same time. In the wake of
+that the decision was made: it was time for a major restructuring on the
+technology side of Millennial. The company has a tremendous market position,
+but we've been having trouble capitalizing on it. We needed to start
+updating the way Millennial practices engineering so that it could keep at
+the front of a rapidly evolving market. Suddenly being bored wasn't on my
+list of concerns any more.
+
+The part of the reboot that I've been most actively involved in is down in the
+technical details of revamping how engineers get their daily work done. There
+are some really simple parts that everyone has already been talking about
+forever, and just needed some focused attention. Not everything is running
+through a continuous integration process, and lots of it doesn't have
+automated testing it can be run through. The organization as a whole has
+fallen so far into the antipatterns of manual QA and the
+[high ceremony release vehicle](http://www.rendell.org/pebble/software/2010/02/09/1265756844985.html)
+that there's a ton of resistance around fixing the deployment process. But
+fortunately it's 2013 now, even in Baltimore. So hopefully it's just a matter
+of time before everyone understands the value of getting working code up into
+production quickly, and that there are better ways to make sure we enforce the
+"working code" bit than throwing bodies and forms at the issue.
+
+The overall goal is to get us to something that looks much more like a
+continuous delivery process. There are some patterns that are just so second
+nature to me and everyone I've worked with over the last few years that I
+frequently forget they're not universal yet. Everything I've worked on over
+the last few years has evolved in relatively the same direction: deployments
+are single script (or single git push) affairs, the scripts write some
+info into a shared channel so that people know what went out, the operational
+monitors are visible to everyone and well defined, and rolling back if those
+monitors go sideways is always part of the plan. It's awesome.
+
+So when I ask someone about deployment tools and they start to describe
+something that has a cabal of approvers meeting to bless things and change
+notification forms I can only stand there stunned. Well, first I throw up in
+my mouth a little bit, and then I stand there stunned.
+
+Guess this is what I get for leaving Silicon Valley without proper backup.
+It's a backwards and fucked up place out here my friends, and I can't
+say I recommend it at all. But I've started to pull together the
+necessary backup and my plan is to fix at least a small part of it before
+my next startup. You're welcome.
