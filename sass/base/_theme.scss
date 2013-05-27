@@ -73,6 +73,7 @@ a {
 
 html {
   background: $page-bg image-url('bricks.jpg') top left;
+  background-attachment: fixed;
 }
 body {
   > div {
