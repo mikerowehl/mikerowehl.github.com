@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-05-25T01:15:11-04:00</updated>
+  <updated>2013-05-26T23:04:52-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Rebooting an Engineering Organization]]></title>
     <link href="http://rowehl.com/blog/2013/05/25/rebooting-an-engineering-organization/"/>
-    <updated>2013-05-25T00:06:00-04:00</updated>
+    <updated>2013-05-25T00:06:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/05/25/rebooting-an-engineering-organization</id>
     <content type="html"><![CDATA[<p>When Metaresolver got purchased by Millennial Media I figured I would have
 some bits of strategic input around how to approach the evolving mobile media
@@ -77,7 +77,7 @@ my next startup. You&#8217;re welcome.</p>
   <entry>
     <title type="html"><![CDATA[Why I Suck at Angel Investing, and My Plan]]></title>
     <link href="http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing/"/>
-    <updated>2013-03-09T21:23:00-05:00</updated>
+    <updated>2013-03-09T21:23:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing</id>
     <content type="html"><![CDATA[<p>I&#8217;ve done a bunch of angel investing over the last few years. And I&#8217;ve decided
 I&#8217;m no good at it. The market, so far, seems to agree with me. Most of the
@@ -184,7 +184,7 @@ being a lot more low volume than I have been in the past.</p>
   <entry>
     <title type="html"><![CDATA[Use of Time]]></title>
     <link href="http://rowehl.com/blog/2013/02/06/use-of-time/"/>
-    <updated>2013-02-06T12:48:00-05:00</updated>
+    <updated>2013-02-06T12:48:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/02/06/use-of-time</id>
     <content type="html"><![CDATA[<p>I love the idea behind social media services, helping to connect people and
 strengthen relationships. However I don&#8217;t think most are actually fulfilling
@@ -277,7 +277,7 @@ social tools were standing in the way.</p>
   <entry>
     <title type="html"><![CDATA[Resurrection]]></title>
     <link href="http://rowehl.com/blog/2013/02/04/resurrection/"/>
-    <updated>2013-02-04T23:29:00-05:00</updated>
+    <updated>2013-02-04T23:29:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/02/04/resurrection</id>
     <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I&#8217;ve decided to start it back
 up. I created the site cause I wanted a Wordpress install
@@ -354,7 +354,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
     <link href="http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
-    <updated>2006-09-20T08:01:18-04:00</updated>
+    <updated>2006-09-20T05:01:18-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
     <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, &#8220;there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up&#8221;. A bunch  of searching around in the repository listings turned up no java license related packages.</p>
 
@@ -367,7 +367,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
-    <updated>2006-09-18T19:21:23-04:00</updated>
+    <updated>2006-09-18T16:21:23-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
     <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee&#8217;s Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke&#8217;s over. You can make it stop.</p>
 ]]></content>
@@ -376,7 +376,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
-    <updated>2006-09-18T09:16:12-04:00</updated>
+    <updated>2006-09-18T06:16:12-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
     <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
 
@@ -387,7 +387,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Subversion Book]]></title>
     <link href="http://rowehl.com/blog/2006/09/15/subversion-book/"/>
-    <updated>2006-09-15T05:46:37-04:00</updated>
+    <updated>2006-09-15T02:46:37-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/15/subversion-book</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
 
@@ -397,9 +397,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[You've Stayed Up Too Late When]]></title>
-    <link href="http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when/"/>
-    <updated>2006-09-10T00:15:47-04:00</updated>
-    <id>http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when</id>
+    <link href="http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when/"/>
+    <updated>2006-09-09T21:15:47-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when</id>
     <content type="html"><![CDATA[<p>You know you&#8217;ve acidentally let your bedtime slip too close to sunrise when you&#8217;re flipping through the onscreen TV guide and MTV actually lists &#8220;Music Videos&#8221; as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you&#8217;ve somehow ended up in the 80&#8217;s.  Flock of Seagulls anyone?  Don&#8217;t laugh, they&#8217;re <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
 ]]></content>
   </entry>
@@ -407,7 +407,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Hilton Ninja]]></title>
     <link href="http://rowehl.com/blog/2006/09/06/hilton-ninja/"/>
-    <updated>2006-09-06T05:25:19-04:00</updated>
+    <updated>2006-09-06T02:25:19-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/06/hilton-ninja</id>
     <content type="html"><![CDATA[<p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
 ]]></content>
@@ -416,7 +416,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[HOPE Six Audio Online]]></title>
     <link href="http://rowehl.com/blog/2006/08/25/hope-six-audio-online/"/>
-    <updated>2006-08-25T05:57:27-04:00</updated>
+    <updated>2006-08-25T02:57:27-07:00</updated>
     <id>http://rowehl.com/blog/2006/08/25/hope-six-audio-online</id>
     <content type="html"><![CDATA[<p>The full <a href="http://www.hopenumbersix.net/speakers.html">set of audio from the HOPE six conference</a> is online now. The conf happened just before DEFCON and I hear it has some fantastic stuff that didn&#8217;t show up in Vegas. Download and share!</p>
 ]]></content>
@@ -425,7 +425,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[http_load for Request Replay]]></title>
     <link href="http://rowehl.com/blog/2006/08/23/http_load-for-request-replay/"/>
-    <updated>2006-08-23T19:05:49-04:00</updated>
+    <updated>2006-08-23T16:05:49-07:00</updated>
     <id>http://rowehl.com/blog/2006/08/23/http_load-for-request-replay</id>
     <content type="html"><![CDATA[<p>The <a href="http://talks.php.net/show/oscon06/0">presentation that Rasmus gave at OSCON</a> this year seems to have kicked some ass. I missed the conf, but got a bunch of interesting info from the slides. In particular I hadn&#8217;t used <a href="http://www.acme.com/software/http_load/">http_load</a> before. Part of what I&#8217;ve been doing at AdMob is taking a look at performance and scaling, so that was a great find. It&#8217;s exactly the set of controls and measurements I normally start out with, and it really does run very efficiently in terms of not loading down the system that http_load is running on.</p>
 
@@ -435,9 +435,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Linux Lappy]]></title>
-    <link href="http://rowehl.com/blog/2006/08/18/linux-lappy/"/>
-    <updated>2006-08-18T02:23:23-04:00</updated>
-    <id>http://rowehl.com/blog/2006/08/18/linux-lappy</id>
+    <link href="http://rowehl.com/blog/2006/08/17/linux-lappy/"/>
+    <updated>2006-08-17T23:23:23-07:00</updated>
+    <id>http://rowehl.com/blog/2006/08/17/linux-lappy</id>
     <content type="html"><![CDATA[<p>It&#8217;s just about New Laptop Time. Not quite, but almost. Being a Linux only user it&#8217;s always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you&#8217;re thinking about picking up at deep discount from Office Max certainly has not. And I&#8217;m not a dual-booter either. I don&#8217;t have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it&#8217;s my personal laptop, which is what I plan for this to be.</p>
 
 <p>Currently I&#8217;m leaning very heavily toward <a href="http://www.thinkwiki.org/wiki/Category:X41_Tablet">the Thinkpad X41 tablet</a>. It looks like there&#8217;s good X support for a bunch of stuff that&#8217;s traditionally a pain in the ass under Linux. Screen rotation seems to be working (without restarting X, thank god), the input driver for the touchscreen, power management (including frequency scaling), and wireless using ipw2200. Anyone out there with an X41 tried Linux and care to toss in some comments before I pick one of the things up? It&#8217;s hard to tell from wiki postings just how painful is it to get the thing actually setup, and there&#8217;s always the chance that the instructions on the wiki are wrong or incomplete.</p>
@@ -448,9 +448,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[ZeroOne San Jose Art Festival]]></title>
-    <link href="http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival/"/>
-    <updated>2006-08-07T02:29:07-04:00</updated>
-    <id>http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival</id>
+    <link href="http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival/"/>
+    <updated>2006-08-06T23:29:07-07:00</updated>
+    <id>http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival</id>
     <content type="html"><![CDATA[<p>This week (August 7th to 13th 2006) is the <a href="http://www.01sj.org/">ZeroOne Arts Festival in San Jose</a>. There was a <a href="http://www.futuresalon.org/2005/02/art_on_the_edge.html">great presentation at Future Salon by one of the ZeroOne staff members</a> where he tossed out a dizzying number of art projects that blend in technology in tantalizing ways. And if the interesting art projects weren&#8217;t enough to get you down there on their own, on Friday there&#8217;s a <a href="http://01sj.org/content/view/217/52/">Survival Research Labs</a> exhibition:</p>
 
 <blockquote><p>&#8230;it’s monster machine, meets hovercraft, meets huge sculptural creatures, meets fire.</p></blockquote>
@@ -462,7 +462,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Diet of Monkey Chow]]></title>
     <link href="http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow/"/>
-    <updated>2006-06-06T09:06:28-04:00</updated>
+    <updated>2006-06-06T06:06:28-07:00</updated>
     <id>http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow</id>
     <content type="html"><![CDATA[<p>This is pure genius! I&#8217;m so disappointed I didn&#8217;t think of it first. A guy trying to <a href="http://www.angryman.ca/monkey.html">live on a diet of pelletized monkey food</a>. FANTASTIC! If it works and he doesn&#8217;t die I&#8217;m definitely doing it. If he does die&#8230; I give myself about a 50-50 chance of still trying it. I should start a run of packaging for the new <a href="http://en.wikipedia.org/wiki/Bachelor_Chow#Bachelor_Chow">Futurama style &#8220;Bachelor Chow&#8221;</a> product just in case. I&#8217;ll probably have to wait a while to add flavor however.</p>
 ]]></content>
@@ -471,7 +471,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Quarter of a Million Spam Messages]]></title>
     <link href="http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages/"/>
-    <updated>2006-06-05T03:00:52-04:00</updated>
+    <updated>2006-06-05T00:00:52-07:00</updated>
     <id>http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages</id>
     <content type="html"><![CDATA[<p>I&#8217;m at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by <a href="http://akismet.com/">Akismet</a> so far. I <a href="http://www.rowehl.com/blog/?p=605">turned Akismet on in January of this year</a>. That&#8217;s more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.</p>
 
@@ -482,7 +482,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[The Web 2.0 Cease and Desist and Self Healing Systems]]></title>
     <link href="http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/"/>
-    <updated>2006-05-25T11:40:29-04:00</updated>
+    <updated>2006-05-25T08:40:29-07:00</updated>
     <id>http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems</id>
     <content type="html"><![CDATA[<p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
 
@@ -495,7 +495,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[George Bush Jr More Evil Than Cthulhu]]></title>
     <link href="http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu/"/>
-    <updated>2006-04-21T06:04:39-04:00</updated>
+    <updated>2006-04-21T03:04:39-07:00</updated>
     <id>http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu</id>
     <content type="html"><![CDATA[<p>Wow, folks really hate this <a href="http://lesserevil.ning.com/detail.php?DetailID=425486">George Bush Jr.</a> guy. You would think he roamed around in the streets killing puppies and kicking children or something. I check out the stats for <a href="http://browse.ning.com/any/miker/any/any">all my Ning apps</a> on a daily basis. Cause I&#8217;m vain, no sense in trying to justify it with anything else. And <a href="http://lesserevil.ning.com">LesserEvil</a> had a bunch of hits from Google image searches, searches for Georgie there. So I pull up his detail page and what do I see? &#8220;Cthulhu is less evil than George Bush Jr. 100% of the time.&#8221; Wow, that&#8217;s pretty evil. Or maybe it&#8217;s just interesting commentary on the mindset of folks in the &#8220;online and searching for random stuff cause I have that kind of time on my hands&#8221; segment of the population.</p>
 ]]></content>
@@ -503,9 +503,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[More Jerry Taylor]]></title>
-    <link href="http://rowehl.com/blog/2006/04/03/more-jerry-taylor/"/>
-    <updated>2006-04-03T01:51:06-04:00</updated>
-    <id>http://rowehl.com/blog/2006/04/03/more-jerry-taylor</id>
+    <link href="http://rowehl.com/blog/2006/04/02/more-jerry-taylor/"/>
+    <updated>2006-04-02T22:51:06-07:00</updated>
+    <id>http://rowehl.com/blog/2006/04/02/more-jerry-taylor</id>
     <content type="html"><![CDATA[<p>Some <a href="http://www.tuttletimes.com/siteSearch/apstorysection/local_story_088201244.html">additional info about the politician who incorrectly threatened CentOS with FBI action</a>. Gotta love this:</p>
 
 <blockquote><p>“This is just a bunch of freaks out there that don’t have anything better to do,” he said. “When I came in to work Monday morning, I had about 500 e-mails, plus anonymous phone calls from all the geeks out there. [CentOS is] a free operating system that this guy gives away, which tells you how much time he’s got on his hands.”</p></blockquote>
@@ -516,9 +516,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[High Availability NFS]]></title>
-    <link href="http://rowehl.com/blog/2006/04/03/high-availability-nfs/"/>
-    <updated>2006-04-03T01:38:10-04:00</updated>
-    <id>http://rowehl.com/blog/2006/04/03/high-availability-nfs</id>
+    <link href="http://rowehl.com/blog/2006/04/02/high-availability-nfs/"/>
+    <updated>2006-04-02T22:38:10-07:00</updated>
+    <id>http://rowehl.com/blog/2006/04/02/high-availability-nfs</id>
     <content type="html"><![CDATA[<p>I&#8217;ve tried out the <a href="http://www.howtoforge.com/high_availability_nfs_drbd_heartbeat">high availability NFS solution detailed here</a> and run into a few issues. It does provide a great way to get a higher degree of availability for one of the most problematic bits of infrastructure, so I don&#8217;t mean to crap on the idea as a whole. But here are two issues to make sure you either check out or understand before you deploy something like this:</p>
 
 <ul>
