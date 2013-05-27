@@ -72,11 +72,7 @@ a {
 }
 
 html {
-  background: $page-bg image-url('gears.jpg') top center no-repeat fixed;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover
+  background: $page-bg image-url('bricks.jpg') top left;
 }
 body {
   > div {
