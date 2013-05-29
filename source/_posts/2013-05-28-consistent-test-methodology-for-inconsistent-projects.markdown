@@ -88,4 +88,4 @@ infrastructure automation system than we have currently. For example, Vagrant
 allows Chef or Puppet for provisioning instead of using a shell script. And
 instead of using the synced filesystem to move data back and forth, the system
 under test should be deployed using the same tools and process as the deploy
-to production uses. But at least there's movement in the right direction now.
+to production. But at least there's movement in the right direction now.
