@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="There&#8217;s a third part to the series of articles about building a distro that computer retailers could use to build PCs. I still don&#8217;t &hellip;">
+  <meta name="description" content="I&#8217;ve been setting up software RAID for the guys at Zamples, and I found the Boot Root RAID Lilo HOWTO to be quite informative. I had never seen &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/18/software-raid-and-linux/">Software RAID and Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-18T02:56:07-08:00" pubdate data-updated="true">Jan 18<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been setting up software RAID for the guys at <a href="http://www.zamples.com">Zamples</a>, and I found the <a href="http://www.tldp.org/HOWTO/Boot+Root+Raid+LILO-3.html">Boot Root RAID Lilo HOWTO</a> to be quite informative. I had never seen that doc before, and it addressed exactly what I was trying to do. I wasn&#8217;t able to get the second drive booting directly, probably cause it&#8217;s a 200gig and the geometry reported is all screwy. But at least it appears that it should work if this were a normal configuration. What I&#8217;ve ended up doing is creating a boot floppy to load the system should the primary drive fail. It&#8217;s not pretty, but until I can dig into LILO and figure out what&#8217;s up (Yea! I&#8217;ll have time for that, sure ;-) this is a good enough solution.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -430,46 +466,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/01/14/direct-brain-interface/">Direct Brain Interface</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-01-14T06:50:02-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I created a new category for <a href="http://www.wired.com/news/medtech/0,1286,61889,00.html?tw=wn_story_top5">this article about a direct neural interface</a>. The category is called Dweeb, and it&#8217;s for those things that aren&#8217;t quite mobile computing, or open source, or related to things that I&#8217;m working on, but are still just too fucking cool to ignore. I have no idea what would go into trying to build an interface like this, how well I think it would work, how marketable I think it would be&#8230; no, I just get starry eyed and whisper &#8220;oooo, I want one of those&#8221;. That&#8217;s what Dweeb is gonna be all about.</p>
-
-<p>Note that I didn&#8217;t start off the Dweeb category with a post about a Segway. That&#8217;s called being a &#8220;Fan Boy&#8221;. There is a big difference, and it lies in the desire to mislead the public. BrainGate is an amazingly advanced technology being used to help a very small market of special needs people, but Dweebs like me have picked up interest in it, and we&#8217;ll probably have to wait a long time to get our hands on it. Segway is a marketing experiment in pushing an amazingly advanced technology out to people who don&#8217;t need it, and people who Should Know Better fell for it, and although it&#8217;s available now no one is quite sure why it should be. People on Segways shouldn&#8217;t be surprized if they get <a href="http://www.fuh2.com/">the Hummer salute</a> or pelted with rotten vegetables. Not that the Segway doesn&#8217;t have some great technical advances, it just had a disproportionate amount of hype and propaganda to go along with it. Lots of great technical advances don&#8217;t immediately lead to mass market penetration. Normally you have to ride the adoption curve, like everyone else. Sometimes you might get lucky and your product might exhibit fad trending and get snapped up by the millions, but that happens very infrequently. Everyone is expecting a business person to promote their idea, but if you try to cheat the adoption curve by lying you should expect to get smacked around some.</p>
-
-<p>Sorry to spend so long harping on this, but I feel that this aspect of consumer pushback is missing in a lot of tech markets. We end up with overpriced products that perform poorly and get forced through quick revision cycles. I don&#8217;t want Dweeb to be another Fan Boy area for cheering every worthless product. That&#8217;s how economies end up with big bubbles, and it sucks when bubbles get all bursty. So it&#8217;s important that we not let our markets get all.. bursty bubbly. That&#8217;s why normally I blog about things I actually do, or have tried to do, or at least am involved with enough to know the background. Dweeb is not that. I have never built a neural interface, I just really wish I could. So Dweeb is all that stuff for which I can claim no street cred. Maybe that would have been a better name for it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/54/">&larr; Older</a>
@@ -510,6 +506,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
       </li>
     
@@ -523,10 +523,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>

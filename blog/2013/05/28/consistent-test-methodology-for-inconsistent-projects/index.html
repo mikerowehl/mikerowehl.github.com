@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Consistent Test Methodology for Inconsistent Projects - Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="How do you start introducing some testing if you have a huge group of existing
+projects, for the most part all implemented using different languages &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Consistent Test Methodology for Inconsistent Projects</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-28T23:43:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>How do you start introducing some testing if you have a huge group of existing
+projects, for the most part all implemented using different languages and
+technologies? That&#8217;s the problem I&#8217;ve been poking at recently. The first issue
+is that none of the technology choices were made with testability in mind. And
+I don&#8217;t want to have to go through and run a bunch of code refactoring and
+reorganization just to start testing. I would much rather start testing, and
+then start introducing changes to make things easier to test and to increase
+the coverage. The second issue is that we&#8217;re pretty sure there are some major
+architectural changes and redesigns coming in the short term. So to dig in and
+harness up the guts of a bunch of systems we know will be changing really
+shortly anyway also doesn&#8217;t seem like a fantastic idea. Plus some of the
+changes are more about the operating environment than the code itself, and
+a bunch of unit tests won&#8217;t necessarily help us figure out if the web services
+break when we move from MySQL 5.5 to 5.6.</p>
+
+<p>The most obvious and brute-force way would be to recreate the whole end-to-end
+environment and create some system tests for it. I think that would be too
+brute-force though. I would like our first step to provide some tools that
+would be useful to developers and the infrastructure folks. A whole end-to-end
+environment might be useful for infrastructure, but would be a burden for
+development. Even if this were running up on AWS, imagine having to spin up
+a dozen instances and wait for them to initialize just so you could test your
+one change. And the system as a whole definitely wasn&#8217;t built with testability
+at the granularity of the entire infrastructure in mind. So good luck being
+able to hit even a small set of the conditions the running systems are
+subjected to.</p>
+
+<p>No, what we needed to start were a few automated acceptance tests at the
+granularity of the individual architecture components. Fortunately, cause much
+of the process before was run off manual QA there are collections of test
+cases floating around for lots of the components. And there&#8217;s frequently even
+a description on a wiki page of how to configure a QA environment for a given
+component (for example how to setup a database, configure Tomcat, and install
+and run a web service). So now it&#8217;s just a matter of being able to script all
+that up.</p>
+
+<p>Since I wanted these tests to be useful both for development time checks and
+infrastructure validation that meant they needed to run on an environment as
+close to production as possible. But setting up a bunch of testing
+environments introduces a whole other set of problems potentially as large as
+the set we&#8217;re trying to solve. Spinning up the instances in the cloud might
+work, but also introduces a different level of complexity. I wanted
+something that a developer could have available right in their project
+checkout they could use to validate their work as they go along and ensure
+there won&#8217;t be any surprises when trying to run in production. Fortunately,
+that&#8217;s exactly what <a href="http://www.vagrantup.com/">Vagrant</a> is meant to provide.</p>
+
+<p>With Vagrant and <a href="https://www.virtualbox.org/">VirtualBox</a> on a development
+machine it&#8217;s easy to spawn a VM running the same version of CentOS we&#8217;re
+running in production. The instructions for setting up a QA environment
+become
+<a href="http://docs.vagrantup.com/v2/provisioning/index.html">provisioning scripts</a>
+for the Vagrant config, which automatically get run when the VM launches.
+The automation for the test cases themselves or loading data need to be
+handled on a case-by-case basis, but with the ability to sync files between
+host system and VM and automatically configure port forwarding into the VM
+it makes it much simpler to bundle everything into a single command.</p>
+
+<p>Cause we&#8217;re testing at the same granularity at which these projects are
+deployed, we don&#8217;t have to refactor the projects before we can
+start automating some testing. The projects already have well defined input
+and output points, which is how they communicate with the rest of the
+infrastructure, so we just latch onto those. Now, admittedly, the service
+contracts for lots of the projects are fuzzy at best. Cleaning those up is one
+of our medium term goals. But at least now we can start with testing in place
+and then start changing stuff.</p>
+
+<p>And if the infrastructure folks want to try running on a different distro,
+or using a different version of a package, they also now have the tools to
+check changes without having to run things through QA.
+Make the necessary changes on the VM and then run the script to make sure
+nothing has broken.</p>
+
+<p>For this to start looking like a proper continuous delivery test setup we
+should be driving the setup of the VM using the same configuration as we use
+in production, which is why we&#8217;re also working on swapping to a more robust
+infrastructure automation system than we have currently. For example, Vagrant
+allows Chef or Puppet for provisioning instead of using a shell script. And
+instead of using the synced filesystem to move data back and forth, the system
+under test should be deployed using the same tools and process as the deploy
+to production. But at least there&#8217;s movement in the right direction now.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mike Rowehl</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-28T23:43:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/continuous-delivery/'>Continuous Delivery</a>, <a class='category' href='/blog/categories/engineering/'>Engineering</a>, <a class='category' href='/blog/categories/millennial-media/'>Millennial Media</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/" data-via="miker" data-counturl="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/05/25/rebooting-an-engineering-organization/" title="Previous Post: Rebooting an Engineering Organization">&laquo; Rebooting an Engineering Organization</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I'm Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I've been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I've been programming and working with open source projects for even longer.
+    I'm a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("miker", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/miker" class="twitter-follow-button" data-show-count="false">Follow @miker</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

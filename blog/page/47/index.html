@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I was reading a review of some new music composition software for Linux when I found a link to Planet CCRMA. Planet CCRMA provides packaged versions &hellip;">
+  <meta name="description" content="This is some commentary by me about two articles that Eric Raymond wrote recently. Both focus on difficulty in setting up a printing package under &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,54 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/03/06/aunt-tillie-vs-m4d-sk1llz/">Aunt Tillie vs M4d Sk1llz</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-06T06:18:10-08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is some commentary by me about two articles that Eric Raymond wrote recently. Both focus on difficulty in setting up a printing package under Linux. <a href="http://www.catb.org/~esr/writings/cups-horror.html">Part one</a> lays out the general problem, and <a href="http://www.catb.org/~esr/writings/luxury-part-deux.html">part two</a> goes into some detail about how to solve some of the issues. I agree with many of the points brought up in those articles, but not the prescription given for finding a better situation. Computer systems can become orders of magnitude more usable if effort is put into improving the configuration and setup systems, but I think it will take some effort separating the technical guts from the setup phase before we see this on a large scale.</p>
+
+<p>Why? Because these are open source projects we&#8217;re dealing with. The technical geeks hack on them because they want cool technical systems to play with. I&#8217;m certainly not prepared to tell these people who make the software that I use every day that they need to make it more usable. This is the root of open source - if I see a problem I have to be prepared to make the effort to fix it myself. If it&#8217;s not worth my time, why should it be worth anyone else&#8217;s? There are cases where the techies would probably be best served by learning how to make the user interface of their system more approachable, but there are a lot of &#8220;if&#8221;s in there. At the most general level, all of us open source wonks benefit if the software is more approachable. The more users we have for the projects, the more resources get dedicated to improving them, and the better the systems become as a whole. Right? Hopefully, but there&#8217;s a lot of abstraction in that explanation. Open source has already been very successful. Why have the interface gurus not popped up to solve these issues yet? Why should we redirect the geeks to get them to solve the newbie problems? I don&#8217;t think we should.</p>
+
+<p>First off, imagine what would happen if every one of the packages in a standard Linux distribution had it&#8217;s own configurator. Imagine if every one of them tried to be as novel as possible, providing just the interface that they thought the user would need and providing the mechanisms for discoverability that ESR speaks about. It&#8217;s possible that this would work out perfectly, but I think it&#8217;s more likely that we would just have a large number of different interface styles. Somewhere along the line I think the limit would be hit and we would find that one person&#8217;s discoverability is another person&#8217;s obfuscation. Plus I still believe very strongly in the &#8220;do one task and do it well&#8221; philosophy of Unix in general. Requiring that a package that does printing also include rules for probing a network to determine what resources are available just doesn&#8217;t strike me right. I can certainly see where there would be benefit to proving info like this to the user, but I also think this is where the distribution providers should come into play.</p>
+
+<p>I personally think that tools like configurators and setup wizards are the kinds of tools that distribution providers should be feeding back into the community, because they are currently the ones who stand to benefit the most from it. The value proposition for me, as a single person without any ties to desktop Linux except being an avid user, in writing a better configurator for CUPS is almost zero. Once I know enough about CUPS to write that thing, why would I bother? I really don&#8217;t have a direct interest in seeing other people not have to learn about the system. However, the distribution providers do care if people can use CUPS without spending a lot of time doing config. Sure, the CUPS people might be a great group, they might be interested in seeing more people use CUPS and they might care about their existing users. That would be great. But it doesn&#8217;t have to be the case. And I think it will probably be the exception rather than the norm.</p>
+
+<p>The distribution providers are in a great place to deal with this issue. The people working on individual projects normally don&#8217;t have too much visibility of the user system as a whole. People working on a single project aren&#8217;t always sure what other projects are going to coexist with their own. Distribution providers do get the cross-project view of the system. They are in a position to provide standardization for some services that haven&#8217;t caught on well because of their overarching nature. Such as service discovery. Sure, we could probe the network for resources using custom assembled packets. But we could also try to implement more deterministic methods of finding resources, such as picking one of the many Java related protocols for discovery or really starting to aggressively pursue <a href="http://www.apple.com/macosx/features/rendezvous/">Rendezvous</a>. I agree with ESR that the type of discovery doesn&#8217;t matter that much, but the distro providers are the ones who should be looking to solve these problems, not the individual package producer. This might mean working closely with the project developers to provide additional support for discovery and configuration, but the distribution providers should be providing the manpower to do it. I think the long term success of trying to transform OSS into a more usable form will mean factoring out a lot of the user interface from backend projects, and adding in the proper hooks so that a distribution provider can move away from the simple role of adding nice colors and consistent graphical elements.  Currently distribution providers add a relatively thin veneer (for the most part), and in order to move to a place where Aunt Tillie can use the system they&#8217;re probably going to have to add something more like a thick upper layer of the applications stack. A system like this would provide for greater hackability to a degree as well.</p>
+
+<p>Currently there is a lot of effort that would need to be made to change the look and feel of a Linux system.  The user exposed bits come from lots of different packages with lots of different ideas about how things should work. If the user exposed bits were something that could be switched around relatively easily at the level of the whole distribution rather than on a project by project basis, this would give distro providers and talented users a larger degree of freedom in terms of experiment with new UI styles. Instead of having to change hundreds of packages they might be able to get away with a much smaller set of updates. This wouldn&#8217;t be a panacea of course, figuring out the base API for a &#8220;distribution interface&#8221; is a daunting task and would probably itself see a lot of missteps and outright flaws. But as a whole I think the more componentized open source software becomes the better off we are.</p>
+
+<p>I know not everyone agrees, but I think that autoconf and automake have done great good in terms of making source code versions of software available to many more developers. This is effectively an API for the development and compilation phase of a project. I would like to see a more developed system for the deployment and runtime phases of a project. Am I sure it could be done? No, not absolutely. But I think that the efforts of Apple, both in terms of setting up a very usable user interface as a layer over a BSD kernel and in getting Rendezvous setup for the networking part of configuration, show that the user interface portions can be factored out of a traditional Unix system to make it look like something completely different. I do agree with ESR about making systems more discoverable, he&#8217;s right on the mark there in my opinion. I think we might just differ in regard to who the torch of discoverability should be carried to.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -425,42 +473,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/02/19/mostly-lisp-blog/">Mostly Lisp Blog</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-02-19T06:22:59-08:00" pubdate data-updated="true">Feb 19<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I ran across the blog <a href="http://lemonodor.com/">LEMONODOR</a>, which has lots of info about the Lisp programming lanauge. Most of it is stuff I imagine I would never run across otherwise, and I have been trying to learn Scheme well enough that I can use <a href="http://www.lispme.de/lispme/">LispME</a> on my Palm to do small experiements while out and about. For someone with <a href="http://en.wikipedia.org/wiki/Imperative_programming">imperative programming</a> so deeply ingrained in their unconscious, it&#8217;s really hard to pick up other styles. My inability to pick up the new style is indicative of me having fallen into a kind of rut in terms of my programming, so now I&#8217;m doubly resolved to be able to program effortlessly in Lisp or Scheme.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/48/">&larr; Older</a>
@@ -501,6 +513,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
       </li>
     
@@ -514,10 +530,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>

@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="These SMS.ac folks just don&#8217;t know when to quit. I was chatting with Russ yesterday and this morning, and he was saying that the SMS.ac people &hellip;">
+  <meta name="description" content="I&#8217;ve tried out the high availability NFS solution detailed here and run into a few issues. It does provide a great way to get a higher degree &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,50 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/04/02/high-availability-nfs/">High Availability NFS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-04-02T22:38:10-07:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve tried out the <a href="http://www.howtoforge.com/high_availability_nfs_drbd_heartbeat">high availability NFS solution detailed here</a> and run into a few issues. It does provide a great way to get a higher degree of availability for one of the most problematic bits of infrastructure, so I don&#8217;t mean to crap on the idea as a whole. But here are two issues to make sure you either check out or understand before you deploy something like this:</p>
+
+<ul>
+<li><p>We saw write throughput cut in half when DRBD was up and running. If you&#8217;ve got plenty of capacity and can segment as you grow you might be more concerned with the availability than the throughput. And it&#8217;s certainly possible that we could have performed some tuning to get DRBD to perform better. I&#8217;m just saying perform some benchmarks beforehand and afterward to make sure you&#8217;re not impacting the system too negatively without knowing it.</p></li>
+<li><p>This is a block level replication technique, so there&#8217;s no guarantee that a filesystem level error that causes corruption isn&#8217;t just replicated over to the failover box as it happens. True, it&#8217;s much more common that the failure mode be bad blocks at the hardware level than an error at the OS level&#8230;. but once again this is block level replication. A bad block on the master side that goes undetected for even a single read/write cycle will have that incorrect information replicated to the slave. As far as I know (and I admit I haven&#8217;t researched this in a while) there isn&#8217;t a Linux filesystem that does end to end checksumming to prevent this kind of issue.</p></li>
+</ul>
+
+
+<p>Just two things to keep in mind. There&#8217;s some great info in that article in general, like moving the NFS runtime files out to the replicated block device and how to configure heartbeat.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -492,42 +536,6 @@ print countto( 3030 )
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/02/15/ning-visit/">Ning Visit</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-02-15T05:13:36-08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Folks came and <a href="http://visiting.ning.com/index.php">visited the Ning office today</a>. And guess who was mysteriously <a href="http://www.flickr.com/photo_zoom.gne?id=100178715&amp;size=m">absent from the group</a>? <a href="http://www.feedblog.org/">Kevin Burton</a>. Apparently we have enough free time that we should be able to host folks whenever they feel like stopping by, but Kevin was just too busy to attend <a href="http://kalsey.com/2006/02/visit_ning/">the meetup he was instrumental in organizing</a>. Burton, come on, we got cupcakes and everything! I almost cried, but it was okay. A bunch of folks from the Facebook showed up, including <a href="http://www.okdork.com/">Noah</a>, who&#8217;s birthday is this Friday by the way. So if you see him at the TechCrunch BBQ make sure to make him drink a shot in celebration.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -568,6 +576,10 @@ print countto( 3030 )
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
       </li>
     
@@ -581,10 +593,6 @@ print countto( 3030 )
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>

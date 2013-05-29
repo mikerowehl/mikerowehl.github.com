@@ -9,8 +9,8 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="When Metaresolver got purchased by Millennial Media I figured I would have
-some bits of strategic input around how to approach the evolving mobile &hellip;">
+  <meta name="description" content="How do you start introducing some testing if you have a huge group of existing
+projects, for the most part all implemented using different languages &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,122 @@ some bits of strategic input around how to approach the evolving mobile &hellip;
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-28T23:43:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>How do you start introducing some testing if you have a huge group of existing
+projects, for the most part all implemented using different languages and
+technologies? That&#8217;s the problem I&#8217;ve been poking at recently. The first issue
+is that none of the technology choices were made with testability in mind. And
+I don&#8217;t want to have to go through and run a bunch of code refactoring and
+reorganization just to start testing. I would much rather start testing, and
+then start introducing changes to make things easier to test and to increase
+the coverage. The second issue is that we&#8217;re pretty sure there are some major
+architectural changes and redesigns coming in the short term. So to dig in and
+harness up the guts of a bunch of systems we know will be changing really
+shortly anyway also doesn&#8217;t seem like a fantastic idea. Plus some of the
+changes are more about the operating environment than the code itself, and
+a bunch of unit tests won&#8217;t necessarily help us figure out if the web services
+break when we move from MySQL 5.5 to 5.6.</p>
+
+<p>The most obvious and brute-force way would be to recreate the whole end-to-end
+environment and create some system tests for it. I think that would be too
+brute-force though. I would like our first step to provide some tools that
+would be useful to developers and the infrastructure folks. A whole end-to-end
+environment might be useful for infrastructure, but would be a burden for
+development. Even if this were running up on AWS, imagine having to spin up
+a dozen instances and wait for them to initialize just so you could test your
+one change. And the system as a whole definitely wasn&#8217;t built with testability
+at the granularity of the entire infrastructure in mind. So good luck being
+able to hit even a small set of the conditions the running systems are
+subjected to.</p>
+
+<p>No, what we needed to start were a few automated acceptance tests at the
+granularity of the individual architecture components. Fortunately, cause much
+of the process before was run off manual QA there are collections of test
+cases floating around for lots of the components. And there&#8217;s frequently even
+a description on a wiki page of how to configure a QA environment for a given
+component (for example how to setup a database, configure Tomcat, and install
+and run a web service). So now it&#8217;s just a matter of being able to script all
+that up.</p>
+
+<p>Since I wanted these tests to be useful both for development time checks and
+infrastructure validation that meant they needed to run on an environment as
+close to production as possible. But setting up a bunch of testing
+environments introduces a whole other set of problems potentially as large as
+the set we&#8217;re trying to solve. Spinning up the instances in the cloud might
+work, but also introduces a different level of complexity. I wanted
+something that a developer could have available right in their project
+checkout they could use to validate their work as they go along and ensure
+there won&#8217;t be any surprises when trying to run in production. Fortunately,
+that&#8217;s exactly what <a href="http://www.vagrantup.com/">Vagrant</a> is meant to provide.</p>
+
+<p>With Vagrant and <a href="https://www.virtualbox.org/">VirtualBox</a> on a development
+machine it&#8217;s easy to spawn a VM running the same version of CentOS we&#8217;re
+running in production. The instructions for setting up a QA environment
+become
+<a href="http://docs.vagrantup.com/v2/provisioning/index.html">provisioning scripts</a>
+for the Vagrant config, which automatically get run when the VM launches.
+The automation for the test cases themselves or loading data need to be
+handled on a case-by-case basis, but with the ability to sync files between
+host system and VM and automatically configure port forwarding into the VM
+it makes it much simpler to bundle everything into a single command.</p>
+
+<p>Cause we&#8217;re testing at the same granularity at which these projects are
+deployed, we don&#8217;t have to refactor the projects before we can
+start automating some testing. The projects already have well defined input
+and output points, which is how they communicate with the rest of the
+infrastructure, so we just latch onto those. Now, admittedly, the service
+contracts for lots of the projects are fuzzy at best. Cleaning those up is one
+of our medium term goals. But at least now we can start with testing in place
+and then start changing stuff.</p>
+
+<p>And if the infrastructure folks want to try running on a different distro,
+or using a different version of a package, they also now have the tools to
+check changes without having to run things through QA.
+Make the necessary changes on the VM and then run the script to make sure
+nothing has broken.</p>
+
+<p>For this to start looking like a proper continuous delivery test setup we
+should be driving the setup of the VM using the same configuration as we use
+in production, which is why we&#8217;re also working on swapping to a more robust
+infrastructure automation system than we have currently. For example, Vagrant
+allows Chef or Puppet for provisioning instead of using a shell script. And
+instead of using the synced filesystem to move data back and forth, the system
+under test should be deployed using the same tools and process as the deploy
+to production. But at least there&#8217;s movement in the right direction now.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -712,42 +828,6 @@ app that kicked this whole thing off 10 years ago.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/06/hilton-ninja/">Hilton Ninja</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-06T02:25:19-07:00" pubdate data-updated="true">Sep 6<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -786,6 +866,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
       </li>
     
@@ -799,10 +883,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>

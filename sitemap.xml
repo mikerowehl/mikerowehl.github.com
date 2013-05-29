@@ -2565,12 +2565,18 @@
         <lastmod>2013-05-24T22:14:40-07:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/
+        </loc>
+        <lastmod>2013-05-29T07:12:02-07:00</lastmod>
+    </url>
+    <url>
         <loc>http://rowehl.com/blog/archives/</loc>
-        <lastmod>2013-05-24T22:14:40-07:00</lastmod>
+        <lastmod>2013-05-29T07:12:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://rowehl.com/</loc>
-        <lastmod>2013-05-24T22:14:40-07:00</lastmod>
+        <lastmod>2013-05-29T07:12:02-07:00</lastmod>
     </url>
     <url>
         <loc>http://rowehl.com/robots.txt</loc>

@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="One of the persistent features of the user programmable systems I was blabbing about yesterday is visual programming. The idea here is that users &hellip;">
+  <meta name="description" content="I tried to use the TMobile interface for using AOL Instant Messenger from my mobile phone the other day, and it didn&#8217;t quite work out the way &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/06/14/tmobile-aim-service/">TMobile AIM Service</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-06-14T00:23:04-07:00" pubdate data-updated="true">Jun 14<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I tried to use the TMobile interface for using AOL Instant Messenger from my mobile phone the other day, and it didn&#8217;t quite work out the way that I had hoped. In the past I probably would have gone off on a rant about it. But now that I have an unlimited data account, and because the AIM interface is a free feature, I&#8217;m not going to do that. Instead I&#8217;m going to say that it&#8217;s pretty cool of TMobile to try to integrate their online services with existing offerings. They just have some work to do before the service is generally applicable. There are a few quirks and limitations that make the service hard to use and impractical if the people you&#8217;re talking to don&#8217;t know to modify their behavior to account for the interface you&#8217;re using.</p>
+
+<p>The first issue is the most grievous offense actually. Once you sign on to the service it notifies you of new messages via WAP push. This is actually pretty crappy of them, because push messages are NOT a limitless resource, at least I don&#8217;t think so. I won&#8217;t rant about that right now, cause first I want to validate this suspicion about the cost. However, even without the cost factor, this was really annoying and a hindrance to using the service. There was no way to turn off these messages that I was able to find. And each time a new message came it interferes with whatever you&#8217;re doing. You have to acknowledge the message in an asynchronous pop-up screen. This really sucked when the person I was talking to wrote a bunch of really short messages like:</p>
+
+<p>Hey, you there?
+I have a meeting soon.
+I have to go now.
+See you soon.</p>
+
+<p>Which generated 4 separate messages that came in right on top of each other, and were disruptive enough that I couldn&#8217;t get a response in at all before it was too late. Why the WAP pushes? <a href="http://winksite.com/">WINKsite</a> does its group chat using an automatically refreshed page. That&#8217;s really worked out well on just about every device I&#8217;ve tried it from.</p>
+
+<p>The conversations page also seems to only display new messages when you load it. That means that if you&#8217;re reading messages from a conversation, and you accept a WAP push of a new message, the page you end up at no longer holds the text you were just reading. That sucks IMO. If you want to draw attention to newest messages then reverse the order in which the messages are displayed (newest messages at the top) and maybe put a marker next to the new lines. Displaying only the new messages takes all of the context out of what should be a nice flow of conversation. That gets confusing enough when you have a single conversation that keeps you bouncing back and forth between WAP push notification screens and the browser. It&#8217;s almost impossible if you have multiple conversations going on.</p>
+
+<p>The last one might have been user error, but it was user error caused by multiple issues with the features as implemented. It seems like the scrollback buffer is only a few lines long. When I logged in at one point I started a conversation with my girlfriend. I said hello, and that I was on the train on my way back from a meeting. This triggered a torrent of messages. Not at all out of the realm of normal use. The reason for using IM is to keep in touch, right? And she had some news. So she wrote a message and I got the push, which I accepted. While I&#8217;m waiting for the browser to load, I get another message. Bing, bing bing bing. This goes on for maybe a half dozen messages, I lost count. Finally I have a browser sitting in front of me with what are obviously messages from the middle of a long story she&#8217;s telling. I don&#8217;t have the start of the story, and the WAP messages are binging in so quickly that I can&#8217;t get a message back to her to say that I missed the start of her story. That really sucked.</p>
+
+<p>So, the obvious programmer answer to this is to just not talk to people who send torrents of messages like that. But I would really like to see mobile services reach mass appeal. And while TMobile has made a good effort in terms of providing a service to make the mobile experience more continuous with the online experience, it doesn&#8217;t quite make it to the level it needs for general usage. It just isn&#8217;t realistic to expect every user to work out some way to let the people that they talk to know that they&#8217;re on a mobile phone when they login. And if the service really is supposed to unify desktop and mobile messaging it needs to enable the same operations or provide some mechanism for dealing with the differences easily (hopefully automatically). Some of the issues seem to just require minor tweaks. Keep old messages on the conversation screen, reverse the display order so that the newest messages are at the top, and provide a config option to disable WAP push and make the conversations page automatically update.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -443,44 +494,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/05/23/palmatom-initial-release/">PalmAtom Initial Release</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-05-23T18:17:13-07:00" pubdate data-updated="true">May 23<span>rd</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It&#8217;s really more of a proof of concept than a first version, which is why I&#8217;ve given it the release number 0.1, but I have an app that I&#8217;ve successfully used to post Atom from a Palm device. I was feeling really creative, so I named it <a href="http://www.bitsplitter.net/palmatom/">PalmAtom</a>. It does lots of things wrong, but I&#8217;ve decided to release it anyway. There&#8217;s this credo of &#8220;release early, release often&#8221; that runs through open source in general. Problem is, developing for the Palm can be a real pain, so Palm projects don&#8217;t get all that much contribution. Palm doesn&#8217;t seem to really care for open source developers these days either, which has made some of the few remaining ones less than pleasant to deal with. But Treos are turning up all over the place here in the US, so I figured this might make for an interesting tool. I really do think this whole shift in media consumption style and production techniques is pretty important, as I <a href="http://www.bitsplitter.net/blog/index.php?p=269">mentioned the other day</a>. And I do want to do something about it. I also happen to have this belief that these poor wireless and handheld devices currently available are second class citizens at best. So I&#8217;m trying to figure out what I can do to move the media revolution out of the office and into the streets.</p>
-
-<p>This isn&#8217;t a user ready application by any means. I would recommend picking it up if you want to hack on it, or maybe if you want an example in C of how to do Atom authentication, but not if you&#8217;re a normal user looking for an application to post with. Not yet. Still, I was pretty happy about being able to hack the thing together in just a few hours. I ripped the SHA1 code out of <a href="http://gnukeyring.sourceforge.net/">Keyring for Palm OS</a>, base64 is a public domain implementation taken from <a href="http://xmlrpc-epi.sourceforge.net/">xmlrpc-epi</a>, and the http stuff is a <a href="http://www.bitsplitter.net/PalmHTTP/">library I released a while ago</a>. Not too shabby. Course, I&#8217;ve spent a while mucking around with an Atom example in Python, so I was pretty familiar with what I had to do. Hopefully over the next few weeks I&#8217;ll have time to clean up the implementation and make it somewhat user friendly. Even more hopefully, some people out there in wonderland will send me some patches so I don&#8217;t have to write all the crud myself.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/38/">&larr; Older</a>
@@ -521,6 +534,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
       </li>
     
@@ -534,10 +551,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>
