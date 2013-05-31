@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-05-29T07:13:02-07:00</updated>
+  <updated>2013-05-31T13:48:09-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -99,67 +99,6 @@ allows Chef or Puppet for provisioning instead of using a shell script. And
 instead of using the synced filesystem to move data back and forth, the system
 under test should be deployed using the same tools and process as the deploy
 to production. But at least there&#8217;s movement in the right direction now.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rebooting an Engineering Organization]]></title>
-    <link href="http://rowehl.com/blog/2013/05/25/rebooting-an-engineering-organization/"/>
-    <updated>2013-05-25T00:06:00-07:00</updated>
-    <id>http://rowehl.com/blog/2013/05/25/rebooting-an-engineering-organization</id>
-    <content type="html"><![CDATA[<p>When Metaresolver got purchased by Millennial Media I figured I would have
-some bits of strategic input around how to approach the evolving mobile media
-models, and then I would help hack through some of the prototypes and early
-systems in those new lines of business. That version was interesting cause of
-the market position that Millennial has, and because it&#8217;s been a really long
-time since I&#8217;ve worked with a group larger than 10 people. But I had assumed
-that the challenging part was going to be keeping myself from getting
-overly bored by the rate of progress so I could hang out long enough to
-make a difference.</p>
-
-<p>And then when our deal actually formally closed the founding CTO from
-Millennial left at the same time. In the wake of
-that the decision was made: it was time for a major restructuring on the
-technology side of Millennial. The company has a tremendous market position,
-but we&#8217;ve been having trouble capitalizing on it. We needed to start
-updating the way Millennial practices engineering so that it could keep at
-the front of a rapidly evolving market. Suddenly being bored wasn&#8217;t on my
-list of concerns any more.</p>
-
-<p>The part of the reboot that I&#8217;ve been most actively involved in is down in the
-technical details of revamping how engineers get their daily work done. There
-are some really simple parts that everyone has already been talking about
-forever, and just needed some focused attention. Not everything is running
-through a continuous integration process, and lots of it doesn&#8217;t have
-automated testing it can be run through. The organization as a whole has
-fallen so far into the antipatterns of manual QA and the
-<a href="http://www.rendell.org/pebble/software/2010/02/09/1265756844985.html">high ceremony release vehicle</a>
-that there&#8217;s a ton of resistance around fixing the deployment process. But
-fortunately it&#8217;s 2013 now, even in Baltimore. So hopefully it&#8217;s just a matter
-of time before everyone understands the value of getting working code up into
-production quickly, and that there are better ways to make sure we enforce the
-&#8220;working code&#8221; bit than throwing bodies and forms at the issue.</p>
-
-<p>The overall goal is to get us to something that looks much more like a
-continuous delivery process. There are some patterns that are just so second
-nature to me and everyone I&#8217;ve worked with over the last few years that I
-frequently forget they&#8217;re not universal yet. Everything I&#8217;ve worked on over
-the last few years has evolved in relatively the same direction: deployments
-are single script (or single git push) affairs, the scripts write some
-info into a shared channel so that people know what went out, the operational
-monitors are visible to everyone and well defined, and rolling back if those
-monitors go sideways is always part of the plan. It&#8217;s awesome.</p>
-
-<p>So when I ask someone about deployment tools and they start to describe
-something that has a cabal of approvers meeting to bless things and change
-notification forms I can only stand there stunned. Well, first I throw up in
-my mouth a little bit, and then I stand there stunned.</p>
-
-<p>Guess this is what I get for leaving Silicon Valley without proper backup.
-It&#8217;s a backwards and fucked up place out here my friends, and I can&#8217;t
-say I recommend it at all. But I&#8217;ve started to pull together the
-necessary backup and my plan is to fix at least a small part of it before
-my next startup. You&#8217;re welcome.</p>
 ]]></content>
   </entry>
   
@@ -600,6 +539,23 @@ app that kicked this whole thing off 10 years ago.</p>
 <blockquote><p>“This is just a bunch of freaks out there that don’t have anything better to do,” he said. “When I came in to work Monday morning, I had about 500 e-mails, plus anonymous phone calls from all the geeks out there. [CentOS is] a free operating system that this guy gives away, which tells you how much time he’s got on his hands.”</p></blockquote>
 
 <p>Nice, very nice. Unfortunately we can&#8217;t all resort to threats and scare tactics to get our work done for us. Or can we&#8230;.?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[High Availability NFS]]></title>
+    <link href="http://rowehl.com/blog/2006/04/02/high-availability-nfs/"/>
+    <updated>2006-04-02T22:38:10-07:00</updated>
+    <id>http://rowehl.com/blog/2006/04/02/high-availability-nfs</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve tried out the <a href="http://www.howtoforge.com/high_availability_nfs_drbd_heartbeat">high availability NFS solution detailed here</a> and run into a few issues. It does provide a great way to get a higher degree of availability for one of the most problematic bits of infrastructure, so I don&#8217;t mean to crap on the idea as a whole. But here are two issues to make sure you either check out or understand before you deploy something like this:</p>
+
+<ul>
+<li><p>We saw write throughput cut in half when DRBD was up and running. If you&#8217;ve got plenty of capacity and can segment as you grow you might be more concerned with the availability than the throughput. And it&#8217;s certainly possible that we could have performed some tuning to get DRBD to perform better. I&#8217;m just saying perform some benchmarks beforehand and afterward to make sure you&#8217;re not impacting the system too negatively without knowing it.</p></li>
+<li><p>This is a block level replication technique, so there&#8217;s no guarantee that a filesystem level error that causes corruption isn&#8217;t just replicated over to the failover box as it happens. True, it&#8217;s much more common that the failure mode be bad blocks at the hardware level than an error at the OS level&#8230;. but once again this is block level replication. A bad block on the master side that goes undetected for even a single read/write cycle will have that incorrect information replicated to the slave. As far as I know (and I admit I haven&#8217;t researched this in a while) there isn&#8217;t a Linux filesystem that does end to end checksumming to prevent this kind of issue.</p></li>
+</ul>
+
+
+<p>Just two things to keep in mind. There&#8217;s some great info in that article in general, like moving the NFS runtime files out to the replicated block device and how to configure heartbeat.</p>
 ]]></content>
   </entry>
   

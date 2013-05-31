@@ -9,7 +9,9 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Mobility is a really hot topic now in the valley, and people always ask me if I know any good talent they can try to tap for their new product/ &hellip;">
+  <meta name="description" content="The info for the June Mobile Monday is up: What: June Mobile Monday (Usability)
+When: June 6th, 2005 7:00pm
+Where: Openwave in Redwood City (2100 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,42 +78,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/05/31/mobile-talent-and-then-some/">Mobile Talent and Then Some</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-05-31T18:48:47-07:00" pubdate data-updated="true">May 31<span>st</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Mobility is a really hot topic now in the valley, and people always ask me if I know any good talent they can try to tap for their new product/service/startup. Well folks, <a href="http://www.christianlindholm.com/christianlindholm/2005/06/as_nokia_lifebl.html">here you go</a>. Christian Lindholm is looking for the next thing, having successfully brought <a href="http://www.nokia.com/nokia/0,1522,,00.html?orig=/lifeblog/">Lifeblog</a> from concept to standard component in the new NSeries of Nokia phones. Folks simply don&#8217;t come any more mobile savvy, enthusiastic, and insightful than Christian. I hope someone in the Bay Area can attract his attention, we need people like this.</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -735,6 +701,68 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/05/17/wordpress-151-conditional-get-breakage/">Wordpress 1.5.1 Conditional Get Breakage?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-05-17T11:01:58-07:00" pubdate data-updated="true">May 17<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sorry to chuck this here, but I&#8217;m on my way off to meet up with some folks and don&#8217;t have time to search out if this is a known issue or not.  It looks like the conditional get support in <a href="http://www.wordpress.org">Wordpress 1.5.1</a> might be broken for some combinations of requests and maybe PHP versions. There&#8217;s this check in wp-blog-header.php:</p>
+
+<blockquote><p>if ( ($client_last_modified &amp;&amp; $client_etag) ?</p>
+
+<pre><code>            ((strtotime($client_last_modified) &gt;= strtotime($wp_last_modified)) &amp;&amp; ($client_etag == $wp_etag)) :
+            ((strtotime($client_last_modified) &gt;= strtotime($wp_last_modified)) || ($client_etag == $wp_etag)) )
+</code></pre></blockquote>
+
+<p>The problem is when there&#8217;s no last modified header at all, so $client_last_modified is false, and we evaluate the second alternate of that conditional. For all the versions of PHP I&#8217;ve tried the strtotime() function treats false the same as &#8220;now&#8221; and returns the current time. Thus strtotime( false ) is always greater than the $wp_last_modified time. And I get odd responses like this:</p>
+
+<blockquote><p>hole:~ miker$ more feedreq.raw
+GET /blog/?feed=atom HTTP/1.0
+Host: www.thisismobility.com
+hole:~ miker$ cat feedreq.raw | nc www.thisismobility.com 80
+HTTP/1.1 304 Not Modified
+Date: Wed, 18 May 2005 01:59:52 GMT
+Server: Apache/1.3.31 (Unix) DAV/1.0.3 mod_gzip/1.3.26.1a PHP/4.3.10 mod_ssl/2.8.19 OpenSSL/0.9.6c
+ETag: &#8220;2d0a68b8eeadb53e4597a041c96a83c8&#8221;
+X-Pingback: http://www.thisismobility.com/blog/xmlrpc.php
+X-Powered-By: PHP/4.3.10
+Last-Modified: Fri, 13 May 2005 12:32:30 GMT
+Connection: close
+Content-Type: text/html</p></blockquote>
+
+<p>hole:~ miker$</p>
+
+<p>No state headers at all and a 304 return? No wonder people were telling me they were having trouble with the This is Mobility feed. Anyone else seeing that, or did I mess something up and not notice? I thought I had a clean 1.5.1 install, but I&#8217;ve been known to flail and then forget about it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -779,10 +807,6 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2013/05/25/rebooting-an-engineering-organization/">Rebooting an Engineering Organization</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
@@ -792,6 +816,10 @@
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>
