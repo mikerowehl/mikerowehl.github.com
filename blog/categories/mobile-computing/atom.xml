@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Mobile Computing | Miker]]></title>
+  <link href="http://rowehl.com/blog/categories/mobile-computing/atom.xml" rel="self"/>
+  <link href="http://rowehl.com/"/>
+  <updated>2013-06-30T17:38:38-07:00</updated>
+  <id>http://rowehl.com/</id>
+  <author>
+    <name><![CDATA[Mike Rowehl]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New ieee80211 and ipw2200 Linux Drivers]]></title>
+    <link href="http://rowehl.com/blog/2005/10/28/new-ieee80211-and-ipw2200-linux-drivers/"/>
+    <updated>2005-10-28T10:29:57-07:00</updated>
+    <id>http://rowehl.com/blog/2005/10/28/new-ieee80211-and-ipw2200-linux-drivers</id>
+    <content type="html"><![CDATA[<p>I've been wandering around a bit lately, so fixing the DHCP problem I had with the ipw2200 drivers under Linux on the Thinkpad was finally a priority. I was about to apply a patch I had a pointer to, when I saw that there are new versions out:</p>
+
+<ul>
+<li><p><a href="http://ieee80211.sourceforge.net/">ieee80211</a></p></li>
+<li><p><a href="http://ipw2200.sourceforge.net/">ipw2200</a></p></li>
+<li><p><a href="http://ipw2200.sourceforge.net/firmware.php">new firmware too</a></p></li>
+</ul>
+
+
+<p>Nice, now DHCP works with WPA. Lets see now if the driver as a whole is more reliable. :-)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mobile Monday New York]]></title>
+    <link href="http://rowehl.com/blog/2005/09/09/mobile-monday-new-york/"/>
+    <updated>2005-09-09T02:31:48-07:00</updated>
+    <id>http://rowehl.com/blog/2005/09/09/mobile-monday-new-york</id>
+    <content type="html"><![CDATA[<p>It's really exciting to see the idea of Mobile Monday picked up and expanded.  A team out in New York:</p>
+
+<ul>
+<li><p>Eli Chapman</p></li>
+<li><p>Stephen Chang</p></li>
+<li><p>Lubna Dajani</p></li>
+<li><p>David Harper</p></li>
+<li><p>Dan Melinger</p></li>
+</ul>
+
+
+<p>is <a href="http://www.mobilemonday.com/2005/09/mobile-monday-new-york.html">holding a Mobile Monday event out there on Sept 19th, 2005</a>. In a few years we'll start trading barbs about west coast vs. east coast mobility, and which is more hard core. Then I change my name to M-diddy. I love it when a plan comes together.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Finding a Stolen Phone]]></title>
+    <link href="http://rowehl.com/blog/2005/08/28/finding-a-stolen-phone/"/>
+    <updated>2005-08-28T05:40:47-07:00</updated>
+    <id>http://rowehl.com/blog/2005/08/28/finding-a-stolen-phone</id>
+    <content type="html"><![CDATA[<p>This was linked off Slashdot, so I'm sure everyone and their grandmother has already seen it, but <a href="http://zone-mr.net/?act=entry&amp;id=36">here's a story about some folks tracking down a cell phone theif</a>. Besides liking the final bit:</p>
+
+<blockquote><p>Moral of the story - even if you're enough of a cunt to steal from a charity raffle, don't be fucktarded enough to steal a phone from a community of phone experts.</p></blockquote>
+
+<p>It's cool that they found the theif and all, got their phone back. W00t, and so on. But I don't like the idea of people being able to track me due to my actions online. And lots of the current structure of mobile communications enforces a coupling between my identity and my activity online. Not that it has to, it's intentially setup that way to "prevent abuse". <sarcasm>Which works just smashingly!</sarcasm> I don't know, just kinda stuck me weird. I must be spending too much time trawling hacking boards in my quest for a <a href="http://blog.davidkaspar.com/archives/2005/07/psp_firmware_20_is_out.php">buffer overflow attack against the PSP browser</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PSP 2.0 Firmware]]></title>
+    <link href="http://rowehl.com/blog/2005/08/24/psp-20-firmware/"/>
+    <updated>2005-08-24T05:20:16-07:00</updated>
+    <id>http://rowehl.com/blog/2005/08/24/psp-20-firmware</id>
+    <content type="html"><![CDATA[<p>I snagged a PSP a while ago, figuring it would be fun for games but mostly wanting to hack on it. Sony really doesn't like people being able to do what they want with Sony devices, so the thing is rife with all sorts of crippling roadblocks to innovation (I think the technical term for this is DRM, but I just call it teh suq). Unfortunately my PSP had an updated firmware when I got it from the store, so I haven't been able to install any software on it. I've been eagerly awaiting the release of <a href="http://www.pspworld.com/sony-psp/psp/psp-20-update-now-available-001314.php">the PSP 2.0 firmware</a> (PSP World). Why? Well, as far as I know no one has a hack for these versions. However, the 2.0 firmware does have a web browser, and browsers are normally buggy and nasty bits of code. Especially in their earlier versions. I'm really curious if there are any buffer overflows or similar defects in the browser that could be used to execute arbitrary code. Anyone else wondering the same thing? Does the PSP have a non-executable stack? I haven't been following PSP-dev so I have no idea. Of course, even with a protected stack there's plenty of <a href="http://www.securiteam.com/securityreviews/5QP0L0AFFS.html">nasty kinda stuff to be done</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Process Virtualization/Host Virtualization]]></title>
+    <link href="http://rowehl.com/blog/2005/08/22/process-virtualizationhost-virtualization/"/>
+    <updated>2005-08-22T03:35:18-07:00</updated>
+    <id>http://rowehl.com/blog/2005/08/22/process-virtualizationhost-virtualization</id>
+    <content type="html"><![CDATA[<p>I've thought about systems like <a href="http://www.mosix.org/">Mosix</a> and their process migration ability with relation to moving about from one system to another. I would love to be able to just take a session from my desktop at work and start it up on my laptop or my desktop at home. I figured it would be great to have something like the <a href="http://linuxdevices.com/articles/AT5772921353.html">Intel Personal Server</a> to enable that. But apparently there's another effort called <a href="http://www.linuxdevices.com/news/NS2778922637.html">SoulPad</a> (via <a href="http://rootprompt.org/article.php3?article=9026">Rootprompt</a>) in the works as well. It's a migration layer for a whole hosted operating system. Nice. I would love to see it based on <a href="http://bochs.sourceforge.net/">Bochs</a> instead of VMware, but mostly I just want it.</p>
+]]></content>
+  </entry>
+  
+</feed>

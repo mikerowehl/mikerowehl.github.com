@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="There&#8217;s a third part to the series of articles about building a distro that computer retailers could use to build PCs. I still don&#8217;t &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/page/53/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/17/gnu-linux-home-desktop/">GNU-Linux Home Desktop</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-17T14:21:15-08:00" pubdate data-updated="true">Jan 17<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a <a href="http://www.osviews.com/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=732">third part</a> to the series of articles about building a distro that computer retailers could use to build PCs. I still don&#8217;t agree with running the project as a contest, as <a href="http://www.bitsplitter.net/blog/index.php?p=94">I&#8217;ve mentioned before</a>, but I do think the idea in general is great. The project aims to develop not just a full distro in terms of the software that gets installed on the PC when initially setup, but also marketing materials, artwork, and apparently also software repository services. The article seems to indicate that under the concept of the Open Core of the home desktop distribution providers would now provide value added services. Currently distribution providers make self contained reasonably usable Linux systems. But the author says that the usable Linux system should be the baseline, and that disto providers should be adding something to this base. I can certainly agree with that point, but I think the arguments laid out are a bit fuzzy. I still have trouble picturing how this would unify the distribution providers. Sure, it would move the bar up, which is a good thing. It&#8217;s a step in the correct direction. But it&#8217;s not the complete solution I don&#8217;t think.</p>
+
+<p>The article would almost seem to argue in favor of distributions providing services like Redhat Network, a service which Redhat has abandoned for all lines except the Enterprise editions. This was because the model just was not profitable for the other areas. Maybe there&#8217;s something in there that I missed, maybe coupling the update server with other services would make a difference. Most of the areas in which selling support for open source software seems to be profitable are the dual licensing model. Places where the product is free for non-commercial use, but must be paid for when used in a commercial offering. One example of this would be <a href="http://www.mysql.com/products/licensing.html">MySQL</a>, who seem to be very successful with what they&#8217;re doing. Do I think pure support would be profitable for a company? No, I don&#8217;t think it would be. I just haven&#8217;t seen it work well before. Even companies like the former VA Research, who seemed to be aimed in this very direction, were able to make it work. And they seemed to have some very well informed backers and strong supporters. That&#8217;s not to say I don&#8217;t think a pure support play COULD never succeed, I just think the odds are stacked against it.</p>
+
+<p>So what do these providers do? The article says:</p>
+
+<blockquote><p>To a small home-town white box builder or enthusiast who doesn&#8217;t have the resources to provide 24-hour customer support, remote automatic security, application updates, or comprehensive full-service warehousing of third-party commercial software application the resource would prove invaluable. Similarly, this core system might also offer content services such as LinTunes, LycPicks or XanPhony music download services. This is really only the beginning. The sky is the limit.</p></blockquote>
+
+<p>That&#8217;s a nice thought, but I don&#8217;t think it&#8217;s one supported by data from previous attempts. If I were a distro provider I would certainly be looking for a stronger argument for shifting my business. But lets assume that the core proposed here does develop, what can the distro providers do? I just don&#8217;t have a good answer for them. It&#8217;s probably something we should be thinking about if we do want to push Linux distribution in this direction. And I do think this is the direction we want. Hard questions are usually an indication that a solution is heading in the correct direction - they&#8217;re an indication that you&#8217;re treading new ground and not just shuffling around previous issues.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/17/further-info-from-the-sco-case/">Further Info From the SCO Case</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-17T10:04:59-08:00" pubdate data-updated="true">Jan 17<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>According to <a href="http://www.itworld.ca/Mobile/ViewArticle.aspx?id=idgml-8f1ddb0a-dced-4aaa-a13e-745fa0f2c1c2&amp;Format=Print">this article at itWorldCanada.com</a> the lawsuit brought against IBM by SCO will not involve copyright infringement. The lawsuit will supposedly center around breech of contract, with SCO arguing that IBM introduced intellectual property belonging to SCO into the Linux kernel. I don&#8217;t know if this is really a change in position by SCO, or if this just indicates the direction against IBM only. I think they&#8217;re threatening lots of people with lawsuits, so this position used against IBM might have nothing to do with those others. I would like to hear what property exactly belongs to SCO regarding the async IO, journaling filesystem, and volume management. At the points where some of the initial work were going on for those features, I was following the Linux development lists pretty closely. And I don&#8217;t remember anyone saying that they were taking code from SCO. It seemed like lots of people hashing out ideas, writing up potential patches, and eventually coming to consensus. Perhaps SCO owns the rights to group development? Unlikely, but I wouldn&#8217;t be too surprized if they thought they did.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/power-out/">Power Out</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T11:02:44-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My power went out at home. Just a localized event, but annoying cause it happens to be localized to my area. But given the new set of toys I&#8217;m playing with I don&#8217;t have to be disconnected. I had a conversation on the <a href="http://winksite.com/Reverend/ope">Open Palm Environment WINKsite</a> chat area using my phone, downloaded my email to my Palm, and now I&#8217;m about to post this using <a href="http://www.bitsplitter.net/vagablog/">Vagablog</a>. That&#8217;s pretty well connected without any power. Just another advantage of mobile computing to keep in mind.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/building-an-infrastructure/">Building an Infrastructure</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T07:36:38-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.infrastructures.org/">Infrastructures.org</a> is a great resource for anyone that needs to administer multiple Unix style machines and is looking to do so more efficiently. The principles laid down there are fantastic, and they stick to open source tools in their descriptions of how to put systems together, and even have a release of their own code called <a href="http://www.infrastructures.org/bootstrap/isconf.shtml">ISconf</a>. It is hard to try to work like an infrastructure architect rather than a system administrator. But when you do the long term benefits are astounding. I&#8217;ve been places where everything was so ad-hoc that trying to setup an infrastructure around their software was futile, but even then the setup paid off in terms of keeping the base systems up to date. Any admin should at least read over the stuff. Even if you think most of it is complete bunk, there will probably be a few points you can use.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/writing-command-line-utilities/">Writing Command Line Utilities</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T05:33:02-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s <a href="http://www-106.ibm.com/developerworks/linux/library/l-util.html?ca=dgr-lnxw06ArtWriting">an article at IBM DeveloperWorks</a> about writing reusable command line utilities. The article focuses on five guidelines:</p>
+
+<ul>
+<li><p>Do one thing well.</p></li>
+<li><p>Be a filter.</p></li>
+<li><p>Generalize.</p></li>
+<li><p>Be robust.</p></li>
+<li><p>Be new.</p></li>
+</ul>
+
+
+<p>The article goes into some detail about each of those areas. The resources section lists <em>The UNIX Programming Environment</em>, and I would strongly recommend <a href="http://cm.bell-labs.com/cm/cs/tpop/index.html"><em>The Practice of Programming</em></a>. For any level of progammer, beginner through expert, I think TPOP has something to offer.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/replacing-palm-hotsync/">Replacing Palm HotSync</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T03:25:56-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a <a href="http://lists.pilot-link.org/pipermail/pilot-link-devel/2004-January/000624.html">message on the pilot-link-devel mailing list</a> about replacing the normal Palm Network Sync with something else. Recently Palm has been a huge pain in the ass. Just about every device comes out with some new extension to the sync protocol. Something that breaks the existing tools under Linux and other operating systems. And Palm isn&#8217;t releasing info about these changes as far as anyone can tell. So, like I also <a href="http://www.bitsplitter.net/blog/index.php?p=102">posted about the other day</a>, the pilot-link developers are thinking about ignoring Palm&#8217;s interface for sync and writing something of their own. Something based on open protocols and standard interfaces. Something that Palm can&#8217;t change underneath us quite so often. I think there are probably a lot of people thinking in this direction. Hopefully we&#8217;ll get the critical mass required to get the project rolling. I&#8217;ve already started working on palm-xmlrpc. Something I consider a precursor to my work in the area. Hopefully this means there will be others hacking in this direction.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/defacto-standards-using-commercial-software/">Defacto Standards Using Commercial Software</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T02:01:40-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have heard people talk about the danger of letting commercial software turn into the defacto standard for how to do things. I didn&#8217;t really think this was a big deal, until I tried to create a boot disk to do a BIOS update the other day. This is where the defacto standard comes in. For those who do low level system admin work on x86 based computers, DOS is the defacto standard. When a computer manufacturer wants to write an application that does something special to their hardware, they write a little DOS app. DOS is really primitive and simple and doesn&#8217;t try to stand in the way of the programs that it runs, so it&#8217;s ideal for writing specialized applications to test hardware or update firmware. I had to update the BIOS of an Intel motherboard, and the instructions said to create a boot disk and copy their utilities over to it. No problem, I don&#8217;t have a Windows system, but my girlfriend&#8217;s system should work fine. It pains me to touch the thing, but I can stand it for stints of 10 minutes or less.</p>
+
+<p>Yet to my surprize, none of the commands I remembered working for creating a boot disk under Windows seemed to work on the Windows 2000 system she has. Weird. Ditto for the Windows XP laptop from work. Double weird. So I poked around some, and found <a href="http://www.bootdisk.com">Bootdisk.com</a>, but I just couldn&#8217;t believe that was the way to create a bootable floppy. So finally I caved in and asked some friends, people who work with Windows quite a bit. And they told me that Bootdisk.com is the best way to go, Windows doesn&#8217;t have the tools to create bootable floppy disks any more. WOW! First of all, I see no reason to have dropped these commands from Windows at all. Sure, the newer operating systems aren&#8217;t DOS based, but so what? You can still include the commands and images needed in order to create a boot disk. This is another reason to charge for MCSE exams and provides a nice barrier for an operation that should be shit simple, so I guess that&#8217;s just not Microsofts bag. And I thought they were about making life simple for users, that what people keep telling me. The second wow is that someone from the community stepped up and created the site needed to initialize these disks. I&#8217;m sure Microsoft is aware of the issue, they don&#8217;t care. I&#8217;m sure it&#8217;s a problem for anyone who makes x86 hardware like motherboards (Intel, Tyan, ASUS, etc), but they still distribute their guides ignoring the issue. I was someone from the community who stepped up to fill the gap.</p>
+
+<p>Now this isn&#8217;t really a huge problem. There are even efforts like <a href="http://www.freedos.org/freedos/about/">FreeDOS</a> who provide even better alternatives. But the community is solving these problems. I never used to think twice about creating a bootable floppy under Windows, but now that functionality is gone. None of the companies that should care about this seem to be working on fixing it. People ask why I have such an issue going over to a Windows system to do something. Well, this is it. Cause when I use Windows to do something I&#8217;m placing myself in a position where someone else has chosen how I have to operate. And they&#8217;re forcing me to base my work on a platform I don&#8217;t and will not own, and which I feel has a dubious future. At least I&#8217;m happy that Microsoft and hardware manufacturers have provided such an excellent example of user disservice that I can point to.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/15/saffo-speech/">Saffo Speech</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-15T15:05:36-08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The speech by Paul Saffo this evening was very interesting. There were many points he brought up that jive with the stuff that I&#8217;ve been working on. There was a lot of stuff he said that meshed well with the events I&#8217;ve seen and heard about. Here are some of the points that I found most interesting.</p>
+
+<p>One of his initial points was that while most successful technologies follow the S curve of adoption, engineers still think in terms of straight lines. The S curve means that a technology spends a long time growing very slowly, has a period of rapid growth, and finally tapers off. Paul said that engineers know this, but for some reason still expect a constant slope for adoption. This leads to overexpectation of demand initially, and underestimation once the technology makes it past the inflection point. I have seen this happen with the technologies I&#8221;ve worked with. There are areas that I almost gave up on because they didn&#8217;t appear to be catching on, only to see them explode with sudden activity and broad uptake. I think it was quite insightful to call out that this over enthusiastic approach leads to late comers being able to dominate the area. If the early company doesn&#8217;t adjust their outlook they end up underestimating the market and leaving room for someone else to move in.</p>
+
+<p>He also cautioned about telecom companies going after wireless networking by fighting the technology with regulation. He said that 802.11 and VOIP is a real threat to telecom companies, and that once those telcos start failing they&#8217; fight wireless networking using regulations (telco requirements for emergency services, FCC regulations, international regulations, whatever). As a point in this argument he said that 3g and 4g wireless are really hurting. It&#8217;s quite likely that these networks will fail, and that the technology in general will be abandoned if it does.</p>
+
+<p>The final point that I want to call out is that he said that us software people just haven&#8217;t gotten the interactions with software correct yet. We&#8217;ve never been good at interfaces and we probably never will be. But users can figure out what the interface should look like. If they get their hands on the technology they will determine how it should best be used. I think what he was driving at here is that tech is not dead, it just needs some time to get swinging into the next generation. At some point someone will pick up the right mix of rubble from past failures and give birth to the Next Big Thing. I like that point quite a bit, cause I like to think I&#8217;m one of the next generation of Silicon Valley. And it gives me a degree of hope in my constant quest for the way that things should work. Eventually something will kick off. And even if it isn&#8217;t one of my ideas, hopefully it&#8217;ll be something I can be involved with.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/15/it-the-media-stupid/">It&#8217; the Media, Stupid</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-15T05:49:25-08:00" pubdate data-updated="true">Jan 15<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Just as a reminder, cause I forgot myself, Paul Saffo is <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1269">speaking tonight at PARC</a>. Should be an interesting evening, hope to see some of you there.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/14/direct-brain-interface/">Direct Brain Interface</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-14T06:50:02-08:00" pubdate data-updated="true">Jan 14<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I created a new category for <a href="http://www.wired.com/news/medtech/0,1286,61889,00.html?tw=wn_story_top5">this article about a direct neural interface</a>. The category is called Dweeb, and it&#8217;s for those things that aren&#8217;t quite mobile computing, or open source, or related to things that I&#8217;m working on, but are still just too fucking cool to ignore. I have no idea what would go into trying to build an interface like this, how well I think it would work, how marketable I think it would be&#8230; no, I just get starry eyed and whisper &#8220;oooo, I want one of those&#8221;. That&#8217;s what Dweeb is gonna be all about.</p>
+
+<p>Note that I didn&#8217;t start off the Dweeb category with a post about a Segway. That&#8217;s called being a &#8220;Fan Boy&#8221;. There is a big difference, and it lies in the desire to mislead the public. BrainGate is an amazingly advanced technology being used to help a very small market of special needs people, but Dweebs like me have picked up interest in it, and we&#8217;ll probably have to wait a long time to get our hands on it. Segway is a marketing experiment in pushing an amazingly advanced technology out to people who don&#8217;t need it, and people who Should Know Better fell for it, and although it&#8217;s available now no one is quite sure why it should be. People on Segways shouldn&#8217;t be surprized if they get <a href="http://www.fuh2.com/">the Hummer salute</a> or pelted with rotten vegetables. Not that the Segway doesn&#8217;t have some great technical advances, it just had a disproportionate amount of hype and propaganda to go along with it. Lots of great technical advances don&#8217;t immediately lead to mass market penetration. Normally you have to ride the adoption curve, like everyone else. Sometimes you might get lucky and your product might exhibit fad trending and get snapped up by the millions, but that happens very infrequently. Everyone is expecting a business person to promote their idea, but if you try to cheat the adoption curve by lying you should expect to get smacked around some.</p>
+
+<p>Sorry to spend so long harping on this, but I feel that this aspect of consumer pushback is missing in a lot of tech markets. We end up with overpriced products that perform poorly and get forced through quick revision cycles. I don&#8217;t want Dweeb to be another Fan Boy area for cheering every worthless product. That&#8217;s how economies end up with big bubbles, and it sucks when bubbles get all bursty. So it&#8217;s important that we not let our markets get all.. bursty bubbly. That&#8217;s why normally I blog about things I actually do, or have tried to do, or at least am involved with enough to know the background. Dweeb is not that. I have never built a neural interface, I just really wish I could. So Dweeb is all that stuff for which I can claim no street cred. Maybe that would have been a better name for it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/54/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/52/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

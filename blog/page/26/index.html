@@ -1,0 +1,636 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="Apparently Dave Winer has been thinking about the same problem I was in terms of RSS subscriptions. I&#8217;m in favor of something a little simpler &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/page/26/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/11/rss-subscription-synchronicity/">RSS Subscription Synchronicity</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-11T08:31:59-08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Apparently Dave Winer <a href="http://archive.scripting.com/2005/01/11#theSolutionToTheYahooProblem">has been thinking</a> about the <a href="http://www.bitsplitter.net/blog/index.php?p=388">same problem I was</a> in terms of RSS subscriptions. I&#8217;m in favor of something a little simpler than what he described, but I can certainly see value in what he&#8217;s talking about. I emailed Dave to see if we could start trying to spin up something like this. In my mind one of the important aspects is that all the code running behind this should be open sourced. Code has a way of allowing problems to be wrung out quickly, discussions get a lot shorter and consensus is more absolute. I think it&#8217;s the only way to end up with the kind of trust that would be needed to get most publishers to use a service like this. It also guarantees that if the current service provider does something to lose that trust, another source can come in to replace them without too much effort. Of course, the ideal is that everyone decides to trust the same source, and that a users preference setting is used at every site they go to.</p>
+
+<p>Effectively what I had proposed was using the service as a namespace to store cookies in, and return very specific pages based on the settings in those cookies. Of course the problem is more generalizable. The setting of cookies and generation of returned pages could all be controlled from the publishers site, and we end up with something like a preferences engine. Which I&#8217;m sure is much better done with something like <a href="http://xrixdi.idcommons.net/">XRI/XDI</a> than cookies and Javascript.  Problem is, I have no idea how a system would be architected using that kinda stuff. So if someone does, please jump in the conversation and enlighten us.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/08/rss-subscription-service-network/">RSS Subscription Service Network</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-08T19:46:41-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It seems like one of the major complaints that I hear most often about RSS is that it&#8217;s hard to use. Finding the XML link if there is one, choosing from multiple if there are different options, cutting and pasting the link, knowing where to put it, and dealing with any potential problems. It&#8217;s just too complex for most people to care about. So publishers attempt to make it easier to subscribe by putting badges on their pages. You know, those little buttons that say &#8220;Add to Bloglines&#8221; or &#8220;Subscribe with NetNewsWire&#8221;. Unfortunately that puts the burden on the publisher to know all the different services that a user may want to subscribe with, and clutters up the interface with dozens of buttons. A solution like that also increases the barrier to a new aggregator entering into general usage. Publishers won&#8217;t want to update their site for an aggregator that&#8217;s only used by a few people, and users won&#8217;t use an aggregator that doesn&#8217;t provide them with an easy subscription feature. The interface could be modified a bit, to something like <a href="http://www.methodize.org/quicksub/">QuickSub</a>, to help with the clutter caused by all the extra buttons. But the user still has a boatload of options there, and again creates some friction with respect to adding a new aggregator service. The aggregator provider could do something like create a bookmarklet for easy subscription, but this also has some disadvantages. Such as not normally playing very nicely with <a href="http://www.feedster.com/search.php?q=miker+rocks&amp;hl=en&amp;ie=UTF-8&amp;sort=date">pages that contain more than one feed</a> and not being available when the browser has restricted functionality (such as on mobile devices). The ideal I think is a service that:</p>
+
+<ul>
+<li><p>Displays just one button, the right button, for subscription via the aggregator the user does their reading with and that&#8217;s all.</p></li>
+<li><p>Doesn&#8217;t require publishers to know about the details of every different tool that can be used to subscribe.</p></li>
+<li><p>Allows the author of a new aggregator to service their users directly, without requiring the author of the new software to ask to get their tool listed.</p></li>
+</ul>
+
+
+<p>I just hacked together a quick example system that does this to try to get a conversation going. It&#8217;s based somewhat on the idea of a service network. Somewhat like the way that publishers can include <a href="http://www.google.com/services/adsense_tour/page3.html">a bit of code on their site to display ads from a service like AdSense</a>. Except instead of having the network site display ads we&#8217;ll ask it to write a subscription button into the page. The publisher site just needs to pass along info about what the feed URL is, and the subscription button service takes care of looking up wich aggregator the user prefers and how to generate the appropriate button for subscription.</p>
+
+<p>The code is very much just proof-of-concept garbage, but I&#8217;ve <a href="http://www.bitsplitter.net/projects/subservice-0.1.tgz">put it online</a> so that hopefully if people are interested we can get something going. If you can read even just a little bit of PHP and HTML you should be able to follow along with the code from the tarball or walk thru a few pages (starting with the <a href="http://www.bitsplitter.net/projects/subservice/test.html">feed list page</a>) to see what it does. Here are a few points to call out.</p>
+
+<ul>
+<li><p>The simple javascript inclusion can be wrapped with a noscript tag to create a link to a subscription network page instead. Which means this could also work even for browsers that don&#8217;t support javascript. It would mean another page to click thru, bit it would still function.</p></li>
+<li><p>Configuration is all held in two cookies, nothing needs to be stored server side.</p></li>
+<li><p>As long as an aggregator author can express subscription to their service as a simple templated URL (containing the feed to subscribe to) they can give their users a link to configure the network to present their tool as the default. Even if the network doesn&#8217;t know anything about the tool it can still be used. If you&#8217;re looking at the code, think about passing in an arbitrary template value to setsub.php  A simple &#8220;click here to set bloglines as your default aggregator&#8221; link could replace the &#8220;drag this link to your toolbar to create a bloglines subscription bookmarklet&#8221; step.</p></li>
+<li><p>If the user doesn&#8217;t have any default aggregator set they still see a generic subscribe button, and they can be introduced to the network very quickly if they haven&#8217;t already used their aggregator to set it as the default.</p></li>
+<li><p>We&#8217;ll obviously need a lot more hooks and options to let publishers and users control the look of the controls.</p></li>
+<li><p>As long as the tool registers a URL handler it can be used as the target of the network subscription (ie. NetNewsWire and the feed: URL type).</p></li>
+</ul>
+
+
+<p>I&#8217;m assuming the reason no one seems to have something like this setup is that there&#8217;s no real direct value in it. It needs to be a single network service in order to be most valuable. We want the user to set their preference once and have it used anywhere there are subscription options. But in general the service needs to be completely invisible. Not a great business, but a valuable service I think. So there&#8217;s the code example. I think this is something that would really work for the users, publishers, and tools authors. If we can just figure out a way to get it up and running and keep it running. If you agree, and you&#8217;re interested in trying to make a go of it, let me know.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/08/welcome-michael-fagan/">Welcome Michael Fagan</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-08T02:11:35-08:00" pubdate data-updated="true">Jan 8<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://www.faganfinder.com/me/">Michael Fagan</a>, author of <a href="http://www.faganfinder.com">FaganFinder.com</a>, is going to be working at Feedster for the next few months. His site is a well respected web search tool. He&#8217;s been out there interacting with people. Tweeking, tuning, and expanding his site. We&#8217;re hoping he can teach us some of the lessons he&#8217;s learned and help us put them into practice to make Feedster a more effective tool overall.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/07/feedster-and-technorati/">Feedster and Technorati</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-07T18:56:57-08:00" pubdate data-updated="true">Jan 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of the questions I&#8217;ve been asked by a number of people since joining <a href="http://www.feedster.com">Feedster</a> is &#8220;Are Technorati and Feedster competitors?&#8221; (or &#8220;Is there a difference between Feedster and Technorati?&#8221; or something along those lines). I was going to write up something to explain my take, but it looks like Dave Sifry over at <a href="http://www.technorati.com">Technorati</a> has been seeing the same kinds of questions and decided to <a href="http://www.sifry.com/alerts/archives/000268.html">answer publicly</a>. So I&#8217;m just going to build off Dave&#8217;s statements, in particular the part about:</p>
+
+<blockquote><p>So please, continue to use the fine services from Feedster and PubSub! And please continue to try out and use Technorati watchlists as well. May a thousand flowers bloom.</p></blockquote>
+
+<p>People ask questions about the two companies being competitors because there is a lot of overlap in what we do, we provide a lot of the same kinds of features. There are differences, but in general they tend to be rather esoteric and mostly of interest to the geeks. Currently the most major differences are in terms of outlook. I&#8217;ve personally thought of Technorati as building a new thing called a &#8220;conversation engine&#8221;, used to track conversations happening online. Whereas Feedster is a news search engine. Check out the <a href="http://www.technorati.com/about/">Technorati about page</a> and the <a href="http://feedster.blogs.com/corporate/overview/index.html">Feedster overview page</a>. To me there&#8217;s an obvious difference there, a difference in focus at the very least.</p>
+
+<p>Maybe you don&#8217;t see it. Or maybe you think it doesn&#8217;t really matter. &#8220;What difference does an outlook make if the features are the same?&#8221; one might ask (and they have). The important point to remember here is that we&#8217;re at the start of a very new and rapidly expanding market. It might look like Technorati and Feedster (and <a href="http://www.pubsub.com">PubSub</a>**) are currently crowded into a small area, but that area is getting larger and larger every day. As the market as a whole grows the conceptual differences between Technorati and Feedster will turn into concrete differences in functionality. We still might end up competing in some areas, but there will be plenty of pie to go around. So my overall answer is no, I don&#8217;t consider Technorati a competitor. We&#8217;re both working toward the same goal of growing the use of blogging and related technologies, working to make sure that readers and writers have what&#8217;s necessary to keep the growth going. It&#8217;s too early to know what the board will look like once the growth stops accelerating. Yes, that&#8217;s right, I said &#8220;stops accelerating&#8221;. It was intentional.</p>
+
+<p>** about PubSub - I say Technorati and Feedster, but PubSub really should be included in this as well. One major difference is that I think PubSub is already pretty well differentiated. I used Technorati because it was Dave&#8217;s note that kicked off the response, and because most of the people I&#8217;ve spoken to ask directly about Technorati. Personally I use all three to track the topics I&#8217;m interested in.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/06/reopening-mobile-and-open/">Reopening Mobile and Open</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-06T07:56:01-08:00" pubdate data-updated="true">Jan 6<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Howard has posted a manifesto titled <a href="http://www.thefeature.com/article?articleid=101299&amp;ref=5062836">Mobile and Open</a>, so I&#8217;m going to take this chance to jump in and reframe some of the stuff I&#8217;ve said along these lines before. I think it&#8217;s a great topic, and most people misinterpret what I mean when I say that there must be more openness to the mobile infrastructure. So now that we have a great touchpoint in the writeup from Howard I want to run thru a few things.</p>
+
+<p>First is the <a href="http://www.bitsplitter.net/blog/index.php?p=275">Mobile Data Services and Innovation</a> post. The idea here is that innovation normally comes from the bottom up, not the top down. The example that Howard gave of Tim Berners-Lee is excellent. This is not a universal truth I don&#8217;t think, but very often new solutions have come from people who were able to put together a solution to their own problem without having to make sweeping changes in order to do so. It&#8217;s normally only after the solution has been out in the wild for a bit that users of the current dominant system catch on to the utility of the new system. I won&#8217;t belabour the <a href="http://www.bitsplitter.net/blog/index.php?p=350">reasons behind why the providers of the previous system might even be hostile towards the new system</a>, we&#8217;ve covered that before. I personally believe that the ability of open source to avoid this problem (the current install base being controlled by a hostile entrenched provider) is one of the major reasons for long-term success of open source. The same thing is very true in the mobile environment.  Once a provider assembles their &#8220;stack&#8221; of solutions they become resistant to changing it. That&#8217;s just what their business model requires them to do in most cases. When the providers become resistant to change the environment as a whole stagnates and innovation slows down to a crawl. Keeping the environment open, and allowing the users of the system to potentially act as innovators without requiring them to get the help of providers, is the way to make sure that progress moves at the pace of the market.  Otherwise the market only moves as fast as the telcos want it to.</p>
+
+<p>The points about open innovation commons and the ability to organize ad-hoc networks are pretty closely tied together in my view. I&#8217;ve <a href="http://www.bitsplitter.net/blog/index.php?p=275">commented on the need for making mobile services more end-to-end</a> in the post already linked above, as well as the <a href="http://www.bitsplitter.net/blog/index.php?p=329">need to evolve beyond the established online equivalents in some cases</a>. The flexibility of the layered system that is TCP/IP is what has helped keep the Internet the thriving diverse environment that it is. No one needs to rip out routers and switching equiptment on the Internet in order to deploy a new application, all applications exist on top of a common basic set of capabilities.  And as much as possible the equipment between the two ends of an exchange need to know nothing about the content and meaning of that exchange. This is not true in the mobile environment. Although some services in mobility run over TCP/IP style infrastructure, there are plenty that are proprietary and explicitly embedded in the network. I am 100% convinced that the long term benefit of mobility itself would be best served by adopting an infrastructure that models this end to end principle seen in  the architecture of the Internet. Does that mean straight TCP/IP? No of course not, service layers need to be added to the base TCP/IP stack to provide the kinds of features that mobility makes possible. But those features should be added levels on top of a common base, and not modification of the fundamental layers. I think this would also spur innovation in mobility the same way that we saw an explosion in online activity in the early 90s. Right now we&#8217;re seeing pale reflections of online services for the most part. True mobile specific applications seem to be almost accidents (take SMS for example). The efforts to translate online activity into mobile activity and to evolve one mobile activity into another are just small bits of what could be done if the community was allowed to be self serving. I know there are fantastic applications out there waiting to be discovered. The current infrastructure doesn&#8217;t allow them to be deployed as is, and the existing incumbents won&#8217;t understand them until they see the applications in action. The only way to break the deadlock is an open environment.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/04/comments-working-again/">Comments Working Again</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-04T07:36:51-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Thanks to <a href="http://contest.bakankin.com/">Grant Schofield</a>, who informed me that there was something wonky with comments on this blog. I ended up with a typo after my last spam filtering additions.  Sorry if there are others trying to comment who haven&#8217;t been able. It should be all nice and cooperative now.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/04/literacy-of-cooperation-course-tomorrow/">Literacy of Cooperation Course Tomorrow</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-04T02:18:15-08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://www.smartmobs.com/archive/2005/01/03/literacy_of_coo.html">Literacy of Cooperation Course starts tomorrow (Jan 5th) at Stanford</a>. The course is <a href="http://shl.stanford.edu/hum202.html">open to the public</a>:</p>
+
+<blockquote><p>Non-students who live in the area can show up to the course without signing up.</p></blockquote>
+
+<p>If you live outside the area we hope to be able to deliver a videostream to you.</p>
+
+<p>We will keep you updated on the feed and how you can let us know that you plan to physically attend the event (check back here weekly). But the simple answer is, you are welcome to attend.</p>
+
+<p>There&#8217;s a <a href="http://cooperation.smartmobs.com/cs/">group blog</a> to go along with the course and a <a href="http://del.icio.us/tag/cooperation">del.icio.us tag to post links against</a>. I&#8217;ll be over there tomorrow. Taking pictures hopefully and <a href="http://mikerowehl.buzznet.com/user/">putting them online</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/01/03/trying-this-again/">Trying This Again</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-01-03T23:32:00-08:00" pubdate data-updated="true">Jan 3<span>rd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://feedster.com/claimfeed.php?key=acb833604a4a2f95afecce07360581d1">No Need to Click Here - I&#8217;m just claiming my feed at Feedster</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/30/feedster-contest/">Feedster Contest</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-30T13:36:11-08:00" pubdate data-updated="true">Dec 30<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was sad to see that Niall <a href="http://www.niallkennedy.com/blog/archives/2004/12/feedster_contes.html">thought that the Feedster contest didn&#8217;t go well</a>, especially because I&#8217;ve just recently <a href="http://www.bitsplitter.net/blog/index.php?p=372">joined Feedster myself</a>. If his sentiment is shared by a lot of others I would like to hear about it. Email me at mrowehl at feedster dot com if you want to gripe.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/29/html-browser-bookmarks-to-rss-populated-opml/">HTML Browser Bookmarks to RSS Populated OPML?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-29T15:04:42-08:00" pubdate data-updated="true">Dec 29<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Fooling around a bit with the <a href="http://www.bitsplitter.net/blog/index.php?p=377">Feedster feed info API</a> I was looking for a way to export Firefox bookmarks as OPML and then use the feed info API to fill in the feeds associated with bookmarked web pages. There&#8217;s <a href="http://syncmarks.mozdev.org/">a bookmark extension</a> which apparently will output in XBEL. But in my opinion even just asking users to install an extension is too much. People should be able to export their bookmarks from the stock tool and upload the file to an aggie or online service to bootstrap their subscriptions. From what I&#8217;ve seen this is where the standard users are living right now. Some are using portal services, but not all. And those who are using portals normally have some info they still read outside of the portal. They have their favorites bookmarked, and they run through their bookmarks reading news. We can figure out if there are feeds associated with the pages they have tagged, there should be an automatic process for this. Sorting through sites and looking for XML buttons and cutting and pasting URLs is a pain in the ass, and that assumes a level of knowledge that I&#8217;m not seeing in the non-geek crowd I&#8217;ve been chatting with lately. Anyone know of tools or services that do the conversion?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/27/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/25/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

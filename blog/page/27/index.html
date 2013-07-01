@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="There&#8217;s a great article on continuation based web programming in general over at DeveloperWorks. I fooled around with Scheme based modal web &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/page/27/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/28/continuation-based-web-programming/">Continuation Based Web Programming</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-28T13:44:09-08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a <a href="http://www-106.ibm.com/developerworks/library/j-contin.html">great article on continuation based web programming in general</a> over at DeveloperWorks. I <a href="http://www.bitsplitter.net/blog/index.php?p=241">fooled around with Scheme based modal web programming</a> earlier this year, and the model itself was really compelling. It&#8217;s nice to see an example given using popular web framework technologies.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/28/linux-bluetooth-obex-and-a-nokia-6600/">Linux Bluetooth OBEX and a Nokia 6600</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-28T07:10:24-08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been having trouble with uploads to both <a href="http://www.flickr.com">Flickr</a> and <a href="http://www.buzznet.com">BuzzNet</a> during this vacation. I uploaded images the day I left for NY, and everything worked at 12:30pm PST. Then I landed in NY and tried an upload using the same phone using the same settings to the same accounts, and it doesn&#8217;t seem to be working any more. And everyone is gone for the holidays it seems, so self service it is. I didn&#8217;t have the OBEX bluetooth tools setup under Linux (I&#8217;m currently using Gentoo on my laptop). I&#8217;ve tried to install the slick-as-hell-sounding gnome-bluetooth package, but I can&#8217;t emerge it. Error compiling. So I went tooling around looking for simple bare bones shims so that I could just move some data around. Not all that much out there.  I have GPRS working over bluetooth for this laptop and phone, so I know the basics are working. But how about accessing the data on the phone itself? Not good, here&#8217;s some info.</p>
+
+<p>I grabbed the <a href="http://oss.bdit.de/opd.html">OBEX push daemon</a> and installed that.  First I had to install the deprecated bluez-sdp package under Gentoo, but OPD compiled and worked fine after I set it up. Last release of this package was during 2003.  Wow!!! Is everyone else using Bluetooth under Linux using gnome-bluetooth to handle inbound pushes? I didn&#8217;t really find much else that would do it. OPD worked great for getting images off my phone, sending from the phone. I wasn&#8217;t able to get file transfer working, I assumed that I should be able to use obexftp to browse and get/put files from my laptop, but no go. I try any command line and it just seems to fail. None of the info I found online says that special effort is required, but I get errors trying to list anything at all:</p>
+
+<blockquote><p>miker@whirr src $ obexftp -b 00:60:57:8A:E7:5B -B 10 -l /
+No custom transport
+Connecting&#8230;bt: 1
+failed: S45 UUID
+done
+Receiving /&#8230; failed:
+Disconnecting&#8230;done
+miker@whirr src $</p></blockquote>
+
+<p>I also couldn&#8217;t get the get function using <a href="http://prdownloads.sourceforge.net/openobex/openobex-apps-1.0.0.tar.gz">OpenOBEX-apps</a> working either. Does OBEX file transfer expose a different namespace for files than something like <a href="http://www.newlc.com/article.php3?id_article=70">FExplorer</a> does? Should any of these applications work? Pushes over OBEX are all I&#8217;ve ever really gotten working. Does OBEX file transfer just suck too much for anyone to ever get it working? I thought the Windows Bluetooth drivers normally allowed browsing and access to the info on the phone. I doubt the Windows users are typing in magic paths&#8230; so this should be technically possible. Anyone know of a simple ftp style app to access a Series60 phone (or any OBEX capable device) from Linux?  And if not, anyone know if it&#8217;s possible to do without installing an app on the phone? I&#8217;ll write it if the app doesn&#8217;t already exist, I just don&#8217;t feel like pouring time into figuring out that the underlying technologies are too broken to get this working.</p>
+
+<p>I was also looking for how to push files from the laptop to the phone, and I found lots of people pointing to my old site, unrooted.net, which is no longer up. I need to put that back, but in the meantime I put up <a href="http://www.bitsplitter.net/projects/ussp-push-0.2.tgz">the ussp-push</a> package here at Bitsplitter. It has an obextool command line app that does a push from a Linux system out to a device that accepts OBEX push. You can also use obex_test from the openobex-apps package. Here&#8217;s an example of pushing an image from my laptop to my 6600 using that package:</p>
+
+<blockquote><p>miker@whirr src $ ./obex_test -b 00:60:57:8A:E7:5B 10
+Using Bluetooth RFCOMM transport
+OBEX Interactive test client/server.
+c
+Connect OK!
+Version: 0x10. Flags: 0x00
+p
+PUT file (local, remote)> ./ed.jpg edbg.jpg   <br/>
+name=./ed.jpg, size=2756
+Going to send 2756 bytes
+Made some progress&#8230;
+Made some progress&#8230;
+PUT successful!</p></blockquote>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/27/feed-info/">Feed Info</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-27T14:41:55-08:00" pubdate data-updated="true">Dec 27<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been reading over a few REST themed articles:</p>
+
+<ul>
+<li><p><a href="http://www.xml.com/pub/a/2004/12/01/pubsub.html">Weblogs, Publish-Subscribe, and Web Collections: A REST Analysis</a></p></li>
+<li><p><a href="http://www.xml.com/pub/a/2004/12/01/restful-web.html">How to Create a REST Protocol</a></p></li>
+<li><p><a href="http://www.prescod.net/rest/mistakes/">Common REST Mistakes</a></p></li>
+</ul>
+
+
+<p>I&#8217;ve been trying to think a little more deeply about public facing REST style web interfaces and how to put them together. I wrote <a href="http://www.bitsplitter.net/projects/Feedster/feedinfo.php.txt">a simple interface to the Feedster feed info API</a> (along with an <a href="http://www.bitsplitter.net/projects/Feedster/testfeedinfo.php.txt">associated test/example</a>). Trying to build a single file implementation for PHP was pretty interesting. I found a couple of cool features, like the <a href="http://us4.php.net/file">file() function</a> can return the contents of a web resource. I&#8217;m not sure how to trap and handle errors from that however, so if anyone does please drop me a line. And even though I used an object cover for the items in the collection returned, I still considered a bare associative array to hold the info. For the most part it seems to come down to personal preference how the client for a service is put together. The goal of course is loose coupling in all cases. For some that means exposing an interface which can adapt to new info, and for others that means ignoring new info unless specifically asked for. Personally I think I like the &#8220;ignore new info unless specifically asked for&#8221; version. It seems to echo the use of namespaces in XML, where new information can be mixed into a document without fear of clashing with existing data and so that it can be easily (and by default) ignored. It also seems to create a more friendly interface for users. If the information about the interface doesn&#8217;t reside at all in the user classes then another source of what the attributes of the parsed version are going to be have to be obtained from another source (such as looking at the XML document returned.. which for REST is very plausible). But in counter to my point, the more layers that know about the structure of the call the worse off the system as a whole is. However, if the objects don&#8217;t know about the schema of the results at all they can&#8217;t provide covers over the details of the document structure (ie. allowing either attributes or children to hold data).</p>
+
+<p>Ultimately it&#8217;s all just geek navel gazing until someone actually starts using the code. So along those lines there are a couple of projects I have planned that build off that API, but I wanted to release the example for others who might be interested. Technically I&#8217;m on vacation right now, but still might work on some bits while I have time here and there. The clocks out here all seem to be 3 hours fast but no one cares. Everyone goes to sleep early and gets up early. So I have a bunch of quiet time in the evenings.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/26/since-im-working-at-feedster-n-all/">Since I&#8217;m Working at Feedster N&#8217; All</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-26T15:43:46-08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://feedster.com/claimfeed.php?key=e2f5f04e0a3ea31d0611f4e1f7a9bbae">No Need to Click Here - I&#8217;m just claiming my feed at Feedster</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/26/feature-adoption/">Feature Adoption</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-26T13:32:11-08:00" pubdate data-updated="true">Dec 26<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m over at my parent&#8217;s place, and since east coast TV is way different than west coast TV, I flip on the onscreen guide to check out the schedule. My sister is sitting there and she goes &#8220;wow, how did you get that to come up?&#8221; I found that pretty interesting. She just never pushed that button, or even realized it sitting there. So I asked my father how long they had the system for, thinking maybe my sister just didn&#8217;t have time to muck around with it. But they&#8217;ve had it for a year. So why didn&#8217;t my sister see anyone else using the feature? My mom also didn&#8217;t know about, and my father just found out about the onscreen guide just a month ago (when Devin stepped on the remote and the guide came up). It&#8217;s interesting, but I&#8217;m not quite sure what it means. Obviously the onscreen guide is a really cool feature, I love having it there. Maybe my family is just a really isolated instance. We&#8217;ve never really watched all that much TV, so the chance of coincidental exposure to the guide might just be lower than average. But still, I wonder how many other households out there have cable boxes sitting there that can display a guide but never have. Just curious.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/23/photos-by-a-four-year-old/">Photos by a Four Year Old</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-23T12:35:47-08:00" pubdate data-updated="true">Dec 23<span>rd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was taking a <a href="http://mikerowehl.buzznet.com/user/?id=746735">picture of the Christmas Tree at my parent&#8217;s place</a> when my four year old niece spotted me and wanted to take pictures too. I figured she couldn&#8217;t do any worse than I do with the camera (and much to my chagrin it turns out that was right). I released her unsupervised for about half an hour just to see what was on my phone when she came back.  Half the fun for me was seeing if she really understood what she was doing. If the joy of sharing photos online is all about capturing the random everyday events from your life then this photo set should be pure gold. Here they are: <a href="http://mikerowehl-fouryearold.buzznet.com/user/">Photos by a Four Year Old</a>. I really like some of them. Some just look neat. Others suggest a functioning of the four year old mind that I personally find pretty staggering. Check this out: <a href="http://mikerowehl-fouryearold.buzznet.com/user/?p=1&amp;id=746615">a photo of the artist, Devin Link, taking a picture of her reflection in an ornament on the Christmas tree</a>. She definitely understood what she was doing, and went out of her way to find subjects that not only look interesting but in many cases really point to an understanding that she was creating something. She also took <a href="http://mikerowehl-fouryearold.buzznet.com/user/?p=4&amp;id=746441">a snap of herself reflected in a full length mirror</a>. There was something interesting in watching herself watch herself and capturing it. Not that I attribute any deep philosophical meaning to the pictures that she took, or that they indicate an amazing degree of self awareness. But I would tend to think they are the manifestation of a mental model much more developed than the &#8220;I want that, give me&#8221; model I tend to think of when I think about four-year-olds.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/22/network-coverage/">Network Coverage</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-22T15:17:20-08:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m over in New York for a while visting with my parents for the holidays. They live in Huntington, which is about half way out onto Long Island. It&#8217;s the suburbs of New York City pretty much. Very heavily populated area, outlier to the most major metropolitan area in the US. And my cell coverage sucks.  I have service through <a href="http://www.tmobile.com/">T-Mobile</a> currently. At the time I last switched my service they were the ones most consistently willing to give me a flat fee unlimited data plan. But this is just insane. I was sitting talking to my father and my phone beeped with an SMS, I had a voicemail message. What the hell?  I hadn&#8217;t moved in an hour or so, and my phone definitely didn&#8217;t ring. It was a message that Elle had left a half hour earlier. That means an SMS must have been sitting queued for half an hour. I looked at the signal strength meter on my phone to see if my parents are in a dead area. Not that being in a &#8220;dead area&#8221; would really be an excuse, that still means T-Mobile has crappy coverage. And as I was looking the meter is bouncing all over the place.  Strong signal to disconnected, GPRS indicator flashing on and off.</p>
+
+<p>How disappointing. I&#8217;m one of the strongest proponents of mobility I know, and I can&#8217;t even keep myself minimally connected when I travel to other major metropolitan areas? How ridiculous. Fix the freakin&#8217; networks already! There&#8217;s been more than enough time. I&#8217;m even considering upgrading to something that supports Edge and switching off T-Mobile. But issues like this really make me pause and reconsider. If the basic service doesn&#8217;t work well, how much more pain am I going to experience in trying to service more of my need with a less proven technology?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/20/new-position-at-feedster/">New Position at Feedster</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-20T16:08:03-08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So it&#8217;s all official and getting somewhat settled down, I&#8217;m now a <a href="http://www.feedster.com">Feedster</a> employee. The first thing that people normally say after &#8220;Cool!! Feedster rocks!&#8221; is &#8220;Well, what the hell are you doing at Feedster?&#8221; Okay, valid question. It&#8217;s a bit different than what most of the people out there know me for. But I actually do a decent amount of web programming, and I can sling XML when XML demands to be slung. The other question is how Feedster relates to my whole kick about <a href="http://www.mobilemonday.us">mobility</a>. It doesn&#8217;t. Not yet and there&#8217;s no reason it has to. Mobility is my personal passion. I work on mobility stuff cause nothing screams &#8220;M4d Sk1llz&#8221; more than being able to IM from the train. Plus, it&#8217;ll probably be useful for something one day. (That was partial sarcasm. I love mobility, I just think it has a lot more potential than we&#8217;re currently able to get from it.)</p>
+
+<p>What&#8217;s my official role at Feedster?  Software Engineer. What kinds of projects am I working on? One of the first is making use of some of the <a href="http://varchars.com/blog/node/view/138">interfaces to the Feedster data that Ray has been working on</a> and finding out what other kinds of data you people out there would be interested in making use of. We&#8217;re planning to use the feed info interface to provide a mapping from blog link to feed url. The first usage pattern we&#8217;re trying out is turning a blogroll of links to HTML sites into an OPML file full of feed info for importing into an aggregator. Hopefully I&#8217;ll have more to post about that relatively soon. Drop me a line if you&#8217;re working on something of the sort. I&#8217;m still bringing myself up to speed in terms of what work is going on out there. I could use all the help I can get.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/13/buddybuzz-mobile-news/">BuddyBuzz Mobile News</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-13T08:03:43-08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://peterkaminski.com/">Peter Kaminski</a> mentioned <a href="http://buddybuzz.org">BuddyBuzz</a> to Elle during <a href="http://www.bloggercon.org/">Bloggercon</a>, and she came home with a flyer about it. <a href="http://www.russellbeattie.com/notebook/">Russ</a> lent me a 6600, so I figured I would try it out. It&#8217;s an interesting application. It uses the concept of rapid serial visual presentation, which means that one word is shown on the screen at a time and they&#8217;re shown in rapid sucession (for more info see <a href="http://www.geek.com/news/geeknews/2002jan/bpd20020118009836.htm">this article</a>). I do find information presented this way easier to read actually. For a news story at least. There&#8217;s no scanning the page each time you scroll and losing your place. I&#8217;ve found the experience to be quite pleasant actually. And that I can crank the speed up pretty high and still take in the story.</p>
+
+<p>The application itself is a bit clunky, and the website seems to have a bunch of bugs (or maybe it&#8217;s currently under development). But it&#8217;s worth working through the issues to see how the actual presentation of information comes thru, especially if you&#8217;re interested in mobile devices and information delivery. There is a rating system that can be used to try to find articles that best match your interest, and the site talks about social networks (although I&#8217;ve seen none of that functionality on the site or in the app), but I haven&#8217;t fooled around with anything except reading new articles. I would be really interested in seeing this turn into something more. For instance, using RSS as the delivery mechanism and <a href="http://developers.technorati.com/wiki/attentionxml">attention.xml</a> to figure out what I want to read. A mobile newsreader that could show me just the articles that friends have liked, without images, and that are under 500 words long? That would be pretty cool. I would love to see this turn into something more.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/12/10/opengardens/">OpenGardens</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-12-10T03:58:28-08:00" pubdate data-updated="true">Dec 10<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s <a href="http://www.mobile-weblog.com/archives/interview_with_ajit_jaokar_and_tony_fish.html">an interview with the authors of OpenGardens over at the Mobile Technology Weblog</a>. I&#8217;m hadn&#8217;t heard of <a href="http://www.opengardens.net">the OpenGardens book</a> before, but I would certainly like to get my hands on a copy. They say they talk about one of the issues I&#8217;ve written about a number of times: how to get an innovative mobile application out into the market given the current environment. If anyone has gotten a chance to check it out please drop me a line or leave a comment here.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/28/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/26/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

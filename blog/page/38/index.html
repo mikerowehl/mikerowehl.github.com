@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I went over to the Technorati Developers Salon on Wed, but I haven&#8217;t really had much time to sit down and write something since then. People &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/page/38/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/21/technorati/">Technorati</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-21T10:47:12-07:00" pubdate data-updated="true">May 21<span>st</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I went over to the <a href="http://developers.technorati.com/wiki/DevelopersSalon">Technorati Developers Salon</a> on Wed, but I haven&#8217;t really had much time to sit down and write something since then. People have already posted much of the information from the event. In particular I point to the info from xian, an excellent three part post that seems to have come out in realtime:</p>
+
+<ul>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/19/blogging_from_hunters_point.html">part 1</a></p></li>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/20/more_notes_from_technorati_salon.html">part 2</a></p></li>
+<li><p><a href="http://radiofreeblogistan.com/2004/05/20/technorati_developers_brainstorm.html">part 3</a></p></li>
+</ul>
+
+
+<p>There was certainly a lot of good geekiness going on, and while the technology discussion was important I think it&#8217;s been covered pretty well. So instead I&#8217;ll comment on some of the other factors of the meeting. I was talking with someone there about how it&#8217;s just not possible to catch the full content of a physical meeting like this for online consumption. Maybe I can help out a bit, fill in some of the background and give some of the details that aren&#8217;t really related to the geek end of things. Although I am interested in the Technorati API somewhat, I&#8217;m more interested in the general usefulness of tools for information exchange. Technorati is quickly becoming one of the staples of online discussion tracking, so I think it should probably be of interest to a lot more people than it already is.</p>
+
+<p>I should probably start with the basics. There&#8217;s a <a href="http://www.technorati.com/help/faq.html">FAQ at the Technorati site</a>, but I know I don&#8217;t normally find FAQs all that useful unless I have a specific bit of info I&#8217;m going after. So instead let me start with an example of Technorati usage. I normally think of the URL based search first. Go to the <a href="http://www.technorati.com">front page of Technorati</a> and you&#8217;ll see a search box. If you enter a URL into that search box you&#8217;ll get a listing of blogs which link to that URL. For example, I enter the URL http://www.bitsplitter.net/blog to see who&#8217;s linking to my blog. The result is a <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2F&amp;sub=Go%21">page like this</a>. As you can hopefully see from that, there&#8217;s a list of pages that have links to my blog. Some are people who have me on their blogroll, others have linked to posts. This is part of what people mean when they say Technorati can be used to track conversations. Say someone posts something to their blog which references a post of mine. If they posted a trackback, my blog software tells me about it. But if they haven&#8217;t used a trackback, I normally find out about their post because I see it as an incoming link to my blog. It allows me to find out when people are picking up the topics I&#8217;ve introduced, without having to read through every blog to do so (an impossible proposition at this point, there are just too many blogs). According to what Dave said, this was really the initial motivation for Technorati. He had a blog of his own, and he wanted to know who was linking to the things he said. There are other ways to get notified when people link to your posts (trackback is one, I&#8217;ll have to cover that another time), but nothing is as reliable as Technorati yet.</p>
+
+<p>Of course, it doesn&#8217;t have to be the URL of an entire blog or site that you search for. If I wanted to know who had linked to part 1 of the posts by xian that I listed above I could enter in the URL for that one post. The result is <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fradiofreeblogistan.com%2F2004%2F05%2F19%2Fblogging_from_hunters_point.html&amp;sub=Go%21">this page</a>, which lists posts that link to just that one entry. Much more convenient than searching through the <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fradiofreeblogistan.com%2F&amp;sub=Go%21">hundreds of links to Radio Free Blogistan</a> to find the conversations that I&#8217;m interested in. Note however that both operations are significant. Maybe I want just one conversation, or maybe I&#8217;m looking for more information sources and I want to find a general list of people who also point to Radio Free Blogistan. Casual users normally don&#8217;t know how to pick the right URL to put into the search in order to pull up the results they want. So some bloggers have started putting links into their post templates that can be used to retrieve the Technorati listing for a single post. See <a href="http://www.sifry.com/alerts/">Dave&#8217;s alerts</a> for an example. Those links that say &#8220;Other blogs commenting on this post&#8221; pull up the search results for just that single post. It seems like a minor point if you&#8217;re a geek and understand how it all works. But is one of those steps along the path of turning a web site into a service.</p>
+
+<p>Sure, Technorati is a web site that you can go to and type queries into. However, it&#8217;s also a set of service URLs which you can link directly from your own blog or website in order to provide your readers with up to date info. The service nature of Technorati goes deeper than this actually. They provide an API that developers can use, which in general gives very granular control of requests to Technorati. This lets developers of other websites tie in to Technorati and provide new applications without having to ask Technorati for new features. One of the recent updates is that their HTML website (the site you see when you go to <a href="http://www.technorati.com">the front page</a> and click on stuff) is actually just a thin layer of cover over the base API that they expose for developers. In the software industry this is called &#8220;eating your own dogfood&#8221;, which is applied in general to any set of developers using the tools they develop as part of their daily work. This normally leads to higher quality output because the feedback loop can have zero hops. Developers are users, so they&#8217;ll often find problems and omissions very quickly. Having this API available means that if there&#8217;s something you think the Technorati site should do that it doesn&#8217;t, you should be able to write a version that performs the way you would like it to. Assuming you know how to develop web services based applications, and that the API supports getting the information that you want. And that&#8217;s really what the final part of the Salon was about. What features should be added to the API so that developers can develop some cool new applications? A lot of the points you see listed in the other posts about the salon focus on this kind of enhancement. There was also talk about how to create a situation where Technorati either has more information that it can parse out of existing posts, or where posts can be formated in a way that allows greater information extraction. It boils down to the same thing for general usage, the more information that goes into Technorati, the more a user can expect to be able to get the services to do for them.</p>
+
+<p>The discussion kept cycling back to the question of how Technorati plans to make money. The question is still unresolved, but they mentioned advertising and subscription services as possible sources of income. I don&#8217;t want to really delve into those details too much, I just want to point out one potential business usage of Technorati. The URL that you search for doesn&#8217;t have to be the URL of a blog or a post. If I want to know what people out in the blogosphere are saying about my company, I can just search for <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.bitsplitter.net&amp;sub=Go%21">anyone linking to anything on the Bitsplitter site</a>. There&#8217;s not that much there for my company, most of that stuff is related to my blog. But just take a look at something like the <a href="http://www.technorati.com/cosmos/search.html?rank=&amp;url=http%3A%2F%2Fwww.ibm.com&amp;sub=Go%21">inbound links for IBM</a>. Information about what people are saying about a company like this can be quite valuable. Not only because it comes in so fresh, but because it gives them an extra degree of tracking they can do. Say IBM launches a new <a href="http://www.alphaworks.ibm.com/">alphaWorks</a> project and after a month suddenly sees a stampede of traffic. They can use Technorati as one factor in figuring out why it is that so many people suddenly found the site. Or even better, Technorati could alert IBM of the new postings before the stampede of traffic arrives. Of course, if you&#8217;re IBM you can always have some of your army of consultants write something that parses referrer logs to figure out after the fact where the traffic came from. But if you want that alert in advance Technorati is the best way to get it. And there could be other analysis and stats reports to go along with the alerting service. The stuff is still all up in the air of course, but I mention it because you can use the interface as it is today to check out what people are saying about your business. If you&#8217;re thinking about setting up a blog for your business you can use Technorati to check out how much extra buzz it&#8217;s generating.</p>
+
+<p>It&#8217;s not just a tool for geeks. Especially with the much more participatory nature of &#8220;the media&#8221; in general, it seems to be serving a critical role in gathering information about how your message is making it out into the public. No matter if your message is a technical discussion of how Atom requests should work or information about a new product release. So, that being said, I was kinda disappointed about the turnout. There were a lot of people there, to be sure. And the collective technical street cred of the room was well up at the high end of the scale, even for a Silicon Valley event. But I really do think this is something that hordes of people should be interested in (and maybe are interested in, but don&#8217;t know that Technorati provides what they&#8217;re looking for). I think Dave and company are doing a great job in serving the developer community. Everything about the way that they ran the salon just gave me a good impression. If you&#8217;ve read about creative destruction and want to see what it looks like in practice, come to the next salon and witness it for yourself. One possible take on the situation is that Technorati is really concentrating on enabling developers so that the developer applications provide the pull for the end users. That&#8217;s a happy place to be, and I think it jives with what I&#8217;ve seen. However, I also know that geeks aren&#8217;t always very good at creating applications which apply to and can be used by the average user. It doesn&#8217;t have to be like this of course, it just works out that experienced users and developers are frequently blind to issues that cripple normal users. I would really like to see services like this proliferate. Especially after seeing Dan Gillmor speak last night about <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1380&amp;mo=5&amp;yr=2004">We The Media</a>, a mass media structured not like a lecture but like a conversation, I think tools like this are essential. However they aren&#8217;t immediately available to the people who would like to use them. So I&#8217;ve been trying to think of applications which would enhance the impact of the decentralization of news. Apps that provide stats tracking, and detailed mapping of blog interactions are great geek tools. They&#8217;re essential for the top-down study of what&#8217;s going on. But what can we build to help news move from the edge inward, from the bottom-up? I&#8217;m not smart enough to have a good answer to that yet. Hopefully I will at some point.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/20/back-in-the-land-of-the-geeking/">Back in the Land of the Geeking</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-20T01:59:23-07:00" pubdate data-updated="true">May 20<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After two and a half weeks on the road I&#8217;m finally back in California. Of course the best way to really feel that I&#8217;ve come back home is to get into something geeky. So I walked into the door to my apartment, downloaded a map to my Clie, took a shower, and zipped right off to the Technorati Developers Salon. I&#8217;ll have to make up a separate entry for that later on, it was a good session. On my way back I was standing at the BART station on 22nd and I saw another guy with a laptop bag, so I asked if he coming from the salon also. He wasn&#8217;t, but he knew what I was talking about, so we chatted for a bit while the train came. Ahh, to be back in the Bay Area, where discussions with random strangers can revolve around the future of the Technorati API. I know the dangers involved in being surrounded by people who already know what you&#8217;re talking about all the time. Especially as a business person, it&#8217;s dangerous to never hear the objections that a complete newbie has. When everyone else you run across knows the principles you&#8217;re building on, it&#8217;s much easier for them to accept your pitch and understand the value you&#8217;re presenting. But after a long period of full immersion in the biomass it is nice to have a couple of conversations that start at geeky and quickly get more abstract.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/13/rd-and-the-innovation-curve/">R&D and the Innovation Curve</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-13T03:05:09-07:00" pubdate data-updated="true">May 13<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s a very interesting <a href="http://www.smallbusinesses.blogspot.com/archives/2004_05_01_smallbusinesses_archive.html#108429282193469092">post about the correlation between R&D; spending and profitability</a>. The post points to <a href="http://www.strategy-business.com/resilience/rr00007?pg=all">a great article at strategy+business</a>. I don&#8217;t think the news that businesses are moving from a &#8220;closed&#8221; innovation cycle (all work done within the company) to an &#8220;open&#8221; innovation cycle (where ideas in particular are pulled from outside) is very surprising. The general movement towards business models where free agents play a large role certainly seems to fit together well with the shift. I do take issue with one bit however. It relates to the innovation effectiveness curve and this bit from the text:</p>
+
+<blockquote><p>Our recent work has shown that incremental innovation investments are subject to diminishing returns &#8211; in other words, each additional dollar spent on new product development ultimately yields a lower and lower return. This observation passes the test of common sense: Spending beyond a certain point on any development portfolio should result in lower returns, &#8230;</p></blockquote>
+
+<p>I agree with the statement in general, but that curve as illustrated ignores the &#8220;beyond a certain point&#8221; part of the statement. That curve seems to show what happens if companies overspend on innovation, charting how effectiveness falls off if the company overspends. What about underspending? I would assume that effectiveness also falls off in that direction.</p>
+
+<p>I assume that the authors aren&#8217;t saying that zero spending on new product development is the way to go. It&#8217;s probably their response to previous suggestions that companies should be spending a lot more on R&D; which has shifted the focus down the line to overspending. For most of the companies I&#8217;ve worked with, overspending on product development is not the major issue. Granted, most of the companies I work with are smaller organizations, and the examples given in the article seem to be tilted towards larger companies. But I still want to say that in general the challenge to small companies that I&#8217;ve seen most often is hitting the right level of innovation. For startup companies the error seems most often to be too much stress on innovation. They plan big elaborate products and services, burn too much of their capital, and don&#8217;t have enough time or money left for the course corrections they inevitably need down the line. However, as soon as a company has a product out they tend to swing quickly back the other way. They become quickly focused on their existing customers and product lines, and tend to react negatively to any new idea they didn&#8217;t generate themselves.</p>
+
+<p>For a small company just starting out I think there is an opportunity to adjust the maximal level of innovation payoff. Not many of the companies I&#8217;ve worked with have attempted to plan their business development along this line. For a startup company it can seem ridiculous to attempt to plan for the level of innovation they want to achieve when they don&#8217;t yet have a first product. But the rate of innovation within a company is one of the major influences on the overall tempo of the business, and once the beat is set it usually gets more difficult to change as time goes on. The discussion about the innovation curve from the article says that the innovation curve for a company normally does not change. I agree, but I think that it can change. If a company is looking to alter the way it innovates they can change that curve, but just throwing money at R&D; is not going to do it. The company needs to look at alternatives like creating internal marketplaces for ideas and tying together the different stages of the innovation cycle so that divergent ideas from all areas of the business (and outside the business) can be captured and explored. I think the reason that the innovation curve doesn&#8217;t move is because so few concentrate on moving it. I think that finding the point of maximal payback and  making an effort to make that point correspond with the desired maximum is a necessary precursor to tuning performance along that curve.</p>
+
+<p>On the other hand, I do think that the comment from David Patterson is perfect:</p>
+
+<blockquote><p>If they are right, and if Godin&#8217;s concept of what really constitutes viable innovation holds water, then small businesses can look forward to new and increased markets for their ability to innovate quickly.</p></blockquote>
+
+<p>I agree with that completely. It can be tricky trying to fit within the innovation cycle however. I&#8217;ve certainly found that to be true within my industry of choice, and I&#8217;m assuming it applies to others as well. Relationships in general have to be closer. Being engaged during the innovation cycle doesn&#8217;t mean just getting a technical specification and wandering off to implement it. Many companies are looking for someone to help them think through the process as they execute it. There needs to be a lot of dialog between the parties, occurring on a number of different levels. This can be tricky to establish at first, or it has been for me at least. A company wants a new product, they want it as soon as possible, and they&#8217;re groping around for help. The temptation for me is to attempt to give them answers. However I&#8217;ve found that the right course is normally to start a conversation. Once the dialog has started the result is normally a plan which blends outside insight with hard won internal skills and core competencies. The &#8220;not invented here&#8221; syndrome is pretty easy to beat if you can come at it from the right angle.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/06/steaming-load/">Steaming Load</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-06T09:38:21-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just posted about Sem@code, which I think rocks. Since I&#8217;ve said so much good, I feel somewhat justified in bringing up <a href="http://wireless.newsfactor.com/story.xhtml?story_id=23921">this article about RFID and cell phones</a>. I can think of no appropriate words, except perhaps &#8220;steaming load of crap&#8221;. Take the quote from the article used in the post leader:</p>
+
+<blockquote><p>What if that same salesman could hit a few buttons on the car&#8217;s dashboard and have the information sent back to those applications via cell phone? Think how happy he would be to arrive home after a trip to find an accurate expense check already in the in-box.</p></blockquote>
+
+<p>Ummm.. how does RFID fit into that? I&#8217;m not sure. Maybe something get left out of that point, mistakes happen. But unfotunately everything there is just complete and total bunk. RFID adoption is getting driven completely by requirements from WalMart and the DOD. Very few people <strong>wanted</strong> to invest in the technology, they were strongarmed into adopting it. Where do all these happy RFID boosters come from? Mostly RFID consultants, people selling the tech and the services, making to look a quick buck at someone else&#8217;s expense. What happens when a technology get forced into a place without the proper amount of gestation and natural selection in the marketplace? You end up with fragile systems that cost more to maintain than they save. WalMart might save money by using RFID, the DOD might. None of their suppliers are going to save money, it&#8217;s an additional cost of doing business for them.</p>
+
+<p>So why do I want to use RFID from my cell phone? I DO think it&#8217;s a good idea. I would like to be able to identify items using my handset, and involve real world objects in data transactions. I just think this article does a terrible job of describing why one would want to do those things. I&#8217;m surprized it got picked up in so many of the news sources that I read. And, really, it disappoints me. Makes me think that people are out there shillin&#8217; for the Technology Man.. as I <a href="http://www.bitsplitter.net/blog/index.php?p=261">recently mentioned</a>. What&#8217;s the deal? Someone, please explain what about that article even bordered on competent. Comments are open.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/06/semcode/">Sem@code</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-06T08:23:47-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://semacode.org/">Sem@code</a> project has released a <a href="http://semacode.org/download/">demo for Symbian phones</a>. I <a href="http://www.bitsplitter.net/blog/index.php?p=20">posted about it at the end of last year</a>, and I still think it&#8217;s a great idea. I actually exchanged a few emails with Simon, trying to find out what he had planned for it. He&#8217;s interested in trying to make money off the idea, which is certainly a good idea. I was hoping he would be releasing the code under some kind of dual license model (ie. GPL for non-commercial use, like what <a href="http://www.mysql.com/products/licensing/">MySQL has done</a>), and that&#8217;s probably still possible. Interest in the project always helps of course, so this is my post to try to help out the project so that Simon can make some money off of it and hopefully make more of this excellent idea publicly available.</p>
+
+<p>The question I&#8217;ll answer: &#8220;So, what&#8217;s the big deal?&#8221;. Why is it important that people can scan URLs into their phone?</p>
+
+<p>The first part of course is convenience. We could of course put these urls onto stickers and just have people type them in. But even the small URLs that come out of services like <a href="http://tinyurl.com/">TinyURL</a> can be a pain to type in on a numeric keypad. People will not use services that are not convenient unless the the benefit is high enough. So by making the URL easier to get into the phone, we make it more convenient to the user, and lower the payoff that the user has to expect in order to use the service. The user might not want to type in a URL on an advertisement to find out what bands are playing at a local bar, but if they just have to point their camera and press a button they are willing to take a look. Sem@code is a service enabler implemented in software. Existing handsets designs can be used, but the new software increases the range of services the user will access. An inconvenient barrier has been removed.</p>
+
+<p>The other major benefit is that anyone can create the Sem@codes, encoding whatever URL they want. This enables <a href="http://www.bitsplitter.net/blog/index.php?p=201">public authoring</a> without requiring infrastructure on the service provider side. I think this is one of the persistent barriers to new services getting developed. Most location based services require the cooperation of handset manufacturers or service providers, neither of whom is very willing to try out new ideas until they know that they&#8217;ll be able to make a profit. And of course users aren&#8217;t willing to pay more for service or devices unless there are applications. The end result is that progress happens pretty slowly, and normally it ends up being small jumps from where we&#8217;ve been before. I personally want completely new apps, new services, new devices, completely and radically new ways of communicating and colaborating. I think lots of mobile computing ethusiasts do as well. Sem@codes allow a way for those interested in deploying location based services to do so completely on their own, without relying on any new technology being deployed or any new handset features. Sem@codes provide a open experimentation space for those interested in location based services, something that can be prototyped and deployed to a select group with very little up front investment. Kick ass. I wish Simon the best of luck with this, it&#8217;s a great concept.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/06/listening-to-users-part-iii/">Listening to Users Part III</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-06T03:16:05-07:00" pubdate data-updated="true">May 6<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>TheFeature has <a href="http://www.thefeature.com/article?articleid=100591">Listening to Users, Part III</a> posted. I really like this series of articles. My personal favorite quote from this one:</p>
+
+<blockquote><p>The operators need to let in innovation as the Web has done. If it causes viruses, then that is one of the inevitable consequences of such openness. On the social niceties, all the academic research suggests users can quickly adapt, and users who abused the system would be quickly frozen out.</p></blockquote>
+
+<p>Yay!! I&#8217;ve said things like that a bunch of times before. It&#8217;s always nice to find some external validation.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/04/technorati-developers-salon-kickoff/">Technorati Developers Salon Kickoff</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-04T02:18:33-07:00" pubdate data-updated="true">May 4<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Technorati is hosting a <a href="http://www.sifry.com/alerts/archives/000347.html">Developers Salon Kickoff</a> in San Francisco on May 19th. Although it&#8217;s called a &#8220;developers salon&#8221;, it sounds more like an open invitation to both users and developers to come and talk to the team. I&#8217;m going cause it&#8217;s an interesting tool. I like Technorati, but I haven&#8217;t used any of the <a href="http://developers.technorati.com/wiki/">development interfaces</a> yet. It&#8217;s normally a good move from the innovative technology standpoint as well. If you have a product or service that does something genuinely new, something that hasn&#8217;t been tried before, it&#8217;s good to take your developers and your users and partners, get them in the same room, and see what happens. The results can be quite surprising. So, I&#8217;m planning to go to observe the interaction as well.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/03/social-networking-social-engineering/">Social Networking, Social Engineering</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-03T08:53:41-07:00" pubdate data-updated="true">May 3<span>rd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I recently finished reading <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471237124.html">The Art of Deception</a>, and I probably should have posted about it earlier. I&#8217;ve been involved with computer security for a while, and I&#8217;ve been to a bunch of the more popular security and hacker conferences, which is the reason I&#8217;m giving to myself for the book not making a strong impression immediately. The book is very good, it brings to light many aspects of computer security that even most experts don&#8217;t know about. This should be required reading for anyone involved in computer security. That&#8217;s why I picked it up myself, despite being familiar with many of the tactics and general principles from hanging out at <a href="http://www.defcon.org/">DefCon</a> year after year. So, I&#8217;ve gotten that out of the way, it&#8217;s a good book.</p>
+
+<p>What&#8217;s stuck in my mind however has nothing to do with computer security. The question currently gnawing at me: where does social engineering stop and social/business networking start? Is the difference that the social engineer goes in looking for a particular piece of information? Well, that&#8217;s sometimes how business networking works out. A business development gambit might start out by schmoozing a potential client to find out how to best target the sales pitch. Is it that the social engineer tries to get information they&#8217;re not supposed to have? Well, social networking often involves getting a hold of &#8220;juicy&#8221; information. While that might not necessarily represent restricted info, it could certainly mean information which certain parties might not want widely distributed. And that really does equate to restricted info, just without a written policy. So is the difference that an individual engaged in social networking forms a lasting relationship while a social engineer does not? No, cause social engineers try to form recurring relationships where they can. Leaving themselves routes that they can exploit later to fulfill the same kind of service.</p>
+
+<p>The only difference I can see is that the social engineer does not use their real name, and the social networker does. I was originally going to write that as &#8220;the social engineer normally misrepresents themselves while the social networker does not&#8221;, but I don&#8217;t think that&#8217;s really true. Especially within the realm of business networking. People normally &#8220;misrepresent themselves&#8221; in terms of attempting to make their company appear more powerful or to make it seem like a fledging deal is further along than it really is. Now, of course, I&#8217;m not saying that most of the people involved in business networking are out to steal information from the people they interact with. I&#8217;m just saying that the two concepts blur together quite contiguously.</p>
+
+<p>I think that&#8217;s probably quite significant. Cause the premise of the book is that the real action in security doesn&#8217;t revolve around firewalls or intrusion detection systems or encryption or any other technology. The real weakness is in the people using those systems, and transferring information in a way that&#8217;s outside of the normal means of connection. The most &#8220;interesting&#8221; transfers of information are not those that occur along controlled lines, but the transfers which are made because someone is acting in some extraordinary way. But then take that statement and apply it to social networking applications. Do social networking applications really catch the flow of information? Well, if misrepresentation plays a big part, probably not all of it. Of course, I have no idea what percentage of exchanges are genuine and which are influenced at least in part my misinformation, so I&#8217;m not at all prepared to make a blanket statement about the impact. But I will say that years and years of computer security work are starting to result in the realization that human interaction issues dwarf technical risks in terms of the current concerns. Of course, this could be due to years and years worth of computer security work tilted too heavily toward technical issues and ignoring human factors, but that&#8217;s a whole other discussion. I&#8217;ll leave it at saying that if you think that the information you have access to is based &#8220;who you know, and who they have access to&#8221;, I urge you to at least skim through the book and read about some counterexamples. They may happen to be only a small percentage of the cases, but sometimes very interesting information patterns arise when someone is able to identify who <em>doesn&#8217;t</em> know them and how to use that to their benefit. There are some spectacular examples, but I think every information transaction is placed somewhere along the line between genuine and false. Even if most transactions are tilted strongly toward genuine, the false aspects of them taken as a whole may be very significant.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/01/we-be-schillin/">We Be Schillin&#8217;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-01T17:12:17-07:00" pubdate data-updated="true">May 1<span>st</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m about to leave for a two week business trip, so I&#8217;ve been running around all over the place. There hasn&#8217;t been time to read my normal round of feeds, let alone post anything of my own. Sorry about that, but I have to admit it might only get worse over the next few weeks. In the meantime I&#8217;ve been kicking around ideas about what kind of posts I should be putting up here when I do have some time to post again. I really liked doing the longer posts. Sure, they took longer, and sometimes didn&#8217;t work out too well, but they gave me a great chance to reflect deeply on a given topic and polish my writing skills somewhat. The shorter posts were normally just tidbits of info from sources I figured were either very interesting or significantly esoteric. The short bits encouraged me to broaden my reach some. Explore new sources so that I would have something interesting at the end of the day. But I also felt like I was just being a shill for the technology industry as a whole sometimes. And this blog is all about keeping it real. I even made up my own gang sign, cause I&#8217;m just that legit. So I think when I get back to it I&#8217;m gonna try for more of the commentary heavy posts. But all you kids out there in teevee land can lend a hand also. Drop me a line and tell me what you were into, or leave a comment, send a carrier pigeon, whatever. Just don&#8217;t tie a note to a brick and hurl it through my window, I hate it when people do that.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/04/28/how-to-hack-your-head/">How to Hack Your Head</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-04-28T12:57:41-07:00" pubdate data-updated="true">Apr 28<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have to let my geekness shine and provide a pointer to <a href="http://slate.msn.com/id/2099411/">How to Hack Your Head</a>, an article by Steven Johnson. Steven wrote Interface Culture, a book <a href="http://www.bitsplitter.net/blog/index.php?p=174">I just recently read and was quite impressed by</a>. His latest book, <a href="http://www.amazon.com/exec/obidos/ASIN/0743241657/stevenberlinj-20">Mind Wide Open: Your Brian And The Neuroscience of Everyday Life</a>, is currently high on my reading list. The article runs through some existing technologies you can use to get a peek into your brain functioning and mental state. From the sounds of it, direct neural computer interfaces seem to be quite a ways off. Even if you have a few million dollars. Awww man.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/39/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/37/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I&#8217;m Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I&#8217;ve been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I&#8217;ve been programming and working with open source projects for even longer.
+    I&#8217;m a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

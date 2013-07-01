@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: General | Miker]]></title>
+  <link href="http://rowehl.com/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://rowehl.com/"/>
+  <updated>2013-06-30T17:38:38-07:00</updated>
+  <id>http://rowehl.com/</id>
+  <author>
+    <name><![CDATA[Mike Rowehl]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Resurrection]]></title>
+    <link href="http://rowehl.com/blog/2013/02/04/resurrection/"/>
+    <updated>2013-02-04T23:29:00-08:00</updated>
+    <id>http://rowehl.com/blog/2013/02/04/resurrection</id>
+    <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I've decided to start it back
+up. I created the site cause I wanted a Wordpress install
+I could test my PalmOS based mobile blogging client against. But once I had
+the site
+up and running I started tossing all sorts of random stuff in. Everything from
+my own thoughts on <a href="/blog/2006/04/02/high-availability-nfs/">scalability</a>
+to summaries of events
+about <a href="/blog/2005/04/15/make-almost-anything/">the FabLab</a>.
+However, after a few years of tossing all sorts of random stuff in here I
+started to really focus on mobile, so I
+created a mobile specific site called
+<a href="http://thisismobility.com/blog">This is Mobility</a> so that I wouldn't have
+everything all jumbled together. Then with
+so much interesting stuff happening in mobile this blog eventually fell into
+disuse. And it's remained unused since 2006.</p>
+
+<p>Recently I've felt getting a little more randomness going again is a good
+idea. And I'm really happy I kept all these blog posts around to read,
+so I could get a peek back into my mind 10 years ago and remind myself what it
+was like. When I started reading through these posts I figured that's all I
+would do, read and then put it aside. But I realized how different my
+thought process was a few years ago. And not just cause I was young and
+naive, but because I was looking at things without the encumbrance of much
+bias. "<a href="http://en.wikipedia.org/wiki/Shoshin">Beginner's mind</a>" is probably
+the best term for it. That beginners mind
+decided that Linux and open source were a good bet for building online
+services. And that beginners mind decided that homesteading a spot in the
+mobile world was a good idea back in 2003. I wouldn't pass on getting a bit
+more of that beginners mind, and it seemed like writing
+here again could help with that process. With the site being 10 years
+old, it seemed somehow proper to bring it back.</p>
+
+<p>Of course, some updating needed to be done. While I love Wordpress for
+some things, I'm also getting tired of it getting exploited and abused cause I
+pay so little attention to it. It's my own fault for not updating it, but I
+really like the option of swapping to something I don't need to pay attention
+to instead of modifying my behavior.  So I swapped over to using
+<a href="http://octopress.org/">Octopress</a>,
+which
+uses post files written in markdown to generate the site as a static set of
+pages (hat tip to <a href="http://fusion94.org/">Tony</a> for the suggestion).
+Thanks to a fantastic set of scripts called
+<a href="https://github.com/thomasf/exitwp">exitwp</a> I was able to move
+an export of my Wordpress data right into Octopress friendly format.
+Yay! That should be the end of Viagra and Levitra ads randomly
+appearing at the end of my posts. And as a bonus I can publish the whole thing
+through Github Pages, and store the source in Github. Which I was doing with
+the rowehl.com site anyway, but had to take special care to backup the
+database to keep blog posts safe. Now it's all just one repo.
+And cause the pages are hosted directly off Github, when I crash
+my personal server doing Linux distro hackery I don't take down rowehl.com.</p>
+
+<p>Also nice about Octopress - the default profile takes a responsive
+approach. So now my personal blog looks better on mobile than my mobile
+focused blog. With the way the Octopress templates and plugins are
+structured it was pretty easy to make some style changes, swap in some fonts
+that make the site look a little less amateur hour. I got rid of commenting
+all together and have added some share buttons instead, cause that's how the
+world works now. Everyone already has their own place to speak, so why put
+their thoughts into my database? And again, once less thing for me to worry
+about.</p>
+
+<p>In the end, actually not much effort at all. And I'm really happy with how it
+works. Now I have a place to write about all that other
+not-specifically-mobile stuff like cool bits of open source, programming,
+emerging technologies, and startups. And to remind myself just how far things
+have come, I dug up and posted the
+<a href="https://github.com/mikerowehl/vagablog">source code</a> to the Treo650 blogging
+app that kicked this whole thing off 10 years ago.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
+    <link href="http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
+    <updated>2006-09-20T05:01:18-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
+    <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, "there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up". A bunch  of searching around in the repository listings turned up no java license related packages.</p>
+
+<p>You find where <a href="http://www.aspma.com/downloads/">download mp3 music</a> on player, You need <a href="http://www.aspma.com/download/">mp3 music download</a> from online mp3 archive</p>
+
+<p>So I did a search and ended up with <a href="https://jdk-distros.dev.java.net/ubuntu.html">this description of installing Java under Ubuntu</a> which says pretty much what I was doing, except using the graphical package manager instead. "How lame would it be if you needed to install Java using the Synaptic package manager instead of the command line?" Not lame enough to discourage doing it apparently. If you're looking to install Java under Ubuntu you might have to use the package manager instead of apt-get in order to do it. Next time you see Java people throw rotten fruit at them to let them know how you feel about that.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
+    <link href="http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
+    <updated>2006-09-18T16:21:23-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
+    <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee's Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke's over. You can make it stop.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
+    <link href="http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
+    <updated>2006-09-18T06:16:12-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
+    <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I'm looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don't want to start mucking around now that I've just started accepting I don't need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
+
+<p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn't cause any problems I'll put it in here at work too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Subversion Book]]></title>
+    <link href="http://rowehl.com/blog/2006/09/15/subversion-book/"/>
+    <updated>2006-09-15T02:46:37-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/15/subversion-book</id>
+    <content type="html"><![CDATA[<p>I've been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
+
+<blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>
