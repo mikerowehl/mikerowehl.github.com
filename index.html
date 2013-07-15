@@ -9,8 +9,9 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="How do you start introducing some testing if you have a huge group of existing
-projects, for the most part all implemented using different languages &hellip;">
+  <meta name="description" content="A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
+the Momentum accelerator to talk about
+scaling technology. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,95 @@ projects, for the most part all implemented using different languages &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-14T17:41:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
+<a href="http://momentum.mobilemonday.us/">the Momentum accelerator</a> to talk about
+scaling technology. While we were talking I pointed folks to a few posts and videos of
+talks I consider to be some of the root nodes of a lot of other conversations. I&#8217;m not
+sure I&#8217;ve ever pulled this together before.</p>
+
+<ul>
+<li><a href="http://blip.tv/oreilly-velocity-conference/velocity-09-john-allspaw-10-deploys-per-day-dev-and-ops-cooperation-at-flickr-2297883">Allspaw/Hammond - 10+ Deploys Per Day</a></li>
+<li><a href="http://www.slideshare.net/deimos/randy-shoup-ebays-architectural-principles">Randy Shoup - Ebay&#8217;s Architectural Principles</a></li>
+<li><a href="http://akfpartners.com/techblog/2008/05/08/splitting-applications-or-services-for-scale/">AKF Partners - Splitting Applications or Services for Scale</a></li>
+<li><a href="http://highscalability.com/">High Scalability</a></li>
+<li><a href="http://techblog.netflix.com/">Netflix Tech Blog</a></li>
+</ul>
+
+
+<p>That Allspaw/Hammond presentation is the most primary in my opinion. It&#8217;s the talk
+that lots of us consider to be the inflection point of the devops movement, when the
+practice started to really gain visibility. What had previously been a random
+collection of techniques we didn&#8217;t have a great way to refer to became &#8220;devops&#8221;.
+There&#8217;s a ton of useful information in that presentation. Not just the overall
+concepts of dev and ops working together with a different kind of coupling, but some
+specific tools to make that happen like shared metrics, feature flags, and shipping
+dark.</p>
+
+<p>The presentation from Randy Shoup has also withstood the test of time fantastically
+well. The four architectural principles are great top level items: partition
+everything, async everywhere, automate everything, remember everything fails. And the
+presentation from AKF Partners dives into a bunch more detail about how to partition
+services so that you can just throw hardware at problems. That model also provides a
+lot of the basis for most of the conversations I end up having about geographic
+distribution of services (which actually sounds exactly like a discussion about how
+to design the I/O layer of an operating system, you just swap terminology).</p>
+
+<p>The High Scalability and Netflix blogs provide great concrete examples of what some
+of the problems and solutions look like. Principles are great, but like always
+there&#8217;s more than one way to do it. So it&#8217;s great to have some concrete examples to
+poke through. Plus Netflix being one of the pioneers of the static AMI methodology
+of infrastructure automation it makes their approaches particularly strongly
+opinionated.</p>
+
+<p>The platforms themselves have changed the level of abstraction you need to work at
+when putting this stuff into practice. Thanks to MongoDB and Riak we don&#8217;t have to
+wrapper tons of instances of MySQL or Postgres to make a datastore that scales
+horizontally. And thanks to services like Elastic Beanstalk, Heroku, and EngineYard
+we don&#8217;t have to pay as much attention to how to distribute load across multiple
+application servers. But even though you can count on your platform to remove a
+bunch of the details in some cases, it&#8217;s a good idea to understand the principles.
+First of all cause it&#8217;s possible to misuse the platform and end up not
+getting the full advantage you could. But also because platforms can only help out
+so far. Eventually you need to crack open the abstractions and either continue
+with an application optimized line of evolution, or figure out how to wrapper
+additional layers of capability around what the base platform provide. In either
+case at least being aware of the principles your underlying platforms are working
+on will pay back hugely.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -740,42 +830,6 @@ app that kicked this whole thing off 10 years ago.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/06/hilton-ninja/">Hilton Ninja</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-06T02:25:19-07:00" pubdate data-updated="true">Sep 6<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -814,6 +868,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
@@ -827,10 +885,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>

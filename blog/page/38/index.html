@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I went over to the Technorati Developers Salon on Wed, but I haven&#8217;t really had much time to sit down and write something since then. People &hellip;">
+  <meta name="description" content="It&#8217;s really more of a proof of concept than a first version, which is why I&#8217;ve given it the release number 0.1, but I have an app that I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/05/23/palmatom-initial-release/">PalmAtom Initial Release</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-05-23T18:17:13-07:00" pubdate data-updated="true">May 23<span>rd</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&#8217;s really more of a proof of concept than a first version, which is why I&#8217;ve given it the release number 0.1, but I have an app that I&#8217;ve successfully used to post Atom from a Palm device. I was feeling really creative, so I named it <a href="http://www.bitsplitter.net/palmatom/">PalmAtom</a>. It does lots of things wrong, but I&#8217;ve decided to release it anyway. There&#8217;s this credo of &#8220;release early, release often&#8221; that runs through open source in general. Problem is, developing for the Palm can be a real pain, so Palm projects don&#8217;t get all that much contribution. Palm doesn&#8217;t seem to really care for open source developers these days either, which has made some of the few remaining ones less than pleasant to deal with. But Treos are turning up all over the place here in the US, so I figured this might make for an interesting tool. I really do think this whole shift in media consumption style and production techniques is pretty important, as I <a href="http://www.bitsplitter.net/blog/index.php?p=269">mentioned the other day</a>. And I do want to do something about it. I also happen to have this belief that these poor wireless and handheld devices currently available are second class citizens at best. So I&#8217;m trying to figure out what I can do to move the media revolution out of the office and into the streets.</p>
+
+<p>This isn&#8217;t a user ready application by any means. I would recommend picking it up if you want to hack on it, or maybe if you want an example in C of how to do Atom authentication, but not if you&#8217;re a normal user looking for an application to post with. Not yet. Still, I was pretty happy about being able to hack the thing together in just a few hours. I ripped the SHA1 code out of <a href="http://gnukeyring.sourceforge.net/">Keyring for Palm OS</a>, base64 is a public domain implementation taken from <a href="http://xmlrpc-epi.sourceforge.net/">xmlrpc-epi</a>, and the http stuff is a <a href="http://www.bitsplitter.net/PalmHTTP/">library I released a while ago</a>. Not too shabby. Course, I&#8217;ve spent a while mucking around with an Atom example in Python, so I was pretty familiar with what I had to do. Hopefully over the next few weeks I&#8217;ll have time to clean up the implementation and make it somewhat user friendly. Even more hopefully, some people out there in wonderland will send me some patches so I don&#8217;t have to write all the crud myself.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -456,42 +494,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/04/28/how-to-hack-your-head/">How to Hack Your Head</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-04-28T12:57:41-07:00" pubdate data-updated="true">Apr 28<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have to let my geekness shine and provide a pointer to <a href="http://slate.msn.com/id/2099411/">How to Hack Your Head</a>, an article by Steven Johnson. Steven wrote Interface Culture, a book <a href="http://www.bitsplitter.net/blog/index.php?p=174">I just recently read and was quite impressed by</a>. His latest book, <a href="http://www.amazon.com/exec/obidos/ASIN/0743241657/stevenberlinj-20">Mind Wide Open: Your Brian And The Neuroscience of Everyday Life</a>, is currently high on my reading list. The article runs through some existing technologies you can use to get a peek into your brain functioning and mental state. From the sounds of it, direct neural computer interfaces seem to be quite a ways off. Even if you have a few million dollars. Awww man.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/39/">&larr; Older</a>
@@ -532,6 +534,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
@@ -545,10 +551,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/">Ubuntu - Sun JDK Graphical Install Only?</a>
       </li>
     
   </ul>
