@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-07-14T18:40:45-07:00</updated>
+  <updated>2013-09-19T20:04:09-04:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -14,9 +14,115 @@
 
   
   <entry>
+    <title type="html"><![CDATA[knife-block for Chef Testing]]></title>
+    <link href="http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing/"/>
+    <updated>2013-09-19T12:17:00-04:00</updated>
+    <id>http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing</id>
+    <content type="html"><![CDATA[<p>A few weeks ago <a href="https://github.com/nathenharvey">Nathen Harvey</a> was kind
+enough to stop by and give us a critique of how we do Chef automated testing
+and some workflow suggestions. We had been using chef-solo
+to do some of the recipe development and automated testing, but all our real
+deployments were done using chef-client. And the differences
+between solo runs and chef-client runs kept biting us. We had seen the stuff
+Lookout Mobile has done to
+<a href="http://hackers.lookout.com/2012/04/cookout-at-lookout-with-chef/">run a VM for the chef server</a>
+in addition to the node during testing. But that seemed like an awful lot of
+overhead. Fortunately Nathen gave us the awesome hack of using different
+organizations for the different developers of chef rules, different
+organizations for CI, and then the production organization. That gives us
+complete isolation of the different working areas, but still keeps setup
+relatively simple. w00T!</p>
+
+<p>His suggestion was to use
+<a href="https://github.com/greenandsecure/knife-block">the knife-block plugin</a>
+to make swapping around between organizations easier. Definitely an awesome
+tool, and very useful. But we ran into a few issues because
+knife-block uses a different method for finding it&#8217;s knife.rb file than the
+knife command does. So I pushed up a
+<a href="https://github.com/mikerowehl/knife-block">fork of the original knife-block code</a>
+with a change to how it picks up the configuration location. This version uses
+the Chef::Knife config loader to find the actual configuration being used,
+and uses that directly. In the original version it borrowed a function from
+Chef, but that function tried to find knife config by looking for a .chef
+directory somewhere in the parent directories on the filesystem. The real
+Chef config loader looking in a bunch of additional places.
+So the result was that if you had your
+config in ~/.chef and ran your knife block commands from your home dir it worked
+fine, but if you cd into /tmp suddenly your knife block commands
+would freak out.</p>
+
+<p>Once I dug in and saw what was going on, I figured it would be pretty easy to
+fix up. After looking at the Chef code it became obvious why the knife-block
+stuff did things the way it did. I hate to have to monkey patch to get things
+to work, but the change is actually pretty trivial. I ended up
+<a href="https://github.com/mikerowehl/knife-block/blob/494b8c08a45c17c1335a97e4a6a6b08ecdc73c11/lib/chef/knife/block.rb">injecting a get_config_file method</a>
+into Chef::Knife so that once I constructed a Knife object I could ask it for
+the location of the chef config file. Now if knife itself works, I&#8217;m sure
+knife-block will end up pulling config from the same location. Useful for when
+I need to login to the CI server and poke around to do some debugging
+(Bamboo stores the test files outside of the home directory of the bamboo
+user in our configuration).</p>
+
+<p>For the testing itself we use some Vagrantfiles with definitions of the
+different server types we have. Knife-block provides a nice easy way for me
+to test against an mrowehl organization, and then use a devops-test
+organization for some automated validation, and finally swap to the prod
+organization to push stuff up live. So of course I want to be able to use
+the Vagrantfile when I&#8217;m testing locally and developing recipes, and use the
+same Vagrantfile on the Bamboo server with the devops-test organization to
+validate that everything is working. I didn&#8217;t want to have to go in and edit
+the chef-client provisioner config to swap organizations though, and using
+something like environment variables to drive it just seemed really ugly.
+Fortunately we ran across
+<a href="https://coderwall.com/p/dt1idw">this post about pulling vagrant chef-client config from knife.rb</a>
+and ended up putting together
+<a href="https://gist.github.com/mikerowehl/6631396">our Vagrantfiles so they automatically follow where knife-block is pointed</a>.
+Together with the changes in the Vagrant 1.3 series releases to automatically
+remove node and client from the server when you do a &#8216;vagrant destroy&#8217; it
+makes for an awesome testing setup. Just use knife block to swap around to
+different organizations and up/destroy your boxes as much as you want,
+your wanton path of destruction just gets all swept up automatically behind
+you.</p>
+
+<p>With the vagrant config hackery in place it doesn&#8217;t matter what
+organization we want to test against, the text
+of the Vagrantfile can stay the same as long as knife is pointed to the right
+place. That made it pretty trivial to put together a simple
+<a href="https://gist.github.com/mikerowehl/6631010">wrapper Rakefile to clear and populate the organizations</a>.
+With those wrappers all our Bamboo server has to do is:</p>
+
+<ul>
+<li>grab the latest from our chef-repo with git</li>
+<li>&#8216;knife block use devops&#8217; to swap to our test organization</li>
+<li>&#8216;rake delete_all&#8217; to clean out the test organization</li>
+<li>&#8216;rake upload_all&#8217; to put all the new cookbooks in place</li>
+<li>&#8216;vagrant up&#8217; for the actual test</li>
+<li>and then a run always ending task to &#8216;vagrant destroy -f&#8217;</li>
+</ul>
+
+
+<p>Fortunately the vagrant up command returns the exit status of the chef-client
+run as the status for the command, so picking up failures is pretty trivial.</p>
+
+<p>Of course, this stuff isn&#8217;t perfect. The tests always run in our &#8216;dev&#8217;
+environment, which has the cookbook versions unpinned. That&#8217;s how we can clean
+out and reload the organization each time without it causing trouble. Of
+course if you had pinned cookbook versions you would have to add in some logic
+to make sure you could load the proper version each time you reload. But for
+our current level of complexity, just knowing that the latest batch of changes
+doesn&#8217;t completely break is an awesome start.</p>
+
+<p>It&#8217;s not quite ready for a release yet, but I&#8217;ve also got
+<a href="http://www.packer.io/">some Packer templates</a> which converge a node using
+chef-client and export the Vagrant friendly box so I can distribute the VM.
+Once I have them cleaned up a bit I&#8217;ll post those too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Scaling Technology]]></title>
     <link href="http://rowehl.com/blog/2013/07/14/scaling-technology/"/>
-    <updated>2013-07-14T17:41:00-07:00</updated>
+    <updated>2013-07-14T17:41:00-04:00</updated>
     <id>http://rowehl.com/blog/2013/07/14/scaling-technology</id>
     <content type="html"><![CDATA[<p>A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
 <a href="http://momentum.mobilemonday.us/">the Momentum accelerator</a> to talk about
@@ -78,7 +184,7 @@ on will pay back hugely.</p>
   <entry>
     <title type="html"><![CDATA[Consistent Test Methodology for Inconsistent Projects]]></title>
     <link href="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/"/>
-    <updated>2013-05-28T23:43:00-07:00</updated>
+    <updated>2013-05-28T23:43:00-04:00</updated>
     <id>http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects</id>
     <content type="html"><![CDATA[<p>How do you start introducing some testing if you have a huge group of existing
 projects, for the most part all implemented using different languages and
@@ -167,7 +273,7 @@ to production. But at least there&#8217;s movement in the right direction now.</
   <entry>
     <title type="html"><![CDATA[Why I Suck at Angel Investing, and My Plan]]></title>
     <link href="http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing/"/>
-    <updated>2013-03-09T21:23:00-08:00</updated>
+    <updated>2013-03-09T21:23:00-05:00</updated>
     <id>http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing</id>
     <content type="html"><![CDATA[<p>I&#8217;ve done a bunch of angel investing over the last few years. And I&#8217;ve decided
 I&#8217;m no good at it. The market, so far, seems to agree with me. Most of the
@@ -274,7 +380,7 @@ being a lot more low volume than I have been in the past.</p>
   <entry>
     <title type="html"><![CDATA[Use of Time]]></title>
     <link href="http://rowehl.com/blog/2013/02/06/use-of-time/"/>
-    <updated>2013-02-06T12:48:00-08:00</updated>
+    <updated>2013-02-06T12:48:00-05:00</updated>
     <id>http://rowehl.com/blog/2013/02/06/use-of-time</id>
     <content type="html"><![CDATA[<p>I love the idea behind social media services, helping to connect people and
 strengthen relationships. However I don&#8217;t think most are actually fulfilling
@@ -367,7 +473,7 @@ social tools were standing in the way.</p>
   <entry>
     <title type="html"><![CDATA[Resurrection]]></title>
     <link href="http://rowehl.com/blog/2013/02/04/resurrection/"/>
-    <updated>2013-02-04T23:29:00-08:00</updated>
+    <updated>2013-02-04T23:29:00-05:00</updated>
     <id>http://rowehl.com/blog/2013/02/04/resurrection</id>
     <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I&#8217;ve decided to start it back
 up. I created the site cause I wanted a Wordpress install
@@ -444,7 +550,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
     <link href="http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
-    <updated>2006-09-20T05:01:18-07:00</updated>
+    <updated>2006-09-20T08:01:18-04:00</updated>
     <id>http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
     <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, &#8220;there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up&#8221;. A bunch  of searching around in the repository listings turned up no java license related packages.</p>
 
@@ -457,7 +563,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
-    <updated>2006-09-18T16:21:23-07:00</updated>
+    <updated>2006-09-18T19:21:23-04:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
     <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee&#8217;s Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke&#8217;s over. You can make it stop.</p>
 ]]></content>
@@ -466,7 +572,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
-    <updated>2006-09-18T06:16:12-07:00</updated>
+    <updated>2006-09-18T09:16:12-04:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
     <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
 
@@ -477,7 +583,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Subversion Book]]></title>
     <link href="http://rowehl.com/blog/2006/09/15/subversion-book/"/>
-    <updated>2006-09-15T02:46:37-07:00</updated>
+    <updated>2006-09-15T05:46:37-04:00</updated>
     <id>http://rowehl.com/blog/2006/09/15/subversion-book</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
 
@@ -487,9 +593,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[You've Stayed Up Too Late When]]></title>
-    <link href="http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when/"/>
-    <updated>2006-09-09T21:15:47-07:00</updated>
-    <id>http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when</id>
+    <link href="http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when/"/>
+    <updated>2006-09-10T00:15:47-04:00</updated>
+    <id>http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when</id>
     <content type="html"><![CDATA[<p>You know you&#8217;ve acidentally let your bedtime slip too close to sunrise when you&#8217;re flipping through the onscreen TV guide and MTV actually lists &#8220;Music Videos&#8221; as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you&#8217;ve somehow ended up in the 80&#8217;s.  Flock of Seagulls anyone?  Don&#8217;t laugh, they&#8217;re <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
 ]]></content>
   </entry>
@@ -497,7 +603,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Hilton Ninja]]></title>
     <link href="http://rowehl.com/blog/2006/09/06/hilton-ninja/"/>
-    <updated>2006-09-06T02:25:19-07:00</updated>
+    <updated>2006-09-06T05:25:19-04:00</updated>
     <id>http://rowehl.com/blog/2006/09/06/hilton-ninja</id>
     <content type="html"><![CDATA[<p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
 ]]></content>
@@ -506,7 +612,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[HOPE Six Audio Online]]></title>
     <link href="http://rowehl.com/blog/2006/08/25/hope-six-audio-online/"/>
-    <updated>2006-08-25T02:57:27-07:00</updated>
+    <updated>2006-08-25T05:57:27-04:00</updated>
     <id>http://rowehl.com/blog/2006/08/25/hope-six-audio-online</id>
     <content type="html"><![CDATA[<p>The full <a href="http://www.hopenumbersix.net/speakers.html">set of audio from the HOPE six conference</a> is online now. The conf happened just before DEFCON and I hear it has some fantastic stuff that didn&#8217;t show up in Vegas. Download and share!</p>
 ]]></content>
@@ -515,7 +621,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[http_load for Request Replay]]></title>
     <link href="http://rowehl.com/blog/2006/08/23/http_load-for-request-replay/"/>
-    <updated>2006-08-23T16:05:49-07:00</updated>
+    <updated>2006-08-23T19:05:49-04:00</updated>
     <id>http://rowehl.com/blog/2006/08/23/http_load-for-request-replay</id>
     <content type="html"><![CDATA[<p>The <a href="http://talks.php.net/show/oscon06/0">presentation that Rasmus gave at OSCON</a> this year seems to have kicked some ass. I missed the conf, but got a bunch of interesting info from the slides. In particular I hadn&#8217;t used <a href="http://www.acme.com/software/http_load/">http_load</a> before. Part of what I&#8217;ve been doing at AdMob is taking a look at performance and scaling, so that was a great find. It&#8217;s exactly the set of controls and measurements I normally start out with, and it really does run very efficiently in terms of not loading down the system that http_load is running on.</p>
 
@@ -525,9 +631,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Linux Lappy]]></title>
-    <link href="http://rowehl.com/blog/2006/08/17/linux-lappy/"/>
-    <updated>2006-08-17T23:23:23-07:00</updated>
-    <id>http://rowehl.com/blog/2006/08/17/linux-lappy</id>
+    <link href="http://rowehl.com/blog/2006/08/18/linux-lappy/"/>
+    <updated>2006-08-18T02:23:23-04:00</updated>
+    <id>http://rowehl.com/blog/2006/08/18/linux-lappy</id>
     <content type="html"><![CDATA[<p>It&#8217;s just about New Laptop Time. Not quite, but almost. Being a Linux only user it&#8217;s always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you&#8217;re thinking about picking up at deep discount from Office Max certainly has not. And I&#8217;m not a dual-booter either. I don&#8217;t have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it&#8217;s my personal laptop, which is what I plan for this to be.</p>
 
 <p>Currently I&#8217;m leaning very heavily toward <a href="http://www.thinkwiki.org/wiki/Category:X41_Tablet">the Thinkpad X41 tablet</a>. It looks like there&#8217;s good X support for a bunch of stuff that&#8217;s traditionally a pain in the ass under Linux. Screen rotation seems to be working (without restarting X, thank god), the input driver for the touchscreen, power management (including frequency scaling), and wireless using ipw2200. Anyone out there with an X41 tried Linux and care to toss in some comments before I pick one of the things up? It&#8217;s hard to tell from wiki postings just how painful is it to get the thing actually setup, and there&#8217;s always the chance that the instructions on the wiki are wrong or incomplete.</p>
@@ -538,9 +644,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[ZeroOne San Jose Art Festival]]></title>
-    <link href="http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival/"/>
-    <updated>2006-08-06T23:29:07-07:00</updated>
-    <id>http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival</id>
+    <link href="http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival/"/>
+    <updated>2006-08-07T02:29:07-04:00</updated>
+    <id>http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival</id>
     <content type="html"><![CDATA[<p>This week (August 7th to 13th 2006) is the <a href="http://www.01sj.org/">ZeroOne Arts Festival in San Jose</a>. There was a <a href="http://www.futuresalon.org/2005/02/art_on_the_edge.html">great presentation at Future Salon by one of the ZeroOne staff members</a> where he tossed out a dizzying number of art projects that blend in technology in tantalizing ways. And if the interesting art projects weren&#8217;t enough to get you down there on their own, on Friday there&#8217;s a <a href="http://01sj.org/content/view/217/52/">Survival Research Labs</a> exhibition:</p>
 
 <blockquote><p>&#8230;it’s monster machine, meets hovercraft, meets huge sculptural creatures, meets fire.</p></blockquote>
@@ -552,7 +658,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Diet of Monkey Chow]]></title>
     <link href="http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow/"/>
-    <updated>2006-06-06T06:06:28-07:00</updated>
+    <updated>2006-06-06T09:06:28-04:00</updated>
     <id>http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow</id>
     <content type="html"><![CDATA[<p>This is pure genius! I&#8217;m so disappointed I didn&#8217;t think of it first. A guy trying to <a href="http://www.angryman.ca/monkey.html">live on a diet of pelletized monkey food</a>. FANTASTIC! If it works and he doesn&#8217;t die I&#8217;m definitely doing it. If he does die&#8230; I give myself about a 50-50 chance of still trying it. I should start a run of packaging for the new <a href="http://en.wikipedia.org/wiki/Bachelor_Chow#Bachelor_Chow">Futurama style &#8220;Bachelor Chow&#8221;</a> product just in case. I&#8217;ll probably have to wait a while to add flavor however.</p>
 ]]></content>
@@ -561,7 +667,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Quarter of a Million Spam Messages]]></title>
     <link href="http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages/"/>
-    <updated>2006-06-05T00:00:52-07:00</updated>
+    <updated>2006-06-05T03:00:52-04:00</updated>
     <id>http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages</id>
     <content type="html"><![CDATA[<p>I&#8217;m at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by <a href="http://akismet.com/">Akismet</a> so far. I <a href="http://www.rowehl.com/blog/?p=605">turned Akismet on in January of this year</a>. That&#8217;s more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.</p>
 
@@ -572,7 +678,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[The Web 2.0 Cease and Desist and Self Healing Systems]]></title>
     <link href="http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/"/>
-    <updated>2006-05-25T08:40:29-07:00</updated>
+    <updated>2006-05-25T11:40:29-04:00</updated>
     <id>http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems</id>
     <content type="html"><![CDATA[<p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
 
@@ -585,22 +691,9 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[George Bush Jr More Evil Than Cthulhu]]></title>
     <link href="http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu/"/>
-    <updated>2006-04-21T03:04:39-07:00</updated>
+    <updated>2006-04-21T06:04:39-04:00</updated>
     <id>http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu</id>
     <content type="html"><![CDATA[<p>Wow, folks really hate this <a href="http://lesserevil.ning.com/detail.php?DetailID=425486">George Bush Jr.</a> guy. You would think he roamed around in the streets killing puppies and kicking children or something. I check out the stats for <a href="http://browse.ning.com/any/miker/any/any">all my Ning apps</a> on a daily basis. Cause I&#8217;m vain, no sense in trying to justify it with anything else. And <a href="http://lesserevil.ning.com">LesserEvil</a> had a bunch of hits from Google image searches, searches for Georgie there. So I pull up his detail page and what do I see? &#8220;Cthulhu is less evil than George Bush Jr. 100% of the time.&#8221; Wow, that&#8217;s pretty evil. Or maybe it&#8217;s just interesting commentary on the mindset of folks in the &#8220;online and searching for random stuff cause I have that kind of time on my hands&#8221; segment of the population.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[More Jerry Taylor]]></title>
-    <link href="http://rowehl.com/blog/2006/04/02/more-jerry-taylor/"/>
-    <updated>2006-04-02T22:51:06-07:00</updated>
-    <id>http://rowehl.com/blog/2006/04/02/more-jerry-taylor</id>
-    <content type="html"><![CDATA[<p>Some <a href="http://www.tuttletimes.com/siteSearch/apstorysection/local_story_088201244.html">additional info about the politician who incorrectly threatened CentOS with FBI action</a>. Gotta love this:</p>
-
-<blockquote><p>“This is just a bunch of freaks out there that don’t have anything better to do,” he said. “When I came in to work Monday morning, I had about 500 e-mails, plus anonymous phone calls from all the geeks out there. [CentOS is] a free operating system that this guy gives away, which tells you how much time he’s got on his hands.”</p></blockquote>
-
-<p>Nice, very nice. Unfortunately we can&#8217;t all resort to threats and scare tactics to get our work done for us. Or can we&#8230;.?</p>
 ]]></content>
   </entry>
   

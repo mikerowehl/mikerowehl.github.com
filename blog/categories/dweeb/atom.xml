@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Dweeb | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/dweeb/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-07-14T18:40:45-07:00</updated>
+  <updated>2013-09-19T20:04:09-04:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[HOPE Six Audio Online]]></title>
     <link href="http://rowehl.com/blog/2006/08/25/hope-six-audio-online/"/>
-    <updated>2006-08-25T02:57:27-07:00</updated>
+    <updated>2006-08-25T05:57:27-04:00</updated>
     <id>http://rowehl.com/blog/2006/08/25/hope-six-audio-online</id>
     <content type="html"><![CDATA[<p>The full <a href="http://www.hopenumbersix.net/speakers.html">set of audio from the HOPE six conference</a> is online now. The conf happened just before DEFCON and I hear it has some fantastic stuff that didn't show up in Vegas. Download and share!</p>
 ]]></content>
@@ -25,7 +25,7 @@
   <entry>
     <title type="html"><![CDATA[Picture of the Enzo Driver]]></title>
     <link href="http://rowehl.com/blog/2006/02/23/picture-of-the-enzo-driver/"/>
-    <updated>2006-02-23T05:33:26-08:00</updated>
+    <updated>2006-02-23T08:33:26-05:00</updated>
     <id>http://rowehl.com/blog/2006/02/23/picture-of-the-enzo-driver</id>
     <content type="html"><![CDATA[<p>Most of you have probably heard about <a href="http://www.edmunds.com/insideline/do/News/articleId=109393">the Enzo Ferrari crash yesterday</a>. Sad sad thing to see such a beautiful car destroyed. If you're feeling like gawking you can check out the <a href="http://www.jalopnik.com/cars/news/more-on-the-enzo-incident-on-pch-with-photos-156121.php">pictures of the crash site here</a>. Fortunately I can also bring you exclusive coverage, one of my friends down in the area snapped a pic of the real Enzo driver as he escaped into the woods:</p>
 
@@ -36,7 +36,7 @@
   <entry>
     <title type="html"><![CDATA[100 Cups of Coffee]]></title>
     <link href="http://rowehl.com/blog/2006/01/05/100-cups-of-coffee/"/>
-    <updated>2006-01-05T03:38:23-08:00</updated>
+    <updated>2006-01-05T06:38:23-05:00</updated>
     <id>http://rowehl.com/blog/2006/01/05/100-cups-of-coffee</id>
     <content type="html"><![CDATA[<p>I started using <a href="http://www.43things.com">43Things</a> finally, and one of my goals is to <a href="http://www.43things.com/things/view/301170">drink 100 cups of coffee</a>. This is in homage to <a href="http://www.gotfuturama.com/Information/Capsules/4ACV16/">the Futurama episode where Fry drinks 100 cups of coffee</a> and reaches some kind of enlightenment. Sure, it's a cartoon and all, but it still looked like fun. And I think it's important to have goals, no matter how inane they might be. Most people say something like "you know it is possible to overdose on caffeine?" or "that would probably kill you". Generally discouraging remarks. But thanks to Wikipedia I think I might be looking at a plausible goal. Check out the <a href="http://en.wikipedia.org/wiki/Caffeine">caffeine entry</a>:</p>
 
@@ -49,7 +49,7 @@
   <entry>
     <title type="html"><![CDATA[Lesser Evil]]></title>
     <link href="http://rowehl.com/blog/2005/10/26/lesser-evil/"/>
-    <updated>2005-10-26T10:21:51-07:00</updated>
+    <updated>2005-10-26T13:21:51-04:00</updated>
     <id>http://rowehl.com/blog/2005/10/26/lesser-evil</id>
     <content type="html"><![CDATA[<p>One of the things I hear pretty often is "sometimes you just have to go with the lesser evil". Now, granted, I probably tend to get myself into situations that would spark that remark more often than is normal. But I'm sure most of you have heard it somewhere along the line. It's not like that really solves anything though. Evil is supposed to be all trixie and insidious. Make you think you're doing good when you're really doing evil. The ol' bait and switch. If I knew which was the lesser evil I wouldn't be pondering in the first place. So instead of pondering I just built an app to help: <a href="http://lesserevil.ning.com">Lesser Evil</a>. So that I can find out what everyone else's take on Lesser Evil is. Should help right around election time. And I threw Cthulhu and Evil Lincoln in there as controls, cause everyone knows nothings really more evil than Evil Lincoln except Cthulhu. So if they end getting voted the lesser evil I know all you people are lying.</p>
 ]]></content>
@@ -58,7 +58,7 @@
   <entry>
     <title type="html"><![CDATA[Coroutines (Navel Gazing Warning)]]></title>
     <link href="http://rowehl.com/blog/2005/10/07/coroutines-navel-gazing-warning/"/>
-    <updated>2005-10-07T20:42:18-07:00</updated>
+    <updated>2005-10-07T23:42:18-04:00</updated>
     <id>http://rowehl.com/blog/2005/10/07/coroutines-navel-gazing-warning</id>
     <content type="html"><![CDATA[<p><a href="http://it.slashdot.org/article.pl?sid=05/10/06/2223232&amp;from=rss">This mention of lightweight cooperative multithreading and coroutines</a> caught my eye for some reason. Maybe cause it's been a while since I wrote anything in C and I got a patch this morning for one of my open source palm programs. Which of course got me thinking about programs that write programs, a concept which gets discovered and rediscovered often enough that I think I've seen it about a half dozen times in my relatively short career. Given <a href="http://www.ning.com">the new gig</a> I've been thinking a lot about domain specific languages, abstraction, and metaprogramming. In particular I've been thinking about the tradeoffs between mature systems that exhibit good abstraction and the cut-and-paste reuse that most people instinctively sneer at. Programming in C actually tends to mix the two styles quite a bit. C code tends to be maleable because of the tools available to shape it, the (often abused) macro facility, and the ability to do just about anything you want with your types if you use pointers. Watching something like the Linux kernel evolve through sets of patches makes you realize that there is a metalanguage in the deltas. Over time interface points in the code shift and join, moving from interfaces used in change sets to interfaces instantiated in the model of the program itself.</p>
 

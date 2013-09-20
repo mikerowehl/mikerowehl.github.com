@@ -9,9 +9,9 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
-the Momentum accelerator to talk about
-scaling technology. &hellip;">
+  <meta name="description" content="A few weeks ago Nathen Harvey was kind
+enough to stop by and give us a critique of how we do Chef automated testing
+and some workflow suggestions. We &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,6 +84,139 @@ scaling technology. &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/09/19/knife-block-for-chef-testing/">Knife-block for Chef Testing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-19T12:17:00-04:00" pubdate data-updated="true">Sep 19<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A few weeks ago <a href="https://github.com/nathenharvey">Nathen Harvey</a> was kind
+enough to stop by and give us a critique of how we do Chef automated testing
+and some workflow suggestions. We had been using chef-solo
+to do some of the recipe development and automated testing, but all our real
+deployments were done using chef-client. And the differences
+between solo runs and chef-client runs kept biting us. We had seen the stuff
+Lookout Mobile has done to
+<a href="http://hackers.lookout.com/2012/04/cookout-at-lookout-with-chef/">run a VM for the chef server</a>
+in addition to the node during testing. But that seemed like an awful lot of
+overhead. Fortunately Nathen gave us the awesome hack of using different
+organizations for the different developers of chef rules, different
+organizations for CI, and then the production organization. That gives us
+complete isolation of the different working areas, but still keeps setup
+relatively simple. w00T!</p>
+
+<p>His suggestion was to use
+<a href="https://github.com/greenandsecure/knife-block">the knife-block plugin</a>
+to make swapping around between organizations easier. Definitely an awesome
+tool, and very useful. But we ran into a few issues because
+knife-block uses a different method for finding it&#8217;s knife.rb file than the
+knife command does. So I pushed up a
+<a href="https://github.com/mikerowehl/knife-block">fork of the original knife-block code</a>
+with a change to how it picks up the configuration location. This version uses
+the Chef::Knife config loader to find the actual configuration being used,
+and uses that directly. In the original version it borrowed a function from
+Chef, but that function tried to find knife config by looking for a .chef
+directory somewhere in the parent directories on the filesystem. The real
+Chef config loader looking in a bunch of additional places.
+So the result was that if you had your
+config in ~/.chef and ran your knife block commands from your home dir it worked
+fine, but if you cd into /tmp suddenly your knife block commands
+would freak out.</p>
+
+<p>Once I dug in and saw what was going on, I figured it would be pretty easy to
+fix up. After looking at the Chef code it became obvious why the knife-block
+stuff did things the way it did. I hate to have to monkey patch to get things
+to work, but the change is actually pretty trivial. I ended up
+<a href="https://github.com/mikerowehl/knife-block/blob/494b8c08a45c17c1335a97e4a6a6b08ecdc73c11/lib/chef/knife/block.rb">injecting a get_config_file method</a>
+into Chef::Knife so that once I constructed a Knife object I could ask it for
+the location of the chef config file. Now if knife itself works, I&#8217;m sure
+knife-block will end up pulling config from the same location. Useful for when
+I need to login to the CI server and poke around to do some debugging
+(Bamboo stores the test files outside of the home directory of the bamboo
+user in our configuration).</p>
+
+<p>For the testing itself we use some Vagrantfiles with definitions of the
+different server types we have. Knife-block provides a nice easy way for me
+to test against an mrowehl organization, and then use a devops-test
+organization for some automated validation, and finally swap to the prod
+organization to push stuff up live. So of course I want to be able to use
+the Vagrantfile when I&#8217;m testing locally and developing recipes, and use the
+same Vagrantfile on the Bamboo server with the devops-test organization to
+validate that everything is working. I didn&#8217;t want to have to go in and edit
+the chef-client provisioner config to swap organizations though, and using
+something like environment variables to drive it just seemed really ugly.
+Fortunately we ran across
+<a href="https://coderwall.com/p/dt1idw">this post about pulling vagrant chef-client config from knife.rb</a>
+and ended up putting together
+<a href="https://gist.github.com/mikerowehl/6631396">our Vagrantfiles so they automatically follow where knife-block is pointed</a>.
+Together with the changes in the Vagrant 1.3 series releases to automatically
+remove node and client from the server when you do a &#8216;vagrant destroy&#8217; it
+makes for an awesome testing setup. Just use knife block to swap around to
+different organizations and up/destroy your boxes as much as you want,
+your wanton path of destruction just gets all swept up automatically behind
+you.</p>
+
+<p>With the vagrant config hackery in place it doesn&#8217;t matter what
+organization we want to test against, the text
+of the Vagrantfile can stay the same as long as knife is pointed to the right
+place. That made it pretty trivial to put together a simple
+<a href="https://gist.github.com/mikerowehl/6631010">wrapper Rakefile to clear and populate the organizations</a>.
+With those wrappers all our Bamboo server has to do is:</p>
+
+<ul>
+<li>grab the latest from our chef-repo with git</li>
+<li>&#8216;knife block use devops&#8217; to swap to our test organization</li>
+<li>&#8216;rake delete_all&#8217; to clean out the test organization</li>
+<li>&#8216;rake upload_all&#8217; to put all the new cookbooks in place</li>
+<li>&#8216;vagrant up&#8217; for the actual test</li>
+<li>and then a run always ending task to &#8216;vagrant destroy -f&#8217;</li>
+</ul>
+
+
+<p>Fortunately the vagrant up command returns the exit status of the chef-client
+run as the status for the command, so picking up failures is pretty trivial.</p>
+
+<p>Of course, this stuff isn&#8217;t perfect. The tests always run in our &#8216;dev&#8217;
+environment, which has the cookbook versions unpinned. That&#8217;s how we can clean
+out and reload the organization each time without it causing trouble. Of
+course if you had pinned cookbook versions you would have to add in some logic
+to make sure you could load the proper version each time you reload. But for
+our current level of complexity, just knowing that the latest batch of changes
+doesn&#8217;t completely break is an awesome start.</p>
+
+<p>It&#8217;s not quite ready for a release yet, but I&#8217;ve also got
+<a href="http://www.packer.io/">some Packer templates</a> which converge a node using
+chef-client and export the Vagrant friendly box so I can distribute the VM.
+Once I have them cleaned up a bit I&#8217;ll post those too.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a></h1>
     
     
@@ -100,7 +233,7 @@ scaling technology. &hellip;">
   
 
 
-<time datetime="2013-07-14T17:41:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
+<time datetime="2013-07-14T17:41:00-04:00" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
         
       </p>
     
@@ -189,7 +322,7 @@ on will pay back hugely.</p>
   
 
 
-<time datetime="2013-05-28T23:43:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
+<time datetime="2013-05-28T23:43:00-04:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
         
       </p>
     
@@ -305,7 +438,7 @@ to production. But at least there&#8217;s movement in the right direction now.</
   
 
 
-<time datetime="2013-03-09T21:23:00-08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+<time datetime="2013-03-09T21:23:00-05:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
         
       </p>
     
@@ -439,7 +572,7 @@ being a lot more low volume than I have been in the past.</p>
   
 
 
-<time datetime="2013-02-06T12:48:00-08:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+<time datetime="2013-02-06T12:48:00-05:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
         
       </p>
     
@@ -559,7 +692,7 @@ social tools were standing in the way.</p>
   
 
 
-<time datetime="2013-02-04T23:29:00-08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+<time datetime="2013-02-04T23:29:00-05:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
         
       </p>
     
@@ -663,7 +796,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-20T05:01:18-07:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
+<time datetime="2006-09-20T08:01:18-04:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
         
       </p>
     
@@ -703,7 +836,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-18T16:21:23-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
+<time datetime="2006-09-18T19:21:23-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
         
       </p>
     
@@ -739,7 +872,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-18T06:16:12-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
+<time datetime="2006-09-18T09:16:12-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
         
       </p>
     
@@ -777,7 +910,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-15T02:46:37-07:00" pubdate data-updated="true">Sep 15<span>th</span>, 2006</time>
+<time datetime="2006-09-15T05:46:37-04:00" pubdate data-updated="true">Sep 15<span>th</span>, 2006</time>
         
       </p>
     
@@ -787,42 +920,6 @@ app that kicked this whole thing off 10 years ago.</p>
   <div class="entry-content"><p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
 
 <blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/09/youve-stayed-up-too-late-when/">You&#8217;ve Stayed Up Too Late When</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-09T21:15:47-07:00" pubdate data-updated="true">Sep 9<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>You know you&#8217;ve acidentally let your bedtime slip too close to sunrise when you&#8217;re flipping through the onscreen TV guide and MTV actually lists &#8220;Music Videos&#8221; as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you&#8217;ve somehow ended up in the 80&#8217;s.  Flock of Seagulls anyone?  Don&#8217;t laugh, they&#8217;re <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
 </div>
   
   
@@ -868,6 +965,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
       </li>
     
@@ -881,10 +982,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
   </ul>

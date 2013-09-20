@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Engadget had a post about a novel delivered to cell phones in 1,600 word installments, which sounded interesting but I held off posting about it for &hellip;">
+  <meta name="description" content="Russell Beattie has two great posts in his blog, the first about web services becoming more like Unix style tools and then some further discussion &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,48 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2004/03/14/pipelined-web-services/">Pipelined Web Services</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-03-14T09:59:20-05:00" pubdate data-updated="true">Mar 14<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Russell Beattie has two great posts in his blog, the first about <a href="http://www.russellbeattie.com/notebook/1006760.html">web services becoming more like Unix style tools</a> and then some <a href="http://www.russellbeattie.com/notebook/1006768.html">further discussion about the similarities and differences between the two styles</a>. I groove completely the the beats Russ is laying down. Usages like this are something that made me happy the first time I read about <a href="http://webservices.xml.com/pub/a/ws/2002/02/06/rest.html">REST</a>. REST seemed to make it easier for arbitrary tools to participate in the series of commands. My comments tend to blend XMLRPC, REST, and SOAP - cause I tend not to pay too much attention to specs and just hack out whatever seems to work for me. Just a couple of quick comments I want to throw into the mix.</p>
+
+<p>The distinction between standard error and standard output is certainly good to have picked out. And maybe keeping those two output streams different will always be a good idea. But I just want to bring up that the reason for having separate output channels is because Unix systems deal with unstructured text. If the output is an XML document, keeping output and processing messages distinct within a single output channel could be done by just specifying the location for the two different types of output. The same goes for input also, processing directives and input material could be mixed in the same input channel if there was a reliable structure for distinguishing between the two. I&#8217;m not saying that this is the right way to go, just another way to look at it.</p>
+
+<p>The issue about sending output to another URL for further processing does break with the Unix style somewhat, but it looks exactly like the <a href="http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?continuation+passing+style">continuation passing style</a> which has been around in Scheme (and probably other Lisp style languages) for quite a while. Maybe we can take some ideas from that arena to formalize the mechanism. How exactly? I haven&#8217;t really thought that through yet :-) I&#8217;ll post something if I have some good ideas. I was also thinking about including transformation instructions with the continuations. I don&#8217;t think this is my original idea, I just can&#8217;t remember where I saw it. Generally it would mean including something like an XSLT transformation to be executed either after one processing stage or before the next. That should make it easy to hook up services that don&#8217;t really know much about each other. But given that we&#8217;re already passing around the data as a whole, perhaps we just need a well known URL for the transformation service and get that included anywhere we need to massage formats. Either one would probably work.</p>
+
+<p>SOAP already has <a href="http://www.w3.org/TR/2003/REC-soap12-part1-20030624/#senderreceiverconcepts">a concept of intermediaries</a>, which are nodes that route and partially process a message. They&#8217;re already both senders and receivers, so they look a lot like the kind of processing nodes that would be needed to form a pipeline. I&#8217;m certainly not a SOAP expert, but I think those intermediaries are only used to route the message and transform the wrappers for the real payload. What we would be talking about doesn&#8217;t change things too much, we would just be elevating intermediaries to primary addressable nodes and allowing them to have a much more active part in the processing of the payload. The usage patterns look much different when we make these changes, but I don&#8217;t think the underlying model changes all that much.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2004/03/13/medium-transforming-communication/">Medium Transforming Communication</a></h1>
     
     
@@ -98,7 +140,7 @@
   
 
 
-<time datetime="2004-03-13T09:43:05-08:00" pubdate data-updated="true">Mar 13<span>th</span>, 2004</time>
+<time datetime="2004-03-13T12:43:05-05:00" pubdate data-updated="true">Mar 13<span>th</span>, 2004</time>
         
       </p>
     
@@ -142,7 +184,7 @@
   
 
 
-<time datetime="2004-03-13T04:34:38-08:00" pubdate data-updated="true">Mar 13<span>th</span>, 2004</time>
+<time datetime="2004-03-13T07:34:38-05:00" pubdate data-updated="true">Mar 13<span>th</span>, 2004</time>
         
       </p>
     
@@ -178,7 +220,7 @@
   
 
 
-<time datetime="2004-03-12T10:18:40-08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
+<time datetime="2004-03-12T13:18:40-05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
         
       </p>
     
@@ -214,7 +256,7 @@
   
 
 
-<time datetime="2004-03-12T04:35:54-08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
+<time datetime="2004-03-12T07:35:54-05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
         
       </p>
     
@@ -250,7 +292,7 @@
   
 
 
-<time datetime="2004-03-12T01:51:21-08:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
+<time datetime="2004-03-12T04:51:21-05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
         
       </p>
     
@@ -272,7 +314,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2004/03/11/direction-of-the-mono-project/">Direction of the Mono Project</a></h1>
+      <h1 class="entry-title"><a href="/blog/2004/03/12/direction-of-the-mono-project/">Direction of the Mono Project</a></h1>
     
     
       <p class="meta">
@@ -288,7 +330,7 @@
   
 
 
-<time datetime="2004-03-11T23:27:04-08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
+<time datetime="2004-03-12T02:27:04-05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2004</time>
         
       </p>
     
@@ -324,7 +366,7 @@
   
 
 
-<time datetime="2004-03-11T02:24:05-08:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
+<time datetime="2004-03-11T05:24:05-05:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
         
       </p>
     
@@ -355,7 +397,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2004/03/10/tiny-linux-computer/">Tiny Linux Computer</a></h1>
+      <h1 class="entry-title"><a href="/blog/2004/03/11/tiny-linux-computer/">Tiny Linux Computer</a></h1>
     
     
       <p class="meta">
@@ -371,7 +413,7 @@
   
 
 
-<time datetime="2004-03-10T23:52:02-08:00" pubdate data-updated="true">Mar 10<span>th</span>, 2004</time>
+<time datetime="2004-03-11T02:52:02-05:00" pubdate data-updated="true">Mar 11<span>th</span>, 2004</time>
         
       </p>
     
@@ -407,7 +449,7 @@
   
 
 
-<time datetime="2004-03-10T04:08:09-08:00" pubdate data-updated="true">Mar 10<span>th</span>, 2004</time>
+<time datetime="2004-03-10T07:08:09-05:00" pubdate data-updated="true">Mar 10<span>th</span>, 2004</time>
         
       </p>
     
@@ -421,42 +463,6 @@
 <p>I think the associations between blogs can serve as the same kind of divergent thinking pool. Taking a look back over the topics I&#8217;ve read about, and the new associations I&#8217;ve formed and ideologies I&#8217;ve run into, I don&#8217;t think I&#8217;ve ever hit quite so much new material since the first year I spent at college. It&#8217;s not like I didn&#8217;t read online articles and crawl web pages before, it&#8217;s just that the format of weblogs and their use make it much easier to thread together new thoughts and find different points of view. When I&#8217;m reading about a topic in someones weblog and I find that they have a really interesting take on a technology, I can trawl through the rest of their entries and usually find out how they apply that idea to other areas. Maybe it&#8217;s just because weblogs tend to be very highly editorial and concentrate much less on establishing &#8220;only the facts&#8221;, but I&#8217;ve rarely been able to do the same thing with other forms of online publications. As a result I feel like I&#8217;ve benefited from reading weblog entries much more often than I have from reading articles in standard publications. Even in the cases where I haven&#8217;t ever corresponded with the author of the weblog directly, I feel I&#8217;ve benefited from their unique perspective.</p>
 
 <p>I think this is what the &#8220;thinktanks&#8221; like PARC and Lucent were aiming for. The goal was to get lots of smart people together and let them exchange ideas in the hopes that something new would arise. The conventions that most people use in writing their blogs have allowed this to happen in a much broader sense however. And the personal weblog is what changed it. Most of the interactions from weblogs could be done using usenet, or forum sites, or email lists. The part that&#8217;s really different is that when I see someone say something I like, I can easily find out what they&#8217;re saying about other issues. With usenet or mailing lists, unless I know what other lists and groups this person is part of, it&#8217;s not nearly as easy to find all the output by a single person. People also seem to be much more outspoken on their personal blog. There are people who would spend most of their time in a discussion list or forum group mostly responding to existing threads without generating new topics, but who will spout off in their blog about just about anything that pops to mind. Maybe it&#8217;s cause they&#8217;re shy and they don&#8217;t feel comfortable introducing new topics to a group, I&#8217;m not quite sure. But when the space they&#8217;re writing in is their own blog, they&#8217;re much more free with their topics. When we&#8217;re talking about divergent thinking, that&#8217;s exactly the behavior that&#8217;s most valuable.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/03/08/successful-lisp-online-book/">Successful Lisp Online Book</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-03-08T22:51:10-08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There was a <a href="http://lemonodor.com/archives/000718.html">post at Lemonodor</a> a while ago pointing to the <a href="http://www.psg.com/~dlamkins/sl/cover.html">online version of a book called <em>Successful Lisp</em></a> which is supposed to come out as a real world book some time soon. The post pointed to content at <a href="http://lispmeister.com/cgi-bin/blosxom/">Lispmeister.com</a>, which looks like another great resource for those looking to learn about Lisp.</p>
 </div>
   
   
@@ -504,6 +510,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
       </li>
     
@@ -517,10 +527,6 @@
     
       <li class="post">
         <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/04/resurrection/">Resurrection</a>
       </li>
     
   </ul>
