@@ -104,3 +104,7 @@ It's not quite ready for a release yet, but I've also got
 [some Packer templates](http://www.packer.io/) which converge a node using
 chef-client and export the Vagrant friendly box so I can distribute the VM.
 Once I have them cleaned up a bit I'll post those too.
+
+Update: The change for knife-block to follow the same knife.rb lookup logic
+as Chef has been
+[merged into the main repo](https://github.com/greenandsecure/knife-block/pull/10).
