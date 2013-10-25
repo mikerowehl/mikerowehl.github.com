@@ -55,7 +55,7 @@ on the model I had was old enough that it was failing to flash the images once
 I had them built. There were folks posting that they had gotten certain parts
 working, and it was failing for me and others who had recently purchased
 devices. Turned out that the original firmware didn't support fastboot, which
-is one of the mechanisms for getting the code actually onto th device. That
+is one of the mechanisms for getting the code actually onto the device. That
 V1.0.0B02 release from ZTE has instructions for how to load it using the stock
 recovery image, and once it's installed you'll be able to use the simple tools
 to get your code onto the device. Also nice, with the ZTE provided update.zip
