@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-09-20T15:01:19-04:00</updated>
+  <updated>2013-10-24T19:23:25-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -14,9 +14,135 @@
 
   
   <entry>
+    <title type="html"><![CDATA[FirefoxOS 1.2 on ZTE Open]]></title>
+    <link href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/"/>
+    <updated>2013-10-24T18:06:00-07:00</updated>
+    <id>http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open</id>
+    <content type="html"><![CDATA[<p>I picked up a <a href="http://www.engadget.com/2013/10/03/zte-open-review/">ZTE Open</a>
+Firefox OS device a little while ago. Given that
+<a href="https://marketplace.firefox.com/developers/dev_phone">developer hub</a> says
+it&#8217;s a &#8220;powerful device aimed at developers and early adopters worldwide&#8221; I
+figured it would be good for some hackery. I read the specs, so I knew that
+&#8220;powerful&#8221; should be pretty suspect. I was surprised to find out that it&#8217;s not
+really for developers, and increasingly doesn&#8217;t seem to be all that open.</p>
+
+<p>When I first grabbed it I figured maybe I could use it to just get a feel for
+FirefoxOS and the direction the teams were trying to push for. However, the
+phone ships with a 1.0.0 version of the operating system and some major basic
+features were missing to even use it for a day or two. For instance GMail
+contact syncing shows up in FFOS 1.1 (I&#8217;m not a Facebook user, so syncing using
+the one existing mechanism wasn&#8217;t an option). Since this was supposed to be
+a developer phone for early adopters, I figured that would be easy to remedy.
+Not so, there&#8217;s no official OS updates for the phone planned at all. Weird.</p>
+
+<p>Okay, no problem, I&#8217;ll use it to just do a little poking around developing
+using the Gecko/Gaia stack and getting a feel for it on real hardware. However,
+trying to push an app from the simulator it never showed up on the phone.
+Rebooted and it popped up. Turns out there&#8217;s a
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=842725">race condition bug in FFOS 1.0</a>
+which really keeps it from being usable as a developer platform.
+Of course the pages talking about it say you should &#8220;make sure you have the
+latest version of Firefox OS on your devices&#8221;. Which we just established
+isn&#8217;t possible for this developer device, at least not according to ZTE.
+Well ain&#8217;t that just a kick in the crotch?</p>
+
+<p>So of course I ended up doing what I said I wasn&#8217;t going to do, and dove
+straight down the rabbithole of compiling my own recent version of Firefox OS
+from source and getting it installed on my ZTE Open device. Turned out to be
+way more of an involved process than I expected given that the device is named
+the &#8220;ZTE Open&#8221;. I expected that to mean developer friendly. Together with the
+Firefox site saying the device was aimed at developers, I didn&#8217;t see any
+reason to second guess that assumption. Here&#8217;s the process I went through
+though, which should get you going from an unboxing to running FFOS 1.2 on
+your device. The process isn&#8217;t too horrible, but making sense of lots of the
+existing posts out there and figuring out the right order for a fresh device
+took some experimentation.</p>
+
+<p>The first thing to do is apply the
+<a href="http://www.ztedevices.com/support/smart_phone/b5a2981a-1714-4ac7-89e1-630e93e220f8.html?type=software">update from ZTE</a>.
+This was one of the hardest parts to puzzle out for me. Turns out the firmware
+on the model I had was old enough that it was failing to flash the images once
+I had them built. There were folks posting that they had gotten certain parts
+working, and it was failing for me and others who had recently purchased
+devices. Turned out that the original firmware didn&#8217;t support fastboot, which
+is one of the mechanisms for getting the code actually onto th device. That
+V1.0.0B02 release from ZTE has instructions for how to load it using the stock
+recovery image, and once it&#8217;s installed you&#8217;ll be able to use the simple tools
+to get your code onto the device. Also nice, with the ZTE provided update.zip
+on your SD card you can use recovery mode to get back to a working system if
+you end up screwing up the system partition. Which I did dozens of times.</p>
+
+<p>Once you have the ZTE update in make sure you have debugging turned on for
+your phone. Go into Settings / Device Information / More Information /
+Developer and flip on the Remote Debugging option if it isn&#8217;t on already.</p>
+
+<p>Next, unfortunately, you&#8217;ll have to grab a binary image of the
+<a href="http://sl.edujose.org/2013/10/adapted-boot-image-for-use-with-b2g.html">boot partition</a>
+hacked up and ready to use. This is horrible, and it&#8217;s the other part that was
+really a sticking point trying to figure out. As you&#8217;ll see later on, for some
+reason the boot2gecko build for the inari device (which is the name you use
+for building for the ZTE Open) doesn&#8217;t generate a boot.img. From what I can
+tell it doesn&#8217;t even generate the parts necessary to pull together into a
+boot.img. And as I found out through multiple tries, putting the system and
+user partitions from a custom build together with the boot from a stock system
+you&#8217;ll generally end up with the OS booting and the UI layers crashing
+repeatedly. That&#8217;s what I got at least.</p>
+
+<p>Once you&#8217;ve got that stuff the build is pretty much as described in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Firefox_OS_build_prerequisites">FirefoxOS build docs</a>.
+I use an OS X system, but I did my build in a VMWare VM running Ubuntu 13.04.
+The tools used to interact with the Firefox OS devices are the same as used
+for Android development. And I&#8217;ve done that under a VM tons, so I was pretty
+comfortable with that part of the setup. Plus being in a VM meant I could muck
+with the stuff in the Linux install as much as I wanted. Below is the actual process I
+ran through, getting all the tools in place, configuring, and building. This
+assumes you&#8217;re starting from a completely fresh 13.04 install, you run through
+the installer and then let it pull down any updates, then do this:</p>
+
+<ul>
+<li>sudo apt-get install &#8211;no-install-recommends autoconf2.13 bison bzip2 ccache
+curl flex gawk gcc g++ g++-multilib gcc-4.6 g++-4.6 g++-4.6-multilib git
+ia32-libs lib32ncurses5-dev lib32z1-dev zlib1g:amd64 zlib1g-dev:amd64
+zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip</li>
+<li>sudo add-apt-repository ppa:webupd8team/java</li>
+<li>sudo apt-get update</li>
+<li>sudo apt-get install oracle-java6-installer</li>
+<li>sudo apt-get install oracle-java6-set-default</li>
+<li>sudo apt-get install android-tools-adb</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;19d2&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; > /etc/udev/rules.d/android.rules</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;18d1&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; >> /etc/udev/rules.d/android.rules</li>
+<li>sudo chmod a+r /etc/udev/rules.d/android.rules</li>
+<li>sudo service udev restart</li>
+<li>export CC=gcc-4.6</li>
+<li>export CXX=g++-4.6</li>
+<li>ccache &#8211;max-size 3GB</li>
+<li>git config &#8211;global user.email xxxx</li>
+<li>git config &#8211;global user.name &#8220;yyyy&#8221;</li>
+<li>git clone git://github.com/mozilla-b2g/B2G.git</li>
+<li>cd B2G</li>
+<li>BRANCH=v1.2 VARIANT=user ./config.sh inari</li>
+<li>BRANCH=v1.2 VARIANT=user ./build.sh</li>
+<li>cp [location of that binary boot.img] out/target/product/inari/boot.img</li>
+<li>./flash.sh</li>
+</ul>
+
+
+<p>And then you should have a FFOS 1.2 install runnable on your device. I tested
+mine out with my TMobile SIM in the US: phone works, SMS works, data connection
+works (though by default it was disabled on mine, just use the notification
+pulldown and toggle the cellular data option right next to the wifi toggle).
+Hopefully as the device and OS evolve this gets a lot easier and more developer
+friendly. Needing to pull a binary boot image from someone else just to get a
+fresh build onto a device, that&#8217;s not good. I was expecting FFOS development
+to show up Android development in terms of encouraging developers to work with
+the base system. Not the case so far.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[knife-block for Chef Testing]]></title>
     <link href="http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing/"/>
-    <updated>2013-09-19T12:17:00-04:00</updated>
+    <updated>2013-09-19T12:17:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing</id>
     <content type="html"><![CDATA[<p>A few weeks ago <a href="https://github.com/nathenharvey">Nathen Harvey</a> was kind
 enough to stop by and give us a critique of how we do Chef automated testing
@@ -126,7 +252,7 @@ as Chef has been
   <entry>
     <title type="html"><![CDATA[Scaling Technology]]></title>
     <link href="http://rowehl.com/blog/2013/07/14/scaling-technology/"/>
-    <updated>2013-07-14T17:41:00-04:00</updated>
+    <updated>2013-07-14T17:41:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/07/14/scaling-technology</id>
     <content type="html"><![CDATA[<p>A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
 <a href="http://momentum.mobilemonday.us/">the Momentum accelerator</a> to talk about
@@ -188,7 +314,7 @@ on will pay back hugely.</p>
   <entry>
     <title type="html"><![CDATA[Consistent Test Methodology for Inconsistent Projects]]></title>
     <link href="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/"/>
-    <updated>2013-05-28T23:43:00-04:00</updated>
+    <updated>2013-05-28T23:43:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects</id>
     <content type="html"><![CDATA[<p>How do you start introducing some testing if you have a huge group of existing
 projects, for the most part all implemented using different languages and
@@ -277,7 +403,7 @@ to production. But at least there&#8217;s movement in the right direction now.</
   <entry>
     <title type="html"><![CDATA[Why I Suck at Angel Investing, and My Plan]]></title>
     <link href="http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing/"/>
-    <updated>2013-03-09T21:23:00-05:00</updated>
+    <updated>2013-03-09T21:23:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/03/09/why-i-suck-at-angel-investing</id>
     <content type="html"><![CDATA[<p>I&#8217;ve done a bunch of angel investing over the last few years. And I&#8217;ve decided
 I&#8217;m no good at it. The market, so far, seems to agree with me. Most of the
@@ -384,7 +510,7 @@ being a lot more low volume than I have been in the past.</p>
   <entry>
     <title type="html"><![CDATA[Use of Time]]></title>
     <link href="http://rowehl.com/blog/2013/02/06/use-of-time/"/>
-    <updated>2013-02-06T12:48:00-05:00</updated>
+    <updated>2013-02-06T12:48:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/02/06/use-of-time</id>
     <content type="html"><![CDATA[<p>I love the idea behind social media services, helping to connect people and
 strengthen relationships. However I don&#8217;t think most are actually fulfilling
@@ -477,7 +603,7 @@ social tools were standing in the way.</p>
   <entry>
     <title type="html"><![CDATA[Resurrection]]></title>
     <link href="http://rowehl.com/blog/2013/02/04/resurrection/"/>
-    <updated>2013-02-04T23:29:00-05:00</updated>
+    <updated>2013-02-04T23:29:00-08:00</updated>
     <id>http://rowehl.com/blog/2013/02/04/resurrection</id>
     <content type="html"><![CDATA[<p>This blog has been dormant for a long time, but I&#8217;ve decided to start it back
 up. I created the site cause I wanted a Wordpress install
@@ -554,7 +680,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Ubuntu - Sun JDK Graphical Install Only?]]></title>
     <link href="http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only/"/>
-    <updated>2006-09-20T08:01:18-04:00</updated>
+    <updated>2006-09-20T05:01:18-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/20/ubuntu-sun-jdk-graphical-install-only</id>
     <content type="html"><![CDATA[<p>I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, &#8220;there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up&#8221;. A bunch  of searching around in the repository listings turned up no java license related packages.</p>
 
@@ -567,7 +693,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Two Blue Pills with a Whiskey Back Please]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/"/>
-    <updated>2006-09-18T19:21:23-04:00</updated>
+    <updated>2006-09-18T16:21:23-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please</id>
     <content type="html"><![CDATA[<p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee&#8217;s Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke&#8217;s over. You can make it stop.</p>
 ]]></content>
@@ -576,7 +702,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[SpellBound Firefox Plugin, Dev Version]]></title>
     <link href="http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version/"/>
-    <updated>2006-09-18T09:16:12-04:00</updated>
+    <updated>2006-09-18T06:16:12-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/18/spellbound-firefox-plugin-dev-version</id>
     <content type="html"><![CDATA[<p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
 
@@ -587,7 +713,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Subversion Book]]></title>
     <link href="http://rowehl.com/blog/2006/09/15/subversion-book/"/>
-    <updated>2006-09-15T05:46:37-04:00</updated>
+    <updated>2006-09-15T02:46:37-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/15/subversion-book</id>
     <content type="html"><![CDATA[<p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
 
@@ -597,9 +723,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[You've Stayed Up Too Late When]]></title>
-    <link href="http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when/"/>
-    <updated>2006-09-10T00:15:47-04:00</updated>
-    <id>http://rowehl.com/blog/2006/09/10/youve-stayed-up-too-late-when</id>
+    <link href="http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when/"/>
+    <updated>2006-09-09T21:15:47-07:00</updated>
+    <id>http://rowehl.com/blog/2006/09/09/youve-stayed-up-too-late-when</id>
     <content type="html"><![CDATA[<p>You know you&#8217;ve acidentally let your bedtime slip too close to sunrise when you&#8217;re flipping through the onscreen TV guide and MTV actually lists &#8220;Music Videos&#8221; as currently showing. No need to look at the time, when a thing like that happens you know that either the sun is about to come up or you&#8217;ve somehow ended up in the 80&#8217;s.  Flock of Seagulls anyone?  Don&#8217;t laugh, they&#8217;re <a href="http://www.oz.net/~davester/AFOS/">on tour</a>. On second thought, go ahead and laugh.</p>
 ]]></content>
   </entry>
@@ -607,7 +733,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[Hilton Ninja]]></title>
     <link href="http://rowehl.com/blog/2006/09/06/hilton-ninja/"/>
-    <updated>2006-09-06T05:25:19-04:00</updated>
+    <updated>2006-09-06T02:25:19-07:00</updated>
     <id>http://rowehl.com/blog/2006/09/06/hilton-ninja</id>
     <content type="html"><![CDATA[<p><a href="http://www.ninjastrikeforce.com/?p=100">Paris Hilton has been named an honorary member of the CDC Ninja Strike Force</a>.  A very high honor indeed. No word yet on wether she&#8217;ll also get the ability to blow shit up with heat rays from her eyes, like the other Ninja Strike Force members are able to do. We know she&#8217;s definitely got the backstabbing down pat though.</p>
 ]]></content>
@@ -616,7 +742,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[HOPE Six Audio Online]]></title>
     <link href="http://rowehl.com/blog/2006/08/25/hope-six-audio-online/"/>
-    <updated>2006-08-25T05:57:27-04:00</updated>
+    <updated>2006-08-25T02:57:27-07:00</updated>
     <id>http://rowehl.com/blog/2006/08/25/hope-six-audio-online</id>
     <content type="html"><![CDATA[<p>The full <a href="http://www.hopenumbersix.net/speakers.html">set of audio from the HOPE six conference</a> is online now. The conf happened just before DEFCON and I hear it has some fantastic stuff that didn&#8217;t show up in Vegas. Download and share!</p>
 ]]></content>
@@ -625,7 +751,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[http_load for Request Replay]]></title>
     <link href="http://rowehl.com/blog/2006/08/23/http_load-for-request-replay/"/>
-    <updated>2006-08-23T19:05:49-04:00</updated>
+    <updated>2006-08-23T16:05:49-07:00</updated>
     <id>http://rowehl.com/blog/2006/08/23/http_load-for-request-replay</id>
     <content type="html"><![CDATA[<p>The <a href="http://talks.php.net/show/oscon06/0">presentation that Rasmus gave at OSCON</a> this year seems to have kicked some ass. I missed the conf, but got a bunch of interesting info from the slides. In particular I hadn&#8217;t used <a href="http://www.acme.com/software/http_load/">http_load</a> before. Part of what I&#8217;ve been doing at AdMob is taking a look at performance and scaling, so that was a great find. It&#8217;s exactly the set of controls and measurements I normally start out with, and it really does run very efficiently in terms of not loading down the system that http_load is running on.</p>
 
@@ -635,9 +761,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[Linux Lappy]]></title>
-    <link href="http://rowehl.com/blog/2006/08/18/linux-lappy/"/>
-    <updated>2006-08-18T02:23:23-04:00</updated>
-    <id>http://rowehl.com/blog/2006/08/18/linux-lappy</id>
+    <link href="http://rowehl.com/blog/2006/08/17/linux-lappy/"/>
+    <updated>2006-08-17T23:23:23-07:00</updated>
+    <id>http://rowehl.com/blog/2006/08/17/linux-lappy</id>
     <content type="html"><![CDATA[<p>It&#8217;s just about New Laptop Time. Not quite, but almost. Being a Linux only user it&#8217;s always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you&#8217;re thinking about picking up at deep discount from Office Max certainly has not. And I&#8217;m not a dual-booter either. I don&#8217;t have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it&#8217;s my personal laptop, which is what I plan for this to be.</p>
 
 <p>Currently I&#8217;m leaning very heavily toward <a href="http://www.thinkwiki.org/wiki/Category:X41_Tablet">the Thinkpad X41 tablet</a>. It looks like there&#8217;s good X support for a bunch of stuff that&#8217;s traditionally a pain in the ass under Linux. Screen rotation seems to be working (without restarting X, thank god), the input driver for the touchscreen, power management (including frequency scaling), and wireless using ipw2200. Anyone out there with an X41 tried Linux and care to toss in some comments before I pick one of the things up? It&#8217;s hard to tell from wiki postings just how painful is it to get the thing actually setup, and there&#8217;s always the chance that the instructions on the wiki are wrong or incomplete.</p>
@@ -648,9 +774,9 @@ app that kicked this whole thing off 10 years ago.</p>
   
   <entry>
     <title type="html"><![CDATA[ZeroOne San Jose Art Festival]]></title>
-    <link href="http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival/"/>
-    <updated>2006-08-07T02:29:07-04:00</updated>
-    <id>http://rowehl.com/blog/2006/08/07/zeroone-san-jose-art-festival</id>
+    <link href="http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival/"/>
+    <updated>2006-08-06T23:29:07-07:00</updated>
+    <id>http://rowehl.com/blog/2006/08/06/zeroone-san-jose-art-festival</id>
     <content type="html"><![CDATA[<p>This week (August 7th to 13th 2006) is the <a href="http://www.01sj.org/">ZeroOne Arts Festival in San Jose</a>. There was a <a href="http://www.futuresalon.org/2005/02/art_on_the_edge.html">great presentation at Future Salon by one of the ZeroOne staff members</a> where he tossed out a dizzying number of art projects that blend in technology in tantalizing ways. And if the interesting art projects weren&#8217;t enough to get you down there on their own, on Friday there&#8217;s a <a href="http://01sj.org/content/view/217/52/">Survival Research Labs</a> exhibition:</p>
 
 <blockquote><p>&#8230;it’s monster machine, meets hovercraft, meets huge sculptural creatures, meets fire.</p></blockquote>
@@ -662,7 +788,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Diet of Monkey Chow]]></title>
     <link href="http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow/"/>
-    <updated>2006-06-06T09:06:28-04:00</updated>
+    <updated>2006-06-06T06:06:28-07:00</updated>
     <id>http://rowehl.com/blog/2006/06/06/a-diet-of-monkey-chow</id>
     <content type="html"><![CDATA[<p>This is pure genius! I&#8217;m so disappointed I didn&#8217;t think of it first. A guy trying to <a href="http://www.angryman.ca/monkey.html">live on a diet of pelletized monkey food</a>. FANTASTIC! If it works and he doesn&#8217;t die I&#8217;m definitely doing it. If he does die&#8230; I give myself about a 50-50 chance of still trying it. I should start a run of packaging for the new <a href="http://en.wikipedia.org/wiki/Bachelor_Chow#Bachelor_Chow">Futurama style &#8220;Bachelor Chow&#8221;</a> product just in case. I&#8217;ll probably have to wait a while to add flavor however.</p>
 ]]></content>
@@ -671,7 +797,7 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[A Quarter of a Million Spam Messages]]></title>
     <link href="http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages/"/>
-    <updated>2006-06-05T03:00:52-04:00</updated>
+    <updated>2006-06-05T00:00:52-07:00</updated>
     <id>http://rowehl.com/blog/2006/06/05/a-quarter-of-a-million-spam-messages</id>
     <content type="html"><![CDATA[<p>I&#8217;m at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by <a href="http://akismet.com/">Akismet</a> so far. I <a href="http://www.rowehl.com/blog/?p=605">turned Akismet on in January of this year</a>. That&#8217;s more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.</p>
 
@@ -682,22 +808,13 @@ app that kicked this whole thing off 10 years ago.</p>
   <entry>
     <title type="html"><![CDATA[The Web 2.0 Cease and Desist and Self Healing Systems]]></title>
     <link href="http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/"/>
-    <updated>2006-05-25T11:40:29-04:00</updated>
+    <updated>2006-05-25T08:40:29-07:00</updated>
     <id>http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems</id>
     <content type="html"><![CDATA[<p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
 
 <p>Things like this are bound to happen in any organization/company once the size gets beyond a certain threshold. Perhaps not quite this ridiculous in most cases, but there will be some evidence of lack of syncronization and goal mismatches. In the real world normally this stuff gets cleared up pretty quick. Tim pops up and says &#8220;wow, we didn&#8217;t mean to do that, sorry!&#8221; or someone at CMP chews the lawyers out and releases a statement&#8230; whatever. The point being that inconsistencies and unexpected situations are generally noticed and dealt with. Outside the blogospere at least. Inside the blogosphere they can live on forever, but that&#8217;s really a whole seperate issue.</p>
 
 <p>Odd situations like that tend to cause failures in software though. When something unexpected comes up within a system it&#8217;s generally catastrophic. When something unexpected comes up during an interaction between systems you&#8217;re sometimes lucky just to find out what happened after the fact. I&#8217;ve been thinking about self healing systems recently, although I can&#8217;t remember what might have kicked it off. And after reading this realized that almost all human designed systems are relatively fragile and rigid. Law being one of the obvious areas of intersection between codification and human behavior I would expect it might hold some hints about how to handle that well. But law is just guidelines, and the rationality really derives from a human in the loop pulling the strings, judge or jurry. It&#8217;s not a system itself really so much as an extension and recording of the will of the judges to keep them from having to repeat themselves. So I keep coming back to the non-human systems to try to find isolated systems that heal well. Insect behavior is one of the classic examples, ants and bees.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[George Bush Jr More Evil Than Cthulhu]]></title>
-    <link href="http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu/"/>
-    <updated>2006-04-21T06:04:39-04:00</updated>
-    <id>http://rowehl.com/blog/2006/04/21/george-bush-jr-more-evil-than-cthulhu</id>
-    <content type="html"><![CDATA[<p>Wow, folks really hate this <a href="http://lesserevil.ning.com/detail.php?DetailID=425486">George Bush Jr.</a> guy. You would think he roamed around in the streets killing puppies and kicking children or something. I check out the stats for <a href="http://browse.ning.com/any/miker/any/any">all my Ning apps</a> on a daily basis. Cause I&#8217;m vain, no sense in trying to justify it with anything else. And <a href="http://lesserevil.ning.com">LesserEvil</a> had a bunch of hits from Google image searches, searches for Georgie there. So I pull up his detail page and what do I see? &#8220;Cthulhu is less evil than George Bush Jr. 100% of the time.&#8221; Wow, that&#8217;s pretty evil. Or maybe it&#8217;s just interesting commentary on the mindset of folks in the &#8220;online and searching for random stuff cause I have that kind of time on my hands&#8221; segment of the population.</p>
 ]]></content>
   </entry>
   

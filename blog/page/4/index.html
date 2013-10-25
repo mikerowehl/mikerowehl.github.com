@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Most of you have probably heard about the Enzo Ferrari crash yesterday. Sad sad thing to see such a beautiful car destroyed. If you&#8217;re feeling &hellip;">
+  <meta name="description" content="This is pretty interesting, a tail call optimization decorator for Python. It doesn&#8217;t work for a lot of cases.. like these ones: @ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +82,91 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2006/03/02/python-tail-call/">Python Tail Call</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-03-02T05:50:19-08:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is pretty interesting, a <a href="http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/474088">tail call optimization decorator for Python</a>. It doesn&#8217;t work for a lot of cases.. like these ones:</p>
+
+<blockquote><pre><code>@tail_call_optimized
+def even( n ):
+  if n == 0:
+    return True
+  else:
+    return odd( n - 1 )
+
+@tail_call_optimized
+def odd( n ):
+  if n == 0:
+    return False
+  else:
+    return even( n - 1 )
+
+@tail_call_optimized
+def countto( n ):
+  if n == 0:
+    return 0
+  else:
+    return 1 + countto( n - 1 )
+
+print odd( 31 )
+print countto( 31 )
+</code></pre></blockquote>
+
+<p>It forced me to actually take a look at decorators in Python to figure out what was going on and why they failed though. The basic flow of the &#8220;throw an exception and catch it at a higher level&#8221; idea is easy to follow. However what it&#8217;s doing when it catches that exception at a higher level is pulling the input arguments up to the higher level and reevaluating with the new arg set, and I&#8217;m not even sure what exactly it&#8217;s doing in the case of mutual recursion, and seems to stick to only one of the functions.</p>
+
+<p><a href="http://lambda-the-ultimate.org/node/1331#comment-15165">This one works for mutually recursive calls</a>, but I haven&#8217;t dug into it yet. Looks interesting though. However it doesn&#8217;t work when the return value feeds back into the recusion:</p>
+
+<blockquote><pre><code>@trampolined
+def countto( n ):
+  if n == 0:
+    return 0
+  else:
+    return 1 + countto( n - 1 )
+
+print countto( 3030 )
+</code></pre></blockquote>
+
+<p>The stack overflows when I try that. The scheme implementations don&#8217;t have a problem with it however:</p>
+
+<blockquote><h1>;1> (define countto (lambda (x) (if (= x 0) 0 (+ 1 (countto (- x 1))))))</h1>
+
+<pre><code>#;2&gt; (countto 30000)
+30000
+</code></pre></blockquote>
+
+<p>Still, interesting stuff to dig at.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2006/02/23/picture-of-the-enzo-driver/">Picture of the Enzo Driver</a></h1>
     
     
@@ -98,7 +183,7 @@
   
 
 
-<time datetime="2006-02-23T08:33:26-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2006</time>
+<time datetime="2006-02-23T05:33:26-08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2006</time>
         
       </p>
     
@@ -136,7 +221,7 @@
   
 
 
-<time datetime="2006-02-15T08:13:36-05:00" pubdate data-updated="true">Feb 15<span>th</span>, 2006</time>
+<time datetime="2006-02-15T05:13:36-08:00" pubdate data-updated="true">Feb 15<span>th</span>, 2006</time>
         
       </p>
     
@@ -172,7 +257,7 @@
   
 
 
-<time datetime="2006-02-14T04:21:17-05:00" pubdate data-updated="true">Feb 14<span>th</span>, 2006</time>
+<time datetime="2006-02-14T01:21:17-08:00" pubdate data-updated="true">Feb 14<span>th</span>, 2006</time>
         
       </p>
     
@@ -208,7 +293,7 @@
   
 
 
-<time datetime="2006-02-10T10:51:30-05:00" pubdate data-updated="true">Feb 10<span>th</span>, 2006</time>
+<time datetime="2006-02-10T07:51:30-08:00" pubdate data-updated="true">Feb 10<span>th</span>, 2006</time>
         
       </p>
     
@@ -244,7 +329,7 @@
   
 
 
-<time datetime="2006-02-09T03:54:49-05:00" pubdate data-updated="true">Feb 9<span>th</span>, 2006</time>
+<time datetime="2006-02-09T00:54:49-08:00" pubdate data-updated="true">Feb 9<span>th</span>, 2006</time>
         
       </p>
     
@@ -284,7 +369,7 @@
   
 
 
-<time datetime="2006-02-07T11:45:23-05:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
+<time datetime="2006-02-07T08:45:23-08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
         
       </p>
     
@@ -320,7 +405,7 @@
   
 
 
-<time datetime="2006-02-07T08:17:05-05:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
+<time datetime="2006-02-07T05:17:05-08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
         
       </p>
     
@@ -379,7 +464,7 @@
   
 
 
-<time datetime="2006-02-07T03:04:04-05:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
+<time datetime="2006-02-07T00:04:04-08:00" pubdate data-updated="true">Feb 7<span>th</span>, 2006</time>
         
       </p>
     
@@ -419,7 +504,7 @@
   
 
 
-<time datetime="2006-01-31T11:34:39-05:00" pubdate data-updated="true">Jan 31<span>st</span>, 2006</time>
+<time datetime="2006-01-31T08:34:39-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2006</time>
         
       </p>
     
@@ -433,42 +518,6 @@
 <p>This means ISR and Softint should do almost nothing and Socket should do everything.</p>
 
 <p>The slides are excellent and lay out the issue very clearly, but I would also recommend checking out <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/27#vj_channels">DaveM&#8217;s comments on net channels</a>. It was his writeup that turned me on to the presentation.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/31/netflixtivo-consumer-device/">Netflix/Tivo Consumer Device</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-31T06:08:40-05:00" pubdate data-updated="true">Jan 31<span>st</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Although I&#8217;m not at all looking, I keep <a href="http://www.bitsplitter.net/MikeRowehl.txt">a copy of my resume up online</a>. Why? Because sometimes a recruiter will call and drop a nice nugget of info to you. That&#8217;s exactly what happened this morning. I got a call from a recruiter for <a href="http://www.netflix.com/">Netflix</a> looking for Linux programmers. There&#8217;s been <a href="http://www.engadget.com/2005/07/27/netflix-close-to-offering-online-movie-downloads/">speculation going on for a little while about how Netflix will deliver their on demand download service</a>. The recruiter said the project included a team of engineers from ReplayTV, AOL, and Tivo to work on a consumer device. So I looked around on their site, and <a href="http://jobs.netflix.com/DetailFlix.asp?flix1168">here&#8217;s the job listing</a>. So who knows if it&#8217;ll see the light of day, but it would appear that the <a href="http://www.pcworld.com/news/article/0,aid,118006,00.asp">Tivo/Netflix collaboration that was floating around during 2004</a> is still in process.</p>
 </div>
   
   
@@ -516,6 +565,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
       </li>
     
@@ -529,10 +582,6 @@
     
       <li class="post">
         <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
       </li>
     
   </ul>

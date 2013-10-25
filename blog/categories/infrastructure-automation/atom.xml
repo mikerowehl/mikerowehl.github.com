@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Infrastructure Automation | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/infrastructure-automation/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-09-20T15:02:28-04:00</updated>
+  <updated>2013-10-24T19:23:25-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[knife-block for Chef Testing]]></title>
     <link href="http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing/"/>
-    <updated>2013-09-19T12:17:00-04:00</updated>
+    <updated>2013-09-19T12:17:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/09/19/knife-block-for-chef-testing</id>
     <content type="html"><![CDATA[<p>A few weeks ago <a href="https://github.com/nathenharvey">Nathen Harvey</a> was kind
 enough to stop by and give us a critique of how we do Chef automated testing

@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Plugins for Wireless Games - Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I&#8217;m just catching up on some posts I&#8217;ve had sitting around as drafts (there are a lot of them actually). I saw this article about &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/2005/02/08/ai-plugins-for-wireless-games/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Plugins for Wireless Games</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-02-08T23:25:19-08:00" pubdate data-updated="true">Feb 8<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I&#8217;m just catching up on some posts I&#8217;ve had sitting around as drafts (there are a lot of them actually).  I saw <a href="http://www.smartmobs.com/archive/2005/01/31/viral_handheld_.html">this article</a> about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to <a href="http://members.lycos.co.uk/doomwads/tc.php">hack the description files for Doom</a>? I think it&#8217;s just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?</p>
+
+<p>The wireless interface presents an additional means of access to the game console that circumvents the traditional problems with getting content onto the device. Given that the &#8220;razor blade&#8221; model applies to most gaming consoles, that the unit itself is pretty much given away so that money can be made on the games, I&#8217;m not sure if incentives are aligned right for something like this. That&#8217;s supposed to be one of the great aspects of the taco (Nokia N-Gage), ability for just about anyone to easily deliver new games. For most gaming consoles the developers have to burn CDs or DVDs in proprietary formats or get their games blown into ROMs and put into special cartridges. Wireless interface, either with existing games or as a means of providing new games, allows the hacker (by which I mean curious and motivated expert user capable of extending and transforming the system) a lower barrier to entry for experimenting with your system. Hacker ecosystems like this are good for systems as a whole. Once a group of your users sees your products as something they don&#8217;t have to just accept &#8220;as is&#8221; they provide you with a completely different kind of feedback. If some of the expert users are able to service their own needs they can sometimes show you directions and evolutions that it would be difficult or impossible to reach on your own. If the Playstation Portable games don&#8217;t allow this kind of extension, is there a gaming system that does? How about flash cartridges that could be loaded over the air? These systems seem to be able to write game state. Does that go to the cartridge or to storage on the unit? Does anyone have a pure software SDK for their console? Hack the game together on a PC using an emulator or simulator, compile for the console target, load over the air onto flash cartridges, and then be able to distribute a version to beta testers they can use with their existing systems? It just sounds dirty and subversive. I would love to be able to do it.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mike Rowehl</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-02-08T23:25:19-08:00" pubdate data-updated="true">Feb 8<span>th</span>, 2005</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mobile-computing/'>Mobile Computing</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rowehl.com/blog/2005/02/08/ai-plugins-for-wireless-games/" data-via="miker" data-counturl="http://rowehl.com/blog/2005/02/08/ai-plugins-for-wireless-games/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2005/02/06/future-of-art-and-technology/" title="Previous Post: Future of Art and Technology">&laquo; Future of Art and Technology</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2005/02/09/106miles/" title="Next Post: 106miles">106miles &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I'm Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I've been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I've been programming and working with open source projects for even longer.
+    I'm a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

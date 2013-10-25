@@ -9,9 +9,10 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="A few weeks ago Nathen Harvey was kind
-enough to stop by and give us a critique of how we do Chef automated testing
-and some workflow suggestions. We &hellip;">
+  <meta name="description" content="I picked up a ZTE Open
+Firefox OS device a little while ago. Given that
+developer hub says
+it&#8217;s a &#8220;powerful device aimed at developers &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -84,6 +85,159 @@ and some workflow suggestions. We &hellip;">
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-24T18:06:00-07:00" pubdate data-updated="true">Oct 24<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I picked up a <a href="http://www.engadget.com/2013/10/03/zte-open-review/">ZTE Open</a>
+Firefox OS device a little while ago. Given that
+<a href="https://marketplace.firefox.com/developers/dev_phone">developer hub</a> says
+it&#8217;s a &#8220;powerful device aimed at developers and early adopters worldwide&#8221; I
+figured it would be good for some hackery. I read the specs, so I knew that
+&#8220;powerful&#8221; should be pretty suspect. I was surprised to find out that it&#8217;s not
+really for developers, and increasingly doesn&#8217;t seem to be all that open.</p>
+
+<p>When I first grabbed it I figured maybe I could use it to just get a feel for
+FirefoxOS and the direction the teams were trying to push for. However, the
+phone ships with a 1.0.0 version of the operating system and some major basic
+features were missing to even use it for a day or two. For instance GMail
+contact syncing shows up in FFOS 1.1 (I&#8217;m not a Facebook user, so syncing using
+the one existing mechanism wasn&#8217;t an option). Since this was supposed to be
+a developer phone for early adopters, I figured that would be easy to remedy.
+Not so, there&#8217;s no official OS updates for the phone planned at all. Weird.</p>
+
+<p>Okay, no problem, I&#8217;ll use it to just do a little poking around developing
+using the Gecko/Gaia stack and getting a feel for it on real hardware. However,
+trying to push an app from the simulator it never showed up on the phone.
+Rebooted and it popped up. Turns out there&#8217;s a
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=842725">race condition bug in FFOS 1.0</a>
+which really keeps it from being usable as a developer platform.
+Of course the pages talking about it say you should &#8220;make sure you have the
+latest version of Firefox OS on your devices&#8221;. Which we just established
+isn&#8217;t possible for this developer device, at least not according to ZTE.
+Well ain&#8217;t that just a kick in the crotch?</p>
+
+<p>So of course I ended up doing what I said I wasn&#8217;t going to do, and dove
+straight down the rabbithole of compiling my own recent version of Firefox OS
+from source and getting it installed on my ZTE Open device. Turned out to be
+way more of an involved process than I expected given that the device is named
+the &#8220;ZTE Open&#8221;. I expected that to mean developer friendly. Together with the
+Firefox site saying the device was aimed at developers, I didn&#8217;t see any
+reason to second guess that assumption. Here&#8217;s the process I went through
+though, which should get you going from an unboxing to running FFOS 1.2 on
+your device. The process isn&#8217;t too horrible, but making sense of lots of the
+existing posts out there and figuring out the right order for a fresh device
+took some experimentation.</p>
+
+<p>The first thing to do is apply the
+<a href="http://www.ztedevices.com/support/smart_phone/b5a2981a-1714-4ac7-89e1-630e93e220f8.html?type=software">update from ZTE</a>.
+This was one of the hardest parts to puzzle out for me. Turns out the firmware
+on the model I had was old enough that it was failing to flash the images once
+I had them built. There were folks posting that they had gotten certain parts
+working, and it was failing for me and others who had recently purchased
+devices. Turned out that the original firmware didn&#8217;t support fastboot, which
+is one of the mechanisms for getting the code actually onto th device. That
+V1.0.0B02 release from ZTE has instructions for how to load it using the stock
+recovery image, and once it&#8217;s installed you&#8217;ll be able to use the simple tools
+to get your code onto the device. Also nice, with the ZTE provided update.zip
+on your SD card you can use recovery mode to get back to a working system if
+you end up screwing up the system partition. Which I did dozens of times.</p>
+
+<p>Once you have the ZTE update in make sure you have debugging turned on for
+your phone. Go into Settings / Device Information / More Information /
+Developer and flip on the Remote Debugging option if it isn&#8217;t on already.</p>
+
+<p>Next, unfortunately, you&#8217;ll have to grab a binary image of the
+<a href="http://sl.edujose.org/2013/10/adapted-boot-image-for-use-with-b2g.html">boot partition</a>
+hacked up and ready to use. This is horrible, and it&#8217;s the other part that was
+really a sticking point trying to figure out. As you&#8217;ll see later on, for some
+reason the boot2gecko build for the inari device (which is the name you use
+for building for the ZTE Open) doesn&#8217;t generate a boot.img. From what I can
+tell it doesn&#8217;t even generate the parts necessary to pull together into a
+boot.img. And as I found out through multiple tries, putting the system and
+user partitions from a custom build together with the boot from a stock system
+you&#8217;ll generally end up with the OS booting and the UI layers crashing
+repeatedly. That&#8217;s what I got at least.</p>
+
+<p>Once you&#8217;ve got that stuff the build is pretty much as described in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Firefox_OS_build_prerequisites">FirefoxOS build docs</a>.
+I use an OS X system, but I did my build in a VMWare VM running Ubuntu 13.04.
+The tools used to interact with the Firefox OS devices are the same as used
+for Android development. And I&#8217;ve done that under a VM tons, so I was pretty
+comfortable with that part of the setup. Plus being in a VM meant I could muck
+with the stuff in the Linux install as much as I wanted. Below is the actual process I
+ran through, getting all the tools in place, configuring, and building. This
+assumes you&#8217;re starting from a completely fresh 13.04 install, you run through
+the installer and then let it pull down any updates, then do this:</p>
+
+<ul>
+<li>sudo apt-get install &#8211;no-install-recommends autoconf2.13 bison bzip2 ccache
+curl flex gawk gcc g++ g++-multilib gcc-4.6 g++-4.6 g++-4.6-multilib git
+ia32-libs lib32ncurses5-dev lib32z1-dev zlib1g:amd64 zlib1g-dev:amd64
+zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip</li>
+<li>sudo add-apt-repository ppa:webupd8team/java</li>
+<li>sudo apt-get update</li>
+<li>sudo apt-get install oracle-java6-installer</li>
+<li>sudo apt-get install oracle-java6-set-default</li>
+<li>sudo apt-get install android-tools-adb</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;19d2&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; > /etc/udev/rules.d/android.rules</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;18d1&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; >> /etc/udev/rules.d/android.rules</li>
+<li>sudo chmod a+r /etc/udev/rules.d/android.rules</li>
+<li>sudo service udev restart</li>
+<li>export CC=gcc-4.6</li>
+<li>export CXX=g++-4.6</li>
+<li>ccache &#8211;max-size 3GB</li>
+<li>git config &#8211;global user.email xxxx</li>
+<li>git config &#8211;global user.name &#8220;yyyy&#8221;</li>
+<li>git clone git://github.com/mozilla-b2g/B2G.git</li>
+<li>cd B2G</li>
+<li>BRANCH=v1.2 VARIANT=user ./config.sh inari</li>
+<li>BRANCH=v1.2 VARIANT=user ./build.sh</li>
+<li>cp [location of that binary boot.img] out/target/product/inari/boot.img</li>
+<li>./flash.sh</li>
+</ul>
+
+
+<p>And then you should have a FFOS 1.2 install runnable on your device. I tested
+mine out with my TMobile SIM in the US: phone works, SMS works, data connection
+works (though by default it was disabled on mine, just use the notification
+pulldown and toggle the cellular data option right next to the wifi toggle).
+Hopefully as the device and OS evolve this gets a lot easier and more developer
+friendly. Needing to pull a binary boot image from someone else just to get a
+fresh build onto a device, that&#8217;s not good. I was expecting FFOS development
+to show up Android development in terms of encouraging developers to work with
+the base system. Not the case so far.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2013/09/19/knife-block-for-chef-testing/">Knife-block for Chef Testing</a></h1>
     
     
@@ -100,7 +254,7 @@ and some workflow suggestions. We &hellip;">
   
 
 
-<time datetime="2013-09-19T12:17:00-04:00" pubdate data-updated="true">Sep 19<span>th</span>, 2013</time>
+<time datetime="2013-09-19T12:17:00-07:00" pubdate data-updated="true">Sep 19<span>th</span>, 2013</time>
         
       </p>
     
@@ -237,7 +391,7 @@ as Chef has been
   
 
 
-<time datetime="2013-07-14T17:41:00-04:00" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
+<time datetime="2013-07-14T17:41:00-07:00" pubdate data-updated="true">Jul 14<span>th</span>, 2013</time>
         
       </p>
     
@@ -326,7 +480,7 @@ on will pay back hugely.</p>
   
 
 
-<time datetime="2013-05-28T23:43:00-04:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
+<time datetime="2013-05-28T23:43:00-07:00" pubdate data-updated="true">May 28<span>th</span>, 2013</time>
         
       </p>
     
@@ -442,7 +596,7 @@ to production. But at least there&#8217;s movement in the right direction now.</
   
 
 
-<time datetime="2013-03-09T21:23:00-05:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
+<time datetime="2013-03-09T21:23:00-08:00" pubdate data-updated="true">Mar 9<span>th</span>, 2013</time>
         
       </p>
     
@@ -576,7 +730,7 @@ being a lot more low volume than I have been in the past.</p>
   
 
 
-<time datetime="2013-02-06T12:48:00-05:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
+<time datetime="2013-02-06T12:48:00-08:00" pubdate data-updated="true">Feb 6<span>th</span>, 2013</time>
         
       </p>
     
@@ -696,7 +850,7 @@ social tools were standing in the way.</p>
   
 
 
-<time datetime="2013-02-04T23:29:00-05:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
+<time datetime="2013-02-04T23:29:00-08:00" pubdate data-updated="true">Feb 4<span>th</span>, 2013</time>
         
       </p>
     
@@ -800,7 +954,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-20T08:01:18-04:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
+<time datetime="2006-09-20T05:01:18-07:00" pubdate data-updated="true">Sep 20<span>th</span>, 2006</time>
         
       </p>
     
@@ -840,7 +994,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-18T19:21:23-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
+<time datetime="2006-09-18T16:21:23-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
         
       </p>
     
@@ -876,7 +1030,7 @@ app that kicked this whole thing off 10 years ago.</p>
   
 
 
-<time datetime="2006-09-18T09:16:12-04:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
+<time datetime="2006-09-18T06:16:12-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
         
       </p>
     
@@ -886,44 +1040,6 @@ app that kicked this whole thing off 10 years ago.</p>
   <div class="entry-content"><p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
 
 <p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn&#8217;t cause any problems I&#8217;ll put it in here at work too.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/15/subversion-book/">Subversion Book</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-15T05:46:37-04:00" pubdate data-updated="true">Sep 15<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve been giving myself a svn refresher so that we can move over to it, and I hit this in the <a href="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.maint.html">maintenance tools documentation page</a> and it made me laugh out loud:</p>
-
-<blockquote><p>This output is human-readable, meaning items like the datestamp are displayed using a textual representation instead of something more obscure (such as the number of nanoseconds since the Tasty Freeze guy drove by).</p></blockquote>
 </div>
   
   
@@ -969,6 +1085,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
       </li>
     
@@ -982,10 +1102,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/02/06/use-of-time/">Use of Time</a>
       </li>
     
   </ul>

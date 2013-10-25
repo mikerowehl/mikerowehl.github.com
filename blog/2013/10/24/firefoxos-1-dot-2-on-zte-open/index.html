@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>FirefoxOS 1.2 on ZTE Open - Miker</title>
+  <meta name="author" content="Mike Rowehl">
+
+  
+  <meta name="description" content="I picked up a ZTE Open
+Firefox OS device a little while ago. Given that
+developer hub says
+it&#8217;s a &#8220;powerful device aimed at developers &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Miker" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38246826-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Miker</a></h1>
+  
+    <h2>17th level Hacker</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rowehl.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">FirefoxOS 1.2 on ZTE Open</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-24T18:06:00-07:00" pubdate data-updated="true">Oct 24<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I picked up a <a href="http://www.engadget.com/2013/10/03/zte-open-review/">ZTE Open</a>
+Firefox OS device a little while ago. Given that
+<a href="https://marketplace.firefox.com/developers/dev_phone">developer hub</a> says
+it&#8217;s a &#8220;powerful device aimed at developers and early adopters worldwide&#8221; I
+figured it would be good for some hackery. I read the specs, so I knew that
+&#8220;powerful&#8221; should be pretty suspect. I was surprised to find out that it&#8217;s not
+really for developers, and increasingly doesn&#8217;t seem to be all that open.</p>
+
+<p>When I first grabbed it I figured maybe I could use it to just get a feel for
+FirefoxOS and the direction the teams were trying to push for. However, the
+phone ships with a 1.0.0 version of the operating system and some major basic
+features were missing to even use it for a day or two. For instance GMail
+contact syncing shows up in FFOS 1.1 (I&#8217;m not a Facebook user, so syncing using
+the one existing mechanism wasn&#8217;t an option). Since this was supposed to be
+a developer phone for early adopters, I figured that would be easy to remedy.
+Not so, there&#8217;s no official OS updates for the phone planned at all. Weird.</p>
+
+<p>Okay, no problem, I&#8217;ll use it to just do a little poking around developing
+using the Gecko/Gaia stack and getting a feel for it on real hardware. However,
+trying to push an app from the simulator it never showed up on the phone.
+Rebooted and it popped up. Turns out there&#8217;s a
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=842725">race condition bug in FFOS 1.0</a>
+which really keeps it from being usable as a developer platform.
+Of course the pages talking about it say you should &#8220;make sure you have the
+latest version of Firefox OS on your devices&#8221;. Which we just established
+isn&#8217;t possible for this developer device, at least not according to ZTE.
+Well ain&#8217;t that just a kick in the crotch?</p>
+
+<p>So of course I ended up doing what I said I wasn&#8217;t going to do, and dove
+straight down the rabbithole of compiling my own recent version of Firefox OS
+from source and getting it installed on my ZTE Open device. Turned out to be
+way more of an involved process than I expected given that the device is named
+the &#8220;ZTE Open&#8221;. I expected that to mean developer friendly. Together with the
+Firefox site saying the device was aimed at developers, I didn&#8217;t see any
+reason to second guess that assumption. Here&#8217;s the process I went through
+though, which should get you going from an unboxing to running FFOS 1.2 on
+your device. The process isn&#8217;t too horrible, but making sense of lots of the
+existing posts out there and figuring out the right order for a fresh device
+took some experimentation.</p>
+
+<p>The first thing to do is apply the
+<a href="http://www.ztedevices.com/support/smart_phone/b5a2981a-1714-4ac7-89e1-630e93e220f8.html?type=software">update from ZTE</a>.
+This was one of the hardest parts to puzzle out for me. Turns out the firmware
+on the model I had was old enough that it was failing to flash the images once
+I had them built. There were folks posting that they had gotten certain parts
+working, and it was failing for me and others who had recently purchased
+devices. Turned out that the original firmware didn&#8217;t support fastboot, which
+is one of the mechanisms for getting the code actually onto th device. That
+V1.0.0B02 release from ZTE has instructions for how to load it using the stock
+recovery image, and once it&#8217;s installed you&#8217;ll be able to use the simple tools
+to get your code onto the device. Also nice, with the ZTE provided update.zip
+on your SD card you can use recovery mode to get back to a working system if
+you end up screwing up the system partition. Which I did dozens of times.</p>
+
+<p>Once you have the ZTE update in make sure you have debugging turned on for
+your phone. Go into Settings / Device Information / More Information /
+Developer and flip on the Remote Debugging option if it isn&#8217;t on already.</p>
+
+<p>Next, unfortunately, you&#8217;ll have to grab a binary image of the
+<a href="http://sl.edujose.org/2013/10/adapted-boot-image-for-use-with-b2g.html">boot partition</a>
+hacked up and ready to use. This is horrible, and it&#8217;s the other part that was
+really a sticking point trying to figure out. As you&#8217;ll see later on, for some
+reason the boot2gecko build for the inari device (which is the name you use
+for building for the ZTE Open) doesn&#8217;t generate a boot.img. From what I can
+tell it doesn&#8217;t even generate the parts necessary to pull together into a
+boot.img. And as I found out through multiple tries, putting the system and
+user partitions from a custom build together with the boot from a stock system
+you&#8217;ll generally end up with the OS booting and the UI layers crashing
+repeatedly. That&#8217;s what I got at least.</p>
+
+<p>Once you&#8217;ve got that stuff the build is pretty much as described in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Firefox_OS_build_prerequisites">FirefoxOS build docs</a>.
+I use an OS X system, but I did my build in a VMWare VM running Ubuntu 13.04.
+The tools used to interact with the Firefox OS devices are the same as used
+for Android development. And I&#8217;ve done that under a VM tons, so I was pretty
+comfortable with that part of the setup. Plus being in a VM meant I could muck
+with the stuff in the Linux install as much as I wanted. Below is the actual process I
+ran through, getting all the tools in place, configuring, and building. This
+assumes you&#8217;re starting from a completely fresh 13.04 install, you run through
+the installer and then let it pull down any updates, then do this:</p>
+
+<ul>
+<li>sudo apt-get install &#8211;no-install-recommends autoconf2.13 bison bzip2 ccache
+curl flex gawk gcc g++ g++-multilib gcc-4.6 g++-4.6 g++-4.6-multilib git
+ia32-libs lib32ncurses5-dev lib32z1-dev zlib1g:amd64 zlib1g-dev:amd64
+zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip</li>
+<li>sudo add-apt-repository ppa:webupd8team/java</li>
+<li>sudo apt-get update</li>
+<li>sudo apt-get install oracle-java6-installer</li>
+<li>sudo apt-get install oracle-java6-set-default</li>
+<li>sudo apt-get install android-tools-adb</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;19d2&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; > /etc/udev/rules.d/android.rules</li>
+<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;18d1&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; >> /etc/udev/rules.d/android.rules</li>
+<li>sudo chmod a+r /etc/udev/rules.d/android.rules</li>
+<li>sudo service udev restart</li>
+<li>export CC=gcc-4.6</li>
+<li>export CXX=g++-4.6</li>
+<li>ccache &#8211;max-size 3GB</li>
+<li>git config &#8211;global user.email xxxx</li>
+<li>git config &#8211;global user.name &#8220;yyyy&#8221;</li>
+<li>git clone git://github.com/mozilla-b2g/B2G.git</li>
+<li>cd B2G</li>
+<li>BRANCH=v1.2 VARIANT=user ./config.sh inari</li>
+<li>BRANCH=v1.2 VARIANT=user ./build.sh</li>
+<li>cp [location of that binary boot.img] out/target/product/inari/boot.img</li>
+<li>./flash.sh</li>
+</ul>
+
+
+<p>And then you should have a FFOS 1.2 install runnable on your device. I tested
+mine out with my TMobile SIM in the US: phone works, SMS works, data connection
+works (though by default it was disabled on mine, just use the notification
+pulldown and toggle the cellular data option right next to the wifi toggle).
+Hopefully as the device and OS evolve this gets a lot easier and more developer
+friendly. Needing to pull a binary boot image from someone else just to get a
+fresh build onto a device, that&#8217;s not good. I was expecting FFOS development
+to show up Android development in terms of encouraging developers to work with
+the base system. Not the case so far.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Mike Rowehl</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-24T18:06:00-07:00" pubdate data-updated="true">Oct 24<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/engineering/'>Engineering</a>, <a class='category' href='/blog/categories/mobile/'>Mobile</a>, <a class='category' href='/blog/categories/open-source/'>Open Source</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/" data-via="miker" data-counturl="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/09/19/knife-block-for-chef-testing/" title="Previous Post: knife-block for Chef Testing">&laquo; knife-block for Chef Testing</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    I'm Mike Rowehl, a programmer and entrepreneur living in the San Francisco bay area.
+    I've been working in the mobile industry for a long time, and have been involved in launching a bunch of startups in the space.
+    I've been programming and working with open source projects for even longer.
+    I'm a fan of high tech, and high tech startups in particular.
+  </p>
+</section>
+<section>
+  <h1>Other Info</h1>
+  <ul>
+      <li><a href="http://twitter.com/miker">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/miker">LinkedIn</a></li>
+      <li><a href="http://stackoverflow.com/users/506507/mikerowehl">Stackoverflow</a></li>
+      <li><a href="http://github.com/mikerowehl">Github</a></li>
+      <li><a href="http://angel.co/mike-rowehl">AngelList</a></li>
+      <li><a href="http://thisismobility.com/blog/">This is Mobility</a></li>
+      <li><a href="http://delicious.com/miker">Delicious</a></li>
+      <li><a href="http://www.crunchbase.com/person/mike-rowehl">Crunchbase</a></li>
+      <li><a href="/resume.html">My Resume</a></li>
+  </ul>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/19/knife-block-for-chef-testing/">knife-block for Chef Testing</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <a class="twitter-timeline" href="https://twitter.com/miker" data-widget-id="351498938945261569">Tweets by @miker</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/mikerowehl">@mikerowehl</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'mikerowehl',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/miker?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/miker">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Mike Rowehl -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

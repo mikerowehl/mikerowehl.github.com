@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Millennial Media | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/millennial-media/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-09-20T15:02:28-04:00</updated>
+  <updated>2013-10-24T19:23:25-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Consistent Test Methodology for Inconsistent Projects]]></title>
     <link href="http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/"/>
-    <updated>2013-05-28T23:43:00-04:00</updated>
+    <updated>2013-05-28T23:43:00-07:00</updated>
     <id>http://rowehl.com/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects</id>
     <content type="html"><![CDATA[<p>How do you start introducing some testing if you have a huge group of existing
 projects, for the most part all implemented using different languages and

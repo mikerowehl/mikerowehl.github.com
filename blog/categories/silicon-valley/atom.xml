@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Silicon Valley | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/silicon-valley/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-09-20T15:02:28-04:00</updated>
+  <updated>2013-10-24T19:23:25-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Tagcamp]]></title>
     <link href="http://rowehl.com/blog/2005/10/31/tagcamp/"/>
-    <updated>2005-10-31T19:36:34-05:00</updated>
+    <updated>2005-10-31T16:36:34-08:00</updated>
     <id>http://rowehl.com/blog/2005/10/31/tagcamp</id>
     <content type="html"><![CDATA[<p>I went to <a href="http://www.tagcamp.org/">Tagcamp</a> this past weekend, fantastic event. I met a ton of new people, which is always fun. A lot of great information and new projects. Although I missed her presentation, I found out about Rashmi's <a href="http://www.rashmisinha.com/archives/05_09/tagging-cognitive.html">cognitive analysis of tagging</a> while I was there. I think the two images there explain why tagging is different than categorization better than anything else I've seen before. The session that <a href="http://marshallk.com/">Marshall Kirkpatrick</a> was very lively. The conversation focused on making tagging more accessible to users. If tagging really is a different model for organizing information how can we provide that in a way that doesn't include a large cliff to adoption? Some of the folks proposed getting together sets of user stories as a start to finding the common bits and root drivers for successful adoption. Unfortunately I can't find where anyone has written down that tag, the notes from the session seem to have gotten rightly fucked. Anyone have another copy of the notes floating around on a hard drive?</p>
 
@@ -31,7 +31,7 @@
   <entry>
     <title type="html"><![CDATA[Tag Tuesday Tomorrow]]></title>
     <link href="http://rowehl.com/blog/2005/09/26/tag-tuesday-tomorrow/"/>
-    <updated>2005-09-26T10:27:03-04:00</updated>
+    <updated>2005-09-26T07:27:03-07:00</updated>
     <id>http://rowehl.com/blog/2005/09/26/tag-tuesday-tomorrow</id>
     <content type="html"><![CDATA[<p>I'm planning to head up to the city tomorrow to meet up with some folks in town for <a href="http://www.wirelessit.com/">CTIA San Francisco</a>, and Niall pointed out that <a href="http://www.tagtuesday.com/index.php/2005/09/23/tag-tuesday-september-meeting/">Tag Tuesday</a> is tomorrow too.  I haven't been out and about all that much lately, so I'm hoping to catch up with a whole bunch of people. If you're gonna be somewhere around Soma tomorrow in the evening give me a ring or send me a message.</p>
 ]]></content>
@@ -40,7 +40,7 @@
   <entry>
     <title type="html"><![CDATA[Oral History of Silicon Valley]]></title>
     <link href="http://rowehl.com/blog/2005/09/19/oral-history-or-silicon-valley/"/>
-    <updated>2005-09-19T22:14:59-04:00</updated>
+    <updated>2005-09-19T19:14:59-07:00</updated>
     <id>http://rowehl.com/blog/2005/09/19/oral-history-or-silicon-valley</id>
     <content type="html"><![CDATA[<p>I listened to <a href="http://www.itconversations.com/shows/detail595.html">John Markoff's talk from the SDForum</a> while I was wandering around, and decided that it was too good of a collection of references about Silicon Valley not to have my own pointers online. I'll have to pick up the book also, sounds like it'll be great. Meantime, here's a set of pointers to stuff (people, places, things) that's at least refferenced in the audio:</p>
 
@@ -75,7 +75,7 @@
   <entry>
     <title type="html"><![CDATA[Search SIG]]></title>
     <link href="http://rowehl.com/blog/2005/09/15/search-sig/"/>
-    <updated>2005-09-15T11:04:48-04:00</updated>
+    <updated>2005-09-15T08:04:48-07:00</updated>
     <id>http://rowehl.com/blog/2005/09/15/search-sig</id>
     <content type="html"><![CDATA[<p>The <a href="http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1754&amp;mo=9&amp;yr=2005">first meeting of the Search SIG from SDForum</a> was last night. The new forum is run by <a href="http://www.500hats.com/sys-tmpl/door/">Dave McClure</a> and <a href="http://blog.softtechvc.com/">Jeff Clavier</a>. They did a great job on this first event, and I'm really looking forward to our combined Search SIG and Mobile Monday event happening next month. I only seen <a href="http://www.horsepigcow.com/2005/09/search-sig-yahoo.html">one posting so far</a>. After <a href="http://www.niallkennedy.com/blog/">Niall</a> and <a href="http://feedblog.org/">Kevin</a> vying for attention during the announcements, I figured they would represent with a summary or something.  Here's mine.</p>
 
@@ -104,7 +104,7 @@
   <entry>
     <title type="html"><![CDATA[Innovation Disconnect]]></title>
     <link href="http://rowehl.com/blog/2005/09/07/innovation-disconnect/"/>
-    <updated>2005-09-07T05:26:10-04:00</updated>
+    <updated>2005-09-07T02:26:10-07:00</updated>
     <id>http://rowehl.com/blog/2005/09/07/innovation-disconnect</id>
     <content type="html"><![CDATA[<p>I see stories like <a href="http://hardware.slashdot.org/article.pl?sid=05/09/03/2011200&amp;from=rss">this one about 4G cell phone services being worked on with gigabit data rates</a> and <a href="http://slashdot.org/article.pl?sid=05/09/04/1410253&amp;from=rss">this one with doubts about consumers really wanting digital homes</a> and overall I'm left wondering about the ability of the market to deliver innovation. Would I like gigabit data rates to my phone? Of course, why not? Would I be willing to pay the equivalently scaled up cost of $200K per month in order to do so ($20 per month for 100Kbps being vaguely equivalent to $200,000 per month for 1,000,000Kbps or 1Gbps)? No, of course I wouldn't. In many ways the technical achievement in these fields has outstripped the ability of markets and products to deliver them to end users. Innovation is good, seemingly unrelated discoveries sometimes lead to fantastic breakthroughs, and the only way to get that to happen is to let the passionate people keep hacking away on the things they love. But there's also a very real sense of doubt when I hear about this stuff. I was supposed to have gigabit wired connections available at home. It was supposed to give me instant access to all the world media at the click of a button. I think it would be fair to say that vision was unrealistic. So when I hear that I could get gigabit to my handset soon I can't help but think "Wow, I would like to just consistently get my 100Kbps all the way from Palo Alto to San Francisco on the train without constant service drops." And think sarcasticly that the real driver for the enhanced data rate is that telcos think their profits will scale with the data rate because now people can download more ringtones. When in reality if they want to sell more ringtones the limiting factor has nothing to do with bandwidth. It has to do with user interface and cost and customer awareness and compelling product. I would guess that bandwidth is somewhere down around 20th in terms of contributing factors.</p>
 ]]></content>
