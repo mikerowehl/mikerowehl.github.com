@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Wow, folks really hate this George Bush Jr. guy. You would think he roamed around in the streets killing puppies and kicking children or something. I &hellip;">
+  <meta name="description" content="I need to post a pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly. I&#8217;m sure Tim has nothing to do &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/">The Web 2.0 Cease and Desist and Self Healing Systems</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-05-25T08:40:29-07:00" pubdate data-updated="true">May 25<span>th</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
+
+<p>Things like this are bound to happen in any organization/company once the size gets beyond a certain threshold. Perhaps not quite this ridiculous in most cases, but there will be some evidence of lack of syncronization and goal mismatches. In the real world normally this stuff gets cleared up pretty quick. Tim pops up and says &#8220;wow, we didn&#8217;t mean to do that, sorry!&#8221; or someone at CMP chews the lawyers out and releases a statement&#8230; whatever. The point being that inconsistencies and unexpected situations are generally noticed and dealt with. Outside the blogospere at least. Inside the blogosphere they can live on forever, but that&#8217;s really a whole seperate issue.</p>
+
+<p>Odd situations like that tend to cause failures in software though. When something unexpected comes up within a system it&#8217;s generally catastrophic. When something unexpected comes up during an interaction between systems you&#8217;re sometimes lucky just to find out what happened after the fact. I&#8217;ve been thinking about self healing systems recently, although I can&#8217;t remember what might have kicked it off. And after reading this realized that almost all human designed systems are relatively fragile and rigid. Law being one of the obvious areas of intersection between codification and human behavior I would expect it might hold some hints about how to handle that well. But law is just guidelines, and the rationality really derives from a human in the loop pulling the strings, judge or jurry. It&#8217;s not a system itself really so much as an extension and recording of the will of the judges to keep them from having to repeat themselves. So I keep coming back to the non-human systems to try to find isolated systems that heal well. Insect behavior is one of the classic examples, ants and bees.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -415,80 +455,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/03/05/writing-a-web-service-interface-on-ning/">Writing a Web Service Interface on Ning</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-03-05T13:59:28-08:00" pubdate data-updated="true">Mar 5<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Like I was babbling about yesterday, I&#8217;ve been <a href="http://www.thisismobility.com/blog/?p=107">thinking about different ways of hooking up mobile applications and web applications and trying to bridge the gap</a>. One area that gets a lot of leverage relatively quickly is implementing de-facto standard web service interfaces that the mobile applications can hook up to. There are both desktop and mobile applications that interact with the <a href="http://www.blogger.com/developers/api/1_docs/">Blogger API</a>, <a href="http://www.flickr.com/services/api/">Flickr Services</a>, the <a href="http://www.ietf.org/html.charters/atompub-charter.html">Atom Publishing Protocol</a>, etc.</p>
-
-<p>Yesterday while chatting with Russ I decided to try setting up an application that would accept posts from the Nokia <a href="http://www.nokia.com/lifeblog">Lifeblog</a> app. Russ pointed me at <a href="http://www.robertprice.co.uk/robblog/archive/2005/2/Lifeblog_Posting_Protocol_Example.shtml">Robert Price&#8217;s description of getting Lifeblog posting to his site</a>. Simple enough. My version is up at <a href="http://lifeblog.ning.com/">lifeblog.ning.com</a>. Although it&#8217;s currently nothing more than a sample, it&#8217;s on Ning so it&#8217;s easily clonable and hopefully will encourage some experimentation. It also shows off some interesting parts of <a href="http://www.ning.com">Ning</a> in general.</p>
-
-<p>One of the common misperceptions about Ning is that you can only clone the applications that we have available. That&#8217;s not true at all, and everything I did to setup the Lifeblog sample I did as a normal user of the system. Here&#8217;s a rundown of some of the general techniques and some tips for setting up a web service interface if you have an app on Ning.</p>
-
-<p><strong>Returning Non-HTML Content</strong></p>
-
-<p>Normally when you generate some HTML output on the Ning playground your bare content is wrapped with the xn_header.view header and standard sidebar before going back to the user&#8217;s browser. If we&#8217;re going to be generating responses to web services requests we obviously don&#8217;t want to get that stuff jammed into our responses. No problem, Ning only decorates HTML content. Just set the appropriate header to mark your output as XML and it&#8217;ll go right back out to the client unmodified. In this case I&#8217;m returning Atom responses, so I send application/atom+xml as the content type:</p>
-
-<p><code>header( "Content-type: application/atom+xml" );</code></p>
-
-<p><strong>Returning Non-200 HTTP Response Codes</strong></p>
-
-<p>You can also use header() to send response codes other than 200 back in the HTTP status line. Good, cause the Atom docs for Lifeblog say that the app wants a &#8220;201 Created&#8221; response back from a successful post. Just a different form of header line, and that also makes it back to the client:</p>
-
-<p><code>header( "HTTP/1.1 201 Created" );</code></p>
-
-<p><strong>Appending The xn_auth=no Parameter</strong></p>
-
-<p>Okay, this one is specific to Ning. The way we handle authentication across multiple applications all under the same ning.com domain without requiring a user to sign in for every one - while still providing security between applications - does cause a problem for this particular class of access. Normally when you make a request via browser to the Ning site a set of redirects are done to set some cookies and get a session prepared. We really don&#8217;t want to do that however, we just want to get our request through and get outta there. Once again however, <a href="http://documentation.ning.com/group.php?FAQGroup:title=General+Questions+about+Development#faq-700377">a mechanism already exists to tell the system we don&#8217;t want any of the normal session setup</a>. It was put there when we discovered problems with some RSS feed readers following the redirects, but it&#8217;ll work perfectly fine for our purposes as well. Whenever specifying an endpoint for a service there should be an xn_auth=no parameter present to prevent the redirects.</p>
-
-<p><strong>Processing a Raw Request Using SimpleXML</strong></p>
-
-<p>The requests that come in arrive as XML documents posted against the script we write. So, how do you read in an XML document in PHP? Normally the variables for requests are in the $<em>GET or $</em>POST variables. Well, you read in a document like this:</p>
-
-<p><code>$data = file_get_contents('php://input');</code></p>
-
-<p>That&#8217;s not a Ning specific thing, it&#8217;s the mechanism PHP provides to access the raw content of a POST. So, now that you&#8217;ve got the raw content how do you handle it? The easiest way is probably <a href="http://www.php.net/simplexml">SimpleXML</a>, which generally really lives up to the name:</p>
-
-<p><code>$xml = @simplexml_load_string($data);</code></p>
-
-<p>That parses the posted document into an object that can be used to pull the text, elements, and attributes pretty simply:</p>
-
-<p><code>$title = (string)$xml-&gt;title;</code></p>
-
-<p><strong>More Stuff Later</strong></p>
-
-<p>My simple sample doesn&#8217;t really process all that it should out of the Lifeblog requests. Once I have another weekend to hack on the stuff I&#8217;ll get it doing things like aggregating the multiple requests sent for each post into a single unit for storage and display. Authentication would also be nice to support. Although I do like anyone being able to throw content in, it&#8217;s definitely not appropriate for all cases. Prudes. And that should show off some additional stuff like namespace handling in SimpleXML (which is actually <a href="http://www.zend.com/php5/articles/php5-simplexml.php#Heading3">surprisingly elegantly done</a>) and handling custom HTTP headers for dealing with WSSE. Soon&#8230; probably ;-)</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -529,6 +495,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -542,10 +512,6 @@
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

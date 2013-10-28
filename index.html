@@ -9,10 +9,10 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I picked up a ZTE Open
-Firefox OS device a little while ago. Given that
-developer hub says
-it&#8217;s a &#8220;powerful device aimed at developers &hellip;">
+  <meta name="description" content="One of the nice things about
+getting FFOS 1.2 on my device
+is being able to use App Manager instead of the simulator plugin to do
+development. Given &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,79 @@ it&#8217;s a &#8220;powerful device aimed at developers &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS With App Manager</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-28T10:46:00-07:00" pubdate data-updated="true">Oct 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of the nice things about
+<a href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">getting FFOS 1.2 on my device</a>
+is being able to use App Manager instead of the simulator plugin to do
+development. Given that
+<a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">the App Manager replaces the Simulator Dashboard</a>
+in the newest versions of Firefox, it seems like the kind of thing developers
+should have access to. So hopefully ZTE figures out a way to get a 1.2+
+release on their developer phones.</p>
+
+<p>Note however that the app manager is available in the Firefox 26 series, which
+is <a href="http://www.mozilla.org/en-US/firefox/aurora/">current the pre-alpha release</a>.
+You can install Aurora side by side with the current stable Firefox release
+(that&#8217;s the default on OS X at least). The app manager is available without
+having to install anything, but you&#8217;ll need to install the ADB helper to
+connect to an actual device. Details are in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Using_the_App_Manager">using the app manager</a>
+document. I&#8217;ve been testing it out primarily with my locally built FFOS 1.2 on
+the ZTE Open (inari) device.</p>
+
+<p>Now comes the hard part of trying to figure out what you can put on the
+device to make sure everything is working before you dive too far into
+hacking around on your own. You&#8217;ll probably run across things like
+<a href="https://github.com/mozilla/firefoxos-quick-start">the Firefox OS Quick Start example</a>
+and the <a href="https://github.com/mozilla/mortar">Mozilla templates for Open Web Apps</a>.
+None of those seem to be working to generate something you can install on
+a device (they work great for the simulator, running on the same machine as
+your development tools). Seems like there haven&#8217;t been a ton of folks working
+with physical devices yet.</p>
+
+<p>This
+<a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">Firefox OS boilerplate app</a>
+serves as a fantastic starting point however. Just a clone and then
+&#8220;Add Packaged App&#8221; in the app manager and you&#8217;ll be able to refresh and run
+on the device. There&#8217;s some rough bits, like geolocation isn&#8217;t working within
+the app on my device, and &#8220;Take picture&#8221; has some issues. However I can
+&#8220;Pick image&#8221; and choose camera as the source and that works okay. And the
+rest of the stuff like vibrate, ambient light, device orientation, and check
+battery are all working.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1009,44 +1082,6 @@ app that kicked this whole thing off 10 years ago.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/18/spellbound-firefox-plugin-dev-version/">SpellBound Firefox Plugin, Dev Version</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-18T06:16:12-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I&#8217;m looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don&#8217;t want to start mucking around now that I&#8217;ve just started accepting I don&#8217;t need to build everything by hand. Start pulling on that thread again and whole thing comes apart!</p>
-
-<p>Normally I use a plugin for spell checking, but it stopped working a few updates ago. Firefox or the extension claims that they are no longer friends. So I was very happy to find the <a href="http://forums.mozillazine.org/viewtopic.php?t=351130">development preview</a> of SpellBound, which not only works with the current Firefox releases under Ubuntu, but does inline spellcheck. Double w00t to that one.  I have it installed at home, as long as it doesn&#8217;t cause any problems I&#8217;ll put it in here at work too.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1085,6 +1120,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -1098,10 +1137,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

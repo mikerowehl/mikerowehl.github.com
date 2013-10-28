@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Although I&#8217;m not at all looking, I keep a copy of my resume up online. Why? Because sometimes a recruiter will call and drop a nice nugget of &hellip;">
+  <meta name="description" content="The slides from Van Jacobson&#8217;s LCA2006 presentation are online. They talk about an evolution to the Linux networking stack targeted at taking &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,48 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2006/01/31/van-jacobsons-linux-networking-slides/">Van Jacobson&#8217;s Linux Networking Slides</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-01-31T08:34:39-08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2006</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/30#van_slides">slides from Van Jacobson&#8217;s LCA2006 presentation</a> are online. They talk about an evolution to the Linux networking stack targeted at taking into account multicore systems. If I had to summarize the presentation I would steal the title from slide 16: &#8220;The end of the wire isn&#8217;t the end of the net&#8221;.</p>
+
+<blockquote><p>On a uni-processor it doesn&#8217;t matter, but on a multi-processor the protocol work should be done on the processor that&#8217;s going to consume the data.</p></blockquote>
+
+<p>This means ISR and Softint should do almost nothing and Socket should do everything.</p>
+
+<p>The slides are excellent and lay out the issue very clearly, but I would also recommend checking out <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/27#vj_channels">DaveM&#8217;s comments on net channels</a>. It was his writeup that turned me on to the presentation.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -420,44 +462,6 @@ If you&#8217;re the kind of person who hops out of bed in the middle of the nigh
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/13/small-small-gps/">Small Small GPS</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-13T05:11:18-08:00" pubdate data-updated="true">Jan 13<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Aww yea, starting up the <a href="http://engadget.com/2006/01/12/new-zealands-rakon-develops-worlds-smallest-gps-receiver/">talk about implanted electronics</a> is a sure way to get my attention. Although knowing GPS you could probably get the chip implanted subcutaneous but then need a large dish antenna grafted to your forehead in order to use it, and it would still only work outside under clear conditions. I wonder if maybe I could just plan to hook it up to the adamantium in the skeletal grafts I have planned and use that for reception? I wonder where I&#8217;ll have to store the maps to go along with it&#8230; I don&#8217;t want to think about it.</p>
-
-<p>Update: Russ just pasted me <a href="http://images.southparkstudios.com/media/images/101/satelite_dish.gif">this South Park image</a> to go along with the post, and I just wanted to share. Fricking hysterical.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -498,6 +502,10 @@ If you&#8217;re the kind of person who hops out of bed in the middle of the nigh
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -511,10 +519,6 @@ If you&#8217;re the kind of person who hops out of bed in the middle of the nigh
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

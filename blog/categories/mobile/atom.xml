@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mobile | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/mobile/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-10-25T16:01:59-07:00</updated>
+  <updated>2013-10-28T11:16:21-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox OS with App Manager]]></title>
+    <link href="http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager/"/>
+    <updated>2013-10-28T10:46:00-07:00</updated>
+    <id>http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager</id>
+    <content type="html"><![CDATA[<p>One of the nice things about
+<a href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">getting FFOS 1.2 on my device</a>
+is being able to use App Manager instead of the simulator plugin to do
+development. Given that
+<a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">the App Manager replaces the Simulator Dashboard</a>
+in the newest versions of Firefox, it seems like the kind of thing developers
+should have access to. So hopefully ZTE figures out a way to get a 1.2+
+release on their developer phones.</p>
+
+<p>Note however that the app manager is available in the Firefox 26 series, which
+is <a href="http://www.mozilla.org/en-US/firefox/aurora/">current the pre-alpha release</a>.
+You can install Aurora side by side with the current stable Firefox release
+(that's the default on OS X at least). The app manager is available without
+having to install anything, but you'll need to install the ADB helper to
+connect to an actual device. Details are in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Using_the_App_Manager">using the app manager</a>
+document. I've been testing it out primarily with my locally built FFOS 1.2 on
+the ZTE Open (inari) device.</p>
+
+<p>Now comes the hard part of trying to figure out what you can put on the
+device to make sure everything is working before you dive too far into
+hacking around on your own. You'll probably run across things like
+<a href="https://github.com/mozilla/firefoxos-quick-start">the Firefox OS Quick Start example</a>
+and the <a href="https://github.com/mozilla/mortar">Mozilla templates for Open Web Apps</a>.
+None of those seem to be working to generate something you can install on
+a device (they work great for the simulator, running on the same machine as
+your development tools). Seems like there haven't been a ton of folks working
+with physical devices yet.</p>
+
+<p>This
+<a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">Firefox OS boilerplate app</a>
+serves as a fantastic starting point however. Just a clone and then
+"Add Packaged App" in the app manager and you'll be able to refresh and run
+on the device. There's some rough bits, like geolocation isn't working within
+the app on my device, and "Take picture" has some issues. However I can
+"Pick image" and choose camera as the source and that works okay. And the
+rest of the stuff like vibrate, ambient light, device orientation, and check
+battery are all working.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[FirefoxOS 1.2 on ZTE Open]]></title>

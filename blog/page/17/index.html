@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="The discussion this morning at the PMM in an Always-On World wandered over some interesting topics. A few of the people there were from the &hellip;">
+  <meta name="description" content="The first Mobile Monday down in LA happened last night! Looks like a great turnout, better than we did for our first event up in San Francisco! Marc &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/19/mobilemonday-la/">MobileMonday LA</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-19T03:44:44-07:00" pubdate data-updated="true">Apr 19<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The <a href="http://mobilitee.org/archives/31">first Mobile Monday down in LA</a> happened last night! Looks like a great turnout, better than we did for our first event up in San Francisco! Marc Brown has some <a href="http://marc.buzznet.com/user/">images in his moblog as well</a>. Congratulations to Tomo Software and Buzznet on a job well done! If you&#8217;re interested in the events it looks like there&#8217;s another one coming up on May 16th. Keep an eye on <a href="http://www.mobilemonday.la/">their site</a>. It needs a feed guys!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -758,50 +794,6 @@ more.  They expect good results.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/04/05/sbc-filtering-port-25/">SBC Filtering Port 25</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-04-05T15:37:49-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When Elle and I got home from New Orleans our phone wasn&#8217;t working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle.  But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25.  My first reaction is that it must be either network problems or <a href="http://www.dreamhost.com">Dreamhost</a> bouncing servers (they seem to like to do that).  A while later and I&#8217;m still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!</p>
-
-<p><a href="http://www.ellementk.com">Elle</a> says she&#8217;s been having trouble with SMTP outbound for a while, and that she saw the suggestion to switch to port 587 somewhere. Sure enough, that works. Turns out port 587 is reserved for the <a href="http://www.ietf.org/rfc/rfc2476.txt">message submission protocol</a>. A protocol that seems to exist entirely as existing description of what should be done with SMTP when using it to insert messages into a system from a client program. I know I sent email from home right before we left for New Orleans, so this must be some on again off again kind of SBC experiment. I&#8217;m pretty pissed about it though. Spam sucks, sure. But so do unnotified infrastructure changes. And now my ISP has decided to inconvenience me for their own benefit. Speaking as a customer I can say that this definitely does not increase my satisfaction. I know all the reasons an ISP would block outbound SMTP (they apparently have a spammer problem and must be getting dropped into blocking lists, so they want to route everyone through their own authenticated relay). I just don&#8217;t think they&#8217;re valid. It&#8217;s the cheapest, easiest, bluntest way they could deal with the issue. And this is just them being cheap because they can get away with it, because most people don&#8217;t understand the underlying issues and what the potential solutions are. It&#8217;s not like this is a new issue, Lessig wrote about it a long time ago in <a href="http://www.lessig.org/content/standard/0,1902,3006,00.html">The Spam Wars</a>:</p>
-
-<blockquote><p>Certainly, spam is an issue. But the real problem is that vigilantes and network service providers are deciding fundamental policy questions about how the Net will work - each group from its own perspective.</p></blockquote>
-
-<p>This is policy-making by the &#8220;invisible hand.&#8221; It&#8217;s not that policy is not being made, but that those making the policy are unaccountable. The self-righteous spam police may or may not be right about the solution to spam; that&#8217;s not the point&#8230;.</p>
-
-<p>I pay my ISP to shift packets around, that&#8217;s all I want it to do.  I apply spam filters on my own, because I know that applying port filtering is about as effective in stopping spam as virgin sacrifice (so folks as SBC, sorry to spoil your fun, but that won&#8217;t work either). I do not pay them to tell me to what sites and services I&#8217;m allowed to connect. But they&#8217;ve decided to take it upon themselves to fill that role. From where I&#8217;m standing, they&#8217;ve just decided to partially stop servicing my needs. And with no upside. Don&#8217;t forget, I don&#8217;t give a shit if their servers end up blacklisted. This discussion started with me wanting to connect to an external server, which is itself not blacklisted. I do not want them doing this for me, but as far as I know I have no choice. When customer support starts answering their phones again maybe I&#8217;ll try to find out.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/18/">&larr; Older</a>
@@ -842,6 +834,10 @@ more.  They expect good results.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -855,10 +851,6 @@ more.  They expect good results.</p>
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

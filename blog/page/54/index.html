@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="The speech by Paul Saffo this evening was very interesting. There were many points he brought up that jive with the stuff that I&#8217;ve been &hellip;">
+  <meta name="description" content="I have heard people talk about the danger of letting commercial software turn into the defacto standard for how to do things. I didn&#8217;t really &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2004/01/16/defacto-standards-using-commercial-software/">Defacto Standards Using Commercial Software</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2004-01-16T02:01:40-08:00" pubdate data-updated="true">Jan 16<span>th</span>, 2004</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have heard people talk about the danger of letting commercial software turn into the defacto standard for how to do things. I didn&#8217;t really think this was a big deal, until I tried to create a boot disk to do a BIOS update the other day. This is where the defacto standard comes in. For those who do low level system admin work on x86 based computers, DOS is the defacto standard. When a computer manufacturer wants to write an application that does something special to their hardware, they write a little DOS app. DOS is really primitive and simple and doesn&#8217;t try to stand in the way of the programs that it runs, so it&#8217;s ideal for writing specialized applications to test hardware or update firmware. I had to update the BIOS of an Intel motherboard, and the instructions said to create a boot disk and copy their utilities over to it. No problem, I don&#8217;t have a Windows system, but my girlfriend&#8217;s system should work fine. It pains me to touch the thing, but I can stand it for stints of 10 minutes or less.</p>
+
+<p>Yet to my surprize, none of the commands I remembered working for creating a boot disk under Windows seemed to work on the Windows 2000 system she has. Weird. Ditto for the Windows XP laptop from work. Double weird. So I poked around some, and found <a href="http://www.bootdisk.com">Bootdisk.com</a>, but I just couldn&#8217;t believe that was the way to create a bootable floppy. So finally I caved in and asked some friends, people who work with Windows quite a bit. And they told me that Bootdisk.com is the best way to go, Windows doesn&#8217;t have the tools to create bootable floppy disks any more. WOW! First of all, I see no reason to have dropped these commands from Windows at all. Sure, the newer operating systems aren&#8217;t DOS based, but so what? You can still include the commands and images needed in order to create a boot disk. This is another reason to charge for MCSE exams and provides a nice barrier for an operation that should be shit simple, so I guess that&#8217;s just not Microsofts bag. And I thought they were about making life simple for users, that what people keep telling me. The second wow is that someone from the community stepped up and created the site needed to initialize these disks. I&#8217;m sure Microsoft is aware of the issue, they don&#8217;t care. I&#8217;m sure it&#8217;s a problem for anyone who makes x86 hardware like motherboards (Intel, Tyan, ASUS, etc), but they still distribute their guides ignoring the issue. I was someone from the community who stepped up to fill the gap.</p>
+
+<p>Now this isn&#8217;t really a huge problem. There are even efforts like <a href="http://www.freedos.org/freedos/about/">FreeDOS</a> who provide even better alternatives. But the community is solving these problems. I never used to think twice about creating a bootable floppy under Windows, but now that functionality is gone. None of the companies that should care about this seem to be working on fixing it. People ask why I have such an issue going over to a Windows system to do something. Well, this is it. Cause when I use Windows to do something I&#8217;m placing myself in a position where someone else has chosen how I have to operate. And they&#8217;re forcing me to base my work on a platform I don&#8217;t and will not own, and which I feel has a dubious future. At least I&#8217;m happy that Microsoft and hardware manufacturers have provided such an excellent example of user disservice that I can point to.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -435,44 +475,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2004/01/12/starting-off-a-week/">Starting Off a Week</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2004-01-12T06:49:16-08:00" pubdate data-updated="true">Jan 12<span>th</span>, 2004</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Starting off a new week almost always makes me depressed. I spend the weekend being able to at least fit in interesting bits of hacking here and there. Although this weekend was mostly work, and my site was down for a decent sized chunk of it, I did manage to fit in some palm-xmlrpc hackery. Not much, but at least I have something to point to. I managed to read some interesting stuff, including the <a href="http://www.shirky.com/writings/group_enemy.html">&#8220;A Group Is Its Own Worst Enemy&#8221;</a> article by Clay Shirky, which really got me thinking in some new directions again. I&#8217;ve been thinking about community quite a bit, as I&#8217;ve <a href="http://www.bitsplitter.net/blog/index.php?p=90">mentioned here before</a>. In open source the code itself serves as the merit system. You don&#8217;t have to trust someone to be telling the truth, you just look at their code and find out. And I was trying to figure out where else there might be a mechanism that works that like, but wasn&#8217;t able to come up with an interesting one. Especially not within the context of forming a user community. But that isn&#8217;t what this post is really about&#8230;</p>
-
-<p>So now I&#8217;m back to the drudgery of normal life. I should probably be happy that I&#8217;ve got a contract to work on when so many people are out of work, but most of that is swallowed by having to rip myself away from somehting interesting in order to make some money. I would really like to pick up a few of the ideas I have for applications and to try to turn them into something. Even if most of what I do ends up getting open sourced, if I can just make enough to live off of (pay rent, bills, and buy food) I would be pretty happy if I can get the projects going. I think some of these applications need to be made before companies spot them and try to turn them into proprietary platforms. Wireless networking is still very much in its infancy, and it needs people to work on it without looking directly and immediately to the profit to be made from it. This is the way that the Internet was orignally formed and administered. Setup with a grant, and then grown by college students entranced with the new technology. Most of the wireless applications we see are driven by cellular providers looking to make the most from their pay-per-megabyte setups. The results are, well, just plain lame. And all of that makes me pretty sad overall.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/55/">&larr; Older</a>
@@ -513,6 +515,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -526,10 +532,6 @@
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

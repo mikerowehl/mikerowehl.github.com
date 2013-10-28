@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Introduction to Yahoo! Search Web Services People always suggesting things to do, WS is our way of saying &#8220;Great, those sound like great ideas &hellip;">
+  <meta name="description" content="The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations Rodney from &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,82 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/03/16/the-easier-faster-route-to-building-mobile-applications-using-the-best-of-existing-approaches-and-overcoming-current-limitations/">The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-03-16T09:09:49-08:00" pubdate data-updated="true">Mar 16<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="http://conferences.oreillynet.com/cs/et2005/view/e_sess/6484">The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations</a></p>
+
+<p>Rodney from <a href="http://www.mfoundry.com/">MFoundry</a> presented, I know him from <a href="http://www.mobilemonday.com">Mobile Monday</a>.</p>
+
+<p>Typical lifecycle: development -> application testing -> device testing &lt; - > porting</p>
+
+<p>You can optionally also go through certification and signing, and then on to provisioning.</p>
+
+<p>Be prepared to buy phones! for testing by the way, you won&#8217;t make it anywhere talking to the carrier without running on the actual hardware.</p>
+
+<p>The MFoundry model is Development -> application testing -> provisioning.</p>
+
+<p>Two ways to get things onto phone, which really boil down to one, you download it.  Called OTA (Over The Air) - that just means you download it.</p>
+
+<p>Available applciation technologies (US) - 75% J2ME, 20% BREW, 5% other (PalmOS, .Net CF, SymbianOS)</p>
+
+<p>WAP, it&#8217;s easy to do, there&#8217;s a lot of support for it, low cost, flexible, poor user experience. Compare that with applications, which have good graphics , threading, caching, and has a good user interface.  But it&#8217;s more expensive, there&#8217;s a lot of training to do, porting, and to update you have to install a new version (compared to an online service, no update needed there).  Applications are for serious developers only, but WAP is a suboptimal solution.</p>
+
+<p>MWorks is the mFoundry approach, best of both.  Development is done in XML and published to the server for download. There&#8217;s some software running on the phone, MRE (moblet runtime environment). Super tiny, 52k. MIL, moblet instruction language, is all that it understands.</p>
+
+<p>MRE &lt; -> mWorks Service &lt; -> Content/Databases/Web Services</p>
+
+<p>mWorks Services.  XML is a bloated format, lots of overhead. The primary role of the mWorks services is compression, encoding. If you&#8217;re interested, W3C, WAP Binary XML is the standard to check out. They call it binary XML in their version, bXML, which gets better compression than the spec version.</p>
+
+<p>They use Eclipse for development, they have a plugin. The other side is the mWorks portal, which isn&#8217;t that compelling for smaller shops, but for the enterprise it&#8217;s very interesting.  Portal still is under development, going public in the next month or two.</p>
+
+<p>The current version has full coverage of MIDP 1.0. Everything available through MIDP 1.0 is exposed via the XML language. That means there&#8217;s a lot that isn&#8217;t accessable from the phone functions, so this is not the platform for you if you&#8217;re doing a game. This is good for portals and data applications.</p>
+
+<p>Use ME for SE emulation, a version of ME running on top of Java.</p>
+
+<p>The interface for MFoundry by default looks much more like a &#8220;media player&#8221; than the default Brew or Java look.  Mostly forms based.</p>
+
+<p>There&#8217;s an XML parser, by the same people who did MEforSE.</p>
+
+<p>So how do you develop?  It all start with a .mil file.  MIL is a declarative language. Screen description, options (buttons), http service. You can upload an XSL filter to the server to run to compress the information.</p>
+
+<p>So you have information on the device, you want to put it on the screen.  For an imperative language you would use a foreach, in MIL you use XPath. You have a tag called a repeater, that repeats markup for each node that matches an expression.</p>
+
+<p>If anyone is interested in developing, they&#8217;re offering a beta program for early developers.  All the tools are free.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/etech2005">ETech2005</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -513,54 +589,6 @@ f.write(i)</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/03/14/two-rss-articles-at-small-business-trends/">Two RSS Articles at Small Business Trends</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-03-14T08:44:33-08:00" pubdate data-updated="true">Mar 14<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Two great bits of info about RSS over at Small Bussiness Trends: <a href="http://www.smallbusinesses.blogspot.com/2005/03/rss-and-marketing.html">RSS and Marketing</a> and <a href="http://www.smallbusinesses.blogspot.com/2005/03/is-2005-year-of-rss.html">Is 2005 the Year of RSS?</a> I&#8217;m a big aggregator fan. Without my feedreader I would have a much harder time pulling together and sorting through the information I want. But I&#8217;m a geek, and I know there are tons of great reasons to be producing content as RSS that have nothing to do with information overload and trying to follow a fast moving industry. Here&#8217;s what was probably my favorite bit in there:</p>
-
-<blockquote><p>On the other hand, for content publishers and average Web surfers, it&#8217;s a heady time. We&#8217;re about to have a smorgasbord of choice laid at our feet. And given the price points of online services these days, many will be low cost or free.</p></blockquote>
-
-<p>Regardless of which companies make it, content publishers and content consumers will be better off. We&#8217;ll end up with powerful new RSS services that we can barely conceive of today, because they are still a glimmer in some entrepreneur&#8217;s eye. We will use them for marketing and public relations. And the way we access and consume online information will be revolutionized.</p>
-
-<p>In many ways I find RSS more exciting than the blog phenomenom. I think RSS has even more business potential. And so far we&#8217;ve only seen the tip of the iceberg of what RSS can do.</p>
-
-<p>I think that&#8217;s definitely true. When I take a look at the great things going on in the <a href="http://www.ipodder.org/">Podcast</a> and <a href="http://www.videoblogging.info/">Videoblogging</a> communities I&#8217;m just blown away. The advances in these areas really have nothing to do with the advances of the tools used to make the content, it all has to do with the delivery. Internet radio has been around for a long time. The transformative piece is really RSS, the delivery mechanism that lets anyone pull together their personal set of programming from whatever sources they want automatically. It reintroduces the concept of a &#8220;channel&#8221; or &#8220;station&#8221;, but at a much different granularity than television and radio normally allow. The print parallel is the newspaper turning into your feed reader. The common thread is control for the user. That&#8217;s a good thing.</p>
-
-<p>However the reasons the newspapers and television channels and radio stations existed in the first place is so that an expert could apply some degree of editorialization and enforce standards of quality. I still think that the average consumer can&#8217;t be bothered to deal with digging up feeds. The infojunkies and audiophiles and videophiles, we&#8217;re happy we can dig up exactly what we want and we&#8217;re willing to put time into it. Most people don&#8217;t want to spend that time however. They need good directories, and recommendation systems, and tools that incorporate information like <a href="http://developers.technorati.com/wiki/attentionxml">attentionxml</a> so seemlessly that no one even knows attentionxml is there (which is good, cause I don&#8217;t think I could tell you what attentionxml is if I saw it, I just know what it&#8217;s supposed to do). I do agree that RSS is more than just reading feeds in an aggregator, but part of that is because the aggregator is presently a pretty blunt tool compared to what it could be.</p>
-
-<p>Tags: <a href="http://www.bitsplitter.net/tag.php/rss">RSS</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/21/">&larr; Older</a>
@@ -601,6 +629,10 @@ f.write(i)</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -614,10 +646,6 @@ f.write(i)</p>
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>

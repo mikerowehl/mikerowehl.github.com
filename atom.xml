@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-10-25T16:01:59-07:00</updated>
+  <updated>2013-10-28T11:16:21-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox OS with App Manager]]></title>
+    <link href="http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager/"/>
+    <updated>2013-10-28T10:46:00-07:00</updated>
+    <id>http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager</id>
+    <content type="html"><![CDATA[<p>One of the nice things about
+<a href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">getting FFOS 1.2 on my device</a>
+is being able to use App Manager instead of the simulator plugin to do
+development. Given that
+<a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">the App Manager replaces the Simulator Dashboard</a>
+in the newest versions of Firefox, it seems like the kind of thing developers
+should have access to. So hopefully ZTE figures out a way to get a 1.2+
+release on their developer phones.</p>
+
+<p>Note however that the app manager is available in the Firefox 26 series, which
+is <a href="http://www.mozilla.org/en-US/firefox/aurora/">current the pre-alpha release</a>.
+You can install Aurora side by side with the current stable Firefox release
+(that&#8217;s the default on OS X at least). The app manager is available without
+having to install anything, but you&#8217;ll need to install the ADB helper to
+connect to an actual device. Details are in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Using_the_App_Manager">using the app manager</a>
+document. I&#8217;ve been testing it out primarily with my locally built FFOS 1.2 on
+the ZTE Open (inari) device.</p>
+
+<p>Now comes the hard part of trying to figure out what you can put on the
+device to make sure everything is working before you dive too far into
+hacking around on your own. You&#8217;ll probably run across things like
+<a href="https://github.com/mozilla/firefoxos-quick-start">the Firefox OS Quick Start example</a>
+and the <a href="https://github.com/mozilla/mortar">Mozilla templates for Open Web Apps</a>.
+None of those seem to be working to generate something you can install on
+a device (they work great for the simulator, running on the same machine as
+your development tools). Seems like there haven&#8217;t been a ton of folks working
+with physical devices yet.</p>
+
+<p>This
+<a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">Firefox OS boilerplate app</a>
+serves as a fantastic starting point however. Just a clone and then
+&#8220;Add Packaged App&#8221; in the app manager and you&#8217;ll be able to refresh and run
+on the device. There&#8217;s some rough bits, like geolocation isn&#8217;t working within
+the app on my device, and &#8220;Take picture&#8221; has some issues. However I can
+&#8220;Pick image&#8221; and choose camera as the source and that works okay. And the
+rest of the stuff like vibrate, ambient light, device orientation, and check
+battery are all working.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[FirefoxOS 1.2 on ZTE Open]]></title>
@@ -802,19 +848,6 @@ app that kicked this whole thing off 10 years ago.</p>
     <content type="html"><![CDATA[<p>I&#8217;m at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by <a href="http://akismet.com/">Akismet</a> so far. I <a href="http://www.rowehl.com/blog/?p=605">turned Akismet on in January of this year</a>. That&#8217;s more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.</p>
 
 <p>The problem is very unevenly distributed however. I have a few other blogs out there, and they tend to get more like a few hundred spam messages a month. I just wanted to point that out given the degree of blowup I see when things happen like <a href="http://announcements.engadget.com/2006/05/30/comments-switched-off/">someone has to turn off comments for a while</a>. The spam problem is not uniformly distributed, just because you get a managable ammount of spam comments that doesn&#8217;t mean someone who blogs about just about the same stuff isn&#8217;t getting hundreds of times more.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Web 2.0 Cease and Desist and Self Healing Systems]]></title>
-    <link href="http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems/"/>
-    <updated>2006-05-25T08:40:29-07:00</updated>
-    <id>http://rowehl.com/blog/2006/05/25/the-web-20-cease-and-desist-and-self-healing-systems</id>
-    <content type="html"><![CDATA[<p>I need to post a <a href="http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/">pointer to the story about CMP sending a conference a C&D; letter on behalf of O&#8217;Reilly</a>. I&#8217;m sure Tim has nothing to do with it, and I&#8217;m sure it&#8217;ll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.</p>
-
-<p>Things like this are bound to happen in any organization/company once the size gets beyond a certain threshold. Perhaps not quite this ridiculous in most cases, but there will be some evidence of lack of syncronization and goal mismatches. In the real world normally this stuff gets cleared up pretty quick. Tim pops up and says &#8220;wow, we didn&#8217;t mean to do that, sorry!&#8221; or someone at CMP chews the lawyers out and releases a statement&#8230; whatever. The point being that inconsistencies and unexpected situations are generally noticed and dealt with. Outside the blogospere at least. Inside the blogosphere they can live on forever, but that&#8217;s really a whole seperate issue.</p>
-
-<p>Odd situations like that tend to cause failures in software though. When something unexpected comes up within a system it&#8217;s generally catastrophic. When something unexpected comes up during an interaction between systems you&#8217;re sometimes lucky just to find out what happened after the fact. I&#8217;ve been thinking about self healing systems recently, although I can&#8217;t remember what might have kicked it off. And after reading this realized that almost all human designed systems are relatively fragile and rigid. Law being one of the obvious areas of intersection between codification and human behavior I would expect it might hold some hints about how to handle that well. But law is just guidelines, and the rationality really derives from a human in the loop pulling the strings, judge or jurry. It&#8217;s not a system itself really so much as an extension and recording of the will of the judges to keep them from having to repeat themselves. So I keep coming back to the non-human systems to try to find isolated systems that heal well. Insect behavior is one of the classic examples, ants and bees.</p>
 ]]></content>
   </entry>
   

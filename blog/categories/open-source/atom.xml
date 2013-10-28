@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Open Source | Miker]]></title>
   <link href="http://rowehl.com/blog/categories/open-source/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-10-25T16:01:59-07:00</updated>
+  <updated>2013-10-28T11:16:21-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox OS with App Manager]]></title>
+    <link href="http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager/"/>
+    <updated>2013-10-28T10:46:00-07:00</updated>
+    <id>http://rowehl.com/blog/2013/10/28/firefox-os-with-app-manager</id>
+    <content type="html"><![CDATA[<p>One of the nice things about
+<a href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">getting FFOS 1.2 on my device</a>
+is being able to use App Manager instead of the simulator plugin to do
+development. Given that
+<a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">the App Manager replaces the Simulator Dashboard</a>
+in the newest versions of Firefox, it seems like the kind of thing developers
+should have access to. So hopefully ZTE figures out a way to get a 1.2+
+release on their developer phones.</p>
+
+<p>Note however that the app manager is available in the Firefox 26 series, which
+is <a href="http://www.mozilla.org/en-US/firefox/aurora/">current the pre-alpha release</a>.
+You can install Aurora side by side with the current stable Firefox release
+(that's the default on OS X at least). The app manager is available without
+having to install anything, but you'll need to install the ADB helper to
+connect to an actual device. Details are in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Using_the_App_Manager">using the app manager</a>
+document. I've been testing it out primarily with my locally built FFOS 1.2 on
+the ZTE Open (inari) device.</p>
+
+<p>Now comes the hard part of trying to figure out what you can put on the
+device to make sure everything is working before you dive too far into
+hacking around on your own. You'll probably run across things like
+<a href="https://github.com/mozilla/firefoxos-quick-start">the Firefox OS Quick Start example</a>
+and the <a href="https://github.com/mozilla/mortar">Mozilla templates for Open Web Apps</a>.
+None of those seem to be working to generate something you can install on
+a device (they work great for the simulator, running on the same machine as
+your development tools). Seems like there haven't been a ton of folks working
+with physical devices yet.</p>
+
+<p>This
+<a href="https://github.com/robnyman/Firefox-OS-Boilerplate-App">Firefox OS boilerplate app</a>
+serves as a fantastic starting point however. Just a clone and then
+"Add Packaged App" in the app manager and you'll be able to refresh and run
+on the device. There's some rough bits, like geolocation isn't working within
+the app on my device, and "Take picture" has some issues. However I can
+"Pick image" and choose camera as the source and that works okay. And the
+rest of the stuff like vibrate, ambient light, device orientation, and check
+battery are all working.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[FirefoxOS 1.2 on ZTE Open]]></title>
@@ -169,21 +215,6 @@ the base system. Not the case so far.</p>
     <updated>2006-03-13T05:56:09-08:00</updated>
     <id>http://rowehl.com/blog/2006/03/13/kernel-config-from-thinkpad-x32</id>
     <content type="html"><![CDATA[<p>Someone emailed me asking for the config for the kernel I'm running on my X32, so I figured I might as well post it instead of just mailing it back.  I'm using the 2.6.13 drop from <a href="http://www.kernel.org">kernel.org</a> and adding in <a href="http://www.rowehl.com/blog/?p=550">packages like WPA afterward</a>.  Here's <a href="http://www.rowehl.com/blog/wp-content/uploads/2006/03/config-2.6.13.txt">the config</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Van Jacobson's Linux Networking Slides]]></title>
-    <link href="http://rowehl.com/blog/2006/01/31/van-jacobsons-linux-networking-slides/"/>
-    <updated>2006-01-31T08:34:39-08:00</updated>
-    <id>http://rowehl.com/blog/2006/01/31/van-jacobsons-linux-networking-slides</id>
-    <content type="html"><![CDATA[<p>The <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/30#van_slides">slides from Van Jacobson's LCA2006 presentation</a> are online. They talk about an evolution to the Linux networking stack targeted at taking into account multicore systems. If I had to summarize the presentation I would steal the title from slide 16: "The end of the wire isn't the end of the net".</p>
-
-<blockquote><p>On a uni-processor it doesn't matter, but on a multi-processor the protocol work should be done on the processor that's going to consume the data.</p></blockquote>
-
-<p>This means ISR and Softint should do almost nothing and Socket should do everything.</p>
-
-<p>The slides are excellent and lay out the issue very clearly, but I would also recommend checking out <a href="http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/27#vj_channels">DaveM's comments on net channels</a>. It was his writeup that turned me on to the presentation.</p>
 ]]></content>
   </entry>
   

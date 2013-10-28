@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="Most people blog about the famous people they run into when they go to confs like ETech, so I&#8217;m gonna blog about some of the people you might &hellip;">
+  <meta name="description" content="I got a note from JD that Ourmedia is live today! The timing is great. There&#8217;s a lot of attention going into podcasting and videoblogging, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,44 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/03/20/ourmedia-launch/">Ourmedia Launch</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-03-20T18:47:33-08:00" pubdate data-updated="true">Mar 20<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I got a note from JD that <a href="http://www.newmediamusings.com/blog/2005/03/ourmedia_is_her.html">Ourmedia is live today</a>! The timing is great. There&#8217;s a lot of attention going into podcasting and videoblogging, and I think a free platform for sharable and reusable media could potentially help to shift the attention away from traditional broadcast and into the realm of peer-produced content. Elle and I both helped out on the metadata definition parts during the early stages as well as some early testing (I&#8217;m <a href="http://ourmedia.org/user/7">user number 7</a>). The project is meant to provide a place for people to store the media they want to share with others. Some of the most compelling examples I heard were citizen jounalism and politcal ads. They have both <a href="http://ourmedia.org/videos">video</a> and <a href="http://ourmedia.org/audios">audio</a> content up, and if you sign up for an account you can upload your own. A lot of the ideas that <a href="http://www.lessig.org/blog/">Larry Lessig</a> talks about in Free Culture really helped to drive my motivation in paying attention to and helping out with projects like this. Curious what those ideas are?  Check out <a href="http://www.free-culture.cc/freecontent/">a free copy of Free Culture</a> or one of the movies explaining the importance of having works out in public and available for reuse.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/ourmedia">OurMedia</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -451,82 +489,6 @@ that great, the authors were enthusiastic but unfortunately a bit underinformed.
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/03/16/the-easier-faster-route-to-building-mobile-applications-using-the-best-of-existing-approaches-and-overcoming-current-limitations/">The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-03-16T09:09:49-08:00" pubdate data-updated="true">Mar 16<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://conferences.oreillynet.com/cs/et2005/view/e_sess/6484">The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations</a></p>
-
-<p>Rodney from <a href="http://www.mfoundry.com/">MFoundry</a> presented, I know him from <a href="http://www.mobilemonday.com">Mobile Monday</a>.</p>
-
-<p>Typical lifecycle: development -> application testing -> device testing &lt; - > porting</p>
-
-<p>You can optionally also go through certification and signing, and then on to provisioning.</p>
-
-<p>Be prepared to buy phones! for testing by the way, you won&#8217;t make it anywhere talking to the carrier without running on the actual hardware.</p>
-
-<p>The MFoundry model is Development -> application testing -> provisioning.</p>
-
-<p>Two ways to get things onto phone, which really boil down to one, you download it.  Called OTA (Over The Air) - that just means you download it.</p>
-
-<p>Available applciation technologies (US) - 75% J2ME, 20% BREW, 5% other (PalmOS, .Net CF, SymbianOS)</p>
-
-<p>WAP, it&#8217;s easy to do, there&#8217;s a lot of support for it, low cost, flexible, poor user experience. Compare that with applications, which have good graphics , threading, caching, and has a good user interface.  But it&#8217;s more expensive, there&#8217;s a lot of training to do, porting, and to update you have to install a new version (compared to an online service, no update needed there).  Applications are for serious developers only, but WAP is a suboptimal solution.</p>
-
-<p>MWorks is the mFoundry approach, best of both.  Development is done in XML and published to the server for download. There&#8217;s some software running on the phone, MRE (moblet runtime environment). Super tiny, 52k. MIL, moblet instruction language, is all that it understands.</p>
-
-<p>MRE &lt; -> mWorks Service &lt; -> Content/Databases/Web Services</p>
-
-<p>mWorks Services.  XML is a bloated format, lots of overhead. The primary role of the mWorks services is compression, encoding. If you&#8217;re interested, W3C, WAP Binary XML is the standard to check out. They call it binary XML in their version, bXML, which gets better compression than the spec version.</p>
-
-<p>They use Eclipse for development, they have a plugin. The other side is the mWorks portal, which isn&#8217;t that compelling for smaller shops, but for the enterprise it&#8217;s very interesting.  Portal still is under development, going public in the next month or two.</p>
-
-<p>The current version has full coverage of MIDP 1.0. Everything available through MIDP 1.0 is exposed via the XML language. That means there&#8217;s a lot that isn&#8217;t accessable from the phone functions, so this is not the platform for you if you&#8217;re doing a game. This is good for portals and data applications.</p>
-
-<p>Use ME for SE emulation, a version of ME running on top of Java.</p>
-
-<p>The interface for MFoundry by default looks much more like a &#8220;media player&#8221; than the default Brew or Java look.  Mostly forms based.</p>
-
-<p>There&#8217;s an XML parser, by the same people who did MEforSE.</p>
-
-<p>So how do you develop?  It all start with a .mil file.  MIL is a declarative language. Screen description, options (buttons), http service. You can upload an XSL filter to the server to run to compress the information.</p>
-
-<p>So you have information on the device, you want to put it on the screen.  For an imperative language you would use a foreach, in MIL you use XPath. You have a tag called a repeater, that repeats markup for each node that matches an expression.</p>
-
-<p>If anyone is interested in developing, they&#8217;re offering a beta program for early developers.  All the tools are free.</p>
-
-<p>Tags: <a href="http://www.bitsplitter.net/tag.php/etech2005">ETech2005</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/20/">&larr; Older</a>
@@ -567,6 +529,10 @@ that great, the authors were enthusiastic but unfortunately a bit underinformed.
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">FirefoxOS 1.2 on ZTE Open</a>
       </li>
     
@@ -580,10 +546,6 @@ that great, the authors were enthusiastic but unfortunately a bit underinformed.
     
       <li class="post">
         <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/09/why-i-suck-at-angel-investing/">Why I Suck at Angel Investing, and My Plan</a>
       </li>
     
   </ul>
