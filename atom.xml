@@ -4,7 +4,7 @@
   <title><![CDATA[Miker]]></title>
   <link href="http://rowehl.com/atom.xml" rel="self"/>
   <link href="http://rowehl.com/"/>
-  <updated>2013-10-28T11:16:21-07:00</updated>
+  <updated>2013-11-01T21:05:04-07:00</updated>
   <id>http://rowehl.com/</id>
   <author>
     <name><![CDATA[Mike Rowehl]]></name>
@@ -145,33 +145,11 @@ ran through, getting all the tools in place, configuring, and building. This
 assumes you&#8217;re starting from a completely fresh 13.04 install, you run through
 the installer and then let it pull down any updates, then do this:</p>
 
-<ul>
-<li>sudo apt-get install &#8211;no-install-recommends autoconf2.13 bison bzip2 ccache
-curl flex gawk gcc g++ g++-multilib gcc-4.6 g++-4.6 g++-4.6-multilib git
-ia32-libs lib32ncurses5-dev lib32z1-dev zlib1g:amd64 zlib1g-dev:amd64
-zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip</li>
-<li>sudo add-apt-repository ppa:webupd8team/java</li>
-<li>sudo apt-get update</li>
-<li>sudo apt-get install oracle-java6-installer</li>
-<li>sudo apt-get install oracle-java6-set-default</li>
-<li>sudo apt-get install android-tools-adb</li>
-<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;19d2&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; > /etc/udev/rules.d/android.rules</li>
-<li>sudo echo &#8216;SUBSYSTEM==&#8221;usb&#8221;, ATTR{idVendor}==&#8221;18d1&#8221;, MODE=&#8221;0666&#8221;, GROUP=&#8221;plugdev&#8221;&#8217; >> /etc/udev/rules.d/android.rules</li>
-<li>sudo chmod a+r /etc/udev/rules.d/android.rules</li>
-<li>sudo service udev restart</li>
-<li>export CC=gcc-4.6</li>
-<li>export CXX=g++-4.6</li>
-<li>ccache &#8211;max-size 3GB</li>
-<li>git config &#8211;global user.email xxxx</li>
-<li>git config &#8211;global user.name &#8220;yyyy&#8221;</li>
-<li>git clone git://github.com/mozilla-b2g/B2G.git</li>
-<li>cd B2G</li>
-<li>BRANCH=v1.2 VARIANT=user ./config.sh inari</li>
-<li>BRANCH=v1.2 VARIANT=user ./build.sh</li>
-<li>cp [location of that binary boot.img] out/target/product/inari/boot.img</li>
-<li>./flash.sh</li>
-</ul>
+<script src="https://gist.github.com/mikerowehl/7275342.js"></script>
 
+
+<p>NOTE: I moved the set of commands to run off to a gist cause Octopress was
+prettying up the quotes and making them cut/paste unfriendly.</p>
 
 <p>And then you should have a FFOS 1.2 install runnable on your device. I tested
 mine out with my TMobile SIM in the US: phone works, SMS works, data connection
