@@ -89,30 +89,10 @@ ran through, getting all the tools in place, configuring, and building. This
 assumes you're starting from a completely fresh 13.04 install, you run through
 the installer and then let it pull down any updates, then do this:
 
-* sudo apt-get install --no-install-recommends autoconf2.13 bison bzip2 ccache
- curl flex gawk gcc g++ g++-multilib gcc-4.6 g++-4.6 g++-4.6-multilib git
- ia32-libs lib32ncurses5-dev lib32z1-dev zlib1g:amd64 zlib1g-dev:amd64
- zlib1g:i386 zlib1g-dev:i386 libgl1-mesa-dev libx11-dev make zip
-* sudo add-apt-repository ppa:webupd8team/java
-* sudo apt-get update
-* sudo apt-get install oracle-java6-installer
-* sudo apt-get install oracle-java6-set-default
-* sudo apt-get install android-tools-adb
-* sudo echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="19d2", MODE="0666", GROUP="plugdev"' > /etc/udev/rules.d/android.rules
-* sudo echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", MODE="0666", GROUP="plugdev"' >> /etc/udev/rules.d/android.rules
-* sudo chmod a+r /etc/udev/rules.d/android.rules
-* sudo service udev restart
-* export CC=gcc-4.6
-* export CXX=g++-4.6
-* ccache --max-size 3GB
-* git config --global user.email xxxx
-* git config --global user.name "yyyy"
-* git clone git://github.com/mozilla-b2g/B2G.git
-* cd B2G
-* BRANCH=v1.2 VARIANT=user ./config.sh inari
-* BRANCH=v1.2 VARIANT=user ./build.sh
-* cp [location of that binary boot.img] out/target/product/inari/boot.img
-* ./flash.sh
+<script src="https://gist.github.com/mikerowehl/7275342.js"></script>
+
+NOTE: I moved the set of commands to run off to a gist cause Octopress was 
+prettying up the quotes and making them cut/paste unfriendly.
 
 And then you should have a FFOS 1.2 install runnable on your device. I tested
 mine out with my TMobile SIM in the US: phone works, SMS works, data connection
