@@ -86,7 +86,7 @@ pinboard_count: 3
 
 # Delicious
 delicious_user: miker
-delicious_count: 3
+delicious_count: 10
 
 # Disqus Comments
 disqus_short_name:
