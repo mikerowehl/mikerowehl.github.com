@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="When Elle and I got home from New Orleans our phone wasn&#8217;t working and our DSL connection was bouncing up and down. They got that fixed up &hellip;">
+  <meta name="description" content="Yesterday there was a session during the Open Source Business Conference titled Meet the Community. The lineup of speakers was stellar. Ross Mayfield &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,65 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/04/07/open-source-business-meet-the-community/">Open Source Business - Meet the Community</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-04-07T06:09:30-07:00" pubdate data-updated="true">Apr 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Yesterday there was a <a href="http://www.osbc2004.com/live/13/events/13SFO05A/conference/tracksessions/Enterprise+Strategy/QMONYA04N6ZW">session during the Open Source Business Conference titled Meet the Community</a>. The lineup of speakers was stellar. Ross Mayfield <a href="http://ross.typepad.com/blog/2005/04/meet_the_commun.html">posted a transcript</a> and Niall Kennedy <a href="http://www.niallkennedy.com/blog/archives/2005/04/open_source_com.html">posted some commentary</a>. I think my favorite comment was from Brian Behlendorf, who said that he never really considered companies special entities in the context of the projects he works on. That&#8217;s really a great comment, as long as you remember to say it without a derisive sneer. As a company interfacing with an open source project you probably don&#8217;t get much special consideration from the developers already working on the project unless your goals line up with their own. However, you do have a couple of options available that don&#8217;t always exist for individuals. Here&#8217;s a basic rundown of the options you have as a company looking to use an open source project but needing features.</p>
+
+<ul>
+<li>Contribution - For most circumstances this is the most desirable. It&#8217;s important to realize that this is only going to work if the feature you need is useful to people outside of your organization. If what you&#8217;re interested in is adding a feature to Bugzilla to get it to control a 3270 terminal to double enter bugs in your 20 year old custom developed mainframe system, you&#8217;re probably not working on something that others would find use in. If others aren&#8217;t going to be able to use your feature, it&#8217;s probably not going to make it into the main source tree, and contribution probably isn&#8217;t an option for you. One of the benefits of contribution is that once you release your code into the wild others will probably maintain it and improve it. It decreases the cost for everyone when contributions have multiple users because that means multiple possible maintainers. However, sometimes it happens that someone contributes code and then walks away. No one is using the code but no one really knows that.  It increases the maintenance cost for everyone and benefits no one. Because of this danger successful open source projects have developed something like an immune system to combat single user features. Don&#8217;t be surprized if you find there&#8217;s a lot of friction in trying to get your feature accepted.</li>
+</ul>
+
+
+<p>So assuming you don&#8217;t have a single user feature, how do you go about getting this done? You get one of your developers, or hire a consultant, or find someone from among the ranks of existing developers for the project and tell/pay them to develop the feature for you. This is probably just the tip of the iceberg though. Now you need to get it into the main code base. There are a bunch of little things you can do to make sure that the code is acceptable. Make sure it complies with the standards used in the rest of the project, make sure you provide some info about what the feature is and communicate with the existing developers about what you&#8217;re trying to do and why. But the most important is to release the feature so that others can try it out. If you have a feature and you&#8217;re trying to get it into a project, and you&#8217;re the only one saying the feature is necessary, it&#8217;s easy to ignore you. If you release the feature, put it up online, and a dozen other users snap it up and start clamouring about how their world is now a better and brighter place, that&#8217;s an extremely compelling argument. Your feature might still not get accepted, in which case you&#8217;ll have to look at parallel development below.  Or you might end up parallel for a while and then eventually end up back in contribution. Once the code is accepted you probably still want to dedicate some resources to making sure that your feature doesn&#8217;t end up being a sore spot in the code and getting dropped. This is pretty hard to monitor unless you have someone on staff to do it. If you got a consultant to do the original development you probably want to pay them a retainer for a while to make sure the feature is updated along with the main codebase, and to have them available for other needs you might have related to use of the project.</p>
+
+<ul>
+<li>Parallel Development - Everyone seems to overlook this option, or discount it as entirely too expensive. Maybe the software practice all over is even worse than I expected it to be, but this kind of thing is done in embedded systems all the time. I just don&#8217;t see why it wouldn&#8217;t work for infrastructure projects as well (although I can see somewhat for core changes to desktop applications, which tend to have a form that&#8217;s much harder to abstract changes for). The idea here is that you develop whatever it is that you need, and maybe release it maybe not, but you don&#8217;t push it back into the core. Now when the next version of the project comes out you move your changes so that they work with that next version.  And you keep doing that. There are lots of techniques available to make this process easier. Most revision control systems have features specifically meant to deal with taking original sources from some external provider and reapplying local changes to generate a specialized version. If the project is relatively well designed and your changes are well architected it can be pretty trivial to track the original project indefinitely like this. In addition to being a valid technique even when your feature isn&#8217;t of use to the general populace this is also a good technique if you consider your feature to be a competitive advantage. If your &#8220;secret sauce&#8221; that allows you to be twice as responsive to customer requests as your competitors constitutes a set of tweeks to your CRM system you don&#8217;t have to release that code if you&#8217;re only using your code at your own company (remember, the GPL requires you to ship source if you ship other GPL code with change applied). If if you never ship you never have to disclose your source. The downside is that you have to bear the whole cost of maintenance yourself. And of course, you don&#8217;t benefit from the input of a larger community with respect to your technique for solving the problem you&#8217;ve gone after.</li>
+</ul>
+
+
+<p>There&#8217;s also another option for parallel versions, which is stopping forward development and selectively picking the changes you want. This is an option for the times when development of the main project proceeds in a way that you find disagreeable for some reason (the main branch has broken compatability with formats you use, the license has changed and now includes disagreeable clauses, etc). This is actually the ultimate form of gaurantee in terms of making sure that you&#8217;ll be able to keep running with the project you choose. In commercial software sometimes the source code will be held in escrow and a license will include a clause that says if the provider goes out of business or can no longer provide support for the package all current customers get a copy of the code so that they&#8217;re gauranteed they can keep running. Well open source projects come with that by default. And not only can you decide to grab the code and go your own way if the project fails, but you can do it if you don&#8217;t like the direction the project has taken, if they&#8217;re not giving you the features you need, or if you just plain old feel like it. I actually see less risk and more gaurantee of continuity with open source than with most commercial projects. Yet most folks cringe and wrinke their noses when I talk about this. If they ever took a look at how much they throw away on software installs and consulting and licenses and compare that to getting a few decent open source hackers and switching to open source, I think the cost of open source over the long term is less and the risk is lower.</p>
+
+<ul>
+<li>Forking - This is the most drastic option, and the most likely to land you in hot water if you do it when you shouldn&#8217;t. Forking should only be considered in extreme situations. What happens in a fork is that at least two version of the code are progressing on their own. The difference between parallel development and forking is that both groups put out the full set of code, and in general stop exchanging patches. There are all sorts of shades of grey in here, situations where both projects keep going but are feeding each other changes in preparation for a planned merge down the line, situations where the forked version is really just an enhanced distribution. Some of those situations can seem positive, but usually they end up hurting the project.  Even a fork for justified purposes can be so damaging to the project overall that it shouldn&#8217;t be done. You might be justified in forking a project if you have a feature that ends up getting used by more than half the users of the project, but which the core developers refuse to accept into the main codebase. But even if that happens you need to take into  account the cost of the forking operation itself. A fork confuses users, it generally creates a whole bunch of bad press and negative feelings, in dividing the developer and user base you have less resources for the project, you generally have to replicate all the other project support mechanisms like code repository and bug tracking system, it&#8217;s just ugly. So think twice before you do something like this. I&#8217;m not even gonna go into the details any more, if you&#8217;re thinking about forking you should already know these things.</li>
+</ul>
+
+
+<p>So there it is, not quite in a nutshell. That really provides a whole bunch of freedom. The situations take on a few more aspects once you talk about redistributing what you do. That&#8217;s something I&#8217;ve been through a bunch of times with the embedded systems work, so maybe I&#8217;ll write up that set of paths later on. I was actually also going to write up a comparison of the effects of the open source movement unbundling code from individual projects to the effects of the recombinant DNA experiments that arose with sex during the <a href="http://en.wikipedia.org/wiki/Cambrian_explosion">Cambrian Explosion</a>, but that&#8217;ll have to wait till another time. Perhaps the open source folks are being too kind when they refer to the vendors of proprietary software as dinosaurs. Perhaps we should be calling them single cell organisms.</p>
+
+<p>Tags: <a href="http://www.bitsplitter.net/tag.php/opensource">OpenSource</a> <a href="http://www.bitsplitter.net/tag.php/osbc">OSBC</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -546,42 +605,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/03/20/new-site-feedhacks/">New Site - Feedhacks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-03-20T20:22:38-08:00" pubdate data-updated="true">Mar 20<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I setup a new site, <a href="http://www.feedhacks.com/blog/">Feedhacks</a> to house a bunch of the projects that it looks like I&#8217;ll have coming up. I was going to wait a while to put it up, but I got <a href="http://www.feedhacks.com/blog/?p=4">an RSS inclusion plugin for WordPress</a> working this weekend and wanted to post it. Release early, release often. Right? Hopefully I&#8217;ll be evolving and adding to the site over the new few weeks, but no promise on that schedule.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/19/">&larr; Older</a>
@@ -622,6 +645,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
       </li>
     
@@ -635,10 +662,6 @@
     
       <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
   </ul>

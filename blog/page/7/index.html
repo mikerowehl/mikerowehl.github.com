@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="I was gifted a video iPod, my first real iPod device (I have a shuffle that I used for podcasts and occasionally a mix for running). I&#8217;m a &hellip;">
+  <meta name="description" content="Getting audio on to the iPod using Linux was a snap. Getting videos on took a bit more doing, but also worked out quite well. I&#8217;m listing the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/12/22/transfering-videos-to-an-ipod-under-linux/">Transfering Videos to an iPod Under Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-12-22T13:41:25-08:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Getting <a href="http://www.rowehl.com/blog/?p=596">audio on to the iPod using Linux was a snap</a>. Getting videos on took a bit more doing, but also worked out quite well. I&#8217;m listing the info here cause it took a little searching around to find it. This is the stuff you&#8217;ll need you probably don&#8217;t have:</p>
+
+<ul>
+<li><p><a href="http://www.gtkpod.org/downloads.html">gtkpod and libgpod</a></p></li>
+<li><p><a href="http://mpeg4ip.sourceforge.net/downloads/index.php">mp4v2 from the mpeg4ip project</a></p></li>
+</ul>
+
+
+<p>You also might need libid3tag, libtool, flex, and the development headers for glib and gtk.  I&#8217;m using Ubuntu 5.04 and was able to apt-get everything I was missing from the default install except for the stuff above. At the time of this writing the libgpod lib was at version 0.3.0, gtkpod was at 0.99.2, and mpeg4ip was at 1.4.1. I downloaded official versions of all, not a checkout from CVS or a development snapshot.</p>
+
+<p>I had tried to download a video (my test video was the iPod version of <a href="http://clerks2.com/?p=48">The Good, The Bad, and The Man</a>, how do you like that for a test biznatch?) to the iPod, but it failed silently. Then I took a look at the changelog for gtkpod and saw that video support was added after the version I had. So I downloaded the newer drops and compiled, but didn&#8217;t have mp4v2 at that point. This time I got an error that the lib was required in order to download files of .m4v type. After I compiled the lib, reconfigured and built gtkpod, everything was smooth after that.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -422,50 +468,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/10/22/videocast/">Videocasts on TV</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-22T04:05:18-07:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>What <a href="http://www.russellbeattie.com/notebook/1008660.html">Russ says</a> is definitely true, taking a videocast and putting it up on The Big Screen in the living room is certainly much different than watching it on your desktop or on a device. I knew that though, and I&#8217;ve been a pretty big video fan for a long time. So I just want to give a hat tip to the folks who I&#8217;ve been watching who made it obvious that peer produced video content was going to make a huge difference:</p>
-
-<ul>
-<li><p><a href="http://blog.ericrice.com/">Eric Rice</a> - has been blowing this horn for as long as I&#8217;ve known him.</p></li>
-<li><p><a href="http://www.dimension7.com/">Michael O&#8217;Rourke</a> - comes from a video background to begin with, and has been looking for the growth in peer produced content.</p></li>
-<li><p><a href="http://www.chapmanlogic.com/blog/">Eli Chapman</a> - from <a href="http://www.unmediated.org/">Unmediated.org</a>. I ran into Eli a few times when he was out in SF, in particular at our <a href="http://www.mobilemonday.com/2005/02/another-standing-room-only-momo.html">Mobile Monday on media</a> and he told me about a bunch of interesting projects going on with videocasting.</p></li>
-<li><p><a href="http://www.rocketboom.com/vlog/">Amanda Congdon</a> - Rocketboom was the first recurring themed show that I heard lots of people talking about. It really caught my attention when I was at lunch with a dozen folks, and when someone brought up Rocketboom there were four other people who said &#8220;I watch that too&#8221;.</p></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/8/">&larr; Older</a>
@@ -506,6 +508,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
       </li>
     
@@ -519,10 +525,6 @@
     
       <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
   </ul>

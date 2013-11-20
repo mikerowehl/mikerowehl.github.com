@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="If you can see this it worked, which hopefully means I&#8217;ll be releasing some stuff soon. Yes, that&#8217;s right, it&#8217;s all about the free &hellip;">
+  <meta name="description" content="Hey all, sorry I wasn&#8217;t able to make the Mobile Monday meeting last night. I set it all up, but then I wasn&#8217;t able to make it myself. I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,42 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2005/06/07/missed-mobile-monday/">Missed Mobile Monday</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-06-07T01:38:02-07:00" pubdate data-updated="true">Jun 7<span>th</span>, 2005</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hey all, sorry I wasn&#8217;t able to make the <a href="http://www.mobilemonday.com">Mobile Monday</a> meeting last night. I set it all up, but then I wasn&#8217;t able to make it myself. I just had way more than is reasonable or humanly actionable to do at work. Kinda makes me sad, but mostly makes me filled with murderous rage. That&#8217;s just the way it goes however. Some people say when life gives you  lemons you should make lemonade. I say when life gives you lemons just jump up and scream &#8220;Hey! What&#8217;s with the lemons!?!? This isn&#8217;t what I asked for!!&#8221; and start chucking lemons at anyone that comes into view. They really hurt apparently. Always makes me feel better at least. I find it helps to have a blog to vent into also. We have a <a href="http://fusion94.org/archives/2005/06/new_job.html">very kick ass new addition to Feedster however</a>, so hopefully not only will my workload be getting somewhere more near normal, I might not be ignoring things in order to get it there. I would like to get things normal enough that we can have the mobile homebrew meetings again. I think that was a good idea, we just needed a little more practice with it.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -424,44 +460,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2005/05/27/odd-quirk-in-bloglines-cache-handling/">Odd Quirk in Bloglines Cache Handling</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-05-27T08:47:20-07:00" pubdate data-updated="true">May 27<span>th</span>, 2005</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I noticed something kinda odd when adding a new feed to our ad publishing system today. I test with <a href="http://www.bloglines.com">Bloglines</a> cause I love the system. It&#8217;s my normal use aggregator and by far my favorite. However I noticed that after having run my testing feeds with ads in them through Bloglines that when I went to view the source version of the feed in Bloglines it had ads in it too!  I went back and viewed the source of the feed in my browser, and sure enough there were no ads.  Hmm, it seems like my testing of the ad populated version somehow caused ads to appear in the original version. How could that be? When I test out feeds I put them in a public place, and just scp the feed output from my laptop and pass it through some web based aggregators to make sure that nothing odd happens. However I don&#8217;t change any of the links within the feed.  So although my feed might reside at, oh, I don&#8217;t know, lets say <a href="http://www.bitsplitter.net/herepiggypiggypiggy.xml">http://www.bitsplitter.net/herepiggypiggypiggy.xml</a>, the links within the feed still point to site the original content came from. The end result is that if you have a link like <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss">http://www.bloglines.com/sub/http://www.wingedpig.com/index.rss</a> which would seem to subscribe you to Mark Fletcher&#8217;s blog, it really takes you to a fake post I shoved into Bloglines to make it look kinda like it&#8217;s hosted at Mark&#8217;s site. Astute subscribers will notice the mismatch between the urls in the feed info, but most people aren&#8217;t astute. I think there might be more insidious uses for this, like setting the link location for the feed to an already existing site. I don&#8217;t want to be mean and try it on existing feeds, but my little bit of fooling around would seem to indicate that the fake version could shove entries into the cache for the overall feed. So there you go Bloglines folks, there&#8217;s my free suggestion for the day. Refetch if the current cache version comes from outside the link domain and the user is requesting an &#8220;authoritative copy&#8221; (something from the same URL as the feed link).</p>
-
-<p>Update: Niall <a href="http://www.bloglines.com/sub/http://www.wingedpig.com/">did one too</a>. He helped me test out the stuff I was playing with.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/15/">&larr; Older</a>
@@ -502,6 +500,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
       </li>
     
@@ -515,10 +517,6 @@
     
       <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
   </ul>

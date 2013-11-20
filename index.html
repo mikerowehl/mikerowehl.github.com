@@ -9,10 +9,10 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="One of the nice things about
-getting FFOS 1.2 on my device
-is being able to use App Manager instead of the simulator plugin to do
-development. Given &hellip;">
+  <meta name="description" content="My parents were getting ready to sell their house a few months ago, and
+while I was there I grabbed a few
+super old computer books
+from when I was a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,88 @@ development. Given &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-19T22:20:00-08:00" pubdate data-updated="true">Nov 19<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My parents were getting ready to sell their house a few months ago, and
+while I was there I grabbed a few
+<a href="https://twitter.com/miker/status/330731191168806912">super old computer books</a>
+from when I was a kid. Nostalgia I suppose, and I figured they would be cool
+to have around. What I didn&#8217;t expect was that I would find a printout and a
+few pages of handwritten notes from a program I was working on when I was 9.
+But of course, once I did, the only rational response was to see if I could
+finally get it working. Which it now is.</p>
+
+<p>While I know it definitely isn&#8217;t
+the only 6510 related project on Github, I have to assume it&#8217;s one of a very
+small number of CBM Basic programs. It&#8217;s a
+<a href="https://github.com/mikerowehl/c64-assembler/blob/master/assembler.bas">6510 assembler written in Basic</a>.
+The Commodore 64 was the machine I had when I started to really get into
+programming. When the thing booted up it had Basic burned into ROM, which was
+a fantastic way to get things going. But I knew what was really going on
+underneath was all machine language, and that the real programmers wrote in
+assembly. The Commodore 64 didn&#8217;t come with a built in assembler or machine
+monitor, like some of the other 8 bit systems at the time did. And we didn&#8217;t
+have a ton of money, so getting one of the commercial assemblers at the time
+wasn&#8217;t really an option. So I figured I would write my own.</p>
+
+<p>I actually spent tons of time manually compiling instructions and poking them
+into memory back then, which was insanely educational. I forgot how close we
+were to the hardware all the time back then. And trying to work out how to
+build an assembler on my own was probably a fantastic set of experience to
+have built up. I ended up getting my hands on a commercial assembler
+eventually though, and never really finished up my own version.</p>
+
+<p>Like most programming problems, the issue wasn&#8217;t really with the code, it was
+with the data abstractions.
+The program was actually functional as it was, it was just kinda buggy, and
+relatively convoluted cause it was trying to parse the operands to figure out
+which instruction to use. I wanted to get the program working, but I didn&#8217;t
+want it to take me too long either. So I ended up cheating and used
+non-standard mnemonics for the instructions to pack info about addressing mode
+and index registers into the opcode instead. For instance instead of using
+&#8220;cmp ($1a,x)&#8221; for indirect indexed addressing I swapped to using &#8220;cmpix $1a&#8221;.
+The expressiveness is the same, it just means I can pull in a token at at time
+without any need to apply logic. The thing really becomes just a lookup table.</p>
+
+<p>So in a grand total of about 45 minutes, including the time to figure
+out how to use the VICE emulator and load Basic programs into it without
+having to type it into the emulator, I had a working program that was able to
+run the example code I had been trying out 29 years ago. I think if 9 year old
+Miker could see that 45 minutes of hacking and the result he would be pretty
+impressed.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1024,42 +1106,6 @@ app that kicked this whole thing off 10 years ago.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/09/18/two-blue-pills-with-a-whiskey-back-please/">Two Blue Pills With a Whiskey Back Please</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-09-18T16:21:23-07:00" pubdate data-updated="true">Sep 18<span>th</span>, 2006</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>The surreal thought for today: <a href="http://en.wikipedia.org/wiki/Laurence_Fishburne">Lawrence Fishburne</a>, Morpheus from The Matrix, was <a href="http://en.wikipedia.org/wiki/Cowboy_Curtis">Cowboy Curtis</a> on Pee Wee&#8217;s Playhouse. I was wondering why Pee Wee ended up in the Adult Swim lineup. I get it now. Joke&#8217;s over. You can make it stop.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -1098,6 +1144,10 @@ app that kicked this whole thing off 10 years ago.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
       </li>
     
@@ -1111,10 +1161,6 @@ app that kicked this whole thing off 10 years ago.</p>
     
       <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
   </ul>

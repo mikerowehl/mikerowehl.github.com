@@ -9,7 +9,7 @@
   <meta name="author" content="Mike Rowehl">
 
   
-  <meta name="description" content="There&#8217;s an article at MozillaQuest.com describing how to do the basic spreadsheet formatting operations necessary to setup a simple table of &hellip;">
+  <meta name="description" content="There&#8217;s an interview with Adam Bosworth over at ACM Queue, and it touches on some ideas I&#8217;ve had in relation to mobile application. There &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,6 +76,46 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2003/12/13/web-services-and-message-oriented-protocols/">Web Services and Message Oriented Protocols</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2003-12-13T06:10:52-08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2003</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There&#8217;s <a href="http://www.acmqueue.org/modules.php?name=Content&amp;pa=showpage&amp;pid=29">an interview with Adam Bosworth</a> over at ACM Queue, and it touches on some ideas I&#8217;ve had in relation to mobile application. There is a lot of stuff that I don&#8217;t agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I&#8217;m hoping that&#8217;s an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I&#8217;m definitely going to have to keep steering clear of enterprize application settings.</p>
+
+<p>But there is an interest trend brought up in the move towards more message oriented formats. This is another example of people catching on to the ideas that I remember hearing about from the <a href="http://www.jabber.org">Jabber</a> guys literally 4 years ago. They used to go on and on about how applications should be constructed based upon async messages and queues. Mostly I think people laughed at them, which is too bad. Now that mobile communication devices are actually becoming commonplace, questions about syncing up the information in them are more relevant.  When you just had your Palm Pilot it was easy to sync. Some people synced at work and at home, and it was all good for them. But now information lives all over, and the old sync model doesn&#8217;t work. All of a sudden those funny Jabber ideas start to make a whole lot of sense. People are saying things like &#8220;wouldn&#8217;t it be great if when I added a contact to my phone it would automatically get sent to all my devices!?!?!&#8221;</p>
+
+<p>Well, it&#8217;s not a new idea. These are the kinds of alternate apps that Jabber is built for. In this model each device and application is a client to the IM network. When a contact is added from one device or application it sends a message to the server, and that message is queued for all of the devices in a clients listening group. Each of those apps and devices can then login at any point and get the updates. I think this is actually the direction that Palm is going to be gunning for with their embrace of Web Services and their attempt to make PalmOS 6 more &#8220;network centric&#8221;. I wouldn&#8217;t be surprised if they pushed these kinds of sync functions straight down into the operating system/database interfaces.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -411,46 +451,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2003/12/07/discussion-of-open-source-communities/">Discussion of Open Source Communities</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2003-12-07T12:49:14-08:00" pubdate data-updated="true">Dec 7<span>th</span>, 2003</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There&#8217;s an <a href="http://www.oreillynet.com/pub/wlg/3017">older post in Tim O&#8217;Reilly&#8217;s weblog</a> regarding open source and the forming of community. The discussion is great, and I think very informative. I would make the further point that the openness of the projects doesn&#8217;t only encourage participation in the form of feeding back fixes and features into the tree, it allows for users and potential developers to &#8220;play&#8221;. They can experiment with new ideas, try out fixes and features, and learn about the system. Even if they never feed back these changes to the core of the project, the community can be strengthened because of it. If that programmer shares just their ideas or insights without any new code, the project as a whole still gains. A minor point, but since I&#8217;m going to be comparing open source culture to prototyping culture (as described by Michael Schrage in Serious Play) it&#8217;s pretty important.</p>
-
-<p>The community doesn&#8217;t arise just so that users can support each other, or so that they can fix bugs and add features. Schrage says &#8220;an interesting prototype emits the social and intellectual equivalent of a magnetic field, attracting smart people with interesting ideas about how to make it better.&#8221; Because of the nature of open source projects, they have the ability to act as prototypes in the sense that Schrage means. Proprietary products usually can not. Open source projects don&#8217;t <em>have</em> to work like prototypes, but they have the ability to. With most proprietary products there&#8217;s frequently no way for users to play under the hood, to experiment and start forming the dialog with the system from which innovation and intellectual momentum spring. The members of the community for an open source project don&#8217;t just communicate with each other, they communicate with the project. In closed projects the potential participants are inherently walled off from that very important aspect of cooperation.</p>
-
-<p>Communities often do not form around projects, but rather through them. The project forms the shared space through which the community draws its coherence and strength. Most closed projects do not present the opportunity for this shared space to be established. The code really might have very little to do with the success or failure of an open source project. Success and failure could be dependant on the community. But I think the formation of the community stems from access to the code (no matter what the quality of that code is) and the ability of the project leaders to manage the community that arises around it. Different projects will attract different communities with different goals and different effective management styles. I think the points that Schrage brings directly apply to open source on these points. Check out <a href="http://www.manyworlds.com/index.asp?from=CO&amp;coid=CO780217203316">The Path to Innovation</a> Q&A; session for more of his ideas. If one agrees with those ideas, they can provide a major insight into the reasons why open source communities &#8220;work&#8221; while many communities formed around closed products do not.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/62/">&larr; Older</a>
@@ -491,6 +491,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/11/19/finished-a-program-29-years-later/">Finished a Program 29 Years Later</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/28/firefox-os-with-app-manager/">Firefox OS with App Manager</a>
       </li>
     
@@ -504,10 +508,6 @@
     
       <li class="post">
         <a href="/blog/2013/07/14/scaling-technology/">Scaling Technology</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/28/consistent-test-methodology-for-inconsistent-projects/">Consistent Test Methodology for Inconsistent Projects</a>
       </li>
     
   </ul>
