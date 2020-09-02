@@ -1,0 +1,26 @@
+---
+comments: true
+date: 2005-02-02 20:03:03
+layout: post
+slug: 106miles
+title: 106miles Event Feb 8th
+wordpress_id: 410
+categories:
+- Silicon Valley
+---
+
+There's a new networking group, called [106miles](http://106miles.org/), operating in the Silicon Valley area. I missed the first meeting, but the second meeting is going to be February 8th at 7pm.  Here's an excerpt from their description:
+
+
+
+
+> 106 Miles is a networking group for entrepreneurial engineers in Silicon Valley. The plan is to get together once a month in a casual atmosphere, have a couple beers and a slice, and ask questions of an invited guest who has good stories to tell about starting a tech company. It's basically a geek kegger with a slightly more directed chat in the middle.
+
+
+
+
+[Dave Sifry](http://www.sifry.com/alerts/) is going to be the guest, and the topic is "Third Time's the Charm: the thrill of serial entrepreneurship". Dave is an engaging speaker, and always seems to have really interesting things to say.
+
+
+
+Tags: [106miles](http://technorati.com/tag/106miles) [20050208](http://technorati.com/tag/20050208) [DaveSifry](http://technorati.com/tag/davesifry)

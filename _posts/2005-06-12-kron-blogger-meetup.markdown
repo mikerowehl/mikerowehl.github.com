@@ -1,0 +1,16 @@
+---
+comments: true
+date: 2005-06-12 18:13:00
+layout: post
+slug: kron-blogger-meetup
+title: KRON Blogger Meetup
+wordpress_id: 530
+categories:
+- Feedster
+---
+
+We went over to the [blogger meetup at KRON](http://kron4.com/Global/story.asp?S=3462860) yesterday. It was pretty much what I expected out of the event. The KRON folks were surprisingly and refreshingly honest in saying they had no idea what to do about blogging, but they want to start getting involved in the community. They're going to be maintaining a list of Bay Area bloggers. [Courtney](http://www.endofthetour.com/) already has a [site called SFBayBloggers.com](http://www.sfbaybloggers.com/) that lists bloggers from the Bay Area, it would be cool to see them throw some support her way instead of starting up another list. KRON is also going to be aggregating posts from the local blogs and providing some metacommentary. Would be nice to see the information flow both ways. [Niall mentions getting KRON to use Creative Commons](http://www.niallkennedy.com/blog/archives/2005/06/kron_blogger_ga.html) on some of the content it releases, I think that would be a fantastic way to kick it off.
+
+There were a few people who were disturbed by KRON aggregating stories from local publishers and commenting on them. I've come to think about "my content" online much different than I used to, mostly because I've been working with and around people who make their money from advertising. Many of them who come from the traditional publishing side are concerned with controlling their content, making sure that they make some scratch every time someone reads their words or sees their images or hears their audio. The folks from the new media side are much more accepting of trading their content for traffic. They don't mind if someone takes snips of their stories and republishes them, as long as credit is given and traffic flows back their way. I think that just comes down to the difference between broadcast and online mediums. It makes sense to try to control your content when you broadcast because following attribution has a much higher activation energy for someone receiving a broadcast. Whereas online a link to the original source is much more likely to get the receiver to act. I think understanding that is the best way to come up with ways to interact with the bloggers. Sure, there are some who don't want any more traffic because their bandwidth costs are already too high. But for most of them they would be happy to just get traffic. KRON controls a lot more traffic than most of the bloggers in the area, and using their position to help send traffic to the local blogs would give KRON a new pool of content to pull from and give the local bloggers what they want in return. I'm pretty sure that's just about what I heard at the meeting, so all in all I think it was a great start.
+
+Tags: [KRON](http://www.bitsplitter.net/tag.php/kron) [media](http://www.bitsplitter.net/tag.php/media) [blogging](http://www.bitsplitter.net/tag.php/blogging)

@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2004-12-06 14:51:36
+layout: post
+slug: technology-and-medium-of-the-web
+title: Technology and Medium of the Web
+wordpress_id: 368
+categories:
+- General
+---
+
+I'm on my way up to San Francisco, sitting on Caltrain, so I finally have some time to write up one of the posts I've been thinking about. 
+
+I've been spending a bunch of time lately working with online collaboration. In particular I've been trying to figure out what makes some attempts to work together break down when seem to work effortlessly and with little organization. Blogging is one phenomenon I've been paying attention to for a while, and recently I was trying to put my finger on exactly what blogging has really changed. It's not like the protocols are fundamentally different. Sure there's the Blogger API, and Metaweblog, and Atom, and the reuse and refinement of RSS. But I don't think those are what really fuels the changes. So if it's all just HTML still, why such a large impact from making tools simpler? I have read a few things recently that help to frame the differences and provide some good models to use in understanding the changes, I'll try to describe one of them.
+
+I think about the changes that McLuhan describes about changing mediums when I think about blogging as a practice. I wish I could find the passage, I'm not sure if it's in Understanding Media or somewhere else, where he talks about the Protestantism movement and the use of the printing press to mass produce bibles. I think a lot of insight can be drawn from a comparison of the introduction of the printing press and the rise of blogging. The important factor that I realized was that the introduction of the printing press didn't change the underlying technology in the books themselves. They were still paper and ink and a binding (and in this case they were even the same content in every instance). In many cases the result was actually a step backward for what most people valued. Bibles used to be beautiful illustrated color manuscripts with intricate bindings. Now they were relatively ugly page after page of black ink. They seemed like a step backward if you placed a pre-guttenburg bible side by side with a post-guttenberg edition.
+
+The major disrupting factor was that the bibles could be produced in large numbers and distributed much more widely. The technology of production was all that had changed, and yet it resulted in sweeping social changes. I think we're looking at the same kind of situation with blogging. The underlying technologies facing the end user of the information is the same. Pre-blogging and post-blogging we still have browsers and TCP/IP and HTML. Hell, the blogging version of HTML even suffers from the same "downgrade" criticism that the original printing press bibles did, people say it's ugly and clumsy. But the tools used to produce information using those technologies have changed, and as a result shifted the power balance. So sure, blogging is just a simple way to produce simple HTML. But the printing press was just a simple way to produce ugly bibles. Despte that, the effects of those bibles were by no means slight, and I don't think that the long term effects of blogging will be either.

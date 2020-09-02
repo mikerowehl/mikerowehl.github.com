@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-02-17 17:43:45
+layout: post
+slug: palmhttp-21
+title: PalmHTTP 2.1
+wordpress_id: 162
+categories:
+- Open Source
+---
+
+Posted a minor update to [PalmHTTP](http://www.bitsplitter.net/PalmHTTP/) today. The 2.0 version generated warning messages when run under POSE with all debugging enabled, this adds a missing call that keeps that error from popping up.

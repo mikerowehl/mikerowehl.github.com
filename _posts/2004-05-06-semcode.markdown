@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2004-05-06 15:23:47
+layout: post
+slug: semcode
+title: Sem@code
+wordpress_id: 265
+categories:
+- Mobile Computing
+---
+
+The [Sem@code](http://semacode.org/) project has released a [demo for Symbian phones](http://semacode.org/download/). I [posted about it at the end of last year](http://www.bitsplitter.net/blog/index.php?p=20), and I still think it's a great idea. I actually exchanged a few emails with Simon, trying to find out what he had planned for it. He's interested in trying to make money off the idea, which is certainly a good idea. I was hoping he would be releasing the code under some kind of dual license model (ie. GPL for non-commercial use, like what [MySQL has done](http://www.mysql.com/products/licensing/)), and that's probably still possible. Interest in the project always helps of course, so this is my post to try to help out the project so that Simon can make some money off of it and hopefully make more of this excellent idea publicly available.
+
+The question I'll answer: "So, what's the big deal?". Why is it important that people can scan URLs into their phone?
+
+The first part of course is convenience. We could of course put these urls onto stickers and just have people type them in. But even the small URLs that come out of services like [TinyURL](http://tinyurl.com/) can be a pain to type in on a numeric keypad. People will not use services that are not convenient unless the the benefit is high enough. So by making the URL easier to get into the phone, we make it more convenient to the user, and lower the payoff that the user has to expect in order to use the service. The user might not want to type in a URL on an advertisement to find out what bands are playing at a local bar, but if they just have to point their camera and press a button they are willing to take a look. Sem@code is a service enabler implemented in software. Existing handsets designs can be used, but the new software increases the range of services the user will access. An inconvenient barrier has been removed.
+
+The other major benefit is that anyone can create the Sem@codes, encoding whatever URL they want. This enables [public authoring](http://www.bitsplitter.net/blog/index.php?p=201) without requiring infrastructure on the service provider side. I think this is one of the persistent barriers to new services getting developed. Most location based services require the cooperation of handset manufacturers or service providers, neither of whom is very willing to try out new ideas until they know that they'll be able to make a profit. And of course users aren't willing to pay more for service or devices unless there are applications. The end result is that progress happens pretty slowly, and normally it ends up being small jumps from where we've been before. I personally want completely new apps, new services, new devices, completely and radically new ways of communicating and colaborating. I think lots of mobile computing ethusiasts do as well. Sem@codes allow a way for those interested in deploying location based services to do so completely on their own, without relying on any new technology being deployed or any new handset features. Sem@codes provide a open experimentation space for those interested in location based services, something that can be prototyped and deployed to a select group with very little up front investment. Kick ass. I wish Simon the best of luck with this, it's a great concept.

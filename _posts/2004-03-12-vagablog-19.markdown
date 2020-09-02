@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-03-12 18:18:40
+layout: post
+slug: vagablog-19
+title: Vagablog 1.9
+wordpress_id: 184
+categories:
+- General
+---
+
+As I'm sure most of you already know, I have a package for Palm handhelds called [Vagablog](http://www.bitsplitter.net/vagablog/) that allows posting directly from a Palm handheld to all sorts of blogging services. I finally released the 1.9 version today. I was on the road for the last month pretty much, so I didn't get a chance to make any of the updates I should have. This release fixes the default [Blogger.com](http://www.blogger.com) hostname, and adds TypePad, B2, and LiveJournal to the list of supported services. I had to reduce the number of unregistered posts to 5 however. Sorry to be a dick, but there was just too much moochin of my l33t0 warez going on. I'll make up for it by hacking some [Open Palm Environment](http://openpalmenv.sf.net) tools this weekend.

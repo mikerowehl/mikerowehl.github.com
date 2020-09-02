@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-02-23 11:58:42
+layout: post
+slug: shared-worlds
+title: Shared Worlds
+wordpress_id: 169
+categories:
+- Dweeb
+---
+
+I'm visiting with some friends down in Austin. They're big gamers, and into MMORPG in general. MMORPG stands for Massively Muliplayer Online Role Playing Game, and games like Ultima Online, The Sims, and Asheron's Call fall into this category. They're games which allow many people to participate in a shared space at the same time, creating what I consider to be a real virtual world. Something they showed me is a bot style system which keeps your character logged in performing simple tasks, such as casting beneficial spells on friends. I think it's very cool, and in general a good sign for the MMORPG market in general. I know that many people have issues with bots because they're frequently used to cheat. Many people consider the use of bots to be an unfair advantage, and that they ruin the spirit of the game. I think it's much more important that people have crossed of the line from being just simple users to being developers. They're looking for ways to extend and enhance the system, and they're willing to put their own time into realizing their vision. In terms of system development, this is a good thing. When your users see new potential in your system, and see how to turn it into something more. I think it would be great if some of these games provided ways for the users to hack within the official framework. I think allowing users to hack would lead to a completely different game. Something I think would probably be a great advance.

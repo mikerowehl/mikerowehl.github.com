@@ -1,0 +1,17 @@
+---
+comments: true
+date: 2004-07-22 08:46:46
+layout: post
+slug: technorati-with-cnn-at-the-democratic-national-convention
+title: Technorati with CNN at the Democratic National Convention
+wordpress_id: 318
+categories:
+- General
+---
+
+Weinberger picked up the [post about Technorati providing blog information during the Democratic National Convention](http://www.hyperorg.com/blogger/mtarchive/002859.html). The story has been picked up and spread all over the place by the blogging "in crowd", but I figured I would spread it here also cause it seems like I have more of a mix of social software and mobile readers than hard core bloggers. I've posted about Technorati before, but basically it's a service that allows you to figure out who's blog is linking to what. There are a few technical reasons behind why their link searching works mostly to find what blogs are linking to, and not web pages in general. But take it on faith that most of the information they have comes from people writing blogs entries with links in them.
+
+At the Democratic National Convention Technorati is going to be feeding into to/through CNN about what the current hot topics are. I'm assuming this is so that CNN can "close the feedback loop". Meaning that now CNN has another way to find out in realtime the effect of the information they've released. When CNN broadcasts information they don't really have a good way to find out what viewers think about the info? The most basic question is, "do the viewers care at all?" Technorati is in a great position to answer that question because they can find out what people are linking to, which is an excellent proxy for what a certain group of people are talking about. There are another ways to gather info, like taking phone calls and emails. But because Technorati has a database of what people's links point to already, and because computers process the information and not people, Technorati can provide feedback from a much larger group and allow some interesting dissections and regroupings of that data.
+
+The geeks out there might say something like "but CNN can just check their server logs to see what pages people are looking at. If CNN runs a story they can just check to see how many people hit pages about that story on their site. Why do they need Technorati?" NO!! This misses completely two major types of info. The first is editorial type posts to a blog. When some bloggers post they provide a link to a story and a whole bunch of commentary. Not everyone clicks through to the originating story. If the post is detailed enough, I bet that number can get very low. Especially when the reader is at a post from a trusted source. There's no need to go to the original bit of info, they already have everything they wanted. The second is breaking news. Looking at hot trends as a whole, CNN can pick up on what people are interested in that HASN'T yet been reported on. I personally think that's a really big deal. If CNN is reporting on A, B, and C, but people are talking most about Z, now they can know. This is where the network effects really come in. First you have to look at who's linking to you, and then who links to them, and then as an aggregate everything that all of them area linking to as a whole. That's where Technorati really breaks out of the box, they enable this view of information in a way that hasn't been possible on a large scale before. Great job guys!! I wasn't planning to follow the DNC at all, but this news has gotten me interested enough that I'll probably tune in.
+

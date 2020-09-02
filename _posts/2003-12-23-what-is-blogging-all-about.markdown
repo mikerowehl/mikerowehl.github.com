@@ -1,0 +1,14 @@
+---
+comments: false
+date: 2003-12-23 12:20:54
+layout: post
+slug: what-is-blogging-all-about
+title: What is Blogging All About?
+wordpress_id: 63
+categories:
+- General
+---
+
+There's an [Entry in Seth Finkelstein's blog](http://sethf.com/infothought/blog/archives/000504.html) pondering why it is that people keep blogs. He mentions some of the common reasons in there, like exposure to a new audience if you're running a business related blog, and the simple need to communicate which is fulfilled by a daily diary. I actually did a whole lot of thinking along these lines before I wrote the first version of [Vagablog](http://www.bitsplitter.net/vagablog/). I know a lot of reasons showed up once I started blogging that I didn't expect at first. Maintaining my blog has actually helped me organize my thoughts and keep something of a schedule. It provides a great regime for me to stick to in processing the news I read and trying to fit the new content into my world view. It encourages some thoughtful introspection where before there was absolutely none.
+
+But even if all the blogs were mostly just mundane drivel, as [Nate seems to think a lot of them might be](http://www.streettech.com/modules.php?op=modload&name=News&file=article&sid=376), I actually don t think they inherently can't be useful. I wrote up an [article kinda thing](http://www.bitsplitter.net/vagablog/blogging_for_nerds.html) laying down some thoughts I had along the line of how lots and lots of meaningless drivel can add up to something useful. Just take a look at projects like [Everything2](http://www.everything2.com/) and their effort to node everything. To a degree, blogs can be viewed as the same type of node network, just not under central control. Now, I admit that the value of the node network itself is still very dubious. But it is at least one tick mark in favor of just "writing about everything". This human society of ours is still very much based on social policy and morality. And at the end of the day, social policy and morality boil down the sum of public opinion. So even the most mundane and droll opinion is significant. Especially if it can be counted and analyzed because the author has chosen to share the info.

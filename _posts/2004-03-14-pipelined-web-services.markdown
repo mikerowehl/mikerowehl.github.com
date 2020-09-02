@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2004-03-14 14:59:20
+layout: post
+slug: pipelined-web-services
+title: Pipelined Web Services
+wordpress_id: 187
+categories:
+- General
+---
+
+Russell Beattie has two great posts in his blog, the first about [web services becoming more like Unix style tools](http://www.russellbeattie.com/notebook/1006760.html) and then some [further discussion about the similarities and differences between the two styles](http://www.russellbeattie.com/notebook/1006768.html). I groove completely the the beats Russ is laying down. Usages like this are something that made me happy the first time I read about [REST](http://webservices.xml.com/pub/a/ws/2002/02/06/rest.html). REST seemed to make it easier for arbitrary tools to participate in the series of commands. My comments tend to blend XMLRPC, REST, and SOAP - cause I tend not to pay too much attention to specs and just hack out whatever seems to work for me. Just a couple of quick comments I want to throw into the mix.
+
+The distinction between standard error and standard output is certainly good to have picked out. And maybe keeping those two output streams different will always be a good idea. But I just want to bring up that the reason for having separate output channels is because Unix systems deal with unstructured text. If the output is an XML document, keeping output and processing messages distinct within a single output channel could be done by just specifying the location for the two different types of output. The same goes for input also, processing directives and input material could be mixed in the same input channel if there was a reliable structure for distinguishing between the two. I'm not saying that this is the right way to go, just another way to look at it.
+
+The issue about sending output to another URL for further processing does break with the Unix style somewhat, but it looks exactly like the [continuation passing style](http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?continuation+passing+style) which has been around in Scheme (and probably other Lisp style languages) for quite a while. Maybe we can take some ideas from that arena to formalize the mechanism. How exactly? I haven't really thought that through yet :-) I'll post something if I have some good ideas. I was also thinking about including transformation instructions with the continuations. I don't think this is my original idea, I just can't remember where I saw it. Generally it would mean including something like an XSLT transformation to be executed either after one processing stage or before the next. That should make it easy to hook up services that don't really know much about each other. But given that we're already passing around the data as a whole, perhaps we just need a well known URL for the transformation service and get that included anywhere we need to massage formats. Either one would probably work.
+
+SOAP already has [a concept of intermediaries](http://www.w3.org/TR/2003/REC-soap12-part1-20030624/#senderreceiverconcepts), which are nodes that route and partially process a message. They're already both senders and receivers, so they look a lot like the kind of processing nodes that would be needed to form a pipeline. I'm certainly not a SOAP expert, but I think those intermediaries are only used to route the message and transform the wrappers for the real payload. What we would be talking about doesn't change things too much, we would just be elevating intermediaries to primary addressable nodes and allowing them to have a much more active part in the processing of the payload. The usage patterns look much different when we make these changes, but I don't think the underlying model changes all that much.

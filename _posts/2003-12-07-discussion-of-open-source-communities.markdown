@@ -1,0 +1,16 @@
+---
+comments: false
+date: 2003-12-07 20:49:14
+layout: post
+slug: discussion-of-open-source-communities
+title: Discussion of Open Source Communities
+wordpress_id: 24
+categories:
+- Open Source
+---
+
+There's an [older post in Tim O'Reilly's weblog](http://www.oreillynet.com/pub/wlg/3017) regarding open source and the forming of community. The discussion is great, and I think very informative. I would make the further point that the openness of the projects doesn't only encourage participation in the form of feeding back fixes and features into the tree, it allows for users and potential developers to "play". They can experiment with new ideas, try out fixes and features, and learn about the system. Even if they never feed back these changes to the core of the project, the community can be strengthened because of it. If that programmer shares just their ideas or insights without any new code, the project as a whole still gains. A minor point, but since I'm going to be comparing open source culture to prototyping culture (as described by Michael Schrage in Serious Play) it's pretty important.
+
+The community doesn't arise just so that users can support each other, or so that they can fix bugs and add features. Schrage says "an interesting prototype emits the social and intellectual equivalent of a magnetic field, attracting smart people with interesting ideas about how to make it better." Because of the nature of open source projects, they have the ability to act as prototypes in the sense that Schrage means. Proprietary products usually can not. Open source projects don't _have_ to work like prototypes, but they have the ability to. With most proprietary products there's frequently no way for users to play under the hood, to experiment and start forming the dialog with the system from which innovation and intellectual momentum spring. The members of the community for an open source project don't just communicate with each other, they communicate with the project. In closed projects the potential participants are inherently walled off from that very important aspect of cooperation.
+
+Communities often do not form around projects, but rather through them. The project forms the shared space through which the community draws its coherence and strength. Most closed projects do not present the opportunity for this shared space to be established. The code really might have very little to do with the success or failure of an open source project. Success and failure could be dependant on the community. But I think the formation of the community stems from access to the code (no matter what the quality of that code is) and the ability of the project leaders to manage the community that arises around it. Different projects will attract different communities with different goals and different effective management styles. I think the points that Schrage brings directly apply to open source on these points. Check out [The Path to Innovation](http://www.manyworlds.com/index.asp?from=CO&coid=CO780217203316) Q&A; session for more of his ideas. If one agrees with those ideas, they can provide a major insight into the reasons why open source communities "work" while many communities formed around closed products do not.

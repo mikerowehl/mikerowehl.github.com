@@ -1,0 +1,28 @@
+---
+comments: true
+date: 2004-03-11 10:24:05
+layout: post
+slug: irc-tools
+title: IRC Tools
+wordpress_id: 180
+categories:
+- Dweeb
+---
+
+I've been wandering around through various IRC channels on [freenode.net](http://www.freenode.net), and while idling in the #scheme channel I saw a message from the lisppaste bot. I had never seen it before, but it's a bot that allows for pasting content to a permenant location and sending a notification to the channel the paste is for. Given the way the bot is setup, it looks like the usage pattern is something like this:
+
+
+
+
+  * during a discussion someone hacks together an example solution
+
+
+  * directly from their editor/IDE they can send the example to the lisppaste bot, the code is then accessible using HTTP
+
+  * the lisppaste bot informs the channel of the location of the pasted code
+
+
+
+I think that makes for a pretty cool blending of web based and chat based collaboration.
+
+Another tool that's new to me is the [meme log](http://meme.b9.com/start). This uses channel logs to thread together conversations and present marked-up forms of the log that make it easier to follow conversations. Apparently the lisppaste bot has a hookup that allows it to link pasted code to the conversation which generated it. I haven't had enough time to fool around with them and see how well they work in practice, but these are some great ideas.

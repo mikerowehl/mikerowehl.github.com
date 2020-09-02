@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-01-12 14:49:16
+layout: post
+slug: starting-off-a-week
+title: Starting Off a Week
+wordpress_id: 96
+categories:
+- General
+---
+
+Starting off a new week almost always makes me depressed. I spend the weekend being able to at least fit in interesting bits of hacking here and there. Although this weekend was mostly work, and my site was down for a decent sized chunk of it, I did manage to fit in some palm-xmlrpc hackery. Not much, but at least I have something to point to. I managed to read some interesting stuff, including the ["A Group Is Its Own Worst Enemy"](http://www.shirky.com/writings/group_enemy.html) article by Clay Shirky, which really got me thinking in some new directions again. I've been thinking about community quite a bit, as I've [mentioned here before](http://www.bitsplitter.net/blog/index.php?p=90). In open source the code itself serves as the merit system. You don't have to trust someone to be telling the truth, you just look at their code and find out. And I was trying to figure out where else there might be a mechanism that works that like, but wasn't able to come up with an interesting one. Especially not within the context of forming a user community. But that isn't what this post is really about...
+
+So now I'm back to the drudgery of normal life. I should probably be happy that I've got a contract to work on when so many people are out of work, but most of that is swallowed by having to rip myself away from somehting interesting in order to make some money. I would really like to pick up a few of the ideas I have for applications and to try to turn them into something. Even if most of what I do ends up getting open sourced, if I can just make enough to live off of (pay rent, bills, and buy food) I would be pretty happy if I can get the projects going. I think some of these applications need to be made before companies spot them and try to turn them into proprietary platforms. Wireless networking is still very much in its infancy, and it needs people to work on it without looking directly and immediately to the profit to be made from it. This is the way that the Internet was orignally formed and administered. Setup with a grant, and then grown by college students entranced with the new technology. Most of the wireless applications we see are driven by cellular providers looking to make the most from their pay-per-megabyte setups. The results are, well, just plain lame. And all of that makes me pretty sad overall.

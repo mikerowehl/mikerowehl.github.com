@@ -1,0 +1,24 @@
+---
+comments: true
+date: 2004-04-03 12:13:05
+layout: post
+slug: mogi
+title: Mogi
+wordpress_id: 227
+categories:
+- Mobile Computing
+---
+
+The Feature has an [article about a location based game called Mogi](http://www.thefeature.com/article?articleid=100501&ref=716084). I'm not a gamer at all, but I am into location based services. The way this game is run is just fantastic however. It encourages communication and cooperation, and emphasized collecting over combat. The game is described as a "data-layer over the city of Tokyo", which I picture being very much like the [Urban Tapestries](http://www.bitsplitter.net/blog/index.php?p=201) project. It's also setup so that it encourages users on mobile devices to work together with others back at desktop systems. The comments from the game play make it sound like the goal of fitting collaborative authoring into everyday life would be something that's possible:
+
+
+> [Mogi] is a good example of a style of entertainment suited for mobile devices. It's very casual, playable on your way somewhere. It nestles in your every day life, rather than requiring you to change your behavior ... It amplifies your ordinary behavior - it changes going on an errand into a piece of a game.
+
+
+If a game can do it, a public authoring system should be able to. And check out this comment from Paul Baron (admittedly a Mogi evangelist):
+
+
+> All the trips I make in the city are now randomized, as I will often divert a few hundred meters to go and collect an object around me. I get a chance to discover parts of the city that I ignored, a motivation to check out that parallel street I never took.
+
+
+Fantastic, I take that to be one of the main goals of public authoring. Reconnecting people in urban settings so that they get more of a shared experience. Drawing people out of their normal routines is a great way to get started. I think there are probably some fantastic lessons to be learned from this. I'm certainly going to be keeping my eye on [Paul Baron's](http://www.in-duce.net/archives/mogi_item_hunt.php) updates.

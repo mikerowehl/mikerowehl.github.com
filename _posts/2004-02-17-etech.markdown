@@ -1,0 +1,26 @@
+---
+comments: true
+date: 2004-02-17 23:55:55
+layout: post
+slug: etech
+title: '#etech'
+wordpress_id: 163
+categories:
+- Dweeb
+---
+
+A [post by Justin Hall over at The Feature](http://www.thefeature.com/article?articleid=100392) does a very good job of summarizing the impression of ETech that I got. Justin says:
+
+
+> The hackers were usually carrying on the most lively conversation over the wireless network. Their conversation sat on top of the conference. The IRC channel carried the words of young and restless conference goers (aside from silent lurkers). During Ito's Emergent Democracy Worldwide panel, the IRC channel was projected up on the screen behind the presenters. The commentary of the audience was shown in real time, as a response to the talkers up on stage. Not just the highlighted jests of the HeckleBot, but the entire flow of the backchannel conversation. Moments like this hinted at the start of an integrated conference, the primary real and virtual conversations coalesced around one shared stage. Allowing the text voices from the internet to appear in the physical space was a good start to drawing young and old attention to the same point.
+
+
+I think he probably did a good job of capturing the atmosphere of the conference, and the ways in which real world and online collaboration were blurred into a mass of shared idea flinging. I say I think he did cause I'm not completely sure. I wasn't physically at the conference.  I was lurking in #etech during parts of the presentations, but I was mostly working. Every once in a while if there was  an interesting topic on the schedule I would pop over to the wiki and start paying attention to the commentary in #etech. It would be an exaggeration if I said it was just as good as being at the conf.  But that's mostly because I wouldn't have been working at the same time if I were, and I would have been able to pay closer attention to all the sessions.  Some of the comments address this issue a bit, but I think that the extension of the community participating in the conference to those outside of the physical conference areas are a key benefit to the method of communication that developed. I don't really want to pick nits however, the writeup in general is great.
+
+In particular I love the comment about encouraging the hacking of mobile devices. This is part of the commentary from Justin:
+
+
+> So it should be with mobile devices, the panelists agreed. The complicated relationships between handset makers, mobile carriers and their customers, fractured by region and whipped by the pace of innovation, have kept mobile technology largely closed, proprietary. But mobile devices must be hackable to incubate the next generation of innovative human communications. The frenzy of innovative wireless communications applications on the popular Macintosh laptops in the ETech audience illustrated the potential for hackers let loose on a loose network.
+
+
+Which is very much something that [I believe in as well](http://www.bitsplitter.net/blog/index.php?p=6). And I [fully groove to the necessity of hackable devices and systems in order to push innovation](http://www.bitsplitter.net/blog/index.php?p=24). I knew [Howard Rheingold](http://www.smartmobs.com/index.html) was of the same camp, but it's cool to see that [the CTO at Nokia](http://www.nokia.com/cda2/0,1083,33296,00.html) thinks the same kind of thoughts.

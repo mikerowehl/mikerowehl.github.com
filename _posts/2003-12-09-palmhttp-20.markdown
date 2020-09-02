@@ -1,0 +1,12 @@
+---
+comments: false
+date: 2003-12-09 23:52:01
+layout: post
+slug: palmhttp-20
+title: PalmHTTP 2.0
+wordpress_id: 28
+categories:
+- Open Source
+---
+
+I've posted [the 2.0 version of PalmHTTP](http://www.bitsplitter.net/PalmHTTP/) on the Bitsplitter site, and reformated that page while I was at it. The interface to the library itself is now quite different, with covers for dealing with the URL struct, a POST struct and covers to deal with it, settings for the content type, and two example programs now. There's still quite a bit to do, but the lib works for what I do, so the other stuff will probably just creep in over time. I'm accepting patches for it, of course. So [shoot me an email](mailto:miker@bitsplitter.net) if you have some.

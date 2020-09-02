@@ -1,0 +1,22 @@
+---
+comments: true
+date: 2004-02-19 23:23:42
+layout: post
+slug: lessig-on-free-culture
+title: Lessig on Free Culture
+wordpress_id: 167
+categories:
+- Open Source
+---
+
+I just got done witnessing my first presentation by Larry Lessig. That was really quite interesting. Not only was the topic engaging, and the commentary insightful, but the format of his presentation was great. I had seen posts about the "Lessig Style" of presentation before, but hearing about it is nothing like seeing it. If you get a chance to go to one of his talks, even if you're not that interested in the topic, it could be worth it just to see the way he presents. But on to the topic of the presentation.
+
+The title of the talk was Free Culture, which is the topic of his new book (soon to be released). The overall message was that restrictions on media have become more the standard than the exception, and media has become more pervasive. The result is an environment which stiffles creativity, innovation, and the desire to produce. This is one of the major goals of the [Creative Commons](http://www.creativecommons.org), to get more content available under a license which allows for others to create using it. This act of creating new works using existing content has come to be known generally as "remixing". Larry spoke about the increasing scope and reach of copyright law, and said that copyright is no longer serving its main role of encouraging people to create. Copyright law is used increasingly to protect the rights of a very small sliver of society, and at a great detriment to the majority.
+
+So that"s the  ten thousand foot view. If you're really interested in the issues in general keep an eye on [Larry's blog](http://www.lessig.org/blog/). I just want to summarize some of the points that interested me, and bring up some of the topics that came up in discussion.
+
+Larry mentioned a sister effort called [iCommons](http://creativecommons.org/projects/international/). It's an effort to take the legal parts of the Creative Commons and translate and update those parts so that the license can be applied to works outside the US. Obviously other jurisdictions require different licenses, and it's a great project, but what struck me most was that he referred to the project as "porting the creative commons license". Porting legal code, a very interesting concept in general. Why doesn't this happen with open source licenses? Maybe it does and I just missed it.
+
+Something else he mentioned was the gap between theoretical law and practice. His example of this was a fair use case involving film. Even though film makers are allowed under the law to include images with a network TV show playing on a screen in the background, this is considered fair use. Often they don't do it unless they can clear the rights in advance. Even if the clip would be considered fair use they might not have the money to defend that right should the copyright holder decide to challenge. This leads to the gap between what the law grants, and what actually gets practiced.
+
+The last issue I want to bring up is the relationship between creative commons and the Trusted Computing Group. Trusted computing is something I [wrote about recently](http://www.bitsplitter.net/blog/index.php?p=130), and it would be safe to say that I find the issue a bit scary. Larry said the creative commons is really racing against TCG. I should have asked what exactly he meant by this, because I've thought of a couple of explantions since the talk ended. What I assumed right off the bat was that the race was based on getting enough content out in the commons that people would see the value of less protection before they completely buy into the TCG proposal. Closely related was a point about Digital Rights Management (DRM) being necessary, to which Larry's response was that so called "piracy" doesn't mean the end of profitability. He said that at least some music companies have seen increases in their growth since the Napster came into being.

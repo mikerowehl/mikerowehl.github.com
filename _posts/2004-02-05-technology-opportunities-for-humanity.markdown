@@ -1,0 +1,18 @@
+---
+comments: true
+date: 2004-02-05 00:06:35
+layout: post
+slug: technology-opportunities-for-humanity
+title: Technology Opportunities for Humanity
+wordpress_id: 149
+categories:
+- Silicon Valley
+---
+
+I'm walking home from a presentation about [Technology Opportunities for Humanity](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1282&mo=2&yr=2004), and it was really very good. I was afraid that it would be a whole bunch of talk about charity work and how we as Big Powerful Silicon Valley Residents can help out the poor slobs everywhere else. It definitely was not that. It was what I considered an extremely well informed discussion about the general topic of businesses providing technology and connectivity to developing nations (or the underprivileged within some developed countries). I think the presentations did a _fantastic_ job of both providing information about the topic and raising some interesting questions. I'll mention two of the high points that really hit me.
+
+The first was a comment by Eric Brewer that in order to help a currently underserved populace you first have to network it. Of all the different distribution methods this is the cheapest to introduce into an area. Normal transportion does not follow Moores law, but information movement does. Once you network people and they have access to resources that help them produce more, they can provide the means to expand the other means of distribution in their area. Mmm, an excellent point.
+
+The second came from the presentation by Sridhar Jagannathan, a social entrepreneur who gave some VC style comments about the topic. I wish I could remember exactly the phrasings which he used, cause it sounded perfect as he presented it. The basic gist was that in order to try to run a business which focuses on underdeveloped and poor areas you need to make sure that you keep competition alive. Perfect! Simple! Genius! First you need to make sure that the basics are in order, such as lawfull operation. And once you have an environment that can support fair business you provide people with resources so that they can start on their own. The example used here (and throughout the presentations actually) was Grameen Phone. This is an organization which provides microloans to poor people in Bangladesh so that they can purchase cell phones. The people then pay off their loans by using their phone for business, often times by just selling minutes on the phone to their fellow villagers. The system is not setup so that only one person can own a phone in each village, it still encourages competition between the people for whom it has provided financing. And it nets the organization money because the phone loans are paid back with interest. He stressed that there was a lot of potential to enable poor people and to make money. If the situation is such that the person is now able to both pay you and they are in a better position at the same time then everyone wins. The best way to insure that this is the case is to keep the profit motive alive in those you work with. When they compete they are more likely to be maximally driven.
+
+All the presentations were really interesting, but I don't have time to write all of them up right now. I do want to mention Brij Khotari however, who spoke about using Bollywood movies with subtitles in the same language as the soundtrack in order to increase literacy. He claims that using this technique can be more than 10,000 times more cost effective than the traditional routes to literacy. Again, fantastic! I have no idea if the [Digital Vision Program](http://reuters.stanford.edu) events are always this interesting, but I'm certainly going to attend a few and try to find out.

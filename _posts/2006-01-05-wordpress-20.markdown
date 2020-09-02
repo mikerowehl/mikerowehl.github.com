@@ -1,0 +1,16 @@
+---
+comments: true
+date: 2006-01-05 02:17:45
+layout: post
+slug: wordpress-20
+title: Wordpress 2.0
+wordpress_id: 599
+categories:
+- General
+---
+
+I just updated to [WordPress 2.0](http://www.wordpress.org) for this blog. Normally the next thing people say is "great, now update the templates!" You know what? No. I'm not even going to try this time.
+
+Normally I say to myself "Hey, they're right! It's about time I learned how to do some layout." And every time I try I just rediscover that I suck at layout. It's not what I do. I'm not going to come up with anything tolerable (unless you count the time I just stripped all the formattting out all together). I don't ask you to write kernel drivers for me, do I? So I'm not writing CSS for you. I just think that's fair.
+
+Every time I end up wasting big chunks of time and telling myself I'm just going to live with the default format. Most people read the stuff via feed anyway and probably have no idea what my blog looks like. What if you really just have a completely violent reaction to the default formatting for Wordpress? Try out browsing through something like [Skweezer](http://www.skweezer.net). The results are pretty much what my last attempt at CSS ended up looking like, so you're not missing anything.

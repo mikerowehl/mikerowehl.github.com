@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-05-02 00:12:17
+layout: post
+slug: we-be-schillin
+title: We Be Schillin'
+wordpress_id: 261
+categories:
+- General
+---
+
+I'm about to leave for a two week business trip, so I've been running around all over the place. There hasn't been time to read my normal round of feeds, let alone post anything of my own. Sorry about that, but I have to admit it might only get worse over the next few weeks. In the meantime I've been kicking around ideas about what kind of posts I should be putting up here when I do have some time to post again. I really liked doing the longer posts. Sure, they took longer, and sometimes didn't work out too well, but they gave me a great chance to reflect deeply on a given topic and polish my writing skills somewhat. The shorter posts were normally just tidbits of info from sources I figured were either very interesting or significantly esoteric. The short bits encouraged me to broaden my reach some. Explore new sources so that I would have something interesting at the end of the day. But I also felt like I was just being a shill for the technology industry as a whole sometimes. And this blog is all about keeping it real. I even made up my own gang sign, cause I'm just that legit. So I think when I get back to it I'm gonna try for more of the commentary heavy posts. But all you kids out there in teevee land can lend a hand also. Drop me a line and tell me what you were into, or leave a comment, send a carrier pigeon, whatever. Just don't tie a note to a brick and hurl it through my window, I hate it when people do that.

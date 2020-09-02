@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2005-05-12 20:00:51
+layout: post
+slug: making-structured-blogging-more-concrete
+title: Making Structured Blogging More Concrete
+wordpress_id: 503
+categories:
+- Feedster
+---
+
+[Elle](http://www.ellementk.com) was trying to get an [events blog](http://www.ellementk.com/events/) up and running using [structured blogging](http://structuredblogging.org/). We ran into a bunch of issues. Apparently Elle ran into Bob earlier this week, and Bob posted [about the evolution of structured blogging](http://bobwyman.pubsub.com/main/2005/05/mary_hodder_poi.html), so I want to chime in and admit my massive ignorance. I groove to the whole structured blogging concept, I like the idea of information spread about at the points of introduction but still indexed with structure. So these are questions for clarifications and not criticisms of the idea as a whole. Discussion, that's what this is.
+
+First off, I just don't get how to do it yet given [the layout presented on the structured blogging site](http://structuredblogging.org/wordpress/?page_id=13). Say that I, Mike Rowehl, Feedster employee, would like to implement a parser for event data so that the Feedster site could present a calendar interface for upcoming events. There's [an XSLT example of a processor on the site](http://structuredblogging.org/download/x-subnode-processor.xsl). This just isn't clear at all. The script language is meant to act as a substitution language for an element in the enclosing HTML? I think someone went a bit off the deep end in terms implementation complexity. Why do we want the subnode content factored back into the enclosing HTML if the reason we factored it out in the first place was that we wanted strictly valid XML in an HTML document? Is the plan to process the subnode script if there's an XML aware browser and let it style the content using CSS? If we have an aware browser why not just throw the semantic tags straight into the browser version of the markup and just note their namespace? Is it to keep from having to result to trickery when the XHTML usage of information happens in an attribute? A little clarification goes a long way, especially when there are few tools to experiment with.
+
+I'm going to assume that for an entry what I probably want is the subnode data for processing. I probably want [something that extracts all the script snippets and strips the rest of the document](http://www.bitsplitter.net/projects/events/x-subnode-extract.xsl) so that I'm working with valid XML at this point. Problem is, almost nothing out there claiming to be XHTML actually is. Lets assume that we can tidy up the XHTML, or just suck out the script snippets however, cause I don't want to belabour the obvious point. The next issue is that Bob said that the content doesn't have to validate. I'm getting this second hand from Elle, who's telling me I'm an idiot over IM as she related the story, so I'm taking this with a grain of salt. There seems to be some kind of mismatch here. I think the statement was probably something more like the document as a whole doesn't have to validate, as long as the stuff in the script tags is valid. I'm going to give Bob the benefit of the doubt and assume that's what was meant. The problem is that [Elle's event blog](http://www.ellementk.com/events/) looks something like this if you view source:
+
+
+
+> 
+<subnode xmlns:data-view="http://www.w3.org/2003/g/data-view#" data-view:interpreter="http://structuredblogging.org/subnode-to-rdf-interpreter.xsl" xmlns="http://www.structuredblogging.org/xmlns#subnode"><br />
+<xml -structured-blog-entry xmlns="http://www.structuredblogging.org/xmlns"><br />
+......
+</xml><br />
+</subnode>
+
+
+
+
+Looks like some kind of automatic validation rules misfiring. Now, if I'm wrong here I'm sorry, but I assume that the chunks of subnode data in that blog aren't processable because something has split the element names at the first dash. Right? Why is the plugin on Elle's blog doing that? I'm not quite sure, and I don't really care for the purposes of this conversation. The issue is that the tools split semantics and representation and insert them individually. Since there are no tools to inspect that semantic information except the tools producing the information, Elle could have kept blissfully creating posts with "semantic info" in them if I hadn't let her know what was up. And then only find out months later that there's nothing parsable in all her posts. When you fork the presentation and semantic info, and the semantic version is hidden from view of the average user, you make it very hard for the system to self correct. If the semantic info is used for presentation the normal user can tell when the info isn't correct, it doesn't look right. So if this script tag based XML snippet format is the format we're going to use there really needs to be some kind of validation available. Something that informs the user of the machine readable information that matches up to the viewable information. Not that they're going to use that service mind you, but I think it's the minimal necessary setup to keep this effort rolling along.

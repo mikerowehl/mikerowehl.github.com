@@ -1,0 +1,16 @@
+---
+comments: true
+date: 2004-06-15 22:41:54
+layout: post
+slug: beginners-mind-vs-godzilla
+title: Beginners Mind vs. Godzilla
+wordpress_id: 292
+categories:
+- General
+---
+
+[The Art of the Start](http://www.artofthestart.com/) was fantastic. I uploaded my raw notes, and I'll go through that stuff and clean them up a bit. There really was a ton of information presented in every session. For me, it was a great value. The audience seemed to be spread out all over the scale of experience. Some of them were engineers just starting to consider trying out one of their own ideas, others were MBAs looking for startup specific pointers, lawyers, and experienced entrepreneurs. Yet everyone I asked was happy about the information presented. Most were impressed by both the quality and quantity.
+
+I'm not going to try to summarize the whole thing, there was just too much information. Something I did note was the interplay of "passion" and cold hard business. Starting up a business requires an ability to "think outside the box", to try new and bold initiatives, and to be passionate about your idea even if no one believes in it. But it also requires a realistic analysis of the business model and a projection of where the company will go and how it can get there. How do you balance those objectives? How can you drive forward your idea with boundless energy while also running mental calculations of market size and forming a risk hedging strategy? Well, the message seems to  be that you can't. One person just can't do it all most of the time. The vision of the sole entrepreneur pulling a company all the way through from concept to billion dollar success just isn't very realistic. You need to find a team that you can gel around your idea, a group of people who align with your vision but bring some different perspectives to the table. That way the cheerleader and the financial analyst don't have to be the same person. Sounds like pretty good advice.
+
+How do you weigh the innovativeness against sound business practice? My solution to that issue is normally to hypothesize and check your results. Build a prototype and use that to find out if your assumptions are correct. So maybe that just means that I fall into the visionary camp, or cheerleader camp, or whatever you want to call the people who foster the passion for the idea. Maybe I'm just cracked. What one person calls "challenging assumptions" another might call "gross negligence". And figuring out if you're being inventive in challenging assumptions or just plain stupid is still something I don't see any way to determine unless you have the benefit of hindsight.

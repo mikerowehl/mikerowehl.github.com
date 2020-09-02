@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2005-04-26 15:33:47
+layout: post
+slug: mobile-identity
+title: Mobile Identity
+wordpress_id: 493
+categories:
+- Mobile Computing
+---
+
+The [info for the May Mobile Monday](http://www.mobilemonday.com/2005/04/may-2005-mobile-monday.html) is up on the blog.  The topic is going to be identity, which is one of those hot topics that no one outside of the field can easily define. Thanks to John Kern we have an [excellent set of resources to start out with](http://kerncomputing.blogspot.com/2005/04/discussing-digital-identity-at-mobile_26.html). For those with an audio bent, there's a [series of talks and interviews up on ITConversations as well](http://www.itconversations.com/series/digitalidentity.html). I harp on the whole "mobile services and internet services need to be able to interact seemlessly" issue quite a bit, and I think this is one area where it'll really stand out. For an increasing number of people out there, their mobile is their primary access device. Most services (in the US at least) are still stuck in the mode of the PC being the primary driver of the interface and the mobile being a tiny window into information configured elsewhere. We were able to look past a number of "inconveniences" when the interface was driven on a PC with a relatively high bandwidth user-to-device interface. Those same inconveniences are killers on handsets. Federated services on mobile devices are going to require something better than the current default if they're to expand to serve audiences outside of niche markets, and identity is one of the key enablers. And federated services are what we really need. I know _I_ don't want a [walled garden](http://www.thefeature.com/article?articleid=101009) on my handset. Vive la resistance!

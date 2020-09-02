@@ -1,0 +1,19 @@
+---
+comments: true
+date: 2004-08-07 12:20:41
+layout: post
+slug: bay-area-mobility-forum-first-meeting
+title: Bay Area Mobility Forum First Meeting
+wordpress_id: 325
+categories:
+- Silicon Valley
+---
+
+We've made the arrangements for [the first Bay Area Mobility Forum meeting](http://www.mobilityforum.org/2004/08/first-meeting-of-bamf.html). It's Saturday August 21st at 2:00pm at 150 Folsom Street in San Francisco. I would like to personally thank Michael O'Rourke at [Dimension 7 Studios](http://www.dimension7.com/) for helping out with a location to host the event.
+
+So what is the mobility forum? The group is still forming, so I can't give a definite answer there. I'll give my overview of what I would like to see done. We can start from [Russ's initial post](http://www.mobilityforum.org/2004/06/forum-focus.html) and work out from there. The confusion about the market is something that really hit home for me. I have been working for the past few years with [a company trying to deploy a rather advanced mobile application](http://www.mycasanetwork.com/). Confusion was the name of the game as far as that went. Service providers seemed to be bouncing around rather randomly trying to figure out how to monetize data networks that were already operating near full capacity and exhibiting maintenance problems. End users in general were unaware of the technology, and faced with a deluge of nearly incomprehensible and often contradictory information when they did attempt to get info about mobile data services. And then there were the developers staring out from the inside, wondering why so few people were adopting technology that was so obviously useful and publicly available.
+
+So why would I be involved in the Bay Area Mobility Forum if it seems like mobility is generally confusing and often frustrating? Especially given that I'm not nearly as heavily involved in it as I used to be? Because I think that mobile applications have a lot of potential. Not just getting corporate email while on the road or finding the nearest restaurant. I think that mobile technology has the potential to connect people in ways that weren't possible before, to people who weren't reachable before. It has the potential to make people feel safer, closer, and more involved in each other's lives. There is the potential to bring all the advantages of the Internet (currently mostly available only to people with computers, while sitting at those computers) to the rest of the world's population. But most importantly, I want new applications to use myself.
+
+In order for that to happen I think there need to be some major changes in the way that businesses view the mobile network. Although there have been some great advances in mobile technology over the last few years, deploying a new application is still a painful process. I personally believe this stems from the mobile data networks not being built on the same principles as the Internet overall. Something needs to be done to ease the cost of deploying an application so that experimentation and innovation in mobile services can proceed. That might be changes to the network itself, changes to policy, or just different methods of interacting with equipment vendors and service providers. My overall goal in helping out with the forum is determining what can be done to lower the bar for others looking to deploy new apps and services.
+

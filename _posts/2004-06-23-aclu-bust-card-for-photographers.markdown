@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-06-23 23:52:56
+layout: post
+slug: aclu-bust-card-for-photographers
+title: ACLU Bust Card for Photographers
+wordpress_id: 299
+categories:
+- Silicon Valley
+---
+
+Inforgargoyle has a post about an [ACLU Bust Card for Photographers](http://igargoyle.com/archives/000423.html). The compact sheet of info contains information about what your rights are when taking photos, and what your rights are and how to respond if someone confronts you about it. I think it's an excellent thing to have available, because I believe people's right are infringed upon too often here in the US as of late. On the other hand I would like to point out that sometimes the best way to deal with the situation is simply being considerate. I go to lots of events where people are either taking pictures for a group website or photoblogging for their own site, and normally they end up asking if I mind if they take my picture. Simple common courtesy. Of course there are times when the other party does't want you to take their picture, and asking them beforehand would ruin the benefit of the right to photograph has bestowed upon you. So, of course, if your mission is to make a statement about the ubiquity of surveillance and the non-uniform distribution of access to that ability, I won't argue with that. I'm very happy that people are out there paying attention to that issue and doing what they can to draw attention to it and help out. But if you're not in that extreme group, simply being polite is a great way to ensure that too much negative opinion isn't directed at the wrong targets.

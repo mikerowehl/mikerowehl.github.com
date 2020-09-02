@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2004-03-12 12:35:54
+layout: post
+slug: visual-timeline-and-lineage-of-computer-languages
+title: Visual Timeline (and lineage) of Computer Languages
+wordpress_id: 183
+categories:
+- Dweeb
+---
+
+Gadgetopia [posted](http://www.gadgetopia.com/2004/03/11/ComputerLanguagesHistory.html) about a [timeline of computer languges](http://www.levenez.com/lang/history.html). The chart is actually part of a [Computer Languages History page](http://www.levenez.com/lang/), which has links to all sorts of great info. Taking a look at the chart itself it seems like there isn't as much cross-pollination of languages as there used to be. I could be wrong, and I'm just overlooking some aspects of the chart. But it seems like many of the popular scripting languages (Perl, Ruby, Python) pulled from lots of original sources and have shot out up to the present, and there are others like C, OCAML, and Scheme that have just been around forever. Is this indicative of stagnation? Or has a nice natural organization been found, and the initial turbulent years where the aberration? The way it looks now, at the expense of overgeneralization, is that there are  amalgam languages that have pulled influence from many different sources in order to allow flexability, and there are some languages that stick to a single style. There are exceptions of course, independent languages which allow for programming in many different styles. But have we discovered all the basic programming paradigms (functionaly, imperative, message passing, etc.)? There is still a lot of progress that needs to be made in the software engineering field, we obviously aren't at the end of the process as a whole. But the progress can come either from lower level discoveries (such as a new basic paradigm for code organzation) or it can come from higher level software engineering practices (use case modeling, CASE, extreme programming, etc.). I'm not convinced that there aren't more fundamental changes coming down the line. If people were working on them, I would expect to see more languages instability. Maybe it's just lost in the noise now because there are so many languges out there, and either the next advance hasn't happened yet or it hasn't reached mainstream usage.

@@ -1,0 +1,30 @@
+---
+comments: true
+date: 2005-11-01 00:36:34
+layout: post
+slug: tagcamp
+title: Tagcamp
+wordpress_id: 590
+categories:
+- Silicon Valley
+---
+
+I went to [Tagcamp](http://www.tagcamp.org/) this past weekend, fantastic event. I met a ton of new people, which is always fun. A lot of great information and new projects. Although I missed her presentation, I found out about Rashmi's [cognitive analysis of tagging](http://www.rashmisinha.com/archives/05_09/tagging-cognitive.html) while I was there. I think the two images there explain why tagging is different than categorization better than anything else I've seen before. The session that [Marshall Kirkpatrick](http://marshallk.com/) was very lively. The conversation focused on making tagging more accessible to users. If tagging really is a different model for organizing information how can we provide that in a way that doesn't include a large cliff to adoption? Some of the folks proposed getting together sets of user stories as a start to finding the common bits and root drivers for successful adoption. Unfortunately I can't find where anyone has written down that tag, the notes from the session seem to have gotten rightly fucked. Anyone have another copy of the notes floating around on a hard drive?
+
+
+
+
+
+Mike Prince from [Mobido](http://www.mobido.com) spoke some about the tag system they have for creating group conversations, and at the end of his conversation we branched out some and spoke in general about tagging systems and mobility. I'm always interested in what I call "closing the feedback loop". Systems and techniques that make it possible to both publish and consume from a mobile device. Tagging systems, and the associated models that go along with them, seem like they would be well suited to supporting a fully mobile system. The demo from [PhotoRouter](http://www.photo-router.com/) later on in the day provided an example of one form that could take. Users sending photos can tag those images with whatever they want, no setting of categories in advance necessary. Receivers can opt into receiving photos with a given tag when they receive something they like. Now if they start sending photos to the group with a tag influenced by what they've gotten recently that's the kind of direct in-the-field interaction I think we're going to keep seeing more and more of.  There's a swarming kind of behavior that takes place with tagging, and being able to see other peoples tags as you tag yourself is a big part of that. I think it's the reason that tag/heat maps get so much attention, cause they provide the information about hotspots at a glance and help drive the convergence that turns tagging from noise into collaborative filtering.
+
+
+
+
+
+There was a bunch of interest in making tagging more generic. Tagging tends to be something that you do with the major content of a system. [del.icio.us](http://del.icio.us) lets you add tags to bookmarks, [Flickr](http://www.flickr.com) allows tags for photos. But should you be able to tag users? Tag collections? Tag any object? Tag other tags? General consensus seemed to be yes, you should be able to. [Toetag](http://toetag.sourceforge.net/) is a project setup to attempt to create a generic system for providing such a system as a standard component. There were some others working on somewhat similar systems, but I only caught the Toetag presentation unfortunately. We've had that conversation at Ning a few times, and it's one of the reasons that tags are a fundamental function of the system. I was happy to hear that we weren't off in the weeds conceptually, and that if anything we should be making that functionality more generic.
+
+
+
+
+
+Thanks to everyone involved in getting Tagcamp together! It was a great event, and I think most people got a lot of great information out of it.

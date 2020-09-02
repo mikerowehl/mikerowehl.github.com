@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2004-04-12 09:51:33
+layout: post
+slug: pilot-db-download-plugin
+title: Pilot-DB Download Plugin
+wordpress_id: 237
+categories:
+- Open Source
+---
+
+I've started a new app as part of [Open Palm Environment](http://openpalmenv.sf.net). This time it's a [plugin for pilot-db](http://cvs.sourceforge.net/viewcvs.py/openpalmenv/db-download/). [Pilot-DB](http://pilot-db.sourceforge.net/) is a very popular open source database program for Palm handhelds. It allows the user to create their own databases and fill in the records on their PDA. There are existing databases for all types of information, like yearly wine reviews, state capitals, Internet RFCs, bus schedules, etc. I'm hoping that if we make it easy for people to create databases with active links, we'll end up with databases of [Project Gutenberg](http://promo.net/pg/) content with links to download the full text, or large databases with open source titles that can be downloaded on demand.
+
+Currently the plugin is just an example that downloads a hardcoded URL and installs whatever it finds there as if it were an app/database. With just a bit of tweaking it'll look for a field named "URL" in the current record, and use that as the source. I think that providing a plugin for an existing DB product might work out better than the standalone app (palm-torrent) which would also require some proprietary database format of its own. Only time will tell. Something I need to figure out still is how to give good feedback to the user. Most of the Win* functions that palm-torrent uses to draw information about the protocol progress and give installation feedback were causing errors when I used them within the plugin. So if anyone out there has mucked with plugins on the Palm before, in particular pilot-db plugins, please take a look at that and give some info about how to provide a user with progress info.
