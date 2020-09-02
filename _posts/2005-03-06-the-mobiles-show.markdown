@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-06 10:08:21
 layout: post
-slug: the-mobiles-show
 title: The Mobiles Show
-wordpress_id: 439
-categories:
-- Mobile Computing
 ---
 
 [Ewan Spence](http://www.symbiandiaries.com/ewan/) (who I know from #mobitopia on irc.freenode.net) has started a new podcast called [The Mobiles Show](http://www.thepodcastnetwork.com/mobiles/). The interviews are great, the information is timely and well delivered, I've definitely  found a new show to add to my subscriptions! Thanks for the excellent info Ewan, I'm looking forward to more of it. There are two episodes up right now, and the first was recorded completely on a mobile device. Definitely interesting. Given all the discussion that was going on a while ago about mobile recording kit I think there would be a lot of interest in a system that allowed people to record simple bits and pieces and upload them right away. Think about the soundseeing tours that Adam Curry did, around that time there was a lot of discussion about how to create podcasts while walking around or commuting or otherwise engaged in some other activity. A simple audio production tool for a handset (and this could be as simple as a start/stop recorder with the ability to clip out bits of audio) together with services like [Audioblog](http://www.audioblog.com/) could be pretty compelling for that group of users. Personally, I've been thinking a lot about [video](http://www.videoblogging.info/) in addition to that audio, and how to get handsets doing that bit well.

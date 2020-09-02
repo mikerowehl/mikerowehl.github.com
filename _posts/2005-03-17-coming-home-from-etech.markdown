@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-17 00:14:37
 layout: post
-slug: coming-home-from-etech
 title: Coming Home from ETech
-wordpress_id: 465
-categories:
-- General
 ---
 
 This is my post from the plane on the way home from ETech.  It was just a day trip, so we're headed back to Menlo Park already.  It would have been great to hang out for longer, but there's feeds to get indexed and tools to get written. I wanted to get my overall impressions down. Something that Niall said at one point is that he likes to try to put stuff online that really gives people a feel for what living in Silicon Valley is like. I think that's a great goal to have at times, sharing the experience. So here's my post trying to sum up what it's like to go to ETech. Understanding of course that my take on the whole thing might be biased because I'm working with a relatively well known company right now, and I went with Russ, who's apparently a rock star these days (thanks for introducing me to everyone Russ!).

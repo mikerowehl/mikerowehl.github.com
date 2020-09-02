@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-18 07:50:02
 layout: post
-slug: cherry-blossom-festival-and-bluebottle-coffee
 title: Cherry Blossom Festival and Bluebottle Coffee
-wordpress_id: 490
-categories:
-- Silicon Valley
 ---
 
 [Niall](http://www.niallkennedy.com/blog/), [Elle](http://www.ellementk.com), and I went to the [Cherry Blossom Festival](http://www.nccbf.org) in Japantown in San Francisco yesterday. I have some images to upload, but I'll have to do it later. We made it there in time to catch the Taiko drummers, and they were letting people up on stage to try out the drums. They had a few displays with info set out, but the only one we really spent time at was the display of weapons. I don't have any pictures of that, there were signs all over saying not to take pictures. Of course, this being a public street I don't think there's anything they could have done. But I didn't want the pictures enough to be willing to piss off the guy with swords. The food was good too, although I suspect the fact that the firemens "blazing hot" ribs not actually being spicy at all caused a bit of disappointment. They were good, just not spicy. And I don't mean that in the sense of "I'm a manly man! I can feel my tongue! These are NOT spicy!" I'm a wuss, I can't deal with spicy food. The ribs just were not imbued with spice in the least. Perhaps some communications misfire.

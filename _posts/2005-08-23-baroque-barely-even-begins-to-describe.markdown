@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-23 00:58:07
 layout: post
-slug: baroque-barely-even-begins-to-describe
 title: Baroque Barely Even Begins to Describe
-wordpress_id: 545
-categories:
-- Dweeb
 ---
 
 There are two great posts over at [Linux, Unit, /etc/](http://lue.dyn.dhs.org/index.html):

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-09-06 18:03:22
 layout: post
-slug: solosub
 title: SoloSub
-wordpress_id: 567
-categories:
-- General
 ---
 
 I just saw a [post over at Techcrunch](http://www.techcrunch.com/?p=207) about [SoloSub](http://solosub.com/), a service to allow subscription via multiple mechanisms but using a single button and link. I [posted an example](http://www.bitsplitter.net/blog/?p=388) of something that was much the same at the beginning of the year.  Feedback was a pretty mixed bag, with people giving all sorts of reasons for and against it. The main takeaway though is that I should have just put the thing up and gotten it ready. Cause despite all the reasons against doing it, feed subscription still sucks. Some people just like to talk and talk and talk and tell you why it's a bad idea to do whatever it is that you're about to do. Screw that. I say good luck SoloSub, making RSS subing easier is a great goal and I hope you can make it happen. I've added a button here (down at the bottom, but it's down there :-)

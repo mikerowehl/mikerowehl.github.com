@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-30 13:17:18
 layout: post
-slug: selling-mobile-data-devices
 title: Selling Mobile Data Devices
-wordpress_id: 277
-categories:
-- Mobile Computing
 ---
 
 I agree with the [response that Russell Beattie](http://www.russellbeattie.com/notebook/1007851.html) has to a [recent article in Newsweek](http://www.msnbc.msn.com/id/5092826/site/newsweek/). Although there are some points that I disagree about. I do agree that asking Palm about the future of mobile devices is awfully one sided. Although from what I've read, Jeff Hawkins is a stunningly smart guy with a great grip on technology, I do think the wireless mobile vision of PalmOne is seriously suspect. Jeff might be able to help out there, but their track record is far from stunning when it comes to network devices. I do agree with Russ that Nokia, Samsung, Motorola, etc. are probably better places to look. However, I think this is one of those often sprung technologist pitfalls. Having the better technology, and being of more use to the user, isn't a sure recipe for success. Yes, Palm does have a proprietary operating system, and just about any platform technology besides PalmOS looks like a good alternative to the developer. However, what does the standard user see? I'm not sure that the better technology of Motorola and Nokia within the mobile space is going to be enough to overcome the brand recognition and existing sales channels that Palm has. I would LIKE it to, I'm just not sure it's going to happen. When it comes to the average user, they need to be sold on the package as it exists when it comes to them. They don't and probably never will care about the platform. Even though the choice will seriously impact them somewhere down the line.

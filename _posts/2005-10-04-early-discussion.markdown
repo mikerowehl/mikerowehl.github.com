@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-10-04 09:14:19
 layout: post
-slug: early-discussion
 title: Early Discussion
-wordpress_id: 582
-categories:
-- General
 ---
 
 The early conversation around the Ning launch has been great. Checking out the [ning tag at del.icio.us](http://del.icio.us/tag/ning?setcount=100) (429 people bookmarked the site as of this writing) or [Technorati search for ning](http://www.technorati.com/search/ning) or [Feedster search for ning](http://www.feedster.com/search.php?hl=en&ie=UTF-8&q=ning&sort=date) turns up a whole bunch of posts. Here are some of the ones that call out the peices that I'm really jazzed about:

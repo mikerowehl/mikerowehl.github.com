@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 09:59:56
 layout: post
-slug: jimmy-wales-from-wikipedia
 title: Jimmy Wales from Wikipedia
-wordpress_id: 454
-categories:
-- General
 ---
 
 [ETech talk from the founder of Wikipedia](http://conferences.oreillynet.com/cs/et2005/view/e_sess/5907).

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-25 01:48:23
 layout: post
-slug: linux-wpa
 title: Linux WPA
-wordpress_id: 550
-categories:
-- Open Source
 ---
 
 I've had a background task running that steals a few cycles whenever I should be sleeping and checks out what it would get to make the laptop I have from work do WPA. I have a Thinkpad R51 I inherited, and while I wait for my laptop to come in I've been playing around with it to see what I could get working. The work wireless network uses WPA-PSK, and that's something that's always been a pain for Linux. So here's my quick description of getting the Thinkpad R51 (using the [Intel ipw2200](http://ipw2200.sourceforge.net/) driver) working with WPA. I'm using [Ubuntu](http://www.ubuntulinux.org/) as the distro by the way, 5.04 in particular. So maybe these instructions will actually be relevant to someone!

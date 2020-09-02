@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 16:23:29
 layout: post
-slug: art-of-the-start-10
 title: Art of the Start 10
-wordpress_id: 290
-categories:
-- Silicon Valley
 ---
 
 Been There, Done That

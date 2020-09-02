@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-12 09:14:02
 layout: post
-slug: ishouldnt-even-bother
 title: iShouldn't Even Bother
-wordpress_id: 391
-categories:
-- Open Source
 ---
 
 As [Elle has already mentioned](http://ellementk.com/archives/2005/01/12/271), we were less than impressed with the ease of use and fluid experience that is the crippled MP3 player called the [iPod Shuffle](http://www.apple.com/ipodshuffle/). Everything about this device seems to scream out "access denied". They should have a little loop of Job trying to escape the simulation at the end of [Lawnmower Man](http://filebox.vt.edu/users/jirwin/reviews/lawnmowerman.html) preloaded, so that at least you'll have SOME audio content to accompany the blinking lights. Cause Apple doesn't really seem to be interested in letting you put your own on there.

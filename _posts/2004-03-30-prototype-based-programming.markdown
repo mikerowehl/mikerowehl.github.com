@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-30 10:17:19
 layout: post
-slug: prototype-based-programming
 title: Prototype Based Programming
-wordpress_id: 220
-categories:
-- Open Source
 ---
 
 There's been a decent amount of discussion about prototype based programming lately, with two new projects called [Prothon](http://www.prothon.org/) and [Slate](http://slate.tunes.org/) getting most of the press. So all of this gets the question, what the hell is a prototype based programming language? There's a [definition in the Wikipedia](http://en.wikipedia.org/wiki/Prototype_based) which can shed a bit of light on it. The [description of Self](http://research.sun.com/self/papers/self-power.html) from the Self site gets a bit heady, but their explanation of the fundamental nature of message passing and the benefits provided in terms of maintenance are worth the time. If you're looking for a really quick description check out the [Prothon description](http://www.prothon.org/description.htm). Or go searching through the resources for any of the [other prototype based languages](http://www.dekorte.com/Proto/Chart.html).. there seem to be quite a few. Most of them I've never even heard of.

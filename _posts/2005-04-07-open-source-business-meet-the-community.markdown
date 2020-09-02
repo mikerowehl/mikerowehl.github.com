@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-07 13:09:30
 layout: post
-slug: open-source-business-meet-the-community
 title: Open Source Business - Meet the Community
-wordpress_id: 483
-categories:
-- Open Source
 ---
 
 Yesterday there was a [session during the Open Source Business Conference titled Meet the Community](http://www.osbc2004.com/live/13/events/13SFO05A/conference/tracksessions/Enterprise+Strategy/QMONYA04N6ZW). The lineup of speakers was stellar. Ross Mayfield [posted a transcript](http://ross.typepad.com/blog/2005/04/meet_the_commun.html) and Niall Kennedy [posted some commentary](http://www.niallkennedy.com/blog/archives/2005/04/open_source_com.html). I think my favorite comment was from Brian Behlendorf, who said that he never really considered companies special entities in the context of the projects he works on. That's really a great comment, as long as you remember to say it without a derisive sneer. As a company interfacing with an open source project you probably don't get much special consideration from the developers already working on the project unless your goals line up with their own. However, you do have a couple of options available that don't always exist for individuals. Here's a basic rundown of the options you have as a company looking to use an open source project but needing features.

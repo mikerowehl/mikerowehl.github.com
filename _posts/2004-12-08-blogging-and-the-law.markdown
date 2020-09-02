@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-12-08 21:41:39
 layout: post
-slug: blogging-and-the-law
 title: Blogging and the Law
-wordpress_id: 369
-categories:
-- General
 ---
 
 I went to the [presentation on Blogging and the Law](http://ebig.org/sig/sig_speakers.aspx?SIGid=36&old=y&EventID=502) that Charles Smith from [Pheedo](http://www.pheedo.com) gave last night. Let me get some of the linking and background info out of the way up front:

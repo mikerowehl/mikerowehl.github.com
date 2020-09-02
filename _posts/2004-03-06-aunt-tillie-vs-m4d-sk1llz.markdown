@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-06 14:18:10
 layout: post
-slug: aunt-tillie-vs-m4d-sk1llz
 title: Aunt Tillie vs M4d Sk1llz
-wordpress_id: 176
-categories:
-- Open Source
 ---
 
 This is some commentary by me about two articles that Eric Raymond wrote recently. Both focus on difficulty in setting up a printing package under Linux. [Part one](http://www.catb.org/~esr/writings/cups-horror.html) lays out the general problem, and [part two](http://www.catb.org/~esr/writings/luxury-part-deux.html) goes into some detail about how to solve some of the issues. I agree with many of the points brought up in those articles, but not the prescription given for finding a better situation. Computer systems can become orders of magnitude more usable if effort is put into improving the configuration and setup systems, but I think it will take some effort separating the technical guts from the setup phase before we see this on a large scale.

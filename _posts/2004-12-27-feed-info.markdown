@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-12-27 22:41:55
 layout: post
-slug: feed-info
 title: Feed Info
-wordpress_id: 377
-categories:
-- Feedster
 ---
 
 I've been reading over a few REST themed articles:

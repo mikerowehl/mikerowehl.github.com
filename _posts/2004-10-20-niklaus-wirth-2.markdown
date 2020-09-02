@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-20 20:18:29
 layout: post
-slug: niklaus-wirth-2
 title: Niklaus Wirth 2
-wordpress_id: 347
-categories:
-- Dweeb
 ---
 
 The success of Pascal came many years after it was done, due to the availability of microcomputers. Now there were lots of people available to program who didn't have to unlearn Fortran. It was driven forward by Borland making the compiler available for only 50 dollars, when other compilers cost thousands. This made a mass market for Pascal.

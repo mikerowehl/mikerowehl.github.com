@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-20 10:27:58
 layout: post
-slug: coffeehouses-and-the-internet-compared
 title: Coffeehouses and the Internet Compared
-wordpress_id: 50
-categories:
-- General
 ---
 
 There was a link to [this article](http://www.economist.com/World/europe/displayStory.cfm?story_id=2281736) in [Evan Williams blog](http://evhead.com/). It takes a look at the social, political, and scientific networking which was commonly done in coffeehouses, and compares that interaction with what currently happens through the Internet. I had heard plenty about the use of coffeehouses as seats of political revolution, but I hadn't heard of their use in scientific circles till I read this. There is a lot of parallelism between the role that coffeehouses provided and the role that weblogs and websites serve today, but I think that online interaction serves a role much less important than it could. If we take a look at the strong communities that did grow around coffeehouses, and around some strong scientific networking figures like [Paul Erdos](http://www.paulerdos.com/), the effects of the Internet seem much more subdued. The Internet has done great in terms of facilitating exchange of information, and it certainly has allowed for the formation of community where there wasn't the critical mass before. It has allowed for great advances, I just think it should be going further.

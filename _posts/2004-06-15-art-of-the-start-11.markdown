@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 19:56:42
 layout: post
-slug: art-of-the-start-11
 title: Art of the Start 11
-wordpress_id: 291
-categories:
-- Silicon Valley
 ---
 
 Guy made a funny comment between sessions. Guys law: to calculate valuation of a prefunding company, for each full time engineer add one million, for each MBA you subtract 250 thousand. :-)

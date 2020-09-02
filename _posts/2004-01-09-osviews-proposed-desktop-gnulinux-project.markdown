@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-09 12:48:30
 layout: post
-slug: osviews-proposed-desktop-gnulinux-project
 title: osViews Proposed Desktop GNU/Linux Project
-wordpress_id: 94
-categories:
-- Open Source
 ---
 
 There's [an article at osViews](http://www.osviews.com/print.php?sid=684) about trying to get together a project to develop a full fledged user desktop package. By this they mean everything that a local computer retailer would need in order to sell full fledged Linux based systems, including artwork and sales and marketing materials. I think this is a great idea. Both in terms of getting together a standard system for use by mere mortals wanting to use Linux, and in pooling together resources by many individual retailers in order to get the project completed.

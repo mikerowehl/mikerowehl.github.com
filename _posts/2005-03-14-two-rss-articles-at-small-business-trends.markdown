@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-14 16:44:33
 layout: post
-slug: two-rss-articles-at-small-business-trends
 title: Two RSS Articles at Small Business Trends
-wordpress_id: 451
-categories:
-- Feedster
 ---
 
 Two great bits of info about RSS over at Small Bussiness Trends: [RSS and Marketing](http://www.smallbusinesses.blogspot.com/2005/03/rss-and-marketing.html) and [Is 2005 the Year of RSS?](http://www.smallbusinesses.blogspot.com/2005/03/is-2005-year-of-rss.html) I'm a big aggregator fan. Without my feedreader I would have a much harder time pulling together and sorting through the information I want. But I'm a geek, and I know there are tons of great reasons to be producing content as RSS that have nothing to do with information overload and trying to follow a fast moving industry. Here's what was probably my favorite bit in there:

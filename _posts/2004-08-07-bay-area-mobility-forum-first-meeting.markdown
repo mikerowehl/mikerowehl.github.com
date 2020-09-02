@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-08-07 12:20:41
 layout: post
-slug: bay-area-mobility-forum-first-meeting
 title: Bay Area Mobility Forum First Meeting
-wordpress_id: 325
-categories:
-- Silicon Valley
 ---
 
 We've made the arrangements for [the first Bay Area Mobility Forum meeting](http://www.mobilityforum.org/2004/08/first-meeting-of-bamf.html). It's Saturday August 21st at 2:00pm at 150 Folsom Street in San Francisco. I would like to personally thank Michael O'Rourke at [Dimension 7 Studios](http://www.dimension7.com/) for helping out with a location to host the event.

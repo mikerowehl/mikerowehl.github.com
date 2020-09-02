@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-26 19:47:50
 layout: post
-slug: communitywiki
 title: CommunityWiki
-wordpress_id: 274
-categories:
-- Dweeb
 ---
 
 After reading about [communities tied to one technology](http://www.corante.com/many/archives/2004/05/26/communities_tied_to_one_technology.php) in Many2Many I spent a bit of time wandering around in the [CommunityWiki](http://www.communitywiki.org/) in general. I [ran across some stuff by Lion Kimbro a little while ago](http://www.bitsplitter.net/blog/index.php?p=250), and I see his name and what seems to be the mark of his ideas throughout the wiki. That's a good thing, I liked what I had read. And the community wiki seems to be very enlightening. I would like to make a few comments about wikis in general before I get back to reading through that stuff. There's been a lot of interest in wikis lately, and I'm not sure how much information there has been that simply lays down why wikis have been garnering attention. If you're a wiki guru, I know you could probably take issue with some of the definitions I end up giving here. I want to lay down in broad strokes what this wiki thing is all about however.

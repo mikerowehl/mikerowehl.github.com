@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-27 01:19:24
 layout: post
-slug: steve-gillmor-on-attentionxml
 title: Steve Gillmor on AttentionXML
-wordpress_id: 400
-categories:
-- Silicon Valley
 ---
 
 Steve Gillmor is going to be [speaking at the next eBig Blogging and RSS SIG meeting](http://www.ebig.org/sig/sig.aspx?SIGid=36). The topic is AttentionXML:

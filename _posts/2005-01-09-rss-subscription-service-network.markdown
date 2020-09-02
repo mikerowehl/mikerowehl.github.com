@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-09 03:46:41
 layout: post
-slug: rss-subscription-service-network
 title: RSS Subscription Service Network
-wordpress_id: 388
-categories:
-- Open Source
 ---
 
 It seems like one of the major complaints that I hear most often about RSS is that it's hard to use. Finding the XML link if there is one, choosing from multiple if there are different options, cutting and pasting the link, knowing where to put it, and dealing with any potential problems. It's just too complex for most people to care about. So publishers attempt to make it easier to subscribe by putting badges on their pages. You know, those little buttons that say "Add to Bloglines" or "Subscribe with NetNewsWire". Unfortunately that puts the burden on the publisher to know all the different services that a user may want to subscribe with, and clutters up the interface with dozens of buttons. A solution like that also increases the barrier to a new aggregator entering into general usage. Publishers won't want to update their site for an aggregator that's only used by a few people, and users won't use an aggregator that doesn't provide them with an easy subscription feature. The interface could be modified a bit, to something like [QuickSub](http://www.methodize.org/quicksub/), to help with the clutter caused by all the extra buttons. But the user still has a boatload of options there, and again creates some friction with respect to adding a new aggregator service. The aggregator provider could do something like create a bookmarklet for easy subscription, but this also has some disadvantages. Such as not normally playing very nicely with [pages that contain more than one feed](http://www.feedster.com/search.php?q=miker+rocks&hl=en&ie=UTF-8&sort=date) and not being available when the browser has restricted functionality (such as on mobile devices). The ideal I think is a service that:

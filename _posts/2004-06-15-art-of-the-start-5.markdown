@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 11:11:59
 layout: post
-slug: art-of-the-start-5
 title: Art of the Start 5
-wordpress_id: 285
-categories:
-- Silicon Valley
 ---
 
 Positioning and Presenting

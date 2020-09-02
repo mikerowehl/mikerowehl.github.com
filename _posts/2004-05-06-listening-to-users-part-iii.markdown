@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-06 10:16:05
 layout: post
-slug: listening-to-users-part-iii
 title: Listening to Users Part III
-wordpress_id: 264
-categories:
-- Mobile Computing
 ---
 
 TheFeature has [Listening to Users, Part III](http://www.thefeature.com/article?articleid=100591) posted. I really like this series of articles. My personal favorite quote from this one:

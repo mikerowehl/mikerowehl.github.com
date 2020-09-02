@@ -2,12 +2,6 @@
 layout: post
 title: "knife-block for Chef Testing"
 date: 2013-09-19 12:17
-comments: true
-categories: 
-- Engineering
-- Infrastructure Automation
-- Continuous Delivery
-- Operations
 ---
 A few weeks ago [Nathen Harvey](https://github.com/nathenharvey) was kind
 enough to stop by and give us a critique of how we do Chef automated testing

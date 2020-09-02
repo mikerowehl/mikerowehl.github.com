@@ -2,11 +2,6 @@
 layout: post
 title: "Consistent Test Methodology for Inconsistent Projects"
 date: 2013-05-28 23:43
-comments: true
-categories: 
-- Engineering
-- Millennial Media
-- Continuous Delivery
 ---
 How do you start introducing some testing if you have a huge group of existing
 projects, for the most part all implemented using different languages and

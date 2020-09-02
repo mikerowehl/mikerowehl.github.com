@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-13 20:24:38
 layout: post
-slug: busy-busy-busy
 title: Busy Busy Busy
-wordpress_id: 99
-categories:
-- Open Source
 ---
 
 I've been quite busy lately, with things that unfortunately have me running around out in The Big Room rather than working in front of my computer. My hope is that this part of the work will only last until next week some time. And there's a specific event in there which should keep things from bogging down. Fortunately I have my trusty PDA and a copy of [Vagablog](http://www.bitsplitter.net/vagablog/), so I can at least provide some updates.

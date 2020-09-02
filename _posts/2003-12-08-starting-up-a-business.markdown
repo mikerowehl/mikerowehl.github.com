@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-08 21:01:00
 layout: post
-slug: starting-up-a-business
 title: Starting up a Business
-wordpress_id: 27
-categories:
-- General
 ---
 
 I ran across [this article at seattlepi.com](http://seattlepi.nwsource.com/venture/151145_vc05.html?source=rss), and I was kind of surprized by the tone.  Take this quote for example:

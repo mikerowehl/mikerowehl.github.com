@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-31 23:44:26
 layout: post
-slug: drama-queen
 title: Drama Queen
-wordpress_id: 143
-categories:
-- Open Source
 ---
 
 Check out [this gem of an interview with Darl McBride](http://www.cnn.com/TRANSCRIPTS/0401/30/lol.01.html). Talking about the quarter of a million dollar reward that he has put up for the capture of the MyDoom virus writer:

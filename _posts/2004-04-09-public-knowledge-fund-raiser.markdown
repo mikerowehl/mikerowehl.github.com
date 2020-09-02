@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-09 08:44:19
 layout: post
-slug: public-knowledge-fund-raiser
 title: Public Knowledge Fund Raiser
-wordpress_id: 233
-categories:
-- Silicon Valley
 ---
 
 [According to SmartMobs](http://www.smartmobs.com/archives/002983.html) there's a fundraiser in San Francisco for a new organization called [Public Knowledge](http://www.publicknowledge.org/). They seem to be into some interesting stuff. This is from their about page on their website:

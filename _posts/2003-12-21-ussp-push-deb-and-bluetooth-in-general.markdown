@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-21 17:00:20
 layout: post
-slug: ussp-push-deb-and-bluetooth-in-general
 title: ussp-push .deb and Bluetooth in General
-wordpress_id: 53
-categories:
-- Mobile Computing
 ---
 
 Jim Bray [hacked up the ussp-push tool](http://as220.org/jb/weblog/Cellphone/index.html#Ussp-push) I have up on [unrooted.net](http://www.unrooted.net/hacking/bluez-rfcomm-obex.html) and made a .deb out of it, should be a nice easy install path now. I made that available a long time ago, and apparently it's still what people pick up pretty frequently. 

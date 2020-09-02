@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-11-06 08:54:45
 layout: post
-slug: bloggercon-startup
 title: BloggerCon Startup
-wordpress_id: 353
-categories:
-- General
 ---
 
 [BloggerCon](http://www.bloggercon.org/) is under way this morning. I'm over at my apartment listening to the [ITConversations](http://www.itconversations.com/) cast instead of heading over to Stanford. I might wander over at some point, but this morning started with a mad dash to peice back together [Elle's blog](http://www.proteanstrategy.com/wordpress/) from SQL dumps. Never fun. So I think I'm just going to sit here and drink coffee and watch what goes through in IRC for a while (#bloggercon on freenode.net).

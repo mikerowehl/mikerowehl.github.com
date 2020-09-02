@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-04 17:45:37
 layout: post
-slug: balancing-work-and-research
 title: Balancing Work and Research
-wordpress_id: 84
-categories:
-- General
 ---
 
 Today most of my time was taken up fooling around with getting the XMLRPC library for the [Open Palm Environment](http://openpalmenv.sourceforge.net/) at least chugging along. It's shaping up pretty quick, but I know it will be at least a couple of days worth of work before I have it parsing actual XMLRPC requests. Parts of this are due to my still being pretty recently returned to Palm programming. The work I've done on [Vagablog](http://www.bitsplitter.net/vagablog/) is just about the only serious Palm work I've done in the last 3 years or so. So I'm still getting back into it. And this is also the first time in a while that I'm starting a low level XML parser from scratch. Normally, when working on desktop systems, writing on top of the expat style stream parser interface isn't done any more. You use a DOM based interface, or grab one of a number of existing projects and massage it into a new form.

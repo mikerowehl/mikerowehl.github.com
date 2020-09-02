@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-10 04:46:38
 layout: post
-slug: oren-michels-joins-feedster-ill-be-hacking-again-hopefully
 title: Oren Michels Joins Feedster - I'll Be Hacking Again Hopefully
-wordpress_id: 442
-categories:
-- Feedster
 ---
 
 We now have Oren Michels in the trenches with us at Feedster!! I'm really excited about it cause hopefully it means I'll have more time to get down and dirty in the code. I'll be working on some of the projects that we didn't have enough hacker-hours available for before (which is really what I'm best at anyway) as well as continuing to service the external relationships I'm already engaged in. Oren has joined as the Vice President of Engineering, so he'll be taking over the higher level stuff.  Stuff that I simply didn't have the skills to do, and that those who did didn't have the time to do. Oren has been around the block a few times, and I'm sure that working for him will be as educational as it will be rewarding. Welcome aboard Oren!

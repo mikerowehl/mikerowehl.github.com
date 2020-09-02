@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-10-22 11:05:18
 layout: post
-slug: videocast
 title: Videocasts on TV
-wordpress_id: 587
-categories:
-- General
 ---
 
 What [Russ says](http://www.russellbeattie.com/notebook/1008660.html) is definitely true, taking a videocast and putting it up on The Big Screen in the living room is certainly much different than watching it on your desktop or on a device. I knew that though, and I've been a pretty big video fan for a long time. So I just want to give a hat tip to the folks who I've been watching who made it obvious that peer produced video content was going to make a huge difference:

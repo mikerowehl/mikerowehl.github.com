@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 14:12:04
 layout: post
-slug: art-of-the-start-8
 title: Art of the Start 8
-wordpress_id: 288
-categories:
-- Silicon Valley
 ---
 
 Funding Your Dream

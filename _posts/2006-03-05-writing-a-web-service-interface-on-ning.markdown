@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-03-05 21:59:28
 layout: post
-slug: writing-a-web-service-interface-on-ning
 title: Writing a Web Service Interface on Ning
-wordpress_id: 627
-categories:
-- General
 ---
 
 Like I was babbling about yesterday, I've been [thinking about different ways of hooking up mobile applications and web applications and trying to bridge the gap](http://www.thisismobility.com/blog/?p=107). One area that gets a lot of leverage relatively quickly is implementing de-facto standard web service interfaces that the mobile applications can hook up to. There are both desktop and mobile applications that interact with the [Blogger API](http://www.blogger.com/developers/api/1_docs/), [Flickr Services](http://www.flickr.com/services/api/), the [Atom Publishing Protocol](http://www.ietf.org/html.charters/atompub-charter.html), etc.

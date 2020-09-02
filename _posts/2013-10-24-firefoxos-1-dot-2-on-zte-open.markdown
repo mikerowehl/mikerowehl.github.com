@@ -2,11 +2,6 @@
 layout: post
 title: "FirefoxOS 1.2 on ZTE Open"
 date: 2013-10-24 18:06
-comments: true
-categories: 
-- Mobile
-- Engineering
-- Open Source
 ---
 I picked up a [ZTE Open](http://www.engadget.com/2013/10/03/zte-open-review/)
 Firefox OS device a little while ago. Given that

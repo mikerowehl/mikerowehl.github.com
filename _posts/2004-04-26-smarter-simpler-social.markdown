@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-26 16:34:35
 layout: post
-slug: smarter-simpler-social
 title: Smarter, Simpler Social
-wordpress_id: 256
-categories:
-- General
 ---
 
 I already posted this in the [linkblog](http://www.bitsplitter.net/linkblog/), but I think it deserves another posting. The [Smarter, Simpler Social](http://www.headshift.com/moments/archive/sss2.html) essay is outstanding. Not only does it do a great job of laying down and explaining concepts, connecting them together, and giving literally dozens of pointers to other great reading - there's also great original editorial commentary in there. Take this quote for example:

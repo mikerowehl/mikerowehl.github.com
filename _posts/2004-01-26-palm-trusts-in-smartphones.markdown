@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-26 08:46:19
 layout: post
-slug: palm-trusts-in-smartphones
 title: Palm Trusts in Smartphones
-wordpress_id: 131
-categories:
-- Mobile Computing
 ---
 
 There's an [article at TheFeature](http://www.thefeature.com/article?articleid=100338) about PalmOne deciding that smartphones are going to be way bigger than PDAs in the future. It says that PalmOne is going to be shifting attention away from PDAs cause they see sales being relatively flat in that area. I can certainly agree there, it does seem like smartphones are getting snapped up pretty quick. But I also have heard quite a lot about cellular data networks really being in a lot of financial trouble. To give a concrete example, [Paul Saffo mentioned that people within the 3G and 4G industries were really nervous](http://www.bitsplitter.net/blog/index.php?p=105). The numbers indicate that those technologies are trending towards failure. I would question if the smartphones being used are really an indicator of convergence. Are people getting smartphones so that they can work over the cellular network? Or are people getting smartphones so that they have PDA functions and still only have to carry one device? I hope that people use the data functions, I would like to see the cellular networks succeed and grow. Maybe people are using the data functions in smartphones, but smartphone adoption isn't enough to affect the  figures for cellular data significantly. My unfounded feeling is that setting up the data services you want is still too difficult and restrictive for the normal user. There are services that cellular providers can setup to make this a bit easier for users, but these tend to be too restrictive for early adopters. The only applications that have really been addressed on cellular networks are sending pictures and images, and even these are done mostly with the network as both originator and recipient. There is a whole different level of applications capability, network capability, and support which is needed to make richer applications available. This does not yet exist.

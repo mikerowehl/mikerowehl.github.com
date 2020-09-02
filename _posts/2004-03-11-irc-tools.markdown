@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-11 10:24:05
 layout: post
-slug: irc-tools
 title: IRC Tools
-wordpress_id: 180
-categories:
-- Dweeb
 ---
 
 I've been wandering around through various IRC channels on [freenode.net](http://www.freenode.net), and while idling in the #scheme channel I saw a message from the lisppaste bot. I had never seen it before, but it's a bot that allows for pasting content to a permenant location and sending a notification to the channel the paste is for. Given the way the bot is setup, it looks like the usage pattern is something like this:

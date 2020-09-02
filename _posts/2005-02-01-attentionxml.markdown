@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-01 19:55:22
 layout: post
-slug: attentionxml
 title: AttentionXML
-wordpress_id: 411
-categories:
-- Feedster
 ---
 
 Steve Gillmor was over at the EBig RSS and Blogging SIG, talking about attention.xml. The format was pretty free form, very participatory. He was pulling people out of the audience and asking them questions. The audio should be up on ITConversations. Here are some notes.

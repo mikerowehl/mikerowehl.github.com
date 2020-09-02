@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-28 03:13:33
 layout: post
-slug: the-horror-the-horror
 title: The Horror! The Horror!
-wordpress_id: 517
-categories:
-- Mobile Computing
 ---
 
 I went over to [Palm DevCon](http://www.palmsource.com/events/devcon2005/) this past week, and I won the Treo 650 they raffled off!  Lucky me, I didn't have to buy one. Unlucky me, now I don't have any excuses for not updating my palm software. I didn't even turn it on till this evening, things being busy as they are. I threw my TMobile SIM into the phone and stuff "just worked", which was pretty cool. Normally voice will just work, but you'll have to setup other options to get data services working. I pulled up the web browser and pulled up my blog though, and it worked as it was. Nice. And then the full realization that I had an unlocked quadband GSM version sunk in. See, normally Treos come in a [crippled version reflecting the suckitude that is the greed of the american cellular service provider](http://www.engadget.com/entry/1234000983029058/). Most versions can't be used as a Bluetooth modem with a PC. The one I have does have a dialup networking option! W00t w00t!

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-14 01:30:28
 layout: post
-slug: tonethis
 title: ToneThis
-wordpress_id: 101
-categories:
-- Mobile Computing
 ---
 
 I'm not much into the ringtone market at all, but I got an email from TJ at [ToneThis](http://tonethis.com) talking about the way that they're approaching setting up a mobile service. The way ToneThis works a user can encode music from the MP3 library on their home PC and turn it into a ringtone. I know it doesn't sound like a big deal, but that's because it's really the way that the system should work. What should be surprizing is that it's hard to get a ringtone on a phone unless your service provider sells it to you. But for some reason this is mostly just unquestingly taken as "the way things work". I'm sure that one of the reasons that it's hard to get a quality ringtone onto your phone is because service providers want to charge for them. ToneThis is a way to break away from  service providers wanting to wring every cent out of their customers. Instead of having to choose from a library of ringtones you get exactly the music you want. This is from the [news section of the ToneThis site](http://www.tonethis.com/index.php?page=news)

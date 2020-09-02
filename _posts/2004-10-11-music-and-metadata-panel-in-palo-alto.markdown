@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-11 10:34:20
 layout: post
-slug: music-and-metadata-panel-in-palo-alto
 title: Music and Metadata Panel in Palo Alto
-wordpress_id: 343
-categories:
-- Silicon Valley
 ---
 
 There's an [SDForum panel presentation](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1461&mo=10&yr=2004) tomorrow about Music and Metadata:

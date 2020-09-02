@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-04 19:37:28
 layout: post
-slug: april-momo-jeff-clavier-and-marc-brown
 title: April MoMo - Jeff Clavier and Marc Brown
-wordpress_id: 480
-categories:
-- Mobile Computing
 ---
 
 Jeff and Marc presenting at [April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

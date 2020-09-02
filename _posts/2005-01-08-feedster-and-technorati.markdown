@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-08 02:56:57
 layout: post
-slug: feedster-and-technorati
 title: Feedster and Technorati
-wordpress_id: 386
-categories:
-- Feedster
 ---
 
 One of the questions I've been asked by a number of people since joining [Feedster](http://www.feedster.com) is "Are Technorati and Feedster competitors?" (or "Is there a difference between Feedster and Technorati?" or something along those lines). I was going to write up something to explain my take, but it looks like Dave Sifry over at [Technorati](http://www.technorati.com) has been seeing the same kinds of questions and decided to [answer publicly](http://www.sifry.com/alerts/archives/000268.html). So I'm just going to build off Dave's statements, in particular the part about:

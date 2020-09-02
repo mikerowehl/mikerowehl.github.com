@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-20 13:12:35
 layout: post
-slug: art-of-the-start-redux-part-2-afternoon-sessions
 title: Art of the Start Redux Part 2 (Afternoon Sessions)
-wordpress_id: 295
-categories:
-- General
 ---
 
 **Panel on Funding Your Dream**

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-02 00:54:33
 layout: post
-slug: advertising-in-rss-feeds
 title: Advertising in RSS Feeds
-wordpress_id: 496
-categories:
-- Feedster
 ---
 
 There's a [conversation going on about advertising in RSS](http://www.reallysimplesyndication.com/2005/04/30#a521). Dave Winer doesn't think that advertising belongs in RSS at all, and apparently there are a bunch of people who feel the same way. That certainly makes some sense, I felt the same way about the Internet as a whole opening up to commercial influence when I was back in college. I figured that once commercial influences showed up online the value of the information available would go down. There would be so much advertising and selling that none of the useful information would be findable. It was possible I guess, but relatively myopic. Not that mediums can't be ruined by transformations of content or audience. I think Usenet is effectively a ruined medium, unable to bear the influx of a large number of belligerent and uninformed participants. But I don't think the web was ruined by the introduction of commercial concerns, and advertising in particular. The web actually got a whole lot more interesting after businesses showed up. I spent a bunch of time thinking about why that is, cause I felt like an idiot after spouting off again and again about "the death of the web" that would occur if businesses were allowed to influence the future direction of the Internet.

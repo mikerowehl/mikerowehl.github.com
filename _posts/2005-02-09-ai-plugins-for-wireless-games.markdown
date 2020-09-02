@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-09 07:25:19
 layout: post
-slug: ai-plugins-for-wireless-games
 title: Plugins for Wireless Games
-wordpress_id: 408
-categories:
-- Mobile Computing
 ---
 
 I'm just catching up on some posts I've had sitting around as drafts (there are a lot of them actually).  I saw [this article](http://www.smartmobs.com/archive/2005/01/31/viral_handheld_.html) about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to [hack the description files for Doom](http://members.lycos.co.uk/doomwads/tc.php)? I think it's just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?

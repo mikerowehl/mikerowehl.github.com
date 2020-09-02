@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-10 12:08:09
 layout: post
-slug: weblogs-as-divergent-thinking
 title: Weblogs as Divergent Thinking
-wordpress_id: 178
-categories:
-- General
 ---
 
 I've spent quite a bit of time lately wandering around through various blogs and maintaining my own, but during the last two weeks I've had more time to think about what I've been doing rather than just continuing to do it. Something that really struck me was how many popular bloggers made new years resolutions to not blog so much during 2004. It seemed like the practice of blogging was maybe dying out, having been realized to be a fad by some of the pioneers and picked up as a trade by others. The very nature of writing and reading weblogs seemed to be transforming, and no one really seemed to be sure where it was going. I have no idea what blogging as a whole is going to look like 6 months from now, but I do have some pretty strong opinions on the value that's been added to web content through the addition of weblog style content.

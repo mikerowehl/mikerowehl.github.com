@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2003-12-31 15:41:38
 layout: post
-slug: new-board-members-for-wireless-ink
 title: New Board Members for Wireless Ink
-wordpress_id: 71
-categories:
-- Mobile Computing
 ---
 
 I just met with Dave from Wireless Ink just a few days ago, so I admit I had a tip off to look for some interesting news from them. They've just announced that they've added [Howard Rheingold](http://winksite.com/site/help_bl_view.cfm?article_level1_id=177) and [Adam Greenfield](http://winksite.com/site/help_bl_view.cfm?article_level1_id=176) to their Advisory Board. I would be happy just to get a few minutes to talk to either of those guys. Adding people like this to the board is a strong move, and a hefty endorsement for Wireless Ink. Congratulations to the Wireless Ink team! I'll be looking forward to seeing what the new year has in store.

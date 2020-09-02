@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-28 10:22:15
 layout: post
-slug: boingboing-mobile
 title: BoingBoing Mobile
-wordpress_id: 139
-categories:
-- Mobile Computing
 ---
 
 When I connected to [WINKsite](http://winksite.com/) this morning I noticed the [link to the mobile version of BoingBoing](http://winksite.com/boingboing/mobile) in featured sites area. Woohoo!!! I don't think it's any secret that I'm a WINKsite fan, and I think almost everyone in Silicon Valley reads the standard edition of [BoingBoing](http://www.boingboing.net/). It's one of those sites that serves as a hub for bloggers, pulling articles in from all over which other people pick and choose from to mention in their own blogs. I've mentioned WINKsite before, but for those who might be new readers the brief recap:

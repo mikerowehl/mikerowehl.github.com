@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-08-13 02:41:27
 layout: post
-slug: thank-you-eric
 title: Thank You Eric
-wordpress_id: 327
-categories:
-- Silicon Valley
 ---
 
 Just got back from the first [LobbyCon in San Francisco](http://eric.blognews.com/blog/_archives/2004/8/13/123275.html), thanks to Eric Rice for taking the initiative and getting everyone together. I personally had a really good time. I think it was very successful at recreating exactly what goes on in the lobby of tech confs. There was lots of geeky talk going on, I got to meet some people I know of from their online presence, and ran into some people who I don't normally get a chance to talk to. Apparently [Jonas was there for a while, but really didn't like the venue](http://www.jluster.org/node/266) so he took off. That's unfortunate, I would have liked to get a chance to talk to him. But that's what happens when you try to do something different. If you're doing it right, you should get a reaction. Hopefully there are a bunch of positives, but unfortunately there will be negatives as well. The important factor is that there is  something polarizing and not just a lukewarm mix meant to please the widest audience possible.

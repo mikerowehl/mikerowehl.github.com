@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-21 15:23:03
 layout: post
-slug: scott-young-speaking-in-sunnyvale
 title: Scott Young Speaking in Sunnyvale
-wordpress_id: 248
-categories:
-- Silicon Valley
 ---
 
 Scott Young from Userland Software is [speaking at Borders in Sunnyvale](http://www.pheedo.info/archives/000050.html) on Monday April 26th. The topic is going to be the use of weblogs and RSS for corporate communication. Event details:

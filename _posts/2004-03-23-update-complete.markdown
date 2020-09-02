@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-23 20:45:54
 layout: post
-slug: update-complete
 title: Update Complete
-wordpress_id: 209
-categories:
-- General
 ---
 
 And here you have it, the updated Bitsplitter Blog. The minimalist view is still the default, but now featuring such coolness as [valid XHTML](http://validator.w3.org/check?uri=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2F), [valid CSS](http://jigsaw.w3.org/css-validator/validator?uri=http://www.bitsplitter.net/blog/), and a [valid RSS2 feed](http://rss.scripting.com/?url=http%3A%2F%2Fwww.bitsplitter.net%2Fblog%2Fwp-rss2.php). And this time instead of destroying the normal setup, I left the [desktop version available](http://www.bitsplitter.net/blog/desktop.php) as well. So those of you who are into that kind of thing should be made a little happier.

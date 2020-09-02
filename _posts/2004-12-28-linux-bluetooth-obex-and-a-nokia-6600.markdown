@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-12-28 15:10:24
 layout: post
-slug: linux-bluetooth-obex-and-a-nokia-6600
 title: Linux Bluetooth OBEX and a Nokia 6600
-wordpress_id: 378
-categories:
-- Open Source
 ---
 
 I've been having trouble with uploads to both [Flickr](http://www.flickr.com) and [BuzzNet](http://www.buzznet.com) during this vacation. I uploaded images the day I left for NY, and everything worked at 12:30pm PST. Then I landed in NY and tried an upload using the same phone using the same settings to the same accounts, and it doesn't seem to be working any more. And everyone is gone for the holidays it seems, so self service it is. I didn't have the OBEX bluetooth tools setup under Linux (I'm currently using Gentoo on my laptop). I've tried to install the slick-as-hell-sounding gnome-bluetooth package, but I can't emerge it. Error compiling. So I went tooling around looking for simple bare bones shims so that I could just move some data around. Not all that much out there.  I have GPRS working over bluetooth for this laptop and phone, so I know the basics are working. But how about accessing the data on the phone itself? Not good, here's some info.

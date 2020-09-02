@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-02-07 08:04:04
 layout: post
-slug: talk-talk-talk-talk
 title: Talk talk talk talk
-wordpress_id: 618
-categories:
-- General
 ---
 
 A bunch of folks seized on [the point that Adam calls out in his post](http://kalsey.com/blog/2006/02/those_pesky_customers/), that we took the Ning sign down to keep folks from randomly dropping in. Somehow that's equated to not wanting to talk to our customers. Still trying to figure that one out. If we took the firewall down around our office network and took the encryption off our wireless network would that help also? Are people randomly dropping by Cingular and Microsoft just to chat the folks up?

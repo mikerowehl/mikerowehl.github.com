@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-11-29 22:38:37
 layout: post
-slug: palm-web-services
 title: Palm Web Services
-wordpress_id: 10
-categories:
-- Mobile Computing
 ---
 
 I recently went to listen to [the VP of Product Marketing from PalmSource, Charlie Tritschler, speak at a SDForum Web Services Special Interest Group](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1206&mo=11&yr=2003). The presentation itself was very informative. It sounded like Palm was really taking a great approach to Web Services. Charlie spoke about how PalmSource had a package available for writing SOAP clients for the Palm, and how they were planning to push support for web services down into the operating system in future versions. I think this stuff is a great idea, and have had [some thoughts about making the palm more network-centric](http://www.unrooted.net/openSource/palmos.html) online for a while myself. So I have no problem at all marching to the beat of that drum, it matches up perfect with the pace I was keeping anyway. So I went to download the toolkit from Palm, and had to eat my enthusiasm.

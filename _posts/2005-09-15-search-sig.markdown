@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-09-15 15:04:48
 layout: post
-slug: search-sig
 title: Search SIG
-wordpress_id: 573
-categories:
-- Silicon Valley
 ---
 
 The [first meeting of the Search SIG from SDForum](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1754&mo=9&yr=2005) was last night. The new forum is run by [Dave McClure](http://www.500hats.com/sys-tmpl/door/) and [Jeff Clavier](http://blog.softtechvc.com/). They did a great job on this first event, and I'm really looking forward to our combined Search SIG and Mobile Monday event happening next month. I only seen [one posting so far](http://www.horsepigcow.com/2005/09/search-sig-yahoo.html). After [Niall](http://www.niallkennedy.com/blog/) and [Kevin](http://feedblog.org/) vying for attention during the announcements, I figured they would represent with a summary or something.  Here's mine.

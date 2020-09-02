@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-01 03:50:23
 layout: post
-slug: prepping-vagablog-18-for-release
 title: Prepping Vagablog 1.8 for Release
-wordpress_id: 144
-categories:
-- General
 ---
 
 I spent a good part of the day today making some changes to [Vagablog](http://www.bitsplitter.net/vagablog/) in an attempt to make it more usable. The primary change is the addition of the markup menu to allow for easily inserting markup into the document. There are menu items that allow for inserting the begining or ending tags for underline, bold, emphasis, and italic. If you have text selected when you activate one of the items it will insert both begin and end tags around the selected text. This just seemed like the correct behavior, hopefully the users agree. There's also an option to insert a link, which also can be used to surround a selection with markup. The link menu item pops up a form for filling in link details.

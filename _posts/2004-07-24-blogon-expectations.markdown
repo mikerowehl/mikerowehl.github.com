@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-24 20:02:00
 layout: post
-slug: blogon-expectations
 title: BlogOn Expectations
-wordpress_id: 321
-categories:
-- General
 ---
 
 [BlogOn](http://www.blogonevent.com) was yesterday, and I've let the issues percolate for a while before trying to write up what I took out of yesterday's conference. On the whole there was some interesting discussion, there were definitely interesting people, but I think the conference as a whole was a miss. Why? Cause if you take a look at [the BlogOn website](http://www.blogonevent.com/blogon2004/), the subtitle is "the business of social media". I don't think there was nearly enough focus on the tranformative power of social media except as related to technology. There were some exceptions, such as the session which talked about [how social media transforms corporate communications](http://www.socialtext.net/blogon/index.cgi?social_media_transforms_corporate_communications) ("press releases used to be something that companies struggled to get journalists to pay attention to, now journalists are seeking out press releases already online so that they can do their research" - FANTASTIC point!) I liked the sessions in the afternoon more than those in the morning. I went to the business of blogging track, not the company presentation track. Here is were you might say "Aha! But Mike, if you wanted to hear about companies using social media why didn't you go to hear about companies wanting to use social media?" Well, I took a look at the [wiki page reserved for presenters](http://www.socialtext.net/blogon/index.cgi?company_presentations), and noticed that no one added their link. NOT A SINGLE FUCKING ONE! That says to me that either none of those companies are really serious in their use of social media, or we've completely screwed up our definition of social media. Either way, I didn't feel like hearing a bunch of companies pitch when there was at least a chance of hearing about solutions to real issues in social media.

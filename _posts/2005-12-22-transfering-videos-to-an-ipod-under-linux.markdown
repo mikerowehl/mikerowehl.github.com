@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-12-22 21:41:25
 layout: post
-slug: transfering-videos-to-an-ipod-under-linux
 title: Transfering Videos to an iPod Under Linux
-wordpress_id: 597
-categories:
-- Open Source
 ---
 
 Getting [audio on to the iPod using Linux was a snap](http://www.rowehl.com/blog/?p=596). Getting videos on took a bit more doing, but also worked out quite well. I'm listing the info here cause it took a little searching around to find it. This is the stuff you'll need you probably don't have:

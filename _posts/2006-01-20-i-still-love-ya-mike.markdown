@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-20 13:21:39
 layout: post
-slug: i-still-love-ya-mike
 title: I Still Love Ya Mike
-wordpress_id: 610
-categories:
-- General
 ---
 
 I've been getting pinged on IM this morning about my reaction to [Mike  from TechCrunch ripping into Ning today](http://www.techcrunch.com/2006/01/20/ning-rip/). I've spoken to Mike a  few times and always got the impression he's the kind of person who  honestly speaks his mind. So sometimes of course we're going to be on  the receiving end of some criticism, goes with the territory, and I  don't come even vaguely close to having a problem with it.

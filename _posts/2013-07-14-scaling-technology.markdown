@@ -2,11 +2,6 @@
 layout: post
 title: "Scaling Technology"
 date: 2013-07-14 17:41
-comments: true
-categories: 
-- Engineering
-- Scalability
-- Operations
 ---
 A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
 <a href="http://momentum.mobilemonday.us/">the Momentum accelerator</a> to talk about 

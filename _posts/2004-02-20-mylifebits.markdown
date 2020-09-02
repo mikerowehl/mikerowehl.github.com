@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-20 11:16:26
 layout: post
-slug: mylifebits
 title: MyLifeBits
-wordpress_id: 168
-categories:
-- Dweeb
 ---
 
 Last night I went to a presentation by Gordon Bell at PARC. The topic of the presentation was a project called [MyLifeBits](http://www.mylifebits.com), which aims to be an implementation of the Memex system originally conceived by Vannevar Bush decades ago. It certainly seems like an interesting project, despite being run under the Microsoft Research umbrella. It actually sounds like a project I was involved in a number of years ago. The project we worked on didn't make it very far. It was just too ambitious for the resources we had, and I don't think the team did a good job of understanding the direction the founder had (myself included). Seeing a project like this starting to take form has made me review some of the stuff we worked on. A lot of new technologies for funneling data into the system, like cheap digital cameras and GPS for location info, have changed certain aspects of the system in favor of easy use. But a lot of the issues we ran into, like rapid and reliable organization and searching methods, still seem to remain.

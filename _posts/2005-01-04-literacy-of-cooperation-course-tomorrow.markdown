@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-04 10:18:15
 layout: post
-slug: literacy-of-cooperation-course-tomorrow
 title: Literacy of Cooperation Course Tomorrow
-wordpress_id: 383
-categories:
-- Silicon Valley
 ---
 
 The [Literacy of Cooperation Course starts tomorrow (Jan 5th) at Stanford](http://www.smartmobs.com/archive/2005/01/03/literacy_of_coo.html). The course is [open to the public](http://shl.stanford.edu/hum202.html):

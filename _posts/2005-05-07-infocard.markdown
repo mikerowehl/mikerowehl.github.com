@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-07 19:30:48
 layout: post
-slug: infocard
 title: Infocard
-wordpress_id: 501
-categories:
-- Open Source
 ---
 
 Last Mobile Monday [Marc Canter](http://marc.blogs.it/) came by to talk about identity systems, and in particular mentioned Infocard, an emerging something from Microsoft. Apparently an identity something. Kaliya has [some notes up](http://identitywoman.kaliyasblogs.net/archives/2005/05/momo_marc_cante.htm). I groove to everything that Marc said about what identity systems need to provide, how they should be open source based and open standards based, how they're essential infrastructure, and how the systems should obey a core set of principles that has the interest of the user at heart. Nice I like it. And then he started talking about Infocard, because Infocard apparently provides all this stuff we want. This is the bit from Kaliya's notes, and from what I remember she has it pretty well right:

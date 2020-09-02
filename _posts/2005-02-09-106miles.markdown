@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-09 09:24:58
 layout: post
-slug: 106miles
 title: 106miles
-wordpress_id: 419
-categories:
-- Silicon Valley
 ---
 
 I went to the [106miles](http://www.106miles.org/) event last night. A big part of the Geek Krew were there: [Niall](http://www.niallkennedy.com/blog/) (who took audio and should have that up on his site at some point), [Eleanor](http://www.ellementk.com), [Russ Beattie](http://www.russellbeattie.com/notebook/), and [Brendon Wilson](http://www.brendonwilson.com/). We're starting to form a pretty consistent traveling discussion group. [Michael Fagan](http://www.faganfinder.com/me/) and Nick Heyman from [Feedster](http://www.feedster.com) came also. I got to meet [Jeremy Zawodny](http://jeremy.zawodny.com/blog/) (who has [some comments up already](http://jeremy.zawodny.com/blog/archives/004156.html)) and [Mark Jen](http://99zeros.blogspot.com/) (see [this Slashdot post](http://slashdot.org/article.pl?sid=05/02/09/1418233) for some background on why meeting Mark is interesting, and [these comments from Jeremy after meeting him last night also](http://jeremy.zawodny.com/blog/archives/004157.html) for some additional info. Mark was fired by the way.). There were a ton of great people there, thank you [Joyce](http://troutgirl.blogspot.com/)!! I took [a few pictures](http://www.flickr.com/photos/miker/sets/113756/). They came out pretty poorly but they're there at least.

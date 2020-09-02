@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-10 10:22:29
 layout: post
-slug: spontaneous-collaboration
 title: Spontaneous Collaboration
-wordpress_id: 311
-categories:
-- General
 ---
 
 I've been thinking a bunch about what makes people contribute to shared online systems. I mean both public systems like wikis or shared blogs, and private systems like a corporate mailing list or intranet site. [CommunityWiki](http://www.communitywiki.org) has lots of great information about this topic in general. There are a bunch of issues with long standing projects that seem to be pretty difficult to tackle. How do new members get acquainted and start contributing without demanding too much of their time for startup? With some open online projects, you actually want this "barrier to entry" for new members. You want them to self select by requiring that they dedicate some time to at least understand the norms and conventions. If they don't understand the norms they are easier to ignore. So this is one of the potential filters, keeping out people who aren't genuinely interested in the topic by way of making them easy to spot and ignore.

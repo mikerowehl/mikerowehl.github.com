@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-16 10:01:40
 layout: post
-slug: defacto-standards-using-commercial-software
 title: Defacto Standards Using Commercial Software
-wordpress_id: 106
-categories:
-- Open Source
 ---
 
 I have heard people talk about the danger of letting commercial software turn into the defacto standard for how to do things. I didn't really think this was a big deal, until I tried to create a boot disk to do a BIOS update the other day. This is where the defacto standard comes in. For those who do low level system admin work on x86 based computers, DOS is the defacto standard. When a computer manufacturer wants to write an application that does something special to their hardware, they write a little DOS app. DOS is really primitive and simple and doesn't try to stand in the way of the programs that it runs, so it's ideal for writing specialized applications to test hardware or update firmware. I had to update the BIOS of an Intel motherboard, and the instructions said to create a boot disk and copy their utilities over to it. No problem, I don't have a Windows system, but my girlfriend's system should work fine. It pains me to touch the thing, but I can stand it for stints of 10 minutes or less.

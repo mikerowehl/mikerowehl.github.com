@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-11-08 09:53:17
 layout: post
-slug: bloggercon-vendors
 title: BloggerCon Vendors
-wordpress_id: 363
-categories:
-- General
 ---
 
 [Nick Bradbury](http://nick.typepad.com/blog/2004/11/bloggercon_the_.html) also stopped by the [vendors gathering we had](http://www.bitsplitter.net/blog/index.php?p=362). I love this comment that he made:

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-06 15:56:01
 layout: post
-slug: reopening-mobile-and-open
 title: Reopening Mobile and Open
-wordpress_id: 385
-categories:
-- Mobile Computing
 ---
 
 Howard has posted a manifesto titled [Mobile and Open](http://www.thefeature.com/article?articleid=101299&ref=5062836), so I'm going to take this chance to jump in and reframe some of the stuff I've said along these lines before. I think it's a great topic, and most people misinterpret what I mean when I say that there must be more openness to the mobile infrastructure. So now that we have a great touchpoint in the writeup from Howard I want to run thru a few things.

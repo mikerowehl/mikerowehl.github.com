@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-21 09:56:00
 layout: post
-slug: jabberwocky-urban-visualization-project
 title: Jabberwocky Urban Visualization Project
-wordpress_id: 246
-categories:
-- Mobile Computing
 ---
 
 SmartMobs [reports on a free (and soon to be open source) urban social landscapes tool](http://www.smartmobs.com/archives/003023.html). The tool is a release from Intel, available as J2ME using MIDP but soon to be open source. Based on the [info page](http://www.urban-atmospheres.net/Jabberwocky/info.htm) the sensing pattern seems to be based on Bluetooth. Very interesting. Here's one of the many tidbits from the site which caught my attention:

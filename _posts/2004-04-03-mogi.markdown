@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-03 12:13:05
 layout: post
-slug: mogi
 title: Mogi
-wordpress_id: 227
-categories:
-- Mobile Computing
 ---
 
 The Feature has an [article about a location based game called Mogi](http://www.thefeature.com/article?articleid=100501&ref=716084). I'm not a gamer at all, but I am into location based services. The way this game is run is just fantastic however. It encourages communication and cooperation, and emphasized collecting over combat. The game is described as a "data-layer over the city of Tokyo", which I picture being very much like the [Urban Tapestries](http://www.bitsplitter.net/blog/index.php?p=201) project. It's also setup so that it encourages users on mobile devices to work together with others back at desktop systems. The comments from the game play make it sound like the goal of fitting collaborative authoring into everyday life would be something that's possible:

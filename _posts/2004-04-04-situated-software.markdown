@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-04 12:28:59
 layout: post
-slug: situated-software
 title: Situated Software
-wordpress_id: 229
-categories:
-- General
 ---
 
 Clay Shirky has a [post titled Situated Software](http://www.shirky.com/writings/situated_software.html) available online. There are some excellent general points in there, but I'm left with a nagging feeling about the piece as a whole. I think there are some aspects which he captures well, but there are other areas which I think are still major hang-ups for the software community as a whole.  Allow me to give an example. I do something I call software prototyping. For some people this makes infinite sense right off the bat, but most say something like "What do you mean by prototyping? What do you prototype?" It doesn't really matter what I prototype, because prototyping properly done is all about a discovery and exploration process not about particular technologies. In the course of prototyping I end up implementing a lot of small and relatively pointed systems. At one point in the essay Clay says:

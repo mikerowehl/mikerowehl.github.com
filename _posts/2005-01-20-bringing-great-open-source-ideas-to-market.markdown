@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-20 09:06:02
 layout: post
-slug: bringing-great-open-source-ideas-to-market
 title: Bringing Great Open Source Ideas to Market
-wordpress_id: 396
-categories:
-- Open Source
 ---
 
 I went to [a presentation at Stanford VLAB titled "Bringing Great Open Source Ideas to Market"](http://www.vlab.org/204.cfm?eventID=49) earlier this week. There were some interesting comments made, and I'll get some of those down here. First I want to mention the overall message however: "2005 will be the breakout year for open source". Good message, the spirit is right, but I don't agree. I'm not at all an expert in terms of business predictions and industry tracking, but I have been writing open source since 1992 so I am familiar with parts of it. In particular I am familiar with this part of it. And as someone working within that community I can assure you that every year since about 1996 has been predicted as "the breakout year for open source". The predictions are always made by people already working on or with open source, and every year something generally described as "business concerns" keeps it from happening. So although I'm always happy to hear it, I'm no longer moved by the prediction. What is happening, and what will continue to happen, is the accelerating adoption of open source. It might look something like a breakout to people within the particular industries that have picked up open source. However open source is already exploding on the market. Has exploded on the market even. It might seem like something new if you normally work with application servers and middleware, but go ask someone in embedded systems about Linux. It's out there already. It's just moving from lower levels like the kernel to higher levels like web service infrastructure (much as I've moved from embedded systems programming to working at [Feedster](http://www.feedster.com), the parallel is not coincidental). What's evolving is the business model to go along with it, which is exactly what Marc Fleury was talking about. So certainly kudos to him on that one.

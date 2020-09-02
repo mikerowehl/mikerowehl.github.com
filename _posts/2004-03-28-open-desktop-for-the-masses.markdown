@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-28 11:34:42
 layout: post
-slug: open-desktop-for-the-masses
 title: Open Desktop for the Masses
-wordpress_id: 216
-categories:
-- Open Source
 ---
 
 Edd Dumbill [posted his take on the next steps for GNOME](http://usefulinc.com/edd/blog/contents/2004/03/24-gnome-doc/read). There's been a debate going on about the future direction for the project, I [posted a few links](http://www.bitsplitter.net/blog/index.php?p=199) a little while ago myself. I have some points that I want to throw in myself, cause I somewhat disagree with Edd. I agree with his points in general - that better documentation and IDEs will go a long way to getting the Linux desktop adopted as a platform of choice. But I think that the techniques proposed would also go a long way toward destroying the platform. I want to address this issue right off:

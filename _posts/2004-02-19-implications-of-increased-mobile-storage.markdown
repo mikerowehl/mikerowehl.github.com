@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-19 11:06:11
 layout: post
-slug: implications-of-increased-mobile-storage
 title: Implications of Increased Mobile Storage
-wordpress_id: 164
-categories:
-- Mobile Computing
 ---
 
 An [article over at The Feature](http://www.thefeature.com/article?articleid=100391) talks about some of the implications of storage getting larger in capacity and smaller in size and power consumption. Although there might be some technical errors (for instance, the original Palms didn't use flash memory, but low consumption battery backed RAM) I think the insights of the article are right on target. Increased storage capacity will have a great impact on the way that people use mobile devices. I'm not sure which of the two main usage patterns will win out however.

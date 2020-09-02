@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-28 12:40:47
 layout: post
-slug: finding-a-stolen-phone
 title: Finding a Stolen Phone
-wordpress_id: 553
-categories:
-- Mobile Computing
 ---
 
 This was linked off Slashdot, so I'm sure everyone and their grandmother has already seen it, but [here's a story about some folks tracking down a cell phone theif](http://zone-mr.net/?act=entry&id=36). Besides liking the final bit:

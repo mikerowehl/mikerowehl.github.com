@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-08 14:39:13
 layout: post
-slug: patents-and-innovation-in-the-mobile-space
 title: Patents and Innovation in the Mobile Space
-wordpress_id: 484
-categories:
-- Mobile Computing
 ---
 
 Just a quick note, I need to get back to work after having a late lunch but didn't want to let this slip through the cracks. [Patently Absurd: How New Wireless Technologies Get Strangled By Patents](http://www.thefeature.com/article?articleid=101538&pos=1_-1&ref=6630022) is worth a read.  Here's an excerpt:

@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-02 11:36:55
 layout: post
-slug: amazing-info-about-text-messaging
 title: Amazing Info About Text Messaging
-wordpress_id: 11
-categories:
-- Mobile Computing
 ---
 
 There's a [release by TXT4info](http://www.txt4.info/pages/research_research.htm) about the use of text messaging as a marketing tool. Apparently it great that the firm did the research, because no one was really sure if customers liked being charged a lot of money. And they were a bit sketchy on if the customers liked being spamed.  From the report:

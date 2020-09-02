@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-09-15 19:20:13
 layout: post
-slug: new-coworker
 title: New Coworker
-wordpress_id: 574
-categories:
-- Dweeb
 ---
 
 We added a new member to the team at work:

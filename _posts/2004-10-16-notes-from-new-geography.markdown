@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-16 18:31:17
 layout: post
-slug: notes-from-new-geography
 title: Notes from New Geography
-wordpress_id: 345
-categories:
-- Mobile Computing
 ---
 
 Two sets of notes from the New Geography workshop put on by the [Institute For The Future](http://www.iftf.org)

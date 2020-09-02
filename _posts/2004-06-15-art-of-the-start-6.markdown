@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 11:31:21
 layout: post
-slug: art-of-the-start-6
 title: Art of the Start 6
-wordpress_id: 286
-categories:
-- Silicon Valley
 ---
 
 Presenting

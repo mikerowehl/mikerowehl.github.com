@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-15 16:28:52
 layout: post
-slug: notes-from-jeff-clavier-presenting-at-bma
 title: Notes from Jeff Clavier Presenting at BMA
-wordpress_id: 427
-categories:
-- General
 ---
 
 Here are some notes from the [talk Jeff Clavier gave at BMA](http://softtechvc.blogs.com/software_only/2005/02/from_an_idea_to.html) this morning. A lot of the talk was about the enterprise side of the equation. "What does it take to get an enterprise software play to market" type of questions. But the discussion started out with a preface not to take generalizations too seriously. People will say "VCs don't really do that" or "you're never going to see that from a VC", but that needs to be taken with a grain of salt. Normally these statements are overgeneralized. Different VCs act differently, and behavior that you would never see from one group may not be that uncommon from another. So pay attention and make sure to contextualize the information you get.

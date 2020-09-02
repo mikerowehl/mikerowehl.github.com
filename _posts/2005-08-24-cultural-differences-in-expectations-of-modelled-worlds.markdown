@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-24 11:54:37
 layout: post
-slug: cultural-differences-in-expectations-of-modelled-worlds
 title: Cultural Differences in Expectations of Modelled Worlds
-wordpress_id: 547
-categories:
-- General
 ---
 
 The [session on Community Modelling from BARcamp](http://barcamp.org/index.cgi?CommunityModelling) got me thinking about large scale simulations again, so I've been reading Terra Nova more carefully than before. This article really caught my eye today, [Terra Nova: I say tomato. You say it’s a warm day](http://terranova.blogs.com/terra_nova/2005/08/i_say_tomato_yo.html). I loved this quote from the article:

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-13 10:05:09
 layout: post
-slug: rd-and-the-innovation-curve
 title: R&D and The Innovation Curve
-wordpress_id: 267
-categories:
-- General
 ---
 
 There's a very interesting [post about the correlation between R&D; spending and profitability](http://www.smallbusinesses.blogspot.com/archives/2004_05_01_smallbusinesses_archive.html#108429282193469092). The post points to [a great article at strategy+business](http://www.strategy-business.com/resilience/rr00007?pg=all). I don't think the news that businesses are moving from a "closed" innovation cycle (all work done within the company) to an "open" innovation cycle (where ideas in particular are pulled from outside) is very surprising. The general movement towards business models where free agents play a large role certainly seems to fit together well with the shift. I do take issue with one bit however. It relates to the innovation effectiveness curve and this bit from the text:

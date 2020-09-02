@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-06 04:13:00
 layout: post
-slug: darwincom
 title: Darwin.com
-wordpress_id: 309
-categories:
-- Open Source
 ---
 
 There's been a lot of talk lately about trying to get Sun to open source Java (my personal [favorite article is at theRegister](http://www.theregister.co.uk/2004/07/01/sun_open_source_java/)). The arguments are good on both sides, and the debates have brought to light some areas that aren't very well explored. I don't care all that much about Java, it's not one of my preferred languages. But the question of "why open source?" is an interesting one in general. I think I agree with the ideas that [Mitch Kapor spoke about at an SDForum event](http://www.sdforum.org/p/calEvent.asp?CID=1175&mo=10&yr=2003), that open source is the best way to keep software development honest. During the dotcom bubble lots of companies were able to rapidly suck insane amounts of money out of the economy. They're extreme examples, but really that's what goes on with most software companies. Software companies need to create artificial barriers to protect their competitive advantage. They need to protect their margins. Depending on the techniques used to do that it can result is software which is radically overpriced. Open source is one method for trying to correct this problem with the market.

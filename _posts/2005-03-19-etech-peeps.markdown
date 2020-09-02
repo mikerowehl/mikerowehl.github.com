@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-19 16:08:57
 layout: post
-slug: etech-peeps
 title: ETech Peeps
-wordpress_id: 471
-categories:
-- General
 ---
 
 Most people blog about the famous people they run into when they go to confs like [ETech](http://conferences.oreillynet.com/etech/), so I'm gonna blog about some of the people you might not know who I ran into at the conference instead, and some of the kick ass stuff they're working on.

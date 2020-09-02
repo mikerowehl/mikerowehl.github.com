@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-04-03 05:38:10
 layout: post
-slug: high-availability-nfs
 title: High Availability NFS
-wordpress_id: 635
-categories:
-- General
 ---
 
 I've tried out the [high availability NFS solution detailed here](http://www.howtoforge.com/high_availability_nfs_drbd_heartbeat) and run into a few issues. It does provide a great way to get a higher degree of availability for one of the most problematic bits of infrastructure, so I don't mean to crap on the idea as a whole. But here are two issues to make sure you either check out or understand before you deploy something like this:

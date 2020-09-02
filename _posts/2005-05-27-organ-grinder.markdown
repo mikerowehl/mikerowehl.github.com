@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-27 00:06:57
 layout: post
-slug: organ-grinder
 title: Spit the vile breath till my tongue bleeds
-wordpress_id: 515
-categories:
-- General
 ---
 
 I haven't been able to post much to this blog. I tried to for a while but other issues rapidly sucked up all my time. I haven't even had time to read news except for the bits I can read on my phone while I'm wedged between two people on Caltrain. The [post that Jay Allen has up about trying to reign in your schedule](http://www.jayallen.org/journey/2005/05/a_new_hope) really struck a chord with me. Yet here I am at 1:00 in the morning once again, testing out some code and checking to make sure that the SMS messages I'm getting from my monitoring systems are because someone else messed up and not me. Maybe I need a less stressful job, something like [Menlo Park police officer](http://www.flickr.com/photos/miker/15873937/in/photostream/).

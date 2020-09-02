@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 09:03:58
 layout: post
-slug: art-of-the-start-2
 title: Art of the Start 2
-wordpress_id: 282
-categories:
-- Silicon Valley
 ---
 
 Art of Starting - Guy

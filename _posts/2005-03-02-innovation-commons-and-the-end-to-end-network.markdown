@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-02 15:17:47
 layout: post
-slug: innovation-commons-and-the-end-to-end-network
 title: Innovation Commons and the End to End Network
-wordpress_id: 437
-categories:
-- Mobile Computing
 ---
 
 There's an excellent bit of commentary about innovation and the end to end design principle of interconnected networks in the audio from [Larry Lessig at the SDForum Distinguished Speaker series](http://www.itconversations.com/shows/detail349.html). Here's a quote that really stuck out for me:

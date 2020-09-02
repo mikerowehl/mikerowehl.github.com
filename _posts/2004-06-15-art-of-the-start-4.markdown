@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 10:00:41
 layout: post
-slug: art-of-the-start-4
 title: Art of the Start 4
-wordpress_id: 284
-categories:
-- Silicon Valley
 ---
 
 Still in the panel

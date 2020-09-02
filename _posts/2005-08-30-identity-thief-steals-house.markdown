@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-30 19:30:18
 layout: post
-slug: identity-thief-steals-house
 title: Identity Thief Steals House
-wordpress_id: 554
-categories:
-- General
 ---
 
 Here's a good one from Bruce: [Identity Thief Steals House](http://www.schneier.com/blog/archives/2005/08/identity_thief.html). He links to one of his older essays, [Mitigating Identity Theft](http://www.schneier.com/blog/archives/2005/04/mitigating_iden.html). Definitely worth a read:

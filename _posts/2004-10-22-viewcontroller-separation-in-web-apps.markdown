@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-22 10:34:31
 layout: post
-slug: viewcontroller-separation-in-web-apps
 title: View/Controller Separation in Web Apps
-wordpress_id: 349
-categories:
-- General
 ---
 
 A recent article ([Migrating to Page Controllers](http://www.onlamp.com/pub/a/php/2004/10/14/page_controller.html)) does an excellent job of combining theory with some concrete examples and immediate benefits. The article provides a simple technique for factoring the controller out of the view processing when writing PHP code. Although not necessary for everything, architecture along this direction can really pay off for web apps. Many of the PHP apps that I've looked at recently have stand alone pages, and that can make them pretty hard to transform. The trend to move all the processing up to the front of the page helps out quite a bit. Programmers now tend to setup their objects and variables all in one block at the top, and then include the display pages with minimal markup to output the dynamic bits. Unfortunately error display still gets stuck into the logic pretty often. It certainly helps out quite a bit to have all the processing done up front, and that's half way to the page controller model. The final bit is the refactoring to pull the different views out of the logic and defining a consistent scheme for passing the display info to them. I like the way the description comes off, very practical and tailored towards those who have to refactor their apps to make them look like this.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-06-05 07:00:52
 layout: post
-slug: a-quarter-of-a-million-spam-messages
 title: A Quarter of a Million Spam Messages
-wordpress_id: 639
-categories:
-- General
 ---
 
 I'm at almost a quarter of a million spam messages (249,744 to be precise, by the time I post this it should be more than 250 thousand) caught by [Akismet](http://akismet.com/) so far. I [turned Akismet on in January of this year](http://www.rowehl.com/blog/?p=605). That's more than 50,000 spam messages a month. According to the Akismet site 92% of the comments it sees are spam.

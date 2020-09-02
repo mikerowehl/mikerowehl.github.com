@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-02 12:29:25
 layout: post
-slug: personal-tracking-devices
 title: Personal Tracking Devices
-wordpress_id: 79
-categories:
-- Mobile Computing
 ---
 
 There's an article at textually.org, [SMS 'Smart Bracelet' for Medical Emergencies](http://www.textually.org/textually/archives/002684.htm), which made me think of the [Wherify GPS watch](http://www.wherifywireless.com/prod_watches.htm) and [the planned project called Wheels of Zeus](http://maccentral.macworld.com/news/2003/07/21/woznet/) launched by Steve Wozniak. The world certainly seems to be converging on a "sensor network" view of computing, in terms of pervasive devices using wireless networking, sensors, and geolocation information in order to carry out tasks. These ideas have been around for quite a long time. I remember hearing the starry eyed pundits discussing Internet enabling just about everything back when I was in college. Most people laughed at the time, other people scrambled to figure out how to get wireless interfaces and sensors into just about everything they could get their hands on.

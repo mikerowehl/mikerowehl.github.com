@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-09-20 12:01:18
 layout: post
-slug: ubuntu-sun-jdk-graphical-install-only
 title: Ubuntu - Sun JDK Graphical Install Only?
-wordpress_id: 651
-categories:
-- General
 ---
 
 I was just installing the Sun JDK on my workstation at the office, and when I tried the obvious: apt-get install sun-java5-bin got an error message about not being able to find a license. Interesting, thought I, "there must be a higher level package wrappering this whole thing that deposits a license file somewhere for the apt-get process to pick up". A bunch  of searching around in the repository listings turned up no java license related packages.

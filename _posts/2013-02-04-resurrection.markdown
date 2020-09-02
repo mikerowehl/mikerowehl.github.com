@@ -2,9 +2,6 @@
 layout: post
 title: "Resurrection"
 date: 2013-02-04 23:29
-comments: true
-categories: 
-- General
 ---
 This blog has been dormant for a long time, but I've decided to start it back
 up. I created the site cause I wanted a Wordpress install

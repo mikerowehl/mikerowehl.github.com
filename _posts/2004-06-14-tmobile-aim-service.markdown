@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-14 07:23:04
 layout: post
-slug: tmobile-aim-service
 title: TMobile AIM Service
-wordpress_id: 280
-categories:
-- Mobile Computing
 ---
 
 I tried to use the TMobile interface for using AOL Instant Messenger from my mobile phone the other day, and it didn't quite work out the way that I had hoped. In the past I probably would have gone off on a rant about it. But now that I have an unlimited data account, and because the AIM interface is a free feature, I'm not going to do that. Instead I'm going to say that it's pretty cool of TMobile to try to integrate their online services with existing offerings. They just have some work to do before the service is generally applicable. There are a few quirks and limitations that make the service hard to use and impractical if the people you're talking to don't know to modify their behavior to account for the interface you're using.

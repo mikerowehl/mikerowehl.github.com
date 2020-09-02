@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 10:34:38
 layout: post
-slug: folksonomy-or-how-i-learned-to-stop-worrying-and-love-the-mess
 title: Folksonomy, or How I Learned to Stop Worrying and Love the Mess
-wordpress_id: 455
-categories:
-- General
 ---
 
 [Folksonomies](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6329)

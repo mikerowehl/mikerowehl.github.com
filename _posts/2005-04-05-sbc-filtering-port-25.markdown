@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-05 22:37:49
 layout: post
-slug: sbc-filtering-port-25
 title: SBC Filtering Port 25
-wordpress_id: 482
-categories:
-- General
 ---
 
 When Elle and I got home from New Orleans our phone wasn't working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle.  But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25.  My first reaction is that it must be either network problems or [Dreamhost](http://www.dreamhost.com) bouncing servers (they seem to like to do that).  A while later and I'm still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!

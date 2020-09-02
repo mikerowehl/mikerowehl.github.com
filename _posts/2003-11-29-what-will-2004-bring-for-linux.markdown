@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-11-29 13:24:52
 layout: post
-slug: what-will-2004-bring-for-linux
 title: What Will 2004 Bring for Linux
-wordpress_id: 9
-categories:
-- Open Source
 ---
 
 Gadgetopia has an [entry](http://www.gadgetopia.com/2003/11/29/LinuxBlowsUpIn2004.html) linking to [an article at eweek](http://www.eweek.com/article2/0,4149,1398069,00.asp) about what the year 2004 will bring for Linux. The article is very positive, which of course makes me happy. Every year since 2000 I've heard from one sector or another that Linux is going to just "blow up" during the upcoming year. While it has gained market acceptance over time, it's gone through the more gradual adoption process that most technologies do.  Many technological advances do take a number of years to really succeed, cell phones being the example that I've heard referenced most recently. Linux has put in its time as a technological advance. I've been using it for over 10 years, and I wasn't even the first in my college dorm to pick up the project.

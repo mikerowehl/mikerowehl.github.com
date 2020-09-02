@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-11-06 12:41:33
 layout: post
-slug: overload-comments
 title: Overload Comments
-wordpress_id: 358
-categories:
-- General
 ---
 
 These are some of the thoughts I've had in relation to the [BloggerCon](http://www.bloggercon.org) Overload session led by [Robert Scoble](http://scoble.weblogs.com/). A lot of the discussion was focused at how to navigate the deluge of information that comes from being subscribed to a lot of blogs. Possible solutions raised were collaborative filtering and recommendation systems (such as the [attention.xml](http://developers.technorati.com/wiki/attentionxml) effort), additional metadata, and filtering by intermediaries. There's another parallel problem in how to deal with there being millions of blogs, and how do you pick the blogs to read.  I think the latter problem is more general. How does the average user end up being able to include blogs in their reading habits? How do we structure a system for end users that doesn't impose the same kind of intermediary or chanel delivery system that blogs are supposed to work around?

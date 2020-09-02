@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-11-02 01:03:04
 layout: post
-slug: the-world-outside
 title: The World Outside
-wordpress_id: 351
-categories:
-- Mobile Computing
 ---
 
 I went over to the [BayCHI presentation on Mobile Media Metadata](http://www.baychi.org/bof/mobile/20041028/) last week. Fantastic stuff. Marc Davis from [Garage Cinema Research](http://garage.sims.berkeley.edu/) spoke about [the research they have going on](http://garage.sims.berkeley.edu/research.cfm). The presentation he gave focused mostly on mobile metadata. For now lets just talk about images. One of the points he made was that image classification systems tended to focus completely on the image itself. They look at a stream of bits and either attempt to determine the content of the image or attempt to fufill queries based entirely on those bits. But with the source of photo content increasingly being connected mobile devices, there's potentially a much richer source of info than the bits themselves. The temporal and spatial information can potentially tell the system a lot more about an image than can be inferred from the image itself. Add in some social aspects, such as "what have others who have taken pictures in approximately this location used as the subject of their photos", and the system can infer quite a bit.

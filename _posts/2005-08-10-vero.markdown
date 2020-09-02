@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-10 12:10:54
 layout: post
-slug: vero
 title: Vero
-wordpress_id: 541
-categories:
-- Silicon Valley
 ---
 
 There's a new Italian restaurant downtown Palo Alto.  They've been open for dinner for the last few month, but just started opening for lunch last week. The food is really good, and because it's new it's not yet crowded during lunch. The meat lasagne with bechamel is easily as good as Mike's Cafe in Menlo Park, which is saying A LOT. And they have an excellent espresso.  I think I might just stop by for the coffee on the days when I don't eat there. They have a [placeholder website up](http://www.veroristorante.com/) (cause it's Palo Alto, of course), but the restaurant is up and going. Here's a [map](http://www.mapquest.com/maps/map.adp?searchtype=address&country=US&addtohistory=&searchtab=home&address=530+Bryant+st&city=palo+alto&state=ca&zipcode=). It's on Bryant right between University and Hamilton (530 Bryant St.), very convenient.

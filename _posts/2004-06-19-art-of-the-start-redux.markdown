@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-19 11:31:27
 layout: post
-slug: art-of-the-start-redux
 title: Art of the Start Redux
-wordpress_id: 294
-categories:
-- General
 ---
 
 I've cleaned up my notes from the other day, both to ensure that I've reread all of them to refresh my memory, and to clarify some vague points and correct some mistakes. Two big posts this time, hope that works out for the rest of you.

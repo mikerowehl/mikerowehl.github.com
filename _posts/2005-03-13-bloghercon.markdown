@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-13 11:49:35
 layout: post
-slug: bloghercon
 title: Bloghercon
-wordpress_id: 446
-categories:
-- Silicon Valley
 ---
 
 [Elle](http://www.ellementk.com) has been helping out with the [Bloghercon effort](http://workerbeesblog.blogspot.com/2005/03/now-cat-can-really-be-let-out-of-bag.html) that [Elisa](http://workerbeesblog.blogspot.com/) has bee driving. I wasn't sure if they wanted to make info about the effort public yet, but apparently is was announced this past week and [discussion is underway](http://www.feedster.com/search.php?hl=en&ie=UTF-8&q=bloghercon&sort=date). They're not sure yet if men will be welcome at the session yet, which I admit I don't agree with. But I do agree with a lot of the stuff that [Charlene says](http://blogs.forrester.com/charleneli/2005/03/blogihericon_co.html) about the effort. Although I can come up with a dozen or so women who blog faster than I can say them normally, a lot of the other points in there I agree with. Jessica Baumgart recently [posted some points as well](http://blogs.law.harvard.edu/jkbaumga/2005/03/11#a3227).

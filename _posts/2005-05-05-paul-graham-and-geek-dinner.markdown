@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-05 10:38:47
 layout: post
-slug: paul-graham-and-geek-dinner
 title: Paul Graham and Geek Dinner
-wordpress_id: 499
-categories:
-- Silicon Valley
 ---
 
 We went out to hear [Paul Graham speak last night](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1676&mo=5&yr=2005) and after that we [gathered together some geeks to meet for dinner in Palo Alto](http://www.ellementk.com/archives/2005/05/04/338). At first it was going to be a small group, we thought maybe 5 or 6 people. But by the time we actually sat down [there were 15 people at the table](http://www.flickr.com/photos/niallkennedy/12449886/in/photostream/).  Il Fornaio worked out quite well for the gathering. The space they gave us was actually big enough for 15 people. I hate when you go somewhere with a big group and they give you a table that you can barely stand around shoulder to shoulder. They were open late. And it was pretty cheap.  The bill split evenly came out to $17 per person, which isn't much considering that most people had wine and there were a lot of entrees served. Some people had just desert or a cocktail, but still that's pretty cheap for a group outing.

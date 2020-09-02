@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-28 08:54:38
 layout: post
-slug: mobile-news
 title: Mobile News
-wordpress_id: 303
-categories:
-- Mobile Computing
 ---
 
 There's a [post over at TheFeature](http://www.thefeature.com/article?articleid=100786&ref=1598815) about trying to get the traditional news business to adapt to mobile information delivery. I know my own experiences are probably way out of line with the norm, but I've built up a little list of feeds that I can scan when I've got a few minutes worth of time. My mobile feeds are the ones that provide the best summary versions (or have very short entries to begin with), and I scan through them with my phone. If I find something interesting, I email the link to myself so that I can check up on the full version when I get back to my computer. Not perfect, but it works out pretty well.

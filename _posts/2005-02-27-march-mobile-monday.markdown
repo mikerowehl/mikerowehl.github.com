@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-27 20:08:21
 layout: post
-slug: march-mobile-monday
 title: March Mobile Monday
-wordpress_id: 436
-categories:
-- Mobile Computing
 ---
 
 The announcement for the [March Mobile Monday is up](http://www.mobilemonday.com/2005/02/march-mobile-monday.html). The topic this time is Mobile Gaming, inspired in large part by the [Game Developers Conference](http://www.gdconf.com) being in town at the same time. We're going to be over at [Dimension7](http://www.dimension7.com) again, cause that's right down Folsom from Moscone and should be convenient for all the conference goers.  Here's the essential info:

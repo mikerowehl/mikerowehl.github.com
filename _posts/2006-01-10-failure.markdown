@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-10 17:44:44
 layout: post
-slug: failure
 title: Failure!!
-wordpress_id: 604
-categories:
-- General
 ---
 
 We failed in [the quest for 100 cups of coffee in 48 hours](http://www.rowehl.com/blog/?p=600). We both made it up to 75 however, which is a pretty respectable showing. I think 100 is possible, we just need to schedule it out better.  Both of us stopped for a while yesterday, while we probably could have kept going if we didn't have things to do. So next attempt (and yes! there will be another attempt) will be scheduled on something like vacation days, or a weekend at least. The espresso certainly helped out to keep the volume of liquid down, we'll probably include more of that next time. Keeping meals simple but frequent made a huge difference for me. And antacid, lots and lots of antacid.

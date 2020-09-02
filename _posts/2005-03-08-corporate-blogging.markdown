@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-08 09:42:36
 layout: post
-slug: corporate-blogging
 title: Corporate Blogging
-wordpress_id: 440
-categories:
-- Feedster
 ---
 
 The [issues that Niall Kennedy has had regarding this blog postings](http://www.niallkennedy.com/blog/archives/2005/03/whose_voice_is.html) definitely surprised me. I didn't expect Technorati to have the reaction to the postings that it did, even if there was some flack from those companies and projects pictured in the image Niall posted (which by the way I liked two days ago, and am now considering getting made into a full size poster given the effect that it had - I consider the current conversation evidence that his image was good art). I would have expected the reaction by Technorati to be something more like telling the responding companies "Hey, Niall just works here, we don't own him.  If you have issue with what he said please direct your comments to him."  Seems perfectly rational to me. For some additional commentary and a great running timeline of how it went down check out [Tony Gentile's post](http://www.buzzhit.com/2005/03/technorati-gags-community-managers.html).

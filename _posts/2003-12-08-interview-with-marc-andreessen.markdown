@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-08 17:06:32
 layout: post
-slug: interview-with-marc-andreessen
 title: Interview with Marc Andreessen
-wordpress_id: 26
-categories:
-- Silicon Valley
 ---
 
 There's [an interview with Marc Andreessen](http://www.sfgate.com/cgi-bin/article.cgi?file=/chronicle/archive/2003/12/07/BUGMP3GOVK1.DTL) over at SFGate.com, and it touches on lots of issues I figured would be near and dear to those still in the Bay Area. I share Marc's sentiments on just about every issue. In particular the bursting of the bubble and the effect it's had on the valley. I moved out here relatively recently. I already knew the bubble was burst before I made the move. I viewed it as a tremendous opportunity. There are all these high tech mavens out here, and lots of tech companies, and thousands of tallented programmers. But when you have that critical mass, once an area starts to draw people, it undergoes a process of swelling and restriction. The same thing happens at large companies.

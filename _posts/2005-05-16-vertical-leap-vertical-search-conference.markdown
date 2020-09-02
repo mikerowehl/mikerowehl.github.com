@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-16 13:49:13
 layout: post
-slug: vertical-leap-vertical-search-conference
 title: Vertical Leap Vertical Search Conference
-wordpress_id: 507
-categories:
-- Silicon Valley
 ---
 
 [Dave McClure](http://www.500hats.com/sys-tmpl/door/) and [Jeff Clavier](http://www.softtechvc.com/) are putting together [Vertical Leap, a vertical search conference](http://blog.softtechvc.com/2005/05/introducing_ver.html). The event is [being run through SDForum](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1680).  And of course I just recently let my SDForum membership lapse because I haven't been as interested in their events as I have been in the free stuff. If getting folks like Dave and Jeff involved is a general trend and not an isolated coincidence I'll have to renew my membership.

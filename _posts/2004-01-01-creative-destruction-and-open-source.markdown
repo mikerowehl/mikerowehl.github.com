@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-01 21:37:09
 layout: post
-slug: creative-destruction-and-open-source
 title: Creative Destruction and Open Source
-wordpress_id: 76
-categories:
-- Open Source
 ---
 
 I've been reading [Creative Destruction](http://www.mckinsey.com/knowledge/books/book_creativedestruction.asp) recently, and I just wanted to share some thoughts related to the points in the book, particularly with relation to open source. The title of the book is a reference to a concept which apparently seems to stem from Joseph Schumpeter. [The idea](http://transcriptions.english.ucsb.edu/archive/courses/liu/english25/materials/schumpeter.html) is that capitalism works not so much because a set of firms competes against each other, but because radically new firms are allowed to enter and force the old ones into extinction. The new firms create a new order, but destroy the old. Critiquing the view held by economists, Schumpeter says:

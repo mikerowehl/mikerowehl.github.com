@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-04-03 05:51:06
 layout: post
-slug: more-jerry-taylor
 title: More Jerry Taylor
-wordpress_id: 636
-categories:
-- General
 ---
 
 Some [additional info about the politician who incorrectly threatened CentOS with FBI action](http://www.tuttletimes.com/siteSearch/apstorysection/local_story_088201244.html). Gotta love this:

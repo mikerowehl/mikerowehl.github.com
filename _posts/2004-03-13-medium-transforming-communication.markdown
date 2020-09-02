@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-13 17:43:05
 layout: post
-slug: medium-transforming-communication
 title: Medium Transforming Communication
-wordpress_id: 186
-categories:
-- Dweeb
 ---
 
 Engadget had a [post about a novel delivered to cell phones in 1,600 word installments](http://www.engadget.com/entry/7673568580289881/), which sounded interesting but I held off posting about it for a while. The concept does have some initial "neat" factor to it, but I wanted to mull it over for a little while. This post is really about communication methods changing and shaping the content of communication, and not just about this novel delivered to cell phones. The novel does display a lot of factors I want to talk about however. Most important, that the structure of the novel was based in part on the delivery method. Not just that it was broken up, but that the author chose a writing style that was more concise and action oriented. But that got me thinking about how often communication is not targeted to the methods being used. In particular, the use of hyperlinks in web pages. The use of links we see today is almost nothing like the way they were intended to work. If you want to see the way they were intended to work, take a look at online documentation about programming languages. Just about [anything from the Java docs at Sun should do](http://java.sun.com/j2se/1.5.0/docs/api/javax/imageio/stream/ImageInputStream.html). Links have mostly turned into menu items, leading to other areas you can go to and not necessarily threading together thoughts or concepts.

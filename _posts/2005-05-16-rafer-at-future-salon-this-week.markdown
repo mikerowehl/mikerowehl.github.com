@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-16 08:15:03
 layout: post
-slug: rafer-at-future-salon-this-week
 title: Rafer at Future Salon This Week
-wordpress_id: 506
-categories:
-- Feedster
 ---
 
 Rafer is [going to be the presenter at Future Salon this week](http://www.futuresalon.org/2005/05/may_future_salo.html):

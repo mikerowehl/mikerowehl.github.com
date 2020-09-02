@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-30 11:24:42
 layout: post
-slug: off-to-new-orleans
 title: Off to New Orleans
-wordpress_id: 477
-categories:
-- General
 ---
 
 [Elle](http://www.ellementk.com)  and I are off to New Orleans for a few days.  My cousin is getting married down there, and we're extending the trip a bit to do some exploring.  I feel sorry to be leaving the [Feedster](http://www.feedster.com) crew when there's so much going on. But a promise is a promise, and I promised Elle a vacation in New Orleans.  I could deal with a little bit of rest myself. New Orleans food is good on it's own, but we've got the inside track on this one. My cousin the French chef is marrying a pastry chef. Everyone winks and nods when I tell them I'm going to a wedding between two chefs down in New Orleans. Makes sense that this would be something to behold. I'll try to remember to take plenty of pictures.

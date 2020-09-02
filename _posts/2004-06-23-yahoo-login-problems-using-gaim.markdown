@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-23 21:51:11
 layout: post
-slug: yahoo-login-problems-using-gaim
 title: Yahoo Login Problems Using Gaim
-wordpress_id: 297
-categories:
-- Open Source
 ---
 
 It appears that Yahoo has again [changed something that causes third party apps to fail](http://sourceforge.net/tracker/?func=detail&atid=100235&aid=978640&group_id=235). Now, it's not like I'm unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don't agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it's just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can't contact them. I'm not really happy about that, but unfortunately there's not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there's nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of "value in their network". Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I'm off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch.

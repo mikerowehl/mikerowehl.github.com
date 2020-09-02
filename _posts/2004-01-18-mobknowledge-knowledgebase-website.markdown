@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-18 13:46:04
 layout: post
-slug: mobknowledge-knowledgebase-website
 title: MobKnowledge Knowledgebase Website
-wordpress_id: 117
-categories:
-- Mobile Computing
 ---
 
 Russell Beattie has started [a new website](http://www.mobknowledge.com) to serve as a "knowledge base for mobile phones". He [posted about it in his blog](http://www.russellbeattie.com/notebook/1005787.html), describing why he chose the collaboration format that he did and what the goals are. I immediately signed up and added info for a bunch of the US providers I've tested equiptment with. I think this site is a great idea, and I even agree with the knowledge base format. One thing I would like to see is access to the KB from mobile phones. If it were possible to get to the knowledge base from a mobile phone, the KB could have info about services like SMS shortcodes, WAP services, links to other sites with more info. I think that keeping the site a knowledge base instead of a news site is a great idea, but I also think that these other features really are part of mobile computing.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-12-13 16:03:43
 layout: post
-slug: buddybuzz-mobile-news
 title: BuddyBuzz Mobile News
-wordpress_id: 371
-categories:
-- Mobile Computing
 ---
 
 [Peter Kaminski](http://peterkaminski.com/) mentioned [BuddyBuzz](http://buddybuzz.org) to Elle during [Bloggercon](http://www.bloggercon.org/), and she came home with a flyer about it. [Russ](http://www.russellbeattie.com/notebook/) lent me a 6600, so I figured I would try it out. It's an interesting application. It uses the concept of rapid serial visual presentation, which means that one word is shown on the screen at a time and they're shown in rapid sucession (for more info see [this article](http://www.geek.com/news/geeknews/2002jan/bpd20020118009836.htm)). I do find information presented this way easier to read actually. For a news story at least. There's no scanning the page each time you scroll and losing your place. I've found the experience to be quite pleasant actually. And that I can crank the speed up pretty high and still take in the story.

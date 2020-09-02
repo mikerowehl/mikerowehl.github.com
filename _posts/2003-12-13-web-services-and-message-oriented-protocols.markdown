@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-13 14:10:52
 layout: post
-slug: web-services-and-message-oriented-protocols
 title: Web Services and Message Oriented Protocols
-wordpress_id: 34
-categories:
-- Mobile Computing
 ---
 
 There's [an interview with Adam Bosworth](http://www.acmqueue.org/modules.php?name=Content&pa=showpage&pid=29) over at ACM Queue, and it touches on some ideas I've had in relation to mobile application. There is a lot of stuff that I don't agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I'm hoping that's an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I'm definitely going to have to keep steering clear of enterprize application settings.

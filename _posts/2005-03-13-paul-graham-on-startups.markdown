@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-13 22:23:36
 layout: post
-slug: paul-graham-on-startups
 title: Paul Graham on Startups
-wordpress_id: 448
-categories:
-- Silicon Valley
 ---
 
 I really enjoyed reading [Paul Graham's take on running a startup](http://www.paulgraham.com/start.html). It seems like almost everything I read online these days is either relatively short or I just don't finish it. The stuff that Paul Graham writes tends to keep my attention all the way through however. Do I agree with everything in there? No. But it strikes me as a very honest evaluation of his experiences and a great glimpse into his reasoning. That's all I think anyone can ever realistically expect. Of course the bits about prototyping and building your early versions for flexibility and agility are right up my alley. At the [March 106Miles meeting](http://106miles.blogspot.com/2005/03/march-meeting-recap.html) there were a lot of questions about early stage valuation. Here's how Graham answers that one:

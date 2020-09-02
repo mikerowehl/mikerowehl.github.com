@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-08-24 11:02:00
 layout: post
-slug: sip-and-mobile-services
 title: SIP and Mobile Services
-wordpress_id: 329
-categories:
-- Mobile Computing
 ---
 
 Bill brought up some excellent topics at his [presentation at BAMF this weekend](http://billday.com/2004/08/21/bamf-j2me-at-five-slides). The one that struck me the most was his mention of SIP as a major item for future development of mobile applications. Given that right before the meeting I was blogging that I wanted "[a service that respects my mobile device not as a remote and minimal information terminal, but as a first class node within a worldwide network](http://www.bitsplitter.net/blog/index.php?p=328)" that really grabbed my attention. I was somewhat familiar with SIP (Session Initiation Protocol) from the Voice Over IP side. SIP is used in some VOIP implementations, and has been around for a while. I wasn't at all familiar with the proposed uses within the mobile realm. For a quick techie overview of the protocols, which should make sense to anyone familiar with basic networking, check out [this overview from Cisco](http://www.cisco.com/univercd/cc/td/doc/product/voice/sipsols/biggulp/bgsipov.htm). For information about how SIP fits into mobile applications, check out the [FAQ from Forum Nokia](http://nds1.forum.nokia.com/nnds/ForumDownloadServlet?id=5039&name=SIP%5FFAQ%5Fv1%5F0%5Fen%2Epdf). Just fucking fantastic stuff. They address issues of IM and presence over the mobile networks and programmed handset to handset communication.

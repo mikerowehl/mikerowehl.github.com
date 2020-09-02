@@ -2,9 +2,6 @@
 layout: post
 title: "Use of Time"
 date: 2013-02-06 12:48
-comments: true
-categories: 
-- Startup
 ---
 I love the idea behind social media services, helping to connect people and
 strengthen relationships. However I don't think most are actually fulfilling

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-15 23:24:05
 layout: post
-slug: now-that-bluetooth-is-alive-its-dead-again
 title: Now That Bluetooth Is Alive, It's Dead Again
-wordpress_id: 316
-categories:
-- Mobile Computing
 ---
 
 TheFeature has an article, [Now That Bluetooth Is Alive, It's Dead Again](http://www.thefeature.com/article?articleid=100889), which is a nice even bit of commentary about Bluetooth. I am actually pretty surprised that Bluetooth sales have picked up the way that they have. I'm a pretty heavy Bluetooth fan I guess. Maybe fan isn't the right word. I've worked on some Bluetooth software for Linux, bashed my head against the various problems till I got things working. And there are problems. Even with my relatively recent devices, there were things I had to do to get them working together that it's just pure folly to expect an end user to be able to do. I get dizzy when I think about how long ago I first started talking about Bluetooth. Something goes wrong when I'm fooling with Bluetooth and I think to myself "hell, it's still new, it's gonna have glitches." But no, it's not. I don't remember when the first version of the spec was published, but it must have been before 2000 cause I know I was still in New York. If it's four years later and there are still major incompatibility problems, something has gone wrong.

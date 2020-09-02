@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-19 14:25:07
 layout: post
-slug: new-wordpress-install
 title: New Wordpress Install
-wordpress_id: 395
-categories:
-- General
 ---
 
 I upgraded my [Wordpress](http://www.wordpress.org) install today. I've been getting a ton of comment spam, and instead of hacking my aging install to deal with it I want to hack a new install. Wordpress has served me really well, and I love the features, so instead of being a punter and just downloading the latest release, I installed the version from CVS instead. Matt said [there are all kinds of antispam things that seem to be working](http://photomatt.net/2005/01/12/no-spam/), so I'll give them a try. And hack if I have issues.

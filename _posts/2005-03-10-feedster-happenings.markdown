@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-10 03:41:10
 layout: post
-slug: feedster-happenings
 title: Some Support for Niall AND Technorati
-wordpress_id: 441
-categories:
-- Feedster
 ---
 
 I've been running around quite a bit, and haven't posted about a bunch of things that I wanted to. There are a few things I want to at least throw out there though. The first is that I want to point people toward the [post that Rafer put up](http://corp.feedster.com/blog/rafer/archives/2005/03/feedster_corpor.html) about [the common interpretation](http://steveshu.typepad.com/steve_shus_weblog/2005/03/perspectives_on.html) of the [Feedster reaction](http://feedster.blogs.com/corporate/2005/03/corporate_blogg.html) to the still-ongoing [issues that Niall had with one of his blog posts](http://www.niallkennedy.com/blog/archives/2005/03/whose_voice_is.html). I just want to point it out here as well, cause I think the reaction was misinterpreted by many. As for my own reaction to the issue, I've [already posted about why I think the policy is important](http://www.bitsplitter.net/blog/?p=440). On the overall issues I have to admit that I have a reaction somewhat like what [Stowe Boyd expresses](http://www.corante.com/getreal/archives/2005/03/09/niall_kennedy_and_the_spectre_of_being_dooced.php). There is a dangerous precedent at work here, and it's not the kind of thing that one person can fight alone. Corporate culture encourages an environment which is really pretty unhealthy as a whole. How do we attempt to change that environment without forcing some people to martyr themselves for the cause? How do we do so without the companies those people work at also having to martyr themselves? Because there definitely was risk to Technorati as well, they're judged by some rather unhealthy standards by the rest of the business environment. This is a sea change move to try to uninstall a widespread and flawed set of social norms. I have no idea how one would go about trying to do it. But I do know that Niall is an exceptional person to know in the real world, and it would be unfortunate if he were only able to partially express himself online for fear of negatively reflecting on his employer.

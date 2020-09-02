@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-02 17:08:13
 layout: post
-slug: open-source-economics
 title: Open Source Economics
-wordpress_id: 146
-categories:
-- Open Source
 ---
 
 There's [an article at the BBC](http://news.bbc.co.uk/1/hi/technology/3436289.stm) with some interesting comments in general about open source. There is one section in particular that I think helps to summarize the case for open source in developing countries quite well:

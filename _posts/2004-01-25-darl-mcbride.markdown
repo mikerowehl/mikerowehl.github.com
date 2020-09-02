@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-25 12:51:57
 layout: post
-slug: darl-mcbride
 title: Darl McBride
-wordpress_id: 129
-categories:
-- Open Source
 ---
 
 While joking in the IRC channel at [pilot-link](http://www.pilot-link.org) setuid pointed me to [an analysis of Darl McBride's behavior](http://nitroracing.org/sco/comments.php?article=3207). It is a pretty funny read on its own, but what struck me after reading even a few of the quotes from Darl is that he doesn't understand that everyone benefits from using open source, even software vendors (the competent ones at least). He seems to think that people using open source software means that the commercial software market is dead. That is not what it means at all. It means that software vendors have to ADD VALUE in what they do. It  means that they can't just sell the same old piece of shit year after year and expect to protect their "market position" using the law. Darl thinks that he has a right to sell software because he has customers. Weird. For some reason Darl thinks that the only way that software can get written and that ideas can be formed is by people working in companies:

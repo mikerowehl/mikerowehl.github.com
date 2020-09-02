@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-17 23:55:55
 layout: post
-slug: etech
 title: '#etech'
-wordpress_id: 163
-categories:
-- Dweeb
 ---
 
 A [post by Justin Hall over at The Feature](http://www.thefeature.com/article?articleid=100392) does a very good job of summarizing the impression of ETech that I got. Justin says:

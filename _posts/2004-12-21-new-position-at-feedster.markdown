@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-12-21 00:08:03
 layout: post
-slug: new-position-at-feedster
 title: New Position at Feedster
-wordpress_id: 372
-categories:
-- General
 ---
 
 So it's all official and getting somewhat settled down, I'm now a [Feedster](http://www.feedster.com) employee. The first thing that people normally say after "Cool!! Feedster rocks!" is "Well, what the hell are you doing at Feedster?" Okay, valid question. It's a bit different than what most of the people out there know me for. But I actually do a decent amount of web programming, and I can sling XML when XML demands to be slung. The other question is how Feedster relates to my whole kick about [mobility](http://www.mobilemonday.us). It doesn't. Not yet and there's no reason it has to. Mobility is my personal passion. I work on mobility stuff cause nothing screams "M4d Sk1llz" more than being able to IM from the train. Plus, it'll probably be useful for something one day. (That was partial sarcasm. I love mobility, I just think it has a lot more potential than we're currently able to get from it.)

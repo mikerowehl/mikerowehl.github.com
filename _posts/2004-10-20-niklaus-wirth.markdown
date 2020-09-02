@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-20 19:38:08
 layout: post
-slug: niklaus-wirth
 title: Niklaus Wirth
-wordpress_id: 346
-categories:
-- Dweeb
 ---
 
 Here's some quick notes from the talk that Niklaus Wirth gave at the Computer History Museum on Oct 20th. The topic was "How I Became Interested In Computer Languages".

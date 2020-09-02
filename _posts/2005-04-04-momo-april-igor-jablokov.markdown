@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-04 19:00:05
 layout: post
-slug: momo-april-igor-jablokov
 title: MoMo April Igor Jablokov
-wordpress_id: 478
-categories:
-- Mobile Computing
 ---
 
 Igor Jablokov presenting at [Mobile Monday](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html) -

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-13 16:49:04
 layout: post
-slug: presenting-at-106miles
 title: Presenting at 106Miles
-wordpress_id: 447
-categories:
-- Silicon Valley
 ---
 
 [Russ](http://www.russellbeattie.com/notebook) and I are going to be [presenting at 106Miles in April](http://106miles.blogspot.com/2005/03/april-106-topic.html). The topic is "Every Business Needs a Mobile Strategy", and as much as possible I would like to encourage discussion on this one. So lets start out beforehand and figure out what topics we want to hit when we get together at the meeting. Russ and I have been running [Mobile Monday](http://www.mobilemonday.com) meetings here in the Bay Area, and the response has been simply fantastic. One of the most well respected conferences that I know of, [DEMO](http://www.demo.com/demofall/), merged the mobile and main tracks of their conference because it seems like the two are now inseparable:

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-27 09:24:47
 layout: post
-slug: dan-gillmor-speaking-in-palo-alto
 title: Dan Gillmor Speaking in Palo Alto
-wordpress_id: 257
-categories:
-- Silicon Valley
 ---
 
 Dan Gillmor is [going to be speaking in Palo Alto on May 20th](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1380). This is part of the [SDForum](http://www.sdforum.org/SDForum/) Distinguished Speaker series. All of the speakers I've gone to see before are engineers or business people working in high tech. I'm very interested in hearing what Dan has to say. In particular it looks like he's going to be talking about public authoring:

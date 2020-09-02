@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-06 16:38:21
 layout: post
-slug: steaming-load
 title: Steaming Load
-wordpress_id: 266
-categories:
-- Mobile Computing
 ---
 
 I just posted about Sem@code, which I think rocks. Since I've said so much good, I feel somewhat justified in bringing up [this article about RFID and cell phones](http://wireless.newsfactor.com/story.xhtml?story_id=23921). I can think of no appropriate words, except perhaps "steaming load of crap". Take the quote from the article used in the post leader:

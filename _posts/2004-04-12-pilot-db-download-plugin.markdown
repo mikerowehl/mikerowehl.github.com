@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-12 09:51:33
 layout: post
-slug: pilot-db-download-plugin
 title: Pilot-DB Download Plugin
-wordpress_id: 237
-categories:
-- Open Source
 ---
 
 I've started a new app as part of [Open Palm Environment](http://openpalmenv.sf.net). This time it's a [plugin for pilot-db](http://cvs.sourceforge.net/viewcvs.py/openpalmenv/db-download/). [Pilot-DB](http://pilot-db.sourceforge.net/) is a very popular open source database program for Palm handhelds. It allows the user to create their own databases and fill in the records on their PDA. There are existing databases for all types of information, like yearly wine reviews, state capitals, Internet RFCs, bus schedules, etc. I'm hoping that if we make it easy for people to create databases with active links, we'll end up with databases of [Project Gutenberg](http://promo.net/pg/) content with links to download the full text, or large databases with open source titles that can be downloaded on demand.

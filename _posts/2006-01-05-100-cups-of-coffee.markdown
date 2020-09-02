@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-05 11:38:23
 layout: post
-slug: 100-cups-of-coffee
 title: 100 Cups of Coffee
-wordpress_id: 600
-categories:
-- Dweeb
 ---
 
 I started using [43Things](http://www.43things.com) finally, and one of my goals is to [drink 100 cups of coffee](http://www.43things.com/things/view/301170). This is in homage to [the Futurama episode where Fry drinks 100 cups of coffee](http://www.gotfuturama.com/Information/Capsules/4ACV16/) and reaches some kind of enlightenment. Sure, it's a cartoon and all, but it still looked like fun. And I think it's important to have goals, no matter how inane they might be. Most people say something like "you know it is possible to overdose on caffeine?" or "that would probably kill you". Generally discouraging remarks. But thanks to Wikipedia I think I might be looking at a plausible goal. Check out the [caffeine entry](http://en.wikipedia.org/wiki/Caffeine):

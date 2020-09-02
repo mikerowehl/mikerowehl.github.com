@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-23 10:49:27
 layout: post
-slug: blogon-transcripts
 title: BlogOn Transcripts
-wordpress_id: 319
-categories:
-- General
 ---
 
 I'm over at [BlogOn](http://www.blogonevent.com) today. There's not much need to upload notes. Heath Row already has transcripts up:

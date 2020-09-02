@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-17 22:21:15
 layout: post
-slug: gnu-linux-home-desktop
 title: GNU-Linux Home Desktop
-wordpress_id: 114
-categories:
-- Open Source
 ---
 
 There's a [third part](http://www.osviews.com/modules.php?op=modload&name=News&file=article&sid=732) to the series of articles about building a distro that computer retailers could use to build PCs. I still don't agree with running the project as a contest, as [I've mentioned before](http://www.bitsplitter.net/blog/index.php?p=94), but I do think the idea in general is great. The project aims to develop not just a full distro in terms of the software that gets installed on the PC when initially setup, but also marketing materials, artwork, and apparently also software repository services. The article seems to indicate that under the concept of the Open Core of the home desktop distribution providers would now provide value added services. Currently distribution providers make self contained reasonably usable Linux systems. But the author says that the usable Linux system should be the baseline, and that disto providers should be adding something to this base. I can certainly agree with that point, but I think the arguments laid out are a bit fuzzy. I still have trouble picturing how this would unify the distribution providers. Sure, it would move the bar up, which is a good thing. It's a step in the correct direction. But it's not the complete solution I don't think.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-06-01 01:26:00
 layout: post
-slug: june-mobile-monday
 title: June Mobile Monday
-wordpress_id: 521
-categories:
-- Silicon Valley
 ---
 
 The info for the [June Mobile Monday](http://www.mobilemonday.com/2005/06/meeting-june-6th-on-usability.html) is up:

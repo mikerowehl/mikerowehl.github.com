@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-28 22:41:35
 layout: post
-slug: small-pieces-all-smushed-together
 title: Small Pieces all Smushed Together
-wordpress_id: 217
-categories:
-- Dweeb
 ---
 
 I've finally gotten around to reading [Small Pieces Loosely Joined](http://www.smallpieces.com/) as a whole. It's one of those books that I've heard so much about and read so many quotes from that I felt like I would already have a good feel for what it was really about. But once I started reading it I realized it's not something that's good just because it's insightful, but because everyone sees issues relevant to their own point of view. So of course now I feel like a wonk for not having read it sooner. I should have known I was in for something different when the book started going into a description of all kinds of mapping efforts for the Internet. I'm sitting in my home office, the walls covered with the [poster versions of the Cheswick maps](http://www.lumeta.com/news/pressreleases.php?pr_ID=10) from three years and with a copy of the [Atlas of Cyberspace](http://www.cybergeography.org/atlas/atlas.html) sitting on my table, and I'm reading a book that starts out with a description of space as applied to the Internet. It gave me this sense of personal connection with the material, but I'm pretty sure that just about everyone who reads it and has spent time on the Internet will see something of themselves in some part of it. That's probably why David Weinberger did such a great job of pulling together a unified theory of the Internet. He seems to inherently understand the duality of mass communication and personal address. The book comes off excellently, and to the other people out there who might be thinking "Oh yea, I've heard about that book a thousand times, I know what it's all about." I encourage you to go pick up a copy anyway. Even if you do know all the major subject topics, there's a lot to be learned from the nuance and presentation as well.

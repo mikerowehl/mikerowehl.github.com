@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-10-12 10:16:41
 layout: post
-slug: social-computing
 title: Social Computing
-wordpress_id: 586
-categories:
-- General
 ---
 
 I'm [moderating a panel tomorrow on social software](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1757&mo=10&yr=2005). It looks like the impetus for the discussion might have been [a recent article in the MIT Technology Review about Social Computing](http://www.technologyreview.com/articles/05/08/issue/feature_social.asp?p=0). The panel participants and I have been emailing this week talking about what the discussion points for the panel should be. It's pretty obvious that "Social Networking" has become a pretty corrupted term meaning just about any software that involves a community of users. I know that I'm personally jazzed about continuous/ubiquitous computing and the transformation in online services that accompanies access to information at the decision point instead of just on the desktop. I'm also pretty happy about the decomposition of the silos of information that made up the previous versions of online services into services which include APIs as major components of their offerings.

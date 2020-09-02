@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-06 10:07:47
 layout: post
-slug: eating-their-own-dogfood
 title: Eating Their Own Dogfood
-wordpress_id: 415
-categories:
-- Mobile Computing
 ---
 
 I got an email from Russ the other day saying "Hey, why isn't your phone accepting calls?"  Sounded pretty weird, but not beyond belief, I normally have bad luck with billing systems.  I have an account at [Washington Mutual](http://www.wamu.com/home.htm), and for a while they seemed to be rejecting autopayments for no reason that anyone inside or outside the organization could determine.  I dialed my number from a landline and sure enough there was a message: "At the subscribers request, this line is no longer accepting incoming calls." Very odd, I was DEFINITE I had not requested incoming calls be shut off. I logged into my Washington Mutual online system and checked the transactions on my account. Weird, it did show a payment processed to T-Mobile just the week before. So I assumed this was just some glitch in the [T-Mobile](http://www.tmobile.com/) system and set about getting in touch with someone.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-02 20:03:03
 layout: post
-slug: 106miles
 title: 106miles Event Feb 8th
-wordpress_id: 410
-categories:
-- Silicon Valley
 ---
 
 There's a new networking group, called [106miles](http://106miles.org/), operating in the Silicon Valley area. I missed the first meeting, but the second meeting is going to be February 8th at 7pm.  Here's an excerpt from their description:

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-02 10:51:55
 layout: post
-slug: great-conversations
 title: Great Conversations
-wordpress_id: 340
-categories:
-- General
 ---
 
 I've had some great conversations over at [Gnomedex ](http://www.gnomedex.com) so far.  Here is a by-no-means complete set of links to people I didn't know before, but I had interesting conversations with.  Now I'm going to be reading their stuff.

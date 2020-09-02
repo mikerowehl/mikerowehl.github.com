@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-13 14:25:58
 layout: post
-slug: why-free-software-matters
 title: Why Free Software Matters
-wordpress_id: 240
-categories:
-- Open Source
 ---
 
 There's some interesting commentary about the difference between licensing software and purchasing it in [Why Free Software Matters](http://www.osnews.com/story.php?news_id=6710). It's certainly easy to forget just how much of what we do with computers actually ends up having a lot of strings attached. I would like to relate the discussion about licenses and open standards back to the Trusted Computing initiative I [brought up again yesterday](http://www.bitsplitter.net/blog/index.php?p=238). There are a lot of points which people respond to with the example that Sean gives: "So what? I run MS Word/Windows. It does what I want. Why should I care? They can't come into my house and take it away from me. Get that microphone out of my face." This is the issue with the TCPA that I have. Under the proposed model, they wouldn't have to come into your house to take it away. They would be able to make it so that you couldn't use the software unless you were using a set of software that the vendor approves of, and it provides mechanisms so that the vendor can switch the functions of the software and disable it at their will. The model makes it so that the vendor not only can keep your information from you by putting it into a format they don't give you the details for, but makes it so that they can cryptographically seal you off from your information. The TCPA model builds into the software provisioning system mechanisms to formalize all these protections. Vendors would no longer have to rely on "security through obscurity" in their formats and legal protections of licensing, TCPA would provide them with the tools to enforce their desires using the computer architecture. They're techniques that the vendors already try to leverage against us, and blessing the behavior by supporting it explicitly is something I feel would just lead to grosser abuses.

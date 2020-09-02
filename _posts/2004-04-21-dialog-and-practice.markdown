@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-21 13:33:26
 layout: post
-slug: dialog-and-practice
 title: Dialog and Practice
-wordpress_id: 247
-categories:
-- General
 ---
 
 I ran across a great blog today called [Asynchronous Dialogue](http://asynchronousdialogue.blogspot.com/). In particular I want to comment on a post there titled [What is dialogue?](http://asynchronousdialogue.blogspot.com/2004_04_01_asynchronousdialogue_archive.html#108164258451291620) I really liked this:

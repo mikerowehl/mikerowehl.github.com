@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-04 20:01:46
 layout: post
-slug: april-momo-thad-white
 title: April MoMo - Thad White
-wordpress_id: 481
-categories:
-- Mobile Computing
 ---
 
 Thad White speaking at [the April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

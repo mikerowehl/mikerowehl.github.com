@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 15:22:44
 layout: post
-slug: introduction-to-yahoo-search-web-services
 title: Introduction to Yahoo! Search Web Services
-wordpress_id: 460
-categories:
-- General
 ---
 
 [Introduction to Yahoo! Search Web Services](http://conferences.oreillynet.com/cs/et2005/view/e_sess/7033)

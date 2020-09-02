@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 11:50:06
 layout: post
-slug: from-the-classroom-remixing-wikis-with-rendezvous-web-services-and-schooltool
 title: 'From the Classroom: Remixing Wikis with Rendezvous, Web Services and SchoolTool'
-wordpress_id: 457
-categories:
-- General
 ---
 
 [From the Classroom: Remixing Wikis with Rendezvous, Web Services and SchoolTool](http://conferences.oreillynet.com/cs/et2005/view/e_sess/5985)

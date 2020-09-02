@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-15 23:05:36
 layout: post
-slug: saffo-speech
 title: Saffo Speech
-wordpress_id: 105
-categories:
-- Silicon Valley
 ---
 
 The speech by Paul Saffo this evening was very interesting. There were many points he brought up that jive with the stuff that I've been working on. There was a lot of stuff he said that meshed well with the events I've seen and heard about. Here are some of the points that I found most interesting.

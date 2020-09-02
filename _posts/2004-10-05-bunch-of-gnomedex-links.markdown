@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-05 07:54:08
 layout: post
-slug: bunch-of-gnomedex-links
 title: Bunch of Gnomedex Links
-wordpress_id: 341
-categories:
-- General
 ---
 
 [Gnomedex](http://www.gnomedex.com) was fantastic. Lots of people to talk to, and I thought the panel discussions were interesting even if others found some fault with them. Being at the conf you hear about a bunch of stuff that it's hard to find your way to if you weren't there to hear the off the cuff comments or pick up the links from IRC (I really should have logged the channel... oops). So here's a bunch of stuff, some from the [previous page I had](http://www.bitsplitter.net/blog/index.php?p=338) and some new stuff:

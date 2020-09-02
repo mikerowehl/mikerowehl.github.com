@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-21 11:31:17
 layout: post
-slug: lively-discussion
 title: Lively Discussion?
-wordpress_id: 122
-categories:
-- Silicon Valley
 ---
 
 Last night I went to [what I thought was a panel discussion at MIT/Stanford Venture Lab](http://www.vlab.org/204.cfm?eventID=40). The event description claimed that Whitfield Diffie was going to moderate a discussion covering topics like untapped areas of the security market and the implications of shift to a risk analysis based model for security. This is not at all what this event was. It started with Wit saying a few words about security in general, calling up mostly issues that those of us who have worked in security are already very aware of, but framing the overall security issue very well. But then it launched into a product pitch by ArcSight. I had no idea that was going to happen, and I don't think I would have paid for the event if I had known that a big chunk of it was just a podium for someone trying to pimp their new product. ArcSight does seem to be interesting, but it's certainly not revolutionary. Someone just had the business sense to actually write this "security nervous system" that those in the industry have been speculating about for a long time. The good ones have already written their own, possibly more than once. ArcSight decided to make a product of it, good for them. It's a nice position, I like it, but I don't care. If I wanted to hear about the product I would have gone to the website, not paid to hear them pitch.

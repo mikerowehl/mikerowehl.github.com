@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 15:05:22
 layout: post
-slug: art-of-the-start-9
 title: Art of the Start 9
-wordpress_id: 289
-categories:
-- Silicon Valley
 ---
 
 Bootstrapping

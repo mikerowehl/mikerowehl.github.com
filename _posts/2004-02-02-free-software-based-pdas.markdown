@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-02 23:17:24
 layout: post
-slug: free-software-based-pdas
 title: Free Software Based PDAs
-wordpress_id: 147
-categories:
-- Mobile Computing
 ---
 
 [An article from O'Reilly](http://www.linuxdevcenter.com/pub/a/linux/2004/01/29/zaurus.html) talks about some open source PDA projects. It does bring up some pretty cool points which I hadn't previously given all that much thought to, such as being able to move binaries around to different systems. That is a pretty kick ass point if you're trying to create some open source tools. I've been working on a very early stage [project to get together some open source tools for Palm devices](http://openpalmenv.sourceforge.net/). But that's because I use a Palm device for day to day stuff. At some point I expect Linux devices to be perfect for day to day work, but still I prefer Palm devices for the PIM functions. I have tried out a few of the earlier Linux based PDAs, and I'll probably end up with a Zarus at some point soon. For now however I have been fooling around with Palm apps. And coming back to do some Palm programming after having been away for almost 4 years is a pretty revealing. The Palm platform has grown quite a bit, as one would expect it to as it matured. But I don't think it has scaled very well. There are a lot of platform parameters now (hardware that may or may not be present, screen resolutions, color capabilities, networking, operating system support, and so on). It has become a lot more like programming for any other operating system. It used to have an elegant simplicity, but in order to take advantage of these capabilities programs can no longer be simple. There is a lot that a programmer might have to take into consideration to ensure that their application works smoothly on all platforms, or in some cases to make sure that it works at all.

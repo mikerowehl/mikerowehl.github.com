@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-27 18:39:39
 layout: post
-slug: rss-neighborhood
 title: RSS Neighborhood
-wordpress_id: 258
-categories:
-- General
 ---
 
 I went to the [RSS Neighborhood event on Monday](http://www.pheedo.info/archives/000050.html), where Scott Young did a great job guiding a free form discussion about RSS in general. The group was pretty varied, but most had some knowledge about what RSS is already. Some people were looking for the description of what exactly RSS should be used for and how it is different than existing methods, and the group never came to a consensus on that. I personally think that's a good thing. RSS is not a technology with existing well defined boundaries. It's at the start of adoption for a whole new set of tasks. RSS was originally developed at Netscape to allow embedding headlines from one site into a portal site. We're seeing it creep out into new areas of usage. I asked about adoption numbers, how many people read RSS of any sort? The rough response was 1% of the "internet public" consume RSS. Bill Flitter is supposed to get back to me with info about where that number came from, I suspect that even that number is somewhat inflated. Other people asked about the format itself, why use RSS instead of other delivery methods? There is no good answer to questions like that. I personally think that RSS is too early in the adoption cycle for us to be able to make predictions about what effect it will have on the enterprise. As such, there is no umbrella answer to when you should abandon other techniques and start looking at RSS. So why bother with talking about RSS at all?

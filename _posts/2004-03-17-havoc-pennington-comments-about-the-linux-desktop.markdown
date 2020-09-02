@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-17 11:44:20
 layout: post
-slug: havoc-pennington-comments-about-the-linux-desktop
 title: Havoc Pennington comments about The Linux Desktop
-wordpress_id: 194
-categories:
-- Open Source
 ---
 
 Havoc Pennington [posted an entry in his weblog](http://ometer.com/desktop-language.html) about picking a language/architecture/platform for Linux desktop development. I found the post as a whole to be very informative. I think his observations about needing to proceed with a completely unencumbered set of tools and technology are right on:

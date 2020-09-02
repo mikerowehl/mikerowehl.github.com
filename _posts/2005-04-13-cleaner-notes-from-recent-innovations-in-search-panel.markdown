@@ -1,13 +1,7 @@
 ---
-comments: true
 date: 2005-04-13 11:38:50
 layout: post
-slug: cleaner-notes-from-recent-innovations-in-search-panel
 title: Cleaner Notes from Recent Innovations in Search Panel
-wordpress_id: 486
-categories:
-- General
-- Silicon Valley
 ---
 
 I posted [raw notes](http://www.bitsplitter.net/blog/?p=485) yesterday for this event, here's the cleaned up version.  The event was ["Recent Innovations in Search and Other Ways of Finding Information"](http://www.baychi.org/calendar/20050412b/). There's going to be audio of the event posted, I'm not sure if it's going to be to the [BayCHI site](http://www.baychi.org/) or somewhere else. The panel started with a 5 minute show and tell by each panelist, they had slides or walked through the tools they're working on.

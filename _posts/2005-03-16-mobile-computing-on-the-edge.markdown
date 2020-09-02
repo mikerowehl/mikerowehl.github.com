@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 12:35:00
 layout: post
-slug: mobile-computing-on-the-edge
 title: Mobile Computing On the Edge
-wordpress_id: 458
-categories:
-- Mobile Computing
 ---
 
 [Mobile Computing On the Edge](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6343)

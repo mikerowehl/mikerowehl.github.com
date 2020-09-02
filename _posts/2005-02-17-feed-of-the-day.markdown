@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-17 23:42:04
 layout: post
-slug: feed-of-the-day
 title: Feed of the Day
-wordpress_id: 430
-categories:
-- Feedster
 ---
 
 So there was massive feedback from putting up [The Year of Coffee](http://www.thecoolkids.us/coffee/index.php) as the [Feed of the Day](http://www.feedster.com/fotd.php), people really liked it. Happy I could help out! So tonight was my turn to pick the feed again. I'm a geek at heart. Serious geek. My natural inclination is to put up something about programming languages and getting them to [all kinds of strange and spooky things](http://lambda-the-ultimate.org/). But that's just not interesting stuff for most people. So instead I took a random walk for a while and happened across this gem: [Bicyclemark's Communique](http://www.bicyclemark.org/blog.html). Check this out:

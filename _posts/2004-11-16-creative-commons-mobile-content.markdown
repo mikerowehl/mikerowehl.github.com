@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-11-16 13:46:05
 layout: post
-slug: creative-commons-mobile-content
 title: Creative Commons Mobile Content
-wordpress_id: 366
-categories:
-- Mobile Computing
 ---
 
 The [WINKsite](http://www.winksite.com) folks have created [mobile versions](http://winksite.com/books/cc) of some [Creative Commons](http://creativecommons.org/) licensed content. I find the whole pattern very interesting, especially now that I'm helping out with the [Ourmedia](http://www.socialtext.net/ourmedia/index.cgi) project. As was [spoken about at the Online News Association conference](http://www.editorsweblog.org/2004/11/future_of_news_.html), many people see the future of online media as being much different than it was in the offline world. The President and CEO of the Associated Press said:

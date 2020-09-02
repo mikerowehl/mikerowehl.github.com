@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-08 23:52:06
 layout: post
-slug: semantic-xhtml
 title: Semantic XHTML
-wordpress_id: 342
-categories:
-- General
 ---
 
 Brian Cantoni has [a good writeup of a talk about Semantic XHTML](http://www.cantoni.org/2004/09/28/sdforum_technorati_talk) given by Kevin Marks and Tantek Celik.  The slides are [available online](http://tantek.com/presentations/20040928sdforumws/semantic-xhtml.html) as well. There's some good stuff in there. Lately I've been working a bunch with the idea of mixing in additional information with web content. The ideas become much more interesting with [the read-write-web](http://davenet.scripting.com/2003/01/06/firstEssayOfTheYear) in my opinion. There's an elegant layered model for moving user content around evolving. The APIs that started out with blogging, like MetaWeblog and Atom, provide a transport mechanism. Semantic XHTML can provide the structure for those posts to turn a blog post into something more, like an address book update or a calendar event. And those two realms can remain distinct. A standard blog post without semantic information remains a valid post, using Semantic XHTML in some cases doesn't preclude using standard HTML in others. For instance the metadata for a [micro-content](http://joi.ito.com/joiwiki/MicroContentBlurb) system could be passed as semantic XHTML in a blog post. Systems used to tend to either require metadata or not allow it at all. New systems, like [the del.icio.us bookmarking system](http://del.icio.us), allow for optional metadata and don't enforce any restrictions on how the info is used.

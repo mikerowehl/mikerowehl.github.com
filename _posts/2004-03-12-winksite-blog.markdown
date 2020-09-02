@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-12 09:51:21
 layout: post
-slug: winksite-blog
 title: WINKsite blog
-wordpress_id: 182
-categories:
-- Mobile Computing
 ---
 
 There have been a bunch of updates to the [WINKsite blog](http://winksite.com/site/help_bl.cfm) lately. Dave Harper, one of the driving forces behind [WINKsite](http://www.winksite.com) (which is just one instantiation of the general [Wireless Ink](http://www.wirelessink.com/) technology), has been laying out some interesting topics. Even though it's one of the older updates, I highly recommend [the post about _Mobilizing The Masses With "Location Aware" Applications_](http://winksite.com/site/help_bl_view.cfm?blog_id=929). I've added the blog feed to my newsreader, hoping that we'll see more great tidbits from the east coast crew. Another interesting bit of info, I just realized that one of Dave's WINK sites has help forums and the WINK blog feed. Check out [http://winksite.com/dharper/help](http://winksite.com/dharper/help) (WINKsite # 1562).

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-06-12 18:13:00
 layout: post
-slug: kron-blogger-meetup
 title: KRON Blogger Meetup
-wordpress_id: 530
-categories:
-- Feedster
 ---
 
 We went over to the [blogger meetup at KRON](http://kron4.com/Global/story.asp?S=3462860) yesterday. It was pretty much what I expected out of the event. The KRON folks were surprisingly and refreshingly honest in saying they had no idea what to do about blogging, but they want to start getting involved in the community. They're going to be maintaining a list of Bay Area bloggers. [Courtney](http://www.endofthetour.com/) already has a [site called SFBayBloggers.com](http://www.sfbaybloggers.com/) that lists bloggers from the Bay Area, it would be cool to see them throw some support her way instead of starting up another list. KRON is also going to be aggregating posts from the local blogs and providing some metacommentary. Would be nice to see the information flow both ways. [Niall mentions getting KRON to use Creative Commons](http://www.niallkennedy.com/blog/archives/2005/06/kron_blogger_ga.html) on some of the content it releases, I think that would be a fantastic way to kick it off.

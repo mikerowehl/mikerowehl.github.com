@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-05-25 15:40:29
 layout: post
-slug: the-web-20-cease-and-desist-and-self-healing-systems
 title: The Web 2.0 Cease and Desist and Self Healing Systems
-wordpress_id: 638
-categories:
-- General
 ---
 
 I need to post a [pointer to the story about CMP sending a conference a C&D; letter on behalf of O'Reilly](http://www.tomrafteryit.net/oreilly-trademarks-web-20-and-sets-lawyers-on-itcork/). I'm sure Tim has nothing to do with it, and I'm sure it'll go away without much fuss in the end, probably just being throwoff of the corporate machine and the result of the right hand not knowing what the left hand is doing. And of course having lawyers involved, which always screws things up. But it is interesting that something like this would happen in relation to a company that has built its business on being ahead of the knowledge curve, and I would say doing it successfully.

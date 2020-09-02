@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-16 19:02:44
 layout: post
-slug: power-out
 title: Power Out
-wordpress_id: 111
-categories:
-- General
 ---
 
 My power went out at home. Just a localized event, but annoying cause it happens to be localized to my area. But given the new set of toys I'm playing with I don't have to be disconnected. I had a conversation on the [Open Palm Environment WINKsite](http://winksite.com/Reverend/ope) chat area using my phone, downloaded my email to my Palm, and now I'm about to post this using [Vagablog](http://www.bitsplitter.net/vagablog/). That's pretty well connected without any power. Just another advantage of mobile computing to keep in mind.

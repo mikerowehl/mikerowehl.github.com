@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-04 19:13:13
 layout: post
-slug: april-momo-fabrizio-capobianco
 title: April MoMo - Fabrizio Capobianco
-wordpress_id: 479
-categories:
-- Mobile Computing
 ---
 
 Fabrizio speaking at [the April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

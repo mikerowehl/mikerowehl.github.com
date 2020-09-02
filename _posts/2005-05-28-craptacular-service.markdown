@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-28 12:40:11
 layout: post
-slug: craptacular-service
 title: Craptacular Service
-wordpress_id: 518
-categories:
-- Mobile Computing
 ---
 
 While I was fooling around with the Treo last night I sent an MMS over to [Russ](http://www.russellbeattie.com/notebook/) to test out the setup. Russ is the only person I use MMS with normally, so it's a good control test for the system. He gets the message no problem, but the reply he sends doesn't make it back to my phone.  We were chatting via IM as we did this, otherwise I would have had no idea he sent a message. Not a big deal, MMS is actually an IP based service, and I probably need to do manual setup of the 650 to get it working on the [TMobile](http://www.tmobile.com/) network. But when I got up this morning I swapped my SIM back into the 6600 before Elle and I headed out. We went wandering around for the morning, picked up some groceries and ran some errands, visited her father, and were here checking email. New message on my phone, it's the MMS that Russ sent, I had completely forgotten about it. This is about 4 hours after I swapped my SIM back into the 6600. It took that long to get the message out of whatever holding place it was in and on to my phone. I can't believe that. I find that service level completely useless for a "messaging service". My conclusion, I think, is that Russ and I might be the only people using MMS. I don't think anyone else would tolerate that kind of behavior in a system. There should be all kinds of yelling and screaming going on.

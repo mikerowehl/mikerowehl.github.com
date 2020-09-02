@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-11-28 14:22:30
 layout: post
-slug: corporate-decentralization
 title: Corporate Decentralization
-wordpress_id: 8
-categories:
-- General
 ---
 
 The trend all over seems to be decentralization of the corporation.  This is certainly true of software development here in the US, where more and more of the work is farmed out to lower cost workers in India, China, Russia, or just about anywhere else.  But offshoring is just one particular aspect of a general decentralization. Institutions are attempting to become leaner, faster, more responsive. They use technology to farm traditionally internal functions out to external consultants, and they use technology to dissolve the internal hierarchy. The elimination of middle management and bureaucracy in general has called for new tools to support the organization. Traditional ERP and CRM systems fall flat here. Those tools were mostly made to support the old processes, they never enabled the major changes that technology reallyrepresents.

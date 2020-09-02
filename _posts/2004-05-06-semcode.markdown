@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-06 15:23:47
 layout: post
-slug: semcode
 title: Sem@code
-wordpress_id: 265
-categories:
-- Mobile Computing
 ---
 
 The [Sem@code](http://semacode.org/) project has released a [demo for Symbian phones](http://semacode.org/download/). I [posted about it at the end of last year](http://www.bitsplitter.net/blog/index.php?p=20), and I still think it's a great idea. I actually exchanged a few emails with Simon, trying to find out what he had planned for it. He's interested in trying to make money off the idea, which is certainly a good idea. I was hoping he would be releasing the code under some kind of dual license model (ie. GPL for non-commercial use, like what [MySQL has done](http://www.mysql.com/products/licensing/)), and that's probably still possible. Interest in the project always helps of course, so this is my post to try to help out the project so that Simon can make some money off of it and hopefully make more of this excellent idea publicly available.

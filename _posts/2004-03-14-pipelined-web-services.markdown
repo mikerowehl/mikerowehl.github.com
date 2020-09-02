@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-14 14:59:20
 layout: post
-slug: pipelined-web-services
 title: Pipelined Web Services
-wordpress_id: 187
-categories:
-- General
 ---
 
 Russell Beattie has two great posts in his blog, the first about [web services becoming more like Unix style tools](http://www.russellbeattie.com/notebook/1006760.html) and then some [further discussion about the similarities and differences between the two styles](http://www.russellbeattie.com/notebook/1006768.html). I groove completely the the beats Russ is laying down. Usages like this are something that made me happy the first time I read about [REST](http://webservices.xml.com/pub/a/ws/2002/02/06/rest.html). REST seemed to make it easier for arbitrary tools to participate in the series of commands. My comments tend to blend XMLRPC, REST, and SOAP - cause I tend not to pay too much attention to specs and just hack out whatever seems to work for me. Just a couple of quick comments I want to throw into the mix.

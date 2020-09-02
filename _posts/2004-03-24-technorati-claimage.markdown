@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-24 01:22:08
 layout: post
-slug: technorati-claimage
 title: Technorati Claimage
-wordpress_id: 210
-categories:
-- General
 ---
 
 So I got my new [Technorati Profile](http://www.technorati.com/profile/miker) kicking, and I'm feeling pretty spiffy. But I notice that when I upload a picture it's all smushed and mangled, and that I can't remove the image so I just have to put up one of Ed instead, and that their javascript inclusion snippet isn't valid XHTML. So out it comes again, and I shove back in some corrected XHTML, but this time without the image. Hopefully that won't screw things up. I emailed feedback, we'll see what they have to say about my oddball requests. Overall, it's not that big of a deal. I claimed the [Link Blog](http://www.bitsplitter.net/linkblog/) also, and while I was at it realized that thing is nowhere near XHTML. So I guess I got something to do tomorrow as well.

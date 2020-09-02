@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-11-01 00:36:34
 layout: post
-slug: tagcamp
 title: Tagcamp
-wordpress_id: 590
-categories:
-- Silicon Valley
 ---
 
 I went to [Tagcamp](http://www.tagcamp.org/) this past weekend, fantastic event. I met a ton of new people, which is always fun. A lot of great information and new projects. Although I missed her presentation, I found out about Rashmi's [cognitive analysis of tagging](http://www.rashmisinha.com/archives/05_09/tagging-cognitive.html) while I was there. I think the two images there explain why tagging is different than categorization better than anything else I've seen before. The session that [Marshall Kirkpatrick](http://marshallk.com/) was very lively. The conversation focused on making tagging more accessible to users. If tagging really is a different model for organizing information how can we provide that in a way that doesn't include a large cliff to adoption? Some of the folks proposed getting together sets of user stories as a start to finding the common bits and root drivers for successful adoption. Unfortunately I can't find where anyone has written down that tag, the notes from the session seem to have gotten rightly fucked. Anyone have another copy of the notes floating around on a hard drive?

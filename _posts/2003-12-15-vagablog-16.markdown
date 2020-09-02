@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-15 10:44:48
 layout: post
-slug: vagablog-16
 title: Vagablog 1.6
-wordpress_id: 36
-categories:
-- General
 ---
 
 I've released the 1.6 version of [Vagablog](http://www.bitsplitter.net/vagablog/), which contains fixes for using accented characters with Blogger.com and an option to post without publishing. I've had trouble getting accented characters working in Wordpress and Movable Type however.  I think the issue is actually with the tools, although I could be wrong.  I've done a bunch of checking around in the XML spec and looking up information about unicode and iso-8859-1 and utf-8, and I'm pretty sure that the accented characters I'm putting in are correctly specified. But it looks like somewhere along the line they get mangled. I'll have to do a little more poking around, but if someone is familiar with using the xmlrpc interfaces to either Wordpress or Movable Type to post messages with characters outside of the ASCII character set, please [drop me a line](mailto:miker@bitsplitter.net) and let me know if you have any tricks.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-21 15:29:26
 layout: post
-slug: open-source-desktop-debate
 title: Open Source Desktop Debate
-wordpress_id: 199
-categories:
-- Open Source
 ---
 
 There's [an interesting debate](http://planet.gnome.org/) going on within the [GNOME](http://www.gnome.org) and [Mono](http://www.go-mono.com) communities. The main thread is a debate between [Havoc Pennington](http://log.ometer.com/) and [Miguel de Icaza](http://primates.ximian.com/~miguel/activity-log.php). Lots of other people have contributed to the conversation, but here's a list of some of the main posts (I may have missed some messages in here, but hopefully this will give a decent flow):

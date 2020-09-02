@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-28 00:12:13
 layout: post
-slug: mobile-data-services-and-innovation
 title: Mobile Data Services and Innovation
-wordpress_id: 275
-categories:
-- Mobile Computing
 ---
 
 Lots of times I groan at the statements that come out of the MIT Media Lab, but TheFeature has [an interview with William Mitchell, director of the MIT Media Lab](http://www.thefeature.com/article?articleid=100678) and I really liked what he had to say at the end of the interview.

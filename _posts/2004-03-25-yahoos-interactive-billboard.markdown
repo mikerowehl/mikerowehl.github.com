@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-25 08:55:07
 layout: post
-slug: yahoos-interactive-billboard
 title: Yahoo's Interactive Billboard
-wordpress_id: 212
-categories:
-- Mobile Computing
 ---
 
 Textually.com [reports on a new interactive billboard installed by Yahoo! to promote their reworked auto site](http://www.textually.org/textually/archives/003405.htm). The [full article is at AdWeek](http://www.adweek.com/aw/creative/article_display.jsp?vnu_content_id=1000471117), but it does little to answer my main question. The sign looks like a pretty cool idea. It'll certainly attract some attention, and it's novel enough that people might visit it just to see how it comes off. But there are mentions of RFIB in both the excerpt and in the longer article. How is RFIB being used for the Yahoo! application? I get the impression it isn't being used at all. It seems like it's just something that the sign maker wants to pimp:

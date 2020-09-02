@@ -1,12 +1,7 @@
 ---
-comments: false
 date: 2003-12-23 12:20:54
 layout: post
-slug: what-is-blogging-all-about
 title: What is Blogging All About?
-wordpress_id: 63
-categories:
-- General
 ---
 
 There's an [Entry in Seth Finkelstein's blog](http://sethf.com/infothought/blog/archives/000504.html) pondering why it is that people keep blogs. He mentions some of the common reasons in there, like exposure to a new audience if you're running a business related blog, and the simple need to communicate which is fulfilled by a daily diary. I actually did a whole lot of thinking along these lines before I wrote the first version of [Vagablog](http://www.bitsplitter.net/vagablog/). I know a lot of reasons showed up once I started blogging that I didn't expect at first. Maintaining my blog has actually helped me organize my thoughts and keep something of a schedule. It provides a great regime for me to stick to in processing the news I read and trying to fit the new content into my world view. It encourages some thoughtful introspection where before there was absolutely none.

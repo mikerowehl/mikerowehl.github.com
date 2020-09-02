@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-23 12:36:31
 layout: post
-slug: the-line-at-the-metreon
 title: The Line at the Metreon
-wordpress_id: 475
-categories:
-- Mobile Computing
 ---
 
 On my way into work this morning I passed by the Metreon.  The Play Station Portable (PSP) goes on sale tomorrow, and the Metreon will be open at midnight to get the freshest first units into the greedy hands of eagerly awaiting gamers - some of whom were lining up at 11am this morning in perparation for the launch. They had a big PSP hung on the building across the street giving a countdown to the release, and PSP jacketed support staff out on the street.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-06-01 13:22:33
 layout: post
-slug: kinesis-keyboard-with-a-powerbook-g4
 title: Kinesis Keyboard With a PowerBook G4
-wordpress_id: 523
-categories:
-- General
 ---
 
 After staying up till 5am this morning trying to get myself a bit caught up on news and various bits of hackery, my hands were killing me this morning. I normally use a [funky ergonomic contour keyboard from Kinesis](http://www.kinesis-ergo.com/contoured.htm). It's a complete lifesaver. I can't live without it apparently. I tried last night, and have proven that statement to be absolutely true. I need that keyboard in order to work for long stretches without causing problems. I stopped using the keyboard when I made the switch because I didn't know how to use it with the Mac (Powerbook, running OS X). Odd that one should have issues like "how to use a keyboard", but unfortunately it is true. Lots of operations on a Mac require use of the apple/funky-squigly-four-leaf-clover-dealie key. Apparently called the "command" key in Mac parlance, but labeled only with pictograms. Lets call it the branding key, cause I think that's what it really is. And it's more descriptive than the "command" key, which I would expect to be labeled with something like, oh.. "Cmd". When I say "branding key" to people who have no idea what I'm talking about, they spot the apple key pretty quick. When I say "command key" they just can the keyboard over and over, eventually asking "You mean the control key?"

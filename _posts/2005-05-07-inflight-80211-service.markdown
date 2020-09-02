@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-07 16:26:22
 layout: post
-slug: inflight-80211-service
 title: Inflight 802.11 Service
-wordpress_id: 500
-categories:
-- Mobile Computing
 ---
 
 We ended up in business class instead of economy on the flight from Chicago to Stockholm on our way to the [Mobile Monday Global Summit](http://www.mobilemonday.net/mm/summit2005/index.php). It's like heaven in here. [Russ was really happy to have legroom](http://www.flickr.com/photos/miker/12835242/in/photostream/) (he just [beat me to the punch with a post too](http://www.russellbeattie.com/notebook/1008451.html)!). I'm playing with all the controls for the seats pulling out the trays and the TV built into the arm of the chair, and the game controller (the games aren't great actually, I got bored in like 2 minutes). And there are outlets in the seats! I'm so ecstatic I can hardly breathe. And then Russ says "Hey, isn't SAS the one that has inflight 802.11 service?" And sure enough, the one thing we haven't pulled out and played with yet is the stuff in the pockets in the back of the seats in front of us, holds the best surprise. [SAS provides inflight 802.11 service](http://www.flickr.com/photos/miker/12835352/). So I'm currently somewhere over Canada writing this, and connected to IM and downloading my mail. How much ass does that kick? It's hard to quantify exactly, but it [does so at about 193kbps](http://www.bitsplitter.net/projects/bbrep-SAS.png). Of course overall ass kicking is a measure of speed x duration, so we'll only be able to tell how much was kicked after we know how long it was kicked for.

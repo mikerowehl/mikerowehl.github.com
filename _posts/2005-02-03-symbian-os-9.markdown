@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-03 09:35:54
 layout: post
-slug: symbian-os-9
 title: Symbian OS 9
-wordpress_id: 413
-categories:
-- Mobile Computing
 ---
 
 The most major news item in mobility yesterday seems to be [the new release of Symbian OS](http://www.symbian.com/press-office/2005/pr050202.html). The 9.0 version doesn't really include many new features that affect the end user, as called out in [a post at TheFeature](http://www.thefeature.com/article?articleid=101397). The USB mass storage feature will actually be pretty cool, but doesn't really affect me all that much because I use Bluetooth to fling files over to my phone. The 3D graphics are nice to see, lots of people are really enthusiastic about the games market. But personally I'm more into the location based and alternate reality games than high framerate 3D. This release seems to concentrate a lot more on the capabilities meant for network operators, and I agree with a lot of the sentiments expressed in the article from TheFeature. There's been a lot of  talk about the openness of mobile platforms, the most recent bump in activity seeming to start around [Mobile and Open](http://www.thefeature.com/article?articleid=101299&ref=5451994) from Howard Rheingold (something I [already commented on](http://www.bitsplitter.net/blog/?p=385)). During the past few days I also happened across two sets of commentary from Cory Doctorow, the first an article titled [Take Back Your Cell](http://www.popsci.com/popsci/computers/article/0,20967,1021279,00.html) and the second an [interview with Cory at TheFeature](http://www.thefeature.com/article?articleid=101373&ref=5451994). This is a drum I've beat plenty of times in the past, that openness is necessary for innovation. Interesting applications come from users seeing new possibilities, not from manufacturers pushing out incremental features. So I'm kinda concerned that the Symbian 9.0 release seems to be tending toward more closed instead of more open.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-24 14:23:23
 layout: post
-slug: jaron-lanier-on-the-mcluhan-ramp
 title: Jaron Lanier On The McLuhan Ramp
-wordpress_id: 252
-categories:
-- Dweeb
 ---
 
 I went to the [presentation by Jaron Lanier](http://www.futuresalon.org/2004/04/tomorrow_jaron_.html) yesterday and it was very interesting. This [Future Salon](http://www.futuresalon.org/aboutfuturesalon.html) thing is pretty cool, I'll definitely go to more of them. The main thrust of the talk was that there are lots of different "ramps" which people can use to judge progress. There's a ramp of technology, which progresses from the most basic innovations such as fire and the wheel and moves out to a life that looks something like the Jetsons or something called [the technological singularity](http://www-rohan.sdsu.edu/faculty/vinge/misc/singularity.html). Of course we're not sure exactly where the ramp ends up, which is part of the reason we as humans find satisfaction in advancing it. There's also a ramp of morality, starting with brutal kill-or-be-killed life and progressing to some kind of rainbows and sunshine perfect existence.

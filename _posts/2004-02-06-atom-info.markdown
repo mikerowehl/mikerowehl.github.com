@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-06 19:24:45
 layout: post
-slug: atom-info
 title: Atom Info
-wordpress_id: 154
-categories:
-- Dweeb
 ---
 
 Two articles I've been poking through today:

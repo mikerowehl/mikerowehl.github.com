@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-08-20 10:05:30
 layout: post
-slug: first-bamf-meeting-tomorrow
 title: First BAMF Meeting Tomorrow
-wordpress_id: 328
-categories:
-- Mobile Computing
 ---
 
 Tomorrow is the [first meeting of BAMF](http://www.mobilityforum.org/2004/08/meeting-reminder.html). Unfortunately we ended up needing to collect some money to cover the space. Michael O'Rourke was very generous in offering their space at [Dimension 7](http://www.dimension7.com/) and we just need to cover the costs of setting the place up, cleaning up after it's done, and use of their AV equipment. I looked around some to see if I could find a sponsor, but no one wanted to sponsor the first meeting of an informal group. Given that a bunch of us volunteered our own time to get this set up, and that the presenter is a volunteer, and that the cost is only $10, I'm hoping no one has any problems with that. Cause if they do I might have to smack them. That always gets things off on the wrong foot so I'm hoping to avoid it.

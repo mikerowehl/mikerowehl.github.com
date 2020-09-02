@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-27 14:27:49
 layout: post
-slug: palmos6-to-focus-on-pda-functions
 title: PalmOS6 to Focus on PDA Functions
-wordpress_id: 137
-categories:
-- Mobile Computing
 ---
 
 Russell Beattie has an [interesting post in his blog](http://www.russellbeattie.com/notebook/1005881.html) about PalmSource focusing PalmOS6 on PDA functions. I don't think I could possibly agree with Russell any more than I do. I spent a decent amount of time thinking about it too, cause I do think that a limited function laptop is cool. For me at least, I can accept that what I want isn't necessarily what others want. But because I think that the connected nature of the devices should be primary and the laptop features secondary, I don't think that really counts as a disagreement. I was very happy when I thought that PalmOS6 was going to include features that would allow for easy syncronizaton of databases directly over a network using web services, and that the whole design of the OS was going to center around network usage. If PalmSource isn't planning to do this, I agree that they really are missing the boat.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2003-12-30 11:27:15
 layout: post
-slug: back-home
 title: Back Home
-wordpress_id: 69
-categories:
-- General
 ---
 
 I'm back in the Bay Area, just taking the train back from the San Jose airport. I had a good trip, and managed to pack in some interesting business activities around the family gatherings. I brought a new book and a few recommended readings back with me. I'll have a plenty of new ideas to spout off about I'm sure. And there are some Vagablog changes which should be on the way as well.

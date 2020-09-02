@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-15 18:01:01
 layout: post
-slug: etech-ho
 title: ETech Ho!!!!
-wordpress_id: 452
-categories:
-- Mobile Computing
 ---
 
 I'm heading down to [ETech](http://conferences.oreillynet.com/etech/) tomorrow for the day. I wanted to go to [SXSW](http://2005.sxsw.com/) but didn't get a chance to, and hadn't made plans for ETech cause it seemed like things were too busy.  But then Russ decided to go down just for the day, and said "Come on! One day..." Yea, what's one day?*  I haven't been to an ETech before, and I hear they're great. And there are other folks down there looking to start up their own versions of [Mobile Monday](http://www.mobilemonday.com) in other places. It would be great to get a chance to meet up with them. And then Elle decided to go also, and convinced me it was worth going as well.  So, two (Russ and Elle) and one (me). I can argue that I was outnumbered. We'll be down there tomorrow, March 16th, probably causing some kinda ruckus in the hallways and lobby.

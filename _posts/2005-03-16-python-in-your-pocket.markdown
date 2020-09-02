@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 14:31:50
 layout: post
-slug: python-in-your-pocket
 title: Python in your Pocket
-wordpress_id: 459
-categories:
-- Mobile Computing
 ---
 
 [Erik Smartt](http://conferences.oreillynet.com/cs/et2005/view/e_sess/7020) about Mobile Python.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-05 02:17:45
 layout: post
-slug: wordpress-20
 title: Wordpress 2.0
-wordpress_id: 599
-categories:
-- General
 ---
 
 I just updated to [WordPress 2.0](http://www.wordpress.org) for this blog. Normally the next thing people say is "great, now update the templates!" You know what? No. I'm not even going to try this time.

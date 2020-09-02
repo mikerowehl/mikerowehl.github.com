@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-07-20 07:01:35
 layout: post
-slug: a-glorious-four-days
 title: A Glorious Four Days
-wordpress_id: 535
-categories:
-- General
 ---
 
 I'm starting a new job with a startup company on Thursday. I would be starting it today, but I have a bunch of errands to run, a dentists appointment, and I'm giving [a presentation this evening at the ACM](http://www.sfbayacm.org/activities.html) that I still need to do some prep for. My four days of unemployment (I do get to count weekend days, right?) yeilded a whole ton of offers. I'm just amazed at everything that's going on in the valley right now! There are tons of fantastic ideas, lots of great teams, and everyone is full of infectious energy. I wish I could jump on more than one opportunity, but alas, MikeR 1.0 does not support fork(). I've logged a trouble ticket, but the issue isn't moving along at all.

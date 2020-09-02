@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-31 08:23:29
 layout: post
-slug: eff-endangered-gizmos-list
 title: EFF Endangered Gizmos List
-wordpress_id: 404
-categories:
-- Open Source
 ---
 
 The EFF has created a [list of technologies](http://www.eff.org/endangered/) that are being threatened or outlawed in the interest of protecting established corporate interests:

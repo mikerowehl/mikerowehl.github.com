@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-05 07:52:17
 layout: post
-slug: interface-culture
 title: Interface Culture
-wordpress_id: 174
-categories:
-- Dweeb
 ---
 
 [Interface Culture](http://www.amazon.com/exec/obidos/tg/detail/-/0465036805/002-3475634-0283206?v=glance) has been sitting on my bookshelf at home forever, but I never tried it. I grabbed it to take on a trip with me, and I've been pretty happy with what I've read so far. The reviews on Amazon I mostly agree with, the book is a bit wordy and flowery where it doesn't really need to be, but I do think some good points are raised. Very close to the start of the book the author begins describing the accellerated rate of media change, and the rise of spoofing and meta-commentary forms of media. He uses examples like Popup Video and Mystery Science Theatre as examples of new creations which are mostly based on spoofing or commenting on existing content. After having [heard Lessig speak about sampling and the necessity of existing content to be available for remixing](http://www.bitsplitter.net/blog/index.php?p=167), this part of the book is very interesting. If I had read it before I attended the Digital Vision presentation, I don't think I would have been impressed at all. But now that I'm already in the mindset of thinking about sampling and remixing, description from Interface Culture which I would have dismissed two weeks ago is now much more interesting. I recommend reading up a bit on the [Creative Commons](http://creativecommons.org/) in general (sampling and remixing in particular) and then picking up a copy of the book.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-18 08:28:52
 layout: post
-slug: rhode-island-government-press-releases
 title: Rhode Island Government Press Releases
-wordpress_id: 468
-categories:
-- Feedster
 ---
 
 I made the [Rhode Island Government Press Releases](http://www.ri.gov/news/pr_publist.php) [feed of the day at Feedster](http://www.feedster.com/fotd.php) today. Because everyone should be intimately familiar with the goings on in the smallest state in the US? No, not at all. I put it up because I wanted to showcase a use of RSS somewhere outside of the geekery I've been involved in all week long (not that there's anything wrong with geekery mind you!). Here's some of the description from the [RSS info page on the Rhode Island website](http://www2.sec.state.ri.us/rss/):

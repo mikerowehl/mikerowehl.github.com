@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-08-18 06:23:23
 layout: post
-slug: linux-lappy
 title: Linux Lappy
-wordpress_id: 642
-categories:
-- Open Source
 ---
 
 It's just about New Laptop Time. Not quite, but almost. Being a Linux only user it's always an adventure trying to figure out what hardware to get. Hardware support has definitely gotten better under Linux, but figuring out what actually lives inside the system you're thinking about picking up at deep discount from Office Max certainly has not. And I'm not a dual-booter either. I don't have Windows to fall back on should something not work on my laptop. I take a scorched earth approach to Windows on my hardware, and generally wipe and repave the whole thing. Especially if it's my personal laptop, which is what I plan for this to be.

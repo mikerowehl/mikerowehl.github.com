@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-09-27 23:54:18
 layout: post
-slug: gnomedex
 title: Gnomedex
-wordpress_id: 333
-categories:
-- General
 ---
 
 So obviously I've been pretty busy, hardly any updates over the last month. It's not just that I've had a whole bunch of random crap going on either, I've started a company! I've had the consulting business that I've been doing for a while, but this is a real entrepreneurial venture this time around. There certainly is a difference, although I'm sure that a year ago I hadn't put enough thought into it to know what those differences would be. The main difference is that "good enough" isn't good enough when you start an incorporated business. You need to start with figuring out how you figure out things so that later on when someone asks you there's an answer for why things are the way they are. (Yes, it hurt as much to write that sentence as it does to read it). It means that something that would normally you would just slap together a working demo for is now going to take about an order of magnitude longer.  And it'll definitely be more frusterating in the short term.  How frusterating seems to depend on how much you have to unlearn in order to successfully self evaluate.  First you must forget all you know, or think you know.  Eventually you realize that you are learning stuff along the way and you just reset your expectations.  Kinda like sitting on a mountain and meditating on the meaning of life for a few dozen years until you get to step outside of time and let all the years you spent in ignorance and suffering recede into vagueness.  In the business version they call this "the exit event" instead of enlightenment, but from what I can tell they're exactly the same thing.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-05-03 15:53:41
 layout: post
-slug: social-networking-social-engineering
 title: Social Networking, Social Engineering
-wordpress_id: 262
-categories:
-- General
 ---
 
 I recently finished reading [The Art of Deception](http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471237124.html), and I probably should have posted about it earlier. I've been involved with computer security for a while, and I've been to a bunch of the more popular security and hacker conferences, which is the reason I'm giving to myself for the book not making a strong impression immediately. The book is very good, it brings to light many aspects of computer security that even most experts don't know about. This should be required reading for anyone involved in computer security. That's why I picked it up myself, despite being familiar with many of the tactics and general principles from hanging out at [DefCon](http://www.defcon.org/) year after year. So, I've gotten that out of the way, it's a good book.

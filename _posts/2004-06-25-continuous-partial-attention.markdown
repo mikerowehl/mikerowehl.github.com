@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-25 08:13:48
 layout: post
-slug: continuous-partial-attention
 title: Continuous Partial Attention
-wordpress_id: 301
-categories:
-- Dweeb
 ---
 
 I'm playing the home edition of [Supernova 2004](http://www.pulver.com/supernova/). Listening to the [audio streams](http://www.itconversations.com/series/supernova2004.html), watching the [Wiki](http://www.socialtext.net/supernova/index.cgi?supernova_wiki) for updates, keeping an eye on the [metablog](http://snblog.pulver.com/2004/), and chatting on the IRC channel on irc.freenode.net. The term used to refer to dealing with all the incoming information is [continuous partial attention](http://supernova.typepad.com/2004/2004/06/continuous_part.html). I always think of one of the main characters from [Idoru](http://www.williamgibsonbooks.com/books/idoru.asp) when I try to describe it. Gibson is always so oddly apt in his characterizations. One of the characters is a researcher who can spot some kind of metapatterns in large amounts of raw data to pull out the information that he wants. It's something like letting your eyes unfocus and just trying to spot anything changing in your entire field of view, except that you have multiple streams of input instead of a unified field to take into account. It's an amusing exercise for anyone interested in computer interfaces. Apparently you can pass the information saturation point of an interface and still provide meaningful information if you split it into multiple channels that can be processed in parallel. Assuming whoever this information is aimed at can operate in "continuous partial attention mode".

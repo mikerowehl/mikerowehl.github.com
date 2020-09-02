@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-07-12 22:36:02
 layout: post
-slug: an-introduction-to-open-source-hardware-development
 title: An introduction to open-source hardware development
-wordpress_id: 313
-categories:
-- Open Source
 ---
 
 Mohamed Salem mailed me to say that his article [An introduction to open-source hardware development](http://www.eedesign.com/article/showArticle.jhtml?articleId=22103383) was published in EEDesign. Congratulations Mohamed and Jamil!! He mailed me a copy while he was still working on it, and I've been anxiously awaiting the publication so that I pontificate on the subject without trying to lay down some technical details I don't know (not that it usually stops me). I have no practical hardware design experience at all. I normally get the stuff after someone else has put it together and now they want it to do something.

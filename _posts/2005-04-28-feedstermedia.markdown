@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-28 00:55:03
 layout: post
-slug: feedstermedia
 title: FeedsterMedia
-wordpress_id: 494
-categories:
-- Feedster
 ---
 
 Here's some info about FeedsterMedia, from me, the person who put it together. Cause everyone thinks that they hacked out some kinda super secret info when they realize that directory listings are allowed.  That's just sad folks. Buffer overflows in protocol handlers, escaping past URL filters, even good old SQL injection. These things might be hacking.. maybe. But directory listings, please. There's another reason that directory listings might be allowed: I want people to know what's out there. What a freakin' newsflash, stop the presses! Yep, that's right. It's not a secret that we were planning to do Slashdot and Sourceforge and Freshmeat feeds.  Unfortunately I didn't have time to blog about it before we did it. My bad on that one.

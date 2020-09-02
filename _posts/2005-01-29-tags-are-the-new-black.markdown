@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-29 23:27:05
 layout: post
-slug: tags-are-the-new-black
 title: Tags are the New Black
-wordpress_id: 403
-categories:
-- General
 ---
 
 I've been paying attention to the [discussions about tagging](http://www.feedster.com/search.php?q=tagging+AND+%28+Flickr+OR+del.icio.us+OR+Buzznet+OR+Technorati+%29&hl=en&ie=UTF-8&sort=date) (or [folksonomies](http://www.feedster.com/search.php?q=folksonomy+OR+folksonomies&hl=en&ie=UTF-8&sort=date) depending on who you talk to). Some of the concepts are very appealing. I've been using [del.icio.us](http://del.icio.us/miker) and [Flickr](http://www.flickr.com/photos/miker/) and [Buzznet](http://mikerowehl.buzznet.com/user) long enough to understand the usage patterns there. But the [recent addition of tagging to Technorati](http://www.technorati.com/help/tags.html) has really opened up some new doors. I was [at the Future Salon chatting with Niall about some of them](http://www.niallkennedy.com/blog/archives/2005/01/digital_identit.html), so I had tagging fresh in my mind when the presentation started and that seems to have kicked off a few ideas.

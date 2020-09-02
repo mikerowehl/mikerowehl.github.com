@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-05 00:06:35
 layout: post
-slug: technology-opportunities-for-humanity
 title: Technology Opportunities for Humanity
-wordpress_id: 149
-categories:
-- Silicon Valley
 ---
 
 I'm walking home from a presentation about [Technology Opportunities for Humanity](http://www.sdforum.org/SDForum/Templates/CalendarEvent.aspx?CID=1282&mo=2&yr=2004), and it was really very good. I was afraid that it would be a whole bunch of talk about charity work and how we as Big Powerful Silicon Valley Residents can help out the poor slobs everywhere else. It definitely was not that. It was what I considered an extremely well informed discussion about the general topic of businesses providing technology and connectivity to developing nations (or the underprivileged within some developed countries). I think the presentations did a _fantastic_ job of both providing information about the topic and raising some interesting questions. I'll mention two of the high points that really hit me.

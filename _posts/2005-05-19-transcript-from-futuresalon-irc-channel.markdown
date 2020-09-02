@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-19 22:10:30
 layout: post
-slug: transcript-from-futuresalon-irc-channel
 title: 'Transcript From #FutureSalon IRC Channel'
-wordpress_id: 511
-categories:
-- Silicon Valley
 ---
 
 Here's the transcript from the IRC channel during the [Enough Dumb Agents Get Smart presentation at Future Salon](http://www.futuresalon.org/2005/05/ode_to_dump_age.html):

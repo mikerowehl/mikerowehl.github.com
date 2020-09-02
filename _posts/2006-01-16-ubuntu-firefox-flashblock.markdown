@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-16 15:50:47
 layout: post
-slug: ubuntu-firefox-flashblock
 title: Ubuntu + Firefox + Flash(block)
-wordpress_id: 608
-categories:
-- General
 ---
 
 I don't use Flash normally, but I installed it (with the [flashblock plugin for Firefox](http://flashblock.mozdev.org/) of course) so that I can fool around with [Google Analytics](http://www.google.com/analytics/), which renders views in little flash applets. Cool, as much as I don't like Flash normally it's a nice path to transition to richer functionality on the client side later on, so it makes sense in this context. The problem was that I wasn't getting any text in Flash. I found [the answer on the OpenLaszlo wiki](http://wiki.openlaszlo.org/Installation_Instructions) quickly enough, the font that Flash uses is in the ghostscript package:

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-15 18:43:42
 layout: post
-slug: make-almost-anything
 title: How to Make Almost Anything
-wordpress_id: 488
-categories:
-- Silicon Valley
 ---
 
 [Future Salon with Neil Gershenfeld](http://www.futuresalon.org/2005/04/fab_friday_.html). Raw notes, you know the deal, maybe cleaner stuff coming later.

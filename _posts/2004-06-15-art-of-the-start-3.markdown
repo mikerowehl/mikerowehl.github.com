@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 09:29:39
 layout: post
-slug: art-of-the-start-3
 title: Art of the Start 3
-wordpress_id: 283
-categories:
-- Silicon Valley
 ---
 
 Jeff Adams, Dave Anderson, Alan Jepsen, Betty Taylor, Mark Weeks.

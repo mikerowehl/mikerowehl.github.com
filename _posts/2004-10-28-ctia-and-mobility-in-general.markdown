@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-28 18:13:22
 layout: post
-slug: ctia-and-mobility-in-general
 title: CTIA and Mobility in General
-wordpress_id: 350
-categories:
-- Mobile Computing
 ---
 
 I was over at [CTIA](http://www.ctia.org/conventions_events/index.cfm) for a while the other day.  I already wrote about the [BAMF meeting that we had afterward](http://www.mobilityforum.org/2004/10/amazing-turnout.html), that kicked ass. But I really should write something of my own about CTIA. I was personally pretty disappointed. I forget who exactly said it, but someone at the BAMF meeting said "it was all about how to make the carriers even more money."  Yea, unfortunately, that is very accurate.  It's not that I expect everyone to have the same overall view of mobility as I have.  But I would expect someone to be able to get some representation for the interesting new apps out there.  The closest that I really saw were a couple of booths talking about interesting applications for location based services.  For the most part the location based stuff was all the same normal pitch.  "We have the largest point of interest database anywhere!" Yea, sure, but I bet most of the points I'm most highly interested in still aren't in there.

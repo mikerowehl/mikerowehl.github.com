@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-15 12:13:53
 layout: post
-slug: art-of-the-start-7
 title: Art of the Start 7
-wordpress_id: 287
-categories:
-- Silicon Valley
 ---
 
 Raising Venture capital - Bill

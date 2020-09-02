@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-20 18:40:41
 layout: post
-slug: db-download-release-10
 title: db-download Release 1.0
-wordpress_id: 244
-categories:
-- Mobile Computing
 ---
 
 Still very much rough around the edges, but there's a 1.0 release of the download plugin at the [Open Palm Environment](https://sourceforge.net/projects/openpalmenv/) SourceForge site. The project is a plugin for [Pilot-db](https://sourceforge.net/projects/pilot-db/), an open source package for Palm handhelds which allows users to create and exchange databases from their PDA. With the plugin installed you can download files in much the same way that the palm-torrent project from the Open Palm Environment project does. Acting as a plugin for pilot-db gives access to a much more extensive set of editing tools on both the PDA and the desktop. I didn't want to write a bookmark management system into palm-torrent, so this seemed like a good option. After all, the plugin was one of the original techniques I proposed when [I first wrote about the idea](http://www.unrooted.net/hacking/palm/online-repository.html). The plugin still needs to be cleaned up a bunch, and there needs to be a bunch of databases with pointers to free info and programs (plucker books, open source apps, etc).  I have the prc sitting in the [projects area at Bitsplitter](http://www.bitsplitter.net/projects/), so you can download the plugin using the URL [http://www.bitsplitter.net/projects/db-download.prc](http://www.bitsplitter.net/projects/db-download.prc) if you have a copy of palm-torrent on your PDA already.

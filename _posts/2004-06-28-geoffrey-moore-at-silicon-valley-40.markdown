@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-28 12:18:31
 layout: post
-slug: geoffrey-moore-at-silicon-valley-40
 title: Geoffrey Moore at Silicon Valley 4.0
-wordpress_id: 304
-categories:
-- Silicon Valley
 ---
 
 Two recent posts from Always On:

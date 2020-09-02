@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-03-29 12:45:48
 layout: post
-slug: near-field-communication
 title: Near Field Communication
-wordpress_id: 218
-categories:
-- Mobile Computing
 ---
 
 The Feature has [an article about location based services being deployed and experimented with today](http://www.thefeature.com/article?articleid=100482&ref=716084). It includes a pointer to [an article in The Guardian](http://www.guardian.co.uk/online/story/0,3605,1176995,00.html) with information about [Urban Tapestries](http://www.bitsplitter.net/blog/index.php?p=201) and [Near Field Communication](http://www.nfc-forum.org/). I had heard that NFC was a combined project to form an open platform for location based services, but I didn't know much detail. This is from the article in The Guardian:

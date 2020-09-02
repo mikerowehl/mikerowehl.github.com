@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-08 23:15:12
 layout: post
-slug: visual-programming
 title: Visual Programming
-wordpress_id: 279
-categories:
-- Mobile Computing
 ---
 
 One of the persistent features of the [user programmable systems](http://www.bitsplitter.net/blog/index.php?p=278) I was blabbing about yesterday is visual programming. The idea here is that users have pictograms that they can move around on the screen and connect to each other. Each symbol on the screen represents one of the software components in the system and/or some transformation to apply. This is the second time in the last few months that visual programming has come to mind. Last time was when I was fooling around with Scheme and realized that there seems to be a much more natural mapping for functional languages to move to visual composition. Visual programming is another of those areas that seems really simple when we talk about it, but must have some really thorny problems that have yet to get sorted. It's an area that I don't have very much experience with in general.

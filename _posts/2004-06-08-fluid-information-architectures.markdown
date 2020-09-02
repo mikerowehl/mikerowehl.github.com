@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-08 01:31:56
 layout: post
-slug: fluid-information-architectures
 title: Fluid Information Architectures
-wordpress_id: 278
-categories:
-- General
 ---
 
 I've been taking some time to try to step back a bit and consider the role of technology as a whole. Already a pretty popular topic, many of the currently popular bloggers mix politics, sociology, psychology, and technology into their own editorials. But I'm not taking quite that big of a step back. I'm thinking more in terms of the overall productivity that technology brings. I find it very easy to fall into the trap of striving for a technical hack for no reason. When I see a problem sometimes I just want to solve it. Probably a pretty healthy overall attitude, but like anything too much is bad thing. So I have a bunch of toys now: a good hosting plan for my main site so I can run what I want, a PDA with bluetooth and 802.11 interfaces, a new cell phone, a GPRS plan with no data limit. So it was time to take a deep breath and think about what that means instead of just running off in search of the next gadget.

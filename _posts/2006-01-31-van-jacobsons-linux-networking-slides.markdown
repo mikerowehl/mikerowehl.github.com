@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-01-31 16:34:39
 layout: post
-slug: van-jacobsons-linux-networking-slides
 title: Van Jacobson's Linux Networking Slides
-wordpress_id: 617
-categories:
-- Open Source
 ---
 
 The [slides from Van Jacobson's LCA2006 presentation](http://vger.kernel.org/~davem/cgi-bin/blog.cgi/2006/01/30#van_slides) are online. They talk about an evolution to the Linux networking stack targeted at taking into account multicore systems. If I had to summarize the presentation I would steal the title from slide 16: "The end of the wire isn't the end of the net".

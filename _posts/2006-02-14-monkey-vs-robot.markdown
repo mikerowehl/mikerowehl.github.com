@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-02-14 09:21:17
 layout: post
-slug: monkey-vs-robot
 title: Monkey vs. Robot
-wordpress_id: 623
-categories:
-- General
 ---
 
 [David](http://www.sklar.com/blog/) sent a link to [this video, Monkey vs. Robot](http://video.google.com/videoplay?docid=-4412806662713775705), this morning. If there's anything more funny than a person in a robot suit fighting with a person in a  monkey suit, it's a Monkey vs. Robot music video complete with crayon style title shots. We have a bit of a monkey fixation going on, which started with a rereading of the classic Onion story, [Super Monkey Collider Loses Funding](http://www.theonion.com/content/node/30420). Which was followed by an extended brainstorming session regarding what one could do with a large group of monkeys if one weren't planning to slam them together at high speed. Let me tell you, with some of the big brains we have around Ning, the sky is the limit when it comes to monkey technology. Monkey based power backup systems, the million monkey literature project, and the monkey crossbar switching fabric. Great projects, I can't wait till we get started on them! The video made me realize however that we were overlooking the use of robots.... with the [Aibo folks out of work](http://news.com.com/Sony+puts+Aibo+to+sleep/2100-1041_3-6031649.html), maybe we can pick them up to work on systems for the datacenter. They call me crazy because I dare to dream. Dream of a race of robotic atomic supermonsters that drink blood....

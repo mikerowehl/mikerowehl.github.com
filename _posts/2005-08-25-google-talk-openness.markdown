@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-08-25 12:05:16
 layout: post
-slug: google-talk-openness
 title: Google Talk Openness
-wordpress_id: 551
-categories:
-- General
 ---
 
 So here's an [interesting tidbit from the Google Talk developer info:](http://www.google.com/talk/developer.html) (hat tip [arstechnica](http://arstechnica.com/news.ars/post/20050824-5234.html))

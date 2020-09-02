@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-21 13:31:15
 layout: post
-slug: link-management
 title: Link Management
-wordpress_id: 397
-categories:
-- General
 ---
 
 I ran into [Tantek](http://tantek.com/log/) last night at [Russ's birthday party](http://www.russellbeattie.com/notebook/1008256.html), and talking with him reminded me that I never updated my blog to include [XFN info](http://gmpg.org/xfn/). [Wordpress](http://www.wordpress.org) includes a nice simple XFN generator for the links section, so I decided to use that. I had originally populated the links with an import of the OPML from Bloglines, so adding the relationship info was a snap. Then I started thinking about keeping the info up to date, and synced in the different places it needs to live. Since Wordpress manages the XFN info for me, and publishes it, I figured using Wordpress as the authoritative source would be a good idea.

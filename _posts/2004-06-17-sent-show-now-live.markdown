@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-06-17 11:41:13
 layout: post
-slug: sent-show-now-live
 title: SENT Show Now Live
-wordpress_id: 293
-categories:
-- Mobile Computing
 ---
 
 I've been really looking forward to the [SENT](http://www.sentonline.com/) phonecam art show. I've been keeping an eye out for it since [my first post about it in November of last year](http://www.bitsplitter.net/blog/index.php?p=4). Now it's up and live, including a page that displays random images from those submitted by the public. Images are supposed to be submitted by mailing to submit at sentonline dot com. None of them have shown up on the random images page as far as I can tell. And it's been three days since I sent the first one in. Either I'm doing something wrong (although I've verified the address a few times, and sent images to my own mail accounts to make sure everything is working), there's something wrong with the mail processing on their side, or the images take a really long time to appear. I might email someone to find out what's up, but probably not.

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-05-12 20:00:51
 layout: post
-slug: making-structured-blogging-more-concrete
 title: Making Structured Blogging More Concrete
-wordpress_id: 503
-categories:
-- Feedster
 ---
 
 [Elle](http://www.ellementk.com) was trying to get an [events blog](http://www.ellementk.com/events/) up and running using [structured blogging](http://structuredblogging.org/). We ran into a bunch of issues. Apparently Elle ran into Bob earlier this week, and Bob posted [about the evolution of structured blogging](http://bobwyman.pubsub.com/main/2005/05/mary_hodder_poi.html), so I want to chime in and admit my massive ignorance. I groove to the whole structured blogging concept, I like the idea of information spread about at the points of introduction but still indexed with structure. So these are questions for clarifications and not criticisms of the idea as a whole. Discussion, that's what this is.

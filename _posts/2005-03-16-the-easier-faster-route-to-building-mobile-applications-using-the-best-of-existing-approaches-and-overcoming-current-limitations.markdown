@@ -1,13 +1,7 @@
 ---
-comments: true
 date: 2005-03-16 17:09:49
 layout: post
-slug: the-easier-faster-route-to-building-mobile-applications-using-the-best-of-existing-approaches-and-overcoming-current-limitations
-title: 'The Easier, Faster Route to Building Mobile Applications: Using the Best of
-  Existing Approaches and Overcoming Current Limitations'
-wordpress_id: 461
-categories:
-- Mobile Computing
+title: "The Easier, Faster Route to Building Mobile Applications"
 ---
 
 [The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6484)
@@ -49,5 +43,3 @@ So how do you develop?  It all start with a .mil file.  MIL is a declarative lan
 So you have information on the device, you want to put it on the screen.  For an imperative language you would use a foreach, in MIL you use XPath. You have a tag called a repeater, that repeats markup for each node that matches an expression.
 
 If anyone is interested in developing, they're offering a beta program for early developers.  All the tools are free.
-
-Tags: [ETech2005](http://www.bitsplitter.net/tag.php/etech2005)

@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-04-19 09:41:04
 layout: post
-slug: effects-of-blogging-on-traditional-product-management-and-marketing
 title: Effects of Blogging on Traditional Product Management and Marketing
-wordpress_id: 491
-categories:
-- Feedster
 ---
 
 The discussion this morning at the [PMM in an Always-On World](http://www.ellementk.com/archives/2005/04/15/326) wandered over some interesting topics. A few of the people there were from the promotional products area, and they were talking in particular about trade shows for a while. Apparently there's been a lot of buzz in that industry over one organization trying to buy out the other, and when unsuccessful then attempting to launch a competing trade show at right about the same time. So there was some general discussion about trade shows and how they fit into the overall scheme of marketing and communications. One idea that we talked about, and the one I think I agree with the most, is that trade shows are one of the few places where you can get into a conversation with a company. It might certainly be true that the people with real purchasing decision power aren't at the shows, but it's a chance for your customers (and potential partners, and press, and resellers or licensees, etc.) to come and talk to your people. And it's also a chance for your people to gather information from the people out walking around on the floor. I don't see them as a chance really to meet all that many new leads, but to maintain relationships, exchange information, and discuss.

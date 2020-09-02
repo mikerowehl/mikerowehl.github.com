@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-19 14:45:03
 layout: post
-slug: biomimetic-software
 title: Biomimetic Software
-wordpress_id: 414
-categories:
-- Mobile Computing
 ---
 
 I've had this post sitting around for a while, but seeing as Elle has declared this [Blogger Fort Weekend](http://ellementk.com/archives/2005/02/19/297) I've decided to get it out now.

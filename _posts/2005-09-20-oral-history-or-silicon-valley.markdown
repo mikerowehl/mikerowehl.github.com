@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-09-20 02:14:59
 layout: post
-slug: oral-history-or-silicon-valley
 title: Oral History of Silicon Valley
-wordpress_id: 578
-categories:
-- Silicon Valley
 ---
 
 I listened to [John Markoff's talk from the SDForum](http://www.itconversations.com/shows/detail595.html) while I was wandering around, and decided that it was too good of a collection of references about Silicon Valley not to have my own pointers online. I'll have to pick up the book also, sounds like it'll be great. Meantime, here's a set of pointers to stuff (people, places, things) that's at least refferenced in the audio:

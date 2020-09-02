@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-08 10:34:03
 layout: post
-slug: meatspace-and-urls
 title: Meatspace and URLs
-wordpress_id: 91
-categories:
-- Mobile Computing
 ---
 
 There's a service called [TagAndScan](http://www.tagandscan.com/) available now in the UK. It allows users to leave entries tied to a location, which other users of the service can then come back and view later on. I think of it like a blog with geolocation information, which is something that a number of people have been working on. Of course I would like to see something setup where people can use this information without being tied to a particular service provider (and having to pay to add entries). I won't go into the details about why, I think I've already spouted off a bit too much recently regarding my views on companies and their ability to drive the front edge of innovation. But I would point out that while TagAndScan sounds like a really cool service (and kudos to them for deploying a service like this that users seem to be able to access easily), I would point other developers to projects like [GeoURL](http://geourl.org/), which attempt to get users to add geolocation info to their pages, and then provide a way to lookup local info. I would like to work on a palm app that can lookup your location based on address, then use geourl to find places near you and provide hookins to the browsers to allow viewing those locations. Should be pretty simple given what I've seen, but I'm still a bit of a geolocation newbie. Others who are interested, please [contact me](mailto:miker@bitsplitter.net) or leave a comment here.

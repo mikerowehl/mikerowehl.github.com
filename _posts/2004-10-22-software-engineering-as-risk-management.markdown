@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-10-22 00:11:33
 layout: post
-slug: software-engineering-as-risk-management
 title: Software Engineering as Risk Management
-wordpress_id: 348
-categories:
-- General
 ---
 
 During the Q&A; at the Niklaus Wirth talk last night someone mentioned formal methods from the [Hoare](http://en.wikipedia.org/wiki/C._A._R._Hoare) school of work. Such as [Hoare Logic](http://en.wikipedia.org/wiki/Hoare_logic). In particular they were asking why the work there had fallen out of favor, and wasn't used more widely. Which got me thinking about the cost of axiomatic proof of computer systems. Which got me thinking about my background in computer security.

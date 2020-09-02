@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-02-11 10:23:50
 layout: post
-slug: feedster-feed-of-the-day
 title: Feedster Feed Of The Day
-wordpress_id: 423
-categories:
-- Feedster
 ---
 
 There's a "Feed Of The Day" feature on the [Feedster home page](http://www.feedster.com). See the thing in the middle of the page, right above the ridiculously large  count of feeds in the system? Basically, it's a feed that someone at Feedster thinks is interesting. The responsibility had been falling to Chris and Beverly for a long time, and they had to spend a bunch of time every night casting about for a good feed to feature. Yesterday we decided to rotate the update, so that we take turns picking the feed of the day. My days are going to be Tuesdays and Thursdays, and last night was my first update. I put up Eleanor's blog [EllementK](http://www.ellementk.com/), apparently sleeping with the judge does work :-) (For those who might not know, Eleanor is my girlfriend and we live together, just a little disclose there for those who are into that sort of thing). She's working at NEC America doing research, and puts up a bunch of information about the projects she runs across in doing research, which ranges from [Enterprise IT](http://ellementk.com/archives/category/enterprise-it/) (high availability infrastructure and grid computing) to [mobility](http://ellementk.com/archives/category/mobility/).

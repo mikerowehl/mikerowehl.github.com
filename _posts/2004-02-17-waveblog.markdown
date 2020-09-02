@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-02-17 15:24:27
 layout: post
-slug: waveblog
 title: WaveBlog
-wordpress_id: 160
-categories:
-- Mobile Computing
 ---
 
 Russell [posted info about WaveBlog](http://www.russellbeattie.com/notebook/1006221.html) today. This is the first I'm hearing about the company and the product line, but it's an area that I've been watching intently for a long time. I think the technology is right on the money. Attaching blog updates to places and being able to deliver alerts make a whole hell of a lot of sense to me. Being able to find updates in the area that you're currently in allows for a bunch of applications that just aren't accounted for with the current architecture. The only part that has me a bit scared is that it's being sold to carriers. But given the strength of the technology, I'm not sure that even carriers can destroy this.  But they've done so poorly with almost everything, it makes me at least a bit concerned.

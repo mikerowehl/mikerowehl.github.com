@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2006-09-18 13:16:12
 layout: post
-slug: spellbound-firefox-plugin-dev-version
 title: SpellBound Firefox Plugin, Dev Version
-wordpress_id: 649
-categories:
-- General
 ---
 
 Apparently Firefox 2 has inline spellcheck right out of the box.  Werd, I'm looking forward to it.  However, my Ubuntu systems still have Firefox 1.5.x and I don't want to start mucking around now that I've just started accepting I don't need to build everything by hand. Start pulling on that thread again and whole thing comes apart!

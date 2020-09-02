@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-03-18 13:46:10
 layout: post
-slug: cyborg-or-just-funky
 title: Cyborg? Or Just Funky?
-wordpress_id: 470
-categories:
-- Dweeb
 ---
 
 Nick showed up today with some funky [running shoes that adjust in the field](http://www.techspot.com/story12866.html). Being a geek I just had to take some pictures.

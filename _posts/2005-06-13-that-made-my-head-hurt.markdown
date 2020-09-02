@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-06-13 22:15:31
 layout: post
-slug: that-made-my-head-hurt
 title: That Made My Head Hurt
-wordpress_id: 531
-categories:
-- Dweeb
 ---
 
 It started as a joke to Noel about the spam I get touting 532 nanometer green lasers available in bulk. That ranks up there with the spam for industrial conveyor belts. Do people needing large numbers of green lasers and industrial supplies go looking around in spam for their purchasing needs? Rolex watches, sure. Scam credit relief, sure. Porn, definitely. But industrial supplies? I just can't comprehend what chain of events would lead to that spam generating the required return for the generations of the emails to be worthwhile. Some poor schlep wanders into their bosses office to be brought up short with a request to come up with "a few dozen green lasers, STAT!" The schlep sits down at their computer, the [Mentos](http://www.us.mentos.com/) commercial music starts playing, and magically an email appears to answer their sudden and pressing laser needs? Far fetched at best. And Noel replies with "Or radioactive isotopes." Yep, you got that right. Radioactive fricking isotopes.

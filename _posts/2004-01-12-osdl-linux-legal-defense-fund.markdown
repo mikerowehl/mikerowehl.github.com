@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-12 18:32:56
 layout: post
-slug: osdl-linux-legal-defense-fund
 title: OSDL Linux Legal Defense Fund
-wordpress_id: 97
-categories:
-- Open Source
 ---
 
 There's a [press release](http://www.osdl.org/newsroom/press_releases/2004/2004_01_12_beaverton.html) at OSDL announcing the [Linux Legal Defense Fund](http://www.osdl.org/about_osdl/legal/lldf/lldf_description.html). It's a fund meant to help those who SCO is threatening to sue. If you haven't heard about the issue it almost definitely doesn't affect you. In a nutshell, SCO owns the copyright to the original Unix codebase, and has decided to sue people using Linux cause SCO says there's Unix code in Linux. This simply isn't true. The few examples that SCO has given have proven to be written by Linus or to have derived from another source which existed before the Unix code SCO has rights to. The whole case is all just a big dramatic flailing which is sure to mark the final phase of the welcome death throes of a poorly managed and executed company. It's like that last scene of a horror movie where the bad guy/monster is already mortally wounded, but out of spite it attempts to drag the hero/heroine down into death with them. But the good guy/gal grabs a kitchen knife and hacks off the arm of the disfigured villain. Well, you can think of the defense fund as the metaphorical equivalent of the kitchen knife. And hopefully that cheezy end-score will start soon and SCO will be nothing more than a bad memory. 

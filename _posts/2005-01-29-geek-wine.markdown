@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2005-01-29 07:33:37
 layout: post
-slug: geek-wine
 title: Geek Wine
-wordpress_id: 401
-categories:
-- Silicon Valley
 ---
 
 Niall has proposed a [Geek Wine Gathering](http://www.niallkennedy.com/blog/archives/2005/01/geek_wine_gathe.html) at a place called VinoVenue right over by the Feedster offices (right by the Metreon in San Francisco). They serve tea also, not just wine. The geeky part are the machines that dispense the wine, they use [smartcards](http://en.wikipedia.org/wiki/Smartcard) to dispense an ounce of wine at a time. Though if they were really hip I could just [pay for the drinks with a wave of my hand](http://www.worldnetdaily.com/news/article.asp?ARTICLE_ID=38038), and at the same time take that first step toward my lifelong dream of becoming a cyborg.

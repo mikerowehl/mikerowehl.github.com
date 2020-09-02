@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-04-01 12:39:31
 layout: post
-slug: making-money-off-moblogging
 title: Making Money Off Moblogging
-wordpress_id: 226
-categories:
-- Mobile Computing
 ---
 
 The Feature has [an article about carriers trying to make money off moblogging](http://www.thefeature.com/article?articleid=100500&ref=727157). I think the point about complex cost structures and interoperability being a major barrier is excellent. I agree that there's a lot that carriers should be doing to ease the technical hurdles for their users. I liked this line from right at the start of the article:

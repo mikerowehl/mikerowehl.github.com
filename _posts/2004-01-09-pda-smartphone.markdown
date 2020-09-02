@@ -1,12 +1,7 @@
 ---
-comments: true
 date: 2004-01-09 04:37:37
 layout: post
-slug: pda-smartphone
 title: PDA == SmartPhone?
-wordpress_id: 93
-categories:
-- Mobile Computing
 ---
 
 [An entry over at Techdirt](http://www.techdirt.com/news/wireless/article/3226) makes an interesting point about PDAs and SmartPhones:
