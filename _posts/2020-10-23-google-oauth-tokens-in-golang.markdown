@@ -38,15 +38,14 @@ objects. So I started trying out some alternatives.
 
 There's a
 [nice clean JWT library](https://github.com/dgrijalva/jwt-go)
-that looks like it's still in pretty regular use. And it does work very well,
-it can just be a bit tough to dig up a good RSA based example of validation.
-There are some convenience functions in jwt-go that make is pretty simple to
+that looks like it's still in pretty regular use. And it does work very well.
+It can just be a bit tough to dig up a good RSA based example of validation.
+There are some convenience functions in jwt-go that make it pretty simple to
 setup. But there are a bunch of examples around that seem to pre-date some of
 the convenience functions. So even the good samples can sometimes be a bit 
 intimidating.  Plus the tokens that you get back from Google embed a key id
 that you need to use to lookup the right certificate from their public
 listing. So I put together a sample using a current version of jwt-go:
-
 
 <script src="https://gist.github.com/mikerowehl/3094498f6227571c736d3662e4cb2ae5.js"></script>
 
