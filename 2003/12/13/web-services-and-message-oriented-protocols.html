@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Web Services and Message Oriented Protocols | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Web Services and Message Oriented Protocols" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="There’s an interview with Adam Bosworth over at ACM Queue, and it touches on some ideas I’ve had in relation to mobile application. There is a lot of stuff that I don’t agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I’m hoping that’s an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I’m definitely going to have to keep steering clear of enterprize application settings." />
+<meta property="og:description" content="There’s an interview with Adam Bosworth over at ACM Queue, and it touches on some ideas I’ve had in relation to mobile application. There is a lot of stuff that I don’t agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I’m hoping that’s an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I’m definitely going to have to keep steering clear of enterprize application settings." />
+<link rel="canonical" href="https://rowehl.com/2003/12/13/web-services-and-message-oriented-protocols.html" />
+<meta property="og:url" content="https://rowehl.com/2003/12/13/web-services-and-message-oriented-protocols.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2003-12-13T14:10:52+00:00" />
+<script type="application/ld+json">
+{"description":"There’s an interview with Adam Bosworth over at ACM Queue, and it touches on some ideas I’ve had in relation to mobile application. There is a lot of stuff that I don’t agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I’m hoping that’s an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I’m definitely going to have to keep steering clear of enterprize application settings.","datePublished":"2003-12-13T14:10:52+00:00","url":"https://rowehl.com/2003/12/13/web-services-and-message-oriented-protocols.html","dateModified":"2003-12-13T14:10:52+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2003/12/13/web-services-and-message-oriented-protocols.html"},"headline":"Web Services and Message Oriented Protocols","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Web Services and Message Oriented Protocols</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2003-12-13T14:10:52+00:00" itemprop="datePublished">Dec 13, 2003
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>There’s <a href="http://www.acmqueue.org/modules.php?name=Content&amp;pa=showpage&amp;pid=29">an interview with Adam Bosworth</a> over at ACM Queue, and it touches on some ideas I’ve had in relation to mobile application. There is a lot of stuff that I don’t agree with at all in that article, such as modeling of web services upon the web browser/web site interaction. I’m hoping that’s an artifact of the interview, and not what our cutting edge service deployment experts are really thinking. Because if they think that HTML is a good example of contract based programming, and that further server to server interactions should be based upon it, I’m definitely going to have to keep steering clear of enterprize application settings.</p>
+
+<p>But there is an interest trend brought up in the move towards more message oriented formats. This is another example of people catching on to the ideas that I remember hearing about from the <a href="http://www.jabber.org">Jabber</a> guys literally 4 years ago. They used to go on and on about how applications should be constructed based upon async messages and queues. Mostly I think people laughed at them, which is too bad. Now that mobile communication devices are actually becoming commonplace, questions about syncing up the information in them are more relevant.  When you just had your Palm Pilot it was easy to sync. Some people synced at work and at home, and it was all good for them. But now information lives all over, and the old sync model doesn’t work. All of a sudden those funny Jabber ideas start to make a whole lot of sense. People are saying things like “wouldn’t it be great if when I added a contact to my phone it would automatically get sent to all my devices!?!?!”</p>
+
+<p>Well, it’s not a new idea. These are the kinds of alternate apps that Jabber is built for. In this model each device and application is a client to the IM network. When a contact is added from one device or application it sends a message to the server, and that message is queued for all of the devices in a clients listening group. Each of those apps and devices can then login at any point and get the updates. I think this is actually the direction that Palm is going to be gunning for with their embrace of Web Services and their attempt to make PalmOS 6 more “network centric”. I wouldn’t be surprised if they pushed these kinds of sync functions straight down into the operating system/database interfaces.</p>
+
+  </div><a class="u-url" href="/2003/12/13/web-services-and-message-oriented-protocols.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

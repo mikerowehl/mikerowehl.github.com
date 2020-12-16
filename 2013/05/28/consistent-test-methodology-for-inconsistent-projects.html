@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Consistent Test Methodology for Inconsistent Projects | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Consistent Test Methodology for Inconsistent Projects" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="How do you start introducing some testing if you have a huge group of existing projects, for the most part all implemented using different languages and technologies? That’s the problem I’ve been poking at recently. The first issue is that none of the technology choices were made with testability in mind. And I don’t want to have to go through and run a bunch of code refactoring and reorganization just to start testing. I would much rather start testing, and then start introducing changes to make things easier to test and to increase the coverage. The second issue is that we’re pretty sure there are some major architectural changes and redesigns coming in the short term. So to dig in and harness up the guts of a bunch of systems we know will be changing really shortly anyway also doesn’t seem like a fantastic idea. Plus some of the changes are more about the operating environment than the code itself, and a bunch of unit tests won’t necessarily help us figure out if the web services break when we move from MySQL 5.5 to 5.6." />
+<meta property="og:description" content="How do you start introducing some testing if you have a huge group of existing projects, for the most part all implemented using different languages and technologies? That’s the problem I’ve been poking at recently. The first issue is that none of the technology choices were made with testability in mind. And I don’t want to have to go through and run a bunch of code refactoring and reorganization just to start testing. I would much rather start testing, and then start introducing changes to make things easier to test and to increase the coverage. The second issue is that we’re pretty sure there are some major architectural changes and redesigns coming in the short term. So to dig in and harness up the guts of a bunch of systems we know will be changing really shortly anyway also doesn’t seem like a fantastic idea. Plus some of the changes are more about the operating environment than the code itself, and a bunch of unit tests won’t necessarily help us figure out if the web services break when we move from MySQL 5.5 to 5.6." />
+<link rel="canonical" href="https://rowehl.com/2013/05/28/consistent-test-methodology-for-inconsistent-projects.html" />
+<meta property="og:url" content="https://rowehl.com/2013/05/28/consistent-test-methodology-for-inconsistent-projects.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-05-28T23:43:00+00:00" />
+<script type="application/ld+json">
+{"description":"How do you start introducing some testing if you have a huge group of existing projects, for the most part all implemented using different languages and technologies? That’s the problem I’ve been poking at recently. The first issue is that none of the technology choices were made with testability in mind. And I don’t want to have to go through and run a bunch of code refactoring and reorganization just to start testing. I would much rather start testing, and then start introducing changes to make things easier to test and to increase the coverage. The second issue is that we’re pretty sure there are some major architectural changes and redesigns coming in the short term. So to dig in and harness up the guts of a bunch of systems we know will be changing really shortly anyway also doesn’t seem like a fantastic idea. Plus some of the changes are more about the operating environment than the code itself, and a bunch of unit tests won’t necessarily help us figure out if the web services break when we move from MySQL 5.5 to 5.6.","datePublished":"2013-05-28T23:43:00+00:00","url":"https://rowehl.com/2013/05/28/consistent-test-methodology-for-inconsistent-projects.html","dateModified":"2013-05-28T23:43:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2013/05/28/consistent-test-methodology-for-inconsistent-projects.html"},"headline":"Consistent Test Methodology for Inconsistent Projects","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Consistent Test Methodology for Inconsistent Projects</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2013-05-28T23:43:00+00:00" itemprop="datePublished">May 28, 2013
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>How do you start introducing some testing if you have a huge group of existing
+projects, for the most part all implemented using different languages and
+technologies? That’s the problem I’ve been poking at recently. The first issue
+is that none of the technology choices were made with testability in mind. And
+I don’t want to have to go through and run a bunch of code refactoring and 
+reorganization just to start testing. I would much rather start testing, and
+then start introducing changes to make things easier to test and to increase
+the coverage. The second issue is that we’re pretty sure there are some major
+architectural changes and redesigns coming in the short term. So to dig in and
+harness up the guts of a bunch of systems we know will be changing really
+shortly anyway also doesn’t seem like a fantastic idea. Plus some of the
+changes are more about the operating environment than the code itself, and
+a bunch of unit tests won’t necessarily help us figure out if the web services
+break when we move from MySQL 5.5 to 5.6.</p>
+
+<p>The most obvious and brute-force way would be to recreate the whole end-to-end
+environment and create some system tests for it. I think that would be too
+brute-force though. I would like our first step to provide some tools that
+would be useful to developers and the infrastructure folks. A whole end-to-end
+environment might be useful for infrastructure, but would be a burden for
+development. Even if this were running up on AWS, imagine having to spin up
+a dozen instances and wait for them to initialize just so you could test your
+one change. And the system as a whole definitely wasn’t built with testability
+at the granularity of the entire infrastructure in mind. So good luck being
+able to hit even a small set of the conditions the running systems are
+subjected to.</p>
+
+<p>No, what we needed to start were a few automated acceptance tests at the
+granularity of the individual architecture components. Fortunately, cause much
+of the process before was run off manual QA there are collections of test
+cases floating around for lots of the components. And there’s frequently even
+a description on a wiki page of how to configure a QA environment for a given
+component (for example how to setup a database, configure Tomcat, and install
+and run a web service). So now it’s just a matter of being able to script all
+that up.</p>
+
+<p>Since I wanted these tests to be useful both for development time checks and
+infrastructure validation that meant they needed to run on an environment as
+close to production as possible. But setting up a bunch of testing
+environments introduces a whole other set of problems potentially as large as
+the set we’re trying to solve. Spinning up the instances in the cloud might
+work, but also introduces a different level of complexity. I wanted
+something that a developer could have available right in their project
+checkout they could use to validate their work as they go along and ensure
+there won’t be any surprises when trying to run in production. Fortunately,
+that’s exactly what <a href="http://www.vagrantup.com/">Vagrant</a> is meant to provide.</p>
+
+<p>With Vagrant and <a href="https://www.virtualbox.org/">VirtualBox</a> on a development
+machine it’s easy to spawn a VM running the same version of CentOS we’re
+running in production. The instructions for setting up a QA environment
+become
+<a href="http://docs.vagrantup.com/v2/provisioning/index.html">provisioning scripts</a>
+for the Vagrant config, which automatically get run when the VM launches.
+The automation for the test cases themselves or loading data need to be
+handled on a case-by-case basis, but with the ability to sync files between
+host system and VM and automatically configure port forwarding into the VM
+it makes it much simpler to bundle everything into a single command.</p>
+
+<p>Cause we’re testing at the same granularity at which these projects are
+deployed, we don’t have to refactor the projects before we can
+start automating some testing. The projects already have well defined input
+and output points, which is how they communicate with the rest of the 
+infrastructure, so we just latch onto those. Now, admittedly, the service
+contracts for lots of the projects are fuzzy at best. Cleaning those up is one
+of our medium term goals. But at least now we can start with testing in place
+and then start changing stuff.</p>
+
+<p>And if the infrastructure folks want to try running on a different distro,
+or using a different version of a package, they also now have the tools to
+check changes without having to run things through QA.
+Make the necessary changes on the VM and then run the script to make sure
+nothing has broken.</p>
+
+<p>For this to start looking like a proper continuous delivery test setup we
+should be driving the setup of the VM using the same configuration as we use
+in production, which is why we’re also working on swapping to a more robust
+infrastructure automation system than we have currently. For example, Vagrant
+allows Chef or Puppet for provisioning instead of using a shell script. And
+instead of using the synced filesystem to move data back and forth, the system
+under test should be deployed using the same tools and process as the deploy
+to production. But at least there’s movement in the right direction now.</p>
+
+  </div><a class="u-url" href="/2013/05/28/consistent-test-methodology-for-inconsistent-projects.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

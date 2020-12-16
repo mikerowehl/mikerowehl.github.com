@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>SBC Filtering Port 25 | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="SBC Filtering Port 25" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="When Elle and I got home from New Orleans our phone wasn’t working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle. But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25. My first reaction is that it must be either network problems or Dreamhost bouncing servers (they seem to like to do that). A while later and I’m still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!" />
+<meta property="og:description" content="When Elle and I got home from New Orleans our phone wasn’t working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle. But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25. My first reaction is that it must be either network problems or Dreamhost bouncing servers (they seem to like to do that). A while later and I’m still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!" />
+<link rel="canonical" href="https://rowehl.com/2005/04/05/sbc-filtering-port-25.html" />
+<meta property="og:url" content="https://rowehl.com/2005/04/05/sbc-filtering-port-25.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2005-04-05T22:37:49+00:00" />
+<script type="application/ld+json">
+{"description":"When Elle and I got home from New Orleans our phone wasn’t working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle. But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25. My first reaction is that it must be either network problems or Dreamhost bouncing servers (they seem to like to do that). A while later and I’m still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!","datePublished":"2005-04-05T22:37:49+00:00","url":"https://rowehl.com/2005/04/05/sbc-filtering-port-25.html","dateModified":"2005-04-05T22:37:49+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2005/04/05/sbc-filtering-port-25.html"},"headline":"SBC Filtering Port 25","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">SBC Filtering Port 25</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2005-04-05T22:37:49+00:00" itemprop="datePublished">Apr 5, 2005
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>When Elle and I got home from New Orleans our phone wasn’t working and our DSL connection was bouncing up and down. They got that fixed up during the day, thanks to some poking and prodding from Elle.  But this evening when I went to send email I kept getting errors. Fire up netcat, no response at all from the mail server on port 25.  My first reaction is that it must be either network problems or <a href="http://www.dreamhost.com">Dreamhost</a> bouncing servers (they seem to like to do that).  A while later and I’m still getting errors though. So just for the hell of it I connect up over GPRS and try to send the message like that. Works no problem. Interesting. Sure enough there are random reports scattered all over the place about SBC turning on outbound port filtering for SMTP. Motherfuckers!</p>
+
+<p><a href="http://www.ellementk.com">Elle</a> says she’s been having trouble with SMTP outbound for a while, and that she saw the suggestion to switch to port 587 somewhere. Sure enough, that works. Turns out port 587 is reserved for the <a href="http://www.ietf.org/rfc/rfc2476.txt">message submission protocol</a>. A protocol that seems to exist entirely as existing description of what should be done with SMTP when using it to insert messages into a system from a client program. I know I sent email from home right before we left for New Orleans, so this must be some on again off again kind of SBC experiment. I’m pretty pissed about it though. Spam sucks, sure. But so do unnotified infrastructure changes. And now my ISP has decided to inconvenience me for their own benefit. Speaking as a customer I can say that this definitely does not increase my satisfaction. I know all the reasons an ISP would block outbound SMTP (they apparently have a spammer problem and must be getting dropped into blocking lists, so they want to route everyone through their own authenticated relay). I just don’t think they’re valid. It’s the cheapest, easiest, bluntest way they could deal with the issue. And this is just them being cheap because they can get away with it, because most people don’t understand the underlying issues and what the potential solutions are. It’s not like this is a new issue, Lessig wrote about it a long time ago in <a href="http://www.lessig.org/content/standard/0,1902,3006,00.html">The Spam Wars</a>:</p>
+
+<blockquote>
+  <p>Certainly, spam is an issue. But the real problem is that vigilantes and network service providers are deciding fundamental policy questions about how the Net will work - each group from its own perspective.</p>
+</blockquote>
+
+<p>This is policy-making by the “invisible hand.” It’s not that policy is not being made, but that those making the policy are unaccountable. The self-righteous spam police may or may not be right about the solution to spam; that’s not the point….</p>
+
+<p>I pay my ISP to shift packets around, that’s all I want it to do.  I apply spam filters on my own, because I know that applying port filtering is about as effective in stopping spam as virgin sacrifice (so folks as SBC, sorry to spoil your fun, but that won’t work either). I do not pay them to tell me to what sites and services I’m allowed to connect. But they’ve decided to take it upon themselves to fill that role. From where I’m standing, they’ve just decided to partially stop servicing my needs. And with no upside. Don’t forget, I don’t give a shit if their servers end up blacklisted. This discussion started with me wanting to connect to an external server, which is itself not blacklisted. I do not want them doing this for me, but as far as I know I have no choice. When customer support starts answering their phones again maybe I’ll try to find out.</p>
+
+  </div><a class="u-url" href="/2005/04/05/sbc-filtering-port-25.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

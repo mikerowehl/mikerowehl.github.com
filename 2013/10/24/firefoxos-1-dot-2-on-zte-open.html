@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>FirefoxOS 1.2 on ZTE Open | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="FirefoxOS 1.2 on ZTE Open" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I picked up a ZTE Open Firefox OS device a little while ago. Given that developer hub says it’s a “powerful device aimed at developers and early adopters worldwide” I figured it would be good for some hackery. I read the specs, so I knew that “powerful” should be pretty suspect. I was surprised to find out that it’s not really for developers, and increasingly doesn’t seem to be all that open." />
+<meta property="og:description" content="I picked up a ZTE Open Firefox OS device a little while ago. Given that developer hub says it’s a “powerful device aimed at developers and early adopters worldwide” I figured it would be good for some hackery. I read the specs, so I knew that “powerful” should be pretty suspect. I was surprised to find out that it’s not really for developers, and increasingly doesn’t seem to be all that open." />
+<link rel="canonical" href="https://rowehl.com/2013/10/24/firefoxos-1-dot-2-on-zte-open.html" />
+<meta property="og:url" content="https://rowehl.com/2013/10/24/firefoxos-1-dot-2-on-zte-open.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-10-24T18:06:00+00:00" />
+<script type="application/ld+json">
+{"description":"I picked up a ZTE Open Firefox OS device a little while ago. Given that developer hub says it’s a “powerful device aimed at developers and early adopters worldwide” I figured it would be good for some hackery. I read the specs, so I knew that “powerful” should be pretty suspect. I was surprised to find out that it’s not really for developers, and increasingly doesn’t seem to be all that open.","datePublished":"2013-10-24T18:06:00+00:00","url":"https://rowehl.com/2013/10/24/firefoxos-1-dot-2-on-zte-open.html","dateModified":"2013-10-24T18:06:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2013/10/24/firefoxos-1-dot-2-on-zte-open.html"},"headline":"FirefoxOS 1.2 on ZTE Open","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">FirefoxOS 1.2 on ZTE Open</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2013-10-24T18:06:00+00:00" itemprop="datePublished">Oct 24, 2013
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I picked up a <a href="http://www.engadget.com/2013/10/03/zte-open-review/">ZTE Open</a>
+Firefox OS device a little while ago. Given that
+<a href="https://marketplace.firefox.com/developers/dev_phone">developer hub</a> says
+it’s a “powerful device aimed at developers and early adopters worldwide” I
+figured it would be good for some hackery. I read the specs, so I knew that
+“powerful” should be pretty suspect. I was surprised to find out that it’s not
+really for developers, and increasingly doesn’t seem to be all that open.</p>
+
+<p>When I first grabbed it I figured maybe I could use it to just get a feel for
+FirefoxOS and the direction the teams were trying to push for. However, the
+phone ships with a 1.0.0 version of the operating system and some major basic
+features were missing to even use it for a day or two. For instance GMail
+contact syncing shows up in FFOS 1.1 (I’m not a Facebook user, so syncing using
+the one existing mechanism wasn’t an option). Since this was supposed to be
+a developer phone for early adopters, I figured that would be easy to remedy.
+Not so, there’s no official OS updates for the phone planned at all. Weird.</p>
+
+<p>Okay, no problem, I’ll use it to just do a little poking around developing
+using the Gecko/Gaia stack and getting a feel for it on real hardware. However,
+trying to push an app from the simulator it never showed up on the phone.
+Rebooted and it popped up. Turns out there’s a
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=842725">race condition bug in FFOS 1.0</a>
+which really keeps it from being usable as a developer platform. 
+Of course the pages talking about it say you should “make sure you have the
+latest version of Firefox OS on your devices”. Which we just established
+isn’t possible for this developer device, at least not according to ZTE.
+Well ain’t that just a kick in the crotch?</p>
+
+<p>So of course I ended up doing what I said I wasn’t going to do, and dove
+straight down the rabbithole of compiling my own recent version of Firefox OS
+from source and getting it installed on my ZTE Open device. Turned out to be
+way more of an involved process than I expected given that the device is named
+the “ZTE Open”. I expected that to mean developer friendly. Together with the
+Firefox site saying the device was aimed at developers, I didn’t see any
+reason to second guess that assumption. Here’s the process I went through
+though, which should get you going from an unboxing to running FFOS 1.2 on
+your device. The process isn’t too horrible, but making sense of lots of the
+existing posts out there and figuring out the right order for a fresh device
+took some experimentation.</p>
+
+<p>The first thing to do is apply the
+<a href="http://www.ztedevices.com/support/smart_phone/b5a2981a-1714-4ac7-89e1-630e93e220f8.html?type=software">update from ZTE</a>.
+This was one of the hardest parts to puzzle out for me. Turns out the firmware
+on the model I had was old enough that it was failing to flash the images once
+I had them built. There were folks posting that they had gotten certain parts
+working, and it was failing for me and others who had recently purchased
+devices. Turned out that the original firmware didn’t support fastboot, which
+is one of the mechanisms for getting the code actually onto the device. That
+V1.0.0B02 release from ZTE has instructions for how to load it using the stock
+recovery image, and once it’s installed you’ll be able to use the simple tools
+to get your code onto the device. Also nice, with the ZTE provided update.zip
+on your SD card you can use recovery mode to get back to a working system if
+you end up screwing up the system partition. Which I did dozens of times.</p>
+
+<p>Once you have the ZTE update in make sure you have debugging turned on for
+your phone. Go into Settings / Device Information / More Information / 
+Developer and flip on the Remote Debugging option if it isn’t on already.</p>
+
+<p>Next, unfortunately, you’ll have to grab a binary image of the
+<a href="http://sl.edujose.org/2013/10/adapted-boot-image-for-use-with-b2g.html">boot partition</a>
+hacked up and ready to use. This is horrible, and it’s the other part that was
+really a sticking point trying to figure out. As you’ll see later on, for some
+reason the boot2gecko build for the inari device (which is the name you use
+for building for the ZTE Open) doesn’t generate a boot.img. From what I can
+tell it doesn’t even generate the parts necessary to pull together into a
+boot.img. And as I found out through multiple tries, putting the system and
+user partitions from a custom build together with the boot from a stock system
+you’ll generally end up with the OS booting and the UI layers crashing 
+repeatedly. That’s what I got at least.</p>
+
+<p>Once you’ve got that stuff the build is pretty much as described in the
+<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Firefox_OS_build_prerequisites">FirefoxOS build docs</a>.
+I use an OS X system, but I did my build in a VMWare VM running Ubuntu 13.04.
+The tools used to interact with the Firefox OS devices are the same as used
+for Android development. And I’ve done that under a VM tons, so I was pretty
+comfortable with that part of the setup. Plus being in a VM meant I could muck
+with the stuff in the Linux install as much as I wanted. Below is the actual process I
+ran through, getting all the tools in place, configuring, and building. This
+assumes you’re starting from a completely fresh 13.04 install, you run through
+the installer and then let it pull down any updates, then do this:</p>
+
+<script src="https://gist.github.com/mikerowehl/7275342.js"></script>
+
+<p>NOTE: I moved the set of commands to run off to a gist cause Octopress was 
+prettying up the quotes and making them cut/paste unfriendly.</p>
+
+<p>And then you should have a FFOS 1.2 install runnable on your device. I tested
+mine out with my TMobile SIM in the US: phone works, SMS works, data connection
+works (though by default it was disabled on mine, just use the notification
+pulldown and toggle the cellular data option right next to the wifi toggle).
+Hopefully as the device and OS evolve this gets a lot easier and more developer
+friendly. Needing to pull a binary boot image from someone else just to get a
+fresh build onto a device, that’s not good. I was expecting FFOS development
+to show up Android development in terms of encouraging developers to work with
+the base system. Not the case so far.</p>
+
+  </div><a class="u-url" href="/2013/10/24/firefoxos-1-dot-2-on-zte-open.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
