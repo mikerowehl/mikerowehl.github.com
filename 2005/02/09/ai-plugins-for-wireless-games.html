@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Plugins for Wireless Games | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Plugins for Wireless Games" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’m just catching up on some posts I’ve had sitting around as drafts (there are a lot of them actually). I saw this article about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to hack the description files for Doom? I think it’s just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?" />
+<meta property="og:description" content="I’m just catching up on some posts I’ve had sitting around as drafts (there are a lot of them actually). I saw this article about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to hack the description files for Doom? I think it’s just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?" />
+<link rel="canonical" href="https://rowehl.com/2005/02/09/ai-plugins-for-wireless-games.html" />
+<meta property="og:url" content="https://rowehl.com/2005/02/09/ai-plugins-for-wireless-games.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2005-02-09T07:25:19+00:00" />
+<script type="application/ld+json">
+{"description":"I’m just catching up on some posts I’ve had sitting around as drafts (there are a lot of them actually). I saw this article about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to hack the description files for Doom? I think it’s just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?","url":"https://rowehl.com/2005/02/09/ai-plugins-for-wireless-games.html","@type":"BlogPosting","headline":"Plugins for Wireless Games","dateModified":"2005-02-09T07:25:19+00:00","datePublished":"2005-02-09T07:25:19+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2005/02/09/ai-plugins-for-wireless-games.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Plugins for Wireless Games</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2005-02-09T07:25:19+00:00" itemprop="datePublished">Feb 9, 2005
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I’m just catching up on some posts I’ve had sitting around as drafts (there are a lot of them actually).  I saw <a href="http://www.smartmobs.com/archive/2005/01/31/viral_handheld_.html">this article</a> about Infected, a wireless game for Playstation Portable that has some viral dispersion features. That got me thinking about a whole bunch of different things, mostly around artificial life, the suitability of a wireless network to simulate a resource constrained environment for competition, and the modeling of distance in genetic programming. However, I realized the more fundamental question here might be how hackable are these interfaces? Could I, a normal unlicensed Linux developer with a decent background in wireless interfaces, write a program that ran on a Linux system and interacted with a Playstation Portable game? Could this be used to write plugins and enhancements for the games in the same way that people used to <a href="http://members.lycos.co.uk/doomwads/tc.php">hack the description files for Doom</a>? I think it’s just an 802.11 interface, so it would be technically possible. But are the protocols closed off to allow only PSP to PSP communication? And how about the game data, protected or open?</p>
+
+<p>The wireless interface presents an additional means of access to the game console that circumvents the traditional problems with getting content onto the device. Given that the “razor blade” model applies to most gaming consoles, that the unit itself is pretty much given away so that money can be made on the games, I’m not sure if incentives are aligned right for something like this. That’s supposed to be one of the great aspects of the taco (Nokia N-Gage), ability for just about anyone to easily deliver new games. For most gaming consoles the developers have to burn CDs or DVDs in proprietary formats or get their games blown into ROMs and put into special cartridges. Wireless interface, either with existing games or as a means of providing new games, allows the hacker (by which I mean curious and motivated expert user capable of extending and transforming the system) a lower barrier to entry for experimenting with your system. Hacker ecosystems like this are good for systems as a whole. Once a group of your users sees your products as something they don’t have to just accept “as is” they provide you with a completely different kind of feedback. If some of the expert users are able to service their own needs they can sometimes show you directions and evolutions that it would be difficult or impossible to reach on your own. If the Playstation Portable games don’t allow this kind of extension, is there a gaming system that does? How about flash cartridges that could be loaded over the air? These systems seem to be able to write game state. Does that go to the cartridge or to storage on the unit? Does anyone have a pure software SDK for their console? Hack the game together on a PC using an emulator or simulator, compile for the console target, load over the air onto flash cartridges, and then be able to distribute a version to beta testers they can use with their existing systems? It just sounds dirty and subversive. I would love to be able to do it.</p>
+
+  </div><a class="u-url" href="/2005/02/09/ai-plugins-for-wireless-games.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Coroutines (Navel Gazing Warning) | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Coroutines (Navel Gazing Warning)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This mention of lightweight cooperative multithreading and coroutines caught my eye for some reason. Maybe cause it’s been a while since I wrote anything in C and I got a patch this morning for one of my open source palm programs. Which of course got me thinking about programs that write programs, a concept which gets discovered and rediscovered often enough that I think I’ve seen it about a half dozen times in my relatively short career. Given the new gig I’ve been thinking a lot about domain specific languages, abstraction, and metaprogramming. In particular I’ve been thinking about the tradeoffs between mature systems that exhibit good abstraction and the cut-and-paste reuse that most people instinctively sneer at. Programming in C actually tends to mix the two styles quite a bit. C code tends to be maleable because of the tools available to shape it, the (often abused) macro facility, and the ability to do just about anything you want with your types if you use pointers. Watching something like the Linux kernel evolve through sets of patches makes you realize that there is a metalanguage in the deltas. Over time interface points in the code shift and join, moving from interfaces used in change sets to interfaces instantiated in the model of the program itself." />
+<meta property="og:description" content="This mention of lightweight cooperative multithreading and coroutines caught my eye for some reason. Maybe cause it’s been a while since I wrote anything in C and I got a patch this morning for one of my open source palm programs. Which of course got me thinking about programs that write programs, a concept which gets discovered and rediscovered often enough that I think I’ve seen it about a half dozen times in my relatively short career. Given the new gig I’ve been thinking a lot about domain specific languages, abstraction, and metaprogramming. In particular I’ve been thinking about the tradeoffs between mature systems that exhibit good abstraction and the cut-and-paste reuse that most people instinctively sneer at. Programming in C actually tends to mix the two styles quite a bit. C code tends to be maleable because of the tools available to shape it, the (often abused) macro facility, and the ability to do just about anything you want with your types if you use pointers. Watching something like the Linux kernel evolve through sets of patches makes you realize that there is a metalanguage in the deltas. Over time interface points in the code shift and join, moving from interfaces used in change sets to interfaces instantiated in the model of the program itself." />
+<link rel="canonical" href="https://rowehl.com/2005/10/08/coroutines-navel-gazing-warning.html" />
+<meta property="og:url" content="https://rowehl.com/2005/10/08/coroutines-navel-gazing-warning.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2005-10-08T03:42:18+00:00" />
+<script type="application/ld+json">
+{"description":"This mention of lightweight cooperative multithreading and coroutines caught my eye for some reason. Maybe cause it’s been a while since I wrote anything in C and I got a patch this morning for one of my open source palm programs. Which of course got me thinking about programs that write programs, a concept which gets discovered and rediscovered often enough that I think I’ve seen it about a half dozen times in my relatively short career. Given the new gig I’ve been thinking a lot about domain specific languages, abstraction, and metaprogramming. In particular I’ve been thinking about the tradeoffs between mature systems that exhibit good abstraction and the cut-and-paste reuse that most people instinctively sneer at. Programming in C actually tends to mix the two styles quite a bit. C code tends to be maleable because of the tools available to shape it, the (often abused) macro facility, and the ability to do just about anything you want with your types if you use pointers. Watching something like the Linux kernel evolve through sets of patches makes you realize that there is a metalanguage in the deltas. Over time interface points in the code shift and join, moving from interfaces used in change sets to interfaces instantiated in the model of the program itself.","url":"https://rowehl.com/2005/10/08/coroutines-navel-gazing-warning.html","@type":"BlogPosting","headline":"Coroutines (Navel Gazing Warning)","dateModified":"2005-10-08T03:42:18+00:00","datePublished":"2005-10-08T03:42:18+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2005/10/08/coroutines-navel-gazing-warning.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Coroutines (Navel Gazing Warning)</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2005-10-08T03:42:18+00:00" itemprop="datePublished">Oct 8, 2005
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><a href="http://it.slashdot.org/article.pl?sid=05/10/06/2223232&amp;from=rss">This mention of lightweight cooperative multithreading and coroutines</a> caught my eye for some reason. Maybe cause it’s been a while since I wrote anything in C and I got a patch this morning for one of my open source palm programs. Which of course got me thinking about programs that write programs, a concept which gets discovered and rediscovered often enough that I think I’ve seen it about a half dozen times in my relatively short career. Given <a href="http://www.ning.com">the new gig</a> I’ve been thinking a lot about domain specific languages, abstraction, and metaprogramming. In particular I’ve been thinking about the tradeoffs between mature systems that exhibit good abstraction and the cut-and-paste reuse that most people instinctively sneer at. Programming in C actually tends to mix the two styles quite a bit. C code tends to be maleable because of the tools available to shape it, the (often abused) macro facility, and the ability to do just about anything you want with your types if you use pointers. Watching something like the Linux kernel evolve through sets of patches makes you realize that there is a metalanguage in the deltas. Over time interface points in the code shift and join, moving from interfaces used in change sets to interfaces instantiated in the model of the program itself.</p>
+
+<p>So how do you encourage the same maleable programming when you have a bunch of independent programs? Can the same cut-and-paste evolution style that helped grow the web take hold in application code? The coroutines implemented in a bunch of tricky C code are relatively easily represented <a href="http://gd.tuwien.ac.at/languages/scheme/tutorial-dsitaram/t-y-scheme-Z-H-14.html">in scheme using continuation passing style</a>. When do you implement using C and when do you push the function down into the language itself? I’m just wondering in writing at this point, I don’t have any answers to this one.</p>
+
+  </div><a class="u-url" href="/2005/10/08/coroutines-navel-gazing-warning.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Yahoo Login Problems Using Gaim | Miker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Yahoo Login Problems Using Gaim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It appears that Yahoo has again changed something that causes third party apps to fail. Now, it’s not like I’m unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don’t agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it’s just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can’t contact them. I’m not really happy about that, but unfortunately there’s not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there’s nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of “value in their network”. Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I’m off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch." />
+<meta property="og:description" content="It appears that Yahoo has again changed something that causes third party apps to fail. Now, it’s not like I’m unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don’t agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it’s just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can’t contact them. I’m not really happy about that, but unfortunately there’s not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there’s nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of “value in their network”. Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I’m off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch." />
+<link rel="canonical" href="https://rowehl.com/2004/06/23/yahoo-login-problems-using-gaim.html" />
+<meta property="og:url" content="https://rowehl.com/2004/06/23/yahoo-login-problems-using-gaim.html" />
+<meta property="og:site_name" content="Miker" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2004-06-23T21:51:11+00:00" />
+<script type="application/ld+json">
+{"description":"It appears that Yahoo has again changed something that causes third party apps to fail. Now, it’s not like I’m unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don’t agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it’s just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can’t contact them. I’m not really happy about that, but unfortunately there’s not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there’s nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of “value in their network”. Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I’m off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch.","url":"https://rowehl.com/2004/06/23/yahoo-login-problems-using-gaim.html","@type":"BlogPosting","headline":"Yahoo Login Problems Using Gaim","dateModified":"2004-06-23T21:51:11+00:00","datePublished":"2004-06-23T21:51:11+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rowehl.com/2004/06/23/yahoo-login-problems-using-gaim.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Yahoo Login Problems Using Gaim</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2004-06-23T21:51:11+00:00" itemprop="datePublished">Jun 23, 2004
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It appears that Yahoo has again <a href="http://sourceforge.net/tracker/?func=detail&amp;atid=100235&amp;aid=978640&amp;group_id=235">changed something that causes third party apps to fail</a>. Now, it’s not like I’m unfamiliar with the trials and tribulations of trying to deploy a large scale application like this, I just don’t agree with their policies. Needing to change the underlying protocol is not a good way to control your application, it’s just evidence of poor planning and engineering. Of course, it also highlights some of the dangers of proprietary protocols. I have friends who normally I interact with using Yahoo. Bad me, cause now that Yahoo has decided to break from the API which my client was reverse engineered to work with, I can’t contact them. I’m not really happy about that, but unfortunately there’s not much that one can do. I use Jabber, but not all of the contacts I have are willing to switch. For them the official release always works, so why should they care if Yahoo wants to change the protocol? Well, just remember that there’s nothing that says Yahoo needs to keep doing that. Say they decide that they have lots of “value in their network”. Meaning they think if they decide to make Yahoo a pay-only service that people will cough up some money. Say they decide to do this to everyone, and not just the Gaim users. Take a little while to think about that. Me, I’m off to see how many other people are reevaluating Jabber and trying to see who else I can get to switch.</p>
+
+<p>UPDATE (22:29 06/23/2004) : <a href="http://news.com.com/Yahoo+to+Trillian%3A+Talk+to+the+hand/2100-1032_3-5245821.html">here is a more official article about what happened</a>. Sounds like complete bullshit to me. I don’t see how closing off their protocol helps out keeping down spam. I have a counterpoint actually. When we needed to send notifications using Yahoo and AIM and MSN we first started by using a <a href="http://www.jabber.org/">Jabber server</a> with transports to handle all the different protocols. But of course, some transport was always broken, and it was a huge pain in the ass to try to maintain. So instead we ended up running a Windows box (the only one in the office actually) to run the three different apps and we send Windows events to the different clients to simulate a normal user clicking on stuff and typing messages. It looks like a completely 100% legitimate client to the IM services. Haven’t had any problems since. So there you go. If you’re looking to send spim, that’s the way to do it. Works much better than hacking Gaim or Trillian to send messages. I say this not cause I like spim, but because maybe if the spammers have a different way to send messages it’ll get Yahoo to develop a fucking clue. Real security has nothing to do with the obscurity of your protocols.</p>
+
+<p>UPDATE (00:02 06/04/2004) : According to the work being done to reverse engineer the changes to the protocol, the server now sends an image recognition based challenge/response sequence (like websites that ask you to enter the letters in an image that’s had some obfuscation applied). Well, good for them. That should lock out the spammers for a few days. Me, I’ve decided the service isn’t worth it. It means I might lose the ability to communicate with a few people who aren’t willing to make the switch, but I guess that’s just the price I have to pay. Apparently the price of freedom isn’t only eternal vigilance, but eternal vigilance plus a couple of entries from my buddy list.</p>
+
+  </div><a class="u-url" href="/2004/06/23/yahoo-login-problems-using-gaim.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

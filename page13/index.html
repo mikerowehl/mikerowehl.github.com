@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Page 13 of 64 for Miker | 17th level Hacker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Miker" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="17th level Hacker" />
+<meta property="og:description" content="17th level Hacker" />
+<link rel="canonical" href="https://rowehl.com/page13/" />
+<meta property="og:url" content="https://rowehl.com/page13/" />
+<meta property="og:site_name" content="Miker" />
+<link rel="prev" href="https://rowehl.com/page12" />
+<link rel="next" href="https://rowehl.com/page14" />
+<script type="application/ld+json">
+{"description":"17th level Hacker","url":"https://rowehl.com/page13/","@type":"WebPage","headline":"Miker","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Aug 10, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/10/vero.html">
+            Vero
+          </a>
+        </h3><p>There’s a new Italian restaurant downtown Palo Alto.  They’ve been open for dinner for the last few month, but just started opening for lunch last week. The food is really good, and because it’s new it’s not yet crowded during lunch. The meat lasagne with bechamel is easily as good as Mike’s Cafe in Menlo Park, which is saying A LOT. And they have an excellent espresso.  I think I might just stop by for the coffee on the days when I don’t eat there. They have a <a href="http://www.veroristorante.com/">placeholder website up</a> (cause it’s Palo Alto, of course), but the restaurant is up and going. Here’s a <a href="http://www.mapquest.com/maps/map.adp?searchtype=address&amp;country=US&amp;addtohistory=&amp;searchtab=home&amp;address=530+Bryant+st&amp;city=palo+alto&amp;state=ca&amp;zipcode=">map</a>. It’s on Bryant right between University and Hamilton (530 Bryant St.), very convenient.</p>
+</li><li><span class="post-meta">Aug 6, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/06/bus-contention-and-big-services.html">
+            Bus Contention and Big Services
+          </a>
+        </h3><p>Databases almost always start to suck if you’re trying to build a scalable system. I like relational databases. Databases are great when you’re putting together an application  that needs to be used by hundreds or thousands of people. However, once it starts to get to Internet scale, lots of applications need to move to something different. Take a look at <a href="http://www.oliviertravers.com/archives/2004/12/29/inside-livejournals-backend/">the Livejournal backend</a> presentation if you’re curious what I’m talking about. Once you get to systems like that maximum distribution of the service is really what you want to end up with. And I mean distribution of ALL resources. That includes stuff like network interfaces and memory busses. As in, if every request is really completely independent then you’re better off with two single processor machines than you are with one dual processor machine. Dual processor systems still tend to share a memory bus, they share a network interface (especially in the world of x86 based Linux systems).  Sometimes they even share cache lines. All of that means contention where there doesn’t need to be any. Dual processor systems make sense where the individual stages of a single requests allow for decomposition into two associated tasks that benefit from being able to pass information from one stage to another via local services. But if what you’re doing is throwing compute cycles at a problem that’s been architected for maximum distribution, your best bet is lots of small systems rather than a few large ones.</p>
+</li><li><span class="post-meta">Aug 6, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/06/defcon-and-ciscogate.html">
+            Defcon and Ciscogate
+          </a>
+        </h3><p>We went out to Defcon last weekend too.  Presentations were fantastic, people were great. Yes, Vegas was hot. No, I didn’t die. Yes, there are real hackers there. No, I can’t put you in touch with them. Besides a ton of amusing info, like spoofing a root DNS server while executing an intentially blunt attack for IDS to find you and start autoshunning the name system (teehehehehe) to information about physical locks like spool pins and what a dual ball locking padlock is and why you should care. There was a great presentation about penetration testing the backbone that mentioned <a href="http://www.theregister.com/2005/08/02/cisco_exploits/">the horrid horrid mistakes that Cisco is making</a>. If you have anything to do with security and/or networking equipment I highly recommend paying attention to what Cisco is doing and never EVER doing anything of the sort. It’s stupid. I’m sure all those companies calling me looking for help creating Linux based backbone networking equiptment are just drooling over the huge hole that Cisco has left for them to drive through.</p>
+</li><li><span class="post-meta">Aug 6, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/06/mobile-monday.html">
+            Mobile Monday
+          </a>
+        </h3><p>The <a href="http://www.mobilemonday.com/2005/08/momo-august-jam-packed.html">last Mobile Monday</a> kicked some ass! Thanks to the presenters, fantastic stuff. However I would like to point out that Russ’s posts are mistaken.  The topic for October is Mobile Search (NOT September, as he posted).  We haven’t decided on a topic for Sept yet, so mail me if you have ideas. I’ve alredy gotten a few (thanks <a href="http://kerncomputing.blogspot.com">John</a>!), but don’t be bashful if you have something you want to talk about. Email me, or join <a href="http://groups.yahoo.com/group/mobilemonday/">the discussion group</a> and propose what you want to talk about.</p>
+</li><li><span class="post-meta">Aug 6, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/06/suse-package-management-and-firefox.html">
+            Suse Package Management and Firefox
+          </a>
+        </h3><p>I’m pretty sure there’s something about Suse and Yast that I’m supposed to like. Maybe once I get to know it more I will like it. But I have a 64 bit desktop system I’m using now, running Suse Enterprise 9.2, and I have absolutely no idea where to look for packages that don’t show up when I search in the Yast tool. Fortunately it’s a nice beefy system, so I was able to compile Firefox and Thunderbird and a bunch of other tools when I wasn’t able to find packaged versions. But I’ve run into a bunch of annoying incompatabilities. Take <a href="http://spellbound.sourceforge.net">Spellbound</a> for example. I love Spellbound, I can’t spell at all. I use ‘a’ where I should use ‘e’, I love to use ‘z’ where it’s completely inappropriate, and ‘i’ comes before ‘e’ about 50% of the time depending on my mood. But I can’t get Spellbound to work with my local compile of Firefox. Why?  Ummm… I have no idea. Every time I install it everything seems to go fine. But when I restart it tells me it can’t load the extension, I need to reinstall. Is it cause the core of FF is compiled for x86_64 and the spellcheck libs it installs are for 32 bit? I replaced the libs and xpi from the packaged spelling library with the versions from my Thunderbird compile (which does spell checking fine, W00T!), but that certainly didn’t fix it at all. Running firefox from the command line and looking for errors didn’t help at all either, nothing there that gave me any hints. So I’m kinda sad. But mostly I feel sorry for you folks, who have to now deal with reading something rife with spelling errors.</p>
+</li><li><span class="post-meta">Aug 6, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/08/06/absence-makes-the-heart-grow-fonder.html">
+            Absence Makes the Heart Grow Fonder
+          </a>
+        </h3><p>I haven’t been posting very often cause I’ve been so busy running around working on a bunch of interesting projects. It’s not cause I’m tired of blogging or feel like I have nothing to say or any of those kinds of reasons. I’ve just been completely whomped with stuff to do. I expected to have some time between jobs to do a little catchup, but that hasn’t happened. So I’m gonna post a buncha stuff as little snippets, stuff I’ve had sitting here waiting to go out.</p>
+</li><li><span class="post-meta">Jul 20, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/07/20/a-glorious-four-days.html">
+            A Glorious Four Days
+          </a>
+        </h3><p>I’m starting a new job with a startup company on Thursday. I would be starting it today, but I have a bunch of errands to run, a dentists appointment, and I’m giving <a href="http://www.sfbayacm.org/activities.html">a presentation this evening at the ACM</a> that I still need to do some prep for. My four days of unemployment (I do get to count weekend days, right?) yeilded a whole ton of offers. I’m just amazed at everything that’s going on in the valley right now! There are tons of fantastic ideas, lots of great teams, and everyone is full of infectious energy. I wish I could jump on more than one opportunity, but alas, MikeR 1.0 does not support fork(). I’ve logged a trouble ticket, but the issue isn’t moving along at all.</p>
+</li><li><span class="post-meta">Jul 17, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/07/17/talkie-talkie-talkie.html">
+            Talkie talkie talkie
+          </a>
+        </h3><p>One of the things that <a href="http://www.wombatmobile.com/blojsom/blog/wombat/">Seni</a> talks about is the difference between “talkers” and “doers”. Russ and Seni have been talking about the idea for a long time, but it’s relatively new to me and it’s crept into a bunch of conversations recently. The original context of the conversation was around starting up a business. There are people who float around to all the entrepreneurial events year after year and talk about businesses, but never quite get around to actually starting one. That’s just the most superficial case however. It’s something of an infectious idea actually, figuring out the different styles of behavior. At first I classified talker as something like a bullshit artist. I probably missed the point completely however. Talkers are also analysts, experts, and inventors. It’s not that talkers are useless, they just approach the unknown differently. It’s something like the difference between <a href="http://en.wikipedia.org/wiki/Extrovert">extroverts</a> and <a href="http://en.wikipedia.org/wiki/Introvert">introverts</a>. Talkers have a focus on discussion for discovery and doers have a focus on experimentation. Talkers without doers run the risk of just happily standing around yammering all day long. Doers without talkers run the risk of wasting tons of time experimenting with things they could have simply asked about (and possibly blowing stuff up in the process).</p>
+</li><li><span class="post-meta">Jul 15, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/07/15/last-day-at-feedster.html">
+            Last day at Feedster
+          </a>
+        </h3><p>Today was my last day over at <a href="http://www.feedster.com">Feedster</a>. It’s been a great experience working there. It’s had ups and downs, but that always happens in a startup when you’re trying to do spectacular things. Mostly there have been ups, and I’ve learned a fantastic amount. Particularly from having worked with Rafer and Redlitz. They’ve done an amazing job getting the company to the stage that it’s at now. But the stage now is growth, and I’m really a formation stage kind of person. They have customers calling them wanting to do business and they just need the systems in place in order to be able to fulfill on that business. So I’m stepping aside to make room for Tony to take over the operation and work his brand of magic on it.</p>
+</li><li><span class="post-meta">Jun 14, 2005</span>
+        <h3>
+          <a class="post-link" href="/2005/06/14/back-in-the-land-of-the-living.html">
+            Back in the Land of the Living
+          </a>
+        </h3><p>I reinstalled Linux on one of my systems at home. The fileserver is a permanent install Fedora, but not really usable as a desktop system. So I reclaimed the Windows machine that I was using for Symbian and Palm development and installed Gentoo. OS X is a great work system, I like it a lot more than I expected to. But it is the system to use when I don’t want to think about how to administer my desktop. I tried out the Ubuntu live CD but for some reason it had a bunch of issues with the hardware. So I stuck with what I knew would work (the system was Gentoo before I Windocized it). Now of course the problem is Symbian and Palm development. There’s prc-tools under Linux for Palm, but that’s really a languishing older toolset not capable of dealing easily with issues like PNO or updated features or APIs. At least it has an emulator for 68k systems. Palm claims they have working versions of the current tools on both Linux and OS X, but apparently us folks outside of Palm just ain’t cool enough to get to play with them.</p>
+</li></ul>
+
+    <!-- Pagination links -->
+    <div class="pagination" style="width:100%;">
+      
+        <a href="/page12" class="previous">
+          &laquo; Newer
+        </a>
+      
+      
+        <a href="/page14" style="float: right;" class="next">Older &raquo;</a>
+      
+    </div>
+
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

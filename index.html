@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Miker | 17th level Hacker</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Miker" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="17th level Hacker" />
+<meta property="og:description" content="17th level Hacker" />
+<link rel="canonical" href="https://rowehl.com/" />
+<meta property="og:url" content="https://rowehl.com/" />
+<meta property="og:site_name" content="Miker" />
+<link rel="next" href="https://rowehl.com/page2" />
+<script type="application/ld+json">
+{"description":"17th level Hacker","url":"https://rowehl.com/","@type":"WebSite","headline":"Miker","name":"Miker","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://rowehl.com/feed.xml" title="Miker" /><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38246826-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-38246826-1');
+</script>
+<!-- IE -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- other browsers -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.png">
+</head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Miker</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><h2 class="post-list-heading">Posts</h2>
+    <ul class="post-list"><li><span class="post-meta">Oct 23, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/10/23/google-oauth-tokens-in-golang.html">
+            Google Oauth Tokens in Golang
+          </a>
+        </h3><p>I’m pretty sure I’ve run into this before and worked through it. But for some
+reason my searches didn’t land on something that clicked till I was a few
+iterations in. So I’m putting down a simple example so that when I search for
+it next time I’ll find it… hopefully.</p>
+</li><li><span class="post-meta">Sep 24, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/09/24/service-container-manipulation.html">
+            Service Container Manipulation
+          </a>
+        </h3><p>The Github actions functionality has been pretty spectacular, in particular
+<a href="https://docs.github.com/en/actions/guides/about-service-containers">service containers</a>
+for setting up a test environment. One bit of annoyance though can be trying
+to do setup on a container. When the container gets created the
+repo hasn’t been checked out yet. So I can’t do the normal mount of some init
+into a postgres container like I would using docker-compose locally. There are
+lots of ways to work around that, but I just ran across an example that uses
+docker on the runner image and info from 
+<a href="https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#job-context">the job context</a>
+to exec a few tasks on a service container.</p>
+</li><li><span class="post-meta">Sep 10, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/09/10/ktool-with-osdev-samples.html">
+            ktool for Building OSDev Samples
+          </a>
+        </h3><p>The other day I packaged up
+<a href="https://github.com/mikerowehl/ktool">a build of cross-compile tools for i686 bare images</a>
+using the
+<a href="https://wiki.osdev.org/GCC_Cross-Compiler">instructions from the OSDev wiki</a>
+for making a cross-compiler suitable for building bootable images and kernels.
+I had started fooling around with dockcross to do the builds, but some of the
+OSDev samples explicitly complain if you use a compiler that can be used to
+build for a Linux target. So I just packaged up something of my own and made
+a super simple wrapper script to make it less cumbersome to run.</p>
+</li><li><span class="post-meta">Sep 4, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/09/04/using-docker-to-cross-compile.html">
+            Using Docker to Cross Compile
+          </a>
+        </h3><p>I’ve been poking around with a bunch of low level programming stuff. Looking
+at old source code and playing with some newer examples, like
+<a href="http://3zanders.co.uk/2017/10/13/writing-a-bootloader/">Alex Parker’s fantastic example of a boot loader with assembly and C++</a>.
+There’s lots of interesting stuff out there. But I never like having to setup
+a cross compiler on my system. I used to do a ton of that, and the toolchain
+would always get messed up somehow.</p>
+</li><li><span class="post-meta">Sep 3, 2020</span>
+        <h3>
+          <a class="post-link" href="/2020/09/03/booting-mmurtl-in-virtualbox.html">
+            Booting MMURTL in VirtualBox
+          </a>
+        </h3><p>I was looking through some of the old books on my bookshelf when I ran across
+my copy of 
+<a href="/assets/images/32bit_os_book.jpg">Developing Your Own 32-Bit Operating System</a>.
+I spent a bunch of time playing around with the code when I picked up the book,
+uh… more than 20 years ago. Wow.
+Eventually Linux took over a lot of that interest however and I haven’t looked
+at the book in decades. It was a wonderful learning system that I picked up a
+ton of experience from. And that was back before we had decent emulation and
+virtualization services to work with. I wondered if the code was still floating
+around and if anyone was using it.</p>
+</li><li><span class="post-meta">Nov 19, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/11/19/finished-a-program-29-years-later.html">
+            Finished a Program 29 Years Later
+          </a>
+        </h3><p>My parents were getting ready to sell their house a few months ago, and
+while I was there I grabbed a few 
+<a href="https://twitter.com/miker/status/330731191168806912">super old computer books</a>
+from when I was a kid. Nostalgia I suppose, and I figured they would be cool
+to have around. What I didn’t expect was that I would find a printout and a
+few pages of handwritten notes from a program I was working on when I was 9.
+But of course, once I did, the only rational response was to see if I could
+finally get it working. Which it now is.</p>
+</li><li><span class="post-meta">Oct 28, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/10/28/firefox-os-with-app-manager.html">
+            Firefox OS with App Manager
+          </a>
+        </h3><p>One of the nice things about
+<a href="http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/">getting FFOS 1.2 on my device</a>
+is being able to use App Manager instead of the simulator plugin to do
+development. Given that
+<a href="https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/">the App Manager replaces the Simulator Dashboard</a>
+in the newest versions of Firefox, it seems like the kind of thing developers
+should have access to. So hopefully ZTE figures out a way to get a 1.2+
+release on their developer phones.</p>
+</li><li><span class="post-meta">Oct 24, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/10/24/firefoxos-1-dot-2-on-zte-open.html">
+            FirefoxOS 1.2 on ZTE Open
+          </a>
+        </h3><p>I picked up a <a href="http://www.engadget.com/2013/10/03/zte-open-review/">ZTE Open</a>
+Firefox OS device a little while ago. Given that
+<a href="https://marketplace.firefox.com/developers/dev_phone">developer hub</a> says
+it’s a “powerful device aimed at developers and early adopters worldwide” I
+figured it would be good for some hackery. I read the specs, so I knew that
+“powerful” should be pretty suspect. I was surprised to find out that it’s not
+really for developers, and increasingly doesn’t seem to be all that open.</p>
+</li><li><span class="post-meta">Sep 19, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/09/19/knife-block-for-chef-testing.html">
+            knife-block for Chef Testing
+          </a>
+        </h3><p>A few weeks ago <a href="https://github.com/nathenharvey">Nathen Harvey</a> was kind
+enough to stop by and give us a critique of how we do Chef automated testing
+and some workflow suggestions. We had been using chef-solo
+to do some of the recipe development and automated testing, but all our real
+deployments were done using chef-client. And the differences
+between solo runs and chef-client runs kept biting us. We had seen the stuff
+Lookout Mobile has done to 
+<a href="http://hackers.lookout.com/2012/04/cookout-at-lookout-with-chef/">run a VM for the chef server</a>
+in addition to the node during testing. But that seemed like an awful lot of
+overhead. Fortunately Nathen gave us the awesome hack of using different
+organizations for the different developers of chef rules, different
+organizations for CI, and then the production organization. That gives us
+complete isolation of the different working areas, but still keeps setup
+relatively simple. w00T!</p>
+</li><li><span class="post-meta">Jul 14, 2013</span>
+        <h3>
+          <a class="post-link" href="/2013/07/14/scaling-technology.html">
+            Scaling Technology
+          </a>
+        </h3><p>A few weeks ago Arte and Mario asked me to swing by to chat with folks participating in
+<a href="http://momentum.mobilemonday.us/">the Momentum accelerator</a> to talk about 
+scaling technology. While we were talking I pointed folks to a few posts and videos of 
+talks I consider to be some of the root nodes of a lot of other conversations. I’m not
+sure I’ve ever pulled this together before.</p>
+</li></ul>
+
+    <!-- Pagination links -->
+    <div class="pagination" style="width:100%;">
+      
+        <span class="previous">&laquo; Newer</span>
+      
+      
+        <a href="/page2" style="float: right;" class="next">Older &raquo;</a>
+      
+    </div>
+
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Miker</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Miker</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/mikerowehl"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">mikerowehl</span></a></li><li><a href="https://www.twitter.com/miker"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">miker</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>17th level Hacker</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
