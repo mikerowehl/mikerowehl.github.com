@@ -26,6 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rowehl.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: miker
 github_username:  mikerowehl
+mastodon:
+  - username: mikerowehl
+    instance: mastodon.social
 google_analytics: UA-38246826-1
 
 # Build settings
