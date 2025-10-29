@@ -24,25 +24,29 @@ description: >- # this means to ignore newlines until "baseurl:"
   17th level Hacker
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rowehl.com" # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: miker
 github_username:  mikerowehl
 mastodon:
   - username: mikerowehl
     instance: mastodon.social
-google_analytics: UA-38246826-1
 
 # Build settings
-theme: minima
+theme: beautiful-jekyll-theme
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+include:
+  - .well-known
 
+avatar: "/assets/images/avatar.png"
+favicon: "/assets/images/favicon.ico"
 paginate: 10
 show_excerpts: true
 
-include:
-  - .well-known
+gtag: G-L5N0TL16L4
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
