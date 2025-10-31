@@ -6,15 +6,15 @@ url: "https://rowehl.com" # the base hostname & protocol for your site, e.g. htt
 
 navbar-links:
   About: "about"
-  Github: "https://github.com/mikerowehl"
+  TipJar: "https://publishers.basicattentiontoken.org/en/c/miker"
 
 rss-description: "Mike Rowehl's personal blog"
 
-twitter_username: miker
-github_username:  mikerowehl
-mastodon:
-  - username: mikerowehl
-    instance: mastodon.social
+social-network-links:
+  rss: true
+  github: mikerowehl
+  twitter: miker
+  mastodon: mastodon.social/@mikerowehl
 
 # Build settings
 theme: beautiful-jekyll-theme
