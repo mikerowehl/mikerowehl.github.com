@@ -18,14 +18,25 @@ social-network-links:
 
 # Build settings
 theme: beautiful-jekyll-theme
+
+navbar-col: "#16181d"
+navbar-text-col: "#a8d5a8"
+navbar-border-col: "#2a3f2a"
+page-col: "#1a1d23"
+text-col: "#d8e0d8"
+link-col: "#9966cc"
+hover-col: "#5fba7d"
+footer-col: "#16181d"
+footer-text-col: "#88a088"
+footer-link-col: "#9966cc"
+footer-hover-col: "#5fba7d"
+
 include:
   - .well-known
-
 avatar: "/assets/images/avatar.png"
 favicon: "/assets/images/favicon.ico"
 paginate: 10
 show_excerpts: true
-
 gtag: G-L5N0TL16L4
 
 plugins:
