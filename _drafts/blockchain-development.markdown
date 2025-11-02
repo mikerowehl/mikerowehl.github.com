@@ -76,3 +76,23 @@ also recently swapped my desktop system to full time Linux again, something
 that I haven't done in years. And Brave had already become my daily driver
 browser on my desktop. The browser itself is fantastic. The Basic Attention
 Token has left me scratching my head a bit.
+
+A few addresses I was able to dig up from reverse searches:
+
+https://publishers.basicattentiontoken.org/en/c/I8v1lf9a5r
+https://publishers.basicattentiontoken.org/en/c/iluXz8BPhH
+https://publishers.basicattentiontoken.org/en/c/IO83b67bUF
+https://publishers.basicattentiontoken.org/en/c/nwvUzarnQA
+
+and Jack and Sam:
+
+https://www.youtube.com/@Sam_Bent
+https://www.youtube.com/@JackRhysider
+
+though when you look at the donate option for jack it says ludiosrs
+
+https://www.youtube.com/@ludiosrs
+
+Who's a content creator that just started up an OSRS bossing bound account,
+which looks interesting. But I'm not sure why that account is listed on Jack's
+donation info.
