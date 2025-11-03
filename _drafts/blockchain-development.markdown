@@ -96,3 +96,9 @@ https://www.youtube.com/@ludiosrs
 Who's a content creator that just started up an OSRS bossing bound account,
 which looks interesting. But I'm not sure why that account is listed on Jack's
 donation info.
+
+CoinBureau is a creator, but only accepts uphold:
+
+https://www.youtube.com/watch?v=FiR06Klq7R8
+
+
