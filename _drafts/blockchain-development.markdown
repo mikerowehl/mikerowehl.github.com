@@ -101,4 +101,12 @@ CoinBureau is a creator, but only accepts uphold:
 
 https://www.youtube.com/watch?v=FiR06Klq7R8
 
+Patrick Collins is signed up for Brave Creators:
+
+https://creators.brave.com/en/c/zCyT2t1bL8
+
+But there doesn't seem to be a single donation to the account he's signed up
+with. Last transaction was 900 days ago when he setup a .eth name for the 
+wallet. If Patrick isn't getting crypto donations I don't think anyone will.
+
 
