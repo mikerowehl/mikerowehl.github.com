@@ -41,3 +41,4 @@ gtag: G-L5N0TL16L4
 
 plugins:
   - jekyll-feed
+  - jekyll-compose
