@@ -33,4 +33,4 @@ So along those lines what issues are currently on my hot plate in terms of influ
 
 
 
-If you have your own hot buttons you would like to see us cover please leave a comment or email me at miker at bitsplitter dot net.
+If you have your own hot buttons you would like to see us cover please leave a comment or email me.
