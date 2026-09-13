@@ -12,10 +12,10 @@ working on a mobile blogging client for the Palm series of devices, and I just
 needed a Wordpress install to test against. So I installed one for myself.
 
 Once it was up and running I started posting to it every once in a while. At
-the beginning just to have some good test content there to exercise the app
-with. But I found that the journaling practice agreed with me overall. I had
+the beginning just to have some good test content there to exercise the app.
+But I found that the journaling practice agreed with me overall. I had
 also just moved to Silicon Valley and was going to events, participating in
-interest groups, just meeting interesting new people. And the practice of 
+interest groups, just meeting interesting new people. The practice of 
 sitting down to try to digest what was happening every once in a while really
 helped to structure and coalesce my own thoughts out of everything that was
 getting poured in.
@@ -23,12 +23,12 @@ getting poured in.
 The older posts in here aren't anything special. They're just a stream of
 consciousness from someone immersing themselves in the Silicon Valley that
 existed in the early 2000s. Which was a very cool place, but not super 
-relevant any more. But getting rid of these posts completely doesn't seem
-right either. Years after I started this blog I also had one called This is
-Mobility that got a lot more traffic and eventually had a ton more content.
+relevant any more. Still, getting rid of these posts completely doesn't seem
+right. Years after I started this blog I also had one called "This is
+Mobility" that got a lot more traffic and eventually had a ton more content.
 That one I got rid of completely once it didn't really seem relevant to where
-the mobile industry had ended up. That felt right. But I don't think this set
-of posts is ready to go. And maybe I'm not done digesting all the stuff I need
+the mobile industry had ended up. That felt right. I don't think this set
+of posts is ready to go. Maybe I'm not done digesting all the stuff I need
 to process.
 
 Sometimes I do go back through the posts here
