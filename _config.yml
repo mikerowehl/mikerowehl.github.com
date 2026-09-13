@@ -6,7 +6,6 @@ url: "https://rowehl.com" # the base hostname & protocol for your site, e.g. htt
 
 navbar-links:
   About: "about"
-  TipJar: "https://publishers.basicattentiontoken.org/en/c/miker"
 
 rss-description: "Mike Rowehl's personal blog"
 
