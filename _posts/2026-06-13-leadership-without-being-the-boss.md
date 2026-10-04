@@ -7,7 +7,7 @@ I used to tell people that I was happy to help lead an effort, I just didn't
 want to be in charge. Sometimes that would confuse people and it would take a
 while to explain. A long time ago a friend drew me a picture like this:
 
-<img src="/assets/images/leadership.png" alt="Leader vs Boss" style="max-width: 100%;">
+<img src="/assets/img/leadership.png" alt="Leader vs Boss" style="max-width: 100%;">
 
 And I've used something like it often over the years to explain what I mean.
 I've also seen some very Dilbert style versions where the boss has a whip

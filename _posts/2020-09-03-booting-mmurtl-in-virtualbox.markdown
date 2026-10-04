@@ -5,7 +5,7 @@ date: 2020-09-03 12:50
 ---
 I was looking through some of the old books on my bookshelf when I ran across
 my copy of 
-[Developing Your Own 32-Bit Operating System](/assets/images/32bit_os_book.jpg).
+[Developing Your Own 32-Bit Operating System](/assets/img/32bit_os_book.jpg).
 I spent a bunch of time playing around with the code when I picked up the book,
 uh... more than 20 years ago. Wow.
 Eventually Linux took over a lot of that interest however and I haven't looked
