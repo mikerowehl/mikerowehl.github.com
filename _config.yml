@@ -30,8 +30,6 @@ footer-text-col: "#88a088"
 footer-link-col: "#9966cc"
 footer-hover-col: "#5fba7d"
 
-include:
-  - .well-known
 avatar: "/assets/images/avatar.png"
 favicon: "/assets/images/favicon.ico"
 paginate: 10
