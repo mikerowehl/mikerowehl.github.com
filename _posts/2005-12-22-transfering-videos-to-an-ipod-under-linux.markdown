@@ -4,7 +4,7 @@ layout: post
 title: Transfering Videos to an iPod Under Linux
 ---
 
-Getting [audio on to the iPod using Linux was a snap](http://www.rowehl.com/blog/?p=596). Getting videos on took a bit more doing, but also worked out quite well. I'm listing the info here cause it took a little searching around to find it. This is the stuff you'll need you probably don't have:
+Getting [audio on to the iPod using Linux was a snap]({% post_url 2005-12-20-using-a-video-ipod-under-linux %}). Getting videos on took a bit more doing, but also worked out quite well. I'm listing the info here cause it took a little searching around to find it. This is the stuff you'll need you probably don't have:
 
 
 

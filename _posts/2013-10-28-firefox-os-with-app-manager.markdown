@@ -4,7 +4,7 @@ title: "Firefox OS with App Manager"
 date: 2013-10-28 10:46
 ---
 One of the nice things about
-[getting FFOS 1.2 on my device](http://rowehl.com/blog/2013/10/24/firefoxos-1-dot-2-on-zte-open/)
+[getting FFOS 1.2 on my device]({% post_url 2013-10-24-firefoxos-1-dot-2-on-zte-open %})
 is being able to use App Manager instead of the simulator plugin to do
 development. Given that
 [the App Manager replaces the Simulator Dashboard](https://hacks.mozilla.org/2013/10/introducing-the-firefox-os-app-manager/)

@@ -8,9 +8,9 @@ up. I created the site cause I wanted a Wordpress install
 I could test my PalmOS based mobile blogging client against. But once I had
 the site
 up and running I started tossing all sorts of random stuff in. Everything from
-my own thoughts on [scalability](/blog/2006/04/02/high-availability-nfs/)
+my own thoughts on [scalability]({% post_url 2006-04-03-high-availability-nfs %})
 to summaries of events
-about [the FabLab](/blog/2005/04/15/make-almost-anything/).
+about [the FabLab]({% post_url 2005-04-15-make-almost-anything %}).
 However, after a few years of tossing all sorts of random stuff in here I
 started to really focus on mobile, so I
 created a mobile specific site called 
