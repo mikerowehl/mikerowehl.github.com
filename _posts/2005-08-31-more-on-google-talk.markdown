@@ -4,4 +4,4 @@ layout: post
 title: More on Google Talk
 ---
 
-Here's [a much more verbose version](http://www.livejournal.com/users/nugget/97081.html) of what [I was trying to drive at the other day](http://www.bitsplitter.net/blog/?p=551). Having a closed off IM system makes as much sense as a closed off email system. At least I think that's what it says. I didn't read that whole thing, I just skimmed it, but I'm pretty sure that's what it says.
+Here's [a much more verbose version](http://www.livejournal.com/users/nugget/97081.html) of what [I was trying to drive at the other day]({% post_url 2005-08-25-google-talk-openness %}). Having a closed off IM system makes as much sense as a closed off email system. At least I think that's what it says. I didn't read that whole thing, I just skimmed it, but I'm pretty sure that's what it says.

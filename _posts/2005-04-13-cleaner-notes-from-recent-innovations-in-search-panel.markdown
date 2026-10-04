@@ -4,7 +4,7 @@ layout: post
 title: Cleaner Notes from Recent Innovations in Search Panel
 ---
 
-I posted [raw notes](http://www.bitsplitter.net/blog/?p=485) yesterday for this event, here's the cleaned up version.  The event was ["Recent Innovations in Search and Other Ways of Finding Information"](http://www.baychi.org/calendar/20050412b/). There's going to be audio of the event posted, I'm not sure if it's going to be to the [BayCHI site](http://www.baychi.org/) or somewhere else. The panel started with a 5 minute show and tell by each panelist, they had slides or walked through the tools they're working on.
+I posted [raw notes]({% post_url 2005-04-12-notes-from-the-recent-innovations-in-search-and-other-ways-of-finding-information-panel %}) yesterday for this event, here's the cleaned up version.  The event was ["Recent Innovations in Search and Other Ways of Finding Information"](http://www.baychi.org/calendar/20050412b/). There's going to be audio of the event posted, I'm not sure if it's going to be to the [BayCHI site](http://www.baychi.org/) or somewhere else. The panel started with a 5 minute show and tell by each panelist, they had slides or walked through the tools they're working on.
 
 Panelists
 

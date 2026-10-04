@@ -14,4 +14,4 @@ I was just digging through some old news I marked down but never read, and just 
 
 
 
-I've [mentioned SIP before](http://www.bitsplitter.net/blog/?p=329), and I'm still pretty excited about what SIP could do in the mobile environment - if it made it out into more implementations. However, I haven't seen it out in the wild yet. Hopefully that's just because it takes time to deploy a new capability and not because there is interest in keeping it out of the public marketplace.
+I've [mentioned SIP before]({% post_url 2004-08-24-sip-and-mobile-services %}), and I'm still pretty excited about what SIP could do in the mobile environment - if it made it out into more implementations. However, I haven't seen it out in the wild yet. Hopefully that's just because it takes time to deploy a new capability and not because there is interest in keeping it out of the public marketplace.

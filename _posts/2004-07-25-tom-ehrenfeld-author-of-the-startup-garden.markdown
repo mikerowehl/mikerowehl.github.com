@@ -22,7 +22,7 @@ Small Business Trends has three posts that constitute an interview with Tom Ehre
 
 
 
-A lot of the comments in there really ring true, especially given [my thoughts in relation to the recent BlogOn event](http://www.bitsplitter.net/blog/index.php?p=321). BlogOn was a great event mind you, and I would go again if I had the chance, even if just for the interaction with other attendees before, between, and after sessions. But I would have really liked to see more of the kinds of information that comes through in this interview. I particularly liked the answer to question #2 from the first session:
+A lot of the comments in there really ring true, especially given [my thoughts in relation to the recent BlogOn event]({% post_url 2004-07-24-blogon-expectations %}). BlogOn was a great event mind you, and I would go again if I had the chance, even if just for the interaction with other attendees before, between, and after sessions. But I would have really liked to see more of the kinds of information that comes through in this interview. I particularly liked the answer to question #2 from the first session:
 
 
 

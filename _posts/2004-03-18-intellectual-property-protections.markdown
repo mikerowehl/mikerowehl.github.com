@@ -4,7 +4,7 @@ layout: post
 title: Intellectual Property Protections
 ---
 
-Larry Lessig [gave a presentation on why the protection of IP is important for the creative process](http://trends.newsforge.com/trends/04/03/17/156205.shtml?tid=137&tid=147). It sounds like it was the same set of material that [he tried out on us over at Stanford](http://www.bitsplitter.net/blog/index.php?p=167). Lessig has a new book on the market called [**The Future of Ideas**](http://the-future-of-ideas.com/), something I'm certainly going to pick up and read. There was a quote I particularly liked in there:
+Larry Lessig [gave a presentation on why the protection of IP is important for the creative process](http://trends.newsforge.com/trends/04/03/17/156205.shtml?tid=137&tid=147). It sounds like it was the same set of material that [he tried out on us over at Stanford]({% post_url 2004-02-19-lessig-on-free-culture %}). Lessig has a new book on the market called [**The Future of Ideas**](http://the-future-of-ideas.com/), something I'm certainly going to pick up and read. There was a quote I particularly liked in there:
 
 
 > "Let the commercial interests compete on execution of the ideas; that's the free enterprise system," Lessig said. "But the creators need to maintain the freedom to distribute their ideas any way they want. They shouldn't be bogged down by 20-year copyrights and other old restrictions that bottle up good ideas" [and] keep them on the shelf, Lessig said.

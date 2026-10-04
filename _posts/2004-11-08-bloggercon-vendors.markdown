@@ -4,7 +4,7 @@ layout: post
 title: BloggerCon Vendors
 ---
 
-[Nick Bradbury](http://nick.typepad.com/blog/2004/11/bloggercon_the_.html) also stopped by the [vendors gathering we had](http://www.bitsplitter.net/blog/index.php?p=362). I love this comment that he made:
+[Nick Bradbury](http://nick.typepad.com/blog/2004/11/bloggercon_the_.html) also stopped by the [vendors gathering we had]({% post_url 2004-11-07-i-heart-vendors %}). I love this comment that he made:
 
 
 

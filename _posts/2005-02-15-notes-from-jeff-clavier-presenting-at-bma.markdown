@@ -33,7 +33,7 @@ There are four main factors that commonly go into evaluating an opportunity: whi
   * Disruption means cost savings in some way. It may be a sea change in technology that drives cost reduction, or new methods, or a new business model. But it needs to be something big. The savings needs to be significant enough to outweigh the risk of switching to the new system.
 
 
-  * Sometimes teams of people just work right. People will toss money at them just to see what happens. If your team has a proven track record it can go a long way toward helping out with the current effort. Jeff said something like if you have the right people you can paint anything on "the canvas of the team", I liked that turn of phrase. Sifry mentioned [paying attention to the corporate DNA that you're building](http://www.bitsplitter.net/blog/?p=419) last week. This is always important, funding or no funding. There's just no substitute for having good people willing to work together.
+  * Sometimes teams of people just work right. People will toss money at them just to see what happens. If your team has a proven track record it can go a long way toward helping out with the current effort. Jeff said something like if you have the right people you can paint anything on "the canvas of the team", I liked that turn of phrase. Sifry mentioned [paying attention to the corporate DNA that you're building]({% post_url 2005-02-09-106miles %}) last week. This is always important, funding or no funding. There's just no substitute for having good people willing to work together.
 
 
 
