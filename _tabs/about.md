@@ -1,6 +1,8 @@
 ---
-layout: page
-title: About
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
+permalink: /about.html
 ---
 
 I started this blog all the way back in 2003. I'm writing this about page in
