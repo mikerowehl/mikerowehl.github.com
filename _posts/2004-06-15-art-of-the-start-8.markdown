@@ -2,6 +2,7 @@
 date: 2004-06-15 14:12:04
 layout: post
 title: Art of the Start 8
+categories: ["Startups & Leadership"]
 ---
 
 Funding Your Dream

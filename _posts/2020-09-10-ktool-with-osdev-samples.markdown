@@ -2,6 +2,7 @@
 layout: post
 title: "ktool for Building OSDev Samples"
 date: 2020-09-10 13:53
+categories: ["Programming"]
 ---
 The other day I packaged up
 [a build of cross-compile tools for i686 bare images](https://github.com/mikerowehl/ktool)

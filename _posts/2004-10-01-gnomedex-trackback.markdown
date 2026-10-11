@@ -2,6 +2,7 @@
 date: 2004-10-01 15:19:05
 layout: post
 title: Gnomedex Trackback
+categories: ["Blogging & RSS"]
 ---
 
 I've been using [Technorati](http://www.technorati.com) to follow the [Gnomedex](http://www.gnomedex.com) comments, but that info seems to be pretty lagged. And Gnomedex has a [submit info page](http://www.lockergnome.com/contact/submissions.phtml) but they some some stuff about making decisions to publish stuff. So I'm assuming that isn't realtime either. So here's a post to either leave pointers to your resources, or submit trackbacks.  We have an IRC channel going on [Freenode](http://www.freenode.net), channel #gnomedex. Here's some of the stuff people in IRC have posted:

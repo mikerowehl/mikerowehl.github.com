@@ -2,6 +2,7 @@
 date: 2005-04-04 19:13:13
 layout: post
 title: April MoMo - Fabrizio Capobianco
+categories: ["Mobile"]
 ---
 
 Fabrizio speaking at [the April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

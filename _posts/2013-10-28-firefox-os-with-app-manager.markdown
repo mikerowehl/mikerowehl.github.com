@@ -2,6 +2,7 @@
 layout: post
 title: "Firefox OS with App Manager"
 date: 2013-10-28 10:46
+categories: ["Mobile"]
 ---
 One of the nice things about
 [getting FFOS 1.2 on my device]({% post_url 2013-10-24-firefoxos-1-dot-2-on-zte-open %})

@@ -2,6 +2,7 @@
 layout: post
 title: Builder Research - Basic Attention Token
 date: 2025-11-06 15:47 -0800
+categories: ["Programming"]
 ---
 
 I've recently started getting back into some blockchain development. A part of

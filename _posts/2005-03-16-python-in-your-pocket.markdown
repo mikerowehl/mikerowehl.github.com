@@ -2,6 +2,7 @@
 date: 2005-03-16 14:31:50
 layout: post
 title: Python in your Pocket
+categories: ["Mobile"]
 ---
 
 [Erik Smartt](http://conferences.oreillynet.com/cs/et2005/view/e_sess/7020) about Mobile Python.

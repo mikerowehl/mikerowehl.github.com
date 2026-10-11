@@ -2,6 +2,7 @@
 date: 2004-01-22 09:21:09
 layout: post
 title: SF Weblogger Meetup
+categories: ["Blogging & RSS"]
 ---
 
 I went to the [Weblogger Meetup](http://blog.meetup.com/) in San Francisco last night, but only one other person showed up. I think that it just isn't going to happen at all. During December lots of people showed cause the crew from [Blogger.com](http://www.blogger.com) were there. But besides the people that [Jason Shellen](http://shellen.com/) invited, and the people that I invited, there wasn't anyone new. This time around I sent out some emails and got not much response, but figured that there might be people there anyway. I was wrong. Not a big deal, communities shift over time. I guess there just aren't many  people into the technologies looking to meet.

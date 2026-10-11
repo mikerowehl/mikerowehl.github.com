@@ -2,6 +2,7 @@
 date: 2006-04-03 05:51:06
 layout: post
 title: More Jerry Taylor
+categories: ["Linux & Open Source"]
 ---
 
 Some [additional info about the politician who incorrectly threatened CentOS with FBI action](http://www.tuttletimes.com/siteSearch/apstorysection/local_story_088201244.html). Gotta love this:

@@ -2,6 +2,7 @@
 date: 2004-01-14 14:50:02
 layout: post
 title: Direct Brain Interface
+categories: ["Tech & Society"]
 ---
 
 I created a new category for [this article about a direct neural interface](http://www.wired.com/news/medtech/0,1286,61889,00.html?tw=wn_story_top5). The category is called Dweeb, and it's for those things that aren't quite mobile computing, or open source, or related to things that I'm working on, but are still just too fucking cool to ignore. I have no idea what would go into trying to build an interface like this, how well I think it would work, how marketable I think it would be... no, I just get starry eyed and whisper "oooo, I want one of those". That's what Dweeb is gonna be all about.

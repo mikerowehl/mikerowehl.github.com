@@ -2,6 +2,7 @@
 date: 2005-03-16 11:50:06
 layout: post
 title: 'From the Classroom: Remixing Wikis with Rendezvous, Web Services and SchoolTool'
+categories: ["Tech & Society"]
 ---
 
 [From the Classroom: Remixing Wikis with Rendezvous, Web Services and SchoolTool](http://conferences.oreillynet.com/cs/et2005/view/e_sess/5985)

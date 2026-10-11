@@ -2,6 +2,7 @@
 date: 2004-01-03 14:45:43
 layout: post
 title: Vent Cerf on the Future of the Internet
+categories: ["Tech & Society"]
 ---
 
 [An article over at BBC](http://newsvote.bbc.co.uk/mpapps/pagetools/print/news.bbc.co.uk/2/hi/technology/3292043.stm) provides information from Vint Cerf. Dr. Cerf has been involved with the Internet since the very beginning, and continues to remain active in steering activities. I found his comments interesting because he also seems to think that hooking all sorts of devices to the Internet is the way of the future:

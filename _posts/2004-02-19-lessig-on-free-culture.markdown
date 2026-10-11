@@ -2,6 +2,7 @@
 date: 2004-02-19 23:23:42
 layout: post
 title: Lessig on Free Culture
+categories: ["Tech & Society"]
 ---
 
 I just got done witnessing my first presentation by Larry Lessig. That was really quite interesting. Not only was the topic engaging, and the commentary insightful, but the format of his presentation was great. I had seen posts about the "Lessig Style" of presentation before, but hearing about it is nothing like seeing it. If you get a chance to go to one of his talks, even if you're not that interested in the topic, it could be worth it just to see the way he presents. But on to the topic of the presentation.

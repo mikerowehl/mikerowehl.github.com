@@ -2,6 +2,7 @@
 date: 2004-03-30 17:54:43
 layout: post
 title: Mobile Design Issues
+categories: ["Mobile"]
 ---
 
 The Feature has the first of what is going to be a four part series on mobile design, [Listening to Users](http://www.thefeature.com/article?articleid=100488&ref=727157). The list of points there should be pretty familiar to anyone who has ever taken even a passing interest in design. It's not even surprizing any more to hear that basic design issues are overlooked by the tech industry. There are a couple of good general points in there however. Such as catering to the "silver surfers" (older users) who often can't use the eternally shrinking mobile devices on the market today because they need larger buttons and bigger displays. And I particularly liked this:

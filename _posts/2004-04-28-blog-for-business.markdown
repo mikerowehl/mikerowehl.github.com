@@ -2,6 +2,7 @@
 date: 2004-04-28 13:17:55
 layout: post
 title: Blog for Business
+categories: ["Blogging & RSS"]
 ---
 
 Small Business Trends [reviews Blog for Business](http://www.smallbusinesses.blogspot.com/archives/2004_04_01_smallbusinesses_archive.html#108294960642999951), and in the process drops some great quotes:

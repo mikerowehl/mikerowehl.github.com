@@ -2,6 +2,7 @@
 date: 2004-10-01 11:38:58
 layout: post
 title: Micro-content Dinner in San Fran
+categories: ["Blogging & RSS"]
 ---
 
 Marc Canter has a [Micro-content dinner](http://marc.blogs.it/archives/2004/09/san_francisco_m.html) planned for Oct 13th in San Francisco:

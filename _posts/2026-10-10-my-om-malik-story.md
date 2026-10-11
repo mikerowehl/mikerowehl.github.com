@@ -2,6 +2,7 @@
 layout: post
 title: My Om Malik Story
 date: 2026-10-10 10:41 -0700
+categories: ["Personal"]
 ---
 When [Om Malik](https://en.wikipedia.org/wiki/Om_Malik) passed away earlier
 this year the first thing that popped into my head was the first time I met

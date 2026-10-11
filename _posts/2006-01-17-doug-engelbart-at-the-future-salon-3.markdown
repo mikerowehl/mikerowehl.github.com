@@ -2,6 +2,7 @@
 date: 2006-01-17 08:08:08
 layout: post
 title: Doug Engelbart at the Future Salon
+categories: ["Tech & Society"]
 ---
 
 [Doug Engelbart is going to be at the Future Salon this Friday, January 20th](http://www.futuresalon.org/2005/12/raising_collect.html):

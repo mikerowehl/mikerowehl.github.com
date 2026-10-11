@@ -2,6 +2,7 @@
 date: 2005-05-29 17:44:57
 layout: post
 title: SuperHappyDevHouse
+categories: ["Programming"]
 ---
 
 Yesterday we were [over at Adam and Michelle Rifkin's place for a BBQ](http://flickr.com/photos/ifindkarma/16287087/), and as it was about time to go back home [Tantek](http://tantek.com/log/) asks "Hey, are you guys going to [SuperHappyDevHouse](http://superhappydevhouse.com/Beta) tonight?" Oh, he's good! We spent a bit of time debating if the car was going into the water or coming out, and promptly decided that the only sane thing to do was to head over and find out.

@@ -2,6 +2,7 @@
 date: 2004-07-23 10:49:27
 layout: post
 title: BlogOn Transcripts
+categories: ["Blogging & RSS"]
 ---
 
 I'm over at [BlogOn](http://www.blogonevent.com) today. There's not much need to upload notes. Heath Row already has transcripts up:

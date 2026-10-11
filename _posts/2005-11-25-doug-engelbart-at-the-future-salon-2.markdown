@@ -2,6 +2,7 @@
 date: 2005-11-25 14:10:26
 layout: post
 title: Doug Engelbart at the Future Salon
+categories: ["Tech & Society"]
 ---
 
 [Doug Engelbart](http://en.wikipedia.org/wiki/Doug_Engelbart) is going to be at the [Future Salon on Nov 30th](http://www.futuresalon.org/2005/11/future_salon_wi.html). He's gotten some money to pursue the [Large Scale Collective IQ](http://www.socialtext.net/futuresalon/index.cgi?large_scale_collective_iq) project, and is going to be talking about what some of the first steps will be.

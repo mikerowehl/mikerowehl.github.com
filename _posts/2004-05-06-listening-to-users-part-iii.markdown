@@ -2,6 +2,7 @@
 date: 2004-05-06 10:16:05
 layout: post
 title: Listening to Users Part III
+categories: ["Mobile"]
 ---
 
 TheFeature has [Listening to Users, Part III](http://www.thefeature.com/article?articleid=100591) posted. I really like this series of articles. My personal favorite quote from this one:

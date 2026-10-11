@@ -2,6 +2,7 @@
 layout: post
 title: "Why I Suck at Angel Investing, and My Plan"
 date: 2013-03-09 21:23
+categories: ["Startups & Leadership"]
 ---
 I've done a bunch of angel investing over the last few years. And I've decided
 I'm no good at it. The market, so far, seems to agree with me. Most of the

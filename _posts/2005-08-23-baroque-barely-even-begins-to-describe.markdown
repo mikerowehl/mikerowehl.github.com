@@ -2,6 +2,7 @@
 date: 2005-08-23 00:58:07
 layout: post
 title: Baroque Barely Even Begins to Describe
+categories: ["Programming"]
 ---
 
 There are two great posts over at [Linux, Unit, /etc/](http://lue.dyn.dhs.org/index.html):

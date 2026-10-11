@@ -2,6 +2,7 @@
 date: 2005-02-19 14:45:03
 layout: post
 title: Biomimetic Software
+categories: ["Programming"]
 ---
 
 I've had this post sitting around for a while, but seeing as Elle has declared this [Blogger Fort Weekend](http://ellementk.com/archives/2005/02/19/297) I've decided to get it out now.

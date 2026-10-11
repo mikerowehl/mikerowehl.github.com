@@ -2,6 +2,7 @@
 date: 2004-11-08 09:53:17
 layout: post
 title: BloggerCon Vendors
+categories: ["Blogging & RSS"]
 ---
 
 [Nick Bradbury](http://nick.typepad.com/blog/2004/11/bloggercon_the_.html) also stopped by the [vendors gathering we had]({% post_url 2004-11-07-i-heart-vendors %}). I love this comment that he made:

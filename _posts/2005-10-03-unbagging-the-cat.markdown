@@ -2,6 +2,7 @@
 date: 2005-10-03 22:59:29
 layout: post
 title: Unbagging The Cat
+categories: ["Startups & Leadership"]
 ---
 
 We [took the wraps off our secret project this evening](http://www.dynamicobjects.com/d2r/archives/003278.html). I didn't want to post anything until we actually had information to make public for fear of [attracting more negative attention](http://www.wingedpig.com/archives/000207.html). It's been hard to keep quiet. It's a fantastic team and we've all been fired up about what we're doing. But it's up now! I can show people and blather on about what we've been doing and gather feedback.

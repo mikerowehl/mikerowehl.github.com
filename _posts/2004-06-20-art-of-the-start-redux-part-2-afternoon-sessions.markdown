@@ -2,6 +2,7 @@
 date: 2004-06-20 13:12:35
 layout: post
 title: Art of the Start Redux Part 2 (Afternoon Sessions)
+categories: ["Startups & Leadership"]
 ---
 
 **Panel on Funding Your Dream**

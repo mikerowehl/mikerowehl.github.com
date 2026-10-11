@@ -2,6 +2,7 @@
 date: 2003-12-06 09:20:02
 layout: post
 title: Image Recognition to Get URL into Cameraphones
+categories: ["Mobile"]
 ---
 
 There's an [interesting article over at Picturephoning](http://www.textually.org/picturephoning/archives/002505.htm) about using 2D barcodes and image recognition to get URLs into cameraphones. I've heard of projects something like this before, but most were companies looking to use their patented technology to make hordes of cash. I'm very happy to see that the [project page for Sem@code](http://semacode.org/) describes the technology, but without tying it directly to a company. Which makes me think that the tech savy  among us can just print out images of these encoded URLs to try out. It does say that the recognition is proprietary, but that doesn't keep others from making a different version of the recognition piece. I'm hoping that the technology itself is open, I think it would drastically change the adoption of the technique.

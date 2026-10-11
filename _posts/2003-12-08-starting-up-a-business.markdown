@@ -2,6 +2,7 @@
 date: 2003-12-08 21:01:00
 layout: post
 title: Starting up a Business
+categories: ["Startups & Leadership"]
 ---
 
 I ran across [this article at seattlepi.com](http://seattlepi.nwsource.com/venture/151145_vc05.html?source=rss), and I was kind of surprized by the tone.  Take this quote for example:

@@ -2,6 +2,7 @@
 date: 2004-01-16 13:33:02
 layout: post
 title: Writing Command Line Utilities
+categories: ["Programming"]
 ---
 
 There's [an article at IBM DeveloperWorks](http://www-106.ibm.com/developerworks/linux/library/l-util.html?ca=dgr-lnxw06ArtWriting) about writing reusable command line utilities. The article focuses on five guidelines:

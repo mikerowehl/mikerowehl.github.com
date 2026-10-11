@@ -2,6 +2,7 @@
 date: 2004-02-17 23:55:55
 layout: post
 title: '#etech'
+categories: ["Tech & Society"]
 ---
 
 A [post by Justin Hall over at The Feature](http://www.thefeature.com/article?articleid=100392) does a very good job of summarizing the impression of ETech that I got. Justin says:

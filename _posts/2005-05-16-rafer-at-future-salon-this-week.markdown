@@ -2,6 +2,7 @@
 date: 2005-05-16 08:15:03
 layout: post
 title: Rafer at Future Salon This Week
+categories: ["Tech & Society"]
 ---
 
 Rafer is [going to be the presenter at Future Salon this week](http://www.futuresalon.org/2005/05/may_future_salo.html):

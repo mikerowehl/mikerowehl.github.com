@@ -2,6 +2,7 @@
 date: 2006-03-02 13:50:19
 layout: post
 title: Python Tail Call
+categories: ["Programming"]
 ---
 
 This is pretty interesting, a [tail call optimization decorator for Python](http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/474088). It doesn't work for a lot of cases.. like these ones:

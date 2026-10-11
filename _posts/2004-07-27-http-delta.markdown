@@ -2,6 +2,7 @@
 date: 2004-07-27 10:00:29
 layout: post
 title: HTTP Delta
+categories: ["Blogging & RSS"]
 ---
 
 Jeremy Zawodny has a [post about RSS scaling problems](http://jeremy.zawodny.com/blog/archives/002277.html). Something that came up as a partial solution at one of the blogger meetups was [the HTTP delta proposal](http://www.ietf.org/internet-drafts/draft-mogul-http-delta-10.txt). It's specifically meant to address this issues:

@@ -2,6 +2,7 @@
 date: 2005-07-15 16:07:27
 layout: post
 title: Last day at Feedster
+categories: ["Startups & Leadership"]
 ---
 
 Today was my last day over at [Feedster](http://www.feedster.com). It's been a great experience working there. It's had ups and downs, but that always happens in a startup when you're trying to do spectacular things. Mostly there have been ups, and I've learned a fantastic amount. Particularly from having worked with Rafer and Redlitz. They've done an amazing job getting the company to the stage that it's at now. But the stage now is growth, and I'm really a formation stage kind of person. They have customers calling them wanting to do business and they just need the systems in place in order to be able to fulfill on that business. So I'm stepping aside to make room for Tony to take over the operation and work his brand of magic on it.

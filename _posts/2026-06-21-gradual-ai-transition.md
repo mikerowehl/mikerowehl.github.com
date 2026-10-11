@@ -2,6 +2,7 @@
 layout: post
 title: Gradual AI Transition
 date: 2026-06-21 09:38 -0700
+categories: ["Startups & Leadership"]
 ---
 The use of AI across the company I'm working with is very uneven. There are
 some folks who use it constantly every day, and there are plenty of folks who

@@ -2,6 +2,7 @@
 date: 2005-09-15 23:32:45
 layout: post
 title: Audio Commentary
+categories: ["Personal"]
 ---
 
 Russ pasted a link [t o a description of watching The Simpsons with audio descriptions on](http://tonermishap.blogspot.com/2005/09/simpsons-with-audio-description.html). I really really wish those videos were retrievable right now. Apparently the person who uploaded them ran out of bandwidth. If someone can get a hold of them and create some torrents that would rock. The descriptions are hysterical and I bet actually watching the videos would have me rolling around on the floor.

@@ -2,6 +2,7 @@
 layout: post
 title: "Service Container Manipulation"
 date: 2020-09-24 16:39
+categories: ["Programming"]
 ---
 The Github actions functionality has been pretty spectacular, in particular
 [service containers](https://docs.github.com/en/actions/guides/about-service-containers)

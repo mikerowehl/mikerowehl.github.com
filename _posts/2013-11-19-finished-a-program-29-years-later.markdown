@@ -2,6 +2,7 @@
 layout: post
 title: "Finished a Program 29 Years Later"
 date: 2013-11-19 22:20
+categories: ["Programming"]
 ---
 My parents were getting ready to sell their house a few months ago, and
 while I was there I grabbed a few 

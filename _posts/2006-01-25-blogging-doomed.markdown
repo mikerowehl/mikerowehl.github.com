@@ -2,6 +2,7 @@
 date: 2006-01-25 12:34:12
 layout: post
 title: Blogging Doomed!!!!
+categories: ["Blogging & RSS"]
 ---
 
 Reclusive mobile technology pundit and Internet crackpot Russell Beattie [posted recently about the increasing number of sensationalist posts](http://www.russellbeattie.com/notebook/1008772.html) out in the bloggosphere. What does it mean? Well I for one think it spells out doom. DOOOM!!!! Doomy doomy doom spreading all over the place. And then a light lunch. Won't someone please think about the children!

@@ -2,6 +2,7 @@
 date: 2004-04-12 15:27:22
 layout: post
 title: Separating Infrastructure
+categories: ["Tech & Society"]
 ---
 
 There's an article titled [Separating network and communications infrastructure](http://www.totaltele.com/telcorevolutions/bm5.shtml) up at [telco revolutions](http://www.totaltele.com/telcorevolutions/). I happened across the article during some random wandering, but it sums up exactly how I think about providers. Check this out:

@@ -2,6 +2,7 @@
 date: 2004-01-30 14:50:01
 layout: post
 title: Being a Self Employed Geek
+categories: ["Startups & Leadership"]
 ---
 
 A recent string of articles and conversations have left me considering the tension between running a business and being a techno weenie. It's a topic that other people have discussed before, but it's something that probably has more general applicability than it seems to be given credit for. The point that really drove it home for me was [an article in strategy+business about what business strategists can learn from existential philosophers](http://www.strategy-business.com/press/article/03405?pg=all) (free registration required). The article touches on issues like how to carry out planning when it seems like more changes than remains the same from one iteration to the next.  If there are very few known (or even guessable) quantities, how can one form a realistic plan for action? Excellent points in general. 

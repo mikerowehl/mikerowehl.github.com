@@ -2,6 +2,7 @@
 date: 2005-03-16 12:35:00
 layout: post
 title: Mobile Computing On the Edge
+categories: ["Mobile"]
 ---
 
 [Mobile Computing On the Edge](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6343)

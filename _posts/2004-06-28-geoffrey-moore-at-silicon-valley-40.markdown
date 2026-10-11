@@ -2,6 +2,7 @@
 date: 2004-06-28 12:18:31
 layout: post
 title: Geoffrey Moore at Silicon Valley 4.0
+categories: ["Startups & Leadership"]
 ---
 
 Two recent posts from Always On:

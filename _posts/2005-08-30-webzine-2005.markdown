@@ -2,6 +2,7 @@
 date: 2005-08-30 19:47:33
 layout: post
 title: Webzine 2005
+categories: ["Blogging & RSS"]
 ---
 
 The [Webzine tickets are on sale now](http://www.webzine2005.com/2005/08/16/tickets-on-sale/). What is webzine? [Here's a schedule](http://www.webzine2005.com/schedule/), check it out for yourself. I've heard about it mostly from [Scott at Laughing Squid](http://www.laughingsquid.com/), which is more than enough of an endorsement for me to plunk down a measly $20 on a two day event.

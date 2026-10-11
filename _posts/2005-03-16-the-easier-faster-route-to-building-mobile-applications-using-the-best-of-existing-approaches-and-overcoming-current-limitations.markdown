@@ -2,6 +2,7 @@
 date: 2005-03-16 17:09:49
 layout: post
 title: "The Easier, Faster Route to Building Mobile Applications"
+categories: ["Mobile"]
 ---
 
 [The Easier, Faster Route to Building Mobile Applications: Using the Best of Existing Approaches and Overcoming Current Limitations](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6484)

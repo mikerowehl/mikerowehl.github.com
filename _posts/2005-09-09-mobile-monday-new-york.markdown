@@ -2,6 +2,7 @@
 date: 2005-09-09 09:31:48
 layout: post
 title: Mobile Monday New York
+categories: ["Mobile"]
 ---
 
 It's really exciting to see the idea of Mobile Monday picked up and expanded.  A team out in New York:

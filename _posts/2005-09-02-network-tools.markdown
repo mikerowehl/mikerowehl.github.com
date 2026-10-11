@@ -2,6 +2,7 @@
 date: 2005-09-02 10:50:32
 layout: post
 title: Network Tools
+categories: ["Linux & Open Source"]
 ---
 
 Here's some stuff I've been either working with or reading up on lately, cool stuff that I've heard about in passing but isn't in general usage yet:

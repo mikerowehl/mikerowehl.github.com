@@ -2,6 +2,7 @@
 date: 2004-04-22 10:05:47
 layout: post
 title: Touch This
+categories: ["Mobile"]
 ---
 
 Here's an [interesting article about researchers using touch to convey text messages](http://news.bbc.co.uk/1/hi/technology/3649093.stm). An interesting concept. They call it "tactile melody". I would have called it [braille](http://www.braille.org/). Even though they apparently want to use different movements of pins than the letter combinations used by braille. They probably figure they can convey messages more effectively, requiring less attention from the user and less symbol recognitions. Good for them. I'm not going to say that I know for sure that they're reinventing a number of wheels in unison, but I've got a pretty good feeling that they are. I take this for example:

@@ -2,6 +2,7 @@
 date: 2005-03-18 13:46:10
 layout: post
 title: Cyborg? Or Just Funky?
+categories: ["Personal"]
 ---
 
 Nick showed up today with some funky [running shoes that adjust in the field](http://www.techspot.com/story12866.html). Being a geek I just had to take some pictures.

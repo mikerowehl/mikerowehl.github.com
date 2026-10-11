@@ -2,6 +2,7 @@
 date: 2003-11-27 22:06:14
 layout: post
 title: Commodity Wireless Connectivity is Good
+categories: ["Mobile"]
 ---
 
 There's a [great article at The Feature](http://www.thefeature.com/article?articleid=100213) that lays out why converged devices are winning in the market, and why this might point to a need for cellular providers to give up trying to pull value from the wrong areas of their network. I've agree very strongly with this opinion:

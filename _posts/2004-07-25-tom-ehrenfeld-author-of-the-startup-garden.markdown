@@ -2,6 +2,7 @@
 date: 2004-07-25 13:54:21
 layout: post
 title: Tom Ehrenfeld, Author of The Startup Garden
+categories: ["Startups & Leadership"]
 ---
 
 Small Business Trends has three posts that constitute an interview with Tom Ehrenfeld, author of [The Startup Garden](http://www.startupgarden.com/):

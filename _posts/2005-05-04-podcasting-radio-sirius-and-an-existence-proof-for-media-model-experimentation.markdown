@@ -2,6 +2,7 @@
 date: 2005-05-04 10:44:24
 layout: post
 title: Podcasting, Radio, Sirius, and an Existence Proof for Media Model Experimentation
+categories: ["Blogging & RSS"]
 ---
 
 There's been quite a bit of buzz about [Adam Curry starting a podcasting show on Sirius](http://www.russellbeattie.com/notebook/1008442.html). Doc [picks up the thread](http://doc.weblogs.com/2005/05/03#takingTheFork) and says:

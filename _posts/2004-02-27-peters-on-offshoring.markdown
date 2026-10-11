@@ -2,6 +2,7 @@
 date: 2004-02-27 09:45:17
 layout: post
 title: Peters on Offshoring
+categories: ["Startups & Leadership"]
 ---
 
 Tom Peters has some [points about offshoring](http://www.tompeters.com/toms_world/observations.asp?id=102&date=1/1/2004) up on his site. I agree with a lot of the points there. One of the ones that I like the most:

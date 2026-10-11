@@ -2,6 +2,7 @@
 date: 2004-01-13 21:04:05
 layout: post
 title: Palm Minirant
+categories: ["Mobile"]
 ---
 
 I had to do some of that running around that I was talking about in the last post, so I figured I would write up a blog entry. When I finished it and tried to upload, I had issues getting a network connection using my Palm to connect to my t68. It's happened before, and usually a reset of one device or the other solves it (which sucks by the way). Yet this time, no dice. I'm waiting for a train, so what the hell, I might as well fix it.

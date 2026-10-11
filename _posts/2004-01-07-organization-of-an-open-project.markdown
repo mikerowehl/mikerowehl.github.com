@@ -2,6 +2,7 @@
 date: 2004-01-07 23:37:16
 layout: post
 title: Organization of an Open Project
+categories: ["Programming"]
 ---
 
 I've been kicking around the idea for the [Open Palm Environment](http://openpalmenv.sourceforge.net/) project for a while now.  I registered the project on Sourceforge in September of last year, so it's been at least three months that I've really been actively mulling over the different aspects of the project. Not very long in the grand scheme, but I've turned over and played with lots of ideas during that time. I wanted to try to take a bit of time to write some of them down. In part to share them, but also to try to lay them bare and try to organize them.

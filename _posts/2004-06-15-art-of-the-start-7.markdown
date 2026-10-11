@@ -2,6 +2,7 @@
 date: 2004-06-15 12:13:53
 layout: post
 title: Art of the Start 7
+categories: ["Startups & Leadership"]
 ---
 
 Raising Venture capital - Bill

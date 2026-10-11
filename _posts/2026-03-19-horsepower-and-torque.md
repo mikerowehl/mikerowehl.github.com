@@ -2,6 +2,7 @@
 layout: post
 title: Horsepower and Torque
 date: 2026-03-19 20:43 -0700
+categories: ["Startups & Leadership"]
 ---
 When I'm getting involved with something new
 I ask myself "does this need more horsepower or

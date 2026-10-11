@@ -2,6 +2,7 @@
 date: 2005-04-04 20:01:46
 layout: post
 title: April MoMo - Thad White
+categories: ["Mobile"]
 ---
 
 Thad White speaking at [the April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

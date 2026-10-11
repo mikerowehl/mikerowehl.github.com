@@ -2,6 +2,7 @@
 layout: post
 title: Builder Research - XMTP
 date: 2025-11-19 20:16 -0800
+categories: ["Programming"]
 ---
 I ran across [XMTP](https://xmtp.org/) a few times while I was poking around
 with other services. But I had pushed it off till later. It wasn't core to

@@ -2,6 +2,7 @@
 date: 2005-04-04 19:00:05
 layout: post
 title: MoMo April Igor Jablokov
+categories: ["Mobile"]
 ---
 
 Igor Jablokov presenting at [Mobile Monday](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html) -

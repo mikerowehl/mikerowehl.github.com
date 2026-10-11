@@ -2,6 +2,7 @@
 layout: post
 title: "Booting MMURTL in VirtualBox"
 date: 2020-09-03 12:50
+categories: ["Programming"]
 ---
 I was looking through some of the old books on my bookshelf when I ran across
 my copy of 

@@ -2,6 +2,7 @@
 date: 2006-02-07 13:17:05
 layout: post
 title: SMS.ac
+categories: ["Mobile"]
 ---
 
 Russ and I were talking about [the SMS.ac thing](http://www.russellbeattie.com/notebook/1008792.html) last night on the way to MoMo. Today RCR Wireless [picked up the story](http://www.rcrnews.com/news.cms?newsId=25553), with this quote from the SMS.ac folks:

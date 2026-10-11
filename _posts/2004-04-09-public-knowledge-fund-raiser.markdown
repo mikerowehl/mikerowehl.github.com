@@ -2,6 +2,7 @@
 date: 2004-04-09 08:44:19
 layout: post
 title: Public Knowledge Fund Raiser
+categories: ["Tech & Society"]
 ---
 
 [According to SmartMobs](http://www.smartmobs.com/archives/002983.html) there's a fundraiser in San Francisco for a new organization called [Public Knowledge](http://www.publicknowledge.org/). They seem to be into some interesting stuff. This is from their about page on their website:

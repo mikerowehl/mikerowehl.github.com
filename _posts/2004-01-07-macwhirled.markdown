@@ -2,6 +2,7 @@
 date: 2004-01-07 00:04:24
 layout: post
 title: MacWhirled
+categories: ["Personal"]
 ---
 
 I went over to the MacWorld expo today. I'm not a regular Mac user, I just wanted to go. I think the newest Mac operating systems kick ass. Pretty and functional AND stable GUI over a rock solid kernel. This is what computing should be. I'm a Linux user, thru and thru. Have been for 10 years. But I'm always on the lookout for cool new stuff. New Macs made it onto the radar. And Mac addicts are always spouting off about how Macs are just an amazing system compared to any form of Windows system. Well.. that is true, but cinder blocks make better desktop systems than Windows PCs do. So that point just doesn't impress me.

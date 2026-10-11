@@ -2,6 +2,7 @@
 date: 2005-05-17 18:01:58
 layout: post
 title: Wordpress 1.5.1 Conditional Get Breakage?
+categories: ["Personal"]
 ---
 
 Sorry to chuck this here, but I'm on my way off to meet up with some folks and don't have time to search out if this is a known issue or not.  It looks like the conditional get support in [Wordpress 1.5.1](http://www.wordpress.org) might be broken for some combinations of requests and maybe PHP versions. There's this check in wp-blog-header.php:

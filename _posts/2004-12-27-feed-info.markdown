@@ -2,6 +2,7 @@
 date: 2004-12-27 22:41:55
 layout: post
 title: Feed Info
+categories: ["Blogging & RSS"]
 ---
 
 I've been reading over a few REST themed articles:

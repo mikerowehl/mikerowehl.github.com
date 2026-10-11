@@ -2,6 +2,7 @@
 date: 2004-06-15 09:03:58
 layout: post
 title: Art of the Start 2
+categories: ["Startups & Leadership"]
 ---
 
 Art of Starting - Guy

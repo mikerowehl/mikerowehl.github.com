@@ -2,6 +2,7 @@
 date: 2004-06-27 20:01:07
 layout: post
 title: Licklider on the Backchannel
+categories: ["Tech & Society"]
 ---
 
 I was just re-reading a couple of articles by [J.C.R. Licklider](http://en.wikipedia.org/wiki/J.C.R._Licklider). They're only [available as PDF](http://memex.org/licklider.pdf) as far as I've seen, sorry about that. In particular the second article, "Computer as Communication Device", really struck me as a discussion about ["the backchannel"](http://www.socialtext.net/supernova/index.cgi?roundtable_closing_the_back_channel_loop) that appears commonly at technical conferences these days. Take a look at the section called "Face to face through a computer" and I think you'll see that Licklider and Taylor are talking about much the same phenomenon as we witness today, except they were talking about it back in 1968. This is a quote from that section of the paper:

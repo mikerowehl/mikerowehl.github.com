@@ -2,6 +2,7 @@
 date: 2003-12-16 14:57:46
 layout: post
 title: Rapid Prototyping Approach to Software
+categories: ["Programming"]
 ---
 
 I was getting ready a couple of blog posts on the topic of rapid prototyping, but decided instead to put the information on [a permanent page](http://www.bitsplitter.net/prototyping.html) on the Bitsplitter site. The information is apparently pretty randomly organized, but I still wanted to put it up. I think it's a pretty good list of issues to keep in mind and goals to strive for.

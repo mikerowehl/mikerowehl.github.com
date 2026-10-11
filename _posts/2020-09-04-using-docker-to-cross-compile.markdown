@@ -2,6 +2,7 @@
 layout: post
 title: "Using Docker to Cross Compile"
 date: 2020-09-04 13:57
+categories: ["Programming"]
 ---
 I've been poking around with a bunch of low level programming stuff. Looking
 at old source code and playing with some newer examples, like

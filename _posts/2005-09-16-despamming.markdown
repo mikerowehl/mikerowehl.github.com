@@ -2,6 +2,7 @@
 date: 2005-09-16 11:02:59
 layout: post
 title: Despamming
+categories: ["Personal"]
 ---
 
 I had a spam comment that I just had to approve so that everyone could see

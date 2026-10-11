@@ -2,6 +2,7 @@
 layout: post
 title: Modern RSS Usage
 date: 2026-01-05 09:09 -0800
+categories: ["Blogging & RSS"]
 ---
 There used to be a lot of attention and development focused on RSS, a format
 meant to make it easy for users to subscribe to updates from a site and merge

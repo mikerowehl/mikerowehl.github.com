@@ -2,6 +2,7 @@
 date: 2004-06-15 09:29:39
 layout: post
 title: Art of the Start 3
+categories: ["Startups & Leadership"]
 ---
 
 Jeff Adams, Dave Anderson, Alan Jepsen, Betty Taylor, Mark Weeks.

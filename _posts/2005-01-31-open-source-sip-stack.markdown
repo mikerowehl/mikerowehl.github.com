@@ -2,6 +2,7 @@
 date: 2005-01-31 08:38:38
 layout: post
 title: Open Source SIP Stack
+categories: ["Mobile"]
 ---
 
 I was just digging through some old news I marked down but never read, and just noticed the [release of an open-source, reference SIP stack that engineers can tap when developing VoIP and other SIP-enabled equipment designs](http://www.commsdesign.com/showArticle.jhtml?articleID=57700230). The effort seems to be progressing through an organization called [SIPfoundry](http://www.sipfoundry.org/). Here's an excerpt from their mission statement:

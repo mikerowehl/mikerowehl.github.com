@@ -2,6 +2,7 @@
 date: 2005-03-16 09:59:56
 layout: post
 title: Jimmy Wales from Wikipedia
+categories: ["Tech & Society"]
 ---
 
 [ETech talk from the founder of Wikipedia](http://conferences.oreillynet.com/cs/et2005/view/e_sess/5907).

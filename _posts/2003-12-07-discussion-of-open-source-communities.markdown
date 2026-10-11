@@ -2,6 +2,7 @@
 date: 2003-12-07 20:49:14
 layout: post
 title: Discussion of Open Source Communities
+categories: ["Linux & Open Source"]
 ---
 
 There's an [older post in Tim O'Reilly's weblog](http://www.oreillynet.com/pub/wlg/3017) regarding open source and the forming of community. The discussion is great, and I think very informative. I would make the further point that the openness of the projects doesn't only encourage participation in the form of feeding back fixes and features into the tree, it allows for users and potential developers to "play". They can experiment with new ideas, try out fixes and features, and learn about the system. Even if they never feed back these changes to the core of the project, the community can be strengthened because of it. If that programmer shares just their ideas or insights without any new code, the project as a whole still gains. A minor point, but since I'm going to be comparing open source culture to prototyping culture (as described by Michael Schrage in Serious Play) it's pretty important.

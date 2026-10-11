@@ -2,6 +2,7 @@
 date: 2004-06-15 16:23:29
 layout: post
 title: Art of the Start 10
+categories: ["Startups & Leadership"]
 ---
 
 Been There, Done That

@@ -2,6 +2,7 @@
 date: 2004-09-22 14:46:29
 layout: post
 title: BAMF Meeting
+categories: ["Mobile"]
 ---
 
 The [September BAMF meeting is this weekend](http://www.mobilityforum.org/2004/09/september-bamf-meeting-is-set.html). Details:

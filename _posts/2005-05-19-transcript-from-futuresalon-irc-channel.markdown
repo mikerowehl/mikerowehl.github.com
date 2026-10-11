@@ -2,6 +2,7 @@
 date: 2005-05-19 22:10:30
 layout: post
 title: 'Transcript From #FutureSalon IRC Channel'
+categories: ["Tech & Society"]
 ---
 
 Here's the transcript from the IRC channel during the [Enough Dumb Agents Get Smart presentation at Future Salon](http://www.futuresalon.org/2005/05/ode_to_dump_age.html):

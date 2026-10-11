@@ -2,6 +2,7 @@
 date: 2005-04-04 19:37:28
 layout: post
 title: April MoMo - Jeff Clavier and Marc Brown
+categories: ["Mobile"]
 ---
 
 Jeff and Marc presenting at [April MoMo](http://www.mobilemonday.com/2005/04/april-mobile-monday-tonight.html).

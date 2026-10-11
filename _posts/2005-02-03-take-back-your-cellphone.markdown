@@ -2,6 +2,7 @@
 date: 2005-02-03 18:49:19
 layout: post
 title: USM Under Firefox/Linux
+categories: ["Blogging & RSS"]
 ---
 
 [Randy](http://www.kbcafe.com/) seems to have some momentum going for his [Universal Subscription Mechanism](http://www.kbcafe.com/rss/usm.html) proposal. The basic idea is that we deal with some content types specific to RSS and Atom so that the browser can shove the handling off to an external app that then push the subscribe URL into something that knows what to do with it. Not a bad idea, but I like [my idea for a subscription service]({% post_url 2005-01-09-rss-subscription-service-network %}) better. However, if people think that the proposal Randy made is the way to go I don't want to be a bad sport. I just want things to be simple and work by default. So I hacked together a [Python USM handler](http://www.bitsplitter.net/projects/usm.txt) that works for me under Linux using [Firefox](http://www.firefox.com/). I'm on the train right now, and testing it out against a lot of feeds is a pain over this GPRS connection, so I just tried a few. Using it should be pretty simple. Right now it only handles launching a browser with the [Bloglines](http://www.bloglines.com) subscribe URL, but the hackers out there can change that if they want I'm sure. I'll make it config file driven with some command line options to set the subscription action at some point.

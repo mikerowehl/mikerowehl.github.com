@@ -2,6 +2,7 @@
 date: 2004-06-15 22:41:54
 layout: post
 title: Beginners Mind vs. Godzilla
+categories: ["Startups & Leadership"]
 ---
 
 [The Art of the Start](http://www.artofthestart.com/) was fantastic. I uploaded my raw notes, and I'll go through that stuff and clean them up a bit. There really was a ton of information presented in every session. For me, it was a great value. The audience seemed to be spread out all over the scale of experience. Some of them were engineers just starting to consider trying out one of their own ideas, others were MBAs looking for startup specific pointers, lawyers, and experienced entrepreneurs. Yet everyone I asked was happy about the information presented. Most were impressed by both the quality and quantity.

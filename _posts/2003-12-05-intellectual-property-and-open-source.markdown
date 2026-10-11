@@ -2,6 +2,7 @@
 date: 2003-12-05 20:34:38
 layout: post
 title: Intellectual Property and Open Source
+categories: ["Linux & Open Source"]
 ---
 
 [This article](http://www.csmonitor.com/2003/1204/p14s02-stct.html) at the Christian Science Monitor provides an excellent summary of the open source movement and potential ramifications with regard to intellectual property rights. I think the article does a great job of calling out the underlying issues, such as:

@@ -2,6 +2,7 @@
 date: 2005-03-02 15:17:47
 layout: post
 title: Innovation Commons and the End to End Network
+categories: ["Tech & Society"]
 ---
 
 There's an excellent bit of commentary about innovation and the end to end design principle of interconnected networks in the audio from [Larry Lessig at the SDForum Distinguished Speaker series](http://www.itconversations.com/shows/detail349.html). Here's a quote that really stuck out for me:

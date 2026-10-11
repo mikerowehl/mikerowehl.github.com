@@ -2,6 +2,7 @@
 date: 2004-06-15 11:11:59
 layout: post
 title: Art of the Start 5
+categories: ["Startups & Leadership"]
 ---
 
 Positioning and Presenting

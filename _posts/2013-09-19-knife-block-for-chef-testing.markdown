@@ -2,6 +2,7 @@
 layout: post
 title: "knife-block for Chef Testing"
 date: 2013-09-19 12:17
+categories: ["Programming"]
 ---
 A few weeks ago [Nathen Harvey](https://github.com/nathenharvey) was kind
 enough to stop by and give us a critique of how we do Chef automated testing

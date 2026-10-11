@@ -2,6 +2,7 @@
 date: 2004-03-23 10:16:10
 layout: post
 title: Businesses Trying New Approaches
+categories: ["Linux & Open Source"]
 ---
 
 Novell has announced a very strong move recently, as [reported in eWeek](http://www.eweek.com/article2/0,1759,1552521,00.asp) and [The Register](http://www.theregister.co.uk/content/53/36455.html). Novell has decided to take their flagship product and rearrange it so that it runs on top of the Linux kernel:

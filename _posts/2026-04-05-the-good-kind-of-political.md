@@ -2,6 +2,7 @@
 layout: post
 title: The Good Kind of Political
 date: 2026-04-05 16:00 -0700
+categories: ["Startups & Leadership"]
 ---
 As a technical person I've always had a pretty immediate negative reaction to
 anything "political". I would just think of the negative aspects of a political

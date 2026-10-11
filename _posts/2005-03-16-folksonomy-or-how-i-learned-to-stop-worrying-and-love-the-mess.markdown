@@ -2,6 +2,7 @@
 date: 2005-03-16 10:34:38
 layout: post
 title: Folksonomy, or How I Learned to Stop Worrying and Love the Mess
+categories: ["Blogging & RSS"]
 ---
 
 [Folksonomies](http://conferences.oreillynet.com/cs/et2005/view/e_sess/6329)

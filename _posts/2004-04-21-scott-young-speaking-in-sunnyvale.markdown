@@ -2,6 +2,7 @@
 date: 2004-04-21 15:23:03
 layout: post
 title: Scott Young Speaking in Sunnyvale
+categories: ["Blogging & RSS"]
 ---
 
 Scott Young from Userland Software is [speaking at Borders in Sunnyvale](http://www.pheedo.info/archives/000050.html) on Monday April 26th. The topic is going to be the use of weblogs and RSS for corporate communication. Event details:

@@ -2,6 +2,7 @@
 date: 2003-12-24 14:45:39
 layout: post
 title: Security Market Discussion at Stanford
+categories: ["Tech & Society"]
 ---
 
 I just signed up for the [Existing Opportunities in the Security Market](https://www.vlab.org/204.cfm?eventID=40) event being held over at Stanford. The bullet list of topics for the discussion:

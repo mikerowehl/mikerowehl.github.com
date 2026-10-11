@@ -2,6 +2,7 @@
 layout: post
 title: "Google Oauth Tokens in Golang"
 date: 2020-10-23 20:26
+categories: ["Programming"]
 ---
 I'm pretty sure I've run into this before and worked through it. But for some
 reason my searches didn't land on something that clicked till I was a few

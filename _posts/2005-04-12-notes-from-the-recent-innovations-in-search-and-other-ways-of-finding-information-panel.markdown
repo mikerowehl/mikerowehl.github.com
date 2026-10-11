@@ -2,6 +2,7 @@
 date: 2005-04-12 22:05:22
 layout: post
 title: Notes from the "Recent Innovations in Search and Other Ways of Finding Information"
+categories: ["Tech & Society"]
 ---
 
 These are notes from the "[Recent Innovations in Search and Other Ways of Finding Information](http://www.baychi.org/calendar/20050412b/)" panel at BayCHI. It was an absolutely fantastic panel! Very well done, the panelists were great all around (although personally I think I liked the contributions from [Udi](http://manber.com/) the most). I'll have to come back at some points and clean up these notes, they're in kinda rough shape.

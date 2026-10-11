@@ -2,6 +2,7 @@
 date: 2005-01-13 02:13:29
 layout: post
 title: Steve Case at the Computer History Museum
+categories: ["Startups & Leadership"]
 ---
 
 I went to see [Steve Case give an interview at the Computer History Museum](http://www.computerhistory.org/events/index.php?id=1099686006) tonight. It was actually kinda boring, but some points were made. Here are some notes from me, heavily editorialized by me, only vaguely based on what they were talking about on stage.

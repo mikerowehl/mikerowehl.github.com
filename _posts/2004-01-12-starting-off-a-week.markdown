@@ -2,6 +2,7 @@
 date: 2004-01-12 14:49:16
 layout: post
 title: Starting Off a Week
+categories: ["Personal"]
 ---
 
 Starting off a new week almost always makes me depressed. I spend the weekend being able to at least fit in interesting bits of hacking here and there. Although this weekend was mostly work, and my site was down for a decent sized chunk of it, I did manage to fit in some palm-xmlrpc hackery. Not much, but at least I have something to point to. I managed to read some interesting stuff, including the ["A Group Is Its Own Worst Enemy"](http://www.shirky.com/writings/group_enemy.html) article by Clay Shirky, which really got me thinking in some new directions again. I've been thinking about community quite a bit, as I've [mentioned here before]({% post_url 2004-01-07-organization-of-an-open-project %}). In open source the code itself serves as the merit system. You don't have to trust someone to be telling the truth, you just look at their code and find out. And I was trying to figure out where else there might be a mechanism that works that like, but wasn't able to come up with an interesting one. Especially not within the context of forming a user community. But that isn't what this post is really about...

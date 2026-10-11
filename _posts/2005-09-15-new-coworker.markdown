@@ -2,6 +2,7 @@
 date: 2005-09-15 19:20:13
 layout: post
 title: New Coworker
+categories: ["Personal"]
 ---
 
 We added a new member to the team at work:

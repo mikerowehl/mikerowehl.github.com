@@ -2,6 +2,7 @@
 date: 2004-12-06 14:51:36
 layout: post
 title: Technology and Medium of the Web
+categories: ["Tech & Society"]
 ---
 
 I'm on my way up to San Francisco, sitting on Caltrain, so I finally have some time to write up one of the posts I've been thinking about. 

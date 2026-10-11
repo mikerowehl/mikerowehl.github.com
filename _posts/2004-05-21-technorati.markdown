@@ -2,6 +2,7 @@
 date: 2004-05-21 17:47:12
 layout: post
 title: Technorati
+categories: ["Blogging & RSS"]
 ---
 
 I went over to the [Technorati Developers Salon](http://developers.technorati.com/wiki/DevelopersSalon) on Wed, but I haven't really had much time to sit down and write something since then. People have already posted much of the information from the event. In particular I point to the info from xian, an excellent three part post that seems to have come out in realtime:

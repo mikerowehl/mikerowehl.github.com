@@ -2,6 +2,7 @@
 layout: post
 title: When the AI is Wrong
 date: 2026-06-28 20:48 -0700
+categories: ["Startups & Leadership"]
 ---
 We had an interesting issue at work this past week. One of the developers
 flagged a problem that seemed to be network related. They had done all of the

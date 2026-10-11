@@ -2,6 +2,7 @@
 date: 2004-06-15 10:00:41
 layout: post
 title: Art of the Start 4
+categories: ["Startups & Leadership"]
 ---
 
 Still in the panel

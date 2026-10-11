@@ -2,6 +2,7 @@
 layout: post
 title: Startup Superpowers
 date: 2026-03-14 08:58 -0700
+categories: ["Startups & Leadership"]
 ---
 I did something this year that I thought might never happen again during my
 career. I got a "normal job". I've been working exclusively on startups for at

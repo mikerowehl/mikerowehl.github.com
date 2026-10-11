@@ -2,6 +2,7 @@
 date: 2004-06-15 15:05:22
 layout: post
 title: Art of the Start 9
+categories: ["Startups & Leadership"]
 ---
 
 Bootstrapping

@@ -2,6 +2,7 @@
 date: 2005-01-27 01:19:24
 layout: post
 title: Steve Gillmor on AttentionXML
+categories: ["Blogging & RSS"]
 ---
 
 Steve Gillmor is going to be [speaking at the next eBig Blogging and RSS SIG meeting](http://www.ebig.org/sig/sig.aspx?SIGid=36). The topic is AttentionXML:

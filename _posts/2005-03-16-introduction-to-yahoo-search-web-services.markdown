@@ -2,6 +2,7 @@
 date: 2005-03-16 15:22:44
 layout: post
 title: Introduction to Yahoo! Search Web Services
+categories: ["Programming"]
 ---
 
 [Introduction to Yahoo! Search Web Services](http://conferences.oreillynet.com/cs/et2005/view/e_sess/7033)

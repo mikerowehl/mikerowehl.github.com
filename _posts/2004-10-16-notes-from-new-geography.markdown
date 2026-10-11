@@ -2,6 +2,7 @@
 date: 2004-10-16 18:31:17
 layout: post
 title: Notes from New Geography
+categories: ["Tech & Society"]
 ---
 
 Two sets of notes from the New Geography workshop put on by the [Institute For The Future](http://www.iftf.org)

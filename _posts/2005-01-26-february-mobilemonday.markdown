@@ -2,6 +2,7 @@
 date: 2005-01-26 17:51:37
 layout: post
 title: February MobileMonday
+categories: ["Mobile"]
 ---
 
 I just [posted info about the February 7th 2005 MobileMonday meeting](http://www.mobilemonday.us/2005/01/february-7th-2005-meeting.html). We have a stunning lineup of speakers this time around, I'm really excited about this.

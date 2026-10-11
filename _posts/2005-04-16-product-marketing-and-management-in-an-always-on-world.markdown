@@ -2,6 +2,7 @@
 date: 2005-04-16 22:44:19
 layout: post
 title: Product Marketing and Management in an Always On World
+categories: ["Startups & Leadership"]
 ---
 
 Elle has been leading a product marketing and management roundtable for [BMA](http://norcalbma.org/), and next week they're going to be meeting to discuss [PMM in an Always-On World](http://www.ellementk.com/archives/2005/04/15/326):

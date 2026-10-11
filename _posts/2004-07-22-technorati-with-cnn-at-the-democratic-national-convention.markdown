@@ -2,6 +2,7 @@
 date: 2004-07-22 08:46:46
 layout: post
 title: Technorati with CNN at the Democratic National Convention
+categories: ["Blogging & RSS"]
 ---
 
 Weinberger picked up the [post about Technorati providing blog information during the Democratic National Convention](http://www.hyperorg.com/blogger/mtarchive/002859.html). The story has been picked up and spread all over the place by the blogging "in crowd", but I figured I would spread it here also cause it seems like I have more of a mix of social software and mobile readers than hard core bloggers. I've posted about Technorati before, but basically it's a service that allows you to figure out who's blog is linking to what. There are a few technical reasons behind why their link searching works mostly to find what blogs are linking to, and not web pages in general. But take it on faith that most of the information they have comes from people writing blogs entries with links in them.

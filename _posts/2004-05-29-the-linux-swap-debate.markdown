@@ -2,6 +2,7 @@
 date: 2004-05-29 00:19:47
 layout: post
 title: The Linux Swap Debate
+categories: ["Linux & Open Source"]
 ---
 
 There's a [thread from the Linux Kernel Mailing List](http://kerneltrap.org/node/view/3202) which seems to have gotten picked up all over the place. Most sources seem to be including the quote:

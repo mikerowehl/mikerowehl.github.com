@@ -2,6 +2,7 @@
 date: 2005-01-31 08:23:29
 layout: post
 title: EFF Endangered Gizmos List
+categories: ["Tech & Society"]
 ---
 
 The EFF has created a [list of technologies](http://www.eff.org/endangered/) that are being threatened or outlawed in the interest of protecting established corporate interests:

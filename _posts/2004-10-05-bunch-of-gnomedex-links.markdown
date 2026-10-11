@@ -2,6 +2,7 @@
 date: 2004-10-05 07:54:08
 layout: post
 title: Bunch of Gnomedex Links
+categories: ["Blogging & RSS"]
 ---
 
 [Gnomedex](http://www.gnomedex.com) was fantastic. Lots of people to talk to, and I thought the panel discussions were interesting even if others found some fault with them. Being at the conf you hear about a bunch of stuff that it's hard to find your way to if you weren't there to hear the off the cuff comments or pick up the links from IRC (I really should have logged the channel... oops). So here's a bunch of stuff, some from the [previous page I had]({% post_url 2004-10-01-gnomedex-trackback %}) and some new stuff:

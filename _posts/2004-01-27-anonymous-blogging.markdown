@@ -2,6 +2,7 @@
 date: 2004-01-27 08:17:51
 layout: post
 title: Anonymous Blogging
+categories: ["Blogging & RSS"]
 ---
 
 At the [Trusted Computing class this past weekend]({% post_url 2004-01-25-trusted-computing %}) Seth mentioned that he was engaged in some online sparring with someone who had a blog on [Invisiblog](http://invisiblog.com/). In particular he was talking about the [postings by someone calling themselves Unlimited Freedom](http://invisiblog.com/1c801df4aee49232/), which do make for interesting reading. I completely disagree with the stuff that Unlimited Freedom says, but in the interest of providing both sides of the story I felt I should at least link to the blog.

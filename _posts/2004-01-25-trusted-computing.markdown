@@ -2,6 +2,7 @@
 date: 2004-01-25 17:11:30
 layout: post
 title: Trusted Computing
+categories: ["Tech & Society"]
 ---
 
 I went to [Seth Schoen's class on trusted computing](http://freedomtechnologycenter.org/classes/tc/) at the [Freedom Technology Center](http://freedomtechnologycenter.org/) yesterday. The class itself was GREAT! Trusted computing is an area that I really wanted to learn about, but never had the time for. This was a chance to get a whole boatload of info in one big braindump. Seth did a great job of presenting an overview and then delving into some details. This was perfect for me cause I was coming in with little background. Given the set of info that's available online already, I think it will probably only take a bit of "connect the dots" to provide a nice resource for those looking to learn about what makes up trusted computing, and what is currently being worked on. So as I [promised a few days ago]({% post_url 2004-01-21-lively-discussion %}), I'm going to atone for my sins in recommending the Stanford VLAB security event and provide some real info. I have developed a very strong opinion on the issue, so you're going to get that as well.

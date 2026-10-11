@@ -2,6 +2,7 @@
 date: 2005-05-20 07:16:06
 layout: post
 title: There's an Opportunity in there Somewhere
+categories: ["Startups & Leadership"]
 ---
 
 I just read [Good-Bye to Venture Capital](http://www.technologyreview.com/articles/05/06/issue/invite.asp?p=1) (link via [Brad Feld](http://www.feld.com/blog/archives/2005/05/howard_anderson.html)) and the whole thing seems to stand in stark contrast to what I've been seeing. I tend to agree more with [Fred Wilson](http://avc.blogs.com/a_vc/2005/05/parting_shots.html). A couple of odd things have happened directly to me over the last few weeks. Mind you, my take on this might be a bit skewed compared to other folks in Silicon Valley. I wasn't here for the boom, I kinda missed that whole thing. I moved here mid 2001, when most people seemed to be headed out of the area and not into it. I'm not quite sure how the whole boom got started or what it looked like from the inside. But I can tell you that the previous 4 years here were nothing like the last 2 months.

@@ -2,6 +2,7 @@
 date: 2004-02-17 17:43:45
 layout: post
 title: PalmHTTP 2.1
+categories: ["Programming"]
 ---
 
 Posted a minor update to [PalmHTTP](http://www.bitsplitter.net/PalmHTTP/) today. The 2.0 version generated warning messages when run under POSE with all debugging enabled, this adds a missing call that keeps that error from popping up.

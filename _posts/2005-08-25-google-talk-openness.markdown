@@ -2,6 +2,7 @@
 date: 2005-08-25 12:05:16
 layout: post
 title: Google Talk Openness
+categories: ["Tech & Society"]
 ---
 
 So here's an [interesting tidbit from the Google Talk developer info:](http://www.google.com/talk/developer.html) (hat tip [arstechnica](http://arstechnica.com/news.ars/post/20050824-5234.html))

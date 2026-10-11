@@ -2,6 +2,7 @@
 layout: post
 title: Leadership Without Being the Boss
 date: 2026-06-13 15:48 -0700
+categories: ["Startups & Leadership"]
 ---
 I used to tell people that I was happy to help lead an effort, I just didn't
 want to be in charge. Sometimes that would confuse people and it would take a

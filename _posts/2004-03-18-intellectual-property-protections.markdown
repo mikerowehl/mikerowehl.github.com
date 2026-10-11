@@ -2,6 +2,7 @@
 date: 2004-03-18 07:53:58
 layout: post
 title: Intellectual Property Protections
+categories: ["Tech & Society"]
 ---
 
 Larry Lessig [gave a presentation on why the protection of IP is important for the creative process](http://trends.newsforge.com/trends/04/03/17/156205.shtml?tid=137&tid=147). It sounds like it was the same set of material that [he tried out on us over at Stanford]({% post_url 2004-02-19-lessig-on-free-culture %}). Lessig has a new book on the market called [**The Future of Ideas**](http://the-future-of-ideas.com/), something I'm certainly going to pick up and read. There was a quote I particularly liked in there:
